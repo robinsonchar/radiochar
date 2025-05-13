@@ -1,0 +1,229 @@
+<!doctype html>
+
+
+  
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #;
+      
+    }
+
+    .radio-player {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      background: #;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+
+    canvas#equalizer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .album-art {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border-radius: 16px;
+      object-fit: cover;
+      margin-top: 40px;
+      z-index: 2;
+      box-shadow: 0 8px 25px rgba(255,255,255,0.2);
+    }
+
+    .info {
+      margin-top: 8px;
+      z-index: 2;
+      position: relative;
+      color: #ddd;
+      font-size: 13px;
+      line-height: 1.3;
+    }
+
+    .info span {
+      display: block;
+    }
+
+    .artist {
+      font-weight: normal;
+      color: #aaa;
+    }
+
+    .title {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    .controls {
+      margin-top: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-play {
+      width: 50px;
+      height: 50px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-play svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+      transition: fill 0.3s;
+    }
+
+    .btn-play:hover svg {
+      fill: #ccc;
+    }
+
+    .btn-play.active svg {
+      fill: #ffffff;
+    }
+
+    .live-tag {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 10px;
+      color: #bbb;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .live-circle {
+      width: 6px;
+      height: 6px;
+      background: red;
+      border-radius: 50%;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+
+
+<div class="radio-player">
+  <canvas id="equalizer"></canvas>
+
+  <img class="cc_streaminfo album-art" data-type="trackimageurl" data-username="robinson" alt="Álbum" />
+
+  <div class="info">
+    <span class="artist cc_streaminfo" data-type="trackartist" data-username="robinson">Artista</span>
+    <span class="title cc_streaminfo" data-type="tracktitle" data-username="robinson">Canción</span>
+  </div>
+
+  <div class="controls">
+    <button id="playPause" class="btn-play" title="Play / Pause">
+      <svg id="playIcon" viewbox="0 0 24 24"><path d="M8 5v14l11-7z"/></path></svg>
+      <svg id="pauseIcon" viewbox="0 0 24 24" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></path></svg>
+    </button>
+  </div>
+
+  <div class="live-tag">
+    <div class="live-circle"></div>
+    <span>LIVE</span>
+  </div>
+</div>
+
+<audio id="radioStream" crossorigin="anonymous" src="https://cast2.my-control-panel.com/proxy/robinson/stream"></audio>
+
+<!-- Script para mostrar info del stream -->
+<script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
+
+<script>
+  const audio = document.getElementById('radioStream');
+  const playPauseBtn = document.getElementById('playPause');
+  const playIcon = document.getElementById('playIcon');
+  const pauseIcon = document.getElementById('pauseIcon');
+  const canvas = document.getElementById('equalizer');
+  const ctx = canvas.getContext('2d');
+
+  let isPlaying = false;
+  let audioCtx, analyser, source, dataArray, bufferLength;
+
+  playPauseBtn.addEventListener('click', () => {
+    if (!audioCtx) initEqualizer();
+
+    if (isPlaying) {
+      audio.pause();
+      playIcon.style.display = 'inline';
+      pauseIcon.style.display = 'none';
+      playPauseBtn.classList.remove('active');
+    } else {
+      audio.play();
+      playIcon.style.display = 'none';
+      pauseIcon.style.display = 'inline';
+      playPauseBtn.classList.add('active');
+    }
+    isPlaying = !isPlaying;
+  });
+
+  function initEqualizer() {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    analyser = audioCtx.createAnalyser();
+    source = audioCtx.createMediaElementSource(audio);
+    source.connect(analyser);
+    analyser.connect(audioCtx.destination);
+    analyser.fftSize = 256;
+
+    bufferLength = analyser.frequencyBinCount;
+    dataArray = new Uint8Array(bufferLength);
+
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;
+
+    draw();
+  }
+
+  function draw() {
+    requestAnimationFrame(draw);
+    analyser.getByteFrequencyData(dataArray);
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const barWidth = (canvas.width / bufferLength);
+    let x = 0;
+
+    for (let i = 0; i < bufferLength; i++) {
+      const barHeight = dataArray[i] / 2;
+      ctx.fillStyle = '#ffffff'; // ondas blancas
+      ctx.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
+      x += barWidth + 1;
+    }
+  }
+</script>
+
+
+</!doctype>
