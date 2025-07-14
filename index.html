@@ -1,0 +1,446 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Radiochar en VIVO - Hits 80s y 90s</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        @keyframes soundbar {
+            0% { transform: scaleY(1); }
+            50% { transform: scaleY(0.3); }
+            100% { transform: scaleY(1); }
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        .live-indicator {
+            animation: pulse 1.5s infinite;
+        }
+        
+        .radio-player {
+            font-family: 'Arial', sans-serif;
+            max-width: 350px;
+            margin: 20px auto;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://i.pinimg.com/originals/71/6d/67/716d67ff8096605440c07079bd939934.gif);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .album-cover {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+            background: #f0f0f0;
+            border: 2px solid #e0e0e0;
+            margin: 15px auto;
+            display: block;
+        }
+        
+        .song-info {
+            text-align: center;
+            margin: 15px 0;
+            line-height: 1.2;
+        }
+        
+        .song-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin: 0;
+            padding: 0;
+            line-height: 1.1;
+        }
+        
+        .song-artist {
+            font-size: 18px;
+            color: white;
+            margin: 2px 0 0 0;
+            padding: 0;
+            line-height: 1.1;
+        }
+        
+        .play-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #FFFF00;
+            color: black;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px auto;
+            font-size: 24px;
+            transition: background 0.3s;
+        }
+        
+        .play-button:hover {
+            background: #FFFF00;
+        }
+        
+        .live-section {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .live-dot {
+            width: 7px;
+            height: 7px;
+            background: red;
+            border-radius: 50%;
+        }
+        
+        .live-text {
+            font-size: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .loading-text {
+            color: #666;
+            font-style: italic;
+        }
+
+        .sound-bars {
+            display: flex;
+            gap: 3px;
+            align-items: flex-end;
+            height: 10px;
+        }
+
+        .sound-bar {
+            width: 3px;
+            height: 10px;
+            background: #FFFF00;
+            border-radius: 2px;
+            transition: transform 0.3s ease-out;
+        }
+
+        .sound-bar.active {
+            animation: soundbar 0.5s infinite;
+        }
+
+        .sound-bar:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .sound-bar:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .volume-bar-container {
+            width: 100px;
+            height: 5px;
+            background: #444;
+            border-radius: 3px;
+            margin: 10px auto;
+            position: relative;
+            cursor: pointer;
+            overflow: visible;
+        }
+
+        .volume-bar {
+            width: 50%;
+            height: 100%;
+            background: #FFFF00;
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .volume-slider {
+            width: 12px;
+            height: 12px;
+            background: #FFFF00;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: calc(50% - 6px);
+            cursor: pointer;
+            transition: left 0.3s ease;
+        }
+
+        .volume-bar-container:hover .volume-slider {
+            background: #FFD700;
+        }
+
+        .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .marquee-container {
+            width: calc(100% + 60px); /* Wider to reduce side margins */
+            margin: -30px -30px 0; /* Adjust margins to extend width */
+            overflow: hidden;
+            background: transparent;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            margin-top: 40px; /* Positioned lower */
+        }
+
+        .marquee-wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            width: max-content;
+            animation: scroll 70s linear infinite;
+            font-size: 14px;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="radio-player">
+        <!-- Sección superior: barras de sonido y LIVE -->
+        <div class="top-section">
+            <div class="sound-bars">
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+                <div class="sound-bar"></div>
+            </div>
+            <div class="live-section">
+                <div class="live-dot live-indicator"></div>
+                <span class="live-text">LIVE</span>
+            </div>
+        </div>
+
+        <!-- Portada del álbum -->
+        <div class="text-center">
+            <img alt="Portada del álbum" class="cc_streaminfo album-cover" data-type="trackimageurl" data-username="robinson" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik06MCA2MEM2OC4yODQzIDYwIDc1IDUzLjI4NDMgNzUgNDVDNzUgMzYuNzE1NyA2OC4yODQzIDMwIDYwIDMwQzUxLjcxNTcgMzAgNDUgMzYuNzE1NyA0NSA0NUM0NSA1My4yODQzIDUxLjcxNTcgNjAgNjAgNjBaIiBmaWxsPSIjQ0NDQ0NDIi8+CjxwYXRoIGQ9Ik06MCA4NEM3NC45MTE3IDg0IDg3IDcxLjkxMTcgODcgNTdDODcgNDIuMDg4MyA3NC45MTE3IDMwIDYwIDMwQzQ1LjA4ODMgMzAgMzMgNDIuMDg4MyAzMyA1N0MzMyA3MS45MTE3IDQ1LjA4ODMgODQgNjAgODRaIiBzdHJva2U9IiNDQ0NDQ0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K'" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik06MCA2MEM2OC4yODQzIDYwIDc1IDUzLjI4NDMgNzUgNDVDNzUgMzYuNzE1NyA2OC4yODQzIDMwIDYwIDMwQzUxLjcxNTcgMzAgNDUgMzYuNzE1NyA0NSA0NUM0NSA1My4yODQzIDUxLjcxNTcgNjAgNjAgNjBaIiBmaWxsPSIjQ0NDQ0NDIi8+CjxwYXRoIGQ9Ik06MCA8NEM3NC45MTE3IDg0IDg3IDcxLjkxMTcgODcgNTdDODcgNDIuMDg4MyA3NC45MTE3IDMwIDYwIDMwQzQ1LjA4ODMgMzAgMzMgNDIuMDg4MyAzMyA1N0MzMyA3MS45MTE3IDQ1LjA4ODMgODQgNjAgODRaIiBzdHJva2U9IiNDQ0NDQ0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K" />
+        </div>
+        
+        <!-- Información de la canción -->
+        <div class="song-info">
+            <div class="song-title">
+                <span class="cc_streaminfo" data-type="tracktitle" data-username="robinson">Canción</span>
+            </div>
+            <div class="song-artist">
+                <span class="cc_streaminfo" data-type="trackartist" data-username="robinson">Artista</span>
+              
+            </div>
+        </div>
+        
+        <!-- Botón de reproducción -->
+        <button class="play-button" id="playButton" onclick="togglePlay()">
+            <i class="fas fa-play" id="playIcon"></i>
+        </button>
+        
+        <!-- Barra de volumen -->
+        <div class="volume-bar-container" id="volumeBarContainer">
+            <div class="volume-bar" id="volumeBar"></div>
+            <div class="volume-slider" id="volumeSlider"></div>
+        </div>
+
+        <!-- Marquesina de canciones recientes -->
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content" id="marquesina-wrapper">
+                    <div id="contenido-marquesina"></div>
+                    <div id="contenido-marquesina-clon"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Audio element -->
+        <audio id="radioPlayer" preload="none">
+            <source src="https://cast2.my-control-panel.com/proxy/robinson/stream" type="audio/mpeg"/>
+            Tu navegador no soporta el elemento de audio.
+        
+    </audio></div>
+
+    <script language="javascript" src="https://cast2.my-control-panel.com/system/streaminfo.js" type="text/javascript"></script>
+    
+    <script>
+        let isPlaying = false;
+        const audioPlayer = document.getElementById('radioPlayer');
+        const playButton = document.getElementById('playButton');
+        const playIcon = document.getElementById('playIcon');
+        const soundBars = document.querySelectorAll('.sound-bar');
+        const volumeBarContainer = document.getElementById('volumeBarContainer');
+        const volumeBar = document.getElementById('volumeBar');
+        const volumeSlider = document.getElementById('volumeSlider');
+
+        // Inicializar volumen al 50%
+        audioPlayer.volume = 0.5;
+
+        function togglePlay() {
+            if (!isPlaying) {
+                audioPlayer.play().then(() => {
+                    isPlaying = true;
+                    playIcon.className = 'fas fa-stop';
+                    soundBars.forEach(bar => bar.classList.add('active'));
+                }).catch(error => {
+                    console.log('Error al reproducir:', error);
+                    alert('Error al reproducir el stream. Verifica tu conexión.');
+                    soundBars.forEach(bar => bar.classList.remove('active'));
+                });
+            } else {
+                audioPlayer.pause();
+                audioPlayer.currentTime = 0;
+                isPlaying = false;
+                playIcon.className = 'fas fa-play';
+                soundBars.forEach(bar => bar.classList.remove('active'));
+            }
+        }
+
+        // Función para actualizar el volumen
+        function updateVolume(e, isTouch = false) {
+            const rect = volumeBarContainer.getBoundingClientRect();
+            const offsetX = isTouch ? e.touches[0].clientX - rect.left : e.clientX - rect.left;
+            let newVolume = Math.max(0, Math.min(1, offsetX / rect.width));
+            
+            audioPlayer.volume = newVolume;
+            volumeBar.style.width = `${newVolume * 100}%`;
+            volumeSlider.style.left = `calc(${newVolume * 100}% - 6px)`;
+        }
+
+        // Manejo de eventos para el control de volumen
+        let isDragging = false;
+
+        volumeBarContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            updateVolume(e);
+        });
+
+        volumeBarContainer.addEventListener('touchstart', (e) => {
+            isDragging = true;
+            updateVolume(e, true);
+        });
+
+        document.addEventListener('mousemove', (e) => {
+            if (isDragging) {
+                updateVolume(e);
+            }
+        });
+
+        document.addEventListener('touchmove', (e) => {
+            if (isDragging) {
+                updateVolume(e, true);
+            }
+        });
+
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        document.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        // Actualizar información cada 5 segundos
+        setInterval(function() {
+            if (typeof cc_streaminfo_refresh === 'function') {
+                cc_streaminfo_refresh();
+            }
+        }, 5000);
+        
+        // Mejorar la carga de imágenes y cargar marquesina
+        document.addEventListener('DOMContentLoaded', function() {
+            const albumCover = document.querySelector('.album-cover');
+            
+            setInterval(function() {
+                if (albumCover.src && albumCover.src.includes('data:image/svg+xml')) {
+                    const currentSrc = albumCover.getAttribute('data-original') || albumCover.src;
+                    if (currentSrc !== albumCover.src) {
+                        albumCover.src = currentSrc;
+                    }
+                }
+            }, 10000);
+
+            // Cargar canciones para la marquesina desde el feed RSS
+            async function cargarCancionesMarquesina() {
+                const url = 'https://cast2.my-control-panel.com/recentfeed/robinson/rss/';
+                const contenedor = document.getElementById('contenido-marquesina');
+                const clon = document.getElementById('contenido-marquesina-clon');
+
+                try {
+                    const respuesta = await fetch(url, { cache: 'no-store' });
+                    const texto = await respuesta.text();
+                    const parser = new DOMParser();
+                    const xmlDoc = parser.parseFromString(texto, 'text/xml');
+                    const items = xmlDoc.querySelectorAll('item');
+
+                    const textos = Array.from(items).slice(0, 10).map(item => {
+                        const title = item.querySelector('title')?.textContent || 'Sin título';
+                        const artist = item.querySelector('artist')?.textContent || 'Artista desconocido';
+                        const description = item.querySelector('description')?.textContent || 'Álbum desconocido';
+                        const playedAt = item.querySelector('pubDate')?.textContent || null;
+
+                        let horaLocal = '';
+                        if (playedAt) {
+                            const fecha = new Date(playedAt);
+                            if (!isNaN(fecha.getTime())) {
+                                let horas = fecha.getHours();
+                                const minutos = fecha.getMinutes().toString().padStart(2, '0');
+                                const ampm = horas >= 12 ? 'PM' : 'AM';
+                                horas = horas % 12 || 12;
+                                horaLocal = `${horas}:${minutos} ${ampm}`;
+                            } else {
+                                horaLocal = 'Hora inválida';
+                            }
+                        } else {
+                            horaLocal = 'Hora desconocida';
+                        }
+
+                        return `Artista y Canción: ${title}  | Album: ${description} | Programado: ${horaLocal}`;
+                    });
+
+                    const separator = '     •     ';
+                    const contenidoFinal = textos.join(separator) + separator; // Add separator at the end
+                    contenedor.innerHTML = contenidoFinal;
+                    clon.innerHTML = contenidoFinal;
+
+                } catch (error) {
+                    console.error('Error al cargar canciones:', error);
+                    contenedor.innerHTML = 'Error al cargar canciones recientes.';
+                    clon.innerHTML = '';
+                }
+            }
+
+            cargarCancionesMarquesina();
+            setInterval(cargarCancionesMarquesina, 30000);
+        });
+        
+        // Manejo de errores del audio
+        audioPlayer.addEventListener('error', function(e) {
+            console.log('Error de audio:', e);
+            if (isPlaying) {
+                isPlaying = false;
+                playIcon.className = 'fas fa-play';
+                soundBars.forEach(bar => bar.classList.remove('active'));
+                alert('Error en la transmisión. Intenta de nuevo.');
+            }
+        });
+        
+        // Auto-actualizar información cuando el stream info se carga
+        document.addEventListener('streamInfoLoaded', function() {
+            console.log('Stream info actualizada');
+        });
+    </script>
+</body>
+</html>
