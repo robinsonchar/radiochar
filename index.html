@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RADIOCHAR - 80s / 90s</title>
+  <title>RADIOCHAR - Player HD</title>
   
   <!-- 1. Iconos (FontAwesome) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -40,7 +40,7 @@
       background-image: url('https://via.placeholder.com/600x600.png?text=RADIOCHAR');
       background-size: cover;
       background-position: center;
-      filter: blur(45px) brightness(0.6);
+      filter: blur(45px) brightness(0.4);
       transition: background-image 1s ease-in-out;
     }
 
@@ -82,7 +82,7 @@
     /* --- TÍTULO (SARINA) --- */
     .radio-title {
       font-family: 'Sarina', cursive;
-      font-size: 70px; /* Aumentado a 70px */
+      font-size: 70px; /* Tamaño Grande */
       color: #ffffff;
       text-align: center;
       z-index: 5;
@@ -109,13 +109,13 @@
     .splash-screen h1 {
       font-family: 'Sarina', cursive;
       font-size: 30px;
-      color: #fff;
+      color: #00bfff;
       margin-bottom: 20px;
     }
 
     .spinner {
       border: 4px solid #333;
-      border-top: 4px solid #fff;
+      border-top: 4px solid #00bfff;
       border-radius: 50%;
       width: 50px; height: 50px;
       animation: spin 1s linear infinite;
@@ -177,14 +177,14 @@
       text-overflow: ellipsis;
     }
 
-    /* CAMBIO: Artista en Title Case (se controla también por JS) */
+    /* Artista en Title Case */
     .artist-name {
       font-size: 18px;
       color: #bbb;
       margin-bottom: 30px;
       text-align: center;
       font-weight: 300;
-      text-transform: none; /* Quitamos uppercase para permitir minúsculas */
+      text-transform: none;
       letter-spacing: 1px;
     }
 
@@ -213,18 +213,19 @@
       gap: 8px;
     }
 
-    /* CAMBIO: Volumen color blanco */
+    /* Volumen blanco */
     .volume-bar input[type="range"] {
       writing-mode: bt-lr;
       -webkit-appearance: slider-vertical;
       width: 6px;
       height: 80px;
-      accent-color: #ffffff; /* Color blanco solicitado */
+      accent-color: #ffffff;
       cursor: pointer;
       background: rgba(255,255,255,0.1);
       border-radius: 3px;
     }
 
+    /* Indicador LIVE ajustado */
     .live-indicator {
       position: absolute;
       bottom: 25px;
@@ -233,9 +234,9 @@
       align-items: center;
       gap: 10px;
       font-size: 14px;
-      font-weight: 400; /* Sin negrilla (normal) */
+      font-weight: 400; /* Sin negrilla */
       color: #ff4444;
-      letter-spacing: -0.5px; /* Letras más pegadas */
+      letter-spacing: -0.5px; /* Letras pegadas */
     }
 
     .live-dot {
@@ -301,11 +302,11 @@
     <i class="fab fa-instagram"></i>
   </a>
   
-  <a href="#" id="shareFB" class="social-btn" title="Compartir en Facebook">
+  <a href="#" id="shareFB" target="_blank" class="social-btn" title="Compartir en Facebook">
     <i class="fab fa-facebook-f"></i>
   </a>
   
-  <a href="#" id="shareWA" class="social-btn" title="Compartir en WhatsApp">
+  <a href="#" id="shareWA" target="_blank" class="social-btn" title="Compartir en WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
   
@@ -333,7 +334,7 @@
   <div class="player">
     <!-- NOTA: El ID del artista y título se mantienen para la lógica JS -->
     <div id="trackTitle" class="song-title cc_streaminfo" data-type="tracktitle" data-username="robinson">Conectando...</div>
-    <div id="trackArtist" class="artist-name cc_streaminfo" data-type="trackartist" data-username="robinson">Radiochar</div>
+    <div id="trackArtist" class="artist-name cc_streaminfo" data-type="trackartist" data-username="robinson">Radio Online</div>
     
     <div class="controls">
       <button id="playPause"><i class="fas fa-play-circle"></i></button>
@@ -348,14 +349,15 @@
 
     <div class="live-indicator">
       <div class="live-dot"></div>
-      LIVE
+      EN VIVO
     </div>
   </div>
 </div>
 
 <!-- 6. CRÉDITOS -->
 <div class="creator-footer">
-  Esta emisora fue creada por <a href="https://www.robinsonchar.online/" target="_blank">Robinson Char</a>
+  Página creada por Robinson Char <br> 
+  <a href="https://www.robinsonchar.online/" target="_blank">https://www.robinsonchar.online/</a>
 </div>
 
 <!-- 7. SCRIPTS -->
@@ -397,20 +399,28 @@
     audio.volume = volume.value;
   });
 
-  // --- REDES SOCIALES ---
-  const currentUrl = encodeURIComponent(window.location.href);
+  // --- REDES SOCIALES (URL FIX) ---
+  // Aqui definimos la URL exacta que quieres compartir
+  const fixedUrl = "https://www.radiochar.online/";
+  const encodedUrl = encodeURIComponent(fixedUrl);
   const shareText = encodeURIComponent("¡Escucha Radiochar en vivo! 🎵");
 
-  document.getElementById('shareFB').href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
-  document.getElementById('shareWA').href = `https://api.whatsapp.com/send?text=${shareText}%20${currentUrl}`;
+  // 1. Facebook
+  const fbLink = document.getElementById('shareFB');
+  fbLink.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+
+  // 2. WhatsApp
+  const waLink = document.getElementById('shareWA');
+  waLink.href = `https://api.whatsapp.com/send?text=${shareText}%20${encodedUrl}`;
   
+  // 3. Copiar Enlace (Copia la URL fija, no la del navegador)
   document.getElementById('copyLink').addEventListener('click', () => {
-    navigator.clipboard.writeText(window.location.href)
-      .then(() => alert('¡Enlace copiado!'))
-      .catch(err => console.error(err));
+    navigator.clipboard.writeText(fixedUrl)
+      .then(() => alert('¡Enlace copiado: ' + fixedUrl + '!'))
+      .catch(err => console.error('Error al copiar: ', err));
   });
 
-  // --- FUNCIÓN HELPER: TEXTO CAPITALIZADO (Ej: GUNS ROSES -> Guns Roses) ---
+  // --- FUNCIÓN HELPER: TEXTO CAPITALIZADO ---
   function toTitleCase(str) {
     return str.toLowerCase().split(' ').map(function(word) {
       return word.charAt(0).toUpperCase() + word.slice(1);
@@ -419,17 +429,14 @@
 
   // --- ACTUALIZACIÓN DE DATOS Y PORTADA ---
   async function updateCoverArt() {
-    // Obtenemos los textos
     let artist = artistElement.innerText.trim();
     let title = titleElement.innerText.trim();
 
-    // 1. CAMBIO: Formatear Artista a Capitalizado
-    // Verificamos si necesitamos formatear para evitar bucles innecesarios
-    // Si el texto está en mayúsculas o minúsculas puras, lo arreglamos.
+    // Formatear Artista a Capitalizado
     const formattedArtist = toTitleCase(artist);
     if (artist !== formattedArtist && !artist.includes("Radio Online")) {
         artistElement.innerText = formattedArtist;
-        artist = formattedArtist; // Actualizamos la variable para la búsqueda
+        artist = formattedArtist;
     }
 
     if (!artist || !title || title.includes('Conectando') || artist.includes('Radio Online')) return;
@@ -455,7 +462,6 @@
   }
 
   const observer = new MutationObserver(() => {
-     // Damos tiempo a que el script de la radio ponga el texto original, luego lo corregimos y buscamos foto
      setTimeout(updateCoverArt, 1500); 
   });
 
