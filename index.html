@@ -1,446 +1,459 @@
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Radiochar en VIVO - Hits 80s y 90s</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet"/>
-    <style>
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.3; }
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RADIOCHAR - 80S / 90S</title>
+  
+  <!-- 1. Iconos (FontAwesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  
+  <!-- 2. Fuente para el Título (Sarina) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
 
-        @keyframes soundbar {
-            0% { transform: scaleY(1); }
-            50% { transform: scaleY(0.3); }
-            100% { transform: scaleY(1); }
-        }
+  <style>
+    /* --- RESET Y BASE --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
-        @keyframes scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-        
-        .live-indicator {
-            animation: pulse 1.5s infinite;
-        }
-        
-        .radio-player {
-            font-family: 'Arial', sans-serif;
-            max-width: 350px;
-            margin: 20px auto;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)), url(https://i.pinimg.com/originals/71/6d/67/716d67ff8096605440c07079bd939934.gif);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: cover;
-            border-radius: 0px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            padding: 40px;
-        }
-        
-        .album-cover {
-            width: 120px;
-            height: 120px;
-            border-radius: 10px;
-            object-fit: cover;
-            background: #f0f0f0;
-            border: 2px solid #e0e0e0;
-            margin: 15px auto;
-            display: block;
-        }
-        
-        .song-info {
-            text-align: center;
-            margin: 15px 0;
-            line-height: 1.2;
-        }
-        
-        .song-title {
-            font-size: 20px;
-            font-weight: bold;
-            color: white;
-            margin: 0;
-            padding: 0;
-            line-height: 1.1;
-        }
-        
-        .song-artist {
-            font-size: 18px;
-            color: white;
-            margin: 2px 0 0 0;
-            padding: 0;
-            line-height: 1.1;
-        }
-        
-        .play-button {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: #FFFF00;
-            color: black;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 15px auto;
-            font-size: 24px;
-            transition: background 0.3s;
-        }
-        
-        .play-button:hover {
-            background: #FFFF00;
-        }
-        
-        .live-section {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .live-dot {
-            width: 7px;
-            height: 7px;
-            background: red;
-            border-radius: 50%;
-        }
-        
-        .live-text {
-            font-size: 10px;
-            color: white;
-            font-weight: bold;
-        }
-        
-        .loading-text {
-            color: #666;
-            font-style: italic;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      background: #121212;
+      color: #fff;
+      overflow: hidden;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
 
-        .sound-bars {
-            display: flex;
-            gap: 3px;
-            align-items: flex-end;
-            height: 10px;
-        }
+    /* --- FONDO AMBIENTAL (Blur) --- */
+    .background-blur {
+      position: fixed;
+      top: -10%; left: -10%;
+      width: 120%; height: 120%;
+      z-index: -1;
+      background-image: url('https://via.placeholder.com/600x600.png?text=RADIOCHAR');
+      background-size: cover;
+      background-position: center;
+      filter: blur(45px) brightness(0.7);
+      transition: background-image 1s ease-in-out;
+    }
 
-        .sound-bar {
-            width: 3px;
-            height: 10px;
-            background: #FFFF00;
-            border-radius: 2px;
-            transition: transform 0.3s ease-out;
-        }
+    /* --- BARRA LATERAL SOCIAL (Estilo ShareThis) --- */
+    .social-sidebar {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      z-index: 50;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
 
-        .sound-bar.active {
-            animation: soundbar 0.5s infinite;
-        }
+    .social-btn {
+      width: 45px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      transition: width 0.3s ease, background-color 0.3s;
+      cursor: pointer;
+      position: relative;
+    }
 
-        .sound-bar:nth-child(2) {
-            animation-delay: 0.1s;
-        }
+    .social-btn:hover {
+      width: 55px; /* Efecto de expansión al pasar el mouse */
+    }
 
-        .sound-bar:nth-child(3) {
-            animation-delay: 0.2s;
-        }
+    /* Colores de Marcas */
+    .btn-instagram { background: #E1306C; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+    .btn-facebook  { background: #3b5998; }
+    .btn-whatsapp  { background: #25D366; }
+    .btn-copy      { background: #7f8c8d; }
 
-        .volume-bar-container {
-            width: 100px;
-            height: 5px;
-            background: #444;
-            border-radius: 3px;
-            margin: 10px auto;
-            position: relative;
-            cursor: pointer;
-            overflow: visible;
-        }
+    /* --- TÍTULO (SARINA) --- */
+    .radio-title {
+      font-family: 'Sarina', cursive;
+      font-size: 70px;
+      color: #ffffff;
+      text-align: center;
+      z-index: 5;
+      letter-spacing: 1px;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.6);
+      margin-bottom: 30px; /* Espacio antes del player */
+    }
 
-        .volume-bar {
-            width: 50%;
-            height: 100%;
-            background: #FFFF00;
-            border-radius: 3px;
-            transition: width 0.3s ease;
-        }
+    /* --- PANTALLA DE CARGA --- */
+    .splash-screen {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      animation: fadeOut 1s 3s forwards;
+      pointer-events: none;
+    }
 
-        .volume-slider {
-            width: 12px;
-            height: 12px;
-            background: #FFFF00;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: calc(50% - 6px);
-            cursor: pointer;
-            transition: left 0.3s ease;
-        }
+    .splash-screen h1 {
+      font-family: 'Sarina', cursive;
+      font-size: 30px;
+      color: #fff;
+      margin-bottom: 20px;
+    }
 
-        .volume-bar-container:hover .volume-slider {
-            background: #FFD700;
-        }
+    .spinner {
+      border: 4px solid #333;
+      border-top: 4px solid #fff;
+      border-radius: 50%;
+      width: 50px; height: 50px;
+      animation: spin 1s linear infinite;
+    }
 
-        .top-section {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-            width: 100%;
-        }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
 
-        .marquee-container {
-            width: calc(100% + 60px); /* Wider to reduce side margins */
-            margin: -30px -30px 0; /* Adjust margins to extend width */
-            overflow: hidden;
-            background: transparent;
-            padding: 5px 10px;
-            display: flex;
-            align-items: center;
-            font-family: 'Arial', sans-serif;
-            margin-top: 40px; /* Positioned lower */
-        }
+    /* --- CONTENEDOR DEL REPRODUCTOR --- */
+    .radio-container {
+      display: flex;
+      width: 800px;
+      max-width: 95%;
+      height: 280px;
+      background: rgba(20, 20, 20, 0.85);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-        .marquee-wrapper {
-            width: 100%;
-            overflow: hidden;
-        }
+    .cover {
+      flex: 0 0 280px;
+      background-color: #000;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .marquee-content {
-            display: flex;
-            width: max-content;
-            animation: scroll 70s linear infinite;
-            font-size: 14px;
-            color: white;
-        }
-    </style>
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .player {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .song-title {
+      font-size: 26px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      text-align: center;
+      line-height: 1.2;
+      max-width: 90%;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .artist-name {
+      font-size: 18px;
+      color: #bbb;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .controls button {
+      background: none;
+      border: none;
+      font-size: 75px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+    }
+
+    .controls button:hover {
+      transform: scale(1.1);
+      color: #00bfff;
+    }
+
+    .volume-container {
+      position: absolute;
+      bottom: 25px;
+      right: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .volume-bar input[type="range"] {
+      writing-mode: bt-lr;
+      -webkit-appearance: slider-vertical;
+      width: 6px;
+      height: 80px;
+      accent-color: #00bfff;
+      cursor: pointer;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+    }
+
+    .live-indicator {
+      position: absolute;
+      bottom: 25px;
+      left: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 800;
+      color: #ff4444;
+      letter-spacing: 1.5px;
+    }
+
+    .live-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background-color: #ff4444;
+      box-shadow: 0 0 12px #ff4444;
+      animation: blink 1.5s infinite ease-in-out;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+
+    /* --- FOOTER / CRÉDITOS --- */
+    .creator-footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      z-index: 5;
+    }
+
+    .creator-footer a {
+      color: #00bfff;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.3s;
+    }
+
+    .creator-footer a:hover {
+      border-bottom: 1px solid #00bfff;
+    }
+
+    /* --- RESPONSIVE --- */
+    @media (max-width: 600px) {
+      .radio-container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+      }
+      .cover { flex: 0 0 300px; height: 300px; }
+      .player { padding: 30px 20px; }
+      .live-indicator { left: 20px; bottom: 20px; }
+      .volume-container { right: 20px; bottom: 20px; }
+      
+      /* Ajuste de sidebar para móvil (opcional: ponerla abajo) */
+      .social-sidebar { top: auto; bottom: 20px; transform: none; flex-direction: row; left: 50%; transform: translateX(-50%); }
+      .social-btn:hover { width: 45px; } /* Desactivar expansión en móvil */
+    }
+  </style>
 </head>
-<body class="bg-black min-h-screen flex items-center justify-center">
-    <div class="radio-player">
-        <!-- Sección superior: barras de sonido y LIVE -->
-        <div class="top-section">
-            <div class="sound-bars">
-                <div class="sound-bar"></div>
-                <div class="sound-bar"></div>
-                <div class="sound-bar"></div>
-            </div>
-            <div class="live-section">
-                <div class="live-dot live-indicator"></div>
-                <span class="live-text">LIVE</span>
-            </div>
-        </div>
+<body>
 
-        <!-- Portada del álbum -->
-        <div class="text-center">
-            <img alt="Portada del álbum" class="cc_streaminfo album-cover" data-type="trackimageurl" data-username="robinson" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik06MCA2MEM2OC4yODQzIDYwIDc1IDUzLjI4NDMgNzUgNDVDNzUgMzYuNzE1NyA2OC4yODQzIDMwIDYwIDMwQzUxLjcxNTcgMzAgNDUgMzYuNzE1NyA0NSA0NUM0NSA1My4yODQzIDUxLjcxNTcgNjAgNjAgNjBaIiBmaWxsPSIjQ0NDQ0NDIi8+CjxwYXRoIGQ9Ik06MCA4NEM3NC45MTE3IDg0IDg3IDcxLjkxMTcgODcgNTdDODcgNDIuMDg4MyA3NC45MTE3IDMwIDYwIDMwQzQ1LjA4ODMgMzAgMzMgNDIuMDg4MyAzMyA1N0MzMyA3MS45MTE3IDQ1LjA4ODMgODQgNjAgODRaIiBzdHJva2U9IiNDQ0NDQ0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K'" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgdmlld0JveD0iMCAwIDEyMCAxMjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiBmaWxsPSIjRjBGMEYwIi8+CjxwYXRoIGQ9Ik06MCA2MEM2OC4yODQzIDYwIDc1IDUzLjI4NDMgNzUgNDVDNzUgMzYuNzE1NyA2OC4yODQzIDMwIDYwIDMwQzUxLjcxNTcgMzAgNDUgMzYuNzE1NyA0NSA0NUM0NSA1My4yODQzIDUxLjcxNTcgNjAgNjAgNjBaIiBmaWxsPSIjQ0NDQ0NDIi8+CjxwYXRoIGQ9Ik06MCA8NEM3NC45MTE3IDg0IDg3IDcxLjkxMTcgODcgNTdDODcgNDIuMDg4MyA3NC45MTE3IDMwIDYwIDMwQzQ1LjA4ODMgMzAgMzMgNDIuMDg4MyAzMyA1N0MzMyA3MS45MTE3IDQ1LjA4ODMgODQgNjAgODRaIiBzdHJva2U9IiNDQ0NDQ0MiIHN0cm9rZS13aWR0aD0iMiIvPgo8L3N2Zz4K" />
-        </div>
-        
-        <!-- Información de la canción -->
-        <div class="song-info">
-            <div class="song-title">
-                <span class="cc_streaminfo" data-type="tracktitle" data-username="robinson">Canción</span>
-            </div>
-            <div class="song-artist">
-                <span class="cc_streaminfo" data-type="trackartist" data-username="robinson">Artista</span>
-              
-            </div>
-        </div>
-        
-        <!-- Botón de reproducción -->
-        <button class="play-button" id="playButton" onclick="togglePlay()">
-            <i class="fas fa-play" id="playIcon"></i>
-        </button>
-        
-        <!-- Barra de volumen -->
-        <div class="volume-bar-container" id="volumeBarContainer">
-            <div class="volume-bar" id="volumeBar"></div>
-            <div class="volume-slider" id="volumeSlider"></div>
-        </div>
+<!-- 1. Fondo Blur -->
+<div class="background-blur" id="bgBlur"></div>
 
-        <!-- Marquesina de canciones recientes -->
-        <div class="marquee-container">
-            <div class="marquee-wrapper">
-                <div class="marquee-content" id="marquesina-wrapper">
-                    <div id="contenido-marquesina"></div>
-                    <div id="contenido-marquesina-clon"></div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Audio element -->
-        <audio id="radioPlayer" preload="none">
-            <source src="https://cast2.my-control-panel.com/proxy/robinson/stream" type="audio/mpeg"/>
-            Tu navegador no soporta el elemento de audio.
-        
-    </audio></div>
+<!-- 2. Barra Lateral de Redes Sociales -->
+<div class="social-sidebar">
+  <!-- Instagram (Nota: Instagram web no permite compartir URL directo fácilmente, abre el home o perfil) -->
+  <a href="https://instagram.com" target="_blank" class="social-btn btn-instagram" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  
+  <!-- Facebook -->
+  <a href="#" id="shareFB" class="social-btn btn-facebook" title="Compartir en Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  
+  <!-- WhatsApp -->
+  <a href="#" id="shareWA" class="social-btn btn-whatsapp" title="Compartir en WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  
+  <!-- Copiar Enlace -->
+  <div id="copyLink" class="social-btn btn-copy" title="Copiar Enlace">
+    <i class="fas fa-link"></i>
+  </div>
+</div>
 
-    <script language="javascript" src="https://cast2.my-control-panel.com/system/streaminfo.js" type="text/javascript"></script>
+<!-- 3. Pantalla de carga -->
+<div class="splash-screen">
+  <h1>Cargando...</h1>
+  <div class="spinner"></div>
+</div>
+
+<!-- 4. TÍTULO -->
+<h1 class="radio-title">Radiochar</h1>
+
+<!-- 5. REPRODUCTOR -->
+<div class="radio-container">
+  
+  <div class="cover">
+    <img id="albumArt" src="https://via.placeholder.com/600x600.png?text=RADIOCHAR" alt="Album Art" />
+  </div>
+
+  <div class="player">
+    <div id="trackTitle" class="song-title cc_streaminfo" data-type="tracktitle" data-username="robinson">Conectando...</div>
+    <div id="trackArtist" class="artist-name cc_streaminfo" data-type="trackartist" data-username="robinson">Radiochar</div>
     
-    <script>
-        let isPlaying = false;
-        const audioPlayer = document.getElementById('radioPlayer');
-        const playButton = document.getElementById('playButton');
-        const playIcon = document.getElementById('playIcon');
-        const soundBars = document.querySelectorAll('.sound-bar');
-        const volumeBarContainer = document.getElementById('volumeBarContainer');
-        const volumeBar = document.getElementById('volumeBar');
-        const volumeSlider = document.getElementById('volumeSlider');
+    <div class="controls">
+      <button id="playPause"><i class="fas fa-play-circle"></i></button>
+    </div>
 
-        // Inicializar volumen al 50%
-        audioPlayer.volume = 0.5;
+    <div class="volume-container">
+      <i class="fas fa-volume-up"></i>
+      <div class="volume-bar">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
+      </div>
+    </div>
 
-        function togglePlay() {
-            if (!isPlaying) {
-                audioPlayer.play().then(() => {
-                    isPlaying = true;
-                    playIcon.className = 'fas fa-stop';
-                    soundBars.forEach(bar => bar.classList.add('active'));
-                }).catch(error => {
-                    console.log('Error al reproducir:', error);
-                    alert('Error al reproducir el stream. Verifica tu conexión.');
-                    soundBars.forEach(bar => bar.classList.remove('active'));
-                });
-            } else {
-                audioPlayer.pause();
-                audioPlayer.currentTime = 0;
-                isPlaying = false;
-                playIcon.className = 'fas fa-play';
-                soundBars.forEach(bar => bar.classList.remove('active'));
-            }
-        }
+    <div class="live-indicator">
+      <div class="live-dot"></div>
+      LIVE
+    </div>
+  </div>
+</div>
 
-        // Función para actualizar el volumen
-        function updateVolume(e, isTouch = false) {
-            const rect = volumeBarContainer.getBoundingClientRect();
-            const offsetX = isTouch ? e.touches[0].clientX - rect.left : e.clientX - rect.left;
-            let newVolume = Math.max(0, Math.min(1, offsetX / rect.width));
-            
-            audioPlayer.volume = newVolume;
-            volumeBar.style.width = `${newVolume * 100}%`;
-            volumeSlider.style.left = `calc(${newVolume * 100}% - 6px)`;
-        }
+<!-- 6. CRÉDITOS DEL CREADOR (FOOTER) -->
+<div class="creator-footer">
+  Página creada por <a href="https://www.robinsonchar.online/" target="_blank">Robinson Char</a>
+</div>
 
-        // Manejo de eventos para el control de volumen
-        let isDragging = false;
+<!-- 7. SCRIPTS Y AUDIO -->
+<audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream" crossorigin="anonymous"></audio>
+<script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
 
-        volumeBarContainer.addEventListener('mousedown', (e) => {
-            isDragging = true;
-            updateVolume(e);
-        });
+<script>
+  // --- VARIABLES ---
+  const audio = document.getElementById('radio');
+  const playPauseBtn = document.getElementById('playPause');
+  const volume = document.getElementById('volume');
+  const icon = playPauseBtn.querySelector('i');
+  
+  const artistElement = document.getElementById('trackArtist');
+  const titleElement = document.getElementById('trackTitle');
+  const albumArt = document.getElementById('albumArt');
+  const bgBlur = document.getElementById('bgBlur');
 
-        volumeBarContainer.addEventListener('touchstart', (e) => {
-            isDragging = true;
-            updateVolume(e, true);
-        });
+  const DEFAULT_COVER = 'https://via.placeholder.com/600x600.png?text=RADIOCHAR';
 
-        document.addEventListener('mousemove', (e) => {
-            if (isDragging) {
-                updateVolume(e);
-            }
-        });
+  // --- AUDIO LOGIC ---
+  let isPlaying = false;
+  audio.volume = 0.5;
 
-        document.addEventListener('touchmove', (e) => {
-            if (isDragging) {
-                updateVolume(e, true);
-            }
-        });
+  playPauseBtn.addEventListener('click', () => {
+    if (isPlaying) {
+      audio.pause();
+      icon.classList.remove('fa-stop-circle');
+      icon.classList.add('fa-play-circle');
+    } else {
+      audio.play().catch(e => console.error(e));
+      icon.classList.remove('fa-play-circle');
+      icon.classList.add('fa-stop-circle');
+    }
+    isPlaying = !isPlaying;
+  });
 
-        document.addEventListener('mouseup', () => {
-            isDragging = false;
-        });
+  volume.addEventListener('input', () => {
+    audio.volume = volume.value;
+  });
 
-        document.addEventListener('touchend', () => {
-            isDragging = false;
-        });
+  // --- LOGICA REDES SOCIALES ---
+  const currentUrl = encodeURIComponent(window.location.href);
+  const shareText = encodeURIComponent("¡Escucha Radiochar en vivo! 🎵");
 
-        // Actualizar información cada 5 segundos
-        setInterval(function() {
-            if (typeof cc_streaminfo_refresh === 'function') {
-                cc_streaminfo_refresh();
-            }
-        }, 5000);
-        
-        // Mejorar la carga de imágenes y cargar marquesina
-        document.addEventListener('DOMContentLoaded', function() {
-            const albumCover = document.querySelector('.album-cover');
-            
-            setInterval(function() {
-                if (albumCover.src && albumCover.src.includes('data:image/svg+xml')) {
-                    const currentSrc = albumCover.getAttribute('data-original') || albumCover.src;
-                    if (currentSrc !== albumCover.src) {
-                        albumCover.src = currentSrc;
-                    }
-                }
-            }, 10000);
+  // Facebook Share
+  document.getElementById('shareFB').href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+  
+  // WhatsApp Share
+  document.getElementById('shareWA').href = `https://api.whatsapp.com/send?text=${shareText}%20${currentUrl}`;
 
-            // Cargar canciones para la marquesina desde el feed RSS
-            async function cargarCancionesMarquesina() {
-                const url = 'https://cast2.my-control-panel.com/recentfeed/robinson/rss/';
-                const contenedor = document.getElementById('contenido-marquesina');
-                const clon = document.getElementById('contenido-marquesina-clon');
+  // Copiar Enlace
+  document.getElementById('copyLink').addEventListener('click', () => {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      alert('¡Enlace copiado al portapapeles!');
+    }).catch(err => {
+      console.error('Error al copiar: ', err);
+    });
+  });
 
-                try {
-                    const respuesta = await fetch(url, { cache: 'no-store' });
-                    const texto = await respuesta.text();
-                    const parser = new DOMParser();
-                    const xmlDoc = parser.parseFromString(texto, 'text/xml');
-                    const items = xmlDoc.querySelectorAll('item');
+  // --- PORTADAS HD (iTunes API) ---
+  async function updateCoverArt() {
+    const artist = artistElement.innerText.trim();
+    const title = titleElement.innerText.trim();
 
-                    const textos = Array.from(items).slice(0, 10).map(item => {
-                        const title = item.querySelector('title')?.textContent || 'Sin título';
-                        const artist = item.querySelector('artist')?.textContent || 'Artista desconocido';
-                        const description = item.querySelector('description')?.textContent || 'Álbum desconocido';
-                        const playedAt = item.querySelector('pubDate')?.textContent || null;
+    if (!artist || !title || title.includes('Conectando') || artist.includes('Radio Online')) return;
 
-                        let horaLocal = '';
-                        if (playedAt) {
-                            const fecha = new Date(playedAt);
-                            if (!isNaN(fecha.getTime())) {
-                                let horas = fecha.getHours();
-                                const minutos = fecha.getMinutes().toString().padStart(2, '0');
-                                const ampm = horas >= 12 ? 'PM' : 'AM';
-                                horas = horas % 12 || 12;
-                                horaLocal = `${horas}:${minutos} ${ampm}`;
-                            } else {
-                                horaLocal = 'Hora inválida';
-                            }
-                        } else {
-                            horaLocal = 'Hora desconocida';
-                        }
+    const query = encodeURIComponent(`${artist} ${title}`);
+    const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
 
-                        return `Artista y Canción: ${title}  | Album: ${description} | Programado: ${horaLocal}`;
-                    });
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
 
-                    const separator = '     •     ';
-                    const contenidoFinal = textos.join(separator) + separator; // Add separator at the end
-                    contenedor.innerHTML = contenidoFinal;
-                    clon.innerHTML = contenidoFinal;
+      if (data.results.length > 0) {
+        const highResUrl = data.results[0].artworkUrl100.replace('100x100bb', '600x600bb');
+        albumArt.src = highResUrl;
+        bgBlur.style.backgroundImage = `url('${highResUrl}')`;
+      } else {
+        albumArt.src = DEFAULT_COVER;
+        bgBlur.style.backgroundImage = `url('${DEFAULT_COVER}')`;
+      }
+    } catch (error) {
+      albumArt.src = DEFAULT_COVER;
+    }
+  }
 
-                } catch (error) {
-                    console.error('Error al cargar canciones:', error);
-                    contenedor.innerHTML = 'Error al cargar canciones recientes.';
-                    clon.innerHTML = '';
-                }
-            }
+  const observer = new MutationObserver(() => {
+     setTimeout(updateCoverArt, 1500); 
+  });
 
-            cargarCancionesMarquesina();
-            setInterval(cargarCancionesMarquesina, 30000);
-        });
-        
-        // Manejo de errores del audio
-        audioPlayer.addEventListener('error', function(e) {
-            console.log('Error de audio:', e);
-            if (isPlaying) {
-                isPlaying = false;
-                playIcon.className = 'fas fa-play';
-                soundBars.forEach(bar => bar.classList.remove('active'));
-                alert('Error en la transmisión. Intenta de nuevo.');
-            }
-        });
-        
-        // Auto-actualizar información cuando el stream info se carga
-        document.addEventListener('streamInfoLoaded', function() {
-            console.log('Stream info actualizada');
-        });
-    </script>
+  if(titleElement) {
+    observer.observe(titleElement, { childList: true, characterData: true, subtree: true });
+  }
+  
+  setTimeout(updateCoverArt, 2000);
+</script>
+
 </body>
 </html>
