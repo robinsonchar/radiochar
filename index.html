@@ -305,17 +305,14 @@
 
 <!-- 2. Barra Lateral de Redes Sociales -->
 <div class="social-sidebar">
-  <!-- Instagram -->
-  <a href="https://instagram.com" target="_blank" class="social-btn" title="Instagram">
-    <i class="fab fa-instagram"></i>
-  </a>
+  <!-- BOTÓN DE INSTAGRAM ELIMINADO -->
   
   <!-- Facebook -->
   <a href="#" id="shareFB" target="_blank" class="social-btn" title="Compartir en Facebook">
     <i class="fab fa-facebook-f"></i>
   </a>
 
-  <!-- X (Twitter) - NUEVO BOTÓN -->
+  <!-- X (Twitter) -->
   <a href="#" id="shareX" target="_blank" class="social-btn" title="Compartir en X">
     <i class="fa-brands fa-x-twitter"></i>
   </a>
@@ -423,7 +420,7 @@
   const fbLink = document.getElementById('shareFB');
   fbLink.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
 
-  // 2. X (Twitter) - NUEVA LÓGICA
+  // 2. X (Twitter)
   const xLink = document.getElementById('shareX');
   xLink.href = `https://twitter.com/intent/tweet?text=${shareText}&url=${encodedUrl}`;
 
