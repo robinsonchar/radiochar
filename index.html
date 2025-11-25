@@ -115,18 +115,18 @@
       display: block; transition: transform 0.5s ease;
     }
 
-    /* --- LIVE INDICATOR (Ahora sobre la portada) --- */
+    /* --- LIVE INDICATOR --- */
     .live-indicator {
       position: absolute;
-      top: 15px;         /* Arriba */
-      right: 15px;       /* Derecha */
+      top: 15px;
+      right: 15px;
       display: flex;
       align-items: center;
       gap: 8px;
       font-size: 12px;
       font-weight: 700;
       color: #fff;
-      background: rgba(0, 0, 0, 0.6); /* Fondo oscuro para contraste */
+      background: rgba(0, 0, 0, 0.6);
       padding: 4px 10px;
       border-radius: 12px;
       backdrop-filter: blur(4px);
@@ -145,14 +145,14 @@
       flex: 1;
       display: flex; flex-direction: column; justify-content: center; align-items: center;
       padding: 20px;
-      position: relative; /* Contexto para el canvas absolute */
+      position: relative;
     }
 
-    /* --- CANVAS WINAMP (Ahora abajo a la izquierda) --- */
+    /* --- CANVAS WINAMP --- */
     #winampVis {
       position: absolute;
-      bottom: 25px;    /* Ubicación original del texto LIVE */
-      left: 30px;      /* Ubicación original del texto LIVE */
+      bottom: 25px;
+      left: 30px;
       z-index: 10;
     }
 
@@ -196,10 +196,8 @@
       .cover { flex: 0 0 300px; height: 300px; }
       .player { padding: 30px 20px; }
       
-      /* Ajustes responsive */
       .live-indicator { top: 10px; right: 10px; }
       .volume-container { right: 20px; bottom: 20px; }
-      /* El ecualizador se mueve un poco para no chocar */
       #winampVis { left: 20px; bottom: 20px; }
       
       .radio-title { font-size: 40px; }
@@ -224,7 +222,6 @@
 <div class="radio-container">
   
   <div class="cover">
-    <!-- LIVE ahora está dentro de la portada -->
     <div class="live-indicator">
       <div class="live-dot"></div>
       LIVE
@@ -234,8 +231,7 @@
 
   <div class="player">
     
-    <!-- CANVAS WINAMP (Abajo Izquierda - Donde estaba LIVE) -->
-    <!-- 4 barras compactas: aprox 10px por barra = 40px ancho. 30px alto -->
+    <!-- CANVAS WINAMP (4 Barras) -->
     <canvas id="winampVis" width="40" height="30"></canvas>
 
     <div id="trackTitle" class="song-title cc_streaminfo" data-type="tracktitle" data-username="robinson">Conectando...</div>
@@ -257,7 +253,8 @@
 
 <!-- 5. CRÉDITOS -->
 <div class="creator-footer">
-  Powered by <a href="https://www.robinsonchar.online/" target="_blank">@robinsonchar</a>
+  Página creada por Robinson Char <br> 
+  <a href="https://www.robinsonchar.online/" target="_blank">https://www.robinsonchar.online/</a>
 </div>
 
 <!-- 6. SCRIPTS -->
@@ -265,6 +262,15 @@
 <script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
 
 <script>
+  // --- CONFIGURACIÓN OPCIÓN B: UNA IMAGEN PARA TODA LA SERIE ---
+  // Solo coloca la palabra clave común.
+  // El sistema buscará si el título de la canción CONTIENE este texto.
+  const manualCovers = {
+    "PODCAST RADIOCHAR": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png", // Aplica a Episodio 1, 2, 3...
+    "CAPSULA SALUD":     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png",         // Aplica a cualquier cápsula de salud
+    "MIX 80S":           "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png",       // Aplica a "Mix 80s Vol 1", "Mix 80s Vol 2"
+  };
+
   // --- REFERENCIAS ---
   const audio = document.getElementById('radio');
   const playPauseBtn = document.getElementById('playPause');
@@ -282,12 +288,10 @@
   let audioContext, analyser, source;
   let isAudioContextSetup = false;
   
-  const BAR_COUNT = 4; // Volvemos a 4 barras
+  const BAR_COUNT = 4;
   let peakHeights = new Array(BAR_COUNT).fill(0); 
-  const PEAK_DROP_SPEED = 0.5; // Ajustado para ser más suave en tamaño pequeño
-
-  // Configuración de Bloques (Más pequeños ahora)
-  const BLOCK_HEIGHT = 2;   // Bloques más finos
+  const PEAK_DROP_SPEED = 0.5;
+  const BLOCK_HEIGHT = 2;
   const BLOCK_GAP = 1;      
   const BLOCK_UNIT = BLOCK_HEIGHT + BLOCK_GAP; 
 
@@ -304,7 +308,7 @@
       isAudioContextSetup = true;
       animateWinamp();
     } catch (e) {
-      console.warn("AudioContext Fallback: Modo Simulación");
+      console.warn("AudioContext Fallback");
       animateWinamp();
     }
   }
@@ -313,17 +317,15 @@
   const ctx = canvas.getContext('2d');
 
   function getSegmentColor(y, height) {
-    const percentage = 1 - (y / height); // 0 (abajo) a 1 (arriba)
-    if (percentage > 0.85) return '#ff3333'; // Rojo
-    if (percentage > 0.60) return '#ffaa00'; // Naranja
-    return '#33ff33';                        // Verde
+    const percentage = 1 - (y / height);
+    if (percentage > 0.85) return '#ff3333';
+    if (percentage > 0.60) return '#ffaa00';
+    return '#33ff33';
   }
 
   function animateWinamp() {
     requestAnimationFrame(animateWinamp);
-    
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    
     let frequencyData = [];
 
     if (analyser && isPlaying && audioContext.state === 'running') {
@@ -345,7 +347,6 @@
         frequencyData.push(sum / count);
       }
     } else {
-      // Simulación
       if(isPlaying) {
          for(let i=0; i<BAR_COUNT; i++) frequencyData.push(Math.random() * 100);
       } else {
@@ -353,10 +354,8 @@
       }
     }
 
-    // Dibujado compacto
-    const barWidth = 8; // Más estrechas
-    const gap = 2;      // Muy juntas
-    // Centrado automático si sobra espacio
+    const barWidth = 8;
+    const gap = 2;
     const totalW = (barWidth * BAR_COUNT) + (gap * (BAR_COUNT-1));
     const startX = (canvas.width - totalW) / 2;
 
@@ -365,7 +364,6 @@
         const targetHeight = (intensity / 255) * canvas.height;
         const x = startX + i * (barWidth + gap);
 
-        // Bloques
         const numBlocks = Math.floor(targetHeight / BLOCK_UNIT);
         for (let b = 0; b < numBlocks; b++) {
             const yBlock = canvas.height - (b * BLOCK_UNIT) - BLOCK_HEIGHT;
@@ -373,7 +371,6 @@
             ctx.fillRect(x, yBlock, barWidth, BLOCK_HEIGHT);
         }
 
-        // Peak Logic
         if (targetHeight > peakHeights[i]) {
             peakHeights[i] = targetHeight;
         } else {
@@ -381,7 +378,6 @@
             if (peakHeights[i] < 0) peakHeights[i] = 0;
         }
 
-        // Peak Drawing
         if (peakHeights[i] > BLOCK_UNIT) {
             const peakBlockIndex = Math.floor(peakHeights[i] / BLOCK_UNIT);
             const yPeak = canvas.height - (peakBlockIndex * BLOCK_UNIT) - BLOCK_HEIGHT;
@@ -419,18 +415,41 @@
     }).join(' ');
   }
 
+  // --- FUNCIÓN DE PORTADAS HÍBRIDA (SERIES) ---
   async function updateCoverArt() {
     let artist = artistElement.innerText.trim();
     let title = titleElement.innerText.trim();
+    
     const formattedArtist = toTitleCase(artist);
     if (artist !== formattedArtist && !artist.includes("Radio Online")) {
         artistElement.innerText = formattedArtist;
         artist = formattedArtist;
     }
-    if (!artist || !title || title.includes('Conectando') || artist.includes('Radio Online')) return;
     
+    if (!artist || !title || title.includes('Conectando') || artist.includes('Radio Online')) return;
+
+    // 1. BUSCAR COINCIDENCIA DE SERIE (Lista Manual)
+    // Creamos un string completo en mayúsculas para buscar la palabra clave
+    const fullTrackInfo = `${artist} - ${title}`.toUpperCase();
+    let foundManual = false;
+    
+    // Recorremos las claves definidas en manualCovers
+    for (const [keyword, url] of Object.entries(manualCovers)) {
+        // Si el título completo CONTIENE la palabra clave (ej: "PODCAST RADIOCHAR")
+        if (fullTrackInfo.includes(keyword.toUpperCase())) {
+            albumArt.src = url;
+            bgBlur.style.backgroundImage = `url('${url}')`;
+            foundManual = true;
+            break; // Encontramos coincidencia, dejamos de buscar
+        }
+    }
+    
+    if (foundManual) return; // ¡Éxito! Usamos la imagen de la serie.
+
+    // 2. BÚSQUEDA AUTOMÁTICA (ITUNES)
     const query = encodeURIComponent(`${artist} ${title}`);
     const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
+    
     try {
       const res = await fetch(url);
       const data = await res.json();
