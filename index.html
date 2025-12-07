@@ -35,7 +35,8 @@
     .background-blur {
       position: fixed; top: -10%; left: -10%; width: 120%; height: 120%;
       z-index: -1;
-      background-image: url('https://via.placeholder.com/600x600.png?text=RADIOCHAR');
+      /* Imagen por defecto inicial */
+      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png');
       background-size: cover; background-position: center;
       filter: blur(45px) brightness(0.4);
       transition: background-image 1s ease-in-out;
@@ -146,6 +147,7 @@
       display: flex; flex-direction: column; justify-content: center; align-items: center;
       padding: 20px;
       position: relative;
+      overflow: hidden; /* Importante para que el texto no se salga del contenedor */
     }
 
     /* --- CANVAS WINAMP --- */
@@ -156,16 +158,44 @@
       z-index: 10;
     }
 
+    /* --- ESTILOS DEL TÍTULO DE CANCIÓN (CON MARQUESINA) --- */
+    .song-title-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      margin-bottom: 8px;
+      text-align: center; /* Centrado por defecto */
+      position: relative;
+    }
+
     .song-title {
-      font-size: 26px; font-weight: bold; margin-bottom: 8px; text-align: center;
-      line-height: 1.2; max-width: 90%;
+      font-size: 26px; 
+      font-weight: bold; 
+      display: inline-block;
       text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      /* La animación se inyectará vía JS si es necesario */
+    }
+
+    /* Clase para activar el movimiento */
+    .scrolling-text {
+      animation: scroll-text 10s linear infinite alternate;
+      padding-left: 0;
+    }
+
+    @keyframes scroll-text {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(0); } /* Pausa inicial para leer */
+      80% { transform: translateX(var(--scroll-distance)); } /* Desplazamiento */
+      100% { transform: translateX(var(--scroll-distance)); } /* Pausa final */
     }
 
     .artist-name {
       font-size: 18px; color: #bbb; margin-bottom: 30px; text-align: center;
       font-weight: 300; text-transform: none; letter-spacing: 1px;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .controls button {
@@ -226,7 +256,8 @@
       <div class="live-dot"></div>
       LIVE
     </div>
-    <img id="albumArt" src="https://via.placeholder.com/600x600.png?text=RADIOCHAR" alt="Album Art" />
+    <!-- Imagen por defecto actualizada -->
+    <img id="albumArt" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png" alt="Album Art" />
   </div>
 
   <div class="player">
@@ -234,7 +265,11 @@
     <!-- CANVAS WINAMP (4 Barras) -->
     <canvas id="winampVis" width="40" height="30"></canvas>
 
-    <div id="trackTitle" class="song-title cc_streaminfo" data-type="tracktitle" data-username="robinson">Conectando...</div>
+    <!-- Contenedor del título con lógica de marquesina -->
+    <div class="song-title-container">
+        <div id="trackTitle" class="song-title cc_streaminfo" data-type="tracktitle" data-username="robinson">Conectando...</div>
+    </div>
+    
     <div id="trackArtist" class="artist-name cc_streaminfo" data-type="trackartist" data-username="robinson">Radiochar</div>
     
     <div class="controls">
@@ -251,9 +286,9 @@
   </div>
 </div>
 
-<!-- 5. CRÉDITOS -->
+<!-- 5. CRÉDITOS ACTUALIZADOS -->
 <div class="creator-footer">
-  Powered by <a href="https://www.robinsonchar.online/" target="_blank">@robinsonchar</a>
+  Powered by <a href="https://www.robinsonchar.online/" target="_blank">robinsonchar</a>
 </div>
 
 <!-- 6. SCRIPTS -->
@@ -261,15 +296,6 @@
 <script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
 
 <script>
-  // --- CONFIGURACIÓN OPCIÓN B: UNA IMAGEN PARA TODA LA SERIE ---
-  // Solo coloca la palabra clave común.
-  // El sistema buscará si el título de la canción CONTIENE este texto.
-  const manualCovers = {
-    "El Casete de @duarte_jairo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png?text=El+Casete+de+@duarte_jairo", // Aplica a Episodio 1, 2, 3...
-    "@duarte_jairo":     "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png?text=duarte+jairo",         // Aplica a cualquier cápsula
-    "El Casete de @duarte_jairo":           "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png?text=El+Casete+de+@duarte_jairo",       // Aplica a "El Casete de @duarte_jairo", "@duarte_jairo"
-  };
-
   // --- REFERENCIAS ---
   const audio = document.getElementById('radio');
   const playPauseBtn = document.getElementById('playPause');
@@ -281,7 +307,8 @@
   const albumArt = document.getElementById('albumArt');
   const bgBlur = document.getElementById('bgBlur');
 
-  const DEFAULT_COVER = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjIHe_QXDnKNdCTzxW9myTsPGZiyLgZtClEFdUgHMyssf4fQZGfoXNk5w0BxfCoFHU9NnoaOtRPjqQZSmq_5Q54tnk8_BO53dCvMqNOMXIng6MO42G9a8aki38qq4lMZE7nC3o58cHYVRs5sl72b7bZBzEONuqg17S6cfTtX45pEweHIIUu3oxs44XQiAKH/s16000/El%20casete%20de%20duarte%20jairo.png';
+  // URL DE IMAGEN POR DEFECTO (GOOGLE BLOGGER)
+  const DEFAULT_COVER = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png';
 
   // --- AUDIO CONTEXT & WINAMP VISUALIZER ---
   let audioContext, analyser, source;
@@ -414,38 +441,48 @@
     }).join(' ');
   }
 
-  // --- FUNCIÓN DE PORTADAS HÍBRIDA (SERIES) ---
-  async function updateCoverArt() {
+  // --- FUNCIÓN DE MARQUESINA (Scroll Text) ---
+  function checkMarquee() {
+    const titleElement = document.getElementById('trackTitle');
+    const container = document.querySelector('.song-title-container');
+    
+    if (!titleElement || !container) return;
+
+    // Resetear clases y estilos para medir
+    titleElement.classList.remove('scrolling-text');
+    titleElement.style.removeProperty('--scroll-distance');
+
+    // Comprobar si el texto es más largo que el contenedor
+    // offsetWidth = ancho visible, scrollWidth = ancho total del contenido
+    if (titleElement.scrollWidth > container.offsetWidth) {
+      // Calcular cuánto se debe mover (ancho del texto - ancho visible + un poco de margen)
+      const distance = (titleElement.scrollWidth - container.offsetWidth + 20) * -1;
+      
+      // Aplicar variable CSS
+      titleElement.style.setProperty('--scroll-distance', `${distance}px`);
+      // Activar animación
+      titleElement.classList.add('scrolling-text');
+    }
+  }
+
+  // --- ACTUALIZACIÓN DE DATOS Y PORTADA ---
+  async function updateInfo() {
     let artist = artistElement.innerText.trim();
     let title = titleElement.innerText.trim();
     
+    // 1. Formatear texto del artista
     const formattedArtist = toTitleCase(artist);
     if (artist !== formattedArtist && !artist.includes("Radio Online")) {
         artistElement.innerText = formattedArtist;
         artist = formattedArtist;
     }
     
+    // 2. Verificar Marquesina (Scroll)
+    checkMarquee();
+
     if (!artist || !title || title.includes('Conectando') || artist.includes('Radio Online')) return;
 
-    // 1. BUSCAR COINCIDENCIA DE SERIE (Lista Manual)
-    // Creamos un string completo en mayúsculas para buscar la palabra clave
-    const fullTrackInfo = `${artist} - ${title}`.toUpperCase();
-    let foundManual = false;
-    
-    // Recorremos las claves definidas en manualCovers
-    for (const [keyword, url] of Object.entries(manualCovers)) {
-        // Si el título completo CONTIENE la palabra clave (ej: "PODCAST RADIOCHAR")
-        if (fullTrackInfo.includes(keyword.toUpperCase())) {
-            albumArt.src = url;
-            bgBlur.style.backgroundImage = `url('${url}')`;
-            foundManual = true;
-            break; // Encontramos coincidencia, dejamos de buscar
-        }
-    }
-    
-    if (foundManual) return; // ¡Éxito! Usamos la imagen de la serie.
-
-    // 2. BÚSQUEDA AUTOMÁTICA (ITUNES)
+    // 3. Buscar Portada en iTunes (Solo automático, sin manuales)
     const query = encodeURIComponent(`${artist} ${title}`);
     const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
     
@@ -460,14 +497,21 @@
         albumArt.src = DEFAULT_COVER;
         bgBlur.style.backgroundImage = `url('${DEFAULT_COVER}')`;
       }
-    } catch (error) { albumArt.src = DEFAULT_COVER; }
+    } catch (error) { 
+        albumArt.src = DEFAULT_COVER;
+        bgBlur.style.backgroundImage = `url('${DEFAULT_COVER}')`;
+    }
   }
 
-  const observer = new MutationObserver(() => { setTimeout(updateCoverArt, 1500); });
+  const observer = new MutationObserver(() => { setTimeout(updateInfo, 1500); });
   if(titleElement) {
     observer.observe(titleElement, { childList: true, characterData: true, subtree: true });
   }
-  setTimeout(updateCoverArt, 2000);
+  
+  // Ejecutar al inicio y también si cambia el tamaño de la ventana (para recalcular marquesina)
+  setTimeout(updateInfo, 2000);
+  window.addEventListener('resize', checkMarquee);
+
 </script>
 
 </body>
