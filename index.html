@@ -35,16 +35,14 @@
     .background-blur {
       position: fixed; top: -10%; left: -10%; width: 120%; height: 120%;
       z-index: -1;
-      /* Imagen por defecto inicial */
       background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png');
       background-size: cover; background-position: center;
       filter: blur(45px) brightness(0.4);
-      /* Transición suave para el cambio de imagen */
-      transition: opacity 0.8s ease-in-out;
+      /* Transición suave para todo */
       will-change: opacity, background-image;
     }
 
-    /* --- CLASES DE TRANSICIÓN SUAVE --- */
+    /* --- CLASES DE TRANSICIÓN SUAVE (Texto e Imagen) --- */
     .visual-transition {
       transition: opacity 0.8s ease-in-out;
       opacity: 1;
@@ -125,7 +123,6 @@
     .cover img {
       width: 100%; height: 100%; object-fit: cover;
       display: block; 
-      /* La transición se maneja con la clase .visual-transition */
     }
 
     /* --- LIVE INDICATOR --- */
@@ -185,7 +182,6 @@
       font-weight: bold; 
       display: inline-block;
       text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-      transition: color 0.5s ease; /* Suavizar cambios de color */
     }
 
     .scrolling-text {
@@ -204,7 +200,6 @@
       font-size: 18px; color: #bbb; margin-bottom: 30px; text-align: center;
       font-weight: 300; text-transform: none; letter-spacing: 1px;
       width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-      transition: color 0.5s ease;
     }
 
     .controls button {
@@ -265,7 +260,7 @@
       <div class="live-dot"></div>
       LIVE
     </div>
-    <!-- Imagen por defecto actualizada + clase de transición -->
+    <!-- Imagen visual (visible) -->
     <img id="albumArt" class="visual-transition" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png" alt="Album Art" />
   </div>
 
@@ -274,12 +269,18 @@
     <!-- CANVAS WINAMP -->
     <canvas id="winampVis" width="40" height="30"></canvas>
 
-    <!-- Contenedor del título con lógica de marquesina -->
+    <!-- FUENTE DE DATOS OCULTA (Aquí actualiza Centovacast) -->
+    <div id="data-source" style="display: none;">
+        <div id="trackTitleSource" class="cc_streaminfo" data-type="tracktitle" data-username="robinson"></div>
+        <div id="trackArtistSource" class="cc_streaminfo" data-type="trackartist" data-username="robinson"></div>
+    </div>
+
+    <!-- ELEMENTOS VISUALES (Nosotros controlamos la transición) -->
     <div class="song-title-container">
-        <div id="trackTitle" class="song-title cc_streaminfo" data-type="tracktitle" data-username="robinson">Conectando...</div>
+        <div id="displayTitle" class="song-title visual-transition">Conectando...</div>
     </div>
     
-    <div id="trackArtist" class="artist-name cc_streaminfo" data-type="trackartist" data-username="robinson">Radiochar</div>
+    <div id="displayArtist" class="artist-name visual-transition">Radiochar</div>
     
     <div class="controls">
       <button id="playPause"><i class="fas fa-play-circle"></i></button>
@@ -311,8 +312,13 @@
   const volume = document.getElementById('volume');
   const icon = playPauseBtn.querySelector('i');
   
-  const artistElement = document.getElementById('trackArtist');
-  const titleElement = document.getElementById('trackTitle');
+  // Elementos OCULTOS (Fuente)
+  const sourceTitle = document.getElementById('trackTitleSource');
+  const sourceArtist = document.getElementById('trackArtistSource');
+
+  // Elementos VISIBLES (Destino)
+  const displayTitle = document.getElementById('displayTitle');
+  const displayArtist = document.getElementById('displayArtist');
   const albumArt = document.getElementById('albumArt');
   const bgBlur = document.getElementById('bgBlur');
 
@@ -451,52 +457,48 @@
   }
 
   function checkMarquee() {
-    const titleElement = document.getElementById('trackTitle');
     const container = document.querySelector('.song-title-container');
-    if (!titleElement || !container) return;
+    if (!displayTitle || !container) return;
 
-    titleElement.classList.remove('scrolling-text');
-    titleElement.style.removeProperty('--scroll-distance');
+    displayTitle.classList.remove('scrolling-text');
+    displayTitle.style.removeProperty('--scroll-distance');
 
-    if (titleElement.scrollWidth > container.offsetWidth) {
-      const distance = (titleElement.scrollWidth - container.offsetWidth + 20) * -1;
-      titleElement.style.setProperty('--scroll-distance', `${distance}px`);
-      titleElement.classList.add('scrolling-text');
+    if (displayTitle.scrollWidth > container.offsetWidth) {
+      const distance = (displayTitle.scrollWidth - container.offsetWidth + 20) * -1;
+      displayTitle.style.setProperty('--scroll-distance', `${distance}px`);
+      displayTitle.classList.add('scrolling-text');
     }
   }
 
   // --- CONTROL DE ESTADO DE CANCIÓN ---
-  let lastSongKey = ""; // Para evitar parpadeos si la canción no ha cambiado
+  let lastSongKey = ""; 
 
   async function updateInfo() {
-    let artist = artistElement.innerText.trim();
-    let title = titleElement.innerText.trim();
+    // 1. LEER DATOS DE LA FUENTE OCULTA
+    let artist = sourceArtist.innerText.trim();
+    let title = sourceTitle.innerText.trim();
     
-    // Formatear artista
+    // Si la fuente está vacía (carga inicial), no hacemos nada
+    if (!artist || !title) return;
+
+    // Formatear texto del artista
     const formattedArtist = toTitleCase(artist);
-    if (artist !== formattedArtist && !artist.includes("Radio Online")) {
-        artistElement.innerText = formattedArtist;
-        artist = formattedArtist;
+    
+    // Generar llave única
+    const currentKey = `${formattedArtist}-${title}`;
+    
+    // Si la canción NO ha cambiado, solo actualizamos marquesina y salimos
+    if (currentKey === lastSongKey) {
+        checkMarquee();
+        return;
     }
     
-    // Verificar Scroll
-    checkMarquee();
-
-    if (!artist || !title || title.includes('Conectando') || artist.includes('Radio Online')) return;
-
-    // Generar llave única para saber si cambió la canción
-    const currentKey = `${artist}-${title}`;
-    
-    // Si es la misma canción que ya procesamos, NO hacemos nada (ahorra recursos)
-    if (currentKey === lastSongKey) return;
-    
-    // ¡Canción Nueva Detectada!
+    // ¡NUEVA CANCIÓN DETECTADA!
     lastSongKey = currentKey;
 
-    // Buscar en iTunes
+    // 2. BUSCAR NUEVA IMAGEN (En segundo plano)
     const query = encodeURIComponent(`${artist} ${title}`);
     const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
-    
     let newCoverUrl = DEFAULT_COVER;
 
     try {
@@ -505,38 +507,48 @@
       if (data.results.length > 0) {
         newCoverUrl = data.results[0].artworkUrl100.replace('100x100bb', '600x600bb');
       }
-    } catch (error) { 
-      // Si falla, se queda con DEFAULT_COVER
-    }
+    } catch (error) { /* Fallback */ }
 
-    // --- TRANSICIÓN SUAVE DE IMAGEN ---
-    // 1. Pre-cargar imagen en memoria para evitar parpadeo blanco
+    // 3. INICIAR TRANSICIÓN (FADE OUT)
+    // Agregamos clase para desvanecer Texto e Imagen
+    displayTitle.classList.add('fading-out');
+    displayArtist.classList.add('fading-out');
+    albumArt.classList.add('fading-out');
+    bgBlur.classList.add('fading-out');
+
+    // 4. PRE-CARGAR IMAGEN
     const imgLoader = new Image();
     imgLoader.src = newCoverUrl;
     
-    imgLoader.onload = () => {
-      // 2. Imagen lista. Iniciamos Fade Out (Desvanecer)
-      albumArt.classList.add('fading-out');
-      bgBlur.classList.add('fading-out');
-
-      // 3. Esperar que termine la animación de salida (800ms)
-      setTimeout(() => {
-        // 4. Cambiar la fuente de la imagen (invisiblemente)
+    // Cuando la imagen esté lista (o tras un timeout de seguridad) actualizamos
+    // Usamos un pequeño delay (800ms) para que coincida con la animación CSS
+    setTimeout(() => {
+        // A. ACTUALIZAR CONTENIDO (Invisiblemente)
+        displayTitle.innerText = title;
+        displayArtist.innerText = formattedArtist;
+        
         albumArt.src = newCoverUrl;
         bgBlur.style.backgroundImage = `url('${newCoverUrl}')`;
 
-        // 5. Iniciar Fade In (Aparecer)
+        // B. RECALCULAR MARQUESINA (Con el nuevo texto)
+        checkMarquee();
+
+        // C. INICIAR APARICIÓN (FADE IN)
+        displayTitle.classList.remove('fading-out');
+        displayArtist.classList.remove('fading-out');
         albumArt.classList.remove('fading-out');
         bgBlur.classList.remove('fading-out');
-      }, 800); // Debe coincidir con el tiempo CSS (.visual-transition)
-    };
+
+    }, 800); // 800ms = tiempo de transition en CSS
   }
 
-  const observer = new MutationObserver(() => { setTimeout(updateInfo, 1000); });
-  if(titleElement) {
-    observer.observe(titleElement, { childList: true, characterData: true, subtree: true });
+  // Observar cambios en el elemento OCULTO
+  const observer = new MutationObserver(() => { setTimeout(updateInfo, 500); });
+  if(sourceTitle) {
+    observer.observe(sourceTitle, { childList: true, characterData: true, subtree: true });
   }
   
+  // Arranque inicial
   setTimeout(updateInfo, 2000);
   window.addEventListener('resize', checkMarquee);
 
