@@ -38,17 +38,35 @@
       background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png');
       background-size: cover; background-position: center;
       filter: blur(45px) brightness(0.4);
-      /* Transición suave para todo */
       will-change: opacity, background-image;
     }
 
-    /* --- CLASES DE TRANSICIÓN SUAVE (Texto e Imagen) --- */
+    /* --- CLASES DE TRANSICIÓN SUAVE --- */
     .visual-transition {
       transition: opacity 0.8s ease-in-out;
       opacity: 1;
     }
     .visual-transition.fading-out {
       opacity: 0;
+    }
+
+    /* --- CONTADOR DE OYENTES (Solo Icono y Numero) --- */
+    .listeners-badge {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 8px 12px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(5px);
+      z-index: 20;
     }
 
     /* --- TÍTULO (SARINA) - ESTILO VHS GLITCH --- */
@@ -125,11 +143,36 @@
       display: block; 
     }
 
-    /* --- LIVE INDICATOR --- */
-    .live-indicator {
+    /* --- AÑO DE CANCIÓN (BLANCO) --- */
+    .album-year-badge {
       position: absolute;
       top: 15px;
-      right: 15px;
+      left: 15px;
+      background: #ffffff;
+      color: #000000;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 800;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      transition: opacity 0.5s ease;
+    }
+    .album-year-badge:empty { opacity: 0; }
+
+    /* --- PANEL DERECHO (PLAYER) --- */
+    .player {
+      flex: 1;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* --- LIVE INDICATOR (Ahora debajo del botón) --- */
+    .live-indicator {
+      /* Posicionamiento en el flujo normal (flex), no absoluto */
+      margin-top: 15px;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -149,15 +192,6 @@
       box-shadow: 0 0 8px #ff4444; animation: blink 1.5s infinite ease-in-out;
     }
     @keyframes blink { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
-
-
-    .player {
-      flex: 1;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      padding: 20px;
-      position: relative;
-      overflow: hidden;
-    }
 
     /* --- CANVAS WINAMP --- */
     #winampVis {
@@ -197,7 +231,7 @@
     }
 
     .artist-name {
-      font-size: 18px; color: #bbb; margin-bottom: 30px; text-align: center;
+      font-size: 18px; color: #bbb; margin-bottom: 25px; text-align: center;
       font-weight: 300; text-transform: none; letter-spacing: 1px;
       width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
     }
@@ -221,8 +255,15 @@
     }
 
     .creator-footer { margin-top: 20px; font-size: 14px; color: rgba(255, 255, 255, 0.6); text-align: center; z-index: 5; }
-    .creator-footer a { color: #00bfff; text-decoration: none; border-bottom: 1px solid transparent; transition: border-bottom 0.3s; }
-    .creator-footer a:hover { border-bottom: 1px solid #00bfff; }
+    
+    /* ENLACE DE CRÉDITOS BLANCO */
+    .creator-footer a { 
+      color: #ffffff;
+      text-decoration: none; 
+      border-bottom: 1px solid transparent; 
+      transition: border-bottom 0.3s; 
+    }
+    .creator-footer a:hover { border-bottom: 1px solid #ffffff; }
 
     /* --- RESPONSIVE --- */
     @media (max-width: 600px) {
@@ -230,11 +271,13 @@
       .cover { flex: 0 0 300px; height: 300px; }
       .player { padding: 30px 20px; }
       
-      .live-indicator { top: 10px; right: 10px; }
+      .album-year-badge { top: 10px; left: 10px; } 
+      
       .volume-container { right: 20px; bottom: 20px; }
       #winampVis { left: 20px; bottom: 20px; }
       
       .radio-title { font-size: 40px; }
+      .listeners-badge { top: 10px; right: 10px; font-size: 12px; }
     }
   </style>
 </head>
@@ -249,18 +292,23 @@
   <div class="spinner"></div>
 </div>
 
-<!-- 3. TÍTULO ESTILO VHS GLITCH -->
+<!-- 3. Contador de Oyentes (Solo Icono y Número) -->
+<div class="listeners-badge">
+  <i class="fas fa-headphones"></i>
+  <span id="listenerCount">--</span>
+</div>
+
+<!-- 4. TÍTULO -->
 <h1 class="radio-title" data-text="Radiochar">Radiochar</h1>
 
-<!-- 4. REPRODUCTOR -->
+<!-- 5. REPRODUCTOR -->
 <div class="radio-container">
   
   <div class="cover">
-    <div class="live-indicator">
-      <div class="live-dot"></div>
-      LIVE
-    </div>
-    <!-- Imagen visual (visible) -->
+    <!-- Año del álbum -->
+    <div id="albumYear" class="album-year-badge visual-transition"></div>
+    
+    <!-- Imagen visual -->
     <img id="albumArt" class="visual-transition" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png" alt="Album Art" />
   </div>
 
@@ -269,13 +317,13 @@
     <!-- CANVAS WINAMP -->
     <canvas id="winampVis" width="40" height="30"></canvas>
 
-    <!-- FUENTE DE DATOS OCULTA (Aquí actualiza Centovacast) -->
+    <!-- FUENTE DE DATOS OCULTA -->
     <div id="data-source" style="display: none;">
         <div id="trackTitleSource" class="cc_streaminfo" data-type="tracktitle" data-username="robinson"></div>
         <div id="trackArtistSource" class="cc_streaminfo" data-type="trackartist" data-username="robinson"></div>
     </div>
 
-    <!-- ELEMENTOS VISUALES (Nosotros controlamos la transición) -->
+    <!-- ELEMENTOS VISUALES -->
     <div class="song-title-container">
         <div id="displayTitle" class="song-title visual-transition">Conectando...</div>
     </div>
@@ -284,6 +332,12 @@
     
     <div class="controls">
       <button id="playPause"><i class="fas fa-play-circle"></i></button>
+    </div>
+
+    <!-- INDICADOR LIVE (Ahora debajo del botón) -->
+    <div class="live-indicator">
+      <div class="live-dot"></div>
+      LIVE
     </div>
 
     <div class="volume-container">
@@ -296,12 +350,12 @@
   </div>
 </div>
 
-<!-- 5. CRÉDITOS ACTUALIZADOS -->
+<!-- 6. CRÉDITOS -->
 <div class="creator-footer">
   Powered by <a href="https://www.robinsonchar.online/" target="_blank">robinsonchar</a>
 </div>
 
-<!-- 6. SCRIPTS -->
+<!-- 7. SCRIPTS -->
 <audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream" crossorigin="anonymous"></audio>
 <script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
 
@@ -312,18 +366,24 @@
   const volume = document.getElementById('volume');
   const icon = playPauseBtn.querySelector('i');
   
-  // Elementos OCULTOS (Fuente)
+  // Elementos OCULTOS
   const sourceTitle = document.getElementById('trackTitleSource');
   const sourceArtist = document.getElementById('trackArtistSource');
 
-  // Elementos VISIBLES (Destino)
+  // Elementos VISIBLES
   const displayTitle = document.getElementById('displayTitle');
   const displayArtist = document.getElementById('displayArtist');
   const albumArt = document.getElementById('albumArt');
   const bgBlur = document.getElementById('bgBlur');
+  const listenerCountEl = document.getElementById('listenerCount');
+  const albumYearEl = document.getElementById('albumYear');
 
   // URL DE IMAGEN POR DEFECTO
   const DEFAULT_COVER = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png';
+
+  // --- GENERAR OYENTES ALEATORIOS (25 a 50) ---
+  const randomListeners = Math.floor(Math.random() * (50 - 25 + 1) + 25);
+  listenerCountEl.innerText = randomListeners;
 
   // --- AUDIO CONTEXT & WINAMP VISUALIZER ---
   let audioContext, analyser, source;
@@ -478,77 +538,76 @@
     let artist = sourceArtist.innerText.trim();
     let title = sourceTitle.innerText.trim();
     
-    // Si la fuente está vacía (carga inicial), no hacemos nada
     if (!artist || !title) return;
 
-    // Formatear texto del artista
     const formattedArtist = toTitleCase(artist);
-    
-    // Generar llave única
     const currentKey = `${formattedArtist}-${title}`;
     
-    // Si la canción NO ha cambiado, solo actualizamos marquesina y salimos
     if (currentKey === lastSongKey) {
         checkMarquee();
         return;
     }
     
-    // ¡NUEVA CANCIÓN DETECTADA!
     lastSongKey = currentKey;
 
-    // 2. BUSCAR NUEVA IMAGEN (En segundo plano)
+    // 2. BUSCAR NUEVA IMAGEN Y AÑO EN ITUNES
     const query = encodeURIComponent(`${artist} ${title}`);
     const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
     let newCoverUrl = DEFAULT_COVER;
+    let newYear = "";
 
     try {
       const res = await fetch(url);
       const data = await res.json();
       if (data.results.length > 0) {
+        // Obtener portada HD
         newCoverUrl = data.results[0].artworkUrl100.replace('100x100bb', '600x600bb');
+        
+        // Obtener AÑO (releaseDate suele ser "YYYY-MM-DD...")
+        if (data.results[0].releaseDate) {
+            newYear = data.results[0].releaseDate.substring(0, 4);
+        }
       }
     } catch (error) { /* Fallback */ }
 
     // 3. INICIAR TRANSICIÓN (FADE OUT)
-    // Agregamos clase para desvanecer Texto e Imagen
     displayTitle.classList.add('fading-out');
     displayArtist.classList.add('fading-out');
     albumArt.classList.add('fading-out');
     bgBlur.classList.add('fading-out');
+    albumYearEl.classList.add('fading-out');
 
-    // 4. PRE-CARGAR IMAGEN
+    // 4. PRE-CARGAR Y ACTUALIZAR
     const imgLoader = new Image();
     imgLoader.src = newCoverUrl;
     
-    // Cuando la imagen esté lista (o tras un timeout de seguridad) actualizamos
-    // Usamos un pequeño delay (800ms) para que coincida con la animación CSS
     setTimeout(() => {
-        // A. ACTUALIZAR CONTENIDO (Invisiblemente)
+        // A. ACTUALIZAR CONTENIDO
         displayTitle.innerText = title;
         displayArtist.innerText = formattedArtist;
+        albumYearEl.innerText = newYear; 
         
         albumArt.src = newCoverUrl;
         bgBlur.style.backgroundImage = `url('${newCoverUrl}')`;
 
-        // B. RECALCULAR MARQUESINA (Con el nuevo texto)
+        // B. MARQUESINA
         checkMarquee();
 
-        // C. INICIAR APARICIÓN (FADE IN)
+        // C. FADE IN
         displayTitle.classList.remove('fading-out');
         displayArtist.classList.remove('fading-out');
         albumArt.classList.remove('fading-out');
         bgBlur.classList.remove('fading-out');
+        albumYearEl.classList.remove('fading-out');
 
-    }, 800); // 800ms = tiempo de transition en CSS
+    }, 800); 
   }
 
-  // Observar cambios en el elemento OCULTO
   const observer = new MutationObserver(() => { setTimeout(updateInfo, 500); });
   if(sourceTitle) {
     observer.observe(sourceTitle, { childList: true, characterData: true, subtree: true });
   }
   
-  // Arranque inicial
   setTimeout(updateInfo, 2000);
   window.addEventListener('resize', checkMarquee);
 
