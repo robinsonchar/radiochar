@@ -5,544 +5,695 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RADIOCHAR - Hits 80s/90s</title>
   
-  <!-- 1. Iconos (FontAwesome) -->
+  <!-- 1. Iconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   
-  <!-- 2. Fuente para el Título (Sarina) -->
+  <!-- 2. Fuentes (Sarina para logo, Poppins para interfaz moderna) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sarina&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* --- RESET Y BASE --- */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #121212;
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
       color: #fff;
-      overflow: hidden;
-      height: 100vh;
-      width: 100vw;
+      overflow-x: hidden;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       position: relative;
+      padding-bottom: 30px;
     }
 
-    /* --- FONDO AMBIENTAL (Blur) --- */
+    /* --- FONDO AMBIENTAL --- */
     .background-blur {
       position: fixed; top: -10%; left: -10%; width: 120%; height: 120%;
       z-index: -1;
       background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png');
       background-size: cover; background-position: center;
-      filter: blur(45px) brightness(0.4);
+      filter: blur(50px) brightness(0.3);
       will-change: opacity, background-image;
+      transition: background-image 1s ease-in-out;
     }
 
-    /* --- CLASES DE TRANSICIÓN SUAVE --- */
-    .visual-transition {
-      transition: opacity 0.8s ease-in-out;
-      opacity: 1;
-    }
-    .visual-transition.fading-out {
-      opacity: 0;
-    }
+    /* --- TRANSICIONES --- */
+    .visual-transition { transition: opacity 0.8s ease-in-out; opacity: 1; }
+    .visual-transition.fading-out { opacity: 0; }
 
-    /* --- CONTADOR DE OYENTES (Sup. Derecha) --- */
+    /* --- ELEMENTOS FLOTANTES --- */
     .listeners-badge {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      padding: 8px 12px;
+      position: absolute; top: 20px; right: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 6px 14px;
       border-radius: 20px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #ffffff;
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      backdrop-filter: blur(5px);
+      display: flex; align-items: center; gap: 8px;
+      font-size: 13px; font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
       z-index: 20;
     }
 
-    /* --- INDICADOR LIVE (Sup. Izquierda - GLOBAL - ESTILO CLÁSICO) --- */
-    /* Fondo negro, punto rojo, texto blanco */
     .live-indicator-global {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      font-size: 14px;
-      font-weight: 700;
-      color: #ffffff; /* Texto Blanco */
-      background: #000000; /* Fondo Negro */
-      padding: 6px 12px;
-      border-radius: 4px;
+      position: absolute; top: 20px; left: 20px;
+      display: flex; align-items: center; gap: 6px;
+      font-size: 13px; font-weight: 800; letter-spacing: 1px;
+      color: #fff; background: #e74c3c; /* Rojo Radio */
+      /* Aumentado a 20px para hacerlo más redondo */
+      padding: 6px 12px; border-radius: 20px; 
       z-index: 20;
-      letter-spacing: 1px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
     }
-
     .live-dot {
-      width: 10px; height: 10px; border-radius: 50%; 
-      background-color: #ff0000; /* Punto Rojo */
-      box-shadow: 0 0 5px #ff0000;
-      animation: blink 1.5s infinite ease-in-out;
+      width: 8px; height: 8px; border-radius: 50%; background-color: #fff;
+      animation: blink 1.5s infinite;
     }
-    @keyframes blink { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.8); } }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
 
-    /* --- TÍTULO (SARINA) - ESTILO VHS GLITCH --- */
+    /* --- TÍTULO PRINCIPAL (Logo) --- */
     .radio-title {
       font-family: 'Sarina', cursive;
-      font-size: 70px;
-      color: #ffffff;
+      font-size: 60px;
+      color: #fff;
       text-align: center;
       z-index: 5;
-      letter-spacing: 2px;
-      margin-bottom: 30px;
-      position: relative;
-      text-shadow: 3px 0px 0px rgba(255, 0, 0, 0.8), -3px 0px 0px rgba(0, 0, 255, 0.8);
-      animation: vhsGlitch 3s infinite alternate-reverse;
-    }
-
-    @keyframes vhsGlitch {
-      0% { text-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,0,255,0.8); transform: skew(0deg); }
-      15% { text-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,0,255,0.8); transform: skew(0deg); }
-      16% { text-shadow: -3px 0 rgba(255,0,0,0.8), 3px 0 rgba(0,0,255,0.8); transform: skew(-2deg); }
-      17% { text-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,0,255,0.8); transform: skew(0deg); }
-      40% { opacity: 1; }
-      41% { opacity: 0.9; }
-      42% { opacity: 1; }
-      65% { text-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,0,255,0.8); transform: skew(0deg); }
-      66% { text-shadow: 3px 2px rgba(255,0,0,0.8), -3px -2px rgba(0,0,255,0.8); transform: skew(1deg); }
-      67% { text-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,0,255,0.8); transform: skew(0deg); }
-      100% { text-shadow: 3px 0 rgba(255,0,0,0.8), -3px 0 rgba(0,0,255,0.8); transform: skew(0deg); }
-    }
-
-    .radio-title::after {
-      content: attr(data-text);
-      position: absolute; left: 0; top: 0; width: 100%; height: 100%;
-      background: repeating-linear-gradient(to bottom, transparent 0px, transparent 2px, rgba(0, 0, 0, 0.3) 2px, rgba(0, 0, 0, 0.3) 4px);
-      -webkit-background-clip: text; background-clip: text; color: transparent;
-      pointer-events: none; opacity: 0.7;
+      margin-top: 50px; margin-bottom: 25px;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.5);
     }
 
     /* --- PANTALLA DE CARGA --- */
     .splash-screen {
       position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: #000;
+      background: #0f0f0f;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       z-index: 100;
-      animation: fadeOut 1s 3s forwards;
-      pointer-events: none;
+      animation: fadeOut 1s 3s forwards; pointer-events: none;
     }
-    .splash-screen h1 { font-family: 'Sarina', cursive; font-size: 30px; color: #fff; margin-bottom: 20px; }
-    .spinner { border: 4px solid #333; border-top: 4px solid #fff; border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; }
+    .spinner { border: 3px solid #333; border-top: 3px solid #fff; border-radius: 50%; width: 40px; height: 40px; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
 
-    /* --- CONTENEDOR DEL REPRODUCTOR --- */
+    /* --- CONTENEDOR PRINCIPAL --- */
     .radio-container {
       display: flex;
-      width: 800px; max-width: 95%; height: 280px;
-      background: rgba(20, 20, 20, 0.85);
-      backdrop-filter: blur(12px);
-      border-radius: 16px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7);
+      width: 1000px; max-width: 95%; height: 320px;
+      background: rgba(30, 30, 30, 0.6);
+      backdrop-filter: blur(20px);
+      border-radius: 20px;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
       overflow: hidden;
       position: relative;
-      border: 1px solid rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      margin-bottom: 40px;
     }
 
+    /* --- PORTADA --- */
     .cover {
-      flex: 0 0 280px;
-      background-color: #000;
+      flex: 0 0 320px;
       position: relative;
       overflow: hidden;
     }
     .cover img {
       width: 100%; height: 100%; object-fit: cover;
-      display: block; 
+      display: block;
+      transition: transform 0.5s ease;
     }
-
-    /* --- AÑO DE CANCIÓN (BLANCO - SOBRE LA PORTADA) --- */
+    
     .album-year-badge {
-      position: absolute;
-      top: 15px; /* Esquina superior izq de la portada */
-      left: 15px;
-      background: #ffffff;
-      color: #000000;
-      padding: 4px 10px;
-      border-radius: 4px;
-      font-size: 13px;
-      font-weight: 800;
-      z-index: 10;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
-      transition: opacity 0.5s ease;
+      position: absolute; bottom: 15px; left: 15px;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      padding: 4px 12px; border-radius: 20px;
+      font-size: 12px; font-weight: 600;
+      z-index: 10; backdrop-filter: blur(4px);
+      border: 1px solid rgba(255,255,255,0.1);
     }
-    .album-year-badge:empty { opacity: 0; }
 
-    /* --- PANEL DERECHO (PLAYER) --- */
+    /* --- BOTÓN WIKI (Icono Normal) --- */
+    .wiki-btn {
+      position: absolute;
+      top: 15px;  
+      right: 15px; 
+      width: 32px;
+      height: 32px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 20; 
+      backdrop-filter: blur(5px);
+      font-size: 14px;
+      cursor: pointer; 
+    }
+    .wiki-btn:hover {
+      background: rgba(255, 255, 255, 0.9);
+      color: #000;
+      transform: scale(1.1);
+      border-color: #fff;
+    }
+
+    /* --- MODAL POPUP --- */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; visibility: hidden;
+      transition: all 0.4s ease;
+    }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+
+    .modal-content {
+      background: #1a1a1a;
+      width: 700px;
+      max-width: 95%;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      transform: translateY(20px);
+      transition: transform 0.4s ease;
+      position: relative;
+    }
+    .modal-overlay.active .modal-content { transform: translateY(0); }
+
+    .modal-close {
+      position: absolute; top: 15px; right: 15px;
+      background: none; border: none; color: #fff;
+      font-size: 20px; cursor: pointer; opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+    .modal-close:hover { opacity: 1; }
+
+    .modal-title { font-size: 22px; font-weight: 700; margin-bottom: 10px; color: #fff; }
+    .modal-subtitle { font-size: 14px; color: #00c6ff; margin-bottom: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    
+    .modal-body {
+      font-size: 14px; line-height: 1.6; color: #ccc;
+      max-height: 300px; overflow-y: auto;
+      padding-right: 10px;
+    }
+    .modal-body::-webkit-scrollbar { width: 6px; }
+    .modal-body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 3px; }
+
+    .modal-meta {
+      margin-top: 20px; padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex; gap: 20px; font-size: 13px; color: #888;
+    }
+    .modal-meta span { display: block; color: #fff; font-weight: 500; margin-top: 3px; }
+
+
+    /* --- PANEL DERECHO --- */
     .player {
       flex: 1;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      padding: 20px;
+      min-width: 0; 
+      display: flex; flex-direction: column;
+      justify-content: center;
+      padding: 30px 40px;
       position: relative;
-      overflow: hidden;
     }
 
-    /* --- CANVAS VISUALIZADOR (30 Barras, Espejo) --- */
     #winampVis {
-      position: absolute;
-      bottom: 0; /* Pegado abajo */
-      left: 0;
-      width: 100%;  
-      height: 60px; /* Altura controlada para no tapar el botón */
-      z-index: 0;   /* Detrás de los controles */
-      pointer-events: none;
-      opacity: 0.07; /* 7% Opacidad (Super Sutil) */
+      position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0; pointer-events: none; opacity: 0.1;
     }
 
-    /* --- ESTILOS DEL TÍTULO DE CANCIÓN --- */
-    .song-title-container {
+    /* --- INFO DE LA CANCIÓN --- */
+    .info-wrapper {
+      z-index: 5;
+      text-align: left;
+      margin-bottom: 25px;
       width: 100%;
       overflow: hidden;
-      white-space: nowrap;
-      margin-bottom: 8px;
-      text-align: center;
-      position: relative;
-      z-index: 5;
+    }
+
+    .song-title-container {
+      width: 100%; 
+      white-space: nowrap; 
+      overflow: hidden;
+    }
+
+    .song-title-container.is-scrolling {
+      mask-image: linear-gradient(to right, black 90%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
     }
 
     .song-title {
-      font-size: 26px; 
-      font-weight: bold; 
+      font-size: 45px; font-weight: 700; color: #fff;
       display: inline-block;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-    }
-
-    .scrolling-text {
-      animation: scroll-text 10s linear infinite alternate;
-      padding-left: 0;
-    }
-
-    @keyframes scroll-text {
-      0% { transform: translateX(0); }
-      20% { transform: translateX(0); }
-      80% { transform: translateX(var(--scroll-distance)); }
-      100% { transform: translateX(var(--scroll-distance)); }
+      margin-bottom: 5px;
+      padding-right: 20px; 
     }
 
     .artist-name {
-      font-size: 18px; color: #bbb; margin-bottom: 25px; text-align: center;
-      font-weight: 300; text-transform: none; letter-spacing: 1px;
-      width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      font-size: 18px; color: #aaa; font-weight: 400;
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    /* Animación Marquesina */
+    .scrolling-text { 
+      animation: scroll-text 15s linear infinite alternate; 
+    }
+    
+    @keyframes scroll-text {
+      0%, 15% { transform: translateX(0); }
+      85%, 100% { transform: translateX(var(--scroll-distance)); }
+    }
+
+    /* --- LÍNEA DE TIEMPO --- */
+    .timeline-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 25px;
       z-index: 5;
     }
 
-    .controls {
-        position: relative;
-        z-index: 10;
-        margin-bottom: 20px; /* Espacio para separar de las barras */
+    .time-display {
+      font-size: 12px; font-weight: 600; color: #ddd; font-variant-numeric: tabular-nums;
+      min-width: 40px;
     }
 
-    .controls button {
-      background: none; border: none;
-      font-size: 75px; color: #fff; cursor: pointer;
-      transition: all 0.3s ease;
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
-    }
-    .controls button:hover { transform: scale(1.1); color: #00bfff; }
-
-    .volume-container {
-      position: absolute; bottom: 25px; right: 30px;
-      display: flex; flex-direction: column; align-items: center; gap: 8px;
-      z-index: 10;
-    }
-    .volume-bar input[type="range"] {
-      writing-mode: bt-lr; -webkit-appearance: slider-vertical;
-      width: 6px; height: 80px; accent-color: #ffffff; cursor: pointer;
-      background: rgba(255,255,255,0.1); border-radius: 3px;
+    .progress-bar-bg {
+      flex: 1;
+      min-width: 0;
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      overflow: hidden;
+      position: relative;
     }
 
-    .creator-footer { margin-top: 20px; font-size: 14px; color: rgba(255, 255, 255, 0.6); text-align: center; z-index: 5; }
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      border-radius: 3px;
+      transition: width 1s linear;
+    }
+
+    /* --- CONTROLES --- */
+    .controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      width: 100%;
+    }
+
+    .play-btn-wrapper {
+      position: relative;
+      width: 60px; height: 60px;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    .play-btn {
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      background: #fff;
+      border: none;
+      color: #121212;
+      font-size: 24px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 15px rgba(255,255,255,0.3);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      padding-left: 4px;
+    }
     
-    .creator-footer a { 
-      color: #ffffff;
-      text-decoration: none; 
-      border-bottom: 1px solid transparent; 
-      transition: border-bottom 0.3s; 
-    }
-    .creator-footer a:hover { border-bottom: 1px solid #ffffff; }
+    .play-btn:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(255,255,255,0.5); }
+    .play-btn.playing { padding-left: 0; background: #00c6ff; color: #fff; }
+
+    /* --- FOOTER --- */
+    .creator-footer { margin-top: 10px; font-size: 12px; color: rgba(255, 255, 255, 0.4); text-align: center; z-index: 5; }
+    .creator-footer a { color: #fff; text-decoration: none; opacity: 0.7; }
+    .creator-footer a:hover { opacity: 1; text-decoration: underline; }
 
     /* --- RESPONSIVE --- */
     @media (max-width: 600px) {
       .radio-container { flex-direction: column; height: auto; width: 90%; }
       .cover { flex: 0 0 300px; height: 300px; }
-      .player { padding: 30px 20px; }
+      .player { padding: 25px; align-items: center; text-align: center; }
+      .info-wrapper { text-align: center; }
+      .controls-row { justify-content: center; gap: 20px; }
       
-      .album-year-badge { top: 10px; left: 10px; } 
-      
-      .volume-container { right: 20px; bottom: 20px; }
-      
-      /* En móvil, el visualizador también cubre el fondo de la portada */
-      #winampVis { height: 25%; }
-      
-      .radio-title { font-size: 40px; }
-      .listeners-badge { top: 10px; right: 10px; font-size: 12px; }
-      .live-indicator-global { top: 10px; left: 10px; font-size: 12px; }
+      .radio-title { font-size: 40px; margin-top: 80px; }
+      .listeners-badge { top: 10px; right: 10px; font-size: 11px; }
+      .live-indicator-global { top: 10px; left: 10px; font-size: 11px; }
     }
   </style>
 </head>
 <body>
 
-<!-- 1. Fondo Blur -->
+<!-- Fondo Blur -->
 <div class="background-blur visual-transition" id="bgBlur"></div>
 
-<!-- 2. Pantalla de carga -->
+<!-- Splash Screen -->
 <div class="splash-screen">
-  <h1>Cargando...</h1>
+  <h1>Sintonizando...</h1>
   <div class="spinner"></div>
 </div>
 
-<!-- 3. Elementos Globales (Sup. Izquierda y Derecha) -->
-<div class="live-indicator-global">
-  <div class="live-dot"></div>
-  LIVE
+<!-- Modal Pop-up -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    
+    <div class="modal-title" id="modalArtist">Artista</div>
+    <div class="modal-subtitle" id="modalTitle">Canción</div>
+    
+    <div class="modal-body" id="modalBio">
+      Cargando información...
+    </div>
+
+    <div class="modal-meta">
+        <div>
+            Álbum
+            <span id="modalAlbum">--</span>
+        </div>
+        <div>
+            Género
+            <span id="modalGenre">--</span>
+        </div>
+    </div>
+  </div>
 </div>
 
-<div class="listeners-badge">
-  <i class="fas fa-headphones"></i>
-  <span id="listenerCount">--</span>
-</div>
+<!-- Indicadores Superiores -->
+<div class="live-indicator-global"><div class="live-dot"></div>LIVE</div>
+<div class="listeners-badge"><i class="fas fa-headphones"></i><span id="listenerCount">--</span></div>
 
-<!-- 4. TÍTULO -->
+<!-- Título -->
 <h1 class="radio-title" data-text="Radiochar">Radiochar</h1>
 
-<!-- 5. REPRODUCTOR -->
+<!-- REPRODUCTOR PRINCIPAL -->
 <div class="radio-container">
   
+  <!-- Lado Izquierdo: Portada -->
   <div class="cover">
-    <!-- Año del álbum (Sobre la portada) -->
-    <div id="albumYear" class="album-year-badge visual-transition"></div>
+    <div id="wikiBtn" class="wiki-btn" title="Ver reseña" onclick="openInfoModal()">
+      <i class="fas fa-info"></i>
+    </div>
     
-    <!-- Imagen visual -->
-    <img id="albumArt" class="visual-transition" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png" alt="Album Art" />
+    <div id="albumYear" class="album-year-badge visual-transition"></div>
+    <img id="albumArt" class="visual-transition" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png" alt="Cover" />
   </div>
 
+  <!-- Lado Derecho: Controles e Info -->
   <div class="player">
-    
-    <!-- CANVAS VISUALIZADOR (Fondo del Panel Derecho) -->
     <canvas id="winampVis"></canvas>
 
-    <!-- FUENTE DE DATOS OCULTA -->
+    <!-- Info Canción -->
+    <div class="info-wrapper">
+      <div class="song-title-container">
+        <div id="displayTitle" class="song-title visual-transition">Conectando...</div>
+      </div>
+      <div id="displayArtist" class="artist-name visual-transition">Radiochar</div>
+    </div>
+
+    <!-- Línea de Tiempo -->
+    <div class="timeline-container">
+      <div id="currentTime" class="time-display">00:00</div>
+      <div class="progress-bar-bg">
+        <div id="progressFill" class="progress-bar-fill"></div>
+      </div>
+      <div id="totalTime" class="time-display">--:--</div>
+    </div>
+
+    <!-- Controles -->
+    <div class="controls-row">
+      <div class="play-btn-wrapper">
+        <button id="playPause" class="play-btn">
+          <i class="fas fa-play"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Data oculta -->
     <div id="data-source" style="display: none;">
         <div id="trackTitleSource" class="cc_streaminfo" data-type="tracktitle" data-username="robinson"></div>
         <div id="trackArtistSource" class="cc_streaminfo" data-type="trackartist" data-username="robinson"></div>
     </div>
-
-    <!-- ELEMENTOS VISUALES -->
-    <div class="song-title-container">
-        <div id="displayTitle" class="song-title visual-transition">Conectando...</div>
-    </div>
-    
-    <div id="displayArtist" class="artist-name visual-transition">Radiochar</div>
-    
-    <div class="controls">
-      <button id="playPause"><i class="fas fa-play-circle"></i></button>
-    </div>
-
-    <div class="volume-container">
-      <i class="fas fa-volume-up"></i>
-      <div class="volume-bar">
-        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5" />
-      </div>
-    </div>
-    
   </div>
 </div>
 
-<!-- 6. CRÉDITOS -->
+<!-- Footer -->
 <div class="creator-footer">
   Powered by <a href="https://www.robinsonchar.online/" target="_blank">robinsonchar</a>
 </div>
 
-<!-- 7. SCRIPTS -->
+<!-- SCRIPTS -->
 <audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream" crossorigin="anonymous"></audio>
 <script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
 
 <script>
-  // --- REFERENCIAS ---
+  let isPlaying = false; 
+
   const audio = document.getElementById('radio');
   const playPauseBtn = document.getElementById('playPause');
-  const volume = document.getElementById('volume');
-  const icon = playPauseBtn.querySelector('i');
+  const playIcon = playPauseBtn.querySelector('i');
   
-  // Elementos OCULTOS
   const sourceTitle = document.getElementById('trackTitleSource');
   const sourceArtist = document.getElementById('trackArtistSource');
-
-  // Elementos VISIBLES
   const displayTitle = document.getElementById('displayTitle');
   const displayArtist = document.getElementById('displayArtist');
   const albumArt = document.getElementById('albumArt');
   const bgBlur = document.getElementById('bgBlur');
-  const listenerCountEl = document.getElementById('listenerCount');
   const albumYearEl = document.getElementById('albumYear');
+  
+  const currentTimeEl = document.getElementById('currentTime');
+  const totalTimeEl = document.getElementById('totalTime');
+  const progressFill = document.getElementById('progressFill');
 
-  // URL DE IMAGEN POR DEFECTO
+  const modalOverlay = document.getElementById('modalOverlay');
+  const modalArtist = document.getElementById('modalArtist');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalBio = document.getElementById('modalBio');
+  const modalAlbum = document.getElementById('modalAlbum');
+  const modalGenre = document.getElementById('modalGenre');
+
+  let currentArtistName = "Radiochar";
+  let currentSongName = "";
+  let currentAlbumName = "";
+  let currentGenre = "";
+
   const DEFAULT_COVER = 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSHNsDw3OZJEWNaqSm4hhstR9w8wF7TGzq_LMvnSt9ELIK_kIYyYLf_JHppvCkJNlMilGo0pKTh5XWas9cXEaR6f_GHQXi6qsn_ke6Zdpgv1imwbbkq_H9Uua9ZrdJ3hvKVlKQEf01qDxcwDEwdVFAtsXHknuMCgpno53zm2SHjgts2fhpC3MGPNU4BvJS/s16000/radiochar.online.png';
 
-  // --- GENERAR OYENTES ALEATORIOS ---
-  const randomListeners = Math.floor(Math.random() * (50 - 25 + 1) + 25);
-  listenerCountEl.innerText = randomListeners;
+  // --- VARIABLES TIMELINE ---
+  let songDurationSecs = 0;
+  let currentSecs = 0;
+  let timelineInterval;
+  let startTime = 0;
 
-  // --- AUDIO CONTEXT & VISUALIZADOR "CRAZY MIRROR" ---
-  let audioContext, analyser, source;
-  let isAudioContextSetup = false;
-  
-  const TOTAL_BARS = 30; // 30 Barras (15 por lado)
-  const HALF_BARS = TOTAL_BARS / 2; 
-  
-  let peakHeights = new Array(HALF_BARS).fill(0); 
-  const PEAK_DROP_SPEED = 1.0; // Un poco más lento para suavizar
-
-  function setupAudioContext() {
-    if (isAudioContextSetup) return;
-    try {
-      const AudioContext = window.AudioContext || window.webkitAudioContext;
-      audioContext = new AudioContext();
-      analyser = audioContext.createAnalyser();
-      source = audioContext.createMediaElementSource(audio);
-      source.connect(analyser);
-      analyser.connect(audioContext.destination);
-      analyser.fftSize = 128; 
-      isAudioContextSetup = true;
-      animateWinamp();
-    } catch (e) {
-      console.warn("AudioContext Fallback");
-      animateWinamp();
-    }
-  }
+  document.getElementById('listenerCount').innerText = Math.floor(Math.random() * (50 - 25 + 1) + 25);
 
   const canvas = document.getElementById('winampVis');
   const ctx = canvas.getContext('2d');
+  const TOTAL_BARS = 30; 
+  const HALF_BARS = TOTAL_BARS / 2; 
+  let peakHeights = new Array(HALF_BARS).fill(0); 
 
   function animateWinamp() {
     requestAnimationFrame(animateWinamp);
     
-    if (canvas.width !== canvas.clientWidth || canvas.height !== canvas.clientHeight) {
+    if (canvas.width !== canvas.clientWidth) {
         canvas.width = canvas.clientWidth;
         canvas.height = canvas.clientHeight;
     }
-
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    let frequencyData = [];
 
-    if (analyser && isPlaying && audioContext.state === 'running') {
-      const bufferLength = analyser.frequencyBinCount;
-      const dataArray = new Uint8Array(bufferLength);
-      analyser.getByteFrequencyData(dataArray);
-      
-      // Tomamos 15 muestras (HALF_BARS) para replicarlas
-      for (let i = 0; i < HALF_BARS; i++) {
-        frequencyData.push(dataArray[i]); 
-      }
-    } else {
-      if(isPlaying) {
+    let frequencyData = [];
+    if (isPlaying) {
          for(let i=0; i<HALF_BARS; i++) frequencyData.push(Math.random() * 100);
-      } else {
+    } else {
          frequencyData = new Array(HALF_BARS).fill(0);
-      }
     }
 
-    // Configuración de dibujo (Aun más delgadas)
-    const gap = 2; // Espacio mínimo
-    // Ancho total disponible
+    const gap = 3;
     const barWidth = (canvas.width - (gap * (TOTAL_BARS - 1))) / TOTAL_BARS; 
-    
-    // Color Gris Claro
-    ctx.fillStyle = 'rgba(224, 224, 224, 0.9)';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.1)'; 
 
     for (let i = 0; i < HALF_BARS; i++) {
         let intensity = frequencyData[i] || 0;
-        
-        // EFECTO PIRAMIDE (Centro alto, bordes bajos)
-        const decayFactor = 1 - (i * 0.06); // Ajustado para 15 barras
-        
-        let targetHeight = (intensity / 255) * canvas.height * decayFactor;
+        const decay = 1 - (i * 0.05); 
+        let targetHeight = (intensity / 100) * canvas.height * decay;
 
-        // Suavizado de picos
-        if (targetHeight > peakHeights[i]) {
-            peakHeights[i] = targetHeight;
-        } else {
-            peakHeights[i] -= PEAK_DROP_SPEED;
-            if (peakHeights[i] < 0) peakHeights[i] = 0;
-        }
-        
+        if (targetHeight > peakHeights[i]) peakHeights[i] = targetHeight;
+        else peakHeights[i] -= 2; 
+        if (peakHeights[i] < 0) peakHeights[i] = 0;
+
         const h = peakHeights[i];
-
-        // ESPEJO: Dibujar izquierda y derecha simétricamente desde el centro
-        const leftIndex = (HALF_BARS - 1) - i; 
-        const rightIndex = HALF_BARS + i;      
         
-        const xLeft = leftIndex * (barWidth + gap);
-        const xRight = rightIndex * (barWidth + gap);
+        const center = canvas.width / 2;
+        const xOffset = (i * (barWidth + gap)) + (gap/2);
         
-        ctx.fillRect(xLeft, canvas.height - h, barWidth, h);
-        ctx.fillRect(xRight, canvas.height - h, barWidth, h);
+        ctx.fillRect(center - xOffset - barWidth, canvas.height - h, barWidth, h); 
+        ctx.fillRect(center + xOffset, canvas.height - h, barWidth, h); 
     }
   }
+  animateWinamp();
 
-  // --- LÓGICA REPRODUCTOR ---
-  let isPlaying = false;
-  audio.volume = 0.5;
+  audio.volume = 1.0; 
 
   playPauseBtn.addEventListener('click', () => {
-    if (!isAudioContextSetup) setupAudioContext();
-    if (audioContext && audioContext.state === 'suspended') audioContext.resume();
-
     if (isPlaying) {
       audio.pause();
-      icon.classList.remove('fa-stop-circle');
-      icon.classList.add('fa-play-circle');
+      playIcon.classList.remove('fa-pause');
+      playIcon.classList.add('fa-play');
+      playPauseBtn.classList.remove('playing');
     } else {
-      audio.play().catch(e => console.error(e));
-      icon.classList.remove('fa-play-circle');
-      icon.classList.add('fa-stop-circle');
+      audio.play().catch(console.error);
+      playIcon.classList.remove('fa-play');
+      playIcon.classList.add('fa-pause');
+      playPauseBtn.classList.add('playing');
     }
     isPlaying = !isPlaying;
   });
 
-  volume.addEventListener('input', () => { audio.volume = volume.value; });
+  async function openInfoModal() {
+    modalOverlay.classList.add('active');
+    modalArtist.innerText = currentArtistName;
+    modalTitle.innerText = currentSongName;
+    modalAlbum.innerText = currentAlbumName || "Desconocido";
+    modalGenre.innerText = currentGenre || "Varios";
+    modalBio.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Buscando información de la canción...';
+
+    try {
+        const query = `${currentSongName} ${currentArtistName}`;
+        const searchUrl = `https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&origin=*`;
+        
+        const searchRes = await fetch(searchUrl);
+        const searchData = await searchRes.json();
+
+        if (searchData.query.search.length > 0) {
+            const pageTitle = searchData.query.search[0].title;
+            const summaryUrl = `https://es.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(pageTitle)}`;
+            
+            const summaryRes = await fetch(summaryUrl);
+            const summaryData = await summaryRes.json();
+
+            if (summaryData.extract) {
+                modalBio.innerText = summaryData.extract;
+            } else {
+                modalBio.innerText = "No se encontró una reseña detallada para esta canción.";
+            }
+        } else {
+             modalBio.innerText = "No se encontró información específica sobre esta canción en Wikipedia.";
+        }
+    } catch (error) {
+        console.error("Wiki Error", error);
+        modalBio.innerText = "Error al conectar con la base de datos de información.";
+    }
+  }
+
+  function closeModal() {
+    modalOverlay.classList.remove('active');
+  }
+  
+  modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) closeModal();
+  });
+
+  function initTimeline(key, durationMillis) {
+    clearInterval(timelineInterval);
+    
+    // --- LÓGICA DE SINCRONIZACIÓN RADIO ---
+    // 1. Reducción Heurística: Las radios cortan las canciones. 
+    //    Restamos 15 segundos o aplicamos un 85% de la duración de iTunes.
+    //    Esto evita que la barra se quede "corta".
+    //    Si la canción es corta (menos de 3 min), restamos menos.
+    let adjustedDuration = durationMillis;
+    if (durationMillis > 180000) { // Si > 3 mins
+         adjustedDuration = durationMillis * 0.90; // Reducir 10%
+    }
+    
+    const now = Date.now();
+    const savedData = JSON.parse(localStorage.getItem('radioCurrentSong') || '{}');
+    
+    if (savedData.key === key && savedData.startTime) {
+        startTime = savedData.startTime;
+    } else {
+        startTime = now;
+        localStorage.setItem('radioCurrentSong', JSON.stringify({
+            key: key,
+            startTime: startTime
+        }));
+    }
+
+    songDurationSecs = adjustedDuration / 1000;
+    
+    const elapsedSecs = (now - startTime) / 1000;
+    currentSecs = elapsedSecs > songDurationSecs ? songDurationSecs : elapsedSecs; 
+
+    totalTimeEl.innerText = formatTime(songDurationSecs);
+    updateUI(currentSecs, songDurationSecs);
+
+    timelineInterval = setInterval(() => {
+        const currentNow = Date.now();
+        const realElapsed = (currentNow - startTime) / 1000;
+        
+        currentSecs = realElapsed;
+
+        // Tope visual
+        if (currentSecs > songDurationSecs) {
+           currentSecs = songDurationSecs; 
+        }
+        
+        updateUI(currentSecs, songDurationSecs);
+
+    }, 1000);
+  }
+  
+  function updateUI(current, total) {
+     if(total <= 0) return;
+     currentTimeEl.innerText = formatTime(current);
+     const percent = (current / total) * 100;
+     progressFill.style.width = `${percent}%`;
+  }
+
+  function formatTime(seconds) {
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
+  }
 
   function toTitleCase(str) {
-    return str.toLowerCase().split(' ').map(function(word) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    }).join(' ');
+    return str.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   }
 
   function checkMarquee() {
     const container = document.querySelector('.song-title-container');
     if (!displayTitle || !container) return;
-
+    
     displayTitle.classList.remove('scrolling-text');
+    container.classList.remove('is-scrolling'); 
     displayTitle.style.removeProperty('--scroll-distance');
-
+    
     if (displayTitle.scrollWidth > container.offsetWidth) {
       const distance = (displayTitle.scrollWidth - container.offsetWidth + 20) * -1;
       displayTitle.style.setProperty('--scroll-distance', `${distance}px`);
+      
       displayTitle.classList.add('scrolling-text');
+      container.classList.add('is-scrolling');
     }
   }
 
-  // --- CONTROL DE ESTADO DE CANCIÓN ---
   let lastSongKey = ""; 
 
   async function updateInfo() {
@@ -554,9 +705,20 @@
     const formattedArtist = toTitleCase(artist);
     const currentKey = `${formattedArtist}-${title}`;
     
+    currentArtistName = formattedArtist;
+    currentSongName = title;
+    
     if (currentKey === lastSongKey) {
-        checkMarquee();
+        checkMarquee(); 
         return;
+    }
+    
+    // --- TRUCO VISUAL: CANCIÓN TERMINADA ---
+    // Si la canción cambia, forzamos la barra anterior al 100% 
+    // para que el usuario sienta que terminó correctamente.
+    if (lastSongKey !== "") {
+        progressFill.style.transition = "width 0.3s ease";
+        progressFill.style.width = "100%";
     }
     
     lastSongKey = currentKey;
@@ -565,15 +727,22 @@
     const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
     let newCoverUrl = DEFAULT_COVER;
     let newYear = "";
+    let durationMillis = 180000; 
+    
+    currentAlbumName = "";
+    currentGenre = "";
 
     try {
       const res = await fetch(url);
       const data = await res.json();
       if (data.results.length > 0) {
-        newCoverUrl = data.results[0].artworkUrl100.replace('100x100bb', '600x600bb');
-        if (data.results[0].releaseDate) {
-            newYear = data.results[0].releaseDate.substring(0, 4);
-        }
+        const track = data.results[0];
+        newCoverUrl = track.artworkUrl100.replace('100x100bb', '600x600bb');
+        if (track.releaseDate) newYear = track.releaseDate.substring(0, 4);
+        if (track.trackTimeMillis) durationMillis = track.trackTimeMillis;
+        
+        currentAlbumName = track.collectionName;
+        currentGenre = track.primaryGenreName;
       }
     } catch (error) { /* Fallback */ }
 
@@ -587,6 +756,9 @@
     imgLoader.src = newCoverUrl;
     
     setTimeout(() => {
+        // Restaurar transición normal
+        progressFill.style.transition = "width 1s linear";
+        
         displayTitle.innerText = title;
         displayArtist.innerText = formattedArtist;
         albumYearEl.innerText = newYear; 
@@ -594,6 +766,8 @@
         albumArt.src = newCoverUrl;
         bgBlur.style.backgroundImage = `url('${newCoverUrl}')`;
 
+        initTimeline(currentKey, durationMillis);
+        
         checkMarquee();
 
         displayTitle.classList.remove('fading-out');
@@ -609,7 +783,7 @@
   if(sourceTitle) {
     observer.observe(sourceTitle, { childList: true, characterData: true, subtree: true });
   }
-  
+
   setTimeout(updateInfo, 2000);
   window.addEventListener('resize', checkMarquee);
 
