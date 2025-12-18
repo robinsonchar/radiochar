@@ -617,6 +617,100 @@
         color: #ddd;
     }
 
+    /* =========================================
+       NUEVA SECCIÓN: EL PODIO DE HOY EN 1985
+       ========================================= */
+    .podium-section-container {
+        width: 1000px; max-width: 95%;
+        margin-top: 50px; 
+        margin-bottom: 50px;
+        z-index: 5;
+    }
+
+    /* Título NARANJA/DORADO */
+    .podium-title-custom {
+        color: #ff9900; 
+        border-left: 3px solid #ff9900;
+    }
+
+    .podium-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+    }
+
+    .podium-card {
+        background: rgba(30, 30, 30, 0.4);
+        border-radius: 12px;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease;
+        border: 1px solid rgba(255,255,255,0.05);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .podium-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .podium-cover-wrap {
+        width: 100%;
+        aspect-ratio: 1/1;
+        position: relative;
+    }
+
+    .podium-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .podium-rank {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 50px;
+        height: 50px;
+        background: #ff9900;
+        color: #000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 900;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        z-index: 2;
+        border: 3px solid #fff;
+        font-style: italic;
+    }
+
+    .podium-info {
+        padding: 20px;
+        text-align: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .podium-song {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 5px;
+        line-height: 1.2;
+    }
+
+    .podium-artist {
+        font-size: 15px;
+        color: #ccc;
+    }
+
+
     /* CSS para el Chat Flotante CBOX - REDONDEADO Y AZUL - AHORA SOLO ICONO */
     #cboxbutton {
       z-index: 2000 !important; 
@@ -859,6 +953,19 @@
             <h3 class="news-headline" id="newsHeadline">Cargando efemérides...</h3>
             <p class="news-body" id="newsBody">Estamos buscando en nuestros archivos de 1985...</p>
         </div>
+    </div>
+</div>
+
+<!-- SECCIÓN: EL PODIO DE HOY EN 1985 (NUEVA SECCIÓN) -->
+<div class="podium-section-container">
+    <!-- CLASE UNIFICADA: Encabezado -->
+    <div class="section-header-common">
+         <!-- CLASE UNIFICADA: Título NARANJA -->
+        <h2 class="section-title-common podium-title-custom">EL PODIO DE HOY EN BILLOARD 1985</h2>
+    </div>
+    
+    <div class="podium-grid" id="podiumContainer">
+        <!-- JS llenará esto con 3 tarjetas -->
     </div>
 </div>
 
@@ -1446,8 +1553,10 @@ window.onload = function() {
   // -------------------------------------------------------------
   const topHitsContainer = document.getElementById('billboardContainer');
   
+  // Base de datos extendida para "EL PODIO" y "TOP 5"
   const hits1985 = [
-      { t: "Careless Whisper", a: "Wham!" }, { t: "Say You, Say Me", a: "Lionel Richie" }, { t: "Separate Lives", a: "Phil Collins" }, { t: "I Want to Know What Love Is", a: "Foreigner" }, { t: "Money for Nothing", a: "Dire Straits" }, { t: "Everybody Wants to Rule the World", a: "Tears for Fears" }, { t: "The Power of Love", a: "Huey Lewis & The News" }, { t: "We Built This City", a: "Starship" }, { t: "St. Elmo's Fire (Man in Motion)", a: "John Parr" }, { t: "Can't Fight This Feeling", a: "REO Speedwagon" }, { t: "Take On Me", a: "a-ha" }, { t: "Don't You (Forget About Me)", a: "Simple Minds" }, { t: "Broken Wings", a: "Mr. Mister" }, { t: "Material Girl", a: "Madonna" }, { t: "Summer of '69", a: "Bryan Adams" }, { t: "Part-Time Lover", a: "Stevie Wonder" }, { t: "Saving All My Love for You", a: "Whitney Houston" }, { t: "Heaven", a: "Bryan Adams" }, { t: "Everything She Wants", a: "Wham!" }, { t: "Cool It Now", a: "New Edition" }, { t: "Miami Vice Theme", a: "Jan Hammer" }, { t: "Alive and Kicking", a: "Simple Minds" }, { t: "Election Day", a: "Arcadia" }, { t: "Party All the Time", a: "Eddie Murphy" }, { t: "Sleeping Bag", a: "ZZ Top" }
+      { t: "Careless Whisper", a: "Wham!" }, { t: "Say You, Say Me", a: "Lionel Richie" }, { t: "Separate Lives", a: "Phil Collins" }, { t: "I Want to Know What Love Is", a: "Foreigner" }, { t: "Money for Nothing", a: "Dire Straits" }, { t: "Everybody Wants to Rule the World", a: "Tears for Fears" }, { t: "The Power of Love", a: "Huey Lewis & The News" }, { t: "We Built This City", a: "Starship" }, { t: "St. Elmo's Fire (Man in Motion)", a: "John Parr" }, { t: "Can't Fight This Feeling", a: "REO Speedwagon" }, { t: "Take On Me", a: "a-ha" }, { t: "Don't You (Forget About Me)", a: "Simple Minds" }, { t: "Broken Wings", a: "Mr. Mister" }, { t: "Material Girl", a: "Madonna" }, { t: "Summer of '69", a: "Bryan Adams" }, { t: "Part-Time Lover", a: "Stevie Wonder" }, { t: "Saving All My Love for You", a: "Whitney Houston" }, { t: "Heaven", a: "Bryan Adams" }, { t: "Everything She Wants", a: "Wham!" }, { t: "Cool It Now", a: "New Edition" }, { t: "Miami Vice Theme", a: "Jan Hammer" }, { t: "Alive and Kicking", a: "Simple Minds" }, { t: "Election Day", a: "Arcadia" }, { t: "Party All the Time", a: "Eddie Murphy" }, { t: "Sleeping Bag", a: "ZZ Top" },
+      { t: "We Are The World", a: "USA For Africa" }, { t: "Shout", a: "Tears for Fears" }, { t: "Everytime You Go Away", a: "Paul Young" }, { t: "Raspberry Beret", a: "Prince" }, { t: "Sussudio", a: "Phil Collins" }, { t: "A View to a Kill", a: "Duran Duran" }, { t: "Into the Groove", a: "Madonna" }, { t: "One Night in Bangkok", a: "Murray Head" }, { t: "Axel F", a: "Harold Faltermeyer" }, { t: "Smooth Operator", a: "Sade" }, { t: "Neutron Dance", a: "Pointer Sisters" }, { t: "The Heat Is On", a: "Glenn Frey" }, { t: "Obsession", a: "Animotion" }, { t: "Voices Carry", a: "Til Tuesday" }, { t: "Head Over Heels", a: "Tears for Fears" }
   ];
 
   function getDailyHits() {
@@ -1524,6 +1633,79 @@ window.onload = function() {
   renderBillboard();
 
   // -------------------------------------------------------------
+  // LÓGICA DE EL PODIO DE HOY EN 1985 (POR SEMANA)
+  // -------------------------------------------------------------
+  Date.prototype.getWeek = function() {
+      var date = new Date(this.getTime());
+      date.setHours(0, 0, 0, 0);
+      // Thursday in current week decides the year.
+      date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
+      // January 4 is always in week 1.
+      var week1 = new Date(date.getFullYear(), 0, 4);
+      // Adjust to Thursday in week 1 and count number of weeks from date to week1.
+      return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
+  }
+
+  function renderPodium1985() {
+      const container = document.getElementById('podiumContainer');
+      if (!container) return;
+
+      const currentWeek = new Date().getWeek();
+      
+      // Seleccionar 3 canciones basadas en la semana actual (rotacion pseudo-aleatoria consistente)
+      // Usamos el modulo para ciclar sobre la lista de hits
+      const totalHits = hits1985.length;
+      const index1 = (currentWeek * 3) % totalHits;
+      const index2 = (currentWeek * 3 + 1) % totalHits;
+      const index3 = (currentWeek * 3 + 2) % totalHits;
+
+      const podiumSongs = [hits1985[index1], hits1985[index2], hits1985[index3]];
+
+      let html = '';
+      podiumSongs.forEach((song, i) => {
+          const rank = i + 1;
+          html += `
+            <div class="podium-card" data-artist="${song.a}" data-title="${song.t}">
+                <div class="podium-cover-wrap">
+                    <div class="podium-rank">${rank}</div>
+                    <img src="${DEFAULT_COVER}" class="podium-cover dynamic-podium-cover" alt="${song.t}">
+                </div>
+                <div class="podium-info">
+                    <div class="podium-song">${song.t}</div>
+                    <div class="podium-artist">${song.a}</div>
+                </div>
+            </div>
+          `;
+      });
+      
+      container.innerHTML = html;
+      fetchPodiumCovers();
+  }
+
+  function fetchPodiumCovers() {
+      const items = document.querySelectorAll('.podium-card');
+      items.forEach((item, index) => {
+          setTimeout(() => {
+              const artist = item.getAttribute('data-artist');
+              const title = item.getAttribute('data-title');
+              const img = item.querySelector('.dynamic-podium-cover'); 
+              if (img && !img.dataset.loaded) {
+                  let queryTerm = `${artist} ${title}`.replace(/[^\w\sñáéíóúü]/gi, ' ').trim();
+                  const url = `https://itunes.apple.com/search?term=${encodeURIComponent(queryTerm)}&media=music&entity=song&limit=1`;
+                  fetch(url).then(res => res.json()).then(data => {
+                      if (data.results && data.results.length > 0) { img.src = data.results[0].artworkUrl100.replace('100x100bb', '400x400bb'); }
+                      img.classList.add('loaded'); img.dataset.loaded = "true";
+                  }).catch(err => { img.classList.add('loaded'); });
+              }
+          }, index * 200); 
+      });
+  }
+  
+  // Renderizar al cargar
+  renderPodium1985();
+
+
+  // -------------------------------------------------------------
   // FUNCION AUXILIAR: LIMITAR PALABRAS INTELIGENTE
   // -------------------------------------------------------------
   function smartLimitText(text, maxWords) {
@@ -1532,17 +1714,6 @@ window.onload = function() {
       const words = text.trim().split(/\s+/);
       if (words.length <= maxWords) return text;
       
-      // Tomamos un chunk inicial algo mayor al limite para buscar el punto
-      // Pero como queremos cortar "hasta" el ultimo punto DENTRO o CERCA del limite...
-      // Estrategia:
-      // 1. Tomar las primeras maxWords.
-      // 2. Unirlas.
-      // 3. Buscar el último punto (.) en esa cadena recortada.
-      // 4. Si se encuentra, cortar ahí.
-      // 5. Si no, buscar el primer punto DESPUES del limite (para no dejar frase inconclusa muy corta)
-      //    O cortar en el punto anterior. El usuario prefiere "corta hasta el último punto seguido".
-      
-      // Vamos a reconstruir frase por frase hasta llegar al limite.
       const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
       let result = "";
       let currentWordCount = 0;
@@ -1551,25 +1722,19 @@ window.onload = function() {
           const sentence = sentences[i];
           const sentenceWordCount = sentence.trim().split(/\s+/).length;
           
-          // Si agregar esta oracion no pasa el limite (o lo pasa por muy poco, digamos 5 palabras de margen), la agregamos
           if (currentWordCount + sentenceWordCount <= maxWords + 5) {
               result += sentence;
               currentWordCount += sentenceWordCount;
           } else {
-              // Si es la primera oracion y es gigante, ni modo, tenemos que cortarla a la fuerza o mostrarla completa?
-              // Usuario: "verificando la lógica y el sentido... Es mejor dejar el texto hasta esta instancia"
               if (result === "") {
-                   // Caso extremo: Primera oracion larguisima.
-                   // Tratamos de buscar una coma o punto y coma anterior al limite
                    const cutChunk = words.slice(0, maxWords).join(" ");
                    const lastPunctuation = Math.max(cutChunk.lastIndexOf(","), cutChunk.lastIndexOf(";"));
-                   if (lastPunctuation > maxWords * 3) { // Si hay una pausa decente
+                   if (lastPunctuation > maxWords * 3) { 
                        return cutChunk.substring(0, lastPunctuation + 1);
                    }
-                   // Fallback: Devolver la primera oracion completa aunque sea larga es mejor que cortarla mal.
                    return sentence; 
               }
-              break; // Ya tenemos suficiente texto con oraciones completas
+              break; 
           }
       }
       return result.trim();
