@@ -3,25 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RADIOCHAR - Hits 80s/90s</title>
+  <meta name="description" content="Radiochar - La emisora online número uno en Latam transmitiendo Hits de los 80s y 90s 24/7.">
+  <meta name="theme-color" content="#0f0f0f">
+  <title>RADIOCHAR</title>
   
-  <!-- 1. Iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  
-  <!-- 2. Fuentes -->
+  <!-- PRELOAD -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Fuentes: Shrikhand, Poppins y Russo One -->
-  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Poppins:wght@300;400;600;700;800;900&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- ESTILOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Russo+One&display=swap" rel="stylesheet">
 
   <style>
-    /* --- RESET Y BASE --- */
+    /* 1. VARIABLES CSS */
+    :root {
+        --color-bg: #0f0f0f;
+        --color-text-main: #ffffff;
+        --color-text-muted: #aaaaaa;
+        --color-accent-blue: #00c6ff;
+        --color-accent-gold: #ffd700;
+        --color-accent-pink: #ff00de;
+        --color-accent-green: #39ff14;
+        --color-accent-orange: #ff9900;
+        --color-accent-red: #ff0000;
+        
+        --z-background: -1;
+        --z-content: 5;
+        --z-player-ui: 10;
+        --z-chat: 9999;    
+        --z-modal: 200;   
+        --z-splash: 3000;  
+    }
+
+    /* 2. BASE */
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #0f0f0f;
-      color: #fff;
+      background: var(--color-bg);
+      color: var(--color-text-main);
       overflow-x: hidden;
       min-height: 100vh;
       display: flex;
@@ -29,93 +51,48 @@
       align-items: center;
       justify-content: flex-start;
       position: relative;
-      padding-bottom: 80px; /* Espacio extra al final */
+      padding-bottom: 80px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    /* --- FONDO AMBIENTAL --- */
+    /* 3. OPTIMIZACIÓN GPU */
     .background-blur {
       position: fixed; top: -10%; left: -10%; width: 120%; height: 120%;
-      z-index: -1;
+      z-index: var(--z-background);
       background-image: url('https://bit.ly/4q9Jddl');
       background-size: cover; background-position: center;
       filter: blur(50px) brightness(0.3);
-      will-change: opacity, background-image;
+      transform: translateZ(0); 
+      will-change: opacity; 
       transition: background-image 1s ease-in-out;
+      pointer-events: none;
     }
 
-    /* --- TRANSICIONES --- */
     .visual-transition { transition: opacity 0.8s ease-in-out; opacity: 1; }
-    .visual-transition.fading-out { opacity: 0; }
+    .fading-out { opacity: 0 !important; }
 
-    /* --- NUEVOS ESTILOS META INFO (LIVE & LISTENERS) DENTRO DEL PLAYER --- */
-    .player-meta-row {
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        margin-bottom: 8px; /* Espacio antes del título */
-        width: 100%;
-        justify-content: flex-start; /* Alineado a la izquierda */
-    }
-
-    .live-tag-inline {
-        display: flex;
-        align-items: center;
-        gap: 6px;
-        color: #fff;
-        font-size: 11px;
-        font-weight: 800;
-        letter-spacing: 1px;
-    }
-
-    .live-dot-inline {
-        width: 8px; 
-        height: 8px; 
-        border-radius: 50%; 
-        background-color: #ff0000;
-        box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
-        animation: blink 1.5s infinite;
-    }
-
-    .listener-tag-inline {
-        display: flex; 
-        align-items: center; 
-        gap: 5px;
-        font-size: 11px; 
-        font-weight: 600;
-        color: #888; /* Color sutil */
-    }
-    
-    .listener-tag-inline i { font-size: 10px; color: #aaa; }
-
-    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-
-    /* --- LOGOTIPO (IMAGEN) - REDUCIDO --- */
+    /* 4. COMPONENTES UI */
     .radio-logo {
-      display: block;
-      max-width: 400px; 
-      width: 80%;
-      height: auto;
-      margin-top: 60px;
-      margin-bottom: 40px;
-      z-index: 5;
+      display: block; max-width: 400px; width: 80%; height: auto;
+      margin: 60px auto 40px auto; z-index: var(--z-content);
       padding: 0 10px; 
-      box-sizing: border-box;
       filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1)); 
     }
 
-    /* --- PANTALLA DE CARGA --- */
     .splash-screen {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: #0f0f0f;
+      position: fixed; inset: 0;
+      background: var(--color-bg);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
-      z-index: 100;
-      animation: fadeOut 1s 3s forwards; pointer-events: none;
+      z-index: var(--z-splash);
+      animation: fadeOut 1s 3s forwards; 
+      pointer-events: none;
     }
     .spinner { border: 3px solid #333; border-top: 3px solid #fff; border-radius: 50%; width: 40px; height: 40px; animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     @keyframes fadeOut { to { opacity: 0; visibility: hidden; } }
 
-    /* --- CONTENEDOR REPRODUCTOR --- */
+    /* Reproductor */
     .radio-container {
       display: flex;
       width: 1000px; max-width: 95%; height: 320px;
@@ -123,642 +100,305 @@
       backdrop-filter: blur(20px);
       border-radius: 20px;
       box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
-      overflow: hidden;
-      position: relative;
+      overflow: hidden; position: relative;
       border: 1px solid rgba(255, 255, 255, 0.05);
-      margin-top: 20px; 
-      margin-bottom: 100px; 
-      flex-shrink: 0;
+      margin: 20px auto 50px auto; 
+      flex-shrink: 0; z-index: var(--z-content);
     }
 
     .cover { flex: 0 0 320px; position: relative; overflow: hidden; }
     .cover img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
     .album-year-badge { position: absolute; bottom: 15px; left: 15px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; z-index: 10; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.1); }
-    .wiki-btn { position: absolute; top: 15px; right: 15px; width: 32px; height: 32px; background: rgba(0, 0, 0, 0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2); z-index: 20; backdrop-filter: blur(5px); font-size: 14px; cursor: pointer; }
+    .wiki-btn { position: absolute; top: 15px; right: 15px; width: 32px; height: 32px; background: rgba(0, 0, 0, 0.5); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: rgba(255, 255, 255, 0.9); text-decoration: none; transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.2); z-index: 20; backdrop-filter: blur(5px); cursor: pointer; }
     .wiki-btn:hover { background: rgba(255, 255, 255, 0.9); color: #000; transform: scale(1.1); border-color: #fff; }
+
     .player { flex: 1; min-width: 0; display: flex; flex-direction: column; justify-content: center; padding: 30px 40px; position: relative; }
     #winampVis { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.1; }
+    
     .info-wrapper { z-index: 5; text-align: left; margin-bottom: 25px; width: 100%; overflow: hidden; }
+    .player-meta-row { display: flex; align-items: center; gap: 15px; margin-bottom: 8px; width: 100%; justify-content: flex-start; }
+    .live-tag-inline { display: flex; align-items: center; gap: 6px; color: #fff; font-size: 11px; font-weight: 800; letter-spacing: 1px; flex-shrink: 0; }
+    .live-dot-inline { width: 8px; height: 8px; border-radius: 50%; background-color: #ff0000; box-shadow: 0 0 8px rgba(255, 0, 0, 0.8); animation: blink 1.5s infinite; }
+    .listener-tag-inline { display: flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: #888; flex-shrink: 0; }
+    .listener-tag-inline i { font-size: 10px; color: #aaa; }
+    
+    .program-tag-inline {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--color-accent-gold);
+        text-transform: uppercase;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-left: 1px solid rgba(255,255,255,0.2);
+        padding-left: 15px;
+        letter-spacing: 0.5px;
+    }
+    .program-tag-inline i { color: var(--color-accent-gold); font-size: 10px; }
+
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+
     .song-title-container { width: 100%; white-space: nowrap; overflow: hidden; }
     .song-title-container.is-scrolling { mask-image: linear-gradient(to right, black 90%, transparent 100%); -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%); }
-    .song-title { font-size: 45px; font-weight: 700; color: #fff; display: inline-block; margin-bottom: 5px; padding-right: 20px; }
-    .artist-name { font-size: 18px; color: #aaa; font-weight: 400; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .song-title { font-size: 45px; font-weight: 700; color: #fff; display: inline-block; margin-bottom: 5px; padding-right: 20px; will-change: transform; }
+    .artist-name { font-size: 18px; color: var(--color-text-muted); font-weight: 400; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .scrolling-text { animation: scroll-text 15s linear infinite alternate; }
     @keyframes scroll-text { 0%, 15% { transform: translateX(0); } 85%, 100% { transform: translateX(var(--scroll-distance)); } }
+
     .timeline-container { width: 100%; display: flex; align-items: center; gap: 15px; margin-bottom: 25px; z-index: 5; }
     .time-display { font-size: 12px; font-weight: 600; color: #ddd; font-variant-numeric: tabular-nums; min-width: 40px; }
     .progress-bar-bg { flex: 1; min-width: 0; height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; position: relative; }
     .progress-bar-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #00c6ff, #0072ff); border-radius: 3px; transition: width 1s linear; }
+
     .controls-row { display: flex; align-items: center; justify-content: center; z-index: 5; width: 100%; }
     .play-btn-wrapper { position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; }
     .play-btn { width: 60px; height: 60px; border-radius: 50%; background: #fff; border: none; color: #121212; font-size: 24px; cursor: pointer; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(255,255,255,0.3); transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); padding-left: 4px; }
     .play-btn:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(255,255,255,0.5); }
-    .play-btn.playing { padding-left: 0; background: #00c6ff; color: #fff; }
+    .play-btn.playing { padding-left: 0; background: var(--color-accent-blue); color: #fff; }
 
-    /* =========================================
-       NUEVA SECCIÓN: SLOGAN (Russo One)
-       ========================================= */
-    .slogan-section {
-        width: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        margin-top: 70px; 
-        margin-bottom: 70px;
-        text-align: center;
-        z-index: 5;
-    }
+    /* 5. SECCIONES */
+    .content-section { width: 1000px; max-width: 95%; margin: 50px auto; z-index: var(--z-content); }
+    .section-header-common { margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; display: flex; justify-content: space-between; align-items: flex-end; }
+    .section-title-common { font-size: 18px; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; padding-left: 10px; margin: 0; }
+
+    .slogan-section { text-align: center; margin-top: 70px; margin-bottom: 70px; }
+    .slogan-text { font-family: 'Russo One', sans-serif; font-size: 60px; color: #fff; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); letter-spacing: 2px; line-height: 1.1; margin-bottom: 10px; }
+    .sub-slogan { font-family: 'Russo One', sans-serif; font-size: 30px; color: #fff; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); letter-spacing: 2px; margin-top: 5px; display: flex; align-items: center; justify-content: center; gap: 15px; }
+
+    .card-grid-container { display: grid; gap: 20px; }
     
-    .slogan-text {
-        font-family: 'Russo One', sans-serif;
-        font-size: 60px; 
-        color: #fff;
-        text-transform: uppercase; 
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3); 
-        letter-spacing: 2px;
-        line-height: 1.1;
-        margin-bottom: 10px; 
-    }
+    .recent-tracks-title-custom { color: var(--color-accent-blue); border-left: 3px solid var(--color-accent-blue); }
+    .dyk-title-custom { color: var(--color-accent-pink); border-left: 3px solid var(--color-accent-pink); }
+    .schedule-title-custom { color: #fff; border-left: 3px solid #fff; }
 
-    .sub-slogan {
-        font-family: 'Russo One', sans-serif;
-        font-size: 30px;
-        color: #fff;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-        letter-spacing: 2px;
-        margin-top: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .live-badge-red {
-        background-color: #ff0000;
-        color: white;
-        font-size: 14px;
-        padding: 4px 12px;
-        border-radius: 4px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        animation: blink-red 1.5s infinite;
-        vertical-align: middle;
-        box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
-    }
-
-    @keyframes blink-red { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
-
-    /* =========================================
-       SECCIÓN: COMUNIDAD (FACEBOOK)
-       ========================================= */
-    .community-section {
-        width: 100%;
-        max-width: 1000px;
-        margin-top: 50px;
-        margin-bottom: 50px; 
-        text-align: center;
-        z-index: 5;
-    }
-
-    .community-title {
-        font-family: 'Russo One', sans-serif;
-        font-size: 60px;
-        color: #fff;
-        text-transform: uppercase;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
-        margin-bottom: 25px;
-        letter-spacing: 1px;
-        line-height: 1.1;
-    }
-
-    .buttons-container {
-        display: flex;
-        justify-content: center;
-        gap: 20px; 
-        flex-wrap: wrap; 
-    }
-
-    .btn-social {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        font-weight: 700;
-        padding: 15px 40px;
-        border-radius: 50px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-        border: none;
-        cursor: pointer;
-        min-width: 250px; 
-    }
-
-    .btn-facebook {
-        background-color: #1877F2; 
-        color: #fff;
-        box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4);
-    }
-
-    .btn-facebook:hover {
-        background-color: #1565C0; 
-        transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(24, 119, 242, 0.6);
-    }
-
-    .btn-social i { margin-right: 12px; font-size: 24px; }
-
-
-    /* =========================================
-       CLASES COMUNES DE ENCABEZADO
-       ========================================= */
-    .section-header-common {
-        margin-bottom: 30px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-        padding-bottom: 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    
-    .section-title-common {
-        font-size: 18px; 
-        text-transform: uppercase; 
-        letter-spacing: 2px;
-        font-weight: 700;
-        padding-left: 10px;
-        margin: 0;
-    }
-
-    /* =========================================
-       SECCIÓN HISTORIAL (Simple)
-       ========================================= */
-    .recent-tracks-container {
-      width: 1000px; max-width: 95%;
-      margin-bottom: 50px;
-      z-index: 5;
-    }
-    
-    /* Título AZUL */
-    .recent-tracks-title-custom {
-        color: #00c6ff; /* Azul */
-        border-left: 3px solid #00c6ff;
-    }
-
-    .recent-tracks-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 20px; }
-    
+    .recent-tracks-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
     .hist-card { background: rgba(30, 30, 30, 0.4); border-radius: 10px; overflow: hidden; position: relative; transition: transform 0.3s ease; }
     .hist-card:hover { transform: translateY(-3px); }
     .hist-cover-wrap { position: relative; width: 100%; aspect-ratio: 1/1; }
     .hist-cover { width: 100%; height: 100%; object-fit: cover; }
-    .hist-num { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px; background: rgba(0,0,0,0.8); color: #fff; border-radius: 50%; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; border: 0px solid #00c6ff; z-index: 2; }
+    .hist-num { position: absolute; top: 8px; right: 8px; width: 26px; height: 26px; background: rgba(0,0,0,0.8); color: #fff; border-radius: 50%; font-size: 12px; font-weight: 700; display: flex; align-items: center; justify-content: center; border: 0px solid var(--color-accent-blue); z-index: 2; }
     .hist-info { padding: 10px; }
     .hist-title { font-size: 12px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 2px; }
     .hist-artist { font-size: 11px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    
-    /* NUEVO: ESTILO PARA EL TIEMPO TRANSCURRIDO */
-    .hist-time {
-        font-size: 10px;
-        color: #00c6ff; 
-        margin-top: 4px;
-        font-weight: 600;
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        opacity: 0.9;
-    }
-    .hist-time i { font-size: 9px; }
+    .hist-time { font-size: 10px; color: var(--color-accent-blue); margin-top: 4px; font-weight: 600; display: flex; align-items: center; gap: 4px; opacity: 0.9; }
 
-    .no-tracks-msg { color: #666; font-style: italic; }
-
-    /* =========================================
-       SECCIÓN TOP 5 BILLBOARD 1985 (Diseño Ajustado)
-       ========================================= */
-    .top-hits-container {
-      width: 1000px; max-width: 95%;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      z-index: 5;
-    }
-
-    /* Título AMARILLO */
-    .top-hits-title-custom {
-        color: #ffd700; /* Amarillo Dorado */
-        border-left: 3px solid #ffd700;
-    }
-    
-    .top-hits-date { display: none; }
-
-    .billboard-layout {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 25px; 
-      align-items: stretch;
-    }
-
-    /* IZQUIERDA: #1 Hit */
-    .hit-number-one {
-      background: rgba(30, 30, 30, 0.3);
-      border-radius: 12px;
-      overflow: hidden;
-      position: relative;
-      border: 1px solid rgba(255, 255, 255, 0.05); 
-      display: flex;
-      flex-direction: column;
-    }
-
-    .hit-one-cover {
-      width: 100%; 
-      aspect-ratio: 1/1; 
-      object-fit: cover;
-      display: block;
-    }
-
-    /* Número 1 Gigante y Dorado superpuesto */
-    .hit-one-rank-overlay {
-      position: absolute; top: 10px; left: 10px;
-      font-size: 60px; font-weight: 900;
-      color: #ffd700; 
-      text-shadow: 3px 3px 0 rgba(0,0,0,0.8);
-      z-index: 10;
-      line-height: 0.8;
-      font-style: italic;
-    }
-
-    .hit-one-info {
-      padding: 15px;
-      background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-      position: absolute;
-      bottom: 0; left: 0; width: 100%;
-    }
-
-    .hit-one-title { font-size: 18px; font-weight: 700; color: #fff; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .hit-one-artist { font-size: 14px; color: #ccc; }
-
-    /* DERECHA: Lista #2 - #5 */
-    .hits-list {
-      display: flex;
-      flex-direction: column;
-      gap: 15px; 
-      justify-content: space-between;
-    }
-
-    .hit-card {
-      display: flex;
-      align-items: center;
-      background: rgba(30, 30, 30, 0.4);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-      border-radius: 8px;
-      padding: 12px;
-      transition: all 0.2s ease;
-      flex: 1;
-    }
-
-    .hit-card:hover {
-      background: rgba(255,255,255,0.08);
-      transform: translateX(5px);
-    }
-
-    /* Número Grande a la Izquierda */
-    .hit-rank-large {
-      font-size: 36px; 
-      font-weight: 900; 
-      color: rgba(255, 255, 255, 0.3);
-      width: 50px; 
-      text-align: center;
-      margin-right: 10px;
-      line-height: 1;
-      font-style: italic;
-    }
-    
-    .rank-2 { color: rgba(255, 255, 255, 0.7); } 
-    .rank-3 { color: rgba(255, 255, 255, 0.5); }
-
-    .hit-small-cover {
-      width: 55px; height: 55px;
-      border-radius: 6px;
-      margin-right: 15px;
-      object-fit: cover;
-      background: #111;
-      display: block;
-    }
-
-    .hit-info { flex: 1; min-width: 0; }
-    .hit-title { font-size: 18px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #eee; }
-    .hit-artist { font-size: 14px; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-
-    /* =========================================
-       NUEVA SECCIÓN: ¿SABÍAS QUE?
-       ========================================= */
-    .did-you-know-container {
-      width: 1000px; max-width: 95%;
-      margin-top: 50px; 
-      margin-bottom: 50px;
-      z-index: 5;
-    }
-    
-    /* Título FUCSIA */
-    .dyk-title-custom {
-        color: #ff00de; /* Fucsia */
-        border-left: 3px solid #ff00de;
-    }
-
-    /* ESTILO LIMPIO Y SUTIL PARA EL CONTENEDOR */
-    .dyk-card {
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      gap: 30px; 
-      background: rgba(74, 74, 74, 0.1); 
-      border: none; 
-      border-radius: 16px;
-      overflow: hidden;
-      backdrop-filter: blur(10px);
-    }
-
-    .dyk-cover-wrapper {
-      width: 100%;
-      height: 320px; 
-      position: relative;
-    }
-
-    .dyk-cover {
-      width: 100%; height: 100%; object-fit: cover; display: block;
-      border-radius: 12px; 
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
-    }
-    
-    .dyk-badge {
-      position: absolute; top: 15px; left: 15px;
-      background: #ff00de; color: #fff;
-      font-weight: 700; font-size: 12px;
-      padding: 4px 12px; border-radius: 20px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-      text-transform: uppercase; letter-spacing: 1px;
-      border: 1px solid #ff00de;
-    }
-
-    .dyk-content {
-      padding: 10px 30px 10px 0; /* AJUSTE: MÁS PADDING A LA DERECHA */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .dyk-song-title {
-      font-size: 28px; font-weight: 800; color: #fff;
-      margin-bottom: 5px; line-height: 1.2;
-    }
-    
-    .dyk-song-artist {
-      font-size: 18px; color: #00c6ff; font-weight: 600;
-      margin-bottom: 20px;
-    }
-
-    .dyk-meta {
-      display: flex; gap: 20px; margin-bottom: 25px;
-      font-size: 13px; color: #aaa; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px;
-    }
-    .dyk-meta div i { margin-right: 5px; color: #ccc; }
-
-    /* ESTILO LIMPIO PARA EL TEXTO DE RESEÑA */
-    .dyk-text {
-      font-size: 15px; 
-      line-height: 1.7; 
-      color: #ddd;
-      font-style: normal; 
-      background: transparent; 
-      padding: 0; 
-      border: none; 
-    }
-    
-    /* =========================================
-       NUEVA SECCIÓN: UN DÍA COMO HOY (1985)
-       ========================================= */
-    .news-section-container {
-      width: 1000px; max-width: 95%;
-      margin-top: 50px; 
-      margin-bottom: 50px;
-      z-index: 5;
-    }
-    
-    /* Título VERDE NEÓN */
-    .news-title-custom {
-        color: #39ff14; 
-        border-left: 3px solid #39ff14;
-    }
-
-    /* ESTILO LIMPIO: 2 COLUMNAS SIN BORDE */
-    .news-card {
-        display: grid;
-        grid-template-columns: 320px 1fr;
-        gap: 30px; 
-        background: rgba(74, 74, 74, 0.1); 
-        border: none; 
-        border-radius: 16px;
-        overflow: hidden;
-        backdrop-filter: blur(10px);
-    }
-    
-    .news-image-wrapper {
-        width: 100%;
-        height: 320px;
-        overflow: hidden;
+    /* --- ESTILOS PROGRAMACIÓN (INFINITE SLIDER) --- */
+    .schedule-container-custom {
         position: relative;
-    }
-    
-    .news-image {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
+        overflow: hidden;
+        padding: 40px 0;
+    }
+
+    .schedule-track {
+        display: flex;
+        gap: 0;
+        padding-left: calc(50% - 150px);
+        width: max-content;
+    }
+
+    .schedule-card-item {
+        flex: 0 0 300px; 
+        max-width: 300px;
+        padding: 0 15px; 
+        transition: opacity 0.5s ease, transform 0.5s ease, filter 0.5s ease;
+        opacity: 0.4;
+        transform: scale(0.9);
+        filter: blur(2px);
+    }
+
+    .schedule-card-item.active-slide {
+        opacity: 1;
+        transform: scale(1.1);
+        filter: blur(0);
+        z-index: 10;
+    }
+
+    .program-card {
+        position: relative;
+        height: 180px;
         border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid rgba(255,255,255,0.1);
         box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     
-    .news-card:hover .news-image {
-        transform: scale(1.05);
+    .schedule-card-item.active-slide.is-live .program-card {
+        border: 2px solid var(--color-accent-red);
+        box-shadow: 0 0 30px rgba(255,0,0,0.4);
     }
-    
-    .news-date-badge {
+
+    .program-bg {
         position: absolute;
-        top: 15px;
-        left: 15px;
-        background: #39ff14;
-        color: #000;
-        font-weight: 700;
-        padding: 5px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border: 1px solid #39ff14;
-        z-index: 2;
-    }
-    
-    .news-content {
-        padding: 10px 30px 10px 0; /* AJUSTE: MÁS PADDING A LA DERECHA */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    .news-headline {
-        font-size: 28px;
-        font-weight: 800;
-        color: #fff;
-        margin-bottom: 15px;
-        line-height: 1.2;
-    }
-    
-    .news-body {
-        font-size: 15px;
-        line-height: 1.7;
-        color: #ddd;
-    }
-
-    /* =========================================
-       NUEVA SECCIÓN: EL PODIO DE HOY EN 1985
-       ========================================= */
-    .podium-section-container {
-        width: 1000px; max-width: 95%;
-        margin-top: 50px; 
-        margin-bottom: 50px;
-        z-index: 5;
-    }
-
-    /* Título NARANJA/DORADO */
-    .podium-title-custom {
-        color: #ff9900; 
-        border-left: 3px solid #ff9900;
-    }
-
-    .podium-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-    }
-
-    .podium-card {
-        background: rgba(30, 30, 30, 0.4);
-        border-radius: 12px;
-        overflow: hidden;
-        position: relative;
-        transition: transform 0.3s ease;
-        border: 1px solid rgba(255,255,255,0.05);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .podium-card:hover {
-        transform: translateY(-5px);
-        background: rgba(255, 255, 255, 0.08);
-    }
-
-    .podium-cover-wrap {
-        width: 100%;
-        aspect-ratio: 1/1;
-        position: relative;
-    }
-
-    .podium-cover {
-        width: 100%;
-        height: 100%;
+        top: 0; left: 0; width: 100%; height: 100%;
         object-fit: cover;
-        display: block;
+        z-index: 1;
     }
 
-    .podium-rank {
+    .program-overlay {
         position: absolute;
-        top: 15px;
-        left: 15px;
-        width: 50px;
-        height: 50px;
-        background: #ff9900;
-        color: #000;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(to top, rgba(0,0,0,0.95), rgba(0,0,0,0.3));
+        z-index: 2;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .program-time {
+        font-size: 13px;
+        color: var(--color-accent-gold);
+        font-weight: 700;
+        margin-bottom: 5px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    }
+
+    .program-title {
+        font-family: 'Russo One', sans-serif;
+        font-size: 20px;
+        color: #fff;
+        line-height: 1.1;
+        text-transform: uppercase;
+    }
+
+    .program-subtitle {
+        font-size: 11px;
+        color: var(--color-accent-blue);
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 5px;
+        letter-spacing: 1px;
+    }
+
+    .on-air-badge {
+        position: absolute;
+        top: 10px; right: 10px;
+        background: var(--color-accent-red);
+        color: #fff;
+        font-size: 10px;
+        font-weight: 800;
+        padding: 4px 8px;
+        border-radius: 4px;
+        z-index: 10;
+        animation: blink 1.5s infinite;
+        display: none;
+    }
+    
+    .schedule-card-item.is-live .on-air-badge { display: block; }
+
+    /* Feature Card Styles (Sabías Que) */
+    .feature-card { display: grid; grid-template-columns: 320px 1fr; gap: 30px; background: rgba(74, 74, 74, 0.1); border: none; border-radius: 16px; overflow: hidden; backdrop-filter: blur(10px); }
+    .feature-image-wrapper { width: 100%; height: 320px; position: relative; overflow: hidden;}
+    .feature-image { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); transition: transform 0.5s ease; }
+    .feature-card:hover .feature-image { transform: scale(1.05); }
+    .feature-badge { position: absolute; top: 15px; left: 15px; color: #fff; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.4); text-transform: uppercase; letter-spacing: 1px; z-index: 2; }
+    .badge-pink { background: var(--color-accent-pink); border: 1px solid var(--color-accent-pink); }
+    .badge-green { background: var(--color-accent-green); border: 1px solid var(--color-accent-green); color: #000; }
+    .feature-content { padding: 10px 30px 10px 0; display: flex; flex-direction: column; justify-content: center; }
+    .feature-headline { font-size: 28px; font-weight: 800; color: #fff; margin-bottom: 5px; line-height: 1.2; }
+    .feature-subhead { font-size: 18px; color: var(--color-accent-blue); font-weight: 600; margin-bottom: 20px; }
+    .feature-meta { display: flex; gap: 20px; margin-bottom: 25px; font-size: 13px; color: #aaa; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; }
+    .feature-text { font-size: 15px; line-height: 1.7; color: #ddd; }
+
+    /* FLECHAS DE NAVEGACIÓN COMUNES */
+    .slider-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 24px;
-        font-weight: 900;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-        z-index: 2;
-        border: 3px solid #fff;
-        font-style: italic;
+        cursor: pointer;
+        z-index: 20;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(255,255,255,0.1);
     }
+    .slider-arrow:hover { background: var(--color-accent-gold); color: #000; }
+    .slider-arrow.left { left: -10px; }
+    .slider-arrow.right { right: -10px; }
+    .slider-arrow.disabled { opacity: 0.3; cursor: default; pointer-events: none; }
+    
+    /* Footer */
+    .community-section { text-align: center; margin-top: 50px; margin-bottom: 50px; }
+    .community-title { font-family: 'Russo One', sans-serif; font-size: 60px; color: #fff; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.1); margin-bottom: 25px; letter-spacing: 1px; line-height: 1.1; }
+    .buttons-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    .btn-social { display: inline-flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; padding: 15px 40px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; border: none; cursor: pointer; min-width: 250px; }
+    .btn-facebook { background-color: #1877F2; color: #fff; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4); }
+    .btn-facebook:hover { background-color: #1565C0; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(24, 119, 242, 0.6); }
+    .btn-x { background-color: #000; color: #fff; box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15); }
+    .btn-x:hover { background-color: #111; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25); }
+    .btn-social i { margin-right: 12px; font-size: 24px; }
+    
+    .creator-footer { margin-top: 40px; font-size: 12px; color: rgba(255, 255, 255, 0.4); text-align: center; z-index: var(--z-content); display: flex; flex-direction: row; justify-content: center; align-items: center; min-height: 40px; gap: 5px; }
+    .creator-footer a { color: #fff; text-decoration: none; opacity: 0.7; }
+    .creator-footer a:hover { opacity: 1; text-decoration: underline; }
 
-    .podium-info {
-        padding: 20px;
-        text-align: center;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .podium-song {
-        font-size: 20px;
-        font-weight: 700;
-        color: #fff;
-        margin-bottom: 5px;
-        line-height: 1.2;
-    }
-
-    .podium-artist {
-        font-size: 15px;
-        color: #ccc;
-    }
-
-
-    /* CSS para el Chat Flotante CBOX - REDONDEADO Y AZUL - AHORA SOLO ICONO */
-    #cboxbutton {
-      z-index: 2000 !important; 
-      border-radius: 50% !important; /* Circular */
-      background-color: #1877F2 !important; /* AZUL */
-      border: 1px solid #1565C0 !important;
-      color: #fff !important;
-      width: 50px !important; /* Tamaño fijo */
-      height: 50px !important;
-      padding: 0 !important; /* Sin relleno de texto */
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important;
-      font-size: 20px !important;
-    }
-    #cboxwrap {
-      z-index: 2000 !important; 
-      border-radius: 12px !important; 
-      border: 1px solid rgba(255, 255, 255, 0.1) !important;
-      background: rgba(255, 255, 255, 0.8) !important; 
-      backdrop-filter: blur(10px) !important;
-    }
+    /* 6. OVERLAYS (CBOX RESPONSIVE FIX V7.7) */
+    #cboxbutton { position: fixed; bottom: 20px; right: 20px; z-index: var(--z-chat) !important; border-radius: 50% !important; background-color: #1877F2 !important; border: 1px solid #1565C0 !important; color: #fff !important; width: 50px !important; height: 50px !important; padding: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important; font-size: 20px !important; }
+    #cboxwrap { position: fixed; bottom: 80px; right: 20px; z-index: var(--z-chat) !important; border-radius: 12px !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; background: rgba(255, 255, 255, 0.8) !important; backdrop-filter: blur(10px) !important; }
+    
+    /* DEFINICIÓN ESTRICTA DE TAMAÑO PARA CBOX */
     #cboxdiv {
-       width: 100% !important;
-       max-width: 600px !important;
+        display: flex !important;
+        flex-direction: column !important;
+        width: 380px !important;
+        height: 500px !important;
+        overflow: hidden !important;
     }
-
-    /* Ocultar el widget original de Centova */
+    
+    .cbox-frame-main {
+        flex: 1 !important;
+        width: 100% !important;
+        border: 0 !important;
+        min-height: 0 !important; /* Fix para Flexbox */
+    }
+    
+    .cbox-frame-form {
+        height: 155px !important;
+        flex-shrink: 0 !important;
+        width: 100% !important;
+        border: 0 !important;
+        border-top: 1px solid rgba(0,0,0,0.1) !important;
+    }
+    
     #cc_recenttracks_original { display: none !important; }
 
-    /* --- RESPONSIVE --- */
-    @media (max-width: 800px) {
-      .billboard-layout, .dyk-card, .news-card { grid-template-columns: 1fr; }
-      .hit-number-one { aspect-ratio: 16/9; min-height: 250px; }
-      .hit-one-cover { aspect-ratio: 16/9; object-position: center 20%; }
-      
-      .dyk-cover-wrapper, .news-image-wrapper { height: 250px; }
-      .dyk-cover, .news-image { object-position: center 20%; }
-      
-      /* AJUSTE: RESETEAR PADDING EN MOVIL PARA QUE NO QUEDE RARO */
-      .dyk-content, .news-content { padding: 20px; }
+    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); z-index: var(--z-modal); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s ease; }
+    .modal-overlay.active { opacity: 1; visibility: visible; }
+    .modal-content { background: #1a1a1a; width: 700px; max-width: 95%; padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); transform: translateY(20px); transition: transform 0.4s ease; position: relative; }
+    .modal-overlay.active .modal-content { transform: translateY(0); }
+    .modal-close { position: absolute; top: 15px; right: 15px; background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; opacity: 0.6; transition: opacity 0.3s; }
+    .modal-close:hover { opacity: 1; }
+    .modal-title { font-size: 22px; font-weight: 700; margin-bottom: 10px; color: #fff; }
+    .modal-subtitle { font-size: 14px; color: var(--color-accent-blue); margin-bottom: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    .modal-body { font-size: 14px; line-height: 1.6; color: #ccc; max-height: 300px; overflow-y: auto; padding-right: 10px; }
+    .modal-meta { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 20px; font-size: 13px; color: #888; }
+    .modal-meta span { display: block; color: #fff; font-weight: 500; margin-top: 3px; }
 
+    /* 7. RESPONSIVE */
+    @media (max-width: 800px) {
+      .feature-image-wrapper { height: 250px; }
+      .feature-content { padding: 20px; }
+      .feature-card { grid-template-columns: 1fr; }
       .slogan-text, .community-title { font-size: 36px; } 
       .sub-slogan { font-size: 24px; }
-      
       .buttons-container { flex-direction: column; align-items: center; }
       .btn-social { width: 100%; max-width: 300px; }
+      .slider-arrow { background: rgba(0,0,0,0.8); }
+      .slider-arrow.left { left: 0; }
+      .slider-arrow.right { right: 0; }
+      .schedule-track { padding-left: calc(50% - 135px); } 
+      .schedule-card-item { flex: 0 0 270px; max-width: 270px; }
+      .program-tag-inline { display: none; } 
     }
 
     @media (max-width: 600px) {
@@ -767,39 +407,27 @@
       .player { padding: 25px; align-items: center; text-align: center; }
       .info-wrapper { text-align: center; }
       .controls-row { justify-content: center; gap: 20px; }
-      
-      /* Alineación del meta en móvil también a la izquierda en desktop, pero quizás centrado en móvil? 
-         Lo dejaremos a la izquierda por ahora para consistencia, o puedes agregar justify-content: center aquí si prefieres. */
       .player-meta-row { justify-content: center; } 
-
       .recent-tracks-grid { grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); }
-      .radio-container, .recent-tracks-container, .top-hits-container, .did-you-know-container, .slogan-section, .community-section, .news-section-container { margin-bottom: 50px; } 
-      .radio-logo { max-width: 300px; } 
+      .radio-container, .content-section, .slogan-section, .community-section { margin-bottom: 50px; } 
+      .radio-logo { max-width: 300px; }
+      
+      /* Ajuste CBOX MÓVIL (SOBRESCRIBE ESCRITORIO) */
+      #cboxdiv {
+          width: 85vw !important; /* ~85% del ancho de pantalla */
+          height: 60vh !important; /* Altura dinámica */
+      }
+      #cboxwrap {
+          bottom: 75px !important;
+          right: 10px !important;
+      }
     }
-
-    /* --- MODAL POPUP --- */
-    .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); z-index: 1000; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s ease; }
-    .modal-overlay.active { opacity: 1; visibility: visible; }
-    .modal-content { background: #1a1a1a; width: 700px; max-width: 95%; padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); transform: translateY(20px); transition: transform 0.4s ease; position: relative; }
-    .modal-overlay.active .modal-content { transform: translateY(0); }
-    .modal-close { position: absolute; top: 15px; right: 15px; background: none; border: none; color: #fff; font-size: 20px; cursor: pointer; opacity: 0.6; transition: opacity 0.3s; }
-    .modal-close:hover { opacity: 1; }
-    .modal-title { font-size: 22px; font-weight: 700; margin-bottom: 10px; color: #fff; }
-    .modal-subtitle { font-size: 14px; color: #00c6ff; margin-bottom: 20px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
-    .modal-body { font-size: 14px; line-height: 1.6; color: #ccc; max-height: 300px; overflow-y: auto; padding-right: 10px; }
-    .modal-meta { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 20px; font-size: 13px; color: #888; }
-    .modal-meta span { display: block; color: #fff; font-weight: 500; margin-top: 3px; }
-    .creator-footer { margin-top: 10px; font-size: 12px; color: rgba(255, 255, 255, 0.4); text-align: center; z-index: 5; }
-    .creator-footer a { color: #fff; text-decoration: none; opacity: 0.7; }
-    .creator-footer a:hover { opacity: 1; text-decoration: underline; }
   </style>
 </head>
 <body>
 
-<!-- Fondo Blur -->
+<!-- Fondo y Splash -->
 <div class="background-blur visual-transition" id="bgBlur"></div>
-
-<!-- Splash Screen -->
 <div class="splash-screen">
   <h1>Sintonizando...</h1>
   <div class="spinner"></div>
@@ -808,7 +436,7 @@
 <!-- Modal Pop-up -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-content">
-    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
+    <button class="modal-close" onclick="closeModal()" aria-label="Cerrar ventana"><i class="fas fa-times"></i></button>
     <div class="modal-title" id="modalArtist">Artista</div>
     <div class="modal-subtitle" id="modalTitle">Canción</div>
     <div class="modal-body" id="modalBio">Cargando información...</div>
@@ -819,1073 +447,782 @@
   </div>
 </div>
 
-<!-- Título / Logotipo -->
-<!-- REEMPLAZADO POR IMAGEN -->
-<img src="https://bit.ly/4rSMOON" alt="Radiochar" class="radio-logo">
+<!-- Header -->
+<header>
+    <img src="https://bit.ly/4rSMOON" alt="Radiochar Logo" class="radio-logo">
+</header>
 
+<!-- Main -->
+<main>
+    <!-- REPRODUCTOR -->
+    <section class="radio-container" aria-label="Reproductor de Radio">
+      <div class="cover">
+        <button id="wikiBtn" class="wiki-btn" title="Ver reseña" onclick="openInfoModal()" aria-label="Más información"><i class="fas fa-info"></i></button>
+        <div id="albumYear" class="album-year-badge visual-transition"></div>
+        <img id="albumArt" class="visual-transition" src="https://bit.ly/4q9Jddl" alt="Portada del Álbum">
+      </div>
 
-<!-- REPRODUCTOR PRINCIPAL -->
-<div class="radio-container">
-  <!-- Lado Izquierdo: Portada -->
-  <div class="cover">
-    <div id="wikiBtn" class="wiki-btn" title="Ver reseña" onclick="openInfoModal()"><i class="fas fa-info"></i></div>
-    <div id="albumYear" class="album-year-badge visual-transition"></div>
-    <img id="albumArt" class="visual-transition" src="https://bit.ly/4q9Jddl" alt="Cover" />
-  </div>
+      <div class="player">
+        <canvas id="winampVis" aria-hidden="true"></canvas>
+        <div class="info-wrapper">
+          <div class="player-meta-row">
+              <div class="live-tag-inline"><div class="live-dot-inline"></div> AL AIRE</div>
+              <div class="listener-tag-inline"><i class="fas fa-headphones" aria-hidden="true"></i><span id="listenerCount">--</span></div>
+              <div class="program-tag-inline"><i class="fas fa-broadcast-tower"></i> <span id="currentProgramDisplay">--</span></div>
+          </div>
+          <div class="song-title-container">
+            <div id="displayTitle" class="song-title visual-transition">Conectando...</div>
+          </div>
+          <div id="displayArtist" class="artist-name visual-transition">Radiochar</div>
+        </div>
 
-  <!-- Lado Derecho: Controles e Info -->
-  <div class="player">
-    <canvas id="winampVis"></canvas>
-    <!-- Info Canción -->
-    <div class="info-wrapper">
+        <div class="timeline-container">
+          <div id="currentTime" class="time-display">00:00</div>
+          <div class="progress-bar-bg"><div id="progressFill" class="progress-bar-fill"></div></div>
+          <div id="totalTime" class="time-display">--:--</div>
+        </div>
+
+        <div class="controls-row">
+          <div class="play-btn-wrapper">
+            <button id="playPause" class="play-btn" aria-label="Reproducir o Pausar"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+        
+        <div id="data-source" style="display: none;" aria-hidden="true">
+            <div id="trackTitleSource" class="cc_streaminfo" data-type="tracktitle" data-username="robinson"></div>
+            <div id="trackArtistSource" class="cc_streaminfo" data-type="trackartist" data-username="robinson"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMACIÓN SEMANAL (INFINITE TIMELINE SLIDER) -->
+    <section class="content-section schedule-section">
+      <div class="section-header-common">
+        <h2 class="section-title-common schedule-title-custom">PROGRAMACIÓN SEMANAL</h2>
+      </div>
       
-      <!-- NUEVA UBICACIÓN: INDICADORES LIVE Y OYENTES -->
-      <div class="player-meta-row">
-          <div class="live-tag-inline">
-              <div class="live-dot-inline"></div>
-              LIVE
-          </div>
-          <div class="listener-tag-inline">
-              <i class="fas fa-headphones"></i>
-              <span id="listenerCount">--</span>
-          </div>
+      <div class="schedule-container-custom" id="scheduleSlider">
+         <div class="slider-arrow left" id="schedPrev"><i class="fas fa-chevron-left"></i></div>
+         <div class="slider-arrow right" id="schedNext"><i class="fas fa-chevron-right"></i></div>
+         
+         <div class="schedule-track" id="scheduleTrack">
+            <!-- Inyectado por JS -->
+         </div>
       </div>
+    </section>
 
-      <div class="song-title-container">
-        <div id="displayTitle" class="song-title visual-transition">Conectando...</div>
-      </div>
-      <div id="displayArtist" class="artist-name visual-transition">Radiochar</div>
-    </div>
-    <!-- Línea de Tiempo -->
-    <div class="timeline-container">
-      <div id="currentTime" class="time-display">00:00</div>
-      <div class="progress-bar-bg"><div id="progressFill" class="progress-bar-fill"></div></div>
-      <div id="totalTime" class="time-display">--:--</div>
-    </div>
-    <!-- Controles -->
-    <div class="controls-row">
-      <div class="play-btn-wrapper">
-        <button id="playPause" class="play-btn"><i class="fas fa-play"></i></button>
-      </div>
-    </div>
-    <!-- Data oculta del reproductor -->
-    <div id="data-source" style="display: none;">
-        <div id="trackTitleSource" class="cc_streaminfo" data-type="tracktitle" data-username="robinson"></div>
-        <div id="trackArtistSource" class="cc_streaminfo" data-type="trackartist" data-username="robinson"></div>
-    </div>
-  </div>
-</div>
-
-<!-- SECCIÓN: HISTORIAL DE CANCIONES (Simple con número) - ARRIBA -->
-<div class="recent-tracks-container">
-    <!-- CLASE UNIFICADA: Encabezado -->
-    <div class="section-header-common">
-        <!-- CLASE UNIFICADA: Título AZUL -->
-        <h2 class="section-title-common recent-tracks-title-custom">LAS ÚLTIMAS QUE SONARON</h2>
-    </div>
-    <div id="recentTracksGrid" class="recent-tracks-grid">
-        <!-- JS llenará esto -->
-        <div class="no-tracks-msg">Cargando historial...</div>
-    </div>
-</div>
-
-<!-- SECCIÓN: SLOGAN (NUEVA SECCIÓN) -->
-<div class="slogan-section">
-    <h2 class="slogan-text">LA EMISORA ONLINE NÚMERO UNO EN LATAM</h2>
-    <h3 class="sub-slogan">TRANSMITIENDO 24/7 DESDE 2011<span class="live-badge-red">LIVE</span></h3>
-</div>
-
-<!-- SECCIÓN: TOP 5 BILLBOARD (Diseño Ajustado con Números Grandes) - EN MEDIO -->
-<div class="top-hits-container">
-    <!-- CLASE UNIFICADA: Encabezado -->
-    <div class="section-header-common">
-        <!-- CLASE UNIFICADA: Título AMARILLO -->
-        <h2 class="section-title-common top-hits-title-custom">TOP 5 DE AYER</h2>
-        <div id="topHitsDateDisplay" class="top-hits-date">...</div>
-    </div>
-    
-    <div class="billboard-layout" id="billboardContainer">
-        <!-- JS llenará esto -->
-    </div>
-</div>
-
-<!-- SECCIÓN: ¿SABÍAS QUE? (Diseño Limpio y Sutil) - ABAJO -->
-<div class="did-you-know-container" id="didYouKnowContainer" style="display: none;">
-    <!-- CLASE UNIFICADA: Encabezado -->
-    <div class="section-header-common">
-         <!-- CLASE UNIFICADA: Título FUCSIA -->
-        <h2 class="section-title-common dyk-title-custom">SABÍAS QUE...</h2>
-    </div>
-    <div id="dykContent" class="dyk-card">
-        <!-- Se llena dinámicamente -->
-        <div class="dyk-cover-wrapper">
-            <div class="dyk-badge">El Dato</div>
-            <img src="" class="dyk-cover" id="dykCover" alt="Cover">
+    <!-- HISTORIAL -->
+    <section class="content-section recent-tracks-container">
+        <div class="section-header-common">
+            <h2 class="section-title-common recent-tracks-title-custom">LAS ÚLTIMAS QUE SONARON</h2>
         </div>
-        <div class="dyk-content">
-            <div class="dyk-song-title" id="dykTitle">Cargando...</div>
-            <div class="dyk-song-artist" id="dykArtist">...</div>
-            <div class="dyk-meta">
-                <div id="dykAlbum"><i class="fas fa-compact-disc"></i> <span>--</span></div>
-                <div id="dykYear"><i class="fas fa-calendar-alt"></i> <span>--</span></div>
+        <div id="recentTracksGrid" class="recent-tracks-grid card-grid-container">
+            <div class="no-tracks-msg">Cargando historial...</div>
+        </div>
+    </section>
+
+    <!-- SLOGAN -->
+    <section class="content-section slogan-section">
+        <h2 class="slogan-text">LA EMISORA ONLINE <p style="color: yellow; display: inline;">#1</p> EN LATAM</h2>
+        <h3 class="sub-slogan">TRANSMITIENDO 24/7 DESDE 2011 EN HD</h3>
+    </section>
+
+    <!-- SABÍAS QUE -->
+    <section class="content-section did-you-know-container" id="didYouKnowContainer" style="display: none;">
+        <div class="section-header-common">
+             <h2 class="section-title-common dyk-title-custom">SABÍAS QUE...</h2>
+        </div>
+        <article id="dykContent" class="feature-card">
+            <div class="feature-image-wrapper">
+                <div class="feature-badge badge-pink">El Dato</div>
+                <img src="" class="feature-image" id="dykCover" alt="Cover">
             </div>
-            <div class="dyk-text" id="dykText">
-                Buscando datos interesantes sobre esta canción...
+            <div class="feature-content">
+                <div class="feature-headline" id="dykTitle">Cargando...</div>
+                <div class="feature-subhead" id="dykArtist"></div>
+                <div class="feature-meta">
+                    <div id="dykAlbum"><i class="fas fa-compact-disc"></i> <span>--</span></div>
+                    <div id="dykYear"><i class="fas fa-calendar-alt"></i> <span>--</span></div>
+                </div>
+                <div class="feature-text" id="dykText">Buscando datos interesantes...</div>
             </div>
-        </div>
-    </div>
-</div>
+        </article>
+    </section>
 
-<!-- SECCIÓN: UN DÍA COMO HOY (1985) -->
-<div class="news-section-container">
-    <!-- CLASE UNIFICADA: Encabezado -->
-    <div class="section-header-common">
-         <!-- CLASE UNIFICADA: Título VERDE NEÓN -->
-        <h2 class="section-title-common news-title-custom">UN DÍA COMO HOY DE 1985</h2>
-    </div>
-    
-    <div class="news-card">
-        <div class="news-image-wrapper">
-             <div class="news-date-badge" id="newsDateBadge">--/--</div>
-             <img src="" id="newsImage" class="news-image" alt="Noticia Musical" onerror="this.src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLNh9EesljZjOf9Wd4kxbj_a-I04zgQmfpM1gcDbEF6PXkq7CtZ-71Kgc8TwALbpRGi3EDbTIjTEI1N5QRDDXqD6QhV3UHE79leufBWqZoAxys7KiIcviuxnB-ozdP15EVtEGONWR_ZeHPabjdfUd_X8FkdcoDCtVrNvolF3fQyA8N7eLEoozmI895tiEf/s16000/radiochar-vice.png'">
-        </div>
-        <div class="news-content">
-            <h3 class="news-headline" id="newsHeadline">Cargando efemérides...</h3>
-            <p class="news-body" id="newsBody">Estamos buscando en nuestros archivos de 1985...</p>
-        </div>
-    </div>
-</div>
+</main>
 
-<!-- SECCIÓN: EL PODIO DE HOY EN 1985 (NUEVA SECCIÓN) -->
-<div class="podium-section-container">
-    <!-- CLASE UNIFICADA: Encabezado -->
-    <div class="section-header-common">
-         <!-- CLASE UNIFICADA: Título NARANJA -->
-        <h2 class="section-title-common podium-title-custom">EL PODIO DE HOY EN BILLOARD 1985</h2>
-    </div>
-    
-    <div class="podium-grid" id="podiumContainer">
-        <!-- JS llenará esto con 3 tarjetas -->
-    </div>
-</div>
-
-<!-- SECCIÓN: COMUNIDAD (SOLO FACEBOOK) - ABAJO FINAL -->
-<div class="community-section">
+<!-- Footer -->
+<footer class="community-section">
     <h2 class="community-title">ÚNETE A NUESTRA COMUNIDAD</h2>
     <div class="buttons-container">
-        <a href="https://www.facebook.com/Radionlineco/" target="_blank" class="btn-social btn-facebook">
-            <i class="fab fa-facebook-f"></i> Síguenos en Facebook
+        <a href="https://www.facebook.com/Radionlineco/" target="_blank" rel="noopener noreferrer" class="btn-social btn-facebook">
+            <i class="fab fa-facebook-f" aria-hidden="true"></i> Síguenos en Facebook
+        </a>
+        <a href="https://x.com/radiocharonline" target="_blank" rel="noopener noreferrer" class="btn-social btn-x">
+            <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> Síguenos en X
         </a>
     </div>
-</div>
+    <div class="creator-footer">
+      <span>Powered by</span> 
+      <a href="https://www.robinsonchar.online/" target="_blank" rel="noopener noreferrer">robinsonchar</a>
+    </div>
+</footer>
 
-<!-- CBOX BUTTON AND WRAPPER (INJECTED) -->
-<div id="cboxbutton" style="position: fixed; bottom: 8px; right: 16px; padding: 3px 20px; text-align: center; cursor: pointer; background-color: #EDF3F7; border:#C3D7E5 1px solid;border-radius: 3px; font-family: Tahoma, sans-serif; font-size: 14px; font-weight: bold"></div>
-<div id="cboxwrap" style="position: fixed; bottom: 48px; right: 16px; background: #EDF3F7; padding: 3px; border:#C3D7E5 1px solid;border-radius: 3px;"></div>
+<!-- CBOX -->
+<div id="cboxbutton" aria-label="Abrir Chat"></div>
+<div id="cboxwrap"></div>
+<div id="cc_recenttracks_original" class="cc_recenttracks_list" data-username="robinson" aria-hidden="true"></div>
 
-<div class="creator-footer">
-  Powered by <a href="https://www.robinsonchar.online/" target="_blank">robinsonchar</a>
-</div>
-
-<!-- WIDGET ORIGINAL OCULTO -->
-<div id="cc_recenttracks_original" class="cc_recenttracks_list" data-username="robinson"></div>
-
-<!-- SCRIPTS -->
-<audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream" crossorigin="anonymous"></audio>
-<script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
-<script src="https://cast2.my-control-panel.com/system/recenttracks.js"></script>
+<audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream"></audio>
 
 <script>
-// SCROLL TO TOP ON RELOAD
-if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-}
-window.onload = function() {
-    window.scrollTo(0, 0);
+window.onerror = function(message) { if (message.includes("Script error")) return true; };
+
+const itunesCache = new Map();
+
+const CONFIG = {
+    DEFAULT_COVER: 'https://bit.ly/4q9Jddl',
+    ENDPOINTS: {
+        RECENT_FEED: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
+        ITUNES: 'https://itunes.apple.com/search',
+        WIKI_SEARCH: 'https://es.wikipedia.org/w/api.php',
+        WIKI_SUMMARY: 'https://es.wikipedia.org/api/rest_v1/page/summary/'
+    },
+    FILTERS: ['pisa', 'pisacanciones', 'jingle', 'promo', 'indicativo', 'sello', 'intro', 'podcast', 'comercial', 'cuña', 'radiochar'],
+    REFRESH_RATE_MS: 90000 
 };
 
-/*
-*	Cbox dynamic loader v.2
-*/
+const DOM = {
+    audio: document.getElementById('radio'),
+    playBtn: document.getElementById('playPause'),
+    playIcon: document.querySelector('#playPause i'),
+    sourceTitle: document.getElementById('trackTitleSource'),
+    sourceArtist: document.getElementById('trackArtistSource'),
+    displayTitle: document.getElementById('displayTitle'),
+    displayArtist: document.getElementById('displayArtist'),
+    albumArt: document.getElementById('albumArt'),
+    bgBlur: document.getElementById('bgBlur'),
+    albumYear: document.getElementById('albumYear'),
+    currentTime: document.getElementById('currentTime'),
+    totalTime: document.getElementById('totalTime'),
+    progressFill: document.getElementById('progressFill'),
+    modal: {
+        overlay: document.getElementById('modalOverlay'),
+        artist: document.getElementById('modalArtist'),
+        title: document.getElementById('modalTitle'),
+        bio: document.getElementById('modalBio'),
+        album: document.getElementById('modalAlbum'),
+        genre: document.getElementById('modalGenre')
+    },
+    canvas: document.getElementById('winampVis'),
+    recentGrid: document.getElementById('recentTracksGrid'),
+    dyk: {
+        container: document.getElementById('didYouKnowContainer'),
+        cover: document.getElementById('dykCover'),
+        title: document.getElementById('dykTitle'),
+        artist: document.getElementById('dykArtist'),
+        album: document.getElementById('dykAlbum'),
+        year: document.getElementById('dykYear'),
+        text: document.getElementById('dykText')
+    },
+    schedule: {
+        track: document.getElementById('scheduleTrack'),
+        prev: document.getElementById('schedPrev'),
+        next: document.getElementById('schedNext')
+    }
+};
+
+const Utils = {
+    debounce: (func, wait) => {
+        let timeout;
+        return function(...args) {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    },
+    cleanText: (text) => {
+        if (!text) return "";
+        return text.replace(/^\d+\.?\s*-?/, "").replace(/\(.*\)/g, "").replace(/\[.*\]/g, "").replace(/ft\..*/i, "").replace(/feat\..*/i, "").replace(/remix/i, "").replace(/original mix/i, "").replace(/extended/i, "").replace(/radio edit/i, "").trim();
+    },
+    formatTime: (seconds) => {
+        const m = Math.floor(seconds / 60);
+        const s = Math.floor(seconds % 60);
+        return `${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
+    },
+    toTitleCase: (str) => {
+        if(!str) return "";
+        return str.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    },
+    smartLimitText: (text, maxWords) => {
+        if (!text) return "";
+        const words = text.trim().split(/\s+/);
+        if (words.length <= maxWords) return text;
+        const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
+        let result = "";
+        let currentWordCount = 0;
+        for (let s of sentences) {
+            const wc = s.trim().split(/\s+/).length;
+            if (currentWordCount + wc <= maxWords + 5) {
+                result += s;
+                currentWordCount += wc;
+            } else {
+                if (result === "") return words.slice(0, maxWords).join(" ") + "...";
+                break;
+            }
+        }
+        return result.trim();
+    },
+    safeFetchJson: async (url) => {
+        try {
+            const res = await fetch(url);
+            if (!res.ok) return null;
+            const text = await res.text();
+            return text ? JSON.parse(text) : null;
+        } catch (e) {
+            return null;
+        }
+    },
+    getVintageDate: () => {
+        const now = new Date();
+        const day = now.getDay();
+        const diff = now.getDate() - day; 
+        const sunday = new Date(now.setDate(diff));
+        const vintageYear = sunday.getFullYear() - 40;
+        const vintageDate = new Date(sunday);
+        vintageDate.setFullYear(vintageYear);
+        return {
+            display: sunday.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' }).replace(/\//g, '/').slice(0, -4) + vintageYear,
+            obj: vintageDate,
+            month: vintageDate.getMonth(), 
+            day: vintageDate.getDate()
+        };
+    }
+};
+
 (function () {
-	var showByDefault = false; // CAMBIADO: Iniciar cerrado
-	var cboxContainer = document.getElementById("cboxwrap");
-	var cboxToggleButton = document.getElementById("cboxbutton");
-	
-    // CAMBIO: ICONOS EN LUGAR DE TEXTO
-    var buttonStringOpen = '<i class="fas fa-comment-dots"></i>'; 
-	var buttonStringClose = '<i class="fas fa-times"></i>'; 
-	var lsKey = "cbox:isOpen";
-
-	var cboxHTML = '<!-- BEGIN CBOX - www.cbox.ws - v4.3 -->'
-	+'<div id="cboxdiv" style="position: relative; margin: 0 auto; width: 300px; font-size: 0; line-height: 0;">'
-	+'<div style="position: relative; height: 233px; overflow: auto; overflow-y: auto; -webkit-overflow-scrolling: touch; border: 0px solid;"><iframe src="https://www4.cbox.ws/box/?boxid=3774862&boxtag=a7lslt&sec=main" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="auto" allowtransparency="yes" name="cboxmain4-3774862" id="cboxmain4-3774862"></iframe></div>'
-	+'<div style="position: relative; height: 147px; overflow: hidden; border: 0px solid; border-top: 0px;"><iframe src="https://www4.cbox.ws/box/?boxid=3774862&boxtag=a7lslt&sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" width="100%" height="100%" scrolling="no" allowtransparency="yes" name="cboxform4-3774862" id="cboxform4-3774862"></iframe></div>'
-	+'</div>'
-	+'<!-- END CBOX -->';
-
-	var htmlInjected = false;
-	var isVisible = false;
-	var toggleCbox = function (show) {
-		
-		if (!show) {
-			cboxContainer.style.display = "none";
-			if (cboxToggleButton) {
-				cboxToggleButton.innerHTML = buttonStringOpen;
-			}
-			
-		}
-		else {
-			cboxContainer.style.display = "block";
-			if (cboxToggleButton) {
-				cboxToggleButton.innerHTML = buttonStringClose;
-			}
-		}
-		
-		if (show && !htmlInjected) {
-			cboxContainer.innerHTML = cboxHTML;
-			htmlInjected = true;
-		}
-		
-		isVisible = show;
-	}
-
-    // INIT: Siempre cerrado al cargar (según instrucción)
-	toggleCbox(false); 
-    // Eliminamos la lectura de localStorage para que no se abra solo
-
-	if (cboxToggleButton) {
-		cboxToggleButton.onclick = function () {
-			toggleCbox(!isVisible);
-			// No guardamos estado para respetar la instrucción de "siempre cerrado al cargar"
-		}
-	}
+    const cboxContainer = document.getElementById("cboxwrap");
+    const cboxToggleButton = document.getElementById("cboxbutton");
+    const icons = { open: '<i class="fas fa-comment-dots"></i>', close: '<i class="fas fa-times"></i>' };
+    let isVisible = false;
+    let htmlInjected = false;
+    const toggleCbox = (show) => {
+        cboxContainer.style.display = show ? "block" : "none";
+        if (cboxToggleButton) cboxToggleButton.innerHTML = show ? icons.close : icons.open;
+        if (show && !htmlInjected) {
+            // HTML LIMPIO Y RESPONSIVO PARA CBOX
+            cboxContainer.innerHTML = `
+            <div id="cboxdiv">
+                <iframe src="https://www4.cbox.ws/box/?boxid=3774862&boxtag=a7lslt&sec=main" marginheight="0" marginwidth="0" frameborder="0" scrolling="auto" allowtransparency="yes" name="cboxmain4-3774862" id="cboxmain4-3774862" class="cbox-frame-main"></iframe>
+                <iframe src="https://www4.cbox.ws/box/?boxid=3774862&boxtag=a7lslt&sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" allowtransparency="yes" name="cboxform4-3774862" id="cboxform4-3774862" class="cbox-frame-form"></iframe>
+            </div>`;
+            htmlInjected = true;
+        }
+        isVisible = show;
+    };
+    if (cboxToggleButton) {
+        cboxToggleButton.onclick = () => toggleCbox(!isVisible);
+        toggleCbox(false);
+    }
 })();
 
-  // --- LÓGICA PRINCIPAL DEL REPRODUCTOR (Sin cambios) ---
-  let isPlaying = false; 
-  const audio = document.getElementById('radio');
-  const playPauseBtn = document.getElementById('playPause');
-  const playIcon = playPauseBtn.querySelector('i');
-  
-  const sourceTitle = document.getElementById('trackTitleSource');
-  const sourceArtist = document.getElementById('trackArtistSource');
-  const displayTitle = document.getElementById('displayTitle');
-  const displayArtist = document.getElementById('displayArtist');
-  const albumArt = document.getElementById('albumArt');
-  const bgBlur = document.getElementById('bgBlur');
-  const albumYearEl = document.getElementById('albumYear');
-  
-  const currentTimeEl = document.getElementById('currentTime');
-  const totalTimeEl = document.getElementById('totalTime');
-  const progressFill = document.getElementById('progressFill');
+// === SCHEDULE ENGINE (CLEAN & STATIC) ===
+const ScheduleEngine = {
+    programs: [
+        { id: 'lover', title: 'LOVER CITY', subtitle: 'BALADAS AMERICANAS', start: 0, end: 6, img: 'https://mickpini.com/wp-content/uploads/2025/07/1.png', displayTime: '00:00 - 05:59' },
+        { id: 'wonders', title: 'THE WONDERS', subtitle: 'LOS 90S', start: 6, end: 12, img: 'https://wallpapers.com/images/hd/90s-theme-background-fdllcnh7s97z4qio.jpg', displayTime: '06:00 - 11:59' },
+        { id: 'tirando', title: 'TIRANDO PIEDRAS', subtitle: 'ROCK EN ESPAÑOL', start: 12, end: 15, img: 'https://dojiw2m9tvv09.cloudfront.net/36300/product/los-rodriguez-vinilo-89039.jpg', displayTime: '12:00 - 14:59' },
+        { id: 'rockstars', title: 'ROCKSTARS', subtitle: 'ROCK DE LOS 80S', start: 15, end: 20, img: 'https://i0.wp.com/lashistoriasdelrock.com/wp-content/uploads/2024/06/Son-10-Canciones-de-Rock-Mas-Emblematicas-de-los-80s.jpg', displayTime: '15:00 - 19:59' },
+        { id: 'hits_lie', title: 'HITS DON´T LIE', subtitle: 'HITS 80S/90S', start: 20, end: 24, img: 'https://djhire.melbourne/wp-content/uploads/2024/11/Bon-Jovi-80s.png', displayTime: '20:00 - 23:59' }
+    ],
 
-  const modalOverlay = document.getElementById('modalOverlay');
-  const modalArtist = document.getElementById('modalArtist');
-  const modalTitle = document.getElementById('modalTitle');
-  const modalBio = document.getElementById('modalBio');
-  const modalAlbum = document.getElementById('modalAlbum');
-  const modalGenre = document.getElementById('modalGenre');
+    init: function() {
+        if(!DOM.schedule.track) return;
+        const schedule = this.getTodaySchedule();
+        new InfiniteTimelineSlider(DOM.schedule.track, DOM.schedule.prev, DOM.schedule.next, schedule);
+        this.updatePlayerLabel(schedule);
+        setInterval(() => this.updatePlayerLabel(schedule), 60000); 
+    },
 
-  let currentArtistName = "Radiochar";
-  let currentSongName = "";
-  let currentAlbumName = "";
-  let currentGenre = "";
+    getTodaySchedule: function() {
+        // Return static list (No Trance, No Christmas)
+        return JSON.parse(JSON.stringify(this.programs));
+    },
 
-  const DEFAULT_COVER = 'https://bit.ly/4q9Jddl';
-
-  // --- VARIABLES TIMELINE ---
-  let songDurationSecs = 0;
-  let currentSecs = 0;
-  let timelineInterval;
-  let startTime = 0;
-
-  document.getElementById('listenerCount').innerText = Math.floor(Math.random() * (50 - 25 + 1) + 25);
-
-  const canvas = document.getElementById('winampVis');
-  const ctx = canvas.getContext('2d');
-  const TOTAL_BARS = 30; 
-  const HALF_BARS = TOTAL_BARS / 2; 
-  let peakHeights = new Array(HALF_BARS).fill(0); 
-
-  function animateWinamp() {
-    requestAnimationFrame(animateWinamp);
-    if (canvas.width !== canvas.clientWidth) { canvas.width = canvas.clientWidth; canvas.height = canvas.clientHeight; }
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    let frequencyData = [];
-    if (isPlaying) { for(let i=0; i<HALF_BARS; i++) frequencyData.push(Math.random() * 100); }
-    else { frequencyData = new Array(HALF_BARS).fill(0); }
-    const gap = 3; const barWidth = (canvas.width - (gap * (TOTAL_BARS - 1))) / TOTAL_BARS; 
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.1)'; 
-    for (let i = 0; i < HALF_BARS; i++) {
-        let intensity = frequencyData[i] || 0;
-        const decay = 1 - (i * 0.05); let targetHeight = (intensity / 100) * canvas.height * decay;
-        if (targetHeight > peakHeights[i]) peakHeights[i] = targetHeight; else peakHeights[i] -= 2; 
-        if (peakHeights[i] < 0) peakHeights[i] = 0;
-        const h = peakHeights[i]; const center = canvas.width / 2; const xOffset = (i * (barWidth + gap)) + (gap/2);
-        ctx.fillRect(center - xOffset - barWidth, canvas.height - h, barWidth, h); 
-        ctx.fillRect(center + xOffset, canvas.height - h, barWidth, h); 
+    updatePlayerLabel: function(schedule) {
+        const now = new Date().getHours();
+        const activeProg = schedule.find(p => now >= p.start && now < p.end);
+        if(activeProg) {
+            document.getElementById('currentProgramDisplay').innerText = activeProg.title;
+        }
     }
-  }
-  animateWinamp();
+};
 
-  audio.volume = 1.0; 
+class InfiniteTimelineSlider {
+    constructor(track, prevBtn, nextBtn, items) {
+        this.track = track;
+        this.prevBtn = prevBtn;
+        this.nextBtn = nextBtn;
+        this.originalItems = items;
+        this.itemCount = items.length;
+        
+        const now = new Date().getHours();
+        this.realIndex = items.findIndex(p => now >= p.start && now < p.end);
+        if(this.realIndex === -1) this.realIndex = 0;
+        
+        this.render();
+        this.initListeners();
+    }
 
-  playPauseBtn.addEventListener('click', () => {
+    render() {
+        let html = '';
+        this.originalItems.forEach((prog) => html += this.createCardHtml(prog, false));
+        this.originalItems.forEach((prog) => html += this.createCardHtml(prog, true));
+        this.originalItems.forEach((prog) => html += this.createCardHtml(prog, false));
+        this.track.innerHTML = html;
+        
+        this.currentIndex = this.itemCount + this.realIndex;
+        // Esperar a que el DOM pinte para calcular ancho
+        setTimeout(() => {
+            this.updateCardWidth();
+            this.updatePosition(false);
+        }, 50);
+    }
+
+    createCardHtml(prog, isReal) {
+        return `
+            <div class="schedule-card-item" data-id="${prog.id}" data-start="${prog.start}" data-end="${prog.end}">
+                <div class="program-card">
+                    <div class="on-air-badge">AL AIRE</div>
+                    <img src="${prog.img}" class="program-bg" alt="${prog.title}" onerror="this.src='${CONFIG.DEFAULT_COVER}'">
+                    <div class="program-overlay">
+                        <div class="program-time">${prog.displayTime}</div>
+                        <div class="program-title">${prog.title}</div>
+                        <div class="program-subtitle">${prog.subtitle}</div>
+                    </div>
+                </div>
+            </div>`;
+    }
+
+    initListeners() {
+        this.prevBtn.addEventListener('click', () => this.slide(-1));
+        this.nextBtn.addEventListener('click', () => this.slide(1));
+        
+        this.track.addEventListener('transitionend', () => {
+            this.checkIndex();
+        });
+        
+        window.addEventListener('resize', Utils.debounce(() => {
+            this.updateCardWidth();
+            this.updatePosition(false);
+        }, 200));
+    }
+    
+    updateCardWidth() {
+        const firstCard = this.track.querySelector('.schedule-card-item');
+        if(firstCard) {
+            this.cardWidth = firstCard.offsetWidth; // Ancho dinámico real (incluye margin si lo hubiera en flex gap)
+            // Como el gap es 0 y padding está en el item, offsetWidth es correcto.
+            // Pero en CSS hay padding-left en track.
+            // cardWidth es el desplazamiento.
+        } else {
+            this.cardWidth = 300;
+        }
+    }
+
+    slide(dir) {
+        this.track.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
+        this.currentIndex += dir;
+        this.updatePosition(true);
+    }
+
+    updatePosition(animate) {
+        const translateX = -(this.currentIndex * this.cardWidth);
+        this.track.style.transform = `translateX(${translateX}px)`;
+        this.updateVisuals();
+    }
+
+    checkIndex() {
+        if (this.currentIndex >= this.itemCount * 2) {
+            this.track.style.transition = 'none';
+            this.currentIndex = this.itemCount; 
+            this.updatePosition(false);
+        } else if (this.currentIndex < this.itemCount) {
+            this.track.style.transition = 'none';
+            this.currentIndex = (this.itemCount * 2) - 1; 
+            this.updatePosition(false);
+        }
+    }
+
+    updateVisuals() {
+        const cards = this.track.querySelectorAll('.schedule-card-item');
+        const now = new Date().getHours();
+        
+        cards.forEach((card, idx) => {
+            if (idx === this.currentIndex) {
+                card.classList.add('active-slide');
+                card.style.opacity = '1';
+                card.style.transform = 'scale(1.1)';
+                card.style.filter = 'blur(0)';
+            } else {
+                card.classList.remove('active-slide');
+                card.style.opacity = '0.4';
+                card.style.transform = 'scale(0.9)';
+                card.style.filter = 'blur(2px)';
+            }
+            
+            const start = parseInt(card.dataset.start);
+            const end = parseInt(card.dataset.end);
+            if (now >= start && now < end) {
+                card.classList.add('is-live');
+            } else {
+                card.classList.remove('is-live');
+            }
+        });
+    }
+}
+
+// PLAYER LOGIC
+let isPlaying = false;
+let currentMetadata = { artist: "Radiochar", song: "", album: "", genre: "" };
+let timelineState = { duration: 0, current: 0, start: 0, interval: null };
+
+document.getElementById('listenerCount').innerText = Math.floor(Math.random() * (50 - 25 + 1) + 25);
+
+const ctx = DOM.canvas.getContext('2d');
+const BARS = 30;
+let frequencyData = new Array(BARS).fill(0);
+let peakHeights = new Array(BARS).fill(0);
+
+function animateWinamp() {
+    requestAnimationFrame(animateWinamp);
+    
+    if (DOM.canvas.width !== DOM.canvas.clientWidth) {
+        DOM.canvas.width = DOM.canvas.clientWidth;
+        DOM.canvas.height = DOM.canvas.clientHeight;
+    }
+    
+    ctx.clearRect(0, 0, DOM.canvas.width, DOM.canvas.height);
+    
     if (isPlaying) {
-      audio.pause();
-      playIcon.classList.remove('fa-pause'); playIcon.classList.add('fa-play'); playPauseBtn.classList.remove('playing');
+        for(let i=0; i<BARS; i++) frequencyData[i] = Math.random() * 100;
     } else {
-      audio.play().catch(console.error);
-      playIcon.classList.remove('fa-play'); playIcon.classList.add('fa-pause'); playPauseBtn.classList.add('playing');
+        frequencyData.fill(0);
+    }
+
+    const gap = 3;
+    const barWidth = (DOM.canvas.width - (gap * (BARS - 1))) / BARS;
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
+
+    for (let i = 0; i < BARS; i++) {
+        let intensity = frequencyData[i] || 0;
+        const decay = 1 - (i * 0.05);
+        let targetHeight = (intensity / 100) * DOM.canvas.height * decay;
+        
+        if (targetHeight > peakHeights[i]) peakHeights[i] = targetHeight; else peakHeights[i] -= 2;
+        if (peakHeights[i] < 0) peakHeights[i] = 0;
+
+        const h = peakHeights[i];
+        const center = DOM.canvas.width / 2;
+        const xOffset = (i * (barWidth + gap)) + (gap/2);
+        
+        ctx.fillRect(center - xOffset - barWidth, DOM.canvas.height - h, barWidth, h);
+        ctx.fillRect(center + xOffset, DOM.canvas.height - h, barWidth, h);
+    }
+}
+animateWinamp();
+
+DOM.playBtn.addEventListener('click', () => {
+    if (isPlaying) {
+        DOM.audio.pause();
+        DOM.playIcon.classList.replace('fa-pause', 'fa-play');
+        DOM.playBtn.classList.remove('playing');
+    } else {
+        DOM.audio.play().catch(e => console.error("Error reproducción:", e));
+        DOM.playIcon.classList.replace('fa-play', 'fa-pause');
+        DOM.playBtn.classList.add('playing');
     }
     isPlaying = !isPlaying;
-  });
+});
 
-  async function openInfoModal() {
-    modalOverlay.classList.add('active');
-    modalArtist.innerText = currentArtistName;
-    modalTitle.innerText = currentSongName;
-    modalAlbum.innerText = currentAlbumName || "Desconocido";
-    modalGenre.innerText = currentGenre || "Varios";
-    modalBio.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Buscando información de la canción...';
+async function openInfoModal() {
+    DOM.modal.overlay.classList.add('active');
+    DOM.modal.artist.innerText = currentMetadata.artist;
+    DOM.modal.title.innerText = currentMetadata.song;
+    DOM.modal.album.innerText = currentMetadata.album || "Desconocido";
+    DOM.modal.genre.innerText = currentMetadata.genre || "Varios";
+    DOM.modal.bio.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Buscando información...';
+    const cleanTitle = Utils.cleanText(currentMetadata.song);
+    const query = `${cleanTitle} ${currentMetadata.artist}`;
+    const searchData = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.WIKI_SEARCH}?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&origin=*`);
+    if (searchData && searchData.query?.search?.length > 0) {
+        const pageTitle = searchData.query.search[0].title;
+        const summaryData = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.WIKI_SUMMARY}${encodeURIComponent(pageTitle)}`);
+        if (summaryData && summaryData.extract) { DOM.modal.bio.innerText = summaryData.extract; }
+        else { DOM.modal.bio.innerText = "Reseña no disponible."; }
+    } else { DOM.modal.bio.innerText = "No se encontró información en Wikipedia."; }
+}
 
-    try {
-        const query = `${currentSongName} ${currentArtistName}`;
-        const searchUrl = `https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&origin=*`;
-        
-        const searchRes = await fetch(searchUrl);
-        const searchData = await searchRes.json();
+function closeModal() { DOM.modal.overlay.classList.remove('active'); }
+DOM.modal.overlay.addEventListener('click', (e) => { if (e.target === DOM.modal.overlay) closeModal(); });
 
-        if (searchData.query.search.length > 0) {
-            const pageTitle = searchData.query.search[0].title;
-            const summaryUrl = `https://es.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(pageTitle)}`;
-            
-            const summaryRes = await fetch(summaryUrl);
-            const summaryData = await summaryRes.json();
-
-            if (summaryData.extract) {
-                modalBio.innerText = summaryData.extract;
-            } else {
-                modalBio.innerText = "No se encontró una reseña detallada para esta canción.";
-            }
-        } else {
-             modalBio.innerText = "No se encontró información específica sobre esta canción en Wikipedia.";
-        }
-    } catch (error) {
-        console.error("Wiki Error", error);
-        modalBio.innerText = "Error al conectar con la base de datos de información.";
-    }
-  }
-
-  function closeModal() {
-    modalOverlay.classList.remove('active');
-  }
-  
-  modalOverlay.addEventListener('click', (e) => {
-      if (e.target === modalOverlay) closeModal();
-  });
-
-  function initTimeline(key, durationMillis) {
-    clearInterval(timelineInterval);
-    
-    // --- LÓGICA DE SINCRONIZACIÓN RADIO ---
-    // 1. Reducción Heurística: Las radios cortan las canciones. 
-    //    Restamos 15 segundos o aplicamos un 85% de la duración de iTunes.
-    //    Esto evita que la barra se quede "corta".
-    //    Si la canción es corta (menos de 3 min), restamos menos.
-    let adjustedDuration = durationMillis;
-    if (durationMillis > 180000) { // Si > 3 mins
-         adjustedDuration = durationMillis * 0.90; // Reducir 10%
-    }
-    
+function initTimeline(key, durationMillis) {
+    clearInterval(timelineState.interval);
+    let adjustedDuration = durationMillis > 180000 ? durationMillis * 0.90 : durationMillis;
     const now = Date.now();
-    const savedData = JSON.parse(localStorage.getItem('radioCurrentSong') || '{}');
-    
-    if (savedData.key === key && savedData.startTime) {
-        startTime = savedData.startTime;
-    } else {
-        startTime = now;
-        localStorage.setItem('radioCurrentSong', JSON.stringify({
-            key: key,
-            startTime: startTime
-        }));
-    }
+    let savedData = {};
+    try { savedData = JSON.parse(localStorage.getItem('radioCurrentSong') || '{}'); } catch(e) {}
+    if (savedData.key === key && savedData.startTime) { timelineState.start = savedData.startTime; }
+    else { timelineState.start = now; try { localStorage.setItem('radioCurrentSong', JSON.stringify({ key: key, startTime: now })); } catch(e) {} }
+    timelineState.duration = adjustedDuration / 1000;
+    const updateTick = () => {
+        const elapsed = (Date.now() - timelineState.start) / 1000;
+        let current = elapsed > timelineState.duration ? timelineState.duration : elapsed;
+        DOM.currentTime.innerText = Utils.formatTime(current);
+        DOM.totalTime.innerText = Utils.formatTime(timelineState.duration);
+        DOM.progressFill.style.width = `${(current / timelineState.duration) * 100}%`;
+    };
+    updateTick();
+    timelineState.interval = setInterval(updateTick, 1000);
+}
 
-    songDurationSecs = adjustedDuration / 1000;
-    
-    const elapsedSecs = (now - startTime) / 1000;
-    currentSecs = elapsedSecs > songDurationSecs ? songDurationSecs : elapsedSecs; 
-
-    totalTimeEl.innerText = formatTime(songDurationSecs);
-    updateUI(currentSecs, songDurationSecs);
-
-    timelineInterval = setInterval(() => {
-        const currentNow = Date.now();
-        const realElapsed = (currentNow - startTime) / 1000;
-        
-        currentSecs = realElapsed;
-
-        // Tope visual
-        if (currentSecs > songDurationSecs) {
-           currentSecs = songDurationSecs; 
-        }
-        
-        updateUI(currentSecs, songDurationSecs);
-
-    }, 1000);
-  }
-  
-  function updateUI(current, total) {
-     if(total <= 0) return;
-     currentTimeEl.innerText = formatTime(current);
-     const percent = (current / total) * 100;
-     progressFill.style.width = `${percent}%`;
-  }
-
-  function formatTime(seconds) {
-    const m = Math.floor(seconds / 60);
-    const s = Math.floor(seconds % 60);
-    return `${m < 10 ? '0'+m : m}:${s < 10 ? '0'+s : s}`;
-  }
-
-  function toTitleCase(str) {
-    return str.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-  }
-
-  function checkMarquee() {
+const checkMarquee = Utils.debounce(() => {
     const container = document.querySelector('.song-title-container');
-    if (!displayTitle || !container) return;
-    
-    displayTitle.classList.remove('scrolling-text');
-    container.classList.remove('is-scrolling'); 
-    displayTitle.style.removeProperty('--scroll-distance');
-    
-    if (displayTitle.scrollWidth > container.offsetWidth) {
-      const distance = (displayTitle.scrollWidth - container.offsetWidth + 20) * -1;
-      displayTitle.style.setProperty('--scroll-distance', `${distance}px`);
-      
-      displayTitle.classList.add('scrolling-text');
-      container.classList.add('is-scrolling');
+    const title = DOM.displayTitle;
+    title.classList.remove('scrolling-text');
+    container.classList.remove('is-scrolling');
+    title.style.removeProperty('--scroll-distance');
+    if (title.scrollWidth > container.offsetWidth) {
+        const distance = (title.scrollWidth - container.offsetWidth + 20) * -1;
+        title.style.setProperty('--scroll-distance', `${distance}px`);
+        title.classList.add('scrolling-text');
+        container.classList.add('is-scrolling');
     }
-  }
+}, 200);
 
-  let lastSongKey = ""; 
+window.addEventListener('resize', checkMarquee);
 
-  async function updateInfo() {
-    let artist = sourceArtist.innerText.trim();
-    let title = sourceTitle.innerText.trim();
-    
+let lastSongKey = "";
+
+async function updateInfo() {
+    if (!DOM.sourceArtist || !DOM.sourceTitle) return;
+    let artist = DOM.sourceArtist.innerText.trim();
+    let title = DOM.sourceTitle.innerText.trim();
     if (!artist || !title) return;
-
-    const formattedArtist = toTitleCase(artist);
-    const currentKey = `${formattedArtist}-${title}`;
+    const formattedArtist = Utils.toTitleCase(artist);
+    const uniqueKey = `${formattedArtist}-${title}`;
+    currentMetadata.artist = formattedArtist;
+    currentMetadata.song = title;
+    if (uniqueKey === lastSongKey) { checkMarquee(); return; }
     
-    currentArtistName = formattedArtist;
-    currentSongName = title;
-    
-    if (currentKey === lastSongKey) {
-        checkMarquee(); 
-        return;
+    // JINGLE FILTER
+    const fullStr = (artist + " " + title).toLowerCase();
+    if (CONFIG.FILTERS.some(f => fullStr.includes(f))) {
+        return; // Stop update
     }
-    
-    // --- TRUCO VISUAL: CANCIÓN TERMINADA ---
-    // Si la canción cambia, forzamos la barra anterior al 100% 
-    // para que el usuario sienta que terminó correctamente.
-    if (lastSongKey !== "") {
-        progressFill.style.transition = "width 0.3s ease";
-        progressFill.style.width = "100%";
+
+    // 1. FADE OUT
+    const elementsToFade = [DOM.displayTitle, DOM.displayArtist, DOM.albumArt, DOM.bgBlur, DOM.albumYear];
+    elementsToFade.forEach(el => el.classList.add('fading-out'));
+
+    lastSongKey = uniqueKey;
+
+    const cleanTitle = Utils.cleanText(title);
+    let newCoverUrl = CONFIG.DEFAULT_COVER;
+    let durationMillis = Math.floor(Math.random() * (260000 - 180000 + 1) + 180000); 
+
+    const query = encodeURIComponent(artist + ' ' + cleanTitle);
+    const term = artist + ' ' + cleanTitle;
+
+    // Fetch logic...
+    if (itunesCache.has(term)) {
+        const cachedData = itunesCache.get(term);
+        newCoverUrl = cachedData.url;
+        if(cachedData.meta) {
+            currentMetadata.album = cachedData.meta.album;
+            currentMetadata.genre = cachedData.meta.genre;
+            if(cachedData.meta.year) DOM.albumYear.innerText = cachedData.meta.year;
+            if(cachedData.meta.duration) durationMillis = cachedData.meta.duration;
+        }
+        finishUpdateProcess();
+    } else {
+        const data = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.ITUNES}?term=${query}&media=music&limit=1`);
+        let meta = {};
+        if (data && data.results && data.results.length > 0) {
+            const track = data.results[0];
+            newCoverUrl = track.artworkUrl100.replace('100x100bb', '600x600bb');
+            meta = {
+                album: track.collectionName,
+                genre: track.primaryGenreName,
+                duration: track.trackTimeMillis,
+                year: track.releaseDate ? track.releaseDate.substring(0, 4) : ""
+            };
+            currentMetadata.album = meta.album;
+            currentMetadata.genre = meta.genre;
+            if (meta.duration) durationMillis = meta.duration;
+            if (meta.year) DOM.albumYear.innerText = meta.year;
+        }
+        itunesCache.set(term, { url: newCoverUrl, meta: meta });
+        finishUpdateProcess();
     }
+
+    function finishUpdateProcess() {
+        // 2. Wait for Fade Out (e.g. 600ms)
+        setTimeout(() => {
+            // 3. Swap Content (Invisible)
+            DOM.displayTitle.innerText = title;
+            DOM.displayArtist.innerText = formattedArtist;
+            
+            const imgLoader = new Image();
+            
+            const showNewContent = () => {
+                 DOM.albumArt.src = newCoverUrl;
+                 DOM.bgBlur.style.backgroundImage = `url('${newCoverUrl}')`;
+                 
+                 initTimeline(uniqueKey, durationMillis);
+                 checkMarquee();
+                 
+                 // 4. Fade In
+                 setTimeout(() => {
+                    elementsToFade.forEach(el => el.classList.remove('fading-out'));
+                 }, 50); 
+                 
+                 loadRecentTracks();
+            };
+
+            imgLoader.onload = showNewContent;
+            imgLoader.onerror = () => { 
+                newCoverUrl = CONFIG.DEFAULT_COVER; 
+                showNewContent(); 
+            };
+            imgLoader.src = newCoverUrl;
+
+        }, 600); 
+    }
+}
+
+const observer = new MutationObserver(function(mutations) {
+    if(mutations.some(m => m.type === 'characterData' || m.type === 'childList')) {
+        if(DOM.sourceTitle && DOM.sourceTitle.innerText.trim() !== "") { Utils.debounce(updateInfo, 500)(); }
+    }
+});
+
+if(DOM.sourceTitle) observer.observe(DOM.sourceTitle, { childList: true, characterData: true, subtree: true });
+setTimeout(updateInfo, 2000);
+
+let lastDykId = "";
+
+async function loadRecentTracks() {
+    if (!DOM.recentGrid) return;
+    let items = [];
+    const data = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.RECENT_FEED}?_=${Date.now()}`);
+    if (data && data.items) { items = data.items; }
+    if (items.length > 0) { renderHistory(items); processDidYouKnow(items); }
+}
+
+function renderHistory(items) {
+    let html = '';
+    let count = 0;
     
-    lastSongKey = currentKey;
+    // AUTO-SYNC LOGIC (V6.5)
+    let serverOffset = 0;
+    if (items.length > 0 && (items[0].time || items[0].timestamp)) {
+        const firstTimeRaw = items[0].time || items[0].timestamp;
+        let firstTime = parseInt(firstTimeRaw);
+        if (firstTime < 10000000000) firstTime *= 1000;
+        const diff = Date.now() - firstTime;
+        if (Math.abs(diff) > 3600000) { 
+            serverOffset = diff; 
+        }
+    }
 
-    const query = encodeURIComponent(`${artist} ${title}`);
-    const url = `https://itunes.apple.com/search?term=${query}&media=music&limit=1`;
-    let newCoverUrl = DEFAULT_COVER;
-    let newYear = "";
-    let durationMillis = 180000; 
-    
-    currentAlbumName = "";
-    currentGenre = "";
+    // HEURÍSTICA DE TIEMPO
+    let minutesAgo = 3; 
 
-    try {
-      const res = await fetch(url);
-      const data = await res.json();
-      if (data.results.length > 0) {
-        const track = data.results[0];
-        newCoverUrl = track.artworkUrl100.replace('100x100bb', '600x600bb');
-        if (track.releaseDate) newYear = track.releaseDate.substring(0, 4);
-        if (track.trackTimeMillis) durationMillis = track.trackTimeMillis;
+    for (const item of items) {
+        if (count >= 5) break;
+        let rawArtist = item.artist || "";
+        let rawTitle = item.title || "";
+        if (!rawArtist && rawTitle.includes('-')) { [rawArtist, rawTitle] = rawTitle.split('-').map(s => s.trim()); }
+        const fullStr = (rawArtist + rawTitle).toLowerCase();
+        if (CONFIG.FILTERS.some(f => fullStr.includes(f))) continue;
+        if (Utils.cleanText(rawTitle).toLowerCase() === Utils.cleanText(currentMetadata.song).toLowerCase()) continue;
+        const cleanArtist = Utils.cleanText(rawArtist) || "Radiochar";
+        const cleanTitle = Utils.cleanText(rawTitle);
         
-        currentAlbumName = track.collectionName;
-        currentGenre = track.primaryGenreName;
-      }
-    } catch (error) { /* Fallback */ }
-
-    displayTitle.classList.add('fading-out');
-    displayArtist.classList.add('fading-out');
-    albumArt.classList.add('fading-out');
-    bgBlur.classList.add('fading-out');
-    albumYearEl.classList.add('fading-out');
-
-    const imgLoader = new Image();
-    imgLoader.src = newCoverUrl;
-    
-    setTimeout(() => {
-        // Restaurar transición normal
-        progressFill.style.transition = "width 1s linear";
+        let timeHtml = `<div class="hist-time"><i class="far fa-clock"></i> Hace ${minutesAgo} min</div>`;
+        // Incremento aleatorio entre 3 y 5 minutos
+        minutesAgo += Math.floor(Math.random() * (5 - 3 + 1) + 3);
         
-        displayTitle.innerText = title;
-        displayArtist.innerText = formattedArtist;
-        albumYearEl.innerText = newYear; 
-        
-        albumArt.src = newCoverUrl;
-        bgBlur.style.backgroundImage = `url('${newCoverUrl}')`;
+        html += `<div class="hist-card" data-artist="${cleanArtist}" data-title="${cleanTitle}"><div class="hist-cover-wrap"><div class="hist-num">${count + 1}</div><img src="${item.image || CONFIG.DEFAULT_COVER}" alt="Cover" class="hist-cover lazy-cover" onerror="this.src='${CONFIG.DEFAULT_COVER}'"></div><div class="hist-info"><div class="hist-title" title="${cleanTitle}">${cleanTitle}</div><div class="hist-artist" title="${cleanArtist}">${cleanArtist}</div>${timeHtml}</div></div>`;
+        count++;
+    }
+    if (DOM.recentGrid.innerHTML !== html) { DOM.recentGrid.innerHTML = html; fetchCoversBatch(); }
+}
 
-        initTimeline(currentKey, durationMillis);
-        
-        checkMarquee();
+function fetchCoversBatch() {
+    const cards = document.querySelectorAll('.hist-card');
+    cards.forEach((card, idx) => {
+        setTimeout(async () => {
+            const img = card.querySelector('.hist-cover');
+            if (!img || img.dataset.loaded) return;
+            const term = card.dataset.artist + ' ' + card.dataset.title;
+            if (itunesCache.has(term)) {
+                const cached = itunesCache.get(term);
+                img.src = cached.url; 
+                img.dataset.loaded = "true";
+                return;
+            }
+            const data = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.ITUNES}?term=${encodeURIComponent(term)}&media=music&limit=1`);
+            if (data && data.results && data.results.length > 0) {
+                const url = data.results[0].artworkUrl100.replace('100x100bb', '300x300bb');
+                itunesCache.set(term, { url: url, meta: null }); 
+                img.src = url;
+            } else { itunesCache.set(term, { url: CONFIG.DEFAULT_COVER, meta: null }); }
+            img.dataset.loaded = "true";
+        }, idx * 150);
+    });
+}
 
-        displayTitle.classList.remove('fading-out');
-        displayArtist.classList.remove('fading-out');
-        albumArt.classList.remove('fading-out');
-        bgBlur.classList.remove('fading-out');
-        albumYearEl.classList.remove('fading-out');
-        
-        // Recargar historial inmediatamente después de actualizar la info principal
-        // Esto ayuda a que el filtro de "canción actual" funcione mejor
-        loadRecentTracksFromFeed();
-        
-    }, 800); 
-  }
+async function processDidYouKnow(items) {
+    const valid = items.filter(i => {
+        const txt = ((i.artist||"") + (i.title||"")).toLowerCase();
+        return !CONFIG.FILTERS.some(f => txt.includes(f));
+    });
+    if (valid.length === 0) return;
+    const target = valid[Math.min(valid.length - 1, 9)];
+    const id = target.artist + target.title;
+    if (id !== lastDykId) {
+        lastDykId = id;
+        DOM.dyk.container.style.display = 'block';
+        DOM.dyk.title.innerText = target.title;
+        DOM.dyk.artist.innerText = target.artist || ""; 
+        const cleanTitle = Utils.cleanText(target.title);
+        const query = (target.artist || "") + " " + cleanTitle;
+        const [itunesRes, wikiRes] = await Promise.allSettled([
+            Utils.safeFetchJson(`${CONFIG.ENDPOINTS.ITUNES}?term=${encodeURIComponent(query)}&media=music&limit=1`),
+            Utils.safeFetchJson(`${CONFIG.ENDPOINTS.WIKI_SEARCH}?action=query&list=search&srsearch=${encodeURIComponent(query)}&format=json&origin=*`)
+        ]);
+        if (itunesRes.status === 'fulfilled' && itunesRes.value && itunesRes.value.results?.length > 0) {
+            const t = itunesRes.value.results[0];
+            DOM.dyk.cover.src = t.artworkUrl100.replace('100x100bb', '600x600bb');
+            DOM.dyk.album.querySelector('span').innerText = t.collectionName || "--";
+            DOM.dyk.year.querySelector('span').innerText = t.releaseDate ? t.releaseDate.substring(0,4) : "--";
+        } else { DOM.dyk.cover.src = CONFIG.DEFAULT_COVER; }
+        if (wikiRes.status === 'fulfilled' && wikiRes.value && wikiRes.value.query?.search?.length > 0) {
+            const title = wikiRes.value.query.search[0].title;
+            const summaryData = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.WIKI_SUMMARY}${encodeURIComponent(title)}`);
+            if(summaryData) { DOM.dyk.text.innerText = Utils.smartLimitText(summaryData.extract, 50); }
+        } else { DOM.dyk.text.innerText = "Un clásico de nuestra programación habitual en Radiochar."; }
+    }
+}
 
-  const observer = new MutationObserver(() => { setTimeout(updateInfo, 500); });
-  if(sourceTitle) {
-    observer.observe(sourceTitle, { childList: true, characterData: true, subtree: true });
-  }
+setInterval(loadRecentTracks, CONFIG.REFRESH_RATE_MS);
+loadRecentTracks();
 
-  setTimeout(updateInfo, 2000);
-  window.addEventListener('resize', checkMarquee);
-
-  // -------------------------------------------------------------
-  // LÓGICA DE HISTORIAL RECIENTE (Horizontal con Número)
-  // -------------------------------------------------------------
-  const recentGrid = document.getElementById('recentTracksGrid');
-  const filters = ['pisa', 'pisacanciones', 'jingle', 'promo', 'indicativo', 'sello', 'intro', 'podcast', 'comercial', 'cuña', 'radiochar'];
-
-  function cleanTrackText(text) {
-      if (!text) return "";
-      return text.replace(/^\d+\.?\s*-?/, "").replace(/\(.*\)/g, "").replace(/\[.*\]/g, "").replace(/ft\..*/i, "").replace(/feat\..*/i, "").replace(/remix/i, "").replace(/original mix/i, "").replace(/extended/i, "").replace(/radio edit/i, "").trim();
-  }
-
-  // Variable global para almacenar el historial y usarlo en "Sabías que"
-  let globalRecentItems = [];
-
-  // Variable para rastrear la última canción usada en "Sabías que" y detectar cambios
-  let lastDykTrackTitle = "";
-
-  async function loadRecentTracksFromFeed() {
-      if (!recentGrid) return;
-      try {
-          // AGREGADO: Cache buster para asegurar datos frescos (?_=TIMESTAMP)
-          const response = await fetch(`https://cast2.my-control-panel.com/recentfeed/robinson/json/?_=${Date.now()}`);
-          if (response.ok) {
-              const data = await response.json();
-              const items = data.items ? data.items : (Array.isArray(data) ? data : []);
-              if (items.length > 0) { 
-                  renderTracks(items); 
-                  // Lógica de Observador: Solo actualizar si la canción #10 (o última) cambió
-                  checkAndUpdateDidYouKnow(items);
-                  return; 
-              }
-          }
-      } catch (e) { console.warn("Fallo carga JSON, usando fallback widget...", e); }
-
-      const widget = document.getElementById('cc_recenttracks_original');
-      if (widget && widget.children.length > 0) {
-          const items = [];
-          const rows = widget.querySelectorAll('tr'); 
-          const els = rows.length > 0 ? rows : widget.children;
-          for(let el of els) {
-              let text = el.innerText; 
-              const timeMatch = text.match(/(\d{2}:\d{2})/);
-              if(timeMatch) text = text.replace(timeMatch[0], '');
-              let artist = "Desconocido", title = text;
-              if(text.includes('-')) [artist, title] = text.split('-');
-              items.push({ artist: artist.trim(), title: title.trim(), image: '' });
-          }
-          renderTracks(items);
-          checkAndUpdateDidYouKnow(items);
-      }
-  }
-
-  function checkAndUpdateDidYouKnow(rawItems) {
-      // Filtrar y limpiar la lista primero para obtener la lista real válida
-      let validItems = [];
-      for (let i = 0; i < rawItems.length; i++) {
-          const item = rawItems[i];
-          let rawArtist = item.artist || "", rawTitle = item.title || "";
-          if (!rawArtist && rawTitle.includes('-')) { const parts = rawTitle.split('-'); rawArtist = parts[0].trim(); rawTitle = parts.slice(1).join('-').trim(); }
-          
-          const fullText = `${rawArtist} ${rawTitle}`.toLowerCase();
-          if (filters.some(f => fullText.includes(f))) continue;
-          
-          const cleanTitle = cleanTrackText(rawTitle);
-          const cleanArtist = cleanTrackText(rawArtist);
-          
-          // No excluimos la canción actual aquí porque "Sabías que" puede mostrar cualquiera del historial
-          validItems.push({artist: cleanArtist, title: cleanTitle});
-      }
-
-      // Obtener la canción objetivo (la #10 o la última disponible si hay menos)
-      const targetIndex = Math.min(validItems.length - 1, 9);
-      if (targetIndex < 0) return;
-
-      const targetSong = validItems[targetIndex];
-      const uniqueId = targetSong.artist + targetSong.title;
-
-      // SOLO ACTUALIZAR SI LA CANCIÓN HA CAMBIADO
-      if (uniqueId !== lastDykTrackTitle) {
-          lastDykTrackTitle = uniqueId;
-          updateDidYouKnow(targetSong);
-      }
-  }
-
-  function renderTracks(items) {
-      if (!recentGrid) return;
-      let html = '';
-      let count = 1;
-
-      // HORA ACTUAL EN SEGUNDOS PARA EL CÁLCULO
-      const nowSec = Math.floor(Date.now() / 1000);
-      
-      for (let i = 0; i < items.length; i++) {
-          const item = items[i];
-          let rawArtist = item.artist || "", rawTitle = item.title || "";
-          if (!rawArtist && rawTitle.includes('-')) { const parts = rawTitle.split('-'); rawArtist = parts[0].trim(); rawTitle = parts.slice(1).join('-').trim(); }
-          const fullText = `${rawArtist} ${rawTitle}`.toLowerCase();
-          if (filters.some(f => fullText.includes(f))) continue;
-          const cleanTitle = cleanTrackText(rawTitle);
-          const cleanArtist = cleanTrackText(rawArtist);
-          if (currentSongName && cleanTitle.toLowerCase() === cleanTrackText(currentSongName).toLowerCase()) continue; 
-          
-          if(count <= 5) { 
-              const displayTitle = cleanTitle || rawTitle;
-              const displayArtist = cleanArtist || rawArtist || "Radiochar";
-
-              // LÓGICA DE TIEMPO TRANSCURRIDO (CORREGIDA)
-              let timeHtml = '';
-              // Intentar encontrar el campo de tiempo (time, started, o timestamp)
-              const rawTime = item.time || item.started || item.timestamp;
-              
-              if (rawTime) {
-                  const playedTime = parseInt(rawTime);
-                  if (!isNaN(playedTime)) {
-                      // Calcular diferencia en segundos
-                      let diffSec = nowSec - playedTime;
-                      
-                      // Ajuste de seguridad: Si playedTime es > now*10, probablemente está en milisegundos
-                      if (playedTime > nowSec * 100) {
-                           diffSec = Math.floor(Date.now()/1000) - Math.floor(playedTime/1000);
-                      }
-
-                      let diffMin = Math.floor(diffSec / 60);
-                      if (diffMin < 0) diffMin = 0; // Evitar tiempos negativos por diferencias de reloj
-                      
-                      const timeStr = diffMin === 0 ? "Hace un momento" : `Hace ${diffMin} min`;
-                      timeHtml = `<div class="hist-time"><i class="far fa-clock"></i> ${timeStr}</div>`;
-                  }
-              }
-
-              html += `
-                <div class="hist-card" data-artist="${cleanArtist}" data-title="${cleanTitle}">
-                    <div class="hist-cover-wrap">
-                        <div class="hist-num">${count}</div>
-                        <img src="${item.image || DEFAULT_COVER}" alt="Cover" class="hist-cover" onerror="this.src='${DEFAULT_COVER}'">
-                    </div>
-                    <div class="hist-info">
-                        <div class="hist-title" title="${displayTitle}">${displayTitle}</div>
-                        <div class="hist-artist" title="${displayArtist}">${displayArtist}</div>
-                        ${timeHtml}
-                    </div>
-                </div>
-              `;
-              count++;
-          }
-      }
-      if (recentGrid.innerHTML !== html && html !== '') { recentGrid.innerHTML = html; fetchCoversForRecentTracks(); }
-  }
-
-  function fetchCoversForRecentTracks() {
-      const cards = document.querySelectorAll('.hist-card');
-      cards.forEach((card, index) => {
-          setTimeout(() => {
-              const artist = card.getAttribute('data-artist');
-              const title = card.getAttribute('data-title');
-              const img = card.querySelector('.hist-cover');
-              if (img && !img.dataset.loaded) {
-                  let queryTerm = `${artist} ${title}`.replace(/[^\w\sñáéíóúü]/gi, ' ').trim();
-                  if (!artist || artist === "Desconocido") queryTerm = title;
-                  const url1 = `https://itunes.apple.com/search?term=${encodeURIComponent(queryTerm)}&media=music&entity=song&limit=1`;
-                  fetch(url1).then(res => res.json()).then(data => {
-                      if (data.results && data.results.length > 0) { img.src = data.results[0].artworkUrl100.replace('100x100bb', '300x300bb'); img.classList.add('loaded'); img.dataset.loaded = "true"; }
-                      else {
-                           const url2 = `https://itunes.apple.com/search?term=${encodeURIComponent(title)}&media=music&entity=song&limit=1`;
-                           return fetch(url2).then(res => res.json());
-                      }
-                  }).then(data2 => {
-                       if (data2 && data2.results && data2.results.length > 0) { img.src = data2.results[0].artworkUrl100.replace('100x100bb', '300x300bb'); }
-                       img.classList.add('loaded'); img.dataset.loaded = "true";
-                  }).catch(err => { img.classList.add('loaded'); });
-              }
-          }, index * 100); 
-      });
-  }
-  loadRecentTracksFromFeed();
-  setInterval(loadRecentTracksFromFeed, 90000);
-  const widgetObserver = new MutationObserver(() => { setTimeout(loadRecentTracksFromFeed, 500); });
-  const widgetContainerElement = document.getElementById('cc_recenttracks_original');
-  if(widgetContainerElement) widgetObserver.observe(widgetContainerElement, {childList: true, subtree: true, characterData: true});
-
-
-  // -------------------------------------------------------------
-  // LÓGICA DE TOP 5 BILLBOARD 1985 (AUTOMÁTICA - AYER)
-  // -------------------------------------------------------------
-  const topHitsContainer = document.getElementById('billboardContainer');
-  
-  // Base de datos extendida para "EL PODIO" y "TOP 5"
-  const hits1985 = [
-      { t: "Careless Whisper", a: "Wham!" }, { t: "Say You, Say Me", a: "Lionel Richie" }, { t: "Separate Lives", a: "Phil Collins" }, { t: "I Want to Know What Love Is", a: "Foreigner" }, { t: "Money for Nothing", a: "Dire Straits" }, { t: "Everybody Wants to Rule the World", a: "Tears for Fears" }, { t: "The Power of Love", a: "Huey Lewis & The News" }, { t: "We Built This City", a: "Starship" }, { t: "St. Elmo's Fire (Man in Motion)", a: "John Parr" }, { t: "Can't Fight This Feeling", a: "REO Speedwagon" }, { t: "Take On Me", a: "a-ha" }, { t: "Don't You (Forget About Me)", a: "Simple Minds" }, { t: "Broken Wings", a: "Mr. Mister" }, { t: "Material Girl", a: "Madonna" }, { t: "Summer of '69", a: "Bryan Adams" }, { t: "Part-Time Lover", a: "Stevie Wonder" }, { t: "Saving All My Love for You", a: "Whitney Houston" }, { t: "Heaven", a: "Bryan Adams" }, { t: "Everything She Wants", a: "Wham!" }, { t: "Cool It Now", a: "New Edition" }, { t: "Miami Vice Theme", a: "Jan Hammer" }, { t: "Alive and Kicking", a: "Simple Minds" }, { t: "Election Day", a: "Arcadia" }, { t: "Party All the Time", a: "Eddie Murphy" }, { t: "Sleeping Bag", a: "ZZ Top" },
-      { t: "We Are The World", a: "USA For Africa" }, { t: "Shout", a: "Tears for Fears" }, { t: "Everytime You Go Away", a: "Paul Young" }, { t: "Raspberry Beret", a: "Prince" }, { t: "Sussudio", a: "Phil Collins" }, { t: "A View to a Kill", a: "Duran Duran" }, { t: "Into the Groove", a: "Madonna" }, { t: "One Night in Bangkok", a: "Murray Head" }, { t: "Axel F", a: "Harold Faltermeyer" }, { t: "Smooth Operator", a: "Sade" }, { t: "Neutron Dance", a: "Pointer Sisters" }, { t: "The Heat Is On", a: "Glenn Frey" }, { t: "Obsession", a: "Animotion" }, { t: "Voices Carry", a: "Til Tuesday" }, { t: "Head Over Heels", a: "Tears for Fears" }
-  ];
-
-  function getDailyHits() {
-      const now = new Date();
-      const yesterday = new Date(now); yesterday.setDate(now.getDate() - 1);
-      const currentYear = yesterday.getFullYear();
-      const start = new Date(currentYear, 0, 0);
-      const diff = yesterday - start;
-      const oneDay = 1000 * 60 * 60 * 24;
-      const dayOfYear = Math.floor(diff / oneDay);
-      const startIndex = (dayOfYear * 5) % hits1985.length;
-      let dailySelection = [];
-      for(let i=0; i<5; i++) { dailySelection.push(hits1985[(startIndex + i) % hits1985.length]); }
-      return dailySelection;
-  }
-
-  function renderBillboard() {
-      if(!topHitsContainer) return;
-      const hits = getDailyHits();
-      const top1 = hits[0];
-      const otherHits = hits.slice(1, 5);
-
-      let html = `
-          <!-- #1 HIT -->
-          <div class="hit-number-one" data-artist="${top1.a}" data-title="${top1.t}">
-              <div class="hit-one-rank-overlay">1</div>
-              <img src="${DEFAULT_COVER}" class="hit-one-cover dynamic-cover" alt="${top1.t}">
-              <div class="hit-one-info">
-                <div class="hit-one-title">${top1.t}</div>
-                <div class="hit-one-artist">${top1.a}</div>
-              </div>
-          </div>
-          <!-- LISTA #2 - #5 -->
-          <div class="hits-list">
-      `;
-      otherHits.forEach((hit, index) => {
-          const rank = index + 2;
-          html += `
-              <div class="hit-card" data-artist="${hit.a}" data-title="${hit.t}">
-                  <div class="hit-rank-large rank-${rank}">${rank}</div>
-                  <div class="hit-small-cover-wrapper">
-                      <img src="${DEFAULT_COVER}" class="hit-small-cover dynamic-cover" alt="${hit.t}">
-                  </div>
-                  <div class="hit-info">
-                      <div class="hit-title">${hit.t}</div>
-                      <div class="hit-artist">${hit.a}</div>
-                  </div>
-              </div>
-          `;
-      });
-      html += `</div>`;
-      topHitsContainer.innerHTML = html;
-      fetchBillboardCovers();
-  }
-
-  function fetchBillboardCovers() {
-      const items = document.querySelectorAll('.hit-number-one, .hit-card');
-      items.forEach((item, index) => {
-          setTimeout(() => {
-              const artist = item.getAttribute('data-artist');
-              const title = item.getAttribute('data-title');
-              const img = item.querySelector('.dynamic-cover'); 
-              if (img && !img.dataset.loaded) {
-                  let queryTerm = `${artist} ${title}`.replace(/[^\w\sñáéíóúü]/gi, ' ').trim();
-                  const url = `https://itunes.apple.com/search?term=${encodeURIComponent(queryTerm)}&media=music&entity=song&limit=1`;
-                  fetch(url).then(res => res.json()).then(data => {
-                      if (data.results && data.results.length > 0) { img.src = data.results[0].artworkUrl100.replace('100x100bb', '600x600bb'); }
-                      img.classList.add('loaded'); img.dataset.loaded = "true";
-                  }).catch(err => { img.classList.add('loaded'); });
-              }
-          }, index * 200); 
-      });
-  }
-  renderBillboard();
-
-  // -------------------------------------------------------------
-  // LÓGICA DE EL PODIO DE HOY EN 1985 (POR SEMANA)
-  // -------------------------------------------------------------
-  Date.prototype.getWeek = function() {
-      var date = new Date(this.getTime());
-      date.setHours(0, 0, 0, 0);
-      // Thursday in current week decides the year.
-      date.setDate(date.getDate() + 3 - (date.getDay() + 6) % 7);
-      // January 4 is always in week 1.
-      var week1 = new Date(date.getFullYear(), 0, 4);
-      // Adjust to Thursday in week 1 and count number of weeks from date to week1.
-      return 1 + Math.round(((date.getTime() - week1.getTime()) / 86400000 - 3 + (week1.getDay() + 6) % 7) / 7);
-  }
-
-  function renderPodium1985() {
-      const container = document.getElementById('podiumContainer');
-      if (!container) return;
-
-      const currentWeek = new Date().getWeek();
-      
-      // Seleccionar 3 canciones basadas en la semana actual (rotacion pseudo-aleatoria consistente)
-      // Usamos el modulo para ciclar sobre la lista de hits
-      const totalHits = hits1985.length;
-      const index1 = (currentWeek * 3) % totalHits;
-      const index2 = (currentWeek * 3 + 1) % totalHits;
-      const index3 = (currentWeek * 3 + 2) % totalHits;
-
-      const podiumSongs = [hits1985[index1], hits1985[index2], hits1985[index3]];
-
-      let html = '';
-      podiumSongs.forEach((song, i) => {
-          const rank = i + 1;
-          html += `
-            <div class="podium-card" data-artist="${song.a}" data-title="${song.t}">
-                <div class="podium-cover-wrap">
-                    <div class="podium-rank">${rank}</div>
-                    <img src="${DEFAULT_COVER}" class="podium-cover dynamic-podium-cover" alt="${song.t}">
-                </div>
-                <div class="podium-info">
-                    <div class="podium-song">${song.t}</div>
-                    <div class="podium-artist">${song.a}</div>
-                </div>
-            </div>
-          `;
-      });
-      
-      container.innerHTML = html;
-      fetchPodiumCovers();
-  }
-
-  function fetchPodiumCovers() {
-      const items = document.querySelectorAll('.podium-card');
-      items.forEach((item, index) => {
-          setTimeout(() => {
-              const artist = item.getAttribute('data-artist');
-              const title = item.getAttribute('data-title');
-              const img = item.querySelector('.dynamic-podium-cover'); 
-              if (img && !img.dataset.loaded) {
-                  let queryTerm = `${artist} ${title}`.replace(/[^\w\sñáéíóúü]/gi, ' ').trim();
-                  const url = `https://itunes.apple.com/search?term=${encodeURIComponent(queryTerm)}&media=music&entity=song&limit=1`;
-                  fetch(url).then(res => res.json()).then(data => {
-                      if (data.results && data.results.length > 0) { img.src = data.results[0].artworkUrl100.replace('100x100bb', '400x400bb'); }
-                      img.classList.add('loaded'); img.dataset.loaded = "true";
-                  }).catch(err => { img.classList.add('loaded'); });
-              }
-          }, index * 200); 
-      });
-  }
-  
-  // Renderizar al cargar
-  renderPodium1985();
-
-
-  // -------------------------------------------------------------
-  // FUNCION AUXILIAR: LIMITAR PALABRAS INTELIGENTE
-  // -------------------------------------------------------------
-  function smartLimitText(text, maxWords) {
-      if (!text) return "";
-      
-      const words = text.trim().split(/\s+/);
-      if (words.length <= maxWords) return text;
-      
-      const sentences = text.match(/[^.!?]+[.!?]+/g) || [text];
-      let result = "";
-      let currentWordCount = 0;
-      
-      for (let i = 0; i < sentences.length; i++) {
-          const sentence = sentences[i];
-          const sentenceWordCount = sentence.trim().split(/\s+/).length;
-          
-          if (currentWordCount + sentenceWordCount <= maxWords + 5) {
-              result += sentence;
-              currentWordCount += sentenceWordCount;
-          } else {
-              if (result === "") {
-                   const cutChunk = words.slice(0, maxWords).join(" ");
-                   const lastPunctuation = Math.max(cutChunk.lastIndexOf(","), cutChunk.lastIndexOf(";"));
-                   if (lastPunctuation > maxWords * 3) { 
-                       return cutChunk.substring(0, lastPunctuation + 1);
-                   }
-                   return sentence; 
-              }
-              break; 
-          }
-      }
-      return result.trim();
-  }
-
-  // -------------------------------------------------------------
-  // LÓGICA DE "¿SABÍAS QUE...?" (Optimizada con Observador)
-  // -------------------------------------------------------------
-  async function updateDidYouKnow(song) {
-      if(!song) return;
-      
-      const container = document.getElementById('didYouKnowContainer');
-      const coverImg = document.getElementById('dykCover');
-      
-      container.style.display = 'block';
-      document.getElementById('dykTitle').innerText = song.title;
-      document.getElementById('dykArtist').innerText = song.artist;
-
-      try {
-          const query = encodeURIComponent(`${song.artist} ${song.title}`);
-          
-          // 1. iTunes (Datos)
-          const itunesRes = await fetch(`https://itunes.apple.com/search?term=${query}&media=music&entity=song&limit=1`);
-          const itunesData = await itunesRes.json();
-          
-          if (itunesData.results.length > 0) {
-              const track = itunesData.results[0];
-              coverImg.src = track.artworkUrl100.replace('100x100bb', '600x600bb');
-              document.getElementById('dykAlbum').querySelector('span').innerText = track.collectionName;
-              document.getElementById('dykYear').querySelector('span').innerText = track.releaseDate.substring(0, 4);
-          } else {
-              coverImg.src = DEFAULT_COVER;
-          }
-
-          // 2. Wikipedia (Reseña)
-          // Buscar snippet en español
-          const wikiSearchRes = await fetch(`https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(song.artist + ' ' + song.title)}&format=json&origin=*`);
-          const wikiSearchData = await wikiSearchRes.json();
-
-          if (wikiSearchData.query.search.length > 0) {
-              const pageTitle = wikiSearchData.query.search[0].title;
-              const summaryRes = await fetch(`https://es.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(pageTitle)}`);
-              const summaryData = await summaryRes.json();
-              
-              if (summaryData.extract) {
-                  let text = summaryData.extract;
-                  // APLICAR LIMITE INTELIGENTE (50 palabras aprox)
-                  text = smartLimitText(text, 50);
-                  document.getElementById('dykText').innerText = text;
-              } else { throw new Error("No extract"); }
-          } else { throw new Error("No wiki result"); }
-
-      } catch (e) {
-          // Fallback
-          const fallbackText = "Un clásico atemporal. La música de los 80s y 90s marcó una era dorada con sintetizadores icónicos y letras inolvidables que definieron a toda una generación.";
-          document.getElementById('dykText').innerText = smartLimitText(fallbackText, 50);
-          if(!coverImg.src || coverImg.src === "") coverImg.src = DEFAULT_COVER;
-      }
-  }
-
-
-  // -------------------------------------------------------------
-  // LÓGICA DE "UN DÍA COMO HOY (1985)" (EFEMÉRIDES - Google Search API Simulado)
-  // -------------------------------------------------------------
-  // Nota: Dado que no tenemos acceso real a la API de Búsqueda de Google en vivo en este entorno estático,
-  // mantendremos la base de datos simulada pero con la estructura solicitada para que parezca una noticia real.
-  
-  // Base de datos de efemérides (Meses indexados 0-11)
-  const musicNews1985 = {
-      11: { // Diciembre
-          15: { title: "15 de Diciembre de 1985: Ecos de Live Aid y Pop Global", body: "El 15 de diciembre de 1985, la música vivía el eco de eventos gigantes como Live Aid (julio 1985) y el furor de éxitos pop y rock como 'We Are The World' y A-ha, mientras la industria debatía sobre censura (el caso Judas Priest) y se lanzaban discos clave en español (Hombres G, Mecano, Alaska y Dinarama), consolidando una era de música benéfica y pop global que definiría los 80.", imgTerm: "Live Aid 1985" }
-      }
-  };
-
-  // Datos genéricos por mes si no hay efeméride exacta
-  const monthlyHighlights = [
-      { t: "Enero 1985: Foreigner en la Cima", b: "El año comenzó con 'I Want to Know What Love Is' de Foreigner dominando las listas de todo el mundo. Esta balada poderosa definió el sonido del rock suave de la época.", imgTerm: "Foreigner band" },
-      { t: "Febrero 1985: Madonna arrasa", b: "El álbum 'Like a Virgin' de Madonna se consolidaba como el fenómeno pop del año. Su estilo y actitud marcaron tendencia en la moda juvenil global.", imgTerm: "Madonna 1985" },
-      { t: "Marzo 1985: USA for Africa", b: "El lanzamiento de 'We Are The World' marcó un hito en la historia de la música y la solidaridad. Las mayores estrellas se unieron por una causa humanitaria.", imgTerm: "We Are The World" },
-      { t: "Abril 1985: Wham! en China", b: "El dúo británico Wham! se convirtió en el primer grupo pop occidental en actuar en la China comunista. Fue un evento cultural histórico de apertura.", imgTerm: "Wham band" },
-      { t: "Mayo 1985: Dire Straits y el CD", b: "Se lanzó 'Brothers in Arms', el álbum que impulsó masivamente la adopción del formato CD. Su calidad de sonido digital fue revolucionaria.", imgTerm: "Dire Straits Brothers in Arms" },
-      { t: "Junio 1985: Bryan Adams", b: "'Heaven' de Bryan Adams alcanzó el número 1, convirtiéndose en una de las baladas más recordadas de la década. El álbum Reckless dominaba las listas.", imgTerm: "Bryan Adams Reckless" },
-      { t: "Julio 1985: Live Aid", b: "El mundo se detuvo para ver el concierto Live Aid, recaudando millones para Etiopía. Queen ofreció una de las mejores actuaciones de rock de la historia.", imgTerm: "Live Aid Queen" },
-      { t: "Agosto 1985: The Power of Love", b: "Huey Lewis & The News alcanzaron el éxito masivo gracias a la película 'Volver al Futuro'. La canción se convirtió en un himno de la cultura pop.", imgTerm: "Huey Lewis Back to the Future" },
-      { t: "Septiembre 1985: Money for Nothing", b: "El innovador video musical de Dire Straits dominaba la programación de MTV. La animación por computadora marcó un antes y un después.", imgTerm: "Dire Straits Money for Nothing" },
-      { t: "Octubre 1985: a-ha conquista América", b: "'Take On Me' llevó el synth-pop noruego a la cima de las listas estadounidenses. Su video mezcla de dibujo y realidad sigue siendo icónico.", imgTerm: "a-ha Take On Me" },
-      { t: "Noviembre 1985: We Built This City", b: "Starship lanzó su polémico pero exitoso himno 'We Built This City'. Una oda al rock y a la radio que dividió a la crítica pero amó el público.", imgTerm: "Starship band" },
-      { t: "Diciembre 1985: Lionel Richie", b: "Lionel Richie cerró el año con el éxito de 'Say You, Say Me', ganando el Oscar a mejor canción. Consolidó su estatus como rey de las baladas.", imgTerm: "Lionel Richie 1985" }
-  ];
-
-  function updateMusicNews() {
-      const now = new Date();
-      const month = now.getMonth();
-      const day = now.getDate();
-      
-      const newsImage = document.getElementById('newsImage');
-      const newsDateBadge = document.getElementById('newsDateBadge');
-      const newsHeadline = document.getElementById('newsHeadline');
-      const newsBody = document.getElementById('newsBody');
-      
-      // Formatear fecha
-      const dateOptions = { day: 'numeric', month: 'long' };
-      const dateStr = now.toLocaleDateString('es-ES', dateOptions);
-      newsDateBadge.innerText = dateStr;
-
-      // Buscar evento específico
-      let newsItem = null;
-      let searchQuery = "";
-
-      if (musicNews1985[month] && musicNews1985[month][day]) {
-          newsItem = musicNews1985[month][day];
-          searchQuery = newsItem.imgTerm;
-      } else {
-          // Si no hay evento exacto, usar el destacado del mes
-          const highlight = monthlyHighlights[month];
-          newsItem = {
-              title: highlight.t,
-              body: highlight.b
-          };
-          searchQuery = highlight.imgTerm;
-      }
-
-      newsHeadline.innerText = newsItem.title;
-      // APLICAR LIMITE INTELIGENTE (50)
-      newsBody.innerText = smartLimitText(newsItem.body, 50);
-
-      // Buscar imagen en iTunes basada en el término clave
-      searchNewsImage(searchQuery);
-  }
-  
-  async function searchNewsImage(query) {
-      if(!query) return;
-      try {
-          const url = `https://itunes.apple.com/search?term=${encodeURIComponent(query)}&media=music&limit=1`;
-          const res = await fetch(url);
-          const data = await res.json();
-          
-          if(data.results.length > 0) {
-              // Preferir imagen de artista o album
-              const item = data.results[0];
-              document.getElementById('newsImage').src = item.artworkUrl100.replace('100x100bb', '600x600bb');
-          }
-      } catch(e) {
-          // Dejar la imagen default
-      }
-  }
-
-  // Inicializar Noticia
-  updateMusicNews();
+ScheduleEngine.init();
 
 </script>
-
+<script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
+<script src="https://cast2.my-control-panel.com/system/recenttracks.js"></script>
 </body>
 </html>
