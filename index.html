@@ -338,7 +338,19 @@
     .btn-x:hover { background-color: #111; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(255, 255, 255, 0.25); }
     .btn-social i { margin-right: 12px; font-size: 24px; }
     
-    .creator-footer { margin-top: 40px; font-size: 12px; color: rgba(255, 255, 255, 0.4); text-align: center; z-index: var(--z-content); display: flex; flex-direction: row; justify-content: center; align-items: center; min-height: 40px; gap: 5px; }
+    .creator-footer { 
+        margin-top: 40px; 
+        font-size: 12px; 
+        color: rgba(255, 255, 255, 0.4); 
+        text-align: center; 
+        z-index: var(--z-content); 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 40px; 
+        gap: 5px; 
+    }
     .creator-footer a { color: #fff; text-decoration: none; opacity: 0.7; }
     .creator-footer a:hover { opacity: 1; text-decoration: underline; }
 
@@ -466,7 +478,7 @@
         <canvas id="winampVis" aria-hidden="true"></canvas>
         <div class="info-wrapper">
           <div class="player-meta-row">
-              <div class="live-tag-inline"><div class="live-dot-inline"></div> AL AIRE</div>
+              <div class="live-tag-inline"><div class="live-dot-inline"></div> LIVE</div>
               <div class="listener-tag-inline"><i class="fas fa-headphones" aria-hidden="true"></i><span id="listenerCount">--</span></div>
               <div class="program-tag-inline"><i class="fas fa-broadcast-tower"></i> <span id="currentProgramDisplay">--</span></div>
           </div>
@@ -728,11 +740,11 @@ const Utils = {
 // === SCHEDULE ENGINE (CLEAN & STATIC) ===
 const ScheduleEngine = {
     programs: [
-        { id: 'lover', title: 'LOVER CITY', subtitle: 'BALADAS AMERICANAS', start: 0, end: 6, img: 'https://mickpini.com/wp-content/uploads/2025/07/1.png', displayTime: '00:00 - 05:59' },
-        { id: 'wonders', title: 'THE WONDERS', subtitle: 'LOS 90S', start: 6, end: 12, img: 'https://wallpapers.com/images/hd/90s-theme-background-fdllcnh7s97z4qio.jpg', displayTime: '06:00 - 11:59' },
-        { id: 'tirando', title: 'TIRANDO PIEDRAS', subtitle: 'ROCK EN ESPAÑOL', start: 12, end: 15, img: 'https://dojiw2m9tvv09.cloudfront.net/36300/product/los-rodriguez-vinilo-89039.jpg', displayTime: '12:00 - 14:59' },
-        { id: 'rockstars', title: 'ROCKSTARS', subtitle: 'ROCK DE LOS 80S', start: 15, end: 20, img: 'https://i0.wp.com/lashistoriasdelrock.com/wp-content/uploads/2024/06/Son-10-Canciones-de-Rock-Mas-Emblematicas-de-los-80s.jpg', displayTime: '15:00 - 19:59' },
-        { id: 'hits_lie', title: 'HITS DON´T LIE', subtitle: 'HITS 80S/90S', start: 20, end: 24, img: 'https://djhire.melbourne/wp-content/uploads/2024/11/Bon-Jovi-80s.png', displayTime: '20:00 - 23:59' }
+        { id: 'lover', title: 'LOVER CITY', subtitle: 'BALADAS AMERICANAS', start: 0, end: 6, img: 'https://mickpini.com/wp-content/uploads/2025/07/1.png', displayTime: '00:00 - 05:59 (GMT-5)' },
+        { id: 'wonders', title: 'THE WONDERS', subtitle: 'LOS 90S', start: 6, end: 12, img: 'https://wallpapers.com/images/hd/90s-theme-background-fdllcnh7s97z4qio.jpg', displayTime: '06:00 - 11:59 (GMT-5)' },
+        { id: 'tirando', title: 'TIRANDO PIEDRAS', subtitle: 'ROCK EN ESPAÑOL', start: 12, end: 15, img: 'https://dojiw2m9tvv09.cloudfront.net/36300/product/los-rodriguez-vinilo-89039.jpg', displayTime: '12:00 - 14:59 (GMT-5)' },
+        { id: 'rockstars', title: 'ROCKSTARS', subtitle: 'ROCK DE LOS 80S', start: 15, end: 20, img: 'https://i0.wp.com/lashistoriasdelrock.com/wp-content/uploads/2024/06/Son-10-Canciones-de-Rock-Mas-Emblematicas-de-los-80s.jpg', displayTime: '15:00 - 19:59 (GMT-5)' },
+        { id: 'hits_lie', title: 'HITS DON´T LIE', subtitle: 'HITS 80S/90S', start: 20, end: 24, img: 'https://djhire.melbourne/wp-content/uploads/2024/11/Bon-Jovi-80s.png', displayTime: '20:00 - 23:59 (GMT-5)' }
     ],
 
     init: function() {
