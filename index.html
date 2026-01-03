@@ -23,18 +23,19 @@
         --color-text-main: #ffffff;
         --color-text-muted: #aaaaaa;
         --color-accent-blue: #00c6ff;
-        --color-accent-gold: #ffd700;
+        --color-accent-gold: #ffd700; /* AMARILLO */
         --color-accent-pink: #ff00de;
         --color-accent-green: #39ff14;
         --color-accent-orange: #ff9900;
         --color-accent-red: #ff0000;
+        --color-gradient-req: linear-gradient(135deg, #ff00de, #00c6ff);
         
         --z-background: -1;
         --z-content: 5;
         --z-player-ui: 10;
         --z-chat: 9999;    
-        --z-modal: 200;   
-        --z-splash: 3000;  
+        --z-modal: 10000; 
+        --z-splash: 11000;  
     }
 
     /* 2. BASE */
@@ -116,12 +117,36 @@
     #winampVis { position: absolute; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; opacity: 0.1; }
     
     .info-wrapper { z-index: 5; text-align: left; margin-bottom: 25px; width: 100%; overflow: hidden; }
-    .player-meta-row { display: flex; align-items: center; gap: 15px; margin-bottom: 8px; width: 100%; justify-content: flex-start; }
+    
+    .player-meta-row { 
+        display: flex; 
+        align-items: center; 
+        gap: 12px; 
+        margin-bottom: 8px; 
+        width: 100%; 
+        justify-content: flex-start;
+        flex-wrap: wrap; 
+    }
+    
     .live-tag-inline { display: flex; align-items: center; gap: 6px; color: #fff; font-size: 11px; font-weight: 800; letter-spacing: 1px; flex-shrink: 0; }
     .live-dot-inline { width: 8px; height: 8px; border-radius: 50%; background-color: #ff0000; box-shadow: 0 0 8px rgba(255, 0, 0, 0.8); animation: blink 1.5s infinite; }
     .listener-tag-inline { display: flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; color: #888; flex-shrink: 0; }
     .listener-tag-inline i { font-size: 10px; color: #aaa; }
     
+    .meta-separator { color: #555; font-size: 12px; font-weight: 300; }
+
+    .request-link {
+        font-size: 11px;
+        color: #fff; 
+        text-decoration: none; 
+        cursor: pointer;
+        font-weight: 800; 
+        transition: color 0.3s;
+        letter-spacing: 1px; 
+        text-transform: uppercase; 
+    }
+    .request-link:hover { color: var(--color-accent-blue); }
+
     .program-tag-inline {
         display: flex;
         align-items: center;
@@ -173,6 +198,12 @@
     .recent-tracks-title-custom { color: var(--color-accent-blue); border-left: 3px solid var(--color-accent-blue); }
     .dyk-title-custom { color: var(--color-accent-pink); border-left: 3px solid var(--color-accent-pink); }
     .schedule-title-custom { color: #fff; border-left: 3px solid #fff; }
+    
+    /* CAMBIO: Color Amarillo para Repositorio */
+    .repo-title-custom { 
+        color: var(--color-accent-gold); 
+        border-left: 3px solid var(--color-accent-gold); 
+    }
 
     .recent-tracks-grid { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
     .hist-card { background: rgba(30, 30, 30, 0.4); border-radius: 10px; overflow: hidden; position: relative; transition: transform 0.3s ease; }
@@ -290,6 +321,73 @@
     
     .schedule-card-item.is-live .on-air-badge { display: block; }
 
+    /* --- ESTILOS REPOSITORIO MUSICAL --- */
+    .repo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+
+    .repo-card {
+        background: rgba(30, 30, 30, 0.4);
+        border-radius: 12px;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, background 0.3s ease;
+        border: 1px solid rgba(255,255,255,0.05);
+    }
+    
+    .repo-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .repo-image-wrapper {
+        width: 100%;
+        height: 160px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .repo-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .repo-card:hover .repo-image {
+        transform: scale(1.1);
+    }
+
+    .repo-content {
+        padding: 20px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .repo-card-title {
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 8px;
+        font-family: 'Russo One', sans-serif;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    
+    .repo-card-desc {
+        font-size: 13px;
+        color: #ccc;
+        line-height: 1.5;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
     /* Feature Card Styles (Sabías Que) */
     .feature-card { display: grid; grid-template-columns: 320px 1fr; gap: 30px; background: rgba(74, 74, 74, 0.1); border: none; border-radius: 16px; overflow: hidden; backdrop-filter: blur(10px); }
     .feature-image-wrapper { width: 100%; height: 320px; position: relative; overflow: hidden;}
@@ -323,8 +421,8 @@
         border: 1px solid rgba(255,255,255,0.1);
     }
     .slider-arrow:hover { background: var(--color-accent-gold); color: #000; }
-    .slider-arrow.left { left: -10px; }
-    .slider-arrow.right { right: -10px; }
+    .slider-arrow.left { left: 10px; }
+    .slider-arrow.right { right: 10px; }
     .slider-arrow.disabled { opacity: 0.3; cursor: default; pointer-events: none; }
     
     /* Footer */
@@ -332,6 +430,15 @@
     .community-title { font-family: 'Russo One', sans-serif; font-size: 60px; color: #fff; text-transform: uppercase; text-shadow: 0 0 10px rgba(255, 255, 255, 0.1); margin-bottom: 25px; letter-spacing: 1px; line-height: 1.1; }
     .buttons-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     .btn-social { display: inline-flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif; font-size: 20px; font-weight: 700; padding: 15px 40px; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; border: none; cursor: pointer; min-width: 250px; }
+    
+    /* Botón Pedidos */
+    .btn-request { 
+        background: var(--color-gradient-req); 
+        color: #fff; 
+        box-shadow: 0 4px 15px rgba(255, 0, 222, 0.4); 
+        display: none; /* OCULTO SEGÚN INSTRUCCIONES */
+    }
+    
     .btn-facebook { background-color: #1877F2; color: #fff; box-shadow: 0 4px 15px rgba(24, 119, 242, 0.4); }
     .btn-facebook:hover { background-color: #1565C0; transform: translateY(-3px); box-shadow: 0 8px 25px rgba(24, 119, 242, 0.6); }
     .btn-x { background-color: #000; color: #fff; box-shadow: 0 4px 15px rgba(255, 255, 255, 0.15); }
@@ -384,6 +491,7 @@
     
     #cc_recenttracks_original { display: none !important; }
 
+    /* MODAL GENERAL */
     .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); backdrop-filter: blur(8px); z-index: var(--z-modal); display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s ease; }
     .modal-overlay.active { opacity: 1; visibility: visible; }
     .modal-content { background: #1a1a1a; width: 700px; max-width: 95%; padding: 30px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5); transform: translateY(20px); transition: transform 0.4s ease; position: relative; }
@@ -395,7 +503,52 @@
     .modal-body { font-size: 14px; line-height: 1.6; color: #ccc; max-height: 300px; overflow-y: auto; padding-right: 10px; }
     .modal-meta { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; gap: 20px; font-size: 13px; color: #888; }
     .modal-meta span { display: block; color: #fff; font-weight: 500; margin-top: 3px; }
+
+    /* ESTILOS DEL FORMULARIO DE PEDIDOS (MODAL) */
+    .req-form-group { margin-bottom: 15px; text-align: left; }
+    .req-label { display: block; font-size: 12px; color: #888; margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px; }
+    .req-input { width: 100%; padding: 12px 15px; background: #222; border: 1px solid #333; color: #fff; border-radius: 8px; font-family: 'Poppins', sans-serif; font-size: 14px; transition: border-color 0.3s; }
+    .req-input:focus { border-color: var(--color-accent-blue); outline: none; }
     
+    /* RESULTADOS DE BÚSQUEDA ITUNES */
+    .req-search-results {
+        margin-top: 20px;
+        max-height: 300px;
+        overflow-y: auto;
+        border-top: 1px solid #333;
+        display: none; /* Oculto por defecto */
+    }
+    
+    .req-search-results.active { display: block; }
+    
+    .req-item {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #333;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    
+    .req-item:hover { background: rgba(255,255,255,0.1); }
+    
+    .req-item img {
+        width: 50px; height: 50px;
+        border-radius: 4px;
+        margin-right: 15px;
+        object-fit: cover;
+    }
+    
+    .req-item-info { flex: 1; }
+    .req-item-title { font-weight: 700; font-size: 14px; color: #fff; display: block; }
+    .req-item-artist { font-size: 12px; color: #aaa; display: block; }
+    
+    .req-submit { width: 100%; padding: 15px; background: var(--color-gradient-req); color: #fff; border: none; border-radius: 50px; font-weight: 700; font-size: 16px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; margin-top: 10px; }
+    .req-submit:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,198,255,0.4); }
+    
+    /* Ocultar formulario real de centova */
+    #realCentovaForm { display: none; }
+
     /* 7. RESPONSIVE */
     @media (max-width: 800px) {
       .feature-image-wrapper { height: 250px; }
@@ -425,14 +578,8 @@
       .radio-logo { max-width: 300px; }
       
       /* Ajuste CBOX MÓVIL (SOBRESCRIBE ESCRITORIO) */
-      #cboxdiv {
-          width: 85vw !important; /* ~85% del ancho de pantalla */
-          height: 60vh !important; /* Altura dinámica */
-      }
-      #cboxwrap {
-          bottom: 75px !important;
-          right: 10px !important;
-      }
+      #cboxdiv { width: 85vw !important; height: 60vh !important; }
+      #cboxwrap { bottom: 75px !important; right: 10px !important; }
     }
   </style>
 </head>
@@ -445,10 +592,10 @@
   <div class="spinner"></div>
 </div>
 
-<!-- Modal Pop-up -->
+<!-- Modal INFO CANCIÓN -->
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal-content">
-    <button class="modal-close" onclick="closeModal()" aria-label="Cerrar ventana"><i class="fas fa-times"></i></button>
+    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
     <div class="modal-title" id="modalArtist">Artista</div>
     <div class="modal-subtitle" id="modalTitle">Canción</div>
     <div class="modal-body" id="modalBio">Cargando información...</div>
@@ -456,6 +603,60 @@
         <div>Álbum<span id="modalAlbum">--</span></div>
         <div>Género<span id="modalGenre">--</span></div>
     </div>
+  </div>
+</div>
+
+<!-- Modal PEDIDOS INTELIGENTE -->
+<div class="modal-overlay" id="reqModalOverlay">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeReqModal()"><i class="fas fa-times"></i></button>
+    <div class="modal-title">PIDE TU CANCIÓN</div>
+    <div class="modal-subtitle">BUSCA EN NUESTRO CATÁLOGO</div>
+    
+    <!-- PASO 1: BUSCADOR -->
+    <div class="req-form-group">
+        <label class="req-label">Buscar Canción o Artista</label>
+        <input type="text" id="reqSearchInput" class="req-input" placeholder="Ej: Madonna, Queen..." />
+        <div id="reqSearchResults" class="req-search-results"></div>
+    </div>
+    
+    <!-- PASO 2: DATOS ADICIONALES -->
+    <div id="reqStep2" style="display:none; border-top: 1px solid #333; padding-top: 15px;">
+        <p style="font-size: 14px; color: #fff; margin-bottom: 10px;">
+            Seleccionaste: <strong id="selectedSong" style="color: var(--color-accent-blue);">--</strong>
+        </p>
+        
+        <div class="req-form-group">
+            <label class="req-label">Tu Nombre (Opcional)</label>
+            <input type="text" id="reqSender" class="req-input" maxlength="127" placeholder="Tu nombre" />
+        </div>
+        
+        <div class="req-form-group">
+            <label class="req-label">Dedicado Para (Opcional)</label>
+            <input type="text" id="reqDedication" class="req-input" maxlength="127" placeholder="Para..." />
+        </div>
+        
+        <div class="req-form-group">
+            <label class="req-label">Tu Email (Opcional)</label>
+            <input type="email" id="reqEmail" class="req-input" maxlength="127" placeholder="email@ejemplo.com" />
+        </div>
+
+        <button type="button" class="req-submit" onclick="submitRequest()">
+            <i class="fas fa-paper-plane"></i> ENVIAR PEDIDO
+        </button>
+    </div>
+    
+    <!-- FORMULARIO REAL OCULTO DE CENTOVA -->
+    <form class="cc_request_form" data-username="robinson" id="realCentovaForm">
+        <div data-type="result" id="centovaResult"></div>
+        <input type="text" name="request[artist]" />
+        <input type="text" name="request[title]" />
+        <input type="text" name="request[dedication]" />
+        <input type="text" name="request[sender]" />
+        <input type="text" name="request[email]" />
+        <input type="button" value="Enviar" data-type="submit" id="realSubmitBtn" />
+    </form>
+
   </div>
 </div>
 
@@ -480,6 +681,8 @@
           <div class="player-meta-row">
               <div class="live-tag-inline"><div class="live-dot-inline"></div> AL AIRE</div>
               <div class="listener-tag-inline"><i class="fas fa-headphones" aria-hidden="true"></i><span id="listenerCount">--</span></div>
+              <div class="meta-separator">|</div>
+              <div class="request-link" onclick="openReqModal()">PIDE TU CANCIÓN</div>
               <div class="program-tag-inline"><i class="fas fa-broadcast-tower"></i> <span id="currentProgramDisplay">--</span></div>
           </div>
           <div class="song-title-container">
@@ -561,6 +764,45 @@
         </article>
     </section>
 
+    <!-- REPOSITORIO MUSICAL (NUEVA SECCIÓN) -->
+    <section class="content-section repository-section-container">
+        <div class="section-header-common">
+            <h2 class="section-title-common repo-title-custom">REPOSITORIO MUSICAL</h2>
+        </div>
+        <div class="repo-grid">
+            <!-- Card 1 -->
+            <a href="https://www.worldradiohistory.com/index.htm" target="_blank" class="repo-card">
+                <div class="repo-image-wrapper">
+                    <img src="https://www.radioheritage.com/wp-content/uploads/2020/07/WorldRadioHistory-screenshot.jpg" alt="World Radio Story" class="repo-image">
+                </div>
+                <div class="repo-content">
+                    <h3 class="repo-card-title">World Radio Story</h3>
+                    <p class="repo-card-desc">Más de 140.000 documentos y publicaciones.</p>
+                </div>
+            </a>
+            <!-- Card 2 -->
+            <a href="https://www.rockmusictimeline.com" target="_blank" class="repo-card">
+                <div class="repo-image-wrapper">
+                    <img src="https://storage.googleapis.com/wzsitethumbnails/site-48980609/800x500.jpg" alt="Rock Music Time" class="repo-image">
+                </div>
+                <div class="repo-content">
+                    <h3 class="repo-card-title">Rock Music Time</h3>
+                    <p class="repo-card-desc">Una cronología en línea de la historia del Rock And Roll.</p>
+                </div>
+            </a>
+            <!-- Card 3 -->
+            <a href="https://www.billboard.com/charts" target="_blank" class="repo-card">
+                <div class="repo-image-wrapper">
+                    <img src="https://www.billboard.com/wp-content/uploads/media/billboard-charts-logo-2018-billboard-1548.jpg" alt="Billboard Charts" class="repo-image">
+                </div>
+                <div class="repo-content">
+                    <h3 class="repo-card-title">Billboard Charts</h3>
+                    <p class="repo-card-desc">Listas de éxitos musicales más populares en Estados Unidos y del mundo.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
 </main>
 
 <!-- Footer -->
@@ -584,6 +826,9 @@
 <div id="cboxbutton" aria-label="Abrir Chat"></div>
 <div id="cboxwrap"></div>
 <div id="cc_recenttracks_original" class="cc_recenttracks_list" data-username="robinson" aria-hidden="true"></div>
+
+<!-- LIBRERIA REQUEST DE CENTOVA (AL FINAL) -->
+<script language="javascript" type="text/javascript" src="https://cast2.my-control-panel.com/system/request.js"></script>
 
 <audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream"></audio>
 
@@ -625,6 +870,13 @@ const DOM = {
         bio: document.getElementById('modalBio'),
         album: document.getElementById('modalAlbum'),
         genre: document.getElementById('modalGenre')
+    },
+    reqModal: {
+        overlay: document.getElementById('reqModalOverlay'),
+        input: document.getElementById('reqSearchInput'),
+        results: document.getElementById('reqSearchResults'),
+        step2: document.getElementById('reqStep2'),
+        selectedDisplay: document.getElementById('selectedSong')
     },
     canvas: document.getElementById('winampVis'),
     recentGrid: document.getElementById('recentTracksGrid'),
@@ -736,6 +988,85 @@ const Utils = {
         toggleCbox(false);
     }
 })();
+
+// === LÓGICA DE PEDIDOS INTELIGENTE ===
+// 1. Buscador con iTunes
+DOM.reqModal.input.addEventListener('input', Utils.debounce(async (e) => {
+    const term = e.target.value.trim();
+    if (term.length < 3) {
+        DOM.reqModal.results.style.display = 'none';
+        return;
+    }
+    
+    // Buscar en iTunes
+    const data = await Utils.safeFetchJson(`${CONFIG.ENDPOINTS.ITUNES}?term=${encodeURIComponent(term)}&media=music&entity=song&limit=10`);
+    
+    if (data && data.results.length > 0) {
+        let html = '';
+        data.results.forEach(track => {
+            html += `
+            <div class="req-item" onclick="selectSong('${track.artistName.replace(/'/g, "\\'")}', '${track.trackName.replace(/'/g, "\\'")}')">
+                <img src="${track.artworkUrl100}" alt="cover">
+                <div class="req-item-info">
+                    <span class="req-item-title">${track.trackName}</span>
+                    <span class="req-item-artist">${track.artistName}</span>
+                </div>
+            </div>`;
+        });
+        DOM.reqModal.results.innerHTML = html;
+        DOM.reqModal.results.classList.add('active');
+        DOM.reqModal.results.style.display = 'block';
+    } else {
+        DOM.reqModal.results.style.display = 'none';
+    }
+}, 500));
+
+// 2. Selección de Canción
+window.selectSong = (artist, title) => {
+    // Llenar datos visuales
+    DOM.reqModal.selectedDisplay.innerText = `${title} - ${artist}`;
+    DOM.reqModal.step2.style.display = 'block';
+    DOM.reqModal.results.style.display = 'none';
+    
+    // Llenar formulario oculto de Centova
+    document.querySelector('input[name="request[artist]"]').value = artist;
+    document.querySelector('input[name="request[title]"]').value = title;
+};
+
+// 3. Envío al Servidor Centova
+window.submitRequest = () => {
+    // Pasar datos opcionales al form oculto
+    const sender = document.getElementById('reqSender').value;
+    const email = document.getElementById('reqEmail').value;
+    const dedication = document.getElementById('reqDedication').value;
+    
+    document.querySelector('input[name="request[sender]"]').value = sender;
+    document.querySelector('input[name="request[email]"]').value = email;
+    document.querySelector('input[name="request[dedication]"]').value = dedication;
+    
+    // Disparar click en el botón original de Centova
+    document.getElementById('realSubmitBtn').click();
+    
+    // Feedback visual
+    const btn = document.querySelector('.req-submit');
+    btn.innerHTML = '<i class="fas fa-check"></i> ENVIADO';
+    btn.style.background = '#39ff14'; // Verde
+    
+    // Observar el resultado de Centova (div[data-type="result"])
+    setTimeout(() => {
+        closeReqModal();
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> ENVIAR PEDIDO';
+        btn.style.background = ''; // Reset
+        DOM.reqModal.input.value = '';
+        DOM.reqModal.step2.style.display = 'none';
+    }, 2000);
+};
+
+// MODAL PEDIDOS
+function openReqModal() { DOM.reqModal.overlay.classList.add('active'); }
+function closeReqModal() { DOM.reqModal.overlay.classList.remove('active'); }
+DOM.reqModal.overlay.addEventListener('click', (e) => { if (e.target === DOM.reqModal.overlay) closeReqModal(); });
+
 
 // === SCHEDULE ENGINE (CLEAN & STATIC) ===
 const ScheduleEngine = {
