@@ -433,7 +433,723 @@
         .schedule-container-custom { overflow-x: auto; scroll-snap-type: x mandatory; }
     }
 
-  </style>
+  
+
+    /* ============================================================================
+       RESPONSIVE CSS - INGENIERO MASTER NIVEL 5
+       Incluye correcciones específicas solicitadas
+    ============================================================================ */
+
+    /* ========== CORRECCIÓN 1: LOGO REDUCIDO AL 90% EN ESCRITORIO ========== */
+    .radio-logo {
+      max-width: 450px !important;  /* 500px original × 0.9 = 450px */
+      width: 90% !important;
+    }
+
+    /* ========== NAVEGACIÓN PARA REPOSITORIO MÓVIL ========== */
+    .repo-carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+      padding: 0 50px;
+    }
+
+    .repo-carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 198, 255, 0.8);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 100;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .repo-carousel-nav:hover {
+      background: rgba(255, 0, 222, 0.9);
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .repo-carousel-nav.prev {
+      left: 5px;
+    }
+
+    .repo-carousel-nav.next {
+      right: 5px;
+    }
+
+    .repo-carousel-container {
+      display: flex;
+      transition: transform 0.4s ease;
+      gap: 15px;
+    }
+
+    /* ========== BREAKPOINT 1: TABLETS Y MENORES (< 1000px) ========== */
+    @media screen and (max-width: 1000px) {
+      .radio-container {
+        width: 95% !important;
+        max-width: 95% !important;
+        height: auto !important;
+        min-height: auto !important;
+        flex-shrink: 1 !important;
+      }
+
+      .radio-logo {
+        max-width: 400px !important;
+      }
+    }
+
+    /* ========== BREAKPOINT 2: TABLETS (< 900px) ========== */
+    @media screen and (max-width: 900px) {
+      .radio-container {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 90% !important;  /* CORRECCIÓN: Separado de los bordes */
+        max-width: 90% !important;
+        height: auto !important;
+        margin: 25px auto 60px !important;
+      }
+
+      .cover {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 300px !important;
+        min-height: 300px !important;
+      }
+
+      .cover img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+      }
+
+      .player {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        padding: 25px 20px !important;
+      }
+
+      .controls {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 15px !important;
+      }
+
+      .content-section {
+        width: 90% !important;  /* CORRECCIÓN: Separado de los bordes */
+        max-width: 90% !important;
+        margin: 50px auto !important;
+        padding: 25px 20px !important;
+      }
+
+      .top10-layout {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
+      /* CORRECCIÓN: TOP 10 imagen más pequeña */
+      .top10-image {
+        width: 100% !important;
+        max-width: 280px !important;  /* Reducido de ilimitado */
+        margin: 0 auto 25px !important;
+      }
+
+      .top10-image img {
+        width: 100% !important;
+        height: auto !important;
+        max-height: 280px !important;  /* Limitar altura */
+        object-fit: contain !important;
+      }
+
+      .top10-list {
+        width: 100% !important;
+      }
+    }
+
+    /* ========== BREAKPOINT 3: MÓVILES GRANDES (< 700px) ========== */
+    @media screen and (max-width: 700px) {
+      body {
+        overflow-x: hidden !important;
+      }
+
+      main {
+        padding: 0 5% !important;  /* CORRECCIÓN: Padding porcentual */
+        width: 100% !important;
+      }
+
+      header {
+        padding: 20px 5% 10px !important;
+        width: 100% !important;
+      }
+
+      .radio-logo {
+        max-width: 85% !important;
+        height: auto !important;
+      }
+
+      /* CORRECCIÓN: Contenedor separado de bordes */
+      .radio-container {
+        width: 90% !important;
+        margin: 20px auto 50px !important;
+        border-radius: 15px !important;
+      }
+
+      .cover {
+        height: 250px !important;
+        min-height: 250px !important;
+      }
+
+      .player {
+        padding: 20px 15px !important;
+      }
+
+      .player-meta-row {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        font-size: 0.75rem !important;
+        text-align: center !important;
+      }
+
+      .meta-separator {
+        display: none !important;
+      }
+
+      .live-tag-inline,
+      .listener-tag-inline,
+      .program-tag-inline,
+      .request-link {
+        font-size: 0.75rem !important;
+        padding: 4px 10px !important;
+      }
+
+      .song-title-container {
+        text-align: center !important;
+        width: 100% !important;
+      }
+
+      #displayTitle {
+        font-size: 1.3rem !important;
+        line-height: 1.3 !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+      }
+
+      #displayArtist {
+        font-size: 1rem !important;
+        white-space: normal !important;
+        word-wrap: break-word !important;
+      }
+
+      .controls {
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 15px !important;
+      }
+
+      .btn-play {
+        width: 65px !important;
+        height: 65px !important;
+        font-size: 26px !important;
+        flex-shrink: 0 !important;
+      }
+
+      .volume-wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+
+      #volumeControl {
+        flex: 1 !important;
+        max-width: 220px !important;
+      }
+
+      .btn-request {
+        width: 100% !important;
+        max-width: 280px !important;
+        padding: 14px 20px !important;
+        font-size: 0.95rem !important;
+      }
+
+      .wiki-btn {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 18px !important;
+      }
+
+      /* CORRECCIÓN: Secciones separadas de bordes */
+      .content-section {
+        width: 90% !important;
+        padding: 20px 15px !important;
+        margin: 40px auto !important;
+      }
+
+      .section-title {
+        font-size: 1.5rem !important;
+        margin-bottom: 18px !important;
+      }
+
+      .section-subtitle {
+        font-size: 1rem !important;
+        padding: 0 10px !important;
+      }
+
+      .schedule-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px !important;
+      }
+
+      .schedule-card {
+        padding: 15px !important;
+      }
+
+      .schedule-time {
+        font-size: 1.05rem !important;
+      }
+
+      .schedule-show {
+        font-size: 0.95rem !important;
+      }
+
+      .schedule-desc {
+        font-size: 0.85rem !important;
+      }
+
+      /* CORRECCIÓN TOP 10: Imagen más pequeña en móviles */
+      .top10-layout {
+        gap: 20px !important;
+      }
+
+      .top10-image {
+        max-width: 220px !important;  /* Más pequeña para no tapar texto */
+        margin-bottom: 20px !important;
+      }
+
+      .top10-image img {
+        max-height: 220px !important;
+        border-radius: 12px !important;
+      }
+
+      .top10-item {
+        padding: 12px !important;
+        flex-wrap: wrap !important;
+      }
+
+      .top10-rank {
+        font-size: 1.4rem !important;
+        min-width: 45px !important;
+      }
+
+      .top10-info-title {
+        font-size: 0.95rem !important;
+      }
+
+      .top10-info-artist {
+        font-size: 0.85rem !important;
+      }
+
+      /* CORRECCIÓN REPOSITORIO: Carrusel con 2 tarjetas visibles */
+      .repo-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+        overflow: hidden !important;
+      }
+
+      .repo-carousel-wrapper {
+        display: block !important;
+        position: relative !important;
+        padding: 0 !important;
+      }
+
+      .repo-carousel-nav {
+        display: flex !important;
+      }
+
+      .repo-card {
+        padding: 15px !important;
+        min-width: calc(50% - 7.5px) !important;
+      }
+
+      .repo-icon {
+        font-size: 2.5rem !important;
+      }
+
+      .repo-title {
+        font-size: 0.95rem !important;
+      }
+
+      .repo-count {
+        font-size: 1.3rem !important;
+      }
+
+      .social-grid {
+        gap: 15px !important;
+      }
+
+      .social-link {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 24px !important;
+      }
+
+      .modal-overlay {
+        padding: 15px !important;
+      }
+
+      .modal-content {
+        max-width: 90% !important;
+        width: 90% !important;
+        padding: 25px 18px !important;
+      }
+
+      .modal-title {
+        font-size: 1.4rem !important;
+      }
+
+      .modal-subtitle {
+        font-size: 1rem !important;
+      }
+
+      .modal-body {
+        font-size: 0.9rem !important;
+        max-height: 40vh !important;
+      }
+
+      .modal-close {
+        width: 38px !important;
+        height: 38px !important;
+        font-size: 18px !important;
+      }
+
+      .req-form-group {
+        margin-bottom: 15px !important;
+      }
+
+      .req-label {
+        font-size: 0.95rem !important;
+      }
+
+      .req-input {
+        padding: 12px !important;
+        font-size: 0.9rem !important;
+      }
+
+      .req-submit {
+        padding: 14px !important;
+        font-size: 1rem !important;
+      }
+
+      .req-song-item {
+        padding: 10px !important;
+        font-size: 0.85rem !important;
+      }
+
+      footer {
+        padding: 25px 5% !important;
+        margin-top: 40px !important;
+      }
+
+      footer p {
+        font-size: 0.85rem !important;
+      }
+    }
+
+    /* ========== BREAKPOINT 4: MÓVILES MEDIANOS (< 550px) ========== */
+    @media screen and (max-width: 550px) {
+      .radio-container {
+        width: 92% !important;
+        margin: 15px auto 40px !important;
+      }
+
+      .cover {
+        height: 220px !important;
+        min-height: 220px !important;
+      }
+
+      .player {
+        padding: 18px 12px !important;
+      }
+
+      .player-meta-row {
+        font-size: 0.7rem !important;
+        gap: 6px !important;
+      }
+
+      .live-tag-inline,
+      .listener-tag-inline,
+      .program-tag-inline,
+      .request-link {
+        font-size: 0.7rem !important;
+        padding: 3px 8px !important;
+      }
+
+      #displayTitle {
+        font-size: 1.15rem !important;
+      }
+
+      #displayArtist {
+        font-size: 0.9rem !important;
+      }
+
+      .btn-play {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 24px !important;
+      }
+
+      .content-section {
+        width: 92% !important;
+        padding: 18px 12px !important;
+      }
+
+      .section-title {
+        font-size: 1.35rem !important;
+      }
+
+      /* TOP 10: Imagen aún más pequeña */
+      .top10-image {
+        max-width: 180px !important;
+      }
+
+      .top10-image img {
+        max-height: 180px !important;
+      }
+
+      .top10-item {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 8px !important;
+      }
+
+      /* REPOSITORIO: 1 tarjeta visible en pantallas muy pequeñas */
+      .repo-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .repo-card {
+        min-width: 100% !important;
+      }
+
+      .repo-carousel-nav {
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 18px !important;
+      }
+    }
+
+    /* ========== BREAKPOINT 5: MÓVILES PEQUEÑOS (< 450px) ========== */
+    @media screen and (max-width: 450px) {
+      .radio-logo {
+        max-width: 90% !important;
+      }
+
+      .radio-container {
+        width: 94% !important;
+      }
+
+      .cover {
+        height: 200px !important;
+        min-height: 200px !important;
+      }
+
+      .player {
+        padding: 15px 10px !important;
+      }
+
+      #displayTitle {
+        font-size: 1.05rem !important;
+      }
+
+      #displayArtist {
+        font-size: 0.85rem !important;
+      }
+
+      .btn-play {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 22px !important;
+      }
+
+      #volumeControl {
+        max-width: 180px !important;
+      }
+
+      .btn-request {
+        max-width: 100% !important;
+        font-size: 0.9rem !important;
+      }
+
+      .wiki-btn {
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 16px !important;
+      }
+
+      .album-year-badge {
+        font-size: 0.75rem !important;
+        padding: 4px 10px !important;
+        bottom: 10px !important;
+        left: 10px !important;
+      }
+
+      .content-section {
+        width: 94% !important;
+        padding: 15px 10px !important;
+      }
+
+      .section-title {
+        font-size: 1.25rem !important;
+      }
+
+      .top10-image {
+        max-width: 160px !important;
+      }
+
+      .top10-image img {
+        max-height: 160px !important;
+      }
+
+      .social-link {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 22px !important;
+      }
+    }
+
+    /* ========== BREAKPOINT 6: MÓVILES MUY PEQUEÑOS (< 375px) ========== */
+    @media screen and (max-width: 375px) {
+      .radio-container {
+        width: 96% !important;
+      }
+
+      .cover {
+        height: 180px !important;
+        min-height: 180px !important;
+      }
+
+      .player-meta-row {
+        font-size: 0.65rem !important;
+      }
+
+      #displayTitle {
+        font-size: 1rem !important;
+      }
+
+      #displayArtist {
+        font-size: 0.8rem !important;
+      }
+
+      .btn-play {
+        width: 50px !important;
+        height: 50px !important;
+        font-size: 20px !important;
+      }
+
+      .wiki-btn {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 14px !important;
+        top: 8px !important;
+        right: 8px !important;
+      }
+
+      .content-section {
+        width: 96% !important;
+      }
+
+      .top10-image {
+        max-width: 140px !important;
+      }
+
+      .top10-image img {
+        max-height: 140px !important;
+      }
+    }
+
+    /* ========== LANDSCAPE MODE ========== */
+    @media screen and (max-height: 500px) and (orientation: landscape) {
+      .radio-container {
+        height: auto !important;
+        max-height: none !important;
+      }
+
+      .cover {
+        height: 100% !important;
+        min-height: 240px !important;
+        max-height: 280px !important;
+      }
+
+      .modal-content {
+        max-height: 85vh !important;
+        overflow-y: auto !important;
+      }
+
+      .modal-body {
+        max-height: 30vh !important;
+      }
+    }
+
+    /* ========== OPTIMIZACIONES TOUCH ========== */
+    @media (hover: none) and (pointer: coarse) {
+      .btn-play,
+      .btn-request,
+      .wiki-btn,
+      .modal-close,
+      .social-link,
+      .req-submit,
+      .repo-carousel-nav,
+      button,
+      a {
+        min-height: 44px !important;
+        min-width: 44px !important;
+      }
+    }
+
+    /* ========== ACCESIBILIDAD ========== */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* ========== FIX OVERFLOW HORIZONTAL ========== */
+    html {
+      overflow-x: hidden !important;
+      width: 100% !important;
+    }
+
+    body {
+      overflow-x: hidden !important;
+      width: 100% !important;
+      max-width: 100vw !important;
+    }
+
+    img, video, iframe {
+      max-width: 100% !important;
+      height: auto !important;
+    }
+</style>
 </head>
 <body>
 
@@ -1656,6 +2372,117 @@
 })(); // END IIFE
 </script>
 <script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
-<script src="https://cast2.my-control-panel.com/system/recenttracks.js"></script>
+<script src="https://cast2.my-control-panel.com/system/recenttracks.js">
+
+  // ============================================================================
+  // CARRUSEL PARA REPOSITORIO EN MÓVILES
+  // ============================================================================
+  (function() {
+    let currentRepoIndex = 0;
+    const repoGrid = document.querySelector('.repo-grid');
+
+    if (!repoGrid) return;
+
+    // Crear wrapper y botones de navegación
+    function initRepoCarousel() {
+      if (window.innerWidth > 700) return; // Solo en móviles
+
+      const repoCards = Array.from(repoGrid.querySelectorAll('.repo-card'));
+      if (repoCards.length === 0) return;
+
+      // Crear estructura de carrusel si no existe
+      if (!repoGrid.parentElement.classList.contains('repo-carousel-wrapper')) {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'repo-carousel-wrapper';
+
+        const container = document.createElement('div');
+        container.className = 'repo-carousel-container';
+        container.style.display = 'grid';
+        container.style.gridTemplateColumns = window.innerWidth <= 550 ? '1fr' : 'repeat(2, 1fr)';
+        container.style.gap = '15px';
+
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'repo-carousel-nav prev';
+        prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        prevBtn.setAttribute('aria-label', 'Anterior');
+
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'repo-carousel-nav next';
+        nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        nextBtn.setAttribute('aria-label', 'Siguiente');
+
+        // Mover las tarjetas al contenedor
+        repoCards.forEach(card => container.appendChild(card));
+
+        wrapper.appendChild(prevBtn);
+        wrapper.appendChild(container);
+        wrapper.appendChild(nextBtn);
+
+        repoGrid.parentElement.insertBefore(wrapper, repoGrid);
+        repoGrid.style.display = 'none';
+
+        // Event listeners
+        prevBtn.addEventListener('click', () => navigateRepo(-1));
+        nextBtn.addEventListener('click', () => navigateRepo(1));
+      }
+    }
+
+    function navigateRepo(direction) {
+      const container = document.querySelector('.repo-carousel-container');
+      if (!container) return;
+
+      const cards = Array.from(container.querySelectorAll('.repo-card'));
+      const cardsPerView = window.innerWidth <= 550 ? 1 : 2;
+      const maxIndex = Math.max(0, cards.length - cardsPerView);
+
+      currentRepoIndex = Math.max(0, Math.min(maxIndex, currentRepoIndex + direction));
+
+      // Ocultar todas las tarjetas
+      cards.forEach((card, idx) => {
+        if (idx >= currentRepoIndex && idx < currentRepoIndex + cardsPerView) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Actualizar estado de botones
+      const prevBtn = document.querySelector('.repo-carousel-nav.prev');
+      const nextBtn = document.querySelector('.repo-carousel-nav.next');
+
+      if (prevBtn) prevBtn.style.opacity = currentRepoIndex === 0 ? '0.5' : '1';
+      if (nextBtn) nextBtn.style.opacity = currentRepoIndex >= maxIndex ? '0.5' : '1';
+    }
+
+    // Inicializar en carga y resize
+    if (window.innerWidth <= 700) {
+      initRepoCarousel();
+      navigateRepo(0); // Mostrar primeras tarjetas
+    }
+
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        if (window.innerWidth <= 700) {
+          initRepoCarousel();
+          navigateRepo(0);
+        } else {
+          // Restaurar grid normal en escritorio
+          const wrapper = document.querySelector('.repo-carousel-wrapper');
+          if (wrapper && repoGrid) {
+            const cards = Array.from(wrapper.querySelectorAll('.repo-card'));
+            cards.forEach(card => {
+              card.style.display = 'block';
+              repoGrid.appendChild(card);
+            });
+            wrapper.remove();
+            repoGrid.style.display = 'grid';
+          }
+        }
+      }, 250);
+    });
+  })();
+</script>
 </body>
 </html>
