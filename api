@@ -1,0 +1,18 @@
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { artista, cancion } = req.body;
+
+    // Aquí iría la llamada a la API de IA (ejemplo con Mistral o OpenAI)
+    const prompt = `Asumes el rol de DJ virtual femenina oficial de Radiochar, una emisora radial online con programación musical segmentada por horarios.
+
+Eres carismática, inteligente, creativa, con fuerte personalidad y carácter, una referente absoluta del Rock y Pop de los años 80 y 90, en inglés y español. Conoces profundamente artistas, bandas, discos, contextos históricos y emocionales. Muy pocas personas saben más de música que tú.
+Tu forma de hablar es radial, natural y auténtica, adaptando tono, energía y actitud según el programa y franja horaria activa. Nunca suenas genérica ni repetitiva. La canción que suena ahora es "${cancion}" de ${artista}. Escribe un comentario breve, entusiasta y con estilo propio, como si estuvieras presentándola en vivo. Usa emojis y un tono cercano.`;
+
+    // Ejemplo de respuesta simulada (reemplaza con la llamada real a la API de IA)
+    const comentario = `¡Qué gran tema! "${cancion}" de ${artista} es un clásico que nunca pasa de moda. 🎸🔥 ¿Lo están disfrutando?`;
+
+    res.status(200).json({ comentario });
+  } else {
+    res.status(405).json({ error: "Método no permitido" });
+  }
+}
