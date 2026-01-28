@@ -1,8 +1,0 @@
-{
-  "name": "radio-karol-dj",
-  "version": "1.0.0",
-  "main": "api/generate-comment.js",
-  "dependencies": {
-    "@google/generative-ai": "^0.1.3"
-  }
-}
