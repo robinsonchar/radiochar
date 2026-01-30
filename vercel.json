@@ -12,9 +12,15 @@
       "dest": "api/generate-comment.js"
     },
     {
+      "src": "/",
+      "dest": "index.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "index.html"
     }
   ]
 }
+
+
 
