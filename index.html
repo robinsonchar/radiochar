@@ -164,102 +164,101 @@
     .play-btn.playing { padding-left: 0; background: var(--color-accent-blue); color: #fff; }
 
     
-/* ========== INICIO: CSS SECCIÓN DJ KAROL ========== */
-    .dj-comment-section {
-      width: 1000px;
-      max-width: 95%;
-      margin: 25px auto 80px auto;
-      backdrop-filter: blur(20px);
-      border-radius: 16px;
-      padding: 15px 20px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      position: relative;
-      z-index: var(--z-content);
-      border: 1px solid transparent;
-      background-clip: padding-box;
-    }
-    .dj-comment-section::before {
-      content: '';
-      position: absolute;
-      top: 0; right: 0; bottom: 0; left: 0;
-      z-index: -1;
-      margin: -1px; /* Grosor del borde */
-      border-radius: inherit;
-      background: linear-gradient(135deg, var(--color-accent-pink), var(--color-accent-blue));
-    }
-    .dj-avatar {
-      flex-shrink: 0;
-      width: 165px;
-      height: 165px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-      box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
-    }
-    .dj-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .dj-info {
-      flex-grow: 1;
-      min-width: 0;
-    }
-    .dj-header {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 5px;
-    }
-    .dj-live-tag {
-      background: var(--color-accent-red);
-      color: #fff;
-      font-size: 10px;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .dj-name {
-      font-family: 'Russo One', sans-serif;
-      font-size: 18px;
-      color: #fff;
-      text-transform: uppercase;
-    }
-    .dj-comment-text {
-      font-size: 18px;
-      color: #ddd;
-      font-style: italic;
-      line-height: 1.4;
-    }
-    .dj-comment-text .song-highlight {
-      font-weight: 600;
-      color: var(--color-accent-blue);
-      font-style: normal;
-    }
-    .dj-comment-text .artist-highlight {
-      font-weight: 600;
-      color: var(--color-accent-gold);
-      font-style: normal;
-    }
-    /* Responsividad para la sección de Karol */
-    @media (max-width: 600px) {
-      .dj-comment-section {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-        gap: 15px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-      }
-      .dj-header {
-        justify-content: center;
-      }
-    }
-    /* ========== FIN: CSS SECCIÓN DJ KAROL ========== */
+/* ========== INICIO: CSS SECCIÓN DJ KAROL (v2.0) ========== */
+.dj-comment-section {
+  width: 1000px;
+  max-width: 95%;
+  margin: 15px auto 80px auto; /* Margen superior reducido para acercar al reproductor */
+  background: transparent; /* 1. Fondo eliminado */
+  backdrop-filter: none; /* 1. Filtro de desenfoque eliminado */
+  border-radius: 16px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  z-index: var(--z-content);
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+.dj-comment-section::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  margin: -1px; /* Grosor del borde */
+  border-radius: inherit;
+  background: linear-gradient(135deg, var(--color-accent-pink), var(--color-accent-blue));
+}
+.dj-avatar {
+  flex-shrink: 0;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
+}
+.dj-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dj-info {
+  flex-grow: 1;
+  min-width: 0;
+}
+.dj-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.dj-live-tag { /* 2. "EN CABINA" */
+  background: var(--color-accent-red);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.dj-name {
+  font-family: 'Russo One', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+}
+.dj-comment-text {
+  font-size: 15px;
+  color: #fff; /* 3. Texto principal ahora es blanco */
+  font-style: italic;
+  line-height: 1.4;
+}
+/* 3. Clases de colores eliminadas del CSS para que no tengan efecto */
+.dj-comment-text .song-highlight,
+.dj-comment-text .artist-highlight {
+  font-weight: 600;
+  color: inherit; /* Hereda el color blanco del padre */
+  font-style: normal;
+}
+/* 5. Responsividad para la sección de Karol */
+@media (max-width: 600px) {
+  .dj-comment-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 15px;
+    margin-top: 20px; /* 4. Margen superior ajustado en móvil */
+    margin-bottom: 40px;
+  }
+  .dj-header {
+    justify-content: center;
+  }
+}
+/* ========== FIN: CSS SECCIÓN DJ KAROL (v2.0) ========== */
+
 
 
     /* SECCIONES & TITULOS */
