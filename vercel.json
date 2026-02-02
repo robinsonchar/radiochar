@@ -12,8 +12,8 @@
       "dest": "api/comment.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/"
+      "src": "/",
+      "dest": "index.html"
     }
   ]
 }
