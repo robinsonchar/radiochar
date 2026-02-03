@@ -163,104 +163,6 @@
     .play-btn:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(255,255,255,0.5); }
     .play-btn.playing { padding-left: 0; background: var(--color-accent-blue); color: #fff; }
 
-    
-/* ========== INICIO: CSS SECCIÓN DJ KAROL (v2.0) ========== */
-.dj-comment-section {
-  width: 1000px;
-  max-width: 95%;
-  margin: 15px auto 80px auto; /* Margen superior reducido para acercar al reproductor */
-  background: transparent; /* 1. Fondo eliminado */
-  backdrop-filter: none; /* 1. Filtro de desenfoque eliminado */
-  border-radius: 16px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  z-index: var(--z-content);
-  border: 1px solid transparent;
-  background-clip: padding-box;
-}
-.dj-comment-section::before {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
-  z-index: -1;
-  margin: -1px; /* Grosor del borde */
-  border-radius: inherit;
-  background: linear-gradient(135deg, var(--color-accent-black), var(--color-accent-gray));
-}
-.dj-avatar {
-  flex-shrink: 0;
-  width: 165px;
-  height: 165px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 15px rgba(0, 198, 255, 0.3);
-}
-.dj-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.dj-info {
-  flex-grow: 1;
-  min-width: 0;
-}
-.dj-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 5px;
-}
-.dj-live-tag { /* 2. "EN CABINA" */
-  background: var(--color-accent-red);
-  color: #fff;
-  font-size: 10px;
-  font-weight: 800;
-  padding: 3px 8px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.dj-name {
-  font-family: 'Russo One', sans-serif;
-  font-size: 16px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.dj-comment-text {
-  font-size: 15px;
-  color: #fff; /* 3. Texto principal ahora es blanco */
-  font-style: italic;
-  line-height: 1.4;
-}
-/* 3. Clases de colores eliminadas del CSS para que no tengan efecto */
-.dj-comment-text .song-highlight,
-.dj-comment-text .artist-highlight {
-  font-weight: 600;
-  color: inherit; /* Hereda el color blanco del padre */
-  font-style: normal;
-}
-/* 5. Responsividad para la sección de Karol */
-@media (max-width: 600px) {
-  .dj-comment-section {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    gap: 15px;
-    margin-top: 20px; /* 4. Margen superior ajustado en móvil */
-    margin-bottom: 40px;
-  }
-  .dj-header {
-    justify-content: center;
-  }
-}
-/* ========== FIN: CSS SECCIÓN DJ KAROL (v2.0) ========== */
-
-
-
     /* SECCIONES & TITULOS */
     .content-section { width: 1000px; max-width: 95%; margin: 100px auto; z-index: var(--z-content); }
     .section-header-common { margin-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 15px; display: flex; justify-content: space-between; align-items: flex-end; }
@@ -1332,22 +1234,6 @@
       </div>
     </section>
 
-<!-- ========== INICIO: SECCIÓN DJ KAROL ========== -->
-    <section class="dj-comment-section visual-transition">
-      <div class="dj-avatar">
-        <img id="djAvatarImg" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj9jkzOBi9THPEy4U6kmR7-Ksoj0Sxd9VmgW80pdN-33XmqGbjz1DSVCs2WY71s48HotII3YyXbPBLGqnQmDYkTrRNxl6HCa-xuReIsxxhmKkPF7caya23n2b8cYdTiCg7eMBHoA-05RE-7XJ5AMJNXrFDIcCuWRR9Vk73pefxMGG0iNcmIKqDp74S_aVBu/s16000/KarolDJ.png" alt="DJ Karol IA">
-      </div>
-      <div class="dj-info">
-        <div class="dj-header">
-          <span class="dj-live-tag">EN CABINA</span>
-          <span class="dj-name">DJ KAROL</span>
-        </div>
-        <p id="djComment" class="dj-comment-text">Sintonizando la frecuencia...</p>
-      </div>
-    </section>
-    <!-- ========== FIN: SECCIÓN DJ KAROL ========== -->
-
-
     <section class="content-section schedule-section">
       <div class="section-header-common"><h2 class="section-title-common schedule-title-custom">ESTAMOS PRESENTANDO</h2></div>
       <div class="schedule-container-custom" id="scheduleSlider">
@@ -1418,9 +1304,7 @@
             <div class="slider-arrow left" id="directoriesPrev"><i class="fas fa-chevron-left"></i></div>
             <div class="slider-arrow right" id="directoriesNext"><i class="fas fa-chevron-right"></i></div>
             <div class="carousel-track-common" id="directoriesTrack">
-		<a href="https://www.radioguide.fm/internet-radio-colombia/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjENc8WYnAQyUkh9HPOjotGMgkRXi13xiLs3r0FxeGgeNHeTJ8S8nI_Ft5LOCGQEu1m4o4bm2cADzgg_F37ye6CSCrku9oNF2jTh-_B2NzQH3QpGTExAqNY8eim-pGc4A7RayddHgQ5VFi6BU0tXPctoXvBrBgdKrQjuL4ANO_dsUQghmADW1Aodb6q9hd4/s1600/radioguide.fm.png" alt="Radio Guide FM"></div><div class="directory-name">Radio Guide FM</div></a>
-		<a href="https://liveonlineradio.net/es/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWEvKSwT9qlh0TyPyen2DoqcyvL-wv3RzwCkdzo0LkAZdECl8_-DlVRBlhP4JPipufxYFntxl-2JBjlcWZyS6s0WVo7nK3_ibvAaDt_fzH2og98WiH8Br5iryjI9UELVuDpWIa1Rf-A4f2xWmIf0HbHaxSaffXDjFMBKhLNIfYQ-wl_kTWcUzioEG1b5MY/s16000/LiveOnlineRadio.png" alt="Live Online Radio"></div><div class="directory-name">Live Online Radio</div></a>
-		<a href="https://www.getmeradio.com/stations/radiochar-11470/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp-GTg6Hb14M_ZLaFlZnkMaT0LkMmYPYPxGx1G_mezigt_JHoZyXdshlj4_tPVv79uftLUskRJPSor0YJwxsap0NoIlqDq368sUpUgEgSMEPxitK9ktyUAJyW582ozNjKdo_w0Qxuj2RG82vg5qAiG9GsrysMcCN-eXKy_jCIFSjcPQ1iKACfvBdPiyb5L/s300/GetMeRadio.png" alt="Get Me Radio"></div><div class="directory-name">Get Me Radio</div></a>
+				<a href="https://www.getmeradio.com/stations/radiochar-11470/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp-GTg6Hb14M_ZLaFlZnkMaT0LkMmYPYPxGx1G_mezigt_JHoZyXdshlj4_tPVv79uftLUskRJPSor0YJwxsap0NoIlqDq368sUpUgEgSMEPxitK9ktyUAJyW582ozNjKdo_w0Qxuj2RG82vg5qAiG9GsrysMcCN-eXKy_jCIFSjcPQ1iKACfvBdPiyb5L/s300/GetMeRadio.png" alt="Get Me Radio"></div><div class="directory-name">Get Me Radio</div></a>
                 <a href="https://forwardmystream.com/station/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSWNNZIAGbnOPGKEPyVTzsIaaRzniqoU9cEdC4iwlBnLIMBKeGBZogMGUU0RKK0s2MC0d2emRjKVonc23mKSPXSBu84Fs2byEA89VOTnlonf9god3RXs4ziQ9GEI72i_2IvAt3lr2_cxJdsBRpAWTwGTMwbp3sYnyYsX4r1IQ2YjjG33ZDLskLxTQlcZs1/s1600/ForwardMyStream.png" alt="Forward My Stream"></div><div class="directory-name">Forward My Stream</div></a>
                 <a href="https://theonestopradio.com/radio/radiochar%20co" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIk_IUagLJ5h6UYoFUcaCveJ-iDfGsYayy63caTzNQKOM_5lubkZvpONuZenvm0BK62dohkoZhWTF99ZTQwJNQJ-7yX0tatTgC3dAZQZ_La7breT9daLTQKrsn6WM9DLxFz4N5NV7Fu_ZdVwtkne05V-E9qLQpZQnVRXLCz1-Vgftb1vgzDSQifcn-c0bR/s1600/TheOneStopRadio.png" alt="The OneStop Radio"></div><div class="directory-name">The OneStop Radio</div></a>
                 <a href="http://tun.in/sfKBJ" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxPhIPia7P4pYMXosrf5d5CfqqNfX08wWGebiC4haJsbte021F2AVfd12PrKjbalBC1d-ewSoA7fFVeYIkCLrHm80nu4lhBfzm0PFYuhjpZk6gdFg6Mx-Bl5iQbyWpt3eDvq-ze1ewT5Vx6qv0Osy5nNFtvwgJWrg0yeD7VlVMWvVQ4OZH8HFd-K8CvaPK/s16000/logo%20tunein%20color.png" alt="Tunein"></div><div class="directory-name">TuneIn</div></a>
@@ -1557,12 +1441,7 @@
             track: document.getElementById('directoriesTrack'),
             prev: document.getElementById('directoriesPrev'),
             next: document.getElementById('directoriesNext')
-        },
-	// --- AÑADIR ESTAS LÍNEAS ---
-    djSection: document.querySelector('.dj-comment-section'),
-    djAvatar: document.getElementById('djAvatarImg'),
-    djComment: document.getElementById('djComment')
-    // --- FIN DE LÍNEAS A AÑADIR ---
+        }
     };
 
     // Funciones expuestas a window
@@ -1585,40 +1464,6 @@
     window.openReqModal = function() { DOM.reqModal.overlay.classList.add('active'); };
     window.closeReqModal = function() { DOM.reqModal.overlay.classList.remove('active'); };
     window.closeModal = function() { DOM.modal.overlay.classList.remove('active'); };
-
-// ========== INICIO: LÓGICA DJ KAROL (v4 - CON IA REAL GEMINI) ==========
-async function updateDjComment(artist, title) {
-    if (!DOM.djSection) return;
-
-    // Comentario por defecto en caso de que la IA falle
-    let finalComment = `Disfrutando de ${title} de ${artist}... ¡un clásico en Radiochar!`; 
-
-    try {
-        // Llamamos a nuestra propia API en Vercel (que ahora usa Gemini)
-        const response = await fetch(`/api/comment?artist=${encodeURIComponent(artist)}&song=${encodeURIComponent(title)}`);
-        
-        if (!response.ok) {
-            console.error('La API de Karol (Gemini) no respondió correctamente. Estado:', response.status);
-        } else {
-            const data = await response.json();
-            if (data.comment) {
-                finalComment = data.comment;
-            }
-        }
-    } catch (error) {
-        console.error('Error al contactar la API de Karol (Gemini):', error);
-    }
-
-    // La animación sutil se mantiene igual
-    DOM.djSection.classList.add('fading-out');
-    setTimeout(() => {
-        // Usamos .innerText para mayor seguridad, ya que la respuesta viene de una IA.
-        DOM.djComment.innerText = finalComment;
-        DOM.djSection.classList.remove('fading-out');
-    }, 500);
-}
-// ========== FIN: LÓGICA DJ KAROL ==========
-
 
     var Utils = {
         debounce: function(func, wait) {
@@ -2070,9 +1915,6 @@ async function updateDjComment(artist, title) {
 
         if (uniqueKey === lastSongKey) return;
         lastSongKey = uniqueKey;
-	
-	updateDjComment(formattedArtist, title); // Llamada a la función de Karol
-
 
         var elementsToFade = [DOM.displayTitle, DOM.displayArtist, DOM.albumArt, DOM.bgBlur, DOM.albumYear];
         elementsToFade.forEach(function(el) { el.classList.add('fading-out'); });
