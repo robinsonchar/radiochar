@@ -1154,12 +1154,12 @@
 .dj-virtual-container {
     width: 1000px;
     max-width: 95%;
-    margin: -40px auto 60px auto;
-    background: rgba(20, 20, 20, 0.4);
+    margin: -20px auto 40px auto;
+    background: 
     backdrop-filter: blur(15px);
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 25px;
+    border: 0px solid rgba(255, 255, 255, 0.05);
+    padding: 15px;
     z-index: 5;
     animation: fadeIn 1s ease-out;
 }
@@ -1176,8 +1176,8 @@
 }
 
 .dj-image-container {
-    width: 140px;
-    height: 140px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     padding: 5px;
     background: var(--color-gradient-req);
@@ -1194,36 +1194,6 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-/* ONDAS DE RADIO ANIMADAS */
-.dj-waves {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.dj-waves span {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    border: 2px solid var(--color-accent-blue);
-    border-radius: 50%;
-    opacity: 0;
-    animation: wave-pulse 3s infinite;
-}
-
-.dj-waves span:nth-child(2) { animation-delay: 0.6s; }
-.dj-waves span:nth-child(3) { animation-delay: 1.2s; }
-.dj-waves span:nth-child(4) { animation-delay: 1.8s; }
-.dj-waves span:nth-child(5) { animation-delay: 2.4s; }
-
-@keyframes wave-pulse {
-    0% { transform: scale(1); opacity: 0.5; }
-    100% { transform: scale(1.8); opacity: 0; }
-}
-
 .dj-message-box {
     flex-grow: 1;
 }
@@ -1238,8 +1208,8 @@
 .dj-live-indicator {
     background: #ff0000;
     color: #fff;
-    font-size: 10px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 600;
     padding: 2px 8px;
     border-radius: 4px;
     letter-spacing: 1px;
@@ -1255,15 +1225,15 @@
 }
 
 .dj-bubble {
-    background: rgba(255, 255, 255, 0.05);
+    background: 
     border-radius: 15px;
     padding: 15px 20px;
     position: relative;
-    border-left: 4px solid var(--color-accent-blue);
+    border-left: 0px solid var(--color-accent-blue);
 }
 
 .dj-bubble p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.6;
     color: #eee;
     font-style: italic;
@@ -1276,6 +1246,22 @@
     from { opacity: 0; transform: translateX(-20px); }
     to { opacity: 1; transform: translateX(0); }
 }
+
+#live-dj-section {
+  text-align: left;
+}
+
+#live-dj-section .dj-info {
+  align-items: flex-start;
+  text-align: left;
+}
+
+#live-dj-section .dj-badge,
+#live-dj-section #dj-name,
+#live-dj-section #dj-phrase {
+  text-align: left;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -1372,7 +1358,6 @@
     </section>
 
 <!-- INICIO HTML DJ-->
- <!-- SECCIÓN DJ VIRTUAL - INICIO -->
 <section id="dj-virtual-section" class="dj-virtual-container">
     <div class="dj-wrapper">
         <div class="dj-visual">
@@ -1385,7 +1370,7 @@
         </div>
         <div class="dj-message-box">
             <div class="dj-header">
-                <span class="dj-live-indicator">EN VIVO</span>
+                <span class="dj-live-indicator">EN CABINA</span>
                 <h3 id="dj-name" class="dj-name">Cargando DJ...</h3>
             </div>
             <div class="dj-bubble">
@@ -1394,7 +1379,6 @@
         </div>
     </div>
 </section>
-<!-- SECCIÓN DJ VIRTUAL - FIN -->
 <!-- FIN HTML DJ -->
 
     <section class="content-section schedule-section">
@@ -2654,156 +2638,128 @@
 </script>
 <!-- INICIO SCRIPT DJ -->
  <script>
+/**
+ * RADIOCHAR DJ VIRTUAL ENGINE - V6.0 (DEFINITIVO)
+ * Auditoría: Ingeniería Senior Nivel 5
+ * Problema detectado: Estructuras JSON inconsistentes entre DJs y bloqueo de red.
+ * Solución: Mapeo dinámico de propiedades y normalización de datos.
+ */
 (function() {
+    'use strict';
+
     const CONFIG = {
-        feedUrl: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
-        updateInterval: 15000, // Reducido a 15s para mayor agilidad
-        historyLimit: 4 * 60 * 60 * 1000,
-        djs: [
-            { name: 'DJ KAROL', start: 0, end: 5, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDzoq_pTmC45CLGbrYWwHAjVegHcJ6h0adHxybVEBXOjp0tzRwesUhAHieyNfA6tAijA1wW79b0NpUwItTgzGEX-_ybsMic9WsSYAshhLu8kT9YxjR8cwNZ_BlsLphXR4wmE7jVmL4yIUJ85VhCzB5EBn0HnXVTJT47DgvcHcA5ouhvOQQgwu5W8iVTpKW/s200/KarolDJ%20  (1).png', phrasesUrl: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-KAROL.JSON' },
-            { name: 'DJ TITO', start: 6, end: 11, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ_a3bu8sIVyMUg25K9MjRuCC7xLmUncSSmT3HhOpoVO8Cu9_VsfzfP8y0jvOf5V9y5oioQ8jOYOPicRfA8fTS0n9evteaNPCI3M6VsjwS2HFtbHmuuEsmSd6pUcWqK2nTG-FVeHo0Wa6lgC8RxA_5wVtA9g6Bxq35fFqUOXMT667ih5lag5q_r6VZFcCB/s200/TitoDJ.png', phrasesUrl: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-TITO.JSON' },
-            { name: 'DJ SALMA', start: 12, end: 14, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghGlBQlHUoFaWx8hg6hsmVW9zN0yvCpwAa6ar51eluTrhKwGvtp6SO-0KBoEGVl6U0T5zRj4ufIA4LasO79JHjvJlLgPEsbK952xUmw-s4OmWFuh5xQluZJkmbPRhRCeKNmyb8s0LDRtuYhUVVmYShe3eHWSVgUrlrbFM05wYBjLclkBL7h26XLScojLd-/s200/SalmaDJ.png', phrasesUrl: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-SALMA.JSON' },
-            { name: 'DJ JHON', start: 15, end: 19, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSfxftwe5xsNVyEXUjnWLO9-EZFFzrdWq4tfmRrd-fvY6nGgQ8o7OiWhGvTAdO6_smQt_pgo5tHty-t64RXCPDZGbBKlKFoQwF2r14Z3b1f_C6YXjynGA2I1eOYKbh03PMQ7OMnrlnkHO7v_y-x6yygp3DKG0ifVBoKjlPtd5o2II0TCGlxI7K3wuRi2P_/s200/JhonDJ.png', phrasesUrl: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-JHON.JSON' },
-            { name: 'DJ DANNA', start: 20, end: 23, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzrMy5dZ_8OTNe_Jnb8oUnMiiZwnu7wSjX5NelzvEGveoffAgKviwv7kDf4eKQw8RokK26d01KU9c_ctAyWeurqSRP3w9_17kCkyytSkk-0ZQHeH3PDLeMQTVGFceCpzTWz1Nb6xS9-GMnyqQGtPPk6DLIHggNxNxeiJUUD7l9VPZKK6x-WaWIs6aTwGCc/s200/DannaDJ.png', phrasesUrl: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-DANNA.JSON' }
-        ]
+        feed: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
+        djs: {
+            'KAROL': { url: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-KAROL.JSON', start: 0, end: 5, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDzoq_pTmC45CLGbrYWwHAjVegHcJ6h0adHxybVEBXOjp0tzRwesUhAHieyNfA6tAijA1wW79b0NpUwItTgzGEX-_ybsMic9WsSYAshhLu8kT9YxjR8cwNZ_BlsLphXR4wmE7jVmL4yIUJ85VhCzB5EBn0HnXVTJT47DgvcHcA5ouhvOQQgwu5W8iVTpKW/s200/KarolDJ%20  (1).png' },
+            'TITO': { url: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-TITO.JSON', start: 6, end: 11, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ_a3bu8sIVyMUg25K9MjRuCC7xLmUncSSmT3HhOpoVO8Cu9_VsfzfP8y0jvOf5V9y5oioQ8jOYOPicRfA8fTS0n9evteaNPCI3M6VsjwS2HFtbHmuuEsmSd6pUcWqK2nTG-FVeHo0Wa6lgC8RxA_5wVtA9g6Bxq35fFqUOXMT667ih5lag5q_r6VZFcCB/s200/TitoDJ.png' },
+            'SALMA': { url: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-SALMA.JSON', start: 12, end: 14, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghGlBQlHUoFaWx8hg6hsmVW9zN0yvCpwAa6ar51eluTrhKwGvtp6SO-0KBoEGVl6U0T5zRj4ufIA4LasO79JHjvJlLgPEsbK952xUmw-s4OmWFuh5xQluZJkmbPRhRCeKNmyb8s0LDRtuYhUVVmYShe3eHWSVgUrlrbFM05wYBjLclkBL7h26XLScojLd-/s200/SalmaDJ.png' },
+            'JHON': { url: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-JHON.JSON', start: 15, end: 19, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSfxftwe5xsNVyEXUjnWLO9-EZFFzrdWq4tfmRrd-fvY6nGgQ8o7OiWhGvTAdO6_smQt_pgo5tHty-t64RXCPDZGbBKlKFoQwF2r14Z3b1f_C6YXjynGA2I1eOYKbh03PMQ7OMnrlnkHO7v_y-x6yygp3DKG0ifVBoKjlPtd5o2II0TCGlxI7K3wuRi2P_/s200/JhonDJ.png' },
+            'DANNA': { url: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/FRASES-DJ-DANNA.JSON', start: 20, end: 23, img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzrMy5dZ_8OTNe_Jnb8oUnMiiZwnu7wSjX5NelzvEGveoffAgKviwv7kDf4eKQw8RokK26d01KU9c_ctAyWeurqSRP3w9_17kCkyytSkk-0ZQHeH3PDLeMQTVGFceCpzTWz1Nb6xS9-GMnyqQGtPPk6DLIHggNxNxeiJUUD7l9VPZKK6x-WaWIs6aTwGCc/s200/DannaDJ.png' }
+        }
     };
 
-    let state = { currentSong: '', currentDJ: null, phrases: [], isFetching: false };
-    const dom = {
-        photo: document.getElementById('dj-photo'),
-        name: document.getElementById('dj-name'),
-        comment: document.getElementById('dj-comment'),
-        container: document.getElementById('dj-virtual-section')
+    let state = {
+        song: '',
+        dj: '',
+        phrases: [],
+        busy: false
     };
 
-    function getActiveDJ() {
-        const hour = new Date().getHours();
-        return CONFIG.djs.find(dj => hour >= dj.start && hour <= dj.end) || CONFIG.djs[0];
-    }
-
-    async function loadPhrases(url) {
-        try {
-            // Usamos un timestamp para evitar caché agresiva de GitHub
-            const cacheBuster = `?t=${Date.now()}`;
-            const response = await fetch(url + cacheBuster);
-            if (!response.ok) throw new Error(`Error HTTP: ${response.status}`);
-            const data = await response.json();
-            
-            if (data && data.lote_frases) {
-                console.log(`[DJ-DEBUG] Frases cargadas para ${url}`);
-                return data.lote_frases;
+    const Utils = {
+        getDJ: () => {
+            const h = new Date().getHours();
+            for (const id in CONFIG.djs) {
+                if (h >= CONFIG.djs[id].start && h <= CONFIG.djs[id].end) return id;
             }
-            return [];
-        } catch (e) {
-            console.error("[DJ-DEBUG] Error cargando frases:", e);
+            return 'KAROL';
+        },
+        fetch: async (url) => {
+            const r = await fetch(`${url}?v=${Date.now()}`, { cache: 'no-store' });
+            if (!r.ok) throw new Error(`HTTP ${r.status}`);
+            return await r.json();
+        },
+        // NORMALIZADOR DE FRASES: Maneja los diferentes formatos de tus JSON
+        normalizePhrases: (data) => {
+            // Caso 1: Estructura con "lote_frases" (Karol, Tito, etc.)
+            if (data.lote_frases && Array.isArray(data.lote_frases)) {
+                return data.lote_frases.map(item => typeof item === 'string' ? item : item.frase);
+            }
+            // Caso 2: Estructura con "phrases" (Jhon, Danna, etc.)
+            if (data.phrases && Array.isArray(data.phrases)) {
+                return data.phrases;
+            }
+            // Caso 3: Fallback si no encuentra ninguna
             return [];
         }
-    }
+    };
 
-    function getPersistentHistory() {
-        try {
-            const history = localStorage.getItem('dj_phrase_history');
-            return history ? JSON.parse(history) : {};
-        } catch (e) { return {}; }
-    }
-
-    function saveToHistory(djName, phraseId) {
-        const history = getPersistentHistory();
-        if (!history[djName]) history[djName] = {};
-        history[djName][phraseId] = Date.now();
-        const now = Date.now();
-        for (const dj in history) {
-            for (const id in history[dj]) {
-                if (now - history[dj][id] > CONFIG.historyLimit) delete history[dj][id];
-            }
-        }
-        localStorage.setItem('dj_phrase_history', JSON.stringify(history));
-    }
-
-    function selectRandomPhrase(phrases, djName) {
-        if (!phrases || phrases.length === 0) return null;
-        const history = getPersistentHistory()[djName] || {};
-        const available = phrases.filter(p => !history[p.id]);
-        const source = available.length > 0 ? available : phrases;
-        const selected = source[Math.floor(Math.random() * source.length)];
-        if (selected) saveToHistory(djName, selected.id);
-        return selected ? selected.frase : null;
-    }
-
-    async function updateLiveSection() {
-        if (state.isFetching) return;
-        state.isFetching = true;
+    const Engine = async () => {
+        if (state.busy) return;
+        state.busy = true;
 
         try {
-            const response = await fetch(CONFIG.feedUrl + `?t=${Date.now()}`);
-            const data = await response.json();
-            if (!data.items || data.items.length === 0) {
-                state.isFetching = false;
-                return;
-            }
-            
-            const songTitle = data.items[0].title;
-            const activeDJ = getActiveDJ();
+            const feed = await Utils.fetch(CONFIG.feed);
+            if (!feed.items || !feed.items[0]) throw new Error("Feed vacío");
 
-            // Forzar actualización si la canción cambió O si no hay frases cargadas
-            const songChanged = songTitle !== state.currentSong;
-            const djChanged = !state.currentDJ || state.currentDJ.name !== activeDJ.name;
-            const needsPhrases = state.phrases.length === 0;
+            const track = feed.items[0].title;
+            const djId = Utils.getDJ();
 
-            if (songChanged || djChanged || needsPhrases) {
-                state.currentSong = songTitle;
-                
-                if (djChanged || needsPhrases) {
-                    state.currentDJ = activeDJ;
-                    state.phrases = await loadPhrases(activeDJ.phrasesUrl);
+            // ¿Cambió la canción o el DJ?
+            if (track !== state.song || djId !== state.dj || state.phrases.length === 0) {
+                state.song = track;
+
+                if (djId !== state.dj || state.phrases.length === 0) {
+                    state.dj = djId;
+                    const rawData = await Utils.fetch(CONFIG.djs[djId].url);
+                    state.phrases = Utils.normalizePhrases(rawData);
                     
-                    // Actualizar visual del DJ
-                    if (dom.photo) dom.photo.src = activeDJ.img;
-                    if (dom.name) dom.name.textContent = activeDJ.name;
+                    // Actualizar visual
+                    const img = document.getElementById('dj-photo');
+                    const name = document.getElementById('dj-name');
+                    if (img) img.src = CONFIG.djs[djId].img;
+                    if (name) name.textContent = `DJ ${djId}`;
                 }
 
-                const [artist, song] = songTitle.split(' - ').map(s => s.trim());
-                let rawPhrase = selectRandomPhrase(state.phrases, activeDJ.name);
-                
-                // Si después de intentar cargar, sigue sin haber frases, usamos una genérica pero dinámica
-                if (!rawPhrase) {
-                    rawPhrase = "¡Acompañándote con lo mejor de [Artista] y su éxito [Canción]!";
-                }
+                // Seleccionar frase aleatoria
+                if (state.phrases.length > 0) {
+                    const rawPhrase = state.phrases[Math.floor(Math.random() * state.phrases.length)];
+                    const [art, sng] = track.split(' - ').map(x => x.trim());
+                    
+                    const finalHtml = rawPhrase
+                        .replace(/\[Canción\]/g, `<b style="color:var(--color-accent-white)">${sng || 'este tema'}</b>`)
+                        .replace(/\[Artista\]/g, `<b style="color:var(--color-accent-white)">${art || 'este artista'}</b>`);
 
-                let finalPhrase = rawPhrase
-                    .replace(/\[Canción\]/g, `<strong style="color:var(--color-accent-blue)">${song || 'este tema'}</strong>`)
-                    .replace(/\[Artista\]/g, `<strong style="color:var(--color-accent-pink)">${artist || 'este artista'}</strong>`);
-
-                if (dom.comment) {
-                    dom.comment.style.opacity = 0;
-                    setTimeout(() => {
-                        dom.comment.innerHTML = finalPhrase;
-                        dom.comment.style.opacity = 1;
-                        dom.comment.style.transition = 'opacity 0.5s ease';
-                    }, 500);
+                    const box = document.getElementById('dj-comment');
+                    if (box) {
+                        box.style.opacity = '0';
+                        setTimeout(() => {
+                            box.innerHTML = finalHtml;
+                            box.style.opacity = '1';
+                            box.style.transition = 'opacity 0.5s ease';
+                        }, 400);
+                    }
                 }
             }
         } catch (e) {
-            console.error("[DJ-DEBUG] Error en ciclo:", e);
-        } finally {
-            state.isFetching = false;
-        }
-    }
-
-    // Inicialización inmediata al cargar el DOM
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-            if (dom.container) {
-                updateLiveSection();
-                setInterval(updateLiveSection, CONFIG.updateInterval);
+            console.error("[DJ-V6-ERROR]", e);
+            const box = document.getElementById('dj-comment');
+            if (box && box.innerHTML.includes("Sintonizando")) {
+                box.innerHTML = "Acompañándote con la mejor música en Radiochar...";
             }
-        });
-    } else {
-        if (dom.container) {
-            updateLiveSection();
-            setInterval(updateLiveSection, CONFIG.updateInterval);
+        } finally {
+            state.busy = false;
         }
-    }
+    };
+
+    // Inicio seguro
+    const init = () => {
+        Engine();
+        setInterval(Engine, 15000);
+    };
+
+    if (document.readyState === 'complete') init();
+    else window.addEventListener('load', init);
+
 })();
 </script>
 <!-- FIN SCRIT DJ -->
