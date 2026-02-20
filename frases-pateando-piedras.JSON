@@ -1,0 +1,2838 @@
+{
+  "radio": "Radiochar",
+  "programa": {
+    "nombre": "Pateando piedras",
+    "horario": "12:00 - 14:59",
+    "contenido": "Rock y Pop en español",
+    "dj": {
+      "nombre": "Salma Cifuentes",
+      "genero": "Mujer",
+      "personalidad": "Auténtica, rebelde, directa, orgullosa de sus raíces (latina) y urbana.",
+      "tono_voz": "Firme, con cuerpo, ligeramente rasgada y con una cadencia callejera elegante.",
+      "actitud": "Segura, sin adornos, conectada con el sentimiento del rock y pop latino.",
+      "relacion_emocional": "El rock en español como identidad y grito generacional.",
+      "nivel_confianza_perfil": "Alta"
+    }
+  },
+  "total_canciones": 343,
+  "frases_por_cancion": [
+    {
+      "artista": "Fito Paez",
+      "cancion": "11 y 6",
+      "frase": "Hay historias que se quedan pegadas al asfalto de Buenos Aires y Fito Paez supo retratar esa crudeza en 11 y 6. Es el hambre, el amor de calle y la realidad que muchos prefieren ignorar. Aquí soltamos la música que libera y nos pone de frente con la verdad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "666",
+      "frase": "Si hablamos de metal con agallas, Ángeles Del Infierno nos pone a vibrar con 666. Esa distorsión es puro fuego para los que no seguimos reglas. Es el grito rebelde que rompe el silencio y nos recuerda que el rock en nuestro idioma tiene un peso brutal.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "A Dios Le Pido",
+      "frase": "Desde lo más profundo de nuestra tierra, Juanes soltó A Dios Le Pido como un ruego que se convirtió en himno. Es esa mezcla de fe y pueblo que corre por nuestras venas latinas. Una canción que pide protección para lo que más queremos en este mundo loco.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alaska Y Dinarama",
+      "cancion": "A Quién Le Importa",
+      "frase": "La libertad no se negocia y Alaska Y Dinarama lo dejaron claro con A Quién Le Importa. Es el manifiesto definitivo de los que caminamos distinto sin pedir permiso. Si te juzgan por ser quien eres, sube el volumen y que el mundo ruede con esta joya.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Duncan Dhu",
+      "cancion": "A tientas",
+      "frase": "Caminar a oscuras buscando una salida es algo que todos hemos sentido. Duncan Dhu nos trae A tientas, un tema que se siente como un susurro en medio de la tormenta. Es rock con clase, de ese que te toca la fibra sin necesidad de gritar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mikel Erentxun",
+      "cancion": "A un minuto de ti",
+      "frase": "La distancia se vuelve nada cuando la música de Mikel Erentxun empieza a sonar. Con A un minuto de ti, sentimos ese deseo de estar cerca de lo que amamos. Es pop con alma de carretera, ideal para perderse un rato en los recuerdos que importan.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Illya Kuryaki And The Valderramas",
+      "cancion": "Abarajame",
+      "frase": "El groove y la calle se funden cuando Illya Kuryaki And The Valderramas disparan Abarajame. Es actitud pura, un ritmo que te atrapa por el cuello y no te suelta. Funk latino con esa cadencia que solo nosotros sabemos ponerle a la vida cuando nos sentimos dueños del barrio.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Acabo de llegar",
+      "frase": "El rock de bar y carretera tiene nombre propio. Fito y Fitipaldis nos dicen Acabo de llegar y ya sentimos que la noche apenas comienza. Es música para los que no tienen prisa, para los que disfrutan el trayecto sin importar demasiado cuál sea el destino final.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Caifanes",
+      "cancion": "Afuera",
+      "frase": "Saúl Hernández y compañía nos enseñaron que Afuera el mundo nos puede devorar, pero por dentro somos eternos. Caifanes es la mística del rock mexicano en su máxima expresión. Es una canción para cerrar los ojos y entender que nuestra esencia es lo único que nadie nos quitará.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jarabe De Palo",
+      "cancion": "Agua",
+      "frase": "Pau Donés siempre supo decir las cosas de frente, con esa sencillez que desarma. Agua de Jarabe De Palo es esa reflexión necesaria sobre la sed de afecto y las verdades que no fluyen. Un tema que se siente como un bálsamo para los que buscamos respuestas claras.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito Paez",
+      "cancion": "Al Lado Del Camino",
+      "frase": "Hacerse a un lado para observar la locura del mundo es un acto de rebeldía. Fito Paez nos regala Al Lado Del Camino para recordarnos que no hay que seguir al rebaño. Es poesía urbana, honesta y directa al hueso, como nos gusta aquí en Radiochar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "Al otro lado del silencio",
+      "frase": "Hay canciones que se quedan grabadas en la piel y Ángeles Del Infierno lo logra con Al otro lado del silencio. Es esa balada poderosa que habla de la ausencia y el peso de las palabras no dichas. Rock pesado con un sentimiento que te parte el alma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julieta Venegas",
+      "cancion": "Algo Está Cambiando",
+      "frase": "A veces sentimos que el aire se mueve distinto y Julieta Venegas lo pone en palabras con Algo Está Cambiando. Es ese pop fresco pero con contenido, ideal para esos momentos donde la vida te pide un giro. Una invitación a dejar que las cosas fluyan de forma natural.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Molotov",
+      "cancion": "Amateur",
+      "frase": "Molotov nunca se ha guardado nada y con Amateur nos recuerdan que todos empezamos desde abajo. Es la fuerza del rock que no tiene miedo a decir las cosas por su nombre. Un grito de autenticidad para los que seguimos haciendo lo que amamos por pura pasión callejera.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Bosé",
+      "cancion": "Amiga",
+      "frase": "La elegancia de Miguel Bosé se siente en cada nota de Amiga. Es un clásico que atraviesa el tiempo sin perder ese brillo nostálgico. Un homenaje a esas conexiones que van más allá del amor convencional, narrado con una voz que sabe cómo acariciar el sentimiento más puro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Amiga Mía",
+      "frase": "Alejandro Sanz tiene esa forma única de desmenuzar el corazón en mil pedazos. Amiga Mía es la crónica de un amor que se mira de lejos, con esa mezcla de respeto y dolor. Un tema que todos hemos dedicado alguna vez cuando las palabras propias simplemente no alcanzaban.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Amigos",
+      "frase": "En la calle aprendes que los hermanos no siempre son de sangre. Los Enanitos Verdes nos dejaron Amigos como el himno definitivo a la lealtad. Es rock argentino con un corazón gigante, perfecto para brindar por los que siempre están ahí, sin importar cuántas piedras pateemos juntos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Amor Clandestino",
+      "frase": "Hay amores que viven en la sombra porque la luz les quema. Maná nos trae Amor Clandestino, una historia de esas que se guardan bajo llave. El pop rock mexicano que sabe cómo conectar con los secretos que todos llevamos dentro y que a veces solo la música entiende.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Emmanuel Horvilleur, Zoe Gotusso",
+      "cancion": "Amor Loco",
+      "frase": "La frescura se siente en el aire cuando Emmanuel Horvilleur y Zoe Gotusso se juntan para Amor Loco. Es un ritmo moderno, con ese toque elegante y desenfadado que nos hace falta para suavizar el día. Música para disfrutar sin complicaciones, dejándose llevar por la pura química de sus voces.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jhair Saavedra",
+      "cancion": "Amores Lejanos",
+      "frase": "La distancia es el peor enemigo del corazón, y Jhair Saavedra lo sabe bien con Amores Lejanos. Es esa melancolía que se siente cuando el pensamiento vuela a otro lugar. Un tema suave para esos momentos de reflexión donde el silencio dice mucho más que cualquier discurso.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Hombres G, Los Enanitos Verdes",
+      "cancion": "Amores Lejanos",
+      "frase": "Cuando dos leyendas como Hombres G y Los Enanitos Verdes se unen, el resultado es pura magia. Amores Lejanos nos habla de esa nostalgia que no tiene fronteras. Es el rock que nos une a todos los que alguna vez hemos dejado un pedazo de alma en otra ciudad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jon Secada",
+      "cancion": "Angel",
+      "frase": "Jon Secada marcó una época con esa voz poderosa que eriza la piel. Angel es esa balada que nos recuerda que siempre hay alguien cuidándonos en medio del caos. Un clásico del pop latino que sigue sonando con la misma fuerza y sentimiento que el primer día.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Antes de que cuente diez",
+      "frase": "La urgencia de vivir se siente en cada acorde de Fito y Fitipaldis. Antes de que cuente diez es un recordatorio de que el tiempo no espera a nadie. Rock con esa esencia canalla y honesta que nos invita a lanzarnos al vacío antes de que la oportunidad se escape.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "Apuesta por el rock 'n' roll",
+      "frase": "Bunbury y sus Heroes Del Silencio sabían que esto no es solo música, es una forma de vida. Apuesta por el rock 'n' roll es el grito de guerra para los que no tenemos plan B. Es jugarse el todo por el todo en un escenario llamado realidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Caifanes",
+      "cancion": "Aquí No Es Así",
+      "frase": "Con un sonido que evoca nuestras raíces prehispánicas y la fuerza del rock, Caifanes nos trae Aquí No Es Así. Es una crítica directa al olvido de nuestra identidad. Saúl Hernández nos recuerda quiénes somos en un mundo que intenta uniformarnos a todos por igual.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "Así Es la Vida",
+      "frase": "La vida te da y te quita, y Elefante lo resume con esa energía contagiosa en Así Es la Vida. Es música para sacudirse el polvo y seguir caminando, aceptando los golpes con una sonrisa rebelde. Porque al final del día, lo que no te mata te hace más fuerte.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Mateos",
+      "cancion": "Atado a un Sentimiento",
+      "frase": "Miguel Mateos es el jefe del rock pop latino y con Atado a un Sentimiento nos deja claro que el corazón manda. Es ese ritmo ochentero que todavía nos pone a saltar en la cabina. Una canción para los que no tenemos miedo de admitir que el amor nos domina.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tam Tam Go!",
+      "cancion": "Atrapados en la red",
+      "frase": "Mucho antes de que todo fuera digital, Tam Tam Go! ya nos hablaba de estar Atrapados en la red. Es un tema que hoy suena más real que nunca, con ese toque de pop español inteligente y rítmico. Una advertencia musical sobre los amores que nacen frente a una pantalla.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Riccardo Perotti",
+      "cancion": "Aunque No Se Dónde Estás",
+      "frase": "La búsqueda constante de ese alguien especial se siente en la voz de Riccardo Perotti. Aunque No Se Dónde Estás es una balada que conecta con la incertidumbre del amor. Es música con sentimiento, ideal para los que seguimos pateando piedras esperando encontrar ese camino compartido.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bunbury",
+      "cancion": "Aunque no sea conmigo",
+      "frase": "Enrique Bunbury tiene esa capacidad de convertir el despecho en una obra de arte. Aunque no sea conmigo es el himno de la renuncia con dignidad. Es desearle lo mejor a quien ya no está, pero con ese desgarro en la voz que solo el rockero entiende.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Auto Rojo",
+      "frase": "La fiesta se prende cuando suena el Auto Rojo de Vilma Palma e Vampiros. Es rock en español hecho para disfrutar, con ese teclado que te lleva directo a los mejores años de la pachanga. Una canción que no necesita explicaciones, solo ganas de pasarla bien y soltar el cuerpo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "Avalancha",
+      "frase": "Prepárense para el impacto porque Heroes Del Silencio nos lanza una Avalancha de puro rock. Es potencia, es mística y es esa fuerza imparable que solo Bunbury y su banda sabían proyectar. Un tema para los que no tememos ser arrastrados por la intensidad de la buena música.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alberto Plaza",
+      "cancion": "Aventurera",
+      "frase": "Alberto Plaza nos trae esa faceta romántica y suave con Aventurera. Es una canción que habla de esos espíritus libres que no se dejan atrapar fácilmente. Un tema para los que valoran la libertad del alma por encima de cualquier otra cosa, narrado con una sensibilidad muy especial.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cristian Castro",
+      "cancion": "Azul",
+      "frase": "El pop mexicano se vistió de Azul con Cristian Castro. Es un tema que desborda energía y que se quedó en el ADN de una generación. Una explosión de color y ritmo que nos recuerda que a veces el amor simplemente se siente así de brillante y expansivo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ekhymosis",
+      "cancion": "Azul",
+      "frase": "Antes de ser la estrella global que es hoy, Juanes lideraba Ekhymosis y nos regalaba Azul. Es rock colombiano con identidad, un sonido que marcó el camino para muchos otros. Una canción que suena a raíces, a búsqueda y a esa autenticidad que nunca se debería perder.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rata Blanca",
+      "cancion": "Aún Estás En Mis Sueños",
+      "frase": "El heavy metal también sabe de amor y Rata Blanca lo demuestra con Aún Estás En Mis Sueños. La guitarra de Giardino y la voz de Barilari crean una atmósfera épica para hablar de la nostalgia. Es poder y sentimiento en una sola descarga que te vuela la cabeza.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ragazzi",
+      "cancion": "Baila",
+      "frase": "Ragazzi nos pone el ritmo necesario para sacudirse la inercia. Con Baila, el pop juvenil de los noventa se hace presente para recordarnos que a veces la mejor respuesta a todo es simplemente moverse. Una canción ligera, sin pretensiones, hecha para disfrutar el momento sin darle tantas vueltas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aterciopelados",
+      "cancion": "Baracunatana",
+      "frase": "Desde Bogotá, Aterciopelados le puso color y sarcasmo al rock latino con Baracunatana. Andrea Echeverri tiene esa actitud única que rompe esquemas. Es una canción con sabor a pueblo y a calle, un clásico que nos hace sentir orgullosos de nuestra forma de hablar y de sonar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Riccardo Perotti",
+      "cancion": "Basta Con Que Estés",
+      "frase": "La simplicidad de la presencia es lo que resalta Riccardo Perotti en Basta Con Que Estés. Es una balada que apuesta por lo esencial en medio de tanto ruido. Música para los que saben que lo más valioso no es lo que se tiene, sino con quién se comparte el camino.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná, Juan Luis Guerra 4.40",
+      "cancion": "Bendita Tu Luz",
+      "frase": "Cuando el rock pop de Maná se encuentra con la sabrosura de Juan Luis Guerra, nace Bendita Tu Luz. Es una celebración al destino y a ese encuentro que te cambia la vida. Una canción que brilla con luz propia y que nos pone en un estado de ánimo inmejorable.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aterciopelados",
+      "cancion": "Bolero Falaz",
+      "frase": "Si hay una canción que define el rock colombiano es Bolero Falaz de Aterciopelados. Esa combinación de despecho, ironía y guitarras distorsionadas es simplemente perfecta. Andrea Echeverri nos canta con esa verdad que solo se aprende pateando las piedras de nuestras propias ciudades latinoamericanas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Choclok",
+      "cancion": "Bonita",
+      "frase": "Los Choclok nos traen esa frescura del son jarocho fusionado con la modernidad en Bonita. Es música que suena a raíz, a orgullo y a fiesta de pueblo con un toque urbano. Una canción que te levanta el ánimo y te recuerda la belleza de lo auténtico.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jarabe De Palo",
+      "cancion": "Bonito",
+      "frase": "Pau Donés nos dejó una lección de vida con Bonito. En un mundo que a veces parece gris, esta canción de Jarabe De Palo es un recordatorio de que todo depende de cómo lo mires. Optimismo real, del que nace de las ganas de seguir adelante a pesar de todo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Genitallica",
+      "cancion": "Borracho",
+      "frase": "La irreverencia de Genitallica estalla con Borracho. Es rock mexicano directo, divertido y sin filtros, hecho para los que no nos tomamos la vida tan en serio. Una descarga de energía que nos recuerda que el rock también es para descontrolarse un poco y olvidarse de las penas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Coquillos",
+      "cancion": "Borracho Hasta El Amanecer",
+      "frase": "Desde las Islas Canarias nos llega este himno de fiesta. Los Coquillos nos traen Borracho Hasta El Amanecer, una canción que se convirtió en obligatoria en cualquier reunión con amigos. Es ska, es rock y es esa alegría contagiosa que solo la música en español puede transmitir.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "León Larregui",
+      "cancion": "Brillas",
+      "frase": "La mística y el estilo psicodélico de León Larregui se sienten en cada segundo de Brillas. Es una canción hipnótica, que te envuelve en una atmósfera de paz y amor espacial. Ideal para desconectarse del ruido de la calle y dejarse llevar por esa luz interior que todos tenemos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Bye Bye",
+      "frase": "Despedirse nunca fue tan bailable como con Bye Bye de Vilma Palma e Vampiros. Es el sonido clásico de Rosario, Argentina, que conquistó a toda Latinoamérica. Una canción para decir adiós sin dramas, dejando que el ritmo de los Vampiros se encargue de curar las heridas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Estopa",
+      "cancion": "Cacho a Cacho",
+      "frase": "La rumba rock de los hermanos Muñoz suena a barrio y a verdad. Estopa nos trae Cacho a Cacho para recordarnos sus inicios, cuando la calle era su escenario. Es música con garra, con esa chispa española que te pone a mil revoluciones desde el primer acorde.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bacilos",
+      "cancion": "Caraluna",
+      "frase": "Bacilos logró crear un clásico instantáneo con Caraluna. Es esa mezcla de pop latino con letras que te cuentan una historia que podrías ser la tuya. Una canción que suena a mar, a misterio y a ese amor que se queda grabado en la memoria como una cicatriz hermosa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ilegales",
+      "cancion": "Caramelos Podridos",
+      "frase": "Jorge Ilegal y sus secuaces nunca se han andado con chiquitas. Caramelos Podridos es puro punk rock español, sucio y directo a la cara. Es la voz de los que no aceptamos lo establecido, de los que preferimos la cruda realidad antes que las mentiras dulces y vacías.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Christian Meier",
+      "cancion": "Carreteras Mojadas",
+      "frase": "Desde el Perú, Christian Meier nos trajo un himno para los viajes nocturnos. Carreteras Mojadas es rock pop con ese toque de nostalgia que se siente cuando el asfalto brilla bajo la lluvia. Una canción para los que encontramos en el camino la mejor terapia para el corazón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Andrés Calamaro",
+      "cancion": "Cartas Sin Marcar",
+      "frase": "Calamaro es el cronista de nuestras vidas y con Cartas Sin Marcar nos lleva directo a la esencia de Los Rodriguez. Es rock con sabor a tango y a callejón, donde el destino se juega en una sola mano. Un tema imprescindible para entender el peso de nuestras decisiones.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Chico tienes que cuidarte",
+      "frase": "David Summers siempre tuvo ese humor ácido que nos encanta. En Chico tienes que cuidarte, Hombres G nos dan un consejo con ese ritmo divertido que los hizo famosos. Es pop rock español que no envejece, ideal para sacudirse la seriedad y disfrutar de la vida tal cual viene.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "PXNDX",
+      "cancion": "Cita en el Quirófano",
+      "frase": "La angustia y la intensidad del emo rock mexicano se sienten en Cita en el Quirófano de PXNDX. Es una canción que habla de las heridas emocionales con una crudeza que conectó con toda una generación. Música para soltar lo que nos duele y gritarlo con fuerza.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Clavado en Un Bar",
+      "frase": "No hay despecho más famoso en el rock latino que estar Clavado en Un Bar con Maná. Fher Olvera nos canta esa historia de espera y alcohol que todos, absolutamente todos, hemos vivido alguna vez. Es el himno de los corazones rotos que se niegan a rendirse.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Diego Torres",
+      "cancion": "Color Esperanza",
+      "frase": "En los momentos más difíciles, Diego Torres nos regaló un rayo de luz con Color Esperanza. Es más que una canción, es un sentimiento de unión que recorrió todo el continente. Un tema que nos invita a ver el futuro con otros ojos, manteniendo siempre la fe en nosotros mismos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Estopa",
+      "cancion": "Como Camarón",
+      "frase": "El respeto de Estopa por sus raíces flamencas se siente en Como Camarón. Es una rumba con alma de rock que nos habla de la admiración y del sentimiento a flor de piel. Los hermanos Muñoz saben cómo hacernos vibrar con esa autenticidad que solo se encuentra en el barrio.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Sueños",
+      "cancion": "Como Olvidarte",
+      "frase": "Desde Cuenca, Ecuador, Bajo Sueños nos trae el poder del rock gótico y heavy con Como Olvidarte. Es una balada épica que habla de la imposibilidad de borrar un recuerdo. Christian Flores nos entrega una interpretación que llega al alma de los que seguimos atrapados en el pasado.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Como Te Deseo",
+      "frase": "La pasión se desborda cuando suena Como Te Deseo de Maná. Es ese rock pop sensual que marcó los inicios de su éxito masivo. Una canción que habla del deseo sin vueltas, con ese ritmo que te invita a dejarte llevar por lo que dicta el cuerpo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Café Tacvba",
+      "cancion": "Como te extraño mi amor",
+      "frase": "Los Tacvbos tomaron este clásico de Leo Dan y le inyectaron toda la energía del rock alternativo mexicano. Como te extraño mi amor es una explosión de alegría y nostalgia al mismo tiempo. Un tributo perfecto que suena a pasado y a futuro en una sola descarga.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "León Larregui",
+      "cancion": "Como Tú (Magic Music Box)",
+      "frase": "Entramos en el universo onírico de León Larregui con Como Tú. Es pop alternativo con una atmósfera espacial que solo él sabe crear. Una canción que se siente como un viaje astral, ideal para esos momentos donde queremos que el mundo se detenga y solo importe la vibración.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "El Último De La Fila",
+      "cancion": "Como Un Burro Amarrado En La Puerta Del Baile",
+      "frase": "Manolo García es un poeta de la calle y con El Último De La Fila nos dejó esta joya. Como Un Burro Amarrado En La Puerta Del Baile es rock español con una lírica brillante y un ritmo que te atrapa. Música para los que sentimos la inquietud en el alma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Control Machete",
+      "cancion": "Comprendes Mendes",
+      "frase": "El hip hop mexicano golpeó la mesa con Control Machete y su Comprendes Mendes. Es la voz del norte, dura y directa, que puso a todo el continente a hablar su lenguaje. Rap con actitud de rock, hecho para los que caminamos la ciudad con los ojos bien abiertos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "Con las botas puestas",
+      "frase": "Ángeles Del Infierno nos dan una lección de actitud metalera con Con las botas puestas. Es morir en tu ley, fiel a tus principios hasta el final. Un himno para los que no nos doblegamos ante nada y preferimos caer peleando antes que vivir de rodillas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Illya Kuryaki And The Valderramas",
+      "cancion": "Coolo",
+      "frase": "La irreverencia argentina llega a su punto máximo con Coolo de los Kuryaki. Es funk, es rap y es una invitación descarada a mover el cuerpo sin prejuicios. Dante y Emmanuel rompieron el molde con este tema que sigue sonando fresco y atrevido en cualquier esquina.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Santana, Maná",
+      "cancion": "Corazon Espinado",
+      "frase": "La guitarra legendaria de Carlos Santana se une al sentimiento de Maná en Corazon Espinado. Es una colaboración que dio la vuelta al mundo, demostrando que el rock latino tiene una clase inalcanzable. Un tema que duele rico, con ese solo que te atraviesa el pecho de lado a lado.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TercerMundo",
+      "cancion": "Corazones Rotos",
+      "frase": "Desde Ecuador, TercerMundo nos trae la crónica de los Corazones Rotos. Es rock pop con el que todos nos identificamos cuando las cosas en el amor no salen como esperábamos. Una canción honesta, con esa melancolía urbana que se siente cuando caminas solo bajo las luces de la ciudad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Auténticos Decadentes",
+      "cancion": "Corazón",
+      "frase": "Los Decadentes son la alegría hecha música y con Corazón nos ponen a bailar hasta las penas. Es esa mezcla de ska, murga y rock que solo ellos saben cocinar. Una canción para celebrar que, a pesar de los golpes, el corazón sigue latiendo con fuerza y ganas de fiesta.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Corazón Partío",
+      "frase": "Alejandro Sanz paralizó el mundo con Corazón Partío. Esa mezcla de pop con aires flamencos se convirtió en el himno del desamor por excelencia. Es la pregunta que todos nos hemos hecho cuando nos quedamos vacíos: ¿quién me va a entregar sus emociones? Un clásico inmortal.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Dama Solitaria",
+      "cancion": "Cruz de Cristal",
+      "frase": "La fragilidad y la fuerza se encuentran en Cruz de Cristal de Dama Solitaria. Es rock con una sensibilidad distinta, que explora los rincones más profundos del sentimiento. Música para los que no temen mostrar sus cicatrices y convertirlas en parte de su propia identidad rebelde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mecano",
+      "cancion": "Cruz de Navajas",
+      "frase": "Mecano sabía retratar la tragedia urbana como nadie más. Cruz de Navajas es una historia de celos y destino contada con esa maestría pop de los hermanos Cano y la voz inconfundible de Ana Torroja. Un tema que se siente como una película de cine negro hecha canción.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soda Stereo",
+      "cancion": "Cuando Pase El Temblor",
+      "frase": "Cerati y Soda Stereo nos llevaron a la cordillera con Cuando Pase El Temblor. Esa fusión de rock con aire andino es una genialidad que solo ellos podían lograr. Es la esperanza después del caos, el momento de despertar y ver que todavía estamos aquí, listos para reconstruirnos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Mateos - Zas",
+      "cancion": "Cuando Seas Grande",
+      "frase": "La pregunta que marcó a toda una generación: ¿qué vas a ser Cuando Seas Grande? Miguel Mateos capturó la rebeldía juvenil frente a las expectativas de los adultos. Es rock en español puro, con esa energía que te impulsa a romper las cadenas y ser dueño de tu propio destino.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Equilivre",
+      "cancion": "Cuéntame",
+      "frase": "La banda ecuatoriana Equilivre nos trae Cuéntame, un tema de pop rock que se siente cercano y honesto. Es esa invitación a abrir el corazón y soltar lo que llevamos dentro. Música hecha con alma, perfecta para esos momentos donde necesitamos conectar de verdad con alguien más.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Compañia Ilimitada",
+      "cancion": "Cómo Decirte",
+      "frase": "Desde Colombia, Compañia Ilimitada nos trae esa elegancia del rock pop de los ochenta. Cómo Decirte es la lucha interna de quien no encuentra las palabras para expresar lo que siente. Un clásico que suena a nostalgia bien llevada y a sentimientos que nunca pasan de moda.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Cómo Diablos",
+      "frase": "La frustración y la energía estallan en Cómo Diablos de Maná. Es rock con esa pegada directa que te hace mover la cabeza. Una canción para cuando no entiendes nada de lo que está pasando, pero decides que la mejor forma de lidiar con ello es subiendo el volumen.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Sueños",
+      "cancion": "Dama Imaginaria",
+      "frase": "Bajo Sueños nos sumerge en la fantasía y el rock potente con Dama Imaginaria. La fuerza de las guitarras y la interpretación vocal nos llevan a un mundo donde el deseo y la ilusión se confunden. Rock ecuatoriano con una identidad fuerte que no se calla nada.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito Paez",
+      "cancion": "Dar Es Dar",
+      "frase": "Fito Paez nos regala una lección de generosidad con Dar Es Dar. Es un tema luminoso, lleno de esa energía rosarina que te reconcilia con el mundo. Una canción para recordar que lo que entregamos es lo único que realmente nos queda al final del día. Pura vida en cada nota.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "De la Noche a la Mañana",
+      "frase": "Todo puede cambiar en un segundo y Elefante lo sabe bien. De la Noche a la Mañana es la crónica de un amor que se esfuma sin avisar. Rock pop con ese sentimiento desgarrador que te hace cantar a todo pulmón para sacar el dolor del pecho.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ekhymosis",
+      "cancion": "De Madrugada",
+      "frase": "La madrugada tiene un sonido especial y Ekhymosis supo capturarlo. Esta canción es un viaje por la nostalgia y los pensamientos que solo aparecen cuando la ciudad duerme. Rock colombiano auténtico, de ese que se siente real porque nace de las vivencias de la calle.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soda Stereo",
+      "cancion": "De Música Ligera",
+      "frase": "El himno definitivo del rock en español. Cerati nos dejó De Música Ligera como el cierre perfecto para una historia increíble. Nada más que decir, solo agradecer por este tema que unió a todo un continente bajo una sola melodía. ¡Gracias totales por este momento!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "De Pies a Cabeza",
+      "frase": "El ritmo reggae se siente en De Pies a Cabeza de Maná. Es una canción fresca, relajada y llena de esa buena vibra que nos hace falta para patear las piedras con estilo. Un clásico que nos invita a amar sin restricciones, de arriba abajo y sin complicaciones.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tommy Torres",
+      "cancion": "De Rodillas",
+      "frase": "Tommy Torres nos trae esa sensibilidad del pop bien escrito con De Rodillas. Es la súplica de quien está dispuesto a todo por recuperar lo perdido. Música con una carga emocional fuerte, interpretada por alguien que sabe cómo llegar directo al centro de nuestras propias historias.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pedro Suárez-Vértiz",
+      "cancion": "Degeneración Actual",
+      "frase": "Pedro Suárez-Vértiz siempre tuvo una visión crítica y directa. Degeneración Actual es rock peruano con un mensaje que sigue siendo relevante hoy en día. Una canción que nos pone a reflexionar sobre hacia dónde vamos como sociedad, sin perder ese ritmo que te mantiene conectado.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Dejad que las niñas se acerquen a mí",
+      "frase": "La irreverencia de Hombres G nunca tuvo límites y este tema es la prueba. Con ese estilo desenfadado y divertido, David Summers nos cuenta historias que solo a ellos les podían salir bien. Pop rock español con esa chispa de rebeldía que nos hace sonreír.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Demasiado Tarde",
+      "frase": "A veces el tiempo es el peor enemigo y los Vampiros lo cantan en Demasiado Tarde. Es esa melancolía bailable que tanto nos gusta de Vilma Palma. Un tema para cuando te das cuenta de que el tren ya pasó, pero decides seguir la fiesta de todos modos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jarabe De Palo",
+      "cancion": "Depende",
+      "frase": "¿De qué depende? Pau Donés nos enseñó que todo en la vida es relativo. Depende es una canción inteligente, sencilla y profunda al mismo tiempo. Un recordatorio necesario de que no hay verdades absolutas y que lo importante es cómo decidamos vivir nuestra propia realidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Marta Sánchez",
+      "cancion": "Desesperada",
+      "frase": "Marta Sánchez nos puso a todos a bailar con Desesperada. Es el pop español con toda la fuerza y el glamour de los noventa. Una canción que habla de esa urgencia por el otro, con una interpretación que derrocha energía y esa actitud de mujer empoderada que no se detiene ante nada.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ilegales",
+      "cancion": "Destruye",
+      "frase": "Si quieres rock sin concesiones, Ilegales es la respuesta. Destruye es una descarga de adrenalina pura, un grito contra todo lo que nos oprime. Jorge Ilegal no anda con vueltas: es rock crudo, directo y con una potencia que te obliga a reaccionar de inmediato.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Poligamia",
+      "cancion": "Desvanecer",
+      "frase": "Antes de su carrera solista, Andrés Cepeda lideraba Poligamia y nos regalaba Desvanecer. Es rock pop colombiano con una sensibilidad que todavía nos llega al alma. Una canción que habla de la fragilidad del amor y de cómo los sentimientos pueden esfumarse si no se cuidan.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Devuélveme a mi chica",
+      "frase": "El 'sufre mamón' más famoso de la historia. Hombres G crearon un himno eterno con Devuélveme a mi chica. Es la venganza divertida del rockero contra el pijo que le quitó la novia. Un tema que se canta a gritos en cualquier lugar y que nunca pasará de moda.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juan Fernando Velasco",
+      "cancion": "Dicen",
+      "frase": "Juan Fernando Velasco nos trae esa esencia del pop ecuatoriano que sabe a pueblo y a nostalgia. Con Dicen, nos entrega una historia de rumores y verdades a medias. Es música con sentimiento, ideal para los que valoramos las letras que cuentan algo de verdad sobre el corazón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Surfistas Del Sistema",
+      "cancion": "Dicen",
+      "frase": "La nueva ola del pop alternativo llega con Surfistas Del Sistema. Su versión de Dicen tiene ese toque moderno y elegante que refresca el aire. Es música para los que buscamos sonidos nuevos sin perder la conexión con la emoción de una buena letra.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tranzas",
+      "cancion": "Dile",
+      "frase": "Tranzas marcó el camino del pop rock en Ecuador y Dile es uno de sus pilares. Douglas Bastidas le canta al amor con esa honestidad que lo caracteriza. Una canción para los que alguna vez hemos tenido que enviar un mensaje a través de la música porque no nos atrevíamos a hablar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jorge Luis Del Hierro",
+      "cancion": "Dime Quién Pierde",
+      "frase": "Jorge Luis Del Hierro nos pone a reflexionar sobre las batallas perdidas en el amor con Dime Quién Pierde. Es pop con una energía fuerte, que habla del orgullo y el dolor de una ruptura. Una voz que se siente real y que conecta con el sentimiento de la calle.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Douglas Bastidas Tranzas",
+      "cancion": "Dime Si Recuerdas",
+      "frase": "La nostalgia se hace presente con Dime Si Recuerdas. Douglas Bastidas, el alma de Tranzas, nos trae esta balada que es un viaje directo al pasado. Música para los que todavía guardamos fotos y recuerdos en algún rincón del alma, esperando que el otro también se acuerde.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miranda",
+      "cancion": "Don",
+      "frase": "Es la guitarra de Lolo... ¡y el pop más bailable de Argentina! Miranda rompió todos los esquemas con Don. Es un estallido de energía, color y esa actitud desprejuiciada que tanto nos gusta. Una canción que te obliga a moverte y a dejar la seriedad para otro momento.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maldita Vecindad Y Los Hijos Del 5to Patio",
+      "cancion": "Don Palabras",
+      "frase": "La Maldita Vecindad nos trae el sonido del barrio con Don Palabras. Es ska mexicano con conciencia social y mucho ritmo. Una canción que homenajea a esos personajes de la calle que todos conocemos, contada con esa alegría rebelde que solo ellos saben transmitir.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Rodriguez",
+      "cancion": "Dulce condena",
+      "frase": "Andrés Calamaro y Los Rodriguez nos regalaron esta Dulce condena. Es el rock que suena a humo de bar y a noches interminables de bohemia. Un tema que habla de las adicciones del corazón con una clase que muy pocos pueden igualar. ¡Puro rock and roll con alma!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "Durmiendo con la Luna",
+      "frase": "La soledad se siente menos pesada cuando suena Durmiendo con la Luna de Elefante. Es esa balada rockera que te acompaña en las noches de insomnio, cuando los recuerdos son lo único que nos queda. Un tema con mucha fuerza emocional que te llega directo al pecho.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TercerMundo",
+      "cancion": "Duérmete Junto a Mí",
+      "frase": "TercerMundo nos regala este momento de paz con Duérmete Junto a Mí. Es una de las baladas del rock ecuatoriano que se quedan para siempre. Una canción suave, llena de ternura y de ese deseo de proteger al otro en medio de la oscuridad de la noche.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Tres",
+      "cancion": "Déjate Caer",
+      "frase": "Desde Chile, Los Tres nos traen Déjate Caer, un tema que es puro estilo y elegancia rockera. La voz de Álvaro Henríquez nos invita a soltarnos y confiar en el vacío. Una canción hipnótica que demuestra que el rock en español tiene una profundidad increíble.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "El Abandonao",
+      "frase": "Elefante le canta a la mala suerte en el amor con El Abandonao, pero lo hace con una energía que te pone arriba. Es rock pop mexicano con ese sabor a tequila y a ganas de olvidar las penas gritando fuerte. Porque si nos van a dejar, que sea con buena música.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito Paez",
+      "cancion": "El amor después del amor",
+      "frase": "Fito Paez nos enseñó que siempre hay una segunda oportunidad con El amor después del amor. Es el álbum más vendido de la historia argentina y esta canción es su corazón. Un himno a la vida, a la renovación y a la luz que viene después de la tormenta.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "El ataque de las chicas cocodrilo",
+      "frase": "La diversión está asegurada con Hombres G y El ataque de las chicas cocodrilo. Es ese pop rock fresco y bromista que los hizo gigantes. Una canción para no parar de saltar y recordar que la música también está para reírse de las situaciones más locas que nos pasan.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "El Baile De Los Que Sobran",
+      "frase": "Jorge González y Los Prisioneros le pusieron voz a toda una generación con El Baile De Los Que Sobran. Es el rock con conciencia, el grito de los marginados que no aceptan las migajas del sistema. Un himno de resistencia que todavía suena fuerte en nuestras calles latinoamericanas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "David Summers",
+      "cancion": "El Beso Y El Perfume",
+      "frase": "David Summers en su faceta solista nos trae El Beso Y El Perfume. Es pop con ese toque romántico y nostálgico que él maneja como nadie. Una canción que se queda grabada en el aire, como ese aroma que te recuerda a alguien que ya no está cerca.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "El Cumpleaños Del Viento",
+      "frase": "Julio Nava nos trae esa fuerza del rock colombiano que no se detiene ante nada. El Cumpleaños Del Viento es una canción con una energía arrolladora y una letra que te invita a volar. Música para los espíritus libres que no aceptan jaulas ni definiciones impuestas por otros.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Ley",
+      "cancion": "El Duelo",
+      "frase": "Beto Cuevas y La Ley nos entregaron uno de los momentos más elegantes del rock chileno con El Duelo. Es esa mezcla de guitarras acústicas y una atmósfera oscura que te atrapa. Un tema sobre la pérdida y la redención que suena a puro sentimiento latino refinado.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "El Extraño del Pelo Largo",
+      "frase": "Los Enanitos Verdes tomaron este clásico y lo hicieron suyo con ese estilo inconfundible. El Extraño del Pelo Largo es rock en español que suena a libertad y a ir contra la corriente. Una canción que nos identifica a todos los que caminamos distinto por la ciudad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jarabe De Palo",
+      "cancion": "El lado oscuro",
+      "frase": "Pau Donés nos invita a explorar El lado oscuro con esa honestidad que siempre lo caracterizó. Es una canción suave, pero con una letra que te llega al centro. Un tema que nos recuerda que todos tenemos sombras y que aceptarlas es parte de ser realmente humanos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Fabulosos Cadillacs",
+      "cancion": "El Matador",
+      "frase": "¡Se siente la energía de los Cadillacs en el aire! El Matador es el himno absoluto de la resistencia y el ritmo. Vicentico nos guía en esta danza de libertad que es obligatoria en cualquier rincón de nuestra América. ¡Viento de libertad, sangre de matador!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Guardia",
+      "cancion": "El Mundo Tras el Cristal",
+      "frase": "Desde España, La Guardia nos trae este clásico del pop rock de carretera. El Mundo Tras el Cristal es esa sensación de observar la vida pasar mientras buscas tu lugar. Una canción con un ritmo contagioso y ese toque de nostalgia que solo los buenos clásicos tienen.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Quinta Estacion",
+      "cancion": "El Sol No Regresa",
+      "frase": "Natalia Jiménez le puso voz al despecho más potente con El Sol No Regresa. Es esa mezcla de pop rock con aires de ranchera que nos pega directo al corazón. Una canción para brindar por lo que se fue y aceptar que hay días en los que el sol simplemente decide no salir.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "El vencido",
+      "frase": "Fito Cabrales nos canta desde el rincón de los que han caído pero se levantan. El vencido es rock con alma, con esa sabiduría que solo se aprende en los bares y en la calle. Música para los que sabemos que perder una batalla no significa perder la guerra.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rata Blanca",
+      "cancion": "Ella",
+      "frase": "Rata Blanca nos trae esa fuerza del heavy metal argentino con Ella. Es una descarga de poder donde las guitarras mandan. Una canción que habla de esa presencia femenina que te domina y te inspira, contada con la intensidad que solo Giardino y compañía saben ponerle al rock.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Duncan Dhu",
+      "cancion": "En algún lugar",
+      "frase": "Cerrar los ojos y viajar a ese sitio donde la paz es posible. Duncan Dhu nos dejó En algún lugar como un refugio musical eterno. Es rock pop español con una mística especial, ideal para los que seguimos buscando nuestro propio pedazo de paraíso en medio del asfalto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "En El Muelle de San Blas",
+      "frase": "La historia más triste y hermosa de la costa mexicana. Maná nos trajo En El Muelle de San Blas para hablarnos de la espera eterna y el amor que no conoce el olvido. Un tema que se siente como la brisa del mar, cargado de una melancolía que te eriza la piel.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soda Stereo",
+      "cancion": "En La Ciudad De La Furia",
+      "frase": "Buenos Aires se vuelve eterna en la voz de Gustavo Cerati. En La Ciudad De La Furia es la obra maestra de la atmósfera y el estilo. Una canción para los que nos sentimos más vivos de noche, volando sobre las luces de una ciudad que nunca nos deja de sorprender.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "En La Inmensidad",
+      "frase": "Verde 70 nos sumerge En La Inmensidad con este tema que es puro rock pop ecuatoriano con clase. La voz de Darío Castro nos guía por un laberinto de sentimientos y guitarras que suenan a libertad. Una canción perfecta para perderse y encontrarse al mismo tiempo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "En la playa",
+      "frase": "Hombres G nos llevan de vacaciones En la playa con ese ritmo relajado y divertido. Es pop rock sin complicaciones, hecho para disfrutar de la brisa y olvidarse de los problemas de la ciudad. Una canción que te pone en modo verano inmediatamente, sin importar qué fecha diga el calendario.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "En mi coche",
+      "frase": "La libertad de cuatro ruedas y buena música. En mi coche de Hombres G es el himno de los que encontramos en el volante la mejor forma de escapar de la rutina. Rock español divertido, directo y con esa chispa de juventud que nunca se apaga si sabes qué sintonizar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "En Tu Bolsillito",
+      "frase": "Julio Nava nos trae una de sus canciones más queridas. En Tu Bolsillito es rock colombiano con mucho sentimiento y una energía que te atrapa. Es esa declaración de amor directa y sin rodeos, con la fuerza de alguien que sabe que la música es el mejor camino al corazón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "El Cuarteto De Nos",
+      "cancion": "Enamorado tuyo",
+      "frase": "El Cuarteto De Nos nunca deja de sorprendernos con su ingenio. Enamorado tuyo es esa mezcla de sarcasmo y ritmo que los hace únicos. Una canción que se ríe de los clichés del amor mientras te pone a bailar con ese estilo uruguayo tan particular y auténtico.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Sin Bandera",
+      "cancion": "Entra en Mi Vida",
+      "frase": "La balada perfecta para abrir la puerta del corazón. Sin Bandera nos regaló Entra en Mi Vida como una invitación honesta al amor. Es pop latino con una carga emocional inmensa, ideal para esos momentos donde las defensas caen y solo importa lo que sentimos por el otro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "Entre dos tierras",
+      "frase": "El rugido de Bunbury despierta a cualquiera. Entre dos tierras es el monumento al rock en español, con esas guitarras afiladas y una voz que te quema. Una canción para los que no aceptamos medias tintas y vivimos con la intensidad de quien sabe que el tiempo se acaba.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Entre la espada y la pared",
+      "frase": "Fito Cabrales nos pone Entre la espada y la pared con su rock honesto y directo. Es la encrucijada de la vida contada con esa sabiduría de bar que tanto nos gusta. Música para reflexionar sobre nuestras decisiones mientras disfrutamos de un ritmo que no te deja parar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Café Tacvba",
+      "cancion": "Eres",
+      "frase": "La declaración de amor más pura del rock alternativo mexicano. Café Tacvba nos entregó Eres para recordarnos que la sencillez es el camino más corto al alma. Una canción suave, hermosa y eterna que se convirtió en el refugio de todos los que amamos sin condiciones.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Eres Mi Religión",
+      "frase": "Maná nos eleva a un estado espiritual con Eres Mi Religión. Es pop rock que habla de la devoción total por el otro, con esa melodía que se te queda grabada desde la primera vez. Una canción que celebra el encuentro de dos almas en medio de este mundo caótico.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julieta Venegas",
+      "cancion": "Eres Para Mí",
+      "frase": "Julieta Venegas le pone ritmo y frescura al destino con Eres Para Mí. Es pop latino con ese acordeón que nos encanta y una letra que apuesta por la conexión inevitable entre dos personas. Música para caminar con ligereza y dejar que el amor haga su parte.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cómplices",
+      "cancion": "Es por Ti",
+      "frase": "La dulzura del pop español de los noventa se siente en cada nota de Es por Ti de Cómplices. Es una canción que brilla con luz propio, hablando de cómo la presencia de alguien especial puede cambiarlo todo. Un clásico que nunca pierde ese aire de optimismo y amor real.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "Es Por Ti",
+      "frase": "Juanes nos regaló otro himno al amor con su versión de Es Por Ti. Es esa frescura paisa mezclada con el pop rock que conquistó al mundo entero. Una canción que suena a mañana soleada y a las ganas de estar con la persona que nos hace vibrar de verdad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Café Tacvba",
+      "cancion": "Esa noche",
+      "frase": "Los Tacvbos nos llevan de viaje con Esa noche, un tema que tiene esa mística única de la banda mexicana. Es rock alternativo con raíces, una mezcla que solo ellos saben hacer sonar tan auténtica. Ideal para dejarse llevar por el ritmo y los recuerdos de una noche especial.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Laura Pausini",
+      "cancion": "Escucha a tu corazón",
+      "frase": "La fuerza vocal de Laura Pausini nos invita a detener el ruido externo y mirar hacia adentro. Escucha a tu corazón es una balada poderosa que habla de la intuición y de ser fiel a uno mismo. Un tema que te da el empujón necesario para tomar esas decisiones difíciles.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alex Ibarra",
+      "cancion": "Ese Silencio",
+      "frase": "Alex Ibarra nos trae ese pop rock juvenil con Ese Silencio. Es una canción que habla de lo que callamos cuando las palabras sobran o faltan. Un tema ligero pero con el que es fácil identificarse, recordándonos que el silencio también tiene su propio ritmo y su propia historia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sergio Sacoto",
+      "cancion": "Esta Cobardía",
+      "frase": "Sergio Sacoto toma este clásico y le pone toda su garra y estilo. Esta Cobardía suena a rock pop con alma, con esa interpretación que te hace sentir el peso de no atreverse a hablar. Música hecha en casa, con la calidad y el sentimiento que nos representa a todos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jesse y Joy",
+      "cancion": "Esto Es Lo Que Soy",
+      "frase": "Jesse y Joy nos hablan de autenticidad con Esto Es Lo Que Soy. Es pop con ese toque acústico que los caracteriza y una letra que nos invita a aceptarnos tal cual somos, con nuestras luces y sombras. Una canción para los que caminamos sin máscaras por la vida.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Estoy pintando tu sonrisa",
+      "frase": "La ternura y el estilo de Hombres G se funden en Estoy pintando tu sonrisa. Es una canción que muestra la faceta más dulce de David Summers, sin perder ese toque de pop rock español que los hizo grandes. Música para soñar despierto y dibujar momentos hermosos en la memoria.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "Estrechez De Corazón",
+      "frase": "Jorge González nos lanza una crítica directa con Estrechez De Corazón. Es rock chileno con una energía bailable pero con una letra que te sacude. Una advertencia contra la falta de empatía y el egoísmo en las relaciones, narrada con ese estilo único de Los Prisioneros.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Eterna Soledad",
+      "frase": "Marciano Cantero nos cantaba con una melancolía que solo los grandes del rock argentino poseen. Eterna Soledad es el refugio de los que nos sentimos solos en medio de la multitud. Una canción hermosa, triste y eterna, como el mismo rock que nos mantiene vivos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Fernet Con Coca",
+      "frase": "La noche argentina tiene un sabor que no se olvida y Vilma Palma lo sabe bien con Fernet Con Coca. Es ese rock bailable que suena a barrio, a amigos y a ganas de que la fiesta no termine nunca. Un ritmo que corre por las venas de todo el continente.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mägo de Oz",
+      "cancion": "Fiesta Pagana",
+      "frase": "Mägo de Oz nos invita a levantar la voz contra la opresión con Fiesta Pagana. Ese violín y esa flauta son el llamado a la libertad de una generación que no se calla nada. Rock folk con alma rebelde, ideal para los que pateamos el sistema con orgullo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Andrés Calamaro",
+      "cancion": "Flaca",
+      "frase": "Calamaro tiene esa forma cínica y hermosa de hablar del desamor. Flaca es un clásico absoluto que suena a humo de bar y a verdades que duelen. Es la elegancia del rock argentino en su punto más alto, narrando esas relaciones que nos marcan la piel para siempre.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aterciopelados",
+      "cancion": "Florecita Rockera",
+      "frase": "Andrea Echeverri le dio voz a la fuerza femenina en la calle con Florecita Rockera. Aterciopelados rompió todos los moldes con este tema que es puro punk-rock bogotano. Una canción para las mujeres que no necesitan corona, solo sus botas y mucha actitud para conquistar la ciudad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Fondo Profundo",
+      "frase": "Entramos en el Fondo Profundo con la energía inconfundible de la Pachanga. Vilma Palma sabe cómo hacernos vibrar con ese teclado que te obliga a moverte. Es rock latino hecho para el disfrute puro, sin vueltas, directo a la médula de los que amamos el ritmo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Calo",
+      "cancion": "Formas De Amor",
+      "frase": "Calo le puso el toque urbano y bailable a los noventa con Formas De Amor. Ese rap elegante mezclado con pop nos recuerda que el movimiento es parte de nuestra identidad. Una canción que suena a ciudad, a luces de neón y a encuentros que se quedan grabados.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Enanitos Verdes",
+      "cancion": "Frances Limon",
+      "frase": "Marciano Cantero nos lleva por historias de personajes urbanos con Frances Limon. Es ese rock argentino narrativo, con un groove que te atrapa desde el inicio. Música para los que valoramos las letras que nos cuentan la vida tal cual es, sin filtros ni pretensiones vacías.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bunbury, Tulsa",
+      "cancion": "Frente a frente",
+      "frase": "Bunbury toma este clásico de Jeanette y lo convierte en una pieza oscura y poderosa junto a Tulsa. Frente a frente es la tensión del final de una historia, narrada con ese desgarro vocal que solo el aragonés posee. Rock con clase para enfrentar nuestras propias verdades.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juan Fernando Velasco",
+      "cancion": "Frente a Frente",
+      "frase": "Juan Fernando Velasco nos entrega una versión cargada de sentimiento patrio y personal con Frente a Frente. Es pop ecuatoriano que sabe a honestidad y a esa nostalgia que se siente cuando miramos a los ojos a quien amamos. Una interpretación que nos conecta con nuestra raíz.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Molotov",
+      "cancion": "Frijolero",
+      "frase": "Molotov soltó Frijolero como un golpe en la mesa contra el racismo y las fronteras. Es rock con huevos, directo y sin censura, defendiendo nuestra identidad latina en todo el mundo. Un himno de resistencia que suena a calle, a orgullo y a la fuerza del norte.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Kraken",
+      "cancion": "Frágil Al Viento",
+      "frase": "El Titán Elkin Ramírez nos dejó su alma en Frágil Al Viento. Es rock épico colombiano que nos habla de la vulnerabilidad y la fuerza de la vida. Una voz poderosa que sigue guiando a los que caminamos el sendero del rock con el corazón en la mano.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Garabatos",
+      "frase": "Fito Cabrales nos dibuja la vida con sus Garabatos. Es rock de autor con ese swing de bar que te invita a reflexionar sobre lo que realmente importa. Música para los que escribimos nuestra propia historia sin seguir líneas rectas, aceptando cada trazo con orgullo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Molotov",
+      "cancion": "Gimme Tha Power",
+      "frase": "Si hay una canción que resume el hartazgo de la calle es Gimme Tha Power. Molotov nos dio el micrófono para exigir que el poder sea nuestro. Un estallido de energía y protesta que no ha perdido ni un gramo de su relevancia social hoy en día.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Guitarras Blancas",
+      "frase": "La distorsión se hace presente con Guitarras Blancas de los Enanitos. Es el sonido que definió el rock en español de los ochenta y noventa. Un tema que te invita a subir el volumen y dejar que la música sea el único lenguaje que importe en este momento.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aleks Syntek, Bon",
+      "cancion": "Hasta El Fin Del Mundo",
+      "frase": "Aleks Syntek se une a Bon para llevarnos Hasta El Fin Del Mundo con este pop rock lleno de energía. Es la promesa de ir más allá de los límites por lo que sentimos. Un tema fresco que nos recuerda que el viaje es mejor si hay buena música.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mägo de Oz",
+      "cancion": "Haste Que El Cuerpo Aguante",
+      "frase": "Mägo de Oz nos dicta la regla de oro: vivir al máximo Haste Que El Cuerpo Aguante. Es rock festivo, con ese toque celta que nos pone a brindar por la vida. Una invitación a no rendirse y a disfrutar cada segundo como si fuera el último.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Hechicera Crayon",
+      "frase": "Los Vampiros nos atrapan con su Hechicera Crayon. Es ese rock rosarino que tiene la magia de ponernos a todos en la misma sintonía. Un ritmo que suena a juventud, a deseo y a esa cadencia urbana que solo Vilma Palma sabe imprimir en sus canciones clásicas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Bosé",
+      "cancion": "Hojas secas",
+      "frase": "Miguel Bosé nos envuelve en una atmósfera de otoño y reflexión con Hojas secas. Es pop con una clase inmensa, narrando el paso del tiempo y lo que se queda atrás. Una interpretación elegante para esos momentos donde el silencio y la música son los mejores compañeros.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Joe Vasconcellos",
+      "cancion": "Huellas",
+      "frase": "Desde Chile, Joe Vasconcellos nos invita a dejar nuestras propias Huellas. Es una fusión de ritmos latinos con la fuerza del rock, un tema que suena a tierra y a libertad. Música para los que caminamos con un propósito, respetando siempre el camino de los demás.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Hundido en Un Rincón",
+      "frase": "Maná captura ese sentimiento de derrota amorosa en Hundido en Un Rincón. Es rock pop con el que es imposible no identificarse cuando el corazón se siente pequeño. Una canción para soltar el aire y entender que estar abajo también es parte de volver a subir.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "Héroe de leyenda",
+      "frase": "Con Héroe de leyenda, Bunbury y compañía empezaron a escribir la historia más grande del rock español. Es mística pura, guitarras envolventes y una voz que ya anunciaba su grandeza. Un tema para los que buscamos nuestra propia épica en las calles de todos los días.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Igual Que Ayer",
+      "frase": "A veces volvemos a los mismos lugares y nos sentimos Igual Que Ayer. Los Enanitos Verdes nos regalan esta joya sobre la persistencia del sentimiento y el tiempo que parece no pasar. Rock argentino con el corazón abierto, ideal para recordar quiénes éramos y quiénes somos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Genitallica",
+      "cancion": "Imagina",
+      "frase": "La irreverencia de Genitallica nos pone a pensar en un mundo distinto con Imagina. Es rock mexicano directo, ruidoso y con ese toque de sarcasmo que tanto nos gusta. Una invitación a romper con lo establecido y a visualizar una realidad sin tantas reglas absurdas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Indiana",
+      "frase": "Hombres G nos llevan de aventura con Indiana. Es pop rock español divertido, con esa ligereza que te alegra el día sin complicaciones. Un clásico de David Summers que nos recuerda que la vida también es para jugar y dejarse llevar por la imaginación del momento.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Irremediablemente Tarde",
+      "frase": "Verde 70 nos habla de los trenes que se pierden en Irremediablemente Tarde. Es rock pop ecuatoriano con una energía brutal y una letra que nos pega en la realidad. Una canción para los que hemos aprendido que el ahora es lo único que realmente tenemos bajo control.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Compañia Ilimitada",
+      "cancion": "La Calle",
+      "frase": "Compañia Ilimitada le rinde homenaje al lugar donde todo sucede: La Calle. Es el escenario de nuestras vidas, donde pateamos piedras y buscamos sueños. Rock colombiano con esa esencia urbana que nos identifica a todos los que sentimos el asfalto como nuestro verdadero hogar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "La Camisa Negra",
+      "frase": "Juanes puso a todo el mundo a cantar con su Camisa Negra. Es esa mezcla de guasca paisa con rock que se convirtió en un fenómeno global. Una canción de luto amoroso pero con un ritmo que te obliga a bailar, porque así somos los latinos ante la pena.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gianny",
+      "cancion": "La Cantina",
+      "frase": "Gianny nos lleva directo a La Cantina para ahogar las penas con buena música. Es pop con ese aire bohemio que se siente tan real en nuestras ciudades. Un tema para los que sabemos que a veces el mejor refugio es un rincón con luz tenue y melodías.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "La casa por el tejado",
+      "frase": "Fito Cabrales nos enseña a vivir sin miedos en La casa por el tejado. Es rock honesto, de ese que te dice que empieces como puedas pero que empieces. Música para los valientes que no esperan a tenerlo todo claro para lanzarse a vivir sus propias verdades.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "La Chispa Adecuada",
+      "frase": "Hay ausencias que queman y Heroes Del Silencio lo capturó en La Chispa Adecuada. Es una de las letras más hermosas y crípticas de Bunbury, envuelta en una música que te eleva. El rock español en su estado más puro y espiritual para los que sentimos profundo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Kontrol",
+      "cancion": "La Cinta Rosa",
+      "frase": "Bajo Kontrol nos trae su versión de La Cinta Rosa con toda la fuerza del rock pop. Es revivir un clásico con una energía nueva, demostrando que las buenas historias nunca pasan de moda si se cuentan con actitud. Música hecha con ganas de conectar con todas las generaciones.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eros Ramazzotti",
+      "cancion": "La Cosa Más Bella",
+      "frase": "Eros Ramazzotti tiene esa voz nasal que se volvió parte de nuestra banda sonora con La Cosa Más Bella. Es pop italiano que cruzó todas las fronteras para hablarnos del amor absoluto. Un clásico que brilla con esa elegancia y sentimiento que solo Eros sabe imprimir en sus canciones.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mägo de Oz",
+      "cancion": "La Costa Del Silencio",
+      "frase": "Mägo de Oz levanta una bandera ambientalista y social en La Costa Del Silencio. Es metal con conciencia, recordándonos que tenemos que cuidar nuestra tierra. Un grito de batalla con toda la potencia del rock español que nos invita a no quedarnos callados ante la injusticia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jarabe De Palo",
+      "cancion": "La flaca",
+      "frase": "Pau Donés nos regaló La flaca y cambió la historia del pop rock español para siempre. Es esa cadencia cubana mezclada con rock que suena a noche, a deseo y a encuentros inesperados. Una canción eterna que nos recuerda que la vida es un ratico y hay que disfrutarlo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Auténticos Decadentes",
+      "cancion": "La Guitarra",
+      "frase": "¡Porque yo no quiero trabajar! Los Decadentes lanzaron el himno definitivo de la rebeldía juvenil con La Guitarra. Es el grito de todos los que preferimos seguir nuestro arte y nuestra pasión antes que encerrarnos en una oficina. ¡Puro ska-rock con alma argentina y callejera!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "La Historia Sin Fin",
+      "frase": "Elefante nos habla de esos ciclos que no terminan en La Historia Sin Fin. Es rock pop mexicano con ese sentimiento que te hace cantar con el alma afuera. Una canción que retrata perfectamente esos laberintos emocionales en los que todos nos hemos perdido alguna vez en la vida.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Café Tacvba",
+      "cancion": "La ingrata",
+      "frase": "Los Tacvbos nos trajeron esta descarga de energía norteña y rockera con La ingrata. Es una explosión de ritmo que celebra nuestra cultura mexicana con un toque alternativo brutal. Una canción para saltar, sudar y sacar todo lo que llevamos dentro con una sonrisa bien rebelde.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rata Blanca",
+      "cancion": "La Leyenda del Hada y el Mago",
+      "frase": "Rata Blanca nos lleva a un mundo de fantasía y heavy metal con La Leyenda del Hada y el Mago. El solo de Walter Giardino es una obra maestra que te vuela la cabeza. Metal en español con una clase y una técnica que nos pone en lo más alto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Café Quijano",
+      "cancion": "La Lola",
+      "frase": "Café Quijano le puso elegancia y sabor a los bares con La Lola. Es pop rock español con ese aire de bolero moderno que nos encanta. Una canción que cuenta historias de seducción y calle con una voz que tiene todo el cuerpo y la personalidad del norte español.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "La Muralla Verde",
+      "frase": "Marciano Cantero nos invita a cruzar La Muralla Verde. Es uno de los pilares del rock en español, una canción que suena a libertad y a romper con todo lo que nos limita. Un clásico argentino que sigue tan vigente como el primer día que sonó en Radiochar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "La Noche Que Yo Te Vi",
+      "frase": "Los Vampiros nos relatan ese momento mágico en La Noche Que Yo Te Vi. Es rock pop con ese sello de Rosario que te hace sentir que la vida es una fiesta constante. Una canción para recordar esos encuentros que cambiaron nuestro rumbo bajo las luces de la ciudad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "La Pachanga",
+      "frase": "¡Y qué pase lo que tenga que pasar! La Pachanga es el himno absoluto de Vilma Palma. Es la alegría del rock latino que no conoce fronteras. Una canción obligatoria para sacudirse el polvo y celebrar que estamos vivos y con ganas de seguir pateando piedras juntos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "La Paga",
+      "frase": "Juanes nos habla del karma en el amor con La Paga. Es esa fusión de rock con ritmos tradicionales colombianos que nos suena tan nuestra. Una canción directa sobre las consecuencias de jugar con los sentimientos ajenos, narrada con toda la actitud de quien sabe lo que dice.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Andrés Calamaro",
+      "cancion": "La parte de adelante",
+      "frase": "Calamaro nos entrega una de sus letras más ingeniosas y directas en La parte de adelante. Es rock con esa honestidad brutal del Salmón, hablando del deseo y la conexión sin adornos innecesarios. Música para los que preferimos la verdad de frente, por más que a veces nos cueste encontrarla.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "La Que Se Fue",
+      "frase": "Elefante le canta al vacío que deja la ausencia con La Que Se Fue. Es rock pop con sentimiento de mariachi, una mezcla que te llega al alma cuando estás con el corazón roto. Una canción para brindar por los que ya no están y seguir caminando con dignidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Sueños",
+      "cancion": "La Silueta de Tu Sombra",
+      "frase": "Desde Ecuador, Bajo Sueños nos envuelve en la melancolía gótica de La Silueta de Tu Sombra. Es rock con una carga emocional pesada, ideal para los que encontramos en la música un refugio para nuestras penas. Una voz que grita lo que el corazón a veces calla.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "La Sirena Varada",
+      "frase": "Bunbury nos sumerge en la profundidad de La Sirena Varada. Es rock místico, cargado de metáforas y una atmósfera que solo Heroes Del Silencio podía crear. Una canción para los espíritus inquietos que siempre estamos buscando algo más allá de la superficie de las cosas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ekhymosis",
+      "cancion": "La Tierra",
+      "frase": "Juanes y Ekhymosis le cantan al orgullo de nuestras raíces en La Tierra. Es rock colombiano con un mensaje de unidad y pertenencia que necesitamos hoy más que nunca. Un tema que suena a patria, a fuerza y a la esperanza de un mañana mejor para todos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Tres",
+      "cancion": "La Torre de Babel",
+      "frase": "Los Tres nos traen este aire de cueca rockera con La Torre de Babel. Es el sonido de Chile con una elegancia y una ironía magistrales. Una canción que nos habla de la confusión del mundo moderno con una clase que solo Álvaro Henríquez y compañía pueden ofrecer.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "La Vecina",
+      "frase": "Julio Nava le pone ritmo a las historias de barrio con La Vecina. Es rock colombiano con mucha chispa y esa energía que te pone a saltar. Una canción divertida, directa y con ese sabor a calle que nos hace sentir identificados a todos los que vivimos el barrio.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Labios Compartidos",
+      "frase": "Maná captura la angustia del amor dividido en Labios Compartidos. Es pop rock con una fuerza vocal inmensa y un sentimiento que te atraviesa. Una canción para los que hemos vivido amores complicados y sabemos que a veces el corazón no entiende de razones ni exclusividades.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Zoé",
+      "cancion": "Labios Rotos",
+      "frase": "León Larregui nos lleva a su universo psicodélico con Labios Rotos. Es pop alternativo mexicano con una atmósfera que te hace flotar. Una canción hipnótica sobre la curación a través del amor, ideal para dejarse llevar por el sonido envolvente de Zoé en medio del caos urbano.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Lamento Boliviano",
+      "frase": "No hay canción más emblemática para gritar en un bar que Lamento Boliviano. Los Enanitos Verdes tomaron este tema y lo convirtieron en el himno de toda Latinoamérica. Es rock en español puro, con ese sentimiento de soledad y fuerza que nos une a todos los pateapiedras.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Café Tacvba",
+      "cancion": "Las flores",
+      "frase": "Los Tacvbos nos regalan toda su energía positiva con Las flores. Es rock alternativo con ese toque folclórico que los hace únicos en el mundo. Una canción para celebrar la vida, el amor y la explosión de colores que surge cuando decidimos abrirnos al mundo con alegría.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Las nubes de tu pelo",
+      "frase": "Fito Cabrales nos trae una de sus letras más poéticas en Las nubes de tu pelo. Es rock con esa sensibilidad de quien ha caminado mucho y ha aprendido a valorar los pequeños detalles. Música para soñar despierto mientras caminamos por la ciudad, perdiéndonos en nuestros propios pensamientos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "El Tri",
+      "cancion": "Las piedras rodantes",
+      "frase": "Alex Lora es el abuelo del rock mexicano y Las piedras rodantes es su manifiesto eterno. Es rock and roll puro, callejero y honesto, recordándonos que al final todos nos volveremos a encontrar en el camino. ¡Un saludo a toda la raza que sigue pateando piedras!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nek",
+      "cancion": "Laura no está",
+      "frase": "Nek paralizó las radios con Laura no está. Es ese pop rock italiano con una energía contagiosa y una historia de ausencia que todos entendimos de inmediato. Una canción que se quedó grabada en la memoria colectiva y que todavía nos pone a cantar a todo pulmón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Saratoga",
+      "cancion": "Lejos de Ti",
+      "frase": "Saratoga nos entrega una descarga de heavy metal español con Lejos de Ti. Es poder, técnica y mucho sentimiento en una sola canción. Un tema para los que amamos los sonidos fuertes y las letras que hablan de la distancia con una intensidad que te eriza la piel.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tshala Muana",
+      "cancion": "Lekela Muadi",
+      "frase": "Un toque exótico llega a la cabina con Lekela Muadi de Tshala Muana. Aunque no es el rock tradicional, su ritmo africano conectó con nuestra esencia latina de forma sorprendente. Es la prueba de que la música no tiene fronteras cuando el ritmo es auténtico y viene del alma.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Kraken",
+      "cancion": "Lenguaje de Mi Piel",
+      "frase": "Kraken nos regaló este himno eterno con Lenguaje de Mi Piel. Elkin Ramírez nos canta con una profundidad que solo los grandes maestros poseen. Es rock con alma, una obra maestra que nos recuerda que nuestra historia está escrita en cada cicatriz de nuestro camino.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julieta Venegas",
+      "cancion": "Lento",
+      "frase": "Julieta Venegas nos invita a bajar la velocidad con Lento. Es pop con una elegancia y una sencillez que desarman cualquier resistencia. Una canción para disfrutar del proceso, para saborear cada momento y entender que las mejores cosas de la vida no necesitan ninguna prisa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Esto es Eso",
+      "cancion": "Light it Up",
+      "frase": "La mezcla de estilos llega con Light it Up de Esto es Eso. Es música que suena a modernidad, a fusión y a esa energía urbana que nos mantiene despiertos. Un tema para encender la vibra del programa y dejar que el ritmo nos guíe por la ciudad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Julieta Venegas",
+      "cancion": "Limón y Sal",
+      "frase": "Aceptarse con todo, con lo bueno y lo malo, es lo que nos canta Julieta Venegas en Limón y Sal. Es pop fresco, honesto y con ese acordeón que ya es su marca registrada. Una canción para los que amamos de verdad, sin intentar cambiar al otro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alejandra Guzman",
+      "cancion": "Llama Por Favor",
+      "frase": "La reina del rock mexicano nos entrega toda su garra en Llama Por Favor. Alejandra Guzmán canta con ese desgarro que solo da la experiencia de la vida. Una canción de urgencia amorosa, con una voz rasgada que te llega directo al centro del sentimiento.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito Paez",
+      "cancion": "Llueve Sobre Mojado",
+      "frase": "Fito Paez y Joaquín Sabina unieron sus genialidades en Llueve Sobre Mojado. Es rock con una lírica brillante, ácida y muy real. Dos maestros contándonos que la vida a veces nos golpea donde ya duele, pero siempre con ese estilo bohemio que los hace únicos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Mateos",
+      "cancion": "Llámame Si Me Necesitas",
+      "frase": "Miguel Mateos nos deja la puerta abierta con Llámame Si Me Necesitas. Es ese rock pop de los ochenta que todavía tiene una fuerza increíble en la pista. Una canción de lealtad y presencia, con ese ritmo que te invita a saltar y a sentirte vivo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Lo noto",
+      "frase": "David Summers se pone reflexivo en Lo noto, una de las canciones más maduras y hermosas de Hombres G. Es pop rock español que habla del final inevitable, con esa melancolía que se siente cuando ya no queda nada por decir. Un tema que llega al alma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Lo que sobra de mí",
+      "frase": "Fito Cabrales nos entrega lo que queda de él en Lo que sobra de mí. Es rock honesto, sin pretensiones, con ese swing que solo los Fitipaldis saben imprimir. Música para los que preferimos la esencia antes que la apariencia, celebrando lo que somos de verdad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Unión",
+      "cancion": "Lobo-hombre en París",
+      "frase": "Entramos en el mundo del mito con Lobo-hombre en París de La Unión. Es pop rock español con una atmósfera mística y elegante que marcó a toda una generación. Una canción que suena a noche, a misterio y a esa cadencia urbana que nunca pasa de moda.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Andrés Calamaro",
+      "cancion": "Loco",
+      "frase": "Calamaro nos confiesa su locura con este tema que es puro estilo. Loco es rock con aires de funk y una letra que solo el Salmón podría escribir. Música para los que no tememos perder la cabeza por lo que amamos, viviendo siempre al límite de nuestras emociones.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Auténticos Decadentes",
+      "cancion": "Loco (Tu Forma De Ser)",
+      "frase": "Los Decadentes nos regalan el himno al amor imperfecto con Loco (Tu Forma De Ser). Es esa mezcla de murga y rock que te hace sonreír y bailar al mismo tiempo. Una canción para celebrar a esa persona que, con todas sus locuras, nos hace la vida mejor.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "León Larregui",
+      "cancion": "Locos",
+      "frase": "León Larregui nos sumerge en su viaje astral con Locos. Es pop alternativo con un ritmo hipnótico que te envuelve en una atmósfera de paz y deseo. Ideal para desconectarse de la ciudad y dejarse llevar por la vibración de una voz que suena a puro arte moderno.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Yordano",
+      "cancion": "Locos de Amor",
+      "frase": "Yordano nos trae esa elegancia venezolana con Locos de Amor. Es pop con aires tropicales y urbanos que se siente como una brisa fresca en la tarde. Una canción que habla del sentimiento con una sencillez y una clase que muy pocos artistas logran alcanzar de forma tan natural.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Charly García",
+      "cancion": "Los Dinosaurios",
+      "frase": "Charly García escribió Los Dinosaurios en uno de los momentos más oscuros de la historia argentina. Es rock con una carga política y emocional inmensa, recordándonos que el arte es la mejor forma de resistencia. Una obra maestra del genio de bigote bicolor para no olvidar jamás.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Trifullka, Luis Rueda",
+      "cancion": "Los Maestros Del Amor (El Pelo Quinto)",
+      "frase": "La Trifullka y Luis Rueda se unen para este tema cargado de actitud y rock ecuatoriano. Es la fuerza de la calle hecha música, con ese lenguaje nuestro que nos hace sentir en casa. Un tema directo, sin vueltas, para los que vivimos el rock como identidad pura.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "PXNDX",
+      "cancion": "Los Malaventurados No Lloran",
+      "frase": "PXNDX capturó la angustia de una generación en Los Malaventurados No Lloran. Es emo rock mexicano con una letra profunda y desgarradora sobre la pérdida. Música para soltar el dolor y entender que a veces la única forma de seguir es aceptando que todo se ha terminado.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Zoé",
+      "cancion": "Love",
+      "frase": "Zoé nos envuelve en su concepto galáctico del Love. Es pop alternativo con un sonido refinado y envolvente que te invita a cerrar los ojos. León Larregui nos guía por un laberinto de sintetizadores y sentimientos que suenan a futuro y a pura identidad moderna.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Zoé",
+      "cancion": "Luna",
+      "frase": "La mística de Zoé alcanza su punto máximo con Luna. Es una canción hipnótica, que te transporta a otra dimensión con su sonido etéreo. Música ideal para las noches de Radiochar, cuando la ciudad se calma y solo queda la conexión profunda con lo que sentimos por dentro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Virus",
+      "cancion": "Luna de Miel en la Mano",
+      "frase": "Federico Moura y Virus nos trajeron la modernidad y el deseo con Luna de Miel en la Mano. Es pop rock argentino con una elegancia y una provocación que rompieron todos los esquemas. Un clásico eterno que suena a libertad y a la sofisticación de la calle porteña.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Luz De Dia",
+      "frase": "Los Enanitos Verdes nos regalan esta balada de rock argentino que es puro sentimiento. Luz De Dia es esa promesa de seguir adelante a pesar de la oscuridad. La voz de Marciano Cantero nos acompaña en este viaje por la esperanza y el amor real y cotidiano.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Fabulosos Cadillacs",
+      "cancion": "Mal Bicho",
+      "frase": "¡Yo no soy un mal bicho! Vicentico y los Cadillacs disparan esta crítica social cargada de ritmo ska. Es rock latino con conciencia, una descarga de energía contra los prejuicios y la injusticia. Un tema que te obliga a bailar mientras te hace pensar en el mundo real.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "Mala Gente",
+      "frase": "Juanes le canta a la traición con toda la fuerza del rock pop en Mala Gente. Es una canción directa, con un riff de guitarra que se te queda pegado y una letra que no anda con rodeos. Para todos los que hemos tenido que decirle la verdad a alguien sin anestesia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mano Negra",
+      "cancion": "Mala Vida",
+      "frase": "Manu Chao y la Mano Negra nos trajeron el sonido mestizo de la calle con Mala Vida. Es punk, es rock y es pura energía rebelde que no conoce fronteras. Una canción que suena a viaje, a lucha y a esa actitud indomable que define al verdadero rock latinoamericano.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "Maldita Flor",
+      "frase": "Julio Nava nos trae la fuerza del rock colombiano con Maldita Flor. Es una canción con una energía arrolladora y una interpretación vocal que te sacude por dentro. Música para los que vivimos el amor y el desamor con la misma intensidad, sin medias tintas ni miedos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Heroes Del Silencio",
+      "cancion": "Maldito duende",
+      "frase": "Bunbury nos invita a perdernos en el laberinto de Maldito duende. Es rock español en su estado más puro y místico, con una atmósfera que te atrapa desde el primer segundo. Una canción para los que nos sentimos atraídos por lo desconocido y la intensidad de la vida.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "Maldito sea tu nombre",
+      "frase": "El heavy metal español estalla con Maldito sea tu nombre de Ángeles Del Infierno. Es potencia pura, un grito de rebeldía que retumba en las paredes de Radiochar. Metal clásico para los que no aceptamos cadenas y vivimos el rock como nuestra única y verdadera religión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Manda Una Señal",
+      "frase": "Maná nos pide una respuesta del destino en Manda Una Señal. Es pop rock con esa energía positiva y melódica que los hizo gigantes en todo el mundo. Una canción para los que seguimos esperando ese guiño de la vida que nos indique que vamos por el camino correcto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "PXNDX",
+      "cancion": "Maracas",
+      "frase": "PXNDX toma este clásico y le inyecta toda la fuerza del punk rock mexicano. Maracas en su versión alternativa es una historia de bar y arrepentimiento que suena a pura calle. Música para cantar con los amigos mientras compartimos las penas que solo el rock sabe curar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito Paez",
+      "cancion": "Mariposa tecknicolor",
+      "frase": "Fito Paez nos regala un viaje por sus recuerdos con Mariposa tecknicolor. Es el himno de la nostalgia rosarina, una canción que brilla con luz propia y nos llena de optimismo. Un clásico del rock argentino que nos recuerda que nuestros sueños siempre tienen colores brillantes y eternos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Mariposa Traicionera",
+      "frase": "Maná le canta a la inconstancia del amor en Mariposa Traicionera. Es pop rock con ese toque de sentimiento mexicano que nos llega a todos. Una canción para los que hemos volado cerca de fuegos que nos quemaron las alas, aprendiendo a punta de golpes cómo es la vida.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Mariposas",
+      "frase": "Los Enanitos Verdes nos hablan de la libertad en Mariposas. Es rock argentino con esa sensibilidad única de Marciano Cantero, invitándonos a soltar lo que nos amarra y volar hacia nuestros propios destinos. Música para los espíritus libres que no aceptamos jaulas bajo ningún concepto en la vida.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "Mariposas en el Cielo",
+      "frase": "Elefante nos regala esta balada cargada de esperanza con Mariposas en el Cielo. Es rock pop mexicano que sabe a honestidad y a ganas de creer de nuevo en el amor. Una canción suave pero con una fuerza interior que te acompaña en los momentos de calma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Marta tiene un marcapasos",
+      "frase": "Hombres G nos trajeron una de las historias más locas y divertidas del pop rock español con Marta tiene un marcapasos. Es ese ritmo fresco y desenfadado de David Summers que se convirtió en un clásico generacional. Música para reírse de todo y seguir bailando sin parar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Diego",
+      "cancion": "Mas",
+      "frase": "Diego nos trae esa energía del pop rock que siempre pide un poco Mas. Es una canción con un ritmo contagioso, ideal para mantener la vibra arriba en la programación. Música hecha para disfrutar, sin complicaciones, dejándose llevar por la inercia de una buena melodía en la radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Los Fabulosos Cadillacs",
+      "cancion": "Matador",
+      "frase": "El rugido de los Cadillacs se hace sentir con Matador. Es la fuerza de la resistencia latina hecha ritmo, un estallido de energía que unió a todo un continente. ¡Viento de libertad, sangre de matador! Un himno eterno para los que no nos rendimos jamás ante nada.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Inhumanos",
+      "cancion": "Me Duele La Cara De Ser Tan Guapo",
+      "frase": "Los Inhumanos nos traen el lado más divertido y descarado del pop rock español. Me Duele La Cara De Ser Tan Guapo es pura irreverencia para pasarla bien y no tomarse la vida en serio. Una canción de bar, de fiesta y de mucha actitud gamberra.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "Me Enamora",
+      "frase": "Juanes nos pone a vibrar con Me Enamora, un tema que desborda frescura y buena energía paisa. Es esa fusión de rock pop con ritmos nuestros que conquistó al mundo. Una canción para celebrar el amor cotidiano, el que nace de los detalles y la conexión real.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Me equivocaría otra vez",
+      "frase": "Fito Cabrales nos confiesa su humanidad en Me equivocaría otra vez. Es rock de autor con esa sabiduría que solo dan los años y la calle. Música para los que aceptamos nuestros errores con orgullo, sabiendo que cada caída es parte de nuestro propio y único camino.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Inspector",
+      "cancion": "Me Estoy Enamorando",
+      "frase": "El ska mexicano llega a su punto más romántico con Inspector. Me Estoy Enamorando es esa mezcla de metales potentes y una letra que nos llega al corazón. Rock con sabor a calle y a sentimiento puro, ideal para bailar mientras le cantamos al amor sin miedo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jarabe De Palo",
+      "cancion": "Jarabe De Palo nos dejó esta oda a la autenticidad con Me gusta como eres. Es pop rock español con esa sencillez profunda que siempre lo caracterizó. Una canción para dedicar a quienes se muestran sin máscaras, valorando la esencia por encima de cualquier otra cosa en este mundo.",
+      "cancion": "Me gusta como eres",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Manu Chao",
+      "cancion": "Manu Chao nos trae su letanía de la vida sencilla con Me Gustas Tu. Es ese sonido mestizo y global que suena a viaje, a radio vieja y a verdades cotidianas. Una canción que te atrapa con su ritmo hipnótico y su mensaje directo al centro de la alegría.",
+      "cancion": "Me Gustas Tu",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Amistades Peligrosas",
+      "cancion": "La sensualidad y el pop español se funden en Me Haces Tanto Bien de Amistades Peligrosas. Es una canción con una carga de deseo y elegancia que marcó una época. Un tema para dejarse llevar por la química de las voces y el ritmo que te envuelve suavemente.",
+      "cancion": "Me Haces Tanto Bien",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Amistades Peligrosas",
+      "cancion": "Aceptar el final con dignidad es lo que nos cantan en Me quedaré solo. Es pop con una atmósfera melancólica y una interpretación vocal impecable. Una canción para esos momentos de reflexión donde entendemos que la soledad también es un estado necesario para volver a encontrarse con uno mismo.",
+      "cancion": "Me quedaré solo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Hombres G nos contagian su optimismo con Me siento bien. Es pop rock español con esa energía que te levanta de la silla y te pone en modo positivo. Una canción para sacudirse los problemas y recordar que, a pesar de todo, siempre hay razones para sentirse bien.",
+      "cancion": "Me siento bien",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Verde 70 nos habla de la intensidad del amor en Me Tienes, Me Puedes, Me Dueles. Es rock pop ecuatoriano con una energía brutal que te hace sentir cada palabra. Una canción para los que vivimos las relaciones con toda la pasión y el desgarro que conllevan.",
+      "cancion": "Me Tienes, Me Puedes, Me Dueles",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "¡Me vale todo! Maná lanzó este grito de rebeldía contra las críticas y los juicios ajenos. Es rock con actitud, un himno para los que vivimos a nuestra manera sin que nos importe lo que digan los demás. Una descarga de energía pura para liberar el alma rebelde.",
+      "cancion": "Me Vale",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos traen la locura del deseo con Me vuelvo loco por vos. Es ese rock de Rosario que tiene la fórmula perfecta para ponernos a bailar. Una canción que suena a fiesta, a calle y a esa pasión desbordada que solo la buena música sabe transmitir.",
+      "cancion": "Me vuelvo loco por vos",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Ley",
+      "cancion": "Beto Cuevas y La Ley nos entregan una de sus interpretaciones más intensas en Mentira. Es rock chileno con una atmósfera sofisticada y oscura que te atrapa. Una canción sobre el engaño y sus consecuencias, narrada con una elegancia que muy pocos logran alcanzar en el rock.",
+      "cancion": "Mentira",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Amigos Invisibles",
+      "cancion": "Los Amigos Invisibles le ponen groove y funk a las Mentiras. Es música venezolana con una clase inmensa y un ritmo que te obliga a mover los pies. Una forma divertida y elegante de lidiar con las verdades a medias, siempre con ese estilo inconfundible de la banda.",
+      "cancion": "Mentiras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "Elefante le canta al despecho con Mentirosa, un tema que suena a rock pop con alma de barrio. Es esa historia de decepción que todos hemos vivido alguna vez, contada con una fuerza vocal que te invita a gritar para sacar el dolor de una buena vez.",
+      "cancion": "Mentirosa",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Toreros Muertos",
+      "cancion": "La irreverencia de Pablo Carbonell estalló con Mi Agüita Amarilla. Es rock español surrealista, divertido y totalmente fuera de serie. Una canción que nos recuerda que el rock también puede ser absurdo y genial al mismo tiempo, rompiendo con todas las convenciones posibles del pop rock.",
+      "cancion": "Mi Agüita Amarilla",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cabas",
+      "cancion": "Cabas nos trajo la sabrosura del Caribe mezclada con pop en Mi Bombom. Es un ritmo contagioso que suena a sol, a mar y a esa alegría colombiana que no tiene igual. Una canción para dejarse llevar por el movimiento y disfrutar de la vida sin tantas complicaciones mentales.",
+      "cancion": "Mi Bombom",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Douglas Bastidas Tranzas",
+      "cancion": "Douglas Bastidas nos trae esa melancolía del pop rock ecuatoriano en Mi Corazón No Entiende. Es la lucha entre la razón y el sentimiento, una balada con la que es fácil identificarse cuando el amor se vuelve un laberinto sin salida aparente. Música hecha con puro sentimiento.",
+      "cancion": "Mi Corazón No Entiende",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Rodriguez",
+      "cancion": "Andrés Calamaro le puso voz a Mi Enfermedad, un clásico absoluto del rock en español. Es esa mezcla de guitarras rockeras con un sentimiento de tango que suena a noche porteña y a destino. Una canción que se queda grabada en el alma como una marca imborrable.",
+      "cancion": "Mi Enfermedad",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Poligamia",
+      "cancion": "Andrés Cepeda y Poligamia le dieron voz a toda una época con Mi Generación. Es el retrato de una juventud colombiana que buscaba su lugar en el mundo a través del rock pop. Un himno de nostalgia y pertenencia que sigue sonando con mucha fuerza en nuestra memoria.",
+      "cancion": "Mi Generación",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gianluca Grignani",
+      "cancion": "Gianluca Grignani nos conmovió a todos con Mi Historia Entre Tus Dedos. Es el pop rock italiano con una carga emocional inmensa, narrando el dolor de dejar ir a quien todavía amamos. Una interpretación honesta y desgarradora que se convirtió en la banda sonora de miles de rupturas.",
+      "cancion": "Mi Historia Entre Tus Dedos",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alaska Y Dinarama",
+      "cancion": "La movida madrileña se hace presente con esta joya divertida y oscura. Mi Novio Es Un Zombi es pop rock español con ese toque de serie B que tanto nos gusta. Una canción de Alaska que rompe con lo convencional y nos invita a celebrar lo diferente con ritmo.",
+      "cancion": "Mi Novio Es Un Zombi",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Marciano Cantero nos describe la extrañeza de la ausencia en Mi Primer Dia Sin Ti. Es rock argentino con esa sensibilidad única que te acompaña en el duelo amoroso. Una canción suave, honesta y llena de esa verdad cotidiana que solo los Enanitos sabían poner en sus letras.",
+      "cancion": "Mi Primer Dia Sin Ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bacilos",
+      "cancion": "Bacilos nos trajo el sueño de muchos con Mi Primer Millon. Es pop latino con un ritmo increíble y una letra que se ríe de las ambiciones del mundo del espectáculo. Una canción fresca, divertida y que nos pone de buen humor apenas empieza a sonar en la radio.",
+      "cancion": "Mi Primer Millon",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Alejandro Sanz nos habla de la distancia y el vacío en Mi Soledad y Yo. Es una de sus baladas más icónicas, donde la letra y su voz se funden en un sentimiento de nostalgia pura. Música para los que hemos tenido que aprender a convivir con nosotros mismos.",
+      "cancion": "Mi Soledad y Yo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Moderatto",
+      "cancion": "Moderatto estalla con todo su glam rock en Mil Demonios. Es potencia, es fuego y es esa actitud de 'rockstar' que nos encanta. Una descarga de energía pura para sacar los demonios internos y dejar que la distorsión se encargue de todo lo demás por un rato.",
+      "cancion": "Mil Demonios",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Abuelos De La Nada",
+      "cancion": "Miguel Abuelo y Andrés Calamaro nos regalaron este himno eterno. Mil Horas es pop rock argentino con una clase inalcanzable, narrando esa espera bajo la lluvia que todos hemos sentido. Una canción perfecta, redonda y eterna que suena a pura identidad latinoamericana clásica.",
+      "cancion": "Mil Horas",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Christina y Los Subterraneos",
+      "cancion": "Christina Rosenvinge nos habla del desastre amoroso en Mil pedazos. Es pop rock español con una sensibilidad femenina fuerte y auténtica. Una canción que suena a calle madrileña y a corazones que se rompen pero que, con el tiempo, siempre encuentran la forma de volverse a armar.",
+      "cancion": "Mil pedazos",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Fito Cabrales nos invita a buscar respuestas Mirando al cielo. Es rock de autor con ese swing de blues que te acaricia el alma mientras caminas por la ciudad. Música para los que no perdemos la capacidad de asombro y seguimos buscando un sentido en medio del asfalto.",
+      "cancion": "Mirando al cielo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "La fiesta se vuelve húmeda y bailable con Mojada de los Vampiros. Es rock de Rosario con ese ritmo que te cala hasta los huesos. Una canción clásica de Vilma Palma para no parar de moverse y celebrar que la música es el mejor antídoto contra cualquier mal clima.",
+      "cancion": "Mojada",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mägo de Oz",
+      "cancion": "Mägo de Oz nos invita a pelear contra nuestras propias sombras en Molinos De Viento. Es rock folk épico que nos recuerda que somos dueños de nuestro propio destino. Una canción que te levanta el ánimo y te da la fuerza de un Quijote moderno en la calle.",
+      "cancion": "Molinos De Viento",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Volován",
+      "cancion": "La frescura del indie pop mexicano llega con Monitor de Volován. Es una canción con un sonido moderno, elegante y muy rítmico. Música para los que buscamos nuevas texturas sin perder la conexión con la emoción de una buena melodía en el rock en nuestro idioma.",
+      "cancion": "Monitor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Bosé",
+      "cancion": "Miguel Bosé le pone sensualidad y ritmo al aire con Morena mía. Es pop con una clase inmensa y ese juego de palabras que solo él sabe manejar tan bien. Una canción para dejarse llevar por el deseo y la cadencia de una voz que tiene todo el estilo.",
+      "cancion": "Morena mía",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tranzas",
+      "cancion": "Douglas Bastidas nos entrega el sentimiento puro del despecho en Morí. Es una de las baladas más recordadas de Tranzas y del pop rock ecuatoriano. Música que suena a verdad, a dolor y a esa honestidad brutal que se siente cuando el amor se va para siempre.",
+      "cancion": "Morí",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Plastilina Mosh",
+      "cancion": "El desenfado y la mezcla de estilos estalla con Plastilina Mosh y su Mr. P-Mosh. Es rock alternativo mexicano que no tiene miedo a experimentar con nada. Una descarga de frescura y actitud urbana que nos recuerda que la música es, ante todo, libertad absoluta de expresión.",
+      "cancion": "Mr. P-Mosh",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Rodriguez, Coque Malla",
+      "cancion": "Andrés Calamaro se une a Coque Malla para decirnos que todo está Mucho mejor con un poco de rock. Es la alegría canalla de Los Rodriguez en su estado más puro. Una canción para celebrar la vida, el presente y esas noches que nunca queremos que se terminen.",
+      "cancion": "Mucho mejor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "Jorge González nos lanza esta crítica social con un sonido sintético y poderoso en Muevan Las Industrias. Es el rock chileno con conciencia de clase, retratando la realidad de nuestras ciudades latinoamericanas con una fuerza que todavía hoy nos sacude el pensamiento y el cuerpo por igual.",
+      "cancion": "Muevan Las Industrias",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rata Blanca",
+      "cancion": "La balada heavy metal más famosa del rock en español. Rata Blanca nos trajo Mujer Amante para hablarnos del deseo con una potencia épica. La voz de Adrián Barilari y la guitarra de Giardino crean una atmósfera que te eriza la piel y te vuela la cabeza.",
+      "cancion": "Mujer Amante",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Sacados",
+      "cancion": "The Sacados le pusieron ritmo a los noventa con Más de lo Que Te Imaginas. Es pop bailable con ese toque urbano que nos hacía movernos en todas las fiestas. Una canción ligera, divertida y con esa energía que te recuerda que la vida tiene su propio ritmo bailable.",
+      "cancion": "Más de lo Que Te Imaginas",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Zoé",
+      "cancion": "León Larregui nos habla del vacío y la búsqueda en Nada. Es pop alternativo con ese sello espacial y psicodélico de Zoé que tanto nos gusta. Una canción hipnótica para dejarse llevar por la corriente y entender que a veces en el vacío es donde encontramos las mejores respuestas.",
+      "cancion": "Nada",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Sueños",
+      "cancion": "Bajo Sueños nos trae el poder del rock con Nada de Amor. Es una canción directa, con una interpretación vocal cargada de fuerza y guitarras que no dan respiro. Rock ecuatoriano hecho con la garra de quien sabe que la música es el mejor grito de identidad posible.",
+      "cancion": "Nada de Amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Fito Cabrales nos habla de la sencillez en Nada de nada. Es rock honesto, de bar, con ese swing de blues que te hace sentir en casa apenas empieza. Música para los que valoramos lo que es real y no nos dejamos deslumbrar por los brillos falsos.",
+      "cancion": "Nada de nada",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Coti, Andrés Calamaro",
+      "cancion": "Cuando Coti y el Salmón se juntan, el resultado es Nada Fue Un Error. Es pop rock con una puntería perfecta para quedarse en tu cabeza. Una canción para celebrar nuestras decisiones, incluso las que parecen equivocadas, porque todas nos han traído hasta este preciso momento en Radiochar.",
+      "cancion": "Nada Fue Un Error",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soda Stereo",
+      "cancion": "Cerati nos advertía sobre la desconexión moderna en Nada Personal. Es el sonido de los ochenta con una sofisticación que solo Soda Stereo podía alcanzar. Una canción que hoy suena más profética que nunca en este mundo de pantallas y miradas que no se cruzan de verdad.",
+      "cancion": "Nada Personal",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Riccardo Perotti",
+      "cancion": "Riccardo Perotti nos habla del final inevitable en Nada Queda Ya. Es pop con sentimiento, una balada que retrata el vacío que queda cuando una historia llega a su conclusión. Música honesta para los que sabemos que a veces el silencio es la única respuesta que queda.",
+      "cancion": "Nada Queda Ya",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "Juanes nos entrega su faceta más romántica en Nada Valgo Sin Tu Amor. Es pop rock con ese aire fresco y honesto que lo caracteriza, hablándonos de la importancia del otro para darle sentido a nuestra propia vida. Una canción hermosa que brilla con luz propia en la radio.",
+      "cancion": "Nada Valgo Sin Tu Amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Hombres G nos llevan de viaje con Nassau. Es pop rock español divertido, ligero y con esa chispa de juventud eterna que David Summers siempre supo proyectar. Una canción para sacudirse el polvo y dejarse llevar por la imaginación hacia lugares donde el sol nunca deja de brillar.",
+      "cancion": "Nassau",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Francisco Terán",
+      "cancion": "Francisco Terán nos trae esa elegancia del pop ecuatoriano en Negra. Es una canción con un ritmo sutil y una interpretación vocal que te envuelve. Música hecha con alma y con esa calidad que nos hace sentir orgullosos de lo que se crea en nuestra propia tierra.",
+      "cancion": "Negra",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alaska Y Dinarama",
+      "cancion": "¡Mil campanas suenan en mi corazón! Ni tú ni nadie es el himno absoluto de la libertad personal. Alaska nos enseñó que nadie puede decirnos hacia dónde ir. Pop rock español eterno que sigue siendo la bandera de los que caminamos nuestro propio camino con orgullo.",
+      "cancion": "Ni tú ni nadie",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jaguares",
+      "cancion": "Saúl Hernández nos trae esta joya mística con Jaguares. No Dejes Que es una súplica por mantener nuestra esencia viva en medio del caos. Rock mexicano con una profundidad espiritual y musical que te atraviesa el pecho y te conecta con lo más sagrado de ti mismo.",
+      "cancion": "No Dejes Que",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Emmanuel",
+      "cancion": "Emmanuel nos entrega esta balada pop con una elegancia que marcó una época. No He Podido Verte es la crónica de la distancia y el deseo, narrada con una voz que conoce perfectamente cómo llegar al centro de la emoción de quien la escucha con atención.",
+      "cancion": "No He Podido Verte",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Hombres G nos muestran su fortaleza en No lloraré. Es pop rock español que habla de superar el dolor con la frente en alto. Una canción que te da el empujón necesario para dejar atrás lo que ya no sirve y seguir caminando hacia adelante con mucha actitud.",
+      "cancion": "No lloraré",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Charly García",
+      "cancion": "Charly García rompió los esquemas del rock argentino con No Me Dejan Salir. Es la genialidad del bigote bicolor cuestionando los límites de la libertad. Una canción con un ritmo hipnótico y una letra punzante que solo un maestro como él podría hacernos bailar con tanta inteligencia.",
+      "cancion": "No Me Dejan Salir",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cristian Castro",
+      "cancion": "Cristian Castro irrumpió en la escena con No Podrás, un tema que se convirtió en un clásico instantáneo del pop mexicano. Es energía, es despecho rítmico y una voz que demostró desde el primer día que había nacido para quedarse en la historia de nuestra música latina.",
+      "cancion": "No Podrás",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Darío Castro y Verde 70 nos entregan este himno del rock pop ecuatoriano. No Puedo Estar Sin Ti es esa declaración desesperada que todos hemos querido gritar alguna vez. Una canción con una fuerza melódica increíble que se queda pegada a tu piel desde la primera vez.",
+      "cancion": "No Puedo Estar Sin Ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Duncan Dhu",
+      "cancion": "Mikel Erentxun nos trae esta obsesión dulce en No puedo evitar - Pensar en ti. Es pop rock español con una clase y una sencillez magistrales. Una canción que suena a carretera, a viento y a esos pensamientos recurrentes que nos mantienen conectados con alguien especial.",
+      "cancion": "No puedo evitar - Pensar en ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "Julio Nava nos habla del deseo insaciable en No Se Me Acaba La Sed. Es rock colombiano con mucha garra y una interpretación vocal que te atrapa desde el inicio. Música para los que siempre queremos más de la vida, del amor y de la buena música en Radiochar.",
+      "cancion": "No Se Me Acaba La Sed",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "La incertidumbre se hace música en No Se por Qué de Julio Nava. Es rock con sentimiento, explorando las dudas que nos asaltan cuando las cosas no tienen una explicación lógica. Una voz que se siente real y que conecta con nuestras propias confusiones cotidianas en la calle.",
+      "cancion": "No Se por Qué",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos bajan a la tierra con No Somos Nada. Es rock de Rosario con esa alegría melancólica que los caracteriza, recordándonos nuestra propia fragilidad mientras nos ponen a bailar con su ritmo clásico. Una canción para celebrar el presente, porque es lo único que realmente tenemos.",
+      "cancion": "No Somos Nada",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vicentico, Valeria Bertuccelli",
+      "cancion": "Vicentico se une a Valeria Bertuccelli para esta versión hermosa de No Te Apartes de Mí. Es pura ternura y estilo, una balada que suena a verdad y a complicidad real entre dos personas. Música para los que valoramos la presencia del otro por encima de todo.",
+      "cancion": "No Te Apartes de Mí",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "La frustración amorosa nunca fue tan bailable como en No te puedo besar de Hombres G. Es pop rock español con ese toque divertido y directo que los hizo gigantes. Una canción para saltar y recordar que, a veces, lo prohibido es lo que más nos pone a vibrar.",
+      "cancion": "No te puedo besar",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Charly García",
+      "cancion": "¡No voy en tren, voy en avión! Charly García nos lanzó este manifiesto de independencia y ego genial. Es rock argentino en su estado más puro y vanguardista. Una canción que nos invita a volar alto, sin seguir las vías establecidas por nadie más que nosotros mismos.",
+      "cancion": "No Voy en Tren",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Fito Cabrales nos trae esta reflexión marina en Nos ocupamos del mar. Es rock con alma de blues, suave y profundo, que te invita a dejar que las cosas fluyan de forma natural. Música para los que entendemos que hay batallas que se ganan simplemente dejando que la marea baje.",
+      "cancion": "Nos ocupamos del mar",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Charly García",
+      "cancion": "Charly García retrata la crudeza de la calle en Nos Siguen Pegando Abajo. Es rock con conciencia social y un ritmo que te sacude desde el primer segundo. Una obra maestra del rock argentino que nos recuerda que la música es nuestra mejor arma contra el abuso y la opresión.",
+      "cancion": "Nos Siguen Pegando Abajo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Reik",
+      "cancion": "Reik le puso voz a la melancolía del otoño con Noviembre Sin Ti. Es pop latino con una carga emocional inmensa, ideal para esos momentos donde el frío de la ausencia se siente más fuerte que nunca. Una canción que se convirtió en el himno de los corazones solitarios.",
+      "cancion": "Noviembre Sin Ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los De Adentro",
+      "cancion": "Los De Adentro nos hablan de la tormenta interior en Nubes Negras. Es rock pop colombiano con una energía brutal y una letra que nos pega en el centro de nuestras propias crisis. Una canción para soltar lo que nos pesa y esperar a que el sol vuelva a salir.",
+      "cancion": "Nubes Negras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Mateos",
+      "cancion": "Miguel Mateos nos trae este ritmo ochentero que todavía nos pone a mil en Obsesión. Es rock pop con una energía arrolladora y un coro que todo el mundo se sabe de memoria. Una canción para los que no sabemos amar a medias y nos entregamos por completo al sentimiento.",
+      "cancion": "Obsesión",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Silvio Rodríguez",
+      "cancion": "Silvio Rodríguez nos entrega una de las letras más brillantes y desgarradoras de la historia en Ojalá. Es poesía pura hecha canción, un ruego de olvido que resuena en el alma de cualquier pateapiedras que haya amado profundo. Rock con espíritu de trova que nunca dejará de ser relevante.",
+      "cancion": "Ojalá",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Sueños",
+      "cancion": "Bajo Sueños nos sumerge en la melancolía de la estación con Otoño. Es rock con esa oscuridad elegante que los caracteriza, narrando el paso del tiempo y lo que se marchita en el corazón. Música para caminar entre las hojas secas de la vida, buscando siempre un nuevo brote.",
+      "cancion": "Otoño",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos traen Otra Cancion de Amor, pero con ese sello rosarino que la hace única. Es rock pop bailable, directo y sin complicaciones, hecho para disfrutar de la buena vibra de Radiochar. Una canción para celebrar que, a pesar de todo, el amor sigue siendo el mejor motor.",
+      "cancion": "Otra Cancion de Amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Eros Ramazzotti",
+      "cancion": "Eros Ramazzotti nos dice que no hay nadie igual en Otra Como Tu. Es pop italiano con esa pasión característica que nos conquistó a todos. Una canción eterna sobre la búsqueda de lo irrepetible, narrada con una voz que ya es parte de nuestra propia historia musical latina.",
+      "cancion": "Otra Como Tu",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jon Secada",
+      "cancion": "Jon Secada paralizó el mundo con Otro Día Más Sin Verte. Es el pop latino en su máxima expresión de sentimiento y potencia vocal. Una canción sobre la ausencia que duele rico, ideal para esos momentos donde el reloj parece detenerse porque alguien nos hace una falta inmensa.",
+      "cancion": "Otro Día Más Sin Verte",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Santana",
+      "cancion": "La guitarra de Carlos Santana nos pone el ritmo latino en las venas con Oye Como Va. Es un clásico mundial que celebra nuestra sabrosura y nuestro orgullo. Una canción que suena a raíces, a fiesta y a esa identidad nuestra que se impone en cualquier rincón del planeta.",
+      "cancion": "Oye Como Va",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "¡Oye mi amor, no me digas que no! Maná soltó este himno de conquista que se convirtió en obligatorio en cualquier reunión. Es rock pop con una energía contagiosa y ese espíritu de los noventa que nos hizo sentir dueños del mundo. Pura vida y puro ritmo latino.",
+      "cancion": "Oye Mi Amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maldita Vecindad y Los Hijos Del 5to Patio",
+      "cancion": "La Maldita Vecindad nos trae la rebeldía generacional con Pachuco. Es ska mexicano con toda la fuerza del barrio, un grito de respeto por nuestra historia y nuestra identidad urbana. Una canción para saltar y recordar que nuestra cultura es nuestra mejor bandera ante el mundo entero.",
+      "cancion": "Pachuco",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vicentico",
+      "cancion": "Vicentico toma este clásico de Gilda y le pone todo su estilo cadencioso en Paisaje. Es rock latino con alma de cumbia y calle, una canción que te invita a disfrutar del camino sin importar el destino. Música para los que valoramos el presente y la buena compañía en el viaje.",
+      "cancion": "Paisaje",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Verde 70 nos habla del peso de lo que decimos en Palabras. Es rock pop ecuatoriano con una melodía que te atrapa y una letra que te hace reflexionar sobre la honestidad. Una canción para los que preferimos la verdad de frente, por más que a veces nos cueste encontrarla.",
+      "cancion": "Palabras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Rodriguez",
+      "cancion": "Andrés Calamaro y Los Rodriguez nos regalan esta joya Para no olvidar. Es rock con sabor a bohemia, a noches de bar y a recuerdos que se quedan grabados a fuego. Música para los que guardamos nuestra historia en canciones, celebrando cada paso dado en este camino loco.",
+      "cancion": "Para no olvidar",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Mosca",
+      "cancion": "La Mosca le pone alegría al final de una relación con Para No Verte Más. Es ska-rock argentino divertido, directo y con ese ritmo que te hace bailar hasta las penas. Una canción para decir adiós con una sonrisa y seguir caminando con mucha actitud por la ciudad.",
+      "cancion": "Para No Verte Más",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Caifanes",
+      "cancion": "Saúl Hernández nos trae esta declaración mística en Para Que No Digas Que No Pienso En Ti. Es rock mexicano con una profundidad única, mezclando guitarras potentes con un sentimiento que te llega al alma. Caifanes en su estado más puro para los que sentimos el rock profundo.",
+      "cancion": "Para Que No Digas Que No Pienso En Ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Estopa",
+      "cancion": "Los hermanos Muñoz nos invitan a dar un Paseo por su barrio. Es rumba rock española con toda la autenticidad de la calle, narrada con esa chispa y esa gracia que solo Estopa tiene. Música para caminar con orgullo, sintiendo el ritmo de la ciudad en cada paso que damos.",
+      "cancion": "Paseo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bacilos",
+      "cancion": "Bacilos nos habla de avanzar en la vida con Pasos de Gigantes. Es pop latino con una energía increíble y una letra que nos impulsa a seguir adelante sin miedos. Una canción fresca, inteligente y rítmica que nos recuerda que somos capaces de conquistar lo que nos propongamos.",
+      "cancion": "Pasos de Gigantes",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Diego Torres",
+      "cancion": "Diego Torres nos cuenta la historia de la espera eterna en Penelope. Es una versión hermosa que suena a nostalgia y a respeto por los clásicos. Una canción que nos habla del paso del tiempo y de esos amores que se quedan detenidos en el andén de nuestra memoria.",
+      "cancion": "Penelope",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "Ángeles Del Infierno nos muestran su lado más sensible en Pensando en ti. Es esa balada de metal español que te eriza la piel con su fuerza y su sentimiento. Rock pesado para los que amamos con la misma intensidad con la que vivimos nuestra rebeldía cotidiana.",
+      "cancion": "Pensando en ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jovanotti",
+      "cancion": "Jovanotti nos inyectó toda su energía con Penso Positivo. Es ese funk pop italiano que rompió barreras con un mensaje de optimismo y unidad. Una canción para sacudirse la mala onda y recordar que nuestra actitud es la mejor herramienta para enfrentar cualquier piedra en el camino.",
+      "cancion": "Penso Positivo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Liran' Roll",
+      "cancion": "Liran' Roll le canta a la realidad del Perdedor con toda la fuerza del rock urbano mexicano. Es la voz del barrio, honesta y sin adornos, narrando las historias que nadie más se atreve a contar. Rock de verdad para los que sabemos que caer es solo parte de aprender.",
+      "cancion": "Perdedor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos dicen que a veces no importa estar Perdiendo el Tiempo si es con buena música. Es ese rock de Rosario que te invita a relajar la mente y dejarte llevar por el ritmo. Una canción clásica para disfrutar del momento presente sin tantas preocupaciones innecesarias.",
+      "cancion": "Perdiendo el Tiempo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guzmán",
+      "cancion": "Guzmán nos habla del arrepentimiento en Perdí Mi Oportunidad. Es pop rock con un sentimiento muy real, narrando esos momentos donde nos damos cuenta de lo que dejamos ir por orgullo o por miedo. Música para los que hemos aprendido a valorar los momentos antes de que se escapen.",
+      "cancion": "Perdí Mi Oportunidad",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Soda Stereo",
+      "cancion": "Cerati nos sumerge en el juego de la seducción en Persiana Americana. Es rock pop con una sofisticación y un ritmo que solo Soda Stereo podía lograr. Una canción eterna sobre el deseo y la mirada furtiva, ideal para las noches cargadas de mística en Radiochar.",
+      "cancion": "Persiana Americana",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jhonatan Luna",
+      "cancion": "Jhonatan Luna nos trae su sensibilidad pop en Pienso en tí. Es una canción suave, que habla del pensamiento recurrente hacia ese alguien especial que nos mueve el mundo. Música para los momentos de calma, dejándose llevar por una melodía que acaricia el corazón del que escucha.",
+      "cancion": "Pienso en tí",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Alejandro Sanz empezó a marcar su territorio con Pisando Fuerte. Es el pop español con toda la energía de la juventud y las ganas de comerse el mundo. Una canción que ya mostraba el talento y la personalidad de un artista que estaba destinado a cambiar las reglas del juego.",
+      "cancion": "Pisando Fuerte",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Intrepidos",
+      "cancion": "Los Intrepidos nos llevan de vacaciones a su Playa Azul con este ritmo fresco y divertido. Es pop rock ecuatoriano con mucha onda, ideal para sacudirse el estrés de la ciudad y dejarse llevar por la brisa imaginaria del mar. Una canción que te pone de buen humor inmediatamente.",
+      "cancion": "Playa Azul",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Marciano Cantero nos habla del compromiso real en Por el Resto. Es rock argentino con esa melancolía dulce que los hizo inmortales. Una canción que suena a lealtad y a la promesa de estar ahí, pase lo que pase, pateando las piedras de la vida hombro a hombro.",
+      "cancion": "Por el Resto",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Fito Cabrales nos da una lección de vida en Por la boca vive el pez. Es rock honesto, de bar, con un swing que te atrapa y una letra que te hace pensar en lo que decimos. Música para los que preferimos los hechos a las palabras vacías, con puro estilo.",
+      "cancion": "Por la boca vive el pez",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "Jorge González lanza un dardo directo en Por Qué No Se Van. Es rock chileno con una crítica mordaz a los que reniegan de su propia cultura por mirar hacia afuera. Un himno de identidad latinoamericana que nos invita a valorar lo nuestro con orgullo y mucha rebeldía.",
+      "cancion": "Por Qué No Se Van",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Eros Ramazzotti",
+      "cancion": "Eros Ramazzotti nos entrega la balada romántica definitiva en Por Ti Me Casare. Es pop italiano con ese sentimiento que cruza fronteras y nos hace creer en el amor para siempre. Un clásico que brilla por su sencillez y por la fuerza de una interpretación totalmente apasionada.",
+      "cancion": "Por Ti Me Casare",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aleks Syntek",
+      "cancion": "Aleks Syntek nos habla de la urgencia del reencuentro en Por Volverte A Ver. Es pop con una energía fuerte y un ritmo que te mantiene arriba. Una canción para los que hemos cruzado ciudades enteras solo por unos minutos con la persona que nos hace vibrar de verdad.",
+      "cancion": "Por Volverte A Ver",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jorge Luis Del Hierro",
+      "cancion": "Jorge Luis Del Hierro nos habla de las cadenas del sentimiento en Prisionero. Es pop con una energía arrolladora y una voz que se siente real en cada nota. Una canción sobre esa entrega total que a veces nos deja sin salida, pero que vivimos con toda la pasión.",
+      "cancion": "Prisionero",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "Ángeles Del Infierno nos traen su visión del Prisionero con toda la potencia del heavy metal español. Es el grito de libertad de quien se siente encerrado por el sistema o por sus propios miedos. Rock pesado con una fuerza que te obliga a romper cualquier cadena hoy mismo.",
+      "cancion": "Prisionero",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ilegales",
+      "cancion": "Jorge Ilegal nunca se anduvo con rodeos y Problema Sexual es la prueba. Es rock crudo, directo y con ese toque provocador del punk español que tanto nos gusta en Radiochar. Una descarga de energía sin filtros para los que no nos asustamos con las verdades de la vida.",
+      "cancion": "Problema Sexual",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Molotov",
+      "cancion": "Molotov soltó Puto como un grito de guerra contra la cobardía y la corrupción. Es la fuerza del rock mexicano que no se calla ante nada. Una canción para saltar, sudar y sacar toda la rabia contra los que no tienen el valor de hacer lo correcto en este mundo.",
+      "cancion": "Puto",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Fito Cabrales nos trae esta metáfora sobre lo que se detiene en Pájaros disecados. Es rock de autor con ese swing melancólico y elegante que te invita a la reflexión profunda. Música para los que caminamos observando lo que otros ignoran, buscando siempre la vida detrás de lo estático.",
+      "cancion": "Pájaros disecados",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Christina y Los Subterraneos",
+      "cancion": "Christina Rosenvinge nos envuelve en su atmósfera íntima con Pálido. Es pop rock español con una sensibilidad y una clase que te atrapan. Una canción que habla de la fragilidad y el deseo con una voz que suena a verdad y a calle madrileña en una tarde gris.",
+      "cancion": "Pálido",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Pericos",
+      "cancion": "El reggae rock argentino llega con Los Pericos y su Párate y Mira. Es una invitación a detenerse y observar la realidad con otros ojos, siempre con ese ritmo relajado que te pone de buen humor. Música para disfrutar de la vida sin tantas prisas ni rollos mentales.",
+      "cancion": "Párate y Mira",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Verde 70 nos habla de las diferencias que nos unen o nos separan en Que Distintos Tú Y Yo. Es rock pop ecuatoriano con una energía brutal y una melodía que se te queda grabada. Una canción para los que hemos aprendido que el amor también es aceptar al otro.",
+      "cancion": "Que Distintos Tú Y Yo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alex Ubago",
+      "cancion": "Alex Ubago irrumpió con Qué Pides Tú, una balada pop que conquistó todos los rincones con su honestidad y su sentimiento. Es la voz del romanticismo español directo, narrando las dudas y las esperanzas de quien se entrega por completo al amor sin esperar nada más que verdad.",
+      "cancion": "Qué Pides Tú",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Molotov",
+      "cancion": "Molotov le pone todo su descaro y ritmo a Rastaman- Dita. Es esa mezcla de rock, rap y funk mexicano que no tiene comparación. Una canción para dejarse llevar por el descontrol, el humor ácido y la potencia de una banda que siempre hace lo que le da la gana.",
+      "cancion": "Rastaman- Dita",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Maná empezó su leyenda con Rayando el Sol. Es el himno de la desesperación amorosa, una canción que marcó el inicio de una era dorada para el rock pop latino. Un clásico eterno que todos hemos cantado alguna vez con el alma en la mano y la mirada perdida.",
+      "cancion": "Rayando el Sol",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Esto es Eso",
+      "cancion": "Reflexiones nos trae ese sonido moderno y urbano de Esto es Eso. Es música que invita a pensar mientras te mantienes conectado con el ritmo de la ciudad. Un tema para esos momentos del programa donde la música y el pensamiento se funden en una sola vibración positiva.",
+      "cancion": "Reflexiones",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Sacados",
+      "cancion": "The Sacados nos trajeron la fiesta absoluta con Ritmo de la Noche. Es el pop bailable que nos recuerda que la noche es el territorio de la libertad y el movimiento. Una canción clásica para sacudirse cualquier mala vibra y entregarse por completo a la alegría de Radiochar.",
+      "cancion": "Ritmo de la Noche",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Verde 70 nos lleva de viaje por la Ruta Melancolía. Es rock pop ecuatoriano con sabor a carretera y a sentimientos que se estiran con los kilómetros. Una canción ideal para los que encontramos en el viaje la mejor forma de procesar lo que nos pasa por dentro.",
+      "cancion": "Ruta Melancolía (A 1000km)",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "Elefante nos trae la dulzura amarga en Sabor a Chocolate. Es rock pop mexicano con una energía rítmica increíble y una letra que te atrapa desde el primer verso. Una canción para disfrutar de los matices de la vida, celebrando lo bueno incluso cuando tiene ese toque de amargura.",
+      "cancion": "Sabor a Chocolate",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Compañia Ilimitada",
+      "cancion": "Compañia Ilimitada nos entrega esta versión de Santa Lucía con toda la elegancia del rock pop colombiano. Es un homenaje a los clásicos con una identidad propia, demostrando que las grandes canciones siempre encuentran una forma nueva de brillar en el aire cuando hay talento y mucho corazón.",
+      "cancion": "Santa Lucía",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gian Marco",
+      "cancion": "Gian Marco nos habla de la superación con una sonrisa en Se Me Olvidó. Es pop latino con mucha clase, narrando ese momento liberador donde te das cuenta de que el pasado ya no pesa. Una canción fresca para los que decidimos seguir adelante sin mirar atrás con rencor.",
+      "cancion": "Se Me Olvidó",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Daniel Betancourth",
+      "cancion": "Daniel Betancourth le pone ritmo y elegancia al aire con Seductora. Es pop ecuatoriano con una energía moderna y una interpretación vocal que te atrapa. Una canción para dejarse llevar por la química y el movimiento, celebrando la atracción con todo el estilo que nos define aquí.",
+      "cancion": "Seductora",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "Jorge González lanza su dardo contra la comercialización de todo en Sexo. Es rock chileno con un mensaje directo, inteligente y rítmico. Una canción que nos pone a pensar mientras nos hace movernos, cuestionando los valores de una sociedad que todo lo intenta vender como mercancía barata.",
+      "cancion": "Sexo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aleks Syntek",
+      "cancion": "Aleks Syntek marcó una época con Sexo, Pudor y Lágrimas. Es pop rock mexicano con una mística y una clase increíbles, capturando la complejidad de las relaciones modernas. Un tema que suena a ciudad, a dudas y a esa búsqueda constante de conexión real en medio del ruido.",
+      "cancion": "Sexo, Pudor y Lágrimas",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TercerMundo",
+      "cancion": "TercerMundo nos trae la melancolía del rock ecuatoriano en Si Dijeras. Es una canción que habla de las posibilidades perdidas y de lo que pudo ser, narrada con esa honestidad y ese sentimiento que siempre ha caracterizado a la banda. Música para los que todavía creen en las palabras.",
+      "cancion": "Si Dijeras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cacería de Lagartos",
+      "cancion": "Cacería de Lagartos nos trae su fuerza alternativa con Si Entendieras. Es rock ecuatoriano con mucha personalidad, directo y con una energía que te sacude el pensamiento. Una canción para los que preferimos la autenticidad de la calle antes que las modas pasajeras del pop convencional de radio.",
+      "cancion": "Si Entendieras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mano Negra",
+      "cancion": "Manu Chao y la Mano Negra nos enseñan a resistir en Si La Vida Me Da Palo. Es rock mestizo con toda la fuerza del asfalto y la rebeldía global. Una canción para los que no nos rendimos ante los golpes y seguimos bailando con toda nuestra energía intacta.",
+      "cancion": "Si La Vida Me Da Palo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "David Summers se pone romántico en Si no te tengo a ti. Es pop rock español que habla de la importancia vital del otro, con esa melodía que ya es parte de nuestros recuerdos. Una canción suave para los momentos de reflexión amorosa en medio de la programación de hoy.",
+      "cancion": "Si no te tengo a ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Control Machete",
+      "cancion": "¡Si señor! Control Machete puso el hip hop mexicano en lo más alto con este tema. Es la actitud del norte, dura, directa y con un ritmo que te golpea el pecho. Rap con espíritu de rock para los que caminamos la ciudad con la cabeza bien arriba y orgullosos.",
+      "cancion": "Si Señor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Signos Diferentes",
+      "cancion": "Signos Diferentes nos habla del sentimiento callado en Si supieras. Es rock pop con un aire fresco y honesto, narrando lo que a veces no nos atrevemos a decir de frente. Música hecha con alma para conectar con quienes también guardan secretos en algún rincón de su propio corazón.",
+      "cancion": "Si supieras",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Alejandro Sanz captura la magia de la conexión en Si Tú Me Miras. Es pop español con esa sensibilidad y esa lírica que lo hicieron único desde sus inicios. Una canción que habla del poder de la mirada y de lo que se transmite sin necesidad de mediar palabra alguna.",
+      "cancion": "Si Tú Me Miras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "La balada heavy metal por excelencia de Ángeles Del Infierno. Si tú no estás aquí es una descarga de sentimiento y potencia vocal que te atraviesa el alma. Rock pesado para los que amamos con una intensidad que quema, celebrando la ausencia con toda la garra del metal.",
+      "cancion": "Si tú no estás aquí",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Bosé",
+      "cancion": "Miguel Bosé nos entrega una obra maestra de la nostalgia en Si tú no vuelves. Es pop con una profundidad y una clase inmensas, narrando el vacío del mundo cuando falta quien amamos. Una interpretación contenida y poderosa que se queda flotando en el aire de Radiochar para siempre.",
+      "cancion": "Si tú no vuelves",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Fabulosos Cadillacs",
+      "cancion": "Vicentico nos guía en esta caminata nocturna con Siguiendo la Luna. Es reggae rock argentino con una mística y una elegancia inigualables. Una canción para los noctámbulos, para los que encontramos en la noche y en la música nuestro verdadero lugar en este mundo tan extraño.",
+      "cancion": "Siguiendo la Luna",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Papá Changó",
+      "cancion": "Papá Changó le pone sabor y buena vibra al aire con Silueta. Es esa mezcla de reggae, rock y ritmos latinos que nos hace sentir orgullosos de lo que creamos en nuestra propia tierra. Una canción fresca, bailable y llena de esa energía positiva que tanto necesitamos en la calle.",
+      "cancion": "Silueta",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Rodriguez",
+      "cancion": "Andrés Calamaro y Los Rodriguez nos regalaron este himno de libertad en Sin documentos. Es el rock que suena a rumba, a callejón y a ganas de vivir sin pedir permiso. Una canción eterna que nos invita a cruzar cualquier frontera por lo que realmente amamos en la vida.",
+      "cancion": "Sin documentos",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ekhymosis",
+      "cancion": "Juanes y Ekhymosis nos hablan de cerrar capítulos con Sin Rencores. Es rock colombiano con un sentimiento honesto, narrando el final de una historia con la madurez de quien sabe que el rencor solo pesa en el alma. Música para seguir adelante con la frente en alto y luz propia.",
+      "cancion": "Sin Rencores",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Rancheros",
+      "cancion": "Los Rancheros nos traen el sentimiento del rock pop argentino en Sin Solución. Es una canción directa, con esa melancolía que te hace compañía cuando sientes que las cosas no tienen un arreglo fácil. Música para los que aceptamos la realidad tal cual viene, con toda su crudeza y verdad.",
+      "cancion": "Sin Solución",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "David Summers nos habla de la vida que sigue en Sin ti. Es pop rock español con ese toque de nostalgia que se siente cuando el vacío se hace presente en la rutina. Una canción suave para acompañar los pensamientos de quienes hoy caminan solos pero con la música de su lado.",
+      "cancion": "Sin ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos diagnostican su Sindrome de Amor con todo el ritmo de Rosario. Es rock pop bailable, con ese coro contagioso que ya es parte de nuestra identidad fiestera latina. Una canción para disfrutar sin límites y dejarse llevar por la buena onda que siempre traen los Vampiros.",
+      "cancion": "Sindrome de Amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis",
+      "cancion": "Fito Cabrales nos dice que a veces Sobra la luz para ver las verdades de la vida. Es rock honesto, de bar, con ese swing inconfundible que te invita a mirar adentro con calma. Música para los nocturnos, para los que preferimos las sombras para entender lo que realmente somos.",
+      "cancion": "Sobra la luz",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Van Mozart",
+      "cancion": "Van Mozart nos trae el sentimiento del pop rock ecuatoriano en Sobre Tu Piel. Es una canción que habla de la conexión física y emocional con una fuerza vocal notable. Música hecha en casa para conectar con el sentimiento de quienes vivimos el amor con toda la intensidad posible hoy.",
+      "cancion": "Sobre Tu Piel",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Victor Heredia",
+      "cancion": "Victor Heredia nos entrega un himno de resistencia y humanidad en Sobreviviendo. Es una canción que trasciende géneros, hablando de la lucha por la vida y la dignidad en medio del caos. Un tema profundo que nos recuerda que, a pesar de todo, seguimos aquí, pateando piedras y resistiendo con fe.",
+      "cancion": "Sobreviviendo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ekhymosis",
+      "cancion": "Juanes nos habla de la soledad elegida o impuesta en Solo de Ekhymosis. Es rock colombiano con una energía fuerte y una letra que nos pega en la realidad. Una canción para los que encontramos en la propia compañía un espacio para entendernos mejor antes de volver a salir al mundo.",
+      "cancion": "Solo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Marciano Cantero nos pide una tregua en Solo Dame Otra Oportunidad. Es rock argentino con ese sentimiento de humildad y esperanza que los caracteriza. Una canción para los que creemos en las segundas vueltas y estamos dispuestos a todo por recuperar lo que realmente vale la pena en la vida.",
+      "cancion": "Solo Dame Otra Oportunidad",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Miguel Bosé",
+      "cancion": "Miguel Bosé le pone voz a la obsesión dulce en Solo pienso en ti. Es pop con una clase inmensa, narrando ese estado de ánimo donde una sola persona ocupa todo nuestro pensamiento. Una interpretación elegante que ya es parte fundamental del ADN romántico de nuestra música en español clásica.",
+      "cancion": "Solo pienso en ti",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bajo Sueños",
+      "cancion": "Bajo Sueños nos trae la intimidad del rock con Solo Tu Solo Yo. Es una canción con una fuerza vocal inmensa y una atmósfera envolvente que te invita a la conexión total. Rock ecuatoriano hecho con el alma para los que vivimos el amor de forma directa y apasionada hoy.",
+      "cancion": "Solo Tu Solo Yo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Intrepidos",
+      "cancion": "Los Intrepidos celebran la libertad en Soltero. Es pop rock ecuatoriano divertido, con un ritmo contagioso que te pone de buen humor de inmediato. Una canción para los que disfrutan de su propio camino sin ataduras, celebrando la vida con alegría y mucha actitud rebelde y auténtica.",
+      "cancion": "Soltero",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ángeles Del Infierno",
+      "cancion": "El metal español se vuelve místico con Sombras en la oscuridad de Ángeles Del Infierno. Es potencia, es misterio y es esa fuerza imparable del heavy metal que nos identifica a los que caminamos por el lado más intenso de la vida. Rock pesado para despertar los sentidos de verdad hoy.",
+      "cancion": "Sombras en la oscuridad",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ilegales",
+      "cancion": "¡Soy un macarra, soy un hortera! Jorge Ilegal lanzó este grito de guerra contra la cursilería. Es punk rock español directo, sucio y con una actitud que te vuela la cabeza. Una canción para los que no pedimos permiso para ser como somos y disfrutamos de nuestra propia autenticidad callejera.",
+      "cancion": "Soy un Macarra",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Zoé",
+      "cancion": "León Larregui nos envuelve en su sueño con Soñé. Es pop alternativo mexicano con una atmósfera hipnótica y elegante que te hace flotar sobre el asfalto. Una canción hermosa, moderna y eterna para los que encontramos en la música el mejor refugio para nuestros propios sueños urbanos hoy.",
+      "cancion": "Soñé",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "A.B. Quintanilla III, Kumbia All Starz",
+      "cancion": "A.B. Quintanilla le pone ritmo y diversión al aire con Speedy Gonzales. Es esa mezcla de pop latino con cumbia que nos pone a todos a bailar sin prejuicios. Una canción fresca, bailable y llena de esa alegría latina que corre por nuestras venas con mucha fuerza y sabrosura pura.",
+      "cancion": "Speedy Gonzales",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bersuit Vergarabat",
+      "cancion": "La Bersuit lanzó este dardo directo contra la corrupción en Sr. Cobranza. Es rock argentino con una carga política y social brutal, narrada con toda la irreverencia y la fuerza de la calle. Un grito de protesta que todavía hoy nos sacude el pensamiento y nos invita a la resistencia.",
+      "cancion": "Sr. Cobranza",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mecano",
+      "cancion": "Mecano nos habla de la identidad y la confusión con una clase magistral en Stereosexual. Es pop inteligente, narrado con la elegancia de los hermanos Cano y la voz inconfundible de Ana Torroja. Una canción que rompió esquemas en su momento y que sigue sonando moderna y necesaria hoy en día.",
+      "cancion": "Stereosexual",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gerardo",
+      "cancion": "Gerardo nos invita a no perder la esperanza en Sueña. Es pop con ese toque urbano de los noventa que nos hizo bailar y reflexionar al mismo tiempo. Una canción para los que seguimos creyendo que los sueños son el motor de nuestra vida, pateando piedras hasta lograrlos todos hoy.",
+      "cancion": "Sueña",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "¡Suéltate el pelo y ven con nosotros! Hombres G nos trajeron la fiesta absoluta con este tema. Es pop rock español divertido, directo y con esa chispa de alegría que te alegra el día. Una invitación a dejar la seriedad de lado y disfrutar de la vida con libertad absoluta.",
+      "cancion": "Suéltate el pelo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Azul Violeta",
+      "cancion": "Azul Violeta nos habla de vivir el presente en Sólo Por Hoy. Es rock pop mexicano con una elegancia y un sonido refinado que te atrapa desde el primer segundo. Una canción para los que entendemos que el ahora es lo único que realmente tenemos para disfrutar y ser felices.",
+      "cancion": "Sólo Por Hoy",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Verde 70 nos habla del equilibrio de la vida en Tanto Ganas Tanto Pierdes. Es rock pop ecuatoriano con una energía melódica increíble y una letra que te hace pensar en nuestras propias decisiones cotidianas. Música hecha con alma para los que vivimos el camino con los ojos bien abiertos.",
+      "cancion": "Tanto Ganas Tanto Pierdes",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TercerMundo",
+      "cancion": "TercerMundo nos trae la nostalgia de las pequeñas cosas en Tarjetitas. Es rock ecuatoriano con ese sentimiento de barrio que nos identifica a todos. Una canción para recordar lo que realmente vale la pena en la vida, valorando los detalles que nos conectan con los demás de forma real.",
+      "cancion": "Tarjetitas",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TercerMundo",
+      "cancion": "TercerMundo nos entrega su promesa eterna en Te Amaré. Es una de las baladas más queridas del rock ecuatoriano, narrada con una honestidad y una fuerza que te llegan al alma. Música para los que creemos en el amor de verdad, el que se construye día a día en la calle.",
+      "cancion": "Te Amaré",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Sergio Dalma, Chenoa",
+      "cancion": "Sergio Dalma se une a Chenoa para esta versión poderosa de Te amo. Es pop español con una fuerza vocal inmensa y una pasión que desborda en cada nota. Una canción para los que no temen decir lo que sienten con toda la garra y el sentimiento que merece el amor.",
+      "cancion": "Te amo",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Grupo M.A.M",
+      "cancion": "Grupo M.A.M nos pone el ritmo necesario en Te Llevaré Al Cielo. Es pop con una energía fresca y bailable que nos recuerda que la música es el mejor transporte para nuestros sentimientos más elevados. Una canción para disfrutar del momento y dejarse llevar por la vibración positiva hoy.",
+      "cancion": "Te Llevaré Al Cielo",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Maná le canta al despecho absoluto en Te Lloré Un Río. Es pop rock con ese sentimiento mexicano que te hace sentir cada lágrima en la voz de Fher. Una canción para los que hemos sufrido por amor pero decidimos que es hora de dejar de llorar y seguir adelante.",
+      "cancion": "Te Lloré Un Río",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jaguares",
+      "cancion": "Saúl Hernández toma este clásico de Juan Gabriel y lo lleva a su universo místico con Jaguares. Te Lo Pido por Favor en versión rock es una súplica cargada de alma y respeto por nuestras raíces. Música profunda para los que valoramos la honestidad del sentimiento latino hoy mismo.",
+      "cancion": "Te Lo Pido por Favor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gian Marco",
+      "cancion": "Gian Marco nos habla de la imposibilidad de ocultar lo que sentimos en Te Mentiría. Es pop latino con una clase inmensa y una letra que te llega directo al centro de la verdad. Una canción para los que preferimos la honestidad brutal antes que vivir engañando al propio corazón.",
+      "cancion": "Te Mentiría",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "David Summers se pone directo y vulnerable en Te necesito. Es pop rock español que habla de la carencia del otro con esa sencillez que los hizo gigantes. Una canción para los momentos donde la compañía de alguien especial es lo único que realmente nos hace falta para estar bien.",
+      "cancion": "Te necesito",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Amaral, Beto Cuevas",
+      "cancion": "Cuando la voz de Eva Amaral se une a la de Beto Cuevas, el resultado es este Te necesito cargado de electricidad y sentimiento. Es rock pop de alto nivel, una colaboración que nos eriza la piel y nos recuerda que la música es el mejor puente entre dos almas inquietas.",
+      "cancion": "Te necesito",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "La declaración de amor más famosa del pop rock español. Hombres G crearon un himno eterno con Te quiero. Es la sencillez hecha canción, narrada con esa frescura que nunca envejece. Un tema para dedicar, para cantar a gritos y para recordar que el amor también es rock.",
+      "cancion": "Te quiero",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Mosca",
+      "cancion": "La Mosca le pone descaro y ritmo al deseo en Te Quiero Comer La Boca. Es ska-rock argentino divertido, directo y con esa energía que te pone a bailar de inmediato. Una canción para los que no se andan con rodeos y viven su pasión con toda la alegría posible.",
+      "cancion": "Te Quiero Comer La Boca",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos traen su Te quiero tanto con ese estilo inconfundible de Rosario. Es rock pop bailable que te llena de buena vibra y te invita a disfrutar del amor sin dramas. Una canción clásica para los que amamos el ritmo y la autenticidad de los Vampiros.",
+      "cancion": "Te quiero tanto",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Onda Vaselina",
+      "cancion": "Onda Vaselina nos trajo la dulzura del pop juvenil con Te Quiero Tanto, Tanto. Es una canción que marcó a toda una generación con su melodía pegajosa y su letra romántica. Un clásico de los noventa que nos recuerda los primeros amores y la inocencia de una época inolvidable.",
+      "cancion": "Te Quiero Tanto, Tanto",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Van Mozart",
+      "cancion": "Van Mozart nos entrega su promesa en Te Voy Amar. Es pop rock ecuatoriano con una energía melódica fuerte y una interpretación que se siente real. Música hecha para conectar con el sentimiento de quienes hoy decidimos apostarlo todo por lo que nos dicta el propio y libre corazón.",
+      "cancion": "Te Voy Amar",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Marciano Cantero nos cuenta la historia de ese encuentro fugaz en Te Ví en un Tren. Es rock argentino con ese swing que te hace mover la cabeza mientras te pierdes en la letra. Una canción eterna sobre el destino y las miradas que se cruzan en la ciudad.",
+      "cancion": "Te Ví en un Tren",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "David Summers nos rompe el alma con Temblando. Es una de las baladas más hermosas y dolorosas del pop rock español, narrando el final de una historia a través del teléfono. Una interpretación contenida y desgarradora que ya es parte fundamental de nuestra propia memoria emocional en Radiochar.",
+      "cancion": "Temblando",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Verde 70",
+      "cancion": "Verde 70 nos lanza una advertencia rítmica en Ten Cuidado!. Es rock pop ecuatoriano con una energía arrolladora y un sonido que te mantiene alerta. Una canción para los que caminamos por la ciudad con los ojos bien abiertos, sabiendo que cada paso tiene su propia consecuencia hoy mismo.",
+      "cancion": "Ten Cuidado!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ilegales",
+      "cancion": "Jorge Ilegal nos advierte que vienen Tiempos Nuevos, Tiempos Salvajes. Es rock español con una garra y una lucidez brutales. Una canción que nos invita a armarnos de valor ante la incertidumbre, recordándonos que el rock es nuestra mejor herramienta para enfrentar cualquier realidad que nos toque vivir.",
+      "cancion": "Tiempos Nuevos, Tiempos Salvajes",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos hablan del pasado en Todo lo que fue. Es rock de Rosario con esa melancolía bailable que tanto nos gusta, recordándonos que lo que vivimos nos hace quienes somos hoy. Una canción para cerrar capítulos con una sonrisa y seguir pateando piedras con toda la actitud.",
+      "cancion": "Todo lo que fue",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "David Summers",
+      "cancion": "David Summers en solitario nos trae Todo lo que puedo decir. Es pop con ese toque romántico y honesto que lo caracteriza, hablándonos desde la sinceridad más absoluta del corazón. Una canción suave para acompañar los momentos de calma y verdad en medio del ruido de la ciudad.",
+      "cancion": "Todo lo que puedo decir",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Mosca",
+      "cancion": "La Mosca nos recuerda una verdad universal: Todos Tenemos Un Amor. Es ska-rock argentino con ese ritmo festivo que te invita a celebrar la conexión con los demás. Una canción para brindar por los que están, por los que se fueron y por los que vendrán en el camino.",
+      "cancion": "Todos Tenemos Un Amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Diego Torres",
+      "cancion": "Diego Torres nos dio el lema de vida con Tratar de Estar Mejor. Es pop rock con una energía positiva inmensa, invitándonos a levantarnos después de cada caída. Una canción que suena a esperanza real, de la que se construye pateando piedras y buscando siempre la luz en el asfalto.",
+      "cancion": "Tratar de Estar Mejor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos traen su mirada urbana con Travestis. Es rock de Rosario con ese ritmo clásico que te obliga a moverte mientras te cuenta historias de la ciudad de noche. Una canción directa, sin vueltas, que forma parte de ese sonido auténtico que tanto nos gusta de Vilma Palma.",
+      "cancion": "Travestis",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "Jorge González nos lleva en el Tren Al Sur con una de las melodías más icónicas del rock chileno. Es la nostalgia de volver a casa, envuelta en un sonido vanguardista que rompió todos los moldes. Una canción eterna que nos conecta con nuestras raíces y con el deseo de libertad.",
+      "cancion": "Tren Al Sur",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Delinquent Habits",
+      "cancion": "El hip hop chicano golpea con Tres Delinquentes. Es ese sonido de la frontera, duro y con mucho estilo, que nos recuerda que nuestra identidad latina tiene mil formas de expresarse. Rap con actitud urbana para los que caminamos la ciudad con orgullo y ojos bien abiertos.",
+      "cancion": "Tres Delinquentes",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "El Tri",
+      "cancion": "Alex Lora nos entrega la Triste canción de amor más rockera de todas. Es un clásico del rock urbano mexicano, cantado con esa voz que es puro asfalto y sentimiento. Una canción para los que hemos amado en los rincones más oscuros de la ciudad, resistiendo siempre con el rock.",
+      "cancion": "Triste canción",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fito y Fitipaldis, Robe",
+      "cancion": "Fito Cabrales se une a Robe de Extremoduro para entregarnos Trozos de cristal. Es el encuentro de dos gigantes del rock español, una canción con una letra desgarradora y una música que te vuela la cabeza. Rock con mayúsculas para los que sentimos el peso de cada palabra.",
+      "cancion": "Trozos de cristal",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soda Stereo",
+      "cancion": "Cerati nos pide un poco de calma en medio del caos con Trátame Suavemente. Es una de las baladas más hermosas y elegantes de Soda Stereo, narrando la necesidad de ternura en un mundo que a veces es demasiado frío. Un clásico eterno que suena a puro sentimiento refinado.",
+      "cancion": "Trátame Suavemente",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Estopa",
+      "cancion": "Los hermanos Muñoz le ponen rumba y fuego al aire con Tu Calorro. Es la esencia del barrio español hecha música, con esa alegría rebelde y auténtica que nos pone a todos a saltar. Una canción que suena a calle, a sol y a esa chispa única de Estopa.",
+      "cancion": "Tu Calorro",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mon Laferte",
+      "cancion": "Mon Laferte nos desgarra el alma con Tu Falta De Querer. Es el bolero rock moderno con una potencia vocal inmensa que te atraviesa el pecho. Una canción para los que hemos vivido el desprecio amoroso con toda la intensidad, sacándolo todo afuera a través de un grito de libertad.",
+      "cancion": "Tu Falta De Querer",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Francisco Terán",
+      "cancion": "Francisco Terán nos habla de encontrar el sitio propio en Tu Lugar. Es pop ecuatoriano con una sensibilidad especial y una interpretación que te invita a la reflexión. Música hecha con alma para los que seguimos buscando nuestro propio espacio en medio del ruido constante de la ciudad.",
+      "cancion": "Tu Lugar",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Enanitos Verdes",
+      "cancion": "Marciano Cantero nos habla de la nostalgia del pasado en Tus Viejas Cartas. Es rock argentino con ese sentimiento de melancolía que te hace compañía mientras recuerdas lo que fue. Una canción hermosa, honesta y eterna para los que guardamos pedazos de nuestra historia en papel o en canciones.",
+      "cancion": "Tus Viejas Cartas",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Julio Nava",
+      "cancion": "Julio Nava se pone directo en Tú. Es rock colombiano con mucha fuerza y una interpretación vocal que te atrapa desde el inicio. Una canción que habla de la importancia del otro con toda la garra de quien sabe que la música es el mejor camino para decir la verdad.",
+      "cancion": "Tú",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jorge Luis Del Hierro",
+      "cancion": "Jorge Luis Del Hierro nos habla del poder curativo del amor en Tú Me Vas Sanando. Es pop con una energía positiva y una voz que se siente real en cada nota. Una canción para los que hemos encontrado en alguien más el bálsamo necesario para seguir pateando piedras con fe.",
+      "cancion": "Tú Me Vas Sanando",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aleks Syntek",
+      "cancion": "Aleks Syntek le pone ritmo y onda al aire con Tú Necesitas. Es pop rock mexicano con ese estilo refinado y bailable que lo caracteriza. Una canción para dejarse llevar por el movimiento y recordar que a veces lo que necesitamos es simplemente una buena melodía para seguir adelante.",
+      "cancion": "Tú Necesitas",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Christina y Los Subterraneos",
+      "cancion": "La lealtad femenina se hace música en Tú Por Mí de Christina Rosenvinge. Es pop rock español con una sensibilidad y una clase que te atrapan. Una canción que suena a amistad verdadera, a calle madrileña y a esa complicidad que nos mantiene a salvo en medio de la tormenta.",
+      "cancion": "Tú Por Mí",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Seguridad Social",
+      "cancion": "Seguridad Social toma el clásico de Nino Bravo y le inyecta toda la fuerza del rock español. Un beso y una flor en esta versión es pura energía y sentimiento, demostrando que las grandes canciones no tienen tiempo si se cantan con toda la garra de nuestra identidad.",
+      "cancion": "Un beso y una flor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Los Vampiros nos traen Un Camino Hasta Vos con ese sello inconfundible de Rosario. Es rock pop bailable que te llena de buena vibra y te invita a disfrutar del amor sin dramas. Una canción clásica para los que amamos el ritmo y la autenticidad de los Vampiros hoy.",
+      "cancion": "Un Camino Hasta Vos",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tranzas",
+      "cancion": "Douglas Bastidas nos habla de la esperanza después del dolor en Un nuevo amor. Es una de las baladas más icónicas de Tranzas y del pop rock ecuatoriano. Música que suena a verdad, a renovación y a esa honestidad brutal que se siente cuando decidimos volver a amar.",
+      "cancion": "Un nuevo amor",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "David Summers nos dice que a veces solo hace falta Un par de palabras para cambiarlo todo. Es pop rock español con ese toque de frescura y romanticismo que los hizo gigantes. Una canción suave para acompañar los pensamientos de quienes hoy caminan buscando una respuesta en la ciudad.",
+      "cancion": "Un par de palabras",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pedro Suárez-Vértiz",
+      "cancion": "Pedro Suárez-Vértiz nos invita a brindar en Un Vino, Una Cerveza. Es rock peruano con ese estilo relajado y directo que nos encanta. Una canción para celebrar la vida, los amigos y esos momentos donde la única regla es pasarla bien y olvidarse de los problemas de la calle.",
+      "cancion": "Un Vino, Una Cerveza",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Melendi",
+      "cancion": "Melendi nos trae su rumba rock con Un Violinista En Tu Tejado. Es pop español con mucha personalidad y una letra que te atrapa con su ingenio. Una canción para los que preferimos la autenticidad y el ritmo antes que las modas pasajeras, celebrando la vida con mucha actitud rebelde.",
+      "cancion": "Un Violinista En Tu Tejado",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los De Adentro",
+      "cancion": "Los De Adentro nos entregan esta pieza cargada de sentimiento en Una Cancion. Es rock pop colombiano con una melodía que te llega directo al alma y una interpretación que se siente real. Música hecha para conectar con quienes hoy decidimos apostarlo todo por lo que nos dicta el corazón.",
+      "cancion": "Una Cancion",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Hombres G le rinden homenaje a esa persona especial en Una mujer de bandera. Es pop rock español divertido, directo y con esa chispa de alegría que David Summers siempre supo proyectar. Una canción para celebrar a quienes nos hacen vibrar con su sola presencia en nuestra vida cotidiana.",
+      "cancion": "Una mujer de bandera",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jeremías",
+      "cancion": "Uno Y Uno Igual A Tres",
+      "frase": "Jeremías nos trae esa lógica propia del amor que no entiende de matemáticas con Uno Y Uno Igual A Tres. Es pop con una cadencia suave pero una letra que te pone a pensar en las vueltas que da el corazón. Música para los que vivimos nuestras propias reglas sin importar lo que diga el resto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Fabulosos Cadillacs",
+      "cancion": "Vasos Vacíos",
+      "frase": "Vicentico y la inmensa Celia Cruz se unieron para regalarnos Vasos Vacíos. Es la unión de dos mundos, de dos fuerzas latinas que suenan a eternidad. Una canción para brindar por lo que se fue y aceptar que la vida, con sus ausencias, sigue siendo un ritmo que hay que saber bailar con orgullo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Venezia",
+      "frase": "David Summers nos lleva de viaje a su manera con Venezia. Es el lado más divertido y teatral de Hombres G, recordándonos que el rock también es para reírse y soltar la ironía. Un clásico que nunca falta en las calles de Radiochar cuando queremos bajarle un poco a la seriedad del asfalto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Verano traidor",
+      "frase": "El calor de Rosario se siente en Verano traidor. Los Vampiros le cantan a ese amor que se quema rápido pero deja una marca profunda. Es rock pop bailable con ese sello de los noventa que nos hace sentir que el tiempo no ha pasado, siempre con la frente en alto y el ritmo en las botas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Kraken",
+      "cancion": "Vestido De Cristal",
+      "frase": "El Titán Elkin Ramírez nos dejó esta joya de la lírica pesada con Vestido De Cristal. Es rock épico colombiano que nos habla de la fragilidad humana y la fuerza del espíritu. Una voz que sigue tronando en el cielo de los rockeros auténticos, recordándonos que nuestra esencia es indestructible.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Visite nuestro bar",
+      "frase": "La invitación está abierta: Visite nuestro bar con los Hombres G. Es pop rock español que celebra la bohemia y la amistad sin filtros. Una canción para los que encontramos en una mesa y una buena melodía el mejor refugio contra el ruido de un mundo que a veces no nos entiende.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Viviendo deprisa",
+      "frase": "Alejandro Sanz capturó esa urgencia de la juventud en Viviendo deprisa. Es el sonido de los inicios, cuando el hambre de mundo se siente en cada acorde. Una canción para los que no tenemos freno y preferimos quemarnos en el intento antes que quedarnos sentados viendo cómo la vida se nos pasa de largo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Maná",
+      "cancion": "Vivir Sin Aire",
+      "frase": "Hay amores que te asfixian y otros que son el oxígeno que te falta. Maná lo dijo claro en Vivir Sin Aire. Es la balada que marcó a toda una generación por su honestidad y ese sentimiento de entrega absoluta. Rock pop mexicano que suena a verdad en cada rincón de la ciudad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Chaucha Kings",
+      "cancion": "Volverte a Ver",
+      "frase": "Los Chaucha Kings le ponen ese sabor nuestro a Volverte a Ver. Es música hecha en casa, con esa mezcla de rock y fiesta que nos define. Una canción que suena a reencuentro, a calle y a esas ganas de volver a conectar con lo que realmente nos hace vibrar aquí en nuestra tierra.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Juanes",
+      "cancion": "Volverte A Ver",
+      "frase": "Juanes nos trajo este himno de esperanza y deseo con Volverte A Ver. Es la voz de quien ha estado lejos y sabe lo que vale el abrazo de los suyos. Un tema cargado de esa energía colombiana positiva que nos invita a valorar los encuentros reales por encima de cualquier otra cosa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Hombres G",
+      "cancion": "Voy a pasármelo bien",
+      "frase": "No hay mejor declaración de principios que Voy a pasármelo bien. Hombres G nos enseñaron que la actitud es lo único que realmente conrolamos. Una canción para salir a la calle con la cabeza arriba, ignorando a los que intentan apagar nuestro brillo. ¡Hoy el plan es ser libres y ya!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Vilma Palma e Vampiros",
+      "cancion": "Voy a Vos",
+      "frase": "Esa determinación del deseo suena fuerte en Voy a Vos de Vilma Palma. Es rock pop directo, con ese ritmo que te empuja a buscar lo que quieres sin dar tantas vueltas. Los Vampiros saben cómo ponerle música a la cacería urbana del corazón con clase y mucha energía.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Christina y Los Subterraneos",
+      "cancion": "Voy en un coche",
+      "frase": "Christina Rosenvinge nos invita a escapar de la rutina con Voy en un coche. Es pop rock español con esa frescura rebelde de quien solo necesita un volante y buena música para sentirse dueña del mundo. Una canción para las que no esperamos a nadie y trazamos nuestra propia ruta en el asfalto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "We Are Sudamerican Rockers",
+      "frase": "Jorge González y Los Prisioneros golpearon la mesa con We Are Sudamerican Rockers. Es el manifiesto de nuestra identidad, el grito de que aquí también se hace rock con huevos y sentido. Una canción que nos recuerda que no necesitamos copiar a nadie para ser los dueños de nuestra propia historia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Arena Hash",
+      "cancion": "Y es que sucede así",
+      "frase": "Pedro Suárez-Vértiz y Arena Hash nos trajeron este ritmo inconfundible con Y es que sucede así. Es el rock peruano que se atrevió a sonar distinto, con una letra que retrata lo inesperado de la vida. Música para los que aceptamos que a veces las cosas simplemente pasan y hay que fluir.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alejandro Sanz",
+      "cancion": "Y Si Fuera Ella",
+      "frase": "La búsqueda eterna de ese ideal se siente en Y Si Fuera Ella. Alejandro Sanz nos entrega una interpretación cargada de drama y una lírica que te vuela la cabeza. Es pop con alma, para esos momentos donde nos cuestionamos si lo que tenemos en frente es realmente lo que hemos estado esperando siempre.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fausto Miño",
+      "cancion": "Y Sin Embargo",
+      "frase": "Fausto Miño nos habla de las contradicciones del querer en Y Sin Embargo. Es pop ecuatoriano con una sensibilidad muy nuestra, narrando esas luchas internas donde el corazón siempre tiene la última palabra. Música para los que seguimos apostando por el sentimiento a pesar de los tropezones de la calle.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Chayanne",
+      "cancion": "Y Tú Te Vas",
+      "frase": "Chayanne nos rompió el alma con la honestidad de Y Tú Te Vas. Es esa balada que retrata el vacío que queda cuando alguien decide seguir su camino lejos del nuestro. Una interpretación potente que se convirtió en el refugio de muchos cuando la soledad se siente más pesada que el asfalto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Moderatto",
+      "cancion": "Ya Lo Veía Venir",
+      "frase": "Moderatto le pone todo el glam y la ironía al despecho con Ya Lo Veía Venir. Es rock mexicano para cantar a gritos, sin dramas, aceptando la derrota con una sonrisa cínica y mucha distorsión. Porque si nos van a engañar, que sea con una banda sonora que nos haga sentir vivos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Kudai",
+      "cancion": "Ya Nada Queda",
+      "frase": "Kudai le dio voz a la melancolía de una generación en Ya Nada Queda. Es el pop rock chileno que supo capturar ese sentimiento de final inevitable. Una canción para los que hemos tenido que aprender a soltar cuando ya no hay nada más que rescatar entre los escombros de un amor.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Victimas Del Doctor Cerebro",
+      "cancion": "Ya Tus Amigos",
+      "frase": "La irreverencia mexicana estalla con Victimas Del Doctor Cerebro y Ya Tus Amigos. Es ska, es rock y es pura actitud urbana para mandar todo al carajo con ritmo. Una canción para los que no aguantamos hipocresías y preferimos la verdad cruda de la calle antes que las apariencias baratas de salón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Reik",
+      "cancion": "Yo Quisiera",
+      "frase": "Reik capturó ese sentimiento de la 'friendzone' mucho antes de que se llamara así en Yo Quisiera. Es pop latino con una letra sencilla pero que duele porque es real. Una canción para los que hemos guardado silencio por miedo a perder lo poco que nos queda de esa persona especial.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "La Mosca",
+      "cancion": "Yo Te Quiero Dar",
+      "frase": "La fiesta no tiene fin cuando suena Yo Te Quiero Dar de La Mosca. Es ese ritmo contagioso que te obliga a saltar y olvidarte de todo lo malo. Una descarga de energía argentina para celebrar que, pase lo que pase, aquí en Radiochar siempre hay un motivo para mover el cuerpo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ilegales",
+      "cancion": "¡Hola Mamoncete!",
+      "frase": "Jorge Ilegal nos saluda con su estilo único en ¡Hola Mamoncete!. Es rock español directo a la mandíbula, sin filtros y con toda la mala leche que a veces hace falta para despertar. Una canción para los que no buscamos caerle bien a nadie y preferimos ser auténticos antes que amables.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Los Prisioneros",
+      "cancion": "¿Quién Mató a Marilyn?",
+      "frase": "Los Prisioneros nos ponen a cuestionar los mitos con ¿Quién Mató a Marilyn?. Es ese rock con aires de ska y una letra ácida que solo Jorge González podía escribir. Una canción que suena a rebeldía inteligente, ideal para los que no nos tragamos cualquier historia que nos vendan en la televisión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Elefante",
+      "cancion": "Ángel",
+      "frase": "Elefante cierra con esta fuerza emocional en Ángel. Es rock pop mexicano que habla de esa presencia que nos salva cuando estamos a punto de caer. Una canción para agradecer a quienes nos mantienen de pie en medio de la tormenta, contada con esa voz que tiene todo el sentimiento de la calle.",
+      "nivel_confianza_contexto": "Alta"
+    }
+  ],
+  "frases_genericas_error": [
+    {
+      "tipo": "feed_caido",
+      "frase": "Parece que la señal se nos fue a caminar por otros barrios. Aguanten ahí, que en Radiochar no nos rendimos tan fácil. Estamos ajustando los cables para que el rock vuelva a tronar como debe ser. No se me muevan de la sintonía, que la calle sigue activa."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "Oigan, el sistema anda diciendo cosas que no son, pero aquí lo que importa es lo que suena. A veces la tecnología se confunde, pero nuestro oído no falla. Disfruten la música mientras ponemos en orden los nombres, que al final el sentimiento es el que manda hoy."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "Ese silencio nos pegó un susto, pero ya estamos de vuelta. A veces hasta la radio necesita un respiro para tomar aire y volver con más fuerza. Aquí seguimos pateando piedras y rompiendo el silencio con la música que nos identifica de verdad. ¡Suban el volumen que ya regresamos!"
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "Hubo un corto circuito en los datos, pero nuestra esencia sigue intacta. Hay archivos que no aguantan tanta potencia y terminan por romperse. No pasa nada, buscamos otro camino y seguimos con el rock, porque nada va a detener esta descarga de identidad latina que traemos para ustedes."
+    },
+    {
+      "tipo": "cancion_no_detectada",
+      "frase": "El radar no captó la señal de esta canción, pero la vibra se siente clarito. A veces lo mejor es dejarse llevar por el misterio y disfrutar de lo que suena sin etiquetas. En Radiochar ponemos lo que nos mueve el alma, aunque el sistema a veces se quede mudo."
+    },
+    {
+      "tipo": "desconexion_temporal",
+      "frase": "Nos desconectamos un segundo, quizás para ver cómo estaba la calle allá afuera. Pero ya estamos de nuevo en cabina, listos para seguir con este bloque de pura distorsión y sentimiento. Gracias por aguantar el bache, que lo bueno siempre se hace esperar un poquito en la radio."
+    },
+    {
+      "tipo": "error_playlist",
+      "frase": "La lista se nos desordenó un poco, pero el rock no sabe de horarios ni de órdenes establecidos. Vamos a improvisar un camino nuevo sobre la marcha, como se hace en la vida real. Sigan conectados, que la música va a seguir fluyendo con toda la actitud rebelde."
+    },
+    {
+      "tipo": "latencia_stream",
+      "frase": "Parece que la señal viene con retraso, como si estuviera atrapada en el tráfico de la ciudad. Tengan paciencia, que la buena música siempre termina llegando a su destino. Aquí en Radiochar no tenemos prisa cuando se trata de disfrutar de un buen clásico en español."
+    },
+    {
+      "tipo": "feed_caido",
+      "frase": "Se nos cortó el hilo, pero ya estamos anudando la señal otra vez. La calle a veces se pone difícil y nos tumba la conexión, pero el espíritu rockero es más fuerte que cualquier fallo técnico. Seguimos firmes, con el volumen arriba y la frente en alto, mi gente."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "Lo que ven en pantalla no es lo que están escuchando, pero qué más da. La música no necesita pasaporte ni nombres correctos para pegarnos en el pecho. Dejen que el ritmo hable por sí solo mientras nosotros peleamos con los servidores para que digan la verdad de una vez."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "El silencio nos quiso ganar la partida por un momento, pero aquí estamos de nuevo para hacer ruido. En Radiochar el silencio solo sirve para tomar impulso y lanzar el siguiente éxito con más ganas. Sigan ahí, pateando piedras conmigo, que la programación no se detiene por nada."
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "Hay temas que tienen tanta garra que terminan por corromper hasta el sistema más moderno. Tuvimos un pequeño tropiezo con un archivo, pero ya saltamos el obstáculo. La música sigue, el sentimiento no se rompe y nosotros no nos callamos. ¡Seguimos con todo en este bloque!"
+    },
+    {
+      "tipo": "cancion_no_detectada",
+      "frase": "Esta canción anda jugando a las escondidas con el detector, pero nosotros sabemos quién es. A veces la identidad no se puede leer en un código, se siente en los oídos y en el pulso. Disfruten esta joya anónima que aquí en Radiochar todo lo que suena tiene alma."
+    },
+    {
+      "tipo": "desconexion_temporal",
+      "frase": "Un pequeño bache en el camino nos sacó del aire un momento, pero ya recuperamos el control. No hay desconexión que pueda con las ganas que tenemos de compartir este rock con ustedes. Gracias por seguir ahí, firmes en la sintonía de los que no se rinden jamás."
+    },
+    {
+      "tipo": "error_playlist",
+      "frase": "Se nos mezclaron los papeles en la cabina, pero eso solo hace que la selección sea más auténtica. Vamos a dejar que el azar nos guíe por un momento, porque en el rock los mejores momentos nacen del caos. Sigan disfrutando, que la música no entiende de planes perfectos."
+    },
+    {
+      "tipo": "latencia_stream",
+      "frase": "La señal viene a paso lento, pero viene cargada de toda la energía que nos define. A veces la red se satura, pero el sentimiento de Radiochar viaja por encima de cualquier cable. No desesperen, que lo que viene a continuación les va a sacudir hasta el último pensamiento."
+    },
+    {
+      "tipo": "feed_caido",
+      "frase": "Se nos cayó la estantería digital, pero ya estamos levantando todo pieza por pieza. La radio en vivo tiene estos gajes del oficio, pero nuestra rebeldía es a prueba de fallos técnicos. Aguanten el pulso, que el rock en nuestro idioma vuelve a rugir en cualquier segundo aquí."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "El sistema anda medio loco hoy, poniendo nombres que no cuadran con el sentimiento. Pero nosotros sabemos qué terreno pisamos. Ignoren las etiquetas y quédense con la distorsión y la letra, que es lo que realmente nos hace sentir vivos en esta tarde de Pateando piedras."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "Ese hueco en el aire se sintió raro, pero ya lo llenamos con más música. En Radiochar no permitimos que el silencio se acomode, porque tenemos mucho que decir y más que escuchar. Gracias por la paciencia, seguimos adelante con la descarga más potente de la radio online."
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "A veces la realidad es tan cruda que los archivos no la aguantan. Tuvimos un error de lectura, pero ya cambiamos de disco. Aquí lo que importa es que la música no se detenga y que el mensaje llegue clarito a sus oídos. ¡Puro rock, puro sentimiento, sin errores!"
+    }
+  ]
+}
