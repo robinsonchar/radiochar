@@ -1,0 +1,2898 @@
+{
+  "radio": "Radiochar",
+  "programa": {
+    "nombre": "Love City",
+    "horario": "00:00 - 05:59",
+    "contenido": "Baladas Americanas en inglés",
+    "dj": {
+      "nombre": "Karol Morales",
+      "genero": "Femenino",
+      "personalidad": "Cálida, romántica, íntima y nocturna",
+      "tono_voz": "Susurrado, profundo, envolvente",
+      "actitud": "Acompañante emocional en la madrugada",
+      "relacion_emocional": "Conexión espiritual con la nostalgia y el amor",
+      "nivel_confianza_perfil": "Alta"
+    }
+  },
+  "total_canciones": 395,
+  "frases_por_cancion": [
+    {
+      "artista": "Bryan Adams",
+      "cancion": "(Everything I Do) I Do It For You",
+      "frase": "Hay promesas que se sellan en la penumbra de una habitación, donde el tiempo parece detenerse. Bryan Adams nos envuelve con (Everything I Do) I Do It For You, recordándonos que el amor verdadero no conoce límites. Quédate conmigo en Love City, donde cada nota es un suspiro compartido en la madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "(I Can't Get No) Satisfaction",
+      "frase": "Incluso en la calma de Love City, hay un fuego que nunca se apaga. Esa búsqueda inalcanzable de los Rolling Stones en (I Can't Get No) Satisfaction resuena diferente cuando la noche es joven. Es el pulso de Radiochar recordándote que siempre hay algo más por descubrir bajo la luz de la luna.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cutting Crew",
+      "cancion": "(I Just) Died In Your Arms",
+      "frase": "A veces, un encuentro es tan intenso que sientes que el mundo entero se desvanece. Cutting Crew captura esa vulnerabilidad en (I Just) Died In Your Arms. Deja que esta melodía te acompañe mientras recorres los laberintos de tus propios recuerdos en esta ciudad del amor que nunca duerme.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Skid Row",
+      "cancion": "18 and Life",
+      "frase": "La calle tiene historias que solo se cuentan cuando el ruido cesa. Skid Row nos trae la crudeza y el sentimiento de 18 and Life, un relato que golpea directo al alma. En Love City entendemos que cada cicatriz tiene su propia canción, y esta es para quienes nunca olvidan su origen.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Erasure",
+      "cancion": "A Little Respect",
+      "frase": "En la madrugada, las verdades se vuelven más claras y el corazón pide honestidad. Erasure nos pide A Little Respect, una súplica rítmica que cruza el tiempo. En Radiochar, celebramos esos momentos donde el amor exige dignidad, envuelto en los sintetizadores que marcaron toda una época dorada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Steve Miller Band",
+      "cancion": "Abracadabra",
+      "frase": "Hay una magia especial en la forma en que una mirada puede transformarlo todo. Steve Miller Band lanza su hechizo con Abracadabra para darnos ese toque de misterio que la noche necesita. Siente cómo la música fluye por tus venas mientras nos dejamos llevar por el encanto de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "Aces High",
+      "frase": "Incluso en este bloque romántico, hay espacio para la intensidad que acelera los latidos. Iron Maiden despega con Aces High, una descarga de adrenalina pura bajo las estrellas. Porque en Radiochar sabemos que el amor también es una batalla que se lucha con valentía y mucha pasión.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Robert Palmer, Eric 'ET' Thorngren",
+      "cancion": "Addicted To Love",
+      "frase": "Reconocer una obsesión es el primer paso para disfrutarla. Robert Palmer nos seduce con Addicted To Love, ese ritmo hipnótico que se siente como un latido constante. En Love City, nos confesamos adictos a las historias que nos quitan el sueño y nos mantienen despiertos esperando el amanecer.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Africa",
+      "frase": "Hay viajes que no requieren pasaporte, solo un par de auriculares y el deseo de escapar. TOTO nos transporta con Africa a paisajes que soñamos despiertos. Es el sonido de la brisa en la madrugada de Radiochar, acompañando tu soledad o tu compañía con una armonía simplemente perfecta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "Against All Odds",
+      "frase": "Mirar hacia atrás y ver lo que dejamos ir es una de las sensaciones más profundas de la noche. Phil Collins interpreta Against All Odds con una nostalgia que duele y alivia a la vez. En Love City, nos abrazamos a esa melancolía que solo las grandes baladas saben curar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bill Withers",
+      "cancion": "Ain't No Sunshine",
+      "frase": "El vacío que deja alguien al marcharse se siente más frío cuando el sol se oculta. Bill Withers nos describe esa sombra con Ain't No Sunshine, una pieza minimalista que lo dice todo. Aquí en Radiochar, somos el refugio para esos días grises que necesitan un poco de alma.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jimi Hendrix",
+      "cancion": "All Along the Watchtower",
+      "frase": "La guitarra de Jimi Hendrix tiene la capacidad de rasgar el silencio y revelar verdades ocultas. All Along the Watchtower es un viaje psicodélico que nos invita a cuestionar lo que vemos. Deja que el genio de la música te guíe en esta madrugada donde todo es posible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Carmen",
+      "cancion": "All By Myself",
+      "frase": "Estar solo no siempre es soledad, a veces es el reencuentro más honesto con uno mismo. Eric Carmen canta All By Myself para todos los que hoy eligen su propio silencio. En Love City, tu voz y la mía se encuentran en esta melodía que acaricia el alma.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Heart",
+      "cancion": "All I Wanna Do Is Make Love To You",
+      "frase": "Hay encuentros fugaces que dejan una huella imborrable, historias de una noche que se quedan para siempre. Heart nos relata ese deseo prohibido en All I Wanna Do Is Make Love To You. Una confesión valiente para subir el volumen y dejarse llevar por la tentación nocturna.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lionel Richie",
+      "cancion": "All Night Long (All Night)",
+      "frase": "La noche está hecha para celebrar, para olvidar las penas y dejar que el ritmo tome el control. Lionel Richie nos invita a bailar All Night Long (All Night). En Radiochar la fiesta no termina, solo cambia de forma para acompañarte hasta que raye el alba.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Air Supply",
+      "cancion": "All Out of Love",
+      "frase": "Cuando las palabras se agotan y solo queda el eco de un adiós, la música se convierte en nuestro idioma. Air Supply nos trae All Out of Love, el himno de los corazones que buscan una segunda oportunidad. Déjate abrazar por esta balada eterna aquí en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ace of Base",
+      "cancion": "All That She Wants",
+      "frase": "El pop de los noventa tenía ese misterio hipnótico que aún hoy nos atrapa. Ace of Base nos cuenta la historia de All That She Wants, un ritmo que camina lento como tus pensamientos en esta madrugada. Disfruta de este clásico que define la identidad urbana de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Outfield",
+      "cancion": "All the Love in the World",
+      "frase": "Buscamos conexiones en cada rincón, esperando encontrar ese sentimiento que lo cambie todo. The Outfield nos entrega All the Love in the World con esa energía nostálgica que tanto nos gusta. Es el momento de sentir que no estamos solos en esta inmensa Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Heart",
+      "cancion": "Alone",
+      "frase": "Hay preguntas que solo nos atrevemos a hacer cuando estamos a solas con nuestros pensamientos. Heart explota con esa fuerza vocal en Alone, una balada poderosa sobre el deseo de ser correspondido. Escúchala y siente cómo el eco de Radiochar resuena en tu habitación esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Dokken",
+      "cancion": "Alone Again",
+      "frase": "El rock tiene una forma única de llorar sus penas, con guitarras que parecen susurros de dolor. Dokken nos deja Alone Again, una balada de metal que se siente como un abrazo frío bajo la lluvia. En Love City, acompañamos tu melancolía con la mejor selección musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Always",
+      "frase": "El amor eterno no es solo un mito, es una promesa que se renueva con cada latido. Bon Jovi nos entrega Always, una de las declaraciones más apasionadas de todos los tiempos. Deja que el sentimiento te inunde mientras compartimos este clásico absoluto en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Boston",
+      "cancion": "Amanda",
+      "frase": "A veces nos toma tiempo darnos cuenta de lo que realmente sentimos por alguien especial. Boston le canta a Amanda con esa suavidad y potencia que caracteriza al AOR. Una joya para disfrutar en la quietud de Love City, donde los nombres propios se vuelven canciones inolvidables.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Shaggy, Rayvon",
+      "cancion": "Angel",
+      "frase": "Hay personas que llegan a nuestra vida como un regalo del cielo, dándonos luz en los momentos oscuros. Shaggy y Rayvon nos traen ese ritmo suave de Angel para relajar los sentidos. Siente la calidez de esta melodía mientras Radiochar te acompaña en tu descanso nocturno.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Angie",
+      "frase": "Despedirse nunca es fácil, especialmente cuando todavía queda un rastro de ternura en el aire. Los Rolling Stones nos regalan Angie, una balada acústica que parece escrita con lágrimas de verdad. En Love City, le damos un espacio a esos finales que duelen pero son necesarios.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Another Brick In The Wall, Pt. 2",
+      "frase": "La rebeldía tiene un sonido propio, una marcha que nos invita a romper las cadenas mentales. Pink Floyd nos entrega Another Brick In The Wall, Pt. 2, un himno generacional que trasciende el tiempo. Escúchalo en Radiochar y siente la fuerza de una banda que cambió la historia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "Another Day In Paradise",
+      "frase": "La música también es un espejo de la realidad, una invitación a mirar más allá de nuestra burbuja. Phil Collins nos conmueve con Another Day In Paradise. En la calma de Love City, reflexionamos sobre la empatía y la suerte de tener un refugio donde la música siempre suena.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Another One Bites The Dust",
+      "frase": "Ese bajo icónico es suficiente para despertar a cualquiera en esta madrugada. Queen nos pone a marcar el ritmo con Another One Bites The Dust. Es la actitud ganadora de Radiochar, recordándote que cada obstáculo es solo una nota más en la canción de tu vida.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Christopher Cross",
+      "cancion": "Arthur's Theme (Best That You Can Do)",
+      "frase": "Perderse entre la luna y la ciudad de Nueva York es un sueño que todos hemos tenido alguna vez. Christopher Cross nos regala Arthur's Theme (Best That You Can Do). Déjate envolver por su elegancia y permite que Love City sea tu destino ideal esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tracy Chapman",
+      "cancion": "Baby Can I Hold You",
+      "frase": "A veces las palabras más sencillas son las que más trabajo nos cuesta decir. Tracy Chapman nos habla desde la honestidad pura en Baby Can I Hold You. En Radiochar, valoramos la vulnerabilidad de un abrazo musical que llega justo cuando más lo necesitas.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Barry White",
+      "cancion": "Baby We Better Try To Get It Together",
+      "frase": "La voz profunda de Barry White es el manual perfecto para la seducción y el romance. En Baby We Better Try To Get It Together, nos invita a sanar las heridas y volver a empezar. Deja que este ritmo aterciopelado sea la banda sonora de tu intimidad nocturna.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "George Thorogood & The Destroyers",
+      "cancion": "Bad To The Bone",
+      "frase": "Hay noches en las que uno simplemente se siente indomable, listo para romper las reglas con estilo. George Thorogood nos inyecta esa actitud con Bad To The Bone. Siente la fuerza del blues-rock recorriendo Love City y deja que tu lado más salvaje salga a jugar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Beast Of Burden",
+      "frase": "El amor no debería ser una carga, sino un viaje donde ambos caminan ligeros. Los Rolling Stones nos traen Beast Of Burden con ese groove inconfundible que relaja el alma. En Radiochar, te acompañamos con clásicos que entienden perfectamente el ritmo de tu corazón.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Beat It",
+      "frase": "El Rey del Pop sabía cómo transformar la tensión en una explosión de energía pura. Michael Jackson nos desafía con Beat It, una joya que combina el rock y el pop de forma magistral. Sube el volumen en esta madrugada y siente la electricidad de Radiochar en cada nota.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ace of Base",
+      "cancion": "Beautiful Life",
+      "frase": "A pesar de las sombras, siempre hay motivos para celebrar la existencia y buscar la luz. Ace of Base nos regala Beautiful Life para recordarnos que la felicidad es un ritmo que llevamos dentro. Disfruta de este momento positivo mientras Love City ilumina tu camino nocturno.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Stevie B",
+      "cancion": "Because I Love You (The Postman Song)",
+      "frase": "Hay cartas que nunca se enviaron, pero que quedaron grabadas en una melodía inolvidable. Stevie B nos trae Because I Love You (The Postman Song), un clásico del freestyle romántico que nos pone sentimentales. Es la magia de Radiochar, conectando tus recuerdos con el presente.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Celine Dion",
+      "cancion": "Because You Loved Me",
+      "frase": "Tener a alguien que crea en ti es el motor más potente que existe en este mundo. Celine Dion interpreta Because You Loved Me con una devoción que conmueve hasta las fibras más íntimas. Dedica esta canción en Love City a ese ser que es tu roca.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Bed Of Roses",
+      "frase": "La soledad de una habitación de hotel se desvanece cuando escribes pensando en la persona amada. Bon Jovi nos regala Bed Of Roses, una de las baladas más intensas del rock. Deja que la voz de Jon te susurre al oído en esta noche de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Midnight Oil",
+      "cancion": "Beds Are Burning",
+      "frase": "La música también es un grito de conciencia, una llamada a despertar ante lo que sucede afuera. Midnight Oil nos trae Beds Are Burning con una energía que sacude la madrugada. En Love City, también nos permitimos vibrar con ritmos que tienen un mensaje poderoso.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joey Scarbury",
+      "cancion": "Believe It or Not",
+      "frase": "A veces la vida nos sorprende con giros inesperados que nos hacen sentir como héroes de nuestra propia historia. Joey Scarbury nos trae Believe It or Not para darnos ese toque de optimismo y nostalgia ochentera. Disfruta del vuelo imaginario que Radiochar te propone esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Christopher Cross",
+      "cancion": "Best That You Can Do",
+      "frase": "Navegar por las emociones es más sencillo cuando tienes la banda sonora adecuada para guiarte. Christopher Cross repite su magia con Best That You Can Do, el tema de Arturo que nos hace soñar con noches neoyorquinas. Déjate llevar por la sofisticación aquí en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kim Carnes",
+      "cancion": "Bette Davis Eyes",
+      "frase": "Hay miradas que tienen el poder de desarmarte por completo, llenas de misterio y sofisticación. Kim Carnes nos cautiva con su voz rasgada en Bette Davis Eyes. Un clásico que suena perfecto en la madrugada de Radiochar, cuando los secretos se esconden tras los ojos de quien amas.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alphaville",
+      "cancion": "Big In Japan",
+      "frase": "El deseo de ser alguien en un lugar lejano es una fantasía recurrente cuando el mundo se detiene. Alphaville nos trae Big In Japan, una joya del synth-pop que nos invita a soñar con otros horizontes. Siente la atmósfera electrónica envolviendo cada rincón de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ambrosia",
+      "cancion": "Biggest Part of Me",
+      "frase": "Cuando alguien se convierte en el centro de tu universo, cada nota musical parece dedicada a esa persona. Ambrosia nos regala Biggest Part of Me con una armonía celestial. Es la banda sonora ideal para esos amores que lo llenan todo en la programación de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Billie Jean",
+      "frase": "Ese ritmo de batería es el aviso de que algo legendario está por suceder en tus oídos. Michael Jackson nos cuenta la intriga de Billie Jean con una maestría inigualable. Deja que el Rey del Pop te enseñe cómo se domina la noche aquí en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Verve",
+      "cancion": "Bitter Sweet Symphony",
+      "frase": "La vida es una mezcla de sabores, una sinfonía que a veces nos hace reír y otras nos hace reflexionar. The Verve nos entrega Bitter Sweet Symphony para acompañar tus pensamientos más profundos. En Love City, caminamos contigo por esta calle de sueños y realidades.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Black Dog / Bring It On Home",
+      "frase": "El rock clásico tiene esa fuerza mística que solo bandas como Led Zeppelin pueden invocar. Con Black Dog y Bring It On Home, la madrugada de Radiochar se llena de riffs poderosos y una energía que no conoce límites. Siente el peso de la historia en cada acorde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Black or White",
+      "frase": "La música es el lenguaje universal que borra las fronteras y nos une en una sola voz. Michael Jackson nos trae Black or White con un mensaje de unidad que nunca pasa de moda. Disfruta de este estallido de energía positiva mientras recorres Love City conmigo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "Black Sabbath",
+      "frase": "Hay una oscuridad fascinante en los sonidos que dieron origen al heavy metal. Black Sabbath nos sumerge en su tema homónimo, una atmósfera densa y misteriosa perfecta para las horas más profundas de la noche. Atrévete a explorar los límites del sonido en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jon Bon Jovi",
+      "cancion": "Blaze Of Glory",
+      "frase": "Caminar solo hacia el destino, con la frente en alto y el corazón ardiendo, es la esencia del forajido moderno. Jon Bon Jovi nos regala Blaze Of Glory para darnos esa fuerza necesaria en la madrugada. Siente el espíritu libre que solo la música de Radiochar te puede dar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Bohemian Rhapsody",
+      "frase": "No es solo una canción, es una experiencia que desafía todas las reglas de la composición musical. Queen nos lleva al cielo y al infierno con Bohemian Rhapsody. En Love City, nos quitamos el sombrero ante la genialidad de Freddie Mercury en esta pieza eterna.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Shaggy",
+      "cancion": "Boombastic",
+      "frase": "Para esas noches donde la sensualidad pide un ritmo más marcado y desenfadado. Shaggy nos trae Boombastic, un toque de sabor que rompe la seriedad de la madrugada. Deja que el groove se apodere de ti mientras Radiochar le pone picante a tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Boys Don't Cry",
+      "frase": "Ocultar los sentimientos tras una sonrisa es una máscara que todos hemos usado alguna vez. The Cure nos canta Boys Don't Cry con esa melancolía bailable que tanto nos define. En Radiochar, sabemos que está bien sentirlo todo, especialmente cuando la música nos comprende tan bien.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Matthew Wilder",
+      "cancion": "Break My Stride",
+      "frase": "Nada puede detenerte cuando tienes la actitud correcta y una melodía contagiosa que te impulse. Matthew Wilder nos regala Break My Stride para mantener el paso firme en esta noche. Disfruta de este estallido de alegría pop mientras avanzamos juntos por Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Break on Through (To the Other Side)",
+      "frase": "Jim Morrison nos invita a cruzar el umbral de lo cotidiano y explorar lo desconocido. The Doors nos traen Break on Through (To the Other Side) para encender la chispa de la libertad en tu mente. Deja que el rock psicodélico te guíe en esta madrugada de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Supertramp",
+      "cancion": "Breakfast In America",
+      "frase": "Soñar con lugares lejanos mientras el café se enfría es una de las delicias de la nostalgia. Supertramp nos regala Breakfast In America con su sonido sofisticado y único. Disfruta de este viaje musical por los recuerdos aquí en Love City, tu lugar en el mundo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Judas Priest",
+      "cancion": "Breaking the Law",
+      "frase": "A veces las ganas de rebelarse contra todo son más fuertes que la razón. Judas Priest nos trae el himno definitivo de la liberación con Breaking the Law. Siente el rugido de las guitarras despertando la ciudad mientras Radiochar impone su propia ley musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Bringin' On The Heartbreak",
+      "frase": "El dolor de una ruptura se siente más intenso cuando el rock le pone voz a ese vacío. Def Leppard nos entrega Bringin' On The Heartbreak, una balada poderosa que desgarra y sana a la vez. En Love City, compartimos tus penas con las mejores canciones del mundo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mr. Mister",
+      "cancion": "Broken Wings",
+      "frase": "Aprender a volar de nuevo después de una caída es el acto de amor propio más valioso. Mr. Mister nos inspira con Broken Wings en esta madrugada llena de posibilidades. Deja que la música sea el viento que te eleve por encima de cualquier problema aquí en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Modern Talking",
+      "cancion": "Brother Louie",
+      "frase": "El brillo de los ochenta europeos llega para darle color a la oscuridad de la noche. Modern Talking nos trae Brother Louie con ese ritmo pegajoso que nunca pasa de moda. Siente la elegancia del pop clásico mientras bailas en la soledad de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "Burning Heart",
+      "frase": "La lucha interna entre la razón y el instinto es lo que nos mantiene vivos y despiertos. Survivor nos trae Burning Heart para encender esa llama de determinación que llevas dentro. En Radiochar, somos el combustible para tus sueños en esta noche de pasión.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Blondie",
+      "cancion": "Call Me",
+      "frase": "La urgencia de una llamada que puede cambiarlo todo se siente en cada segundo de esta canción. Blondie nos entrega Call Me con la energía arrolladora de Debbie Harry. Deja que el teléfono de tu imaginación suene mientras Radiochar te conecta con el mejor rock.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "REO Speedwagon",
+      "cancion": "Can't Fight This Feeling",
+      "frase": "Llega un punto en el que ya no puedes esconder lo que sientes y la verdad tiene que salir. REO Speedwagon interpreta Can't Fight This Feeling para todos los que están a punto de confesarse. En Love City, celebramos la valentía de amar sin miedos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Barry White",
+      "cancion": "Can't Get Enough Of Your Love, Babe",
+      "frase": "La saciedad es imposible cuando se trata de un amor que te llena el alma por completo. Barry White nos envuelve con su voz de barítono en Can't Get Enough Of Your Love, Babe. Es la elegancia y el romance en su máxima expresión aquí en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Elvis Presley",
+      "cancion": "Can't Help Falling in Love",
+      "frase": "La realeza del rock nos dejó esta pieza que parece un susurro eterno al corazón de la humanidad. Elvis Presley nos regala Can't Help Falling in Love para detener el tiempo. En la quietud de Love City, deja que el Rey te enamore una vez más.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Can't Stand Losing You",
+      "frase": "El miedo a perder a esa persona especial puede volvernos un poco locos y desesperados. The Police nos trae Can't Stand Losing You con ese ritmo reggae-rock que los hizo únicos. Disfruta de la intensidad de Sting y compañía en esta madrugada de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "George Michael",
+      "cancion": "Careless Whisper",
+      "frase": "Ese saxofón inicial es, quizás, el sonido más emblemático del arrepentimiento y el romance herido. George Michael nos entrega Careless Whisper para recordarnos que los errores también tienen una belleza triste. En Love City, bailamos este último vals bajo la luz de los recuerdos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Billy Ocean",
+      "cancion": "Caribbean Queen (No More Love On the Run)",
+      "frase": "El amor también puede ser una aventura tropical, llena de ritmo y promesas bajo el sol... o la luna. Billy Ocean nos trae Caribbean Queen (No More Love On the Run). Deja que el groove de Radiochar te transporte a un paraíso donde el romance es el único destino.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Europe",
+      "cancion": "Carrie",
+      "frase": "Las despedidas en el rock tienen un sabor a balada épica que se queda grabada para siempre. Europe nos conmueve con Carrie, una canción que nos enseña a dejar ir con dignidad. En Love City, acompañamos tu proceso con las melodías que mejor te entienden.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kansas",
+      "cancion": "Carry on Wayward Son",
+      "frase": "Para los hijos pródigos que buscan su camino en medio de la confusión de la vida. Kansas nos regala Carry on Wayward Son, un himno de rock progresivo que nos llena de esperanza. Sigue adelante, porque en Radiochar siempre hay una luz al final del túnel.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kool & The Gang",
+      "cancion": "Celebration",
+      "frase": "Incluso en la madrugada más tranquila, siempre hay un motivo oculto para festejar la vida. Kool & The Gang nos traen Celebration para recordarnos que la alegría es una decisión diaria. Únete a la fiesta de Radiochar y deja que lo bueno te encuentre hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Clapton",
+      "cancion": "Change the World",
+      "frase": "Si el amor pudiera realmente transformar la realidad, este sería el sonido de ese nuevo mundo. Eric Clapton nos acaricia con Change the World. En Love City, creemos en el poder de una canción para cambiar, al menos, el pequeño universo de quien la escucha.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "Changes",
+      "frase": "La vulnerabilidad de un gigante del metal se hace presente en esta balada desgarradora. Black Sabbath nos habla de las transiciones dolorosas en Changes. En Radiochar, le damos voz a esos momentos donde todo cambia y solo queda la música para sostenernos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kool & The Gang",
+      "cancion": "Cherish",
+      "frase": "Valorar cada instante con los que amamos es la mayor riqueza que podemos acumular. Kool & The Gang nos regalan Cherish, una oda a la gratitud emocional. Disfruta de esta melodía suave mientras Love City envuelve tu hogar en una atmósfera de paz.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Warrant",
+      "cancion": "Cherry Pie",
+      "frase": "El lado más divertido y provocador del glam metal llega para despertar tus sentidos. Warrant nos sirve una porción de Cherry Pie con toda la actitud y energía de los noventa. Disfruta de este clásico picante mientras Radiochar le pone ritmo a tu noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ABBA",
+      "cancion": "Chiquitita",
+      "frase": "Para esas penas que parecen no tener consuelo, siempre habrá un amigo dispuesto a escucharte. ABBA nos entrega Chiquitita, una canción que es como un bálsamo para el corazón herido. En Love City, somos tu refugio cuando necesitas que alguien te devuelva la sonrisa.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Close To Me",
+      "frase": "La claustrofobia del amor y la necesidad de cercanía se mezclan en este ritmo juguetón. The Cure nos trae Close To Me para hacernos sentir que, a veces, estar cerca es la única cura. Siente la respiración de la música aquí en la madrugada de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Dexys Midnight Runners",
+      "cancion": "Come On Eileen",
+      "frase": "Hay canciones que te obligan a mover los pies sin importar la hora que sea. Dexys Midnight Runners nos invitan con Come On Eileen a celebrar la juventud y la pasión. Deja que el folk-pop invada Love City y llene de color tu habitación esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Duran Duran",
+      "cancion": "Come Undone",
+      "frase": "Desarmarse frente a alguien es un acto de confianza absoluta que nos deja expuestos y vivos. Duran Duran nos seduce con Come Undone, una pieza de elegancia oscura y sensual. Déjate llevar por la sofisticación de Radiochar en este encuentro nocturno con la música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Crazy",
+      "frase": "El amor a veces nos lleva al borde de la locura, un estado donde la razón pierde la batalla. Aerosmith nos grita Crazy con toda la fuerza de Steven Tyler. En Love City, entendemos perfectamente esa demencia dulce que solo se siente cuando amas de verdad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Crazy Little Thing Called Love",
+      "frase": "Freddie Mercury rinde homenaje al rock and roll más puro con esta joya llena de frescura. Queen nos pone a chasquear los dedos con Crazy Little Thing Called Love. Es el toque ligero y divertido que Radiochar le da a tu madrugada en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ozzy Osbourne",
+      "cancion": "Crazy Train",
+      "frase": "Súbete al tren de la locura con el Príncipe de las Tinieblas y deja que el riff de Randy Rhoads te guíe. Ozzy Osbourne nos regala Crazy Train para recordarnos que el mundo está loco, pero nuestra música siempre tiene sentido aquí en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Cryin'",
+      "frase": "Llorar por amor es parte del proceso de sanación, y Aerosmith lo sabe transformar en un himno de poder. Cryin' es la descarga emocional que necesitas para soltar lo que ya no está. En Love City, te acompañamos en cada lágrima y en cada nuevo comienzo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Quiet Riot",
+      "cancion": "Cum on Feel the Noize",
+      "frase": "La potencia del heavy metal ochentero llega para sacudir los cimientos de la madrugada. Quiet Riot nos invita a sentir el ruido con Cum on Feel the Noize. Una inyección de energía pura para que Radiochar te mantenga con la guardia en alto esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Rod Stewart",
+      "cancion": "Da Ya Think I'm Sexy?",
+      "frase": "La provocación y el estilo se encuentran en la voz rasgada más famosa del rock. Rod Stewart nos lanza la pregunta en Da Ya Think I'm Sexy?, invitándonos a disfrutar del juego de la seducción. Siente el brillo de Love City en este clásico inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Dancing In the Dark",
+      "frase": "A veces solo necesitamos una chispa para encender nuestro fuego interior y empezar a movernos. El Jefe, Bruce Springsteen, nos regala Dancing In the Dark para sacudir la inercia de la noche. Baila con Radiochar y encuentra tu propio ritmo en la oscuridad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ABBA",
+      "cancion": "Dancing Queen",
+      "frase": "No importa la edad ni el momento, siempre hay una reina de la pista dentro de cada uno de nosotros. ABBA nos corona con Dancing Queen, un himno de felicidad absoluta. Deja que Love City se transforme en tu propio escenario brillante esta noche de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Falco",
+      "cancion": "Der Kommissar",
+      "frase": "El sonido vanguardista de Viena nos trae una historia de intriga y ritmo que rompió todas las barreras. Falco nos entrega Der Kommissar, un clásico que suena tan fresco hoy como el primer día. Disfruta de la originalidad sin límites aquí en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Nice & Wild",
+      "cancion": "Diamond Girl",
+      "frase": "El freestyle ochentero tiene esa magia rítmica que nos transporta directamente a las pistas de baile urbanas. Nice & Wild nos traen Diamond Girl para darle ese brillo especial a tu madrugada. Siente el latido de la calle en cada nota de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cutting Crew",
+      "cancion": "Died In Your Arms",
+      "frase": "Hay momentos tan perfectos que desearías que el mundo se detuviera ahí para siempre. Cutting Crew lo describe magistralmente en Died In Your Arms. En Love City, rescatamos esas sensaciones para que tu noche tenga el soundtrack que realmente se merece.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Donna Summer",
+      "cancion": "Dim All The Lights",
+      "frase": "Bajar las luces y dejar que el amor tome el control es el plan perfecto para esta hora. La reina Donna Summer nos guía con Dim All The Lights, una invitación al romance y la suavidad. Disfruta de la calidez de Radiochar en este bloque inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Captain And Tennille",
+      "cancion": "Do That To Me One More Time",
+      "frase": "La repetición de lo que nos hace felices es un placer que nunca deberíamos negar. Captain And Tennille nos susurran Do That To Me One More Time en esta madrugada de terciopelo. En Love City, nos encanta repetir las canciones que te llegan al corazón.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Culture Club",
+      "cancion": "Do You Really Want To Hurt Me",
+      "frase": "La vulnerabilidad de Boy George nos entrega una de las preguntas más honestas de la historia del pop. Culture Club nos conmueve con Do You Really Want To Hurt Me. Escúchala en Radiochar y deja que la melancolía se convierta en tu mejor compañía.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kix",
+      "cancion": "Don't Close Your Eyes",
+      "frase": "En los momentos más oscuros, pedirle a alguien que no se rinda es el mayor acto de amor. Kix nos entrega Don't Close Your Eyes, una balada poderosa contra la desesperanza. Aquí en Radiochar, estamos contigo para recordarte que siempre habrá un nuevo amanecer.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Don't Cry",
+      "frase": "Las despedidas pueden ser dulces si se prometen con la honestidad de un rockero apasionado. Axl Rose nos pide Don't Cry en este clásico que ha sanado tantos corazones. Siente la fuerza de Guns N' Roses acompañando tus sentimientos en la madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Crowded House",
+      "cancion": "Don't Dream It's Over",
+      "frase": "El mundo afuera puede parecer caótico, pero dentro de esta canción siempre habrá un refugio seguro. Crowded House nos regala Don't Dream It's Over para darnos paz. En Radiochar, construimos paredes de música para que nada malo pueda alcanzarte esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cinderella",
+      "cancion": "Don't Know What You Got (Till It's Gone)",
+      "frase": "Lamentablemente, a veces solo entendemos el valor de lo que teníamos cuando el silencio ocupa su lugar. Cinderella nos canta esa amarga lección en Don't Know What You Got (Till It's Gone). En Love City, aprendemos a valorar el presente a través de la música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Barry White",
+      "cancion": "Don't Make Me Wait Too Long",
+      "frase": "La paciencia tiene un límite cuando el deseo es tan profundo como la voz de Barry White. Don't Make Me Wait Too Long es una invitación directa al encuentro y la pasión. Deja que la elegancia de Radiochar prepare el ambiente para lo que está por venir.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "No Doubt",
+      "cancion": "Don't Speak",
+      "frase": "Hay momentos en los que las explicaciones sobran y el silencio es la única forma de no rompernos más. No Doubt nos entrega Don't Speak, un himno al dolor de una ruptura inminente. Escúchala en Love City y deja que Gwen Stefani le ponga voz a tu proceso.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Don't Stop 'Til You Get Enough",
+      "frase": "El ritmo es una fuerza que no conoce límites y Michael Jackson sabía exactamente cómo invocarla. Don't Stop 'Til You Get Enough nos invita a la liberación total a través del baile. Siente la energía de Radiochar recorriendo cada fibra de tu cuerpo esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Don't Stop Believin'",
+      "frase": "Para todos los que están en un tren nocturno hacia cualquier lugar, buscando un sueño o huyendo de un recuerdo. Journey nos regala Don't Stop Believin', el himno definitivo de la esperanza. Mantén la fe encendida en Love City con este clásico eterno.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bobby McFerrin",
+      "cancion": "Don't Worry Be Happy",
+      "frase": "A veces la solución a los problemas más grandes es simplemente cambiar la perspectiva y silbar un poco. Bobby McFerrin nos trae Don't Worry Be Happy para recordarnos lo simple que puede ser la vida. Sonríe con Radiochar y deja que lo bueno te encuentre hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Human League",
+      "cancion": "Don't You Want Me",
+      "frase": "El drama del pop ochentero se resume en este duelo de voces sobre el éxito y el desamor. The Human League nos pregunta Don't You Want Me en una pieza de sintetizadores perfecta. Siente la atmósfera retro invadiendo tu Love City en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Communards",
+      "cancion": "Don't Leave Me This Way",
+      "frase": "La desesperación también puede ser bailable cuando el ritmo es tan potente como este clásico del Hi-NRG. The Communards nos piden Don't Leave Me This Way para que la noche no termine nunca. Disfruta de la euforia musical que solo Radiochar te puede dar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Simple Minds",
+      "cancion": "Don't You (Forget About Me)",
+      "frase": "Para esa generación que creció en los pasillos de una preparatoria soñando con ser escuchada. Simple Minds nos regala Don't You (Forget About Me), una canción que nos une a todos en un solo grito. No te olvides de quién eres mientras recorres Love City conmigo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Men At Work",
+      "cancion": "Down Under",
+      "frase": "Viajamos directamente a la tierra de los canguros con un ritmo que conquistó el mundo entero. Men At Work nos trae Down Under para darnos ese toque de frescura y originalidad que Radiochar siempre busca. Disfruta de este viaje sonoro sin moverte de tu lugar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Dream On",
+      "frase": "Soñar hasta que tus sueños se hagan realidad, esa es la consigna de Steven Tyler y compañía. Aerosmith nos eleva con Dream On, una balada con una potencia vocal impresionante. En Love City, soñamos despiertos en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cars",
+      "cancion": "Drive",
+      "frase": "Una pregunta directa al alma para esos momentos en los que sentimos que ya no podemos más. The Cars nos conmueve con Drive, recordándonos la importancia de quién nos lleva a casa cuando estamos rotos. En Radiochar, somos el copiloto ideal para tu madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kansas",
+      "cancion": "Dust in the Wind",
+      "frase": "La fragilidad de la existencia se vuelve poesía acústica en las cuerdas de Kansas. Dust in the Wind nos invita a reflexionar sobre lo efímero de todo lo que nos rodea. En la paz de Love City, deja que esta melodía te enseñe la belleza de lo simple.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "Easy Lover",
+      "frase": "Hay amores que parecen un juego, rápidos y electrizantes, que te atrapan antes de que puedas darte cuenta. Phil Collins y Philip Bailey nos traen Easy Lover para encender la energía de Radiochar. Disfruta de este clásico dinámico mientras avanzamos por la noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Icehouse",
+      "cancion": "Electric Blue",
+      "frase": "El brillo azul de la noche se refleja en los sintetizadores de esta joya australiana. Icehouse nos envuelve con Electric Blue, una canción de elegancia pura y atmósfera nocturna. Deja que el color de la música ilumine tu Love City en esta madrugada de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lionel Richie",
+      "cancion": "Endless Love",
+      "frase": "Dos voces que se funden en una sola promesa de eternidad y devoción absoluta. Lionel Richie nos regala Endless Love para demostarnos que el amor sin fin sí tiene banda sonora. Dedícala aquí en Radiochar y haz que esta noche sea inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sting",
+      "cancion": "Englishman In New York",
+      "frase": "Ser uno mismo, sin importar cuán extraño te sientas en un lugar ajeno, es la verdadera victoria. Sting nos trae Englishman In New York para celebrar la individualidad y la elegancia. Disfruta de la sofisticación de Radiochar en este clásico atemporal.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Depeche Mode",
+      "cancion": "Enjoy the Silence",
+      "frase": "En un mundo lleno de ruido, el silencio compartido con la persona adecuada es un tesoro invaluable. Depeche Mode nos enseña a disfrutar de ese vacío lleno de significado en Enjoy the Silence. En Love City, las palabras son innecesarias cuando la música lo dice todo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Bangles",
+      "cancion": "Eternal Flame",
+      "frase": "Esa pequeña chispa que guardamos en el pecho esperando ser correspondida por fin. The Bangles nos regalan Eternal Flame para iluminar los rincones más oscuros de la soledad. Deja que el fuego de Radiochar te mantenga caliente en esta madrugada de invierno.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Air Supply",
+      "cancion": "Even the Nights Are Better",
+      "frase": "Incluso las noches más solitarias se vuelven mágicas cuando encuentras a alguien que les da sentido. Air Supply nos canta Even the Nights Are Better para celebrar el amor que nos rescata de la oscuridad. Disfruta de esta dulzura musical aquí en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Every Breath You Take",
+      "frase": "Una vigilancia constante, un amor que raya en la obsesión y una melodía que se queda grabada para siempre. The Police nos entrega Every Breath You Take para acompañar cada uno de tus suspiros esta noche. Siente la cercanía de Radiochar en cada nota.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Every Rose Has Its Thorn",
+      "frase": "Incluso el amor más bello tiene su lado doloroso, su espina que nos recuerda nuestra humanidad. Poison nos regala Every Rose Has Its Thorn, la balada definitiva del desamor en el rock. En Love City, aceptamos las sombras para poder apreciar mejor la luz.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Paul Young",
+      "cancion": "Every Time You Go Away",
+      "frase": "Llevarte un pedazo de alguien cada vez que se marcha es una forma dulce y triste de extrañar. Paul Young interpreta Every Time You Go Away con una sensibilidad única. Deja que esta balada de Radiochar te reconforte mientras esperas el reencuentro.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tears For Fears",
+      "cancion": "Everybody Wants To Rule The World",
+      "frase": "La ambición y el deseo de control se mezclan con una de las melodías más perfectas de los ochenta. Tears For Fears nos traen Everybody Wants To Rule The World. En Love City, hoy solo dejamos que la música sea la que gobierne nuestros sentidos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Alan Parsons Project",
+      "cancion": "Eye In The Sky",
+      "frase": "Sentir que alguien nos observa, que conoce nuestros secretos sin necesidad de hablar. The Alan Parsons Project nos envuelve con Eye In The Sky, una pieza de elegancia y misterio. Deja que la mirada musical de Radiochar te guíe en esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "Eye of the Tiger",
+      "frase": "La determinación de un campeón se siente en cada golpe de esta batería icónica. Survivor nos inyecta el Eye of the Tiger para que no te rindas, pase lo que pase. En Radiochar, te damos la fuerza necesaria para enfrentar cualquier reto con la frente en alto.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "UB40",
+      "cancion": "Falling In Love With You",
+      "frase": "El reggae le pone un ritmo pausado y dulce al sentimiento más antiguo del mundo. UB40 nos trae su versión de Falling In Love With You para relajar el alma. Disfruta de la cadencia de Radiochar mientras el amor se apodera suavemente de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Irene Cara",
+      "cancion": "Fame",
+      "frase": "El deseo de brillar, de ser recordado y de vivir para siempre a través del arte. Irene Cara nos regala Fame para encender la chispa de la ambición creativa. Siente la energía de Radiochar impulsándote a ser la mejor versión de ti mismo esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tracy Chapman",
+      "cancion": "Fast Car",
+      "frase": "El sueño de escapar de una realidad difícil en busca de algo mejor es el motor de muchas vidas. Tracy Chapman nos conmueve con Fast Car, un relato de esperanza y supervivencia. En Love City, viajamos contigo hacia ese horizonte donde la música siempre brilla.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "Fear Of The Dark",
+      "frase": "Cuando las luces se apagan y la imaginación empieza a jugar con nosotros en la oscuridad. Iron Maiden nos trae Fear Of The Dark, un himno de potencia y atmósfera que sacude la madrugada. No temas, porque en Radiochar la música es tu escudo contra cualquier sombra.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Al Bano And Romina Power",
+      "cancion": "Felicita",
+      "frase": "La felicidad se encuentra en los detalles más simples, en una mirada o en una canción compartida. Al Bano y Romina Power nos traen Felicita para darnos ese toque de ternura europea. Disfruta de este momento de luz en la programación de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Robin Beck",
+      "cancion": "First Time",
+      "frase": "Hay sensaciones que solo se viven una vez y se quedan guardadas como un tesoro en la memoria. Robin Beck nos regala First Time para recordarnos la magia de los comienzos. En Love City, volvemos a emocionarnos con cada nota como si fuera la primera vez.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Irene Cara",
+      "cancion": "Flashdance",
+      "frase": "Sentir que la música se apodera de tu cuerpo y te da la fuerza para lograr lo imposible. Irene Cara nos hace vibrar con Flashdance (What a Feeling). Deja que la pasión por el ritmo sea tu motor en esta madrugada llena de energía en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Slaughter",
+      "cancion": "Fly To The Angels",
+      "frase": "Un adiós que se eleva hacia lo más alto, buscando paz en medio del dolor de la partida. Slaughter nos entrega Fly To The Angels, una balada poderosa para recordar a los que ya no están físicamente. En Love City, honramos su memoria con la mejor música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Foolin'",
+      "frase": "El juego de la seducción a veces nos hace sentir como tontos, pero es un riesgo que siempre vale la pena correr. Def Leppard nos trae Foolin' con toda la fuerza del hard rock británico. Disfruta de la intensidad de Radiochar mientras desafiamos la noche juntos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Forever",
+      "frase": "Incluso los guerreros del rock tienen un lado tierno capaz de prometer amor para toda la eternidad. KISS nos regala Forever, una balada acústica que demuestra que el sentimiento no tiene disfraces. Quédate en Love City y déjate abrazar por este clásico eterno.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alphaville",
+      "cancion": "Forever Young",
+      "frase": "El deseo de detener el reloj y permanecer en la juventud de nuestros sueños para siempre. Alphaville nos trae Forever Young, el himno de los soñadores incansables. En Radiochar, la música nos mantiene jóvenes de espíritu, sin importar cuántos años pasen.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sting",
+      "cancion": "Fragile",
+      "frase": "Recordar cuán frágiles somos nos ayuda a valorar más la vida y las conexiones que construimos. Sting nos acaricia el alma con Fragile en esta madrugada de reflexión. En Love City, cuidamos de tu sensibilidad con canciones que hablan directo al corazón.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Friday I'm In Love",
+      "frase": "No importa qué tan difícil haya sido la semana, siempre hay un día donde el amor lo cura todo. The Cure nos regala Friday I'm In Love para darnos esa dosis de alegría necesaria. Siente la frescura de Radiochar inundando tu espacio en esta noche especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lipps Inc.",
+      "cancion": "Funkytown",
+      "frase": "Viajamos al lugar donde el ritmo nunca se detiene y la diversión es la única regla. Lipps Inc. nos lleva a Funkytown para sacudir la modorra de la madrugada. Deja que el groove de Radiochar te ponga a bailar en medio de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "T. Rex",
+      "cancion": "Get It On (Bang A Gong)",
+      "frase": "El glam rock nos trae ese toque de sensualidad y desenfado que solo Marc Bolan sabía proyectar. T. Rex nos invita a dejarnos llevar con Get It On (Bang A Gong). Siente el magnetismo de Radiochar envolviendo tus sentidos en esta noche de rock puro.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ABBA",
+      "cancion": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+      "frase": "Esa urgencia de compañía cuando el reloj marca las horas más solitarias de la madrugada. ABBA nos trae Gimme! Gimme! Gimme! con ese ritmo que es puro deseo musical. Encuentra lo que buscas en la sintonía de Radiochar, tu mejor compañía nocturna.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Milli Vanilli",
+      "cancion": "Girl You Know It's True",
+      "frase": "A pesar de las controversias, hay melodías que se quedaron grabadas en nuestra memoria colectiva por derecho propio. Milli Vanilli nos trae Girl You Know It's True para darnos ese toque de pop noventero que tanto nos gusta recordar aquí en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cyndi Lauper",
+      "cancion": "Girls Just Want to Have Fun",
+      "frase": "La liberación y la alegría de ser auténtica, sin importar lo que digan los demás. Cyndi Lauper nos regala Girls Just Want to Have Fun para celebrar la libertad de espíritu. Disfruta de este estallido de color en la programación de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Motley Crue",
+      "cancion": "Girls, Girls, Girls",
+      "frase": "El lado salvaje de la ciudad se enciende con el rugido de los motores y el rock más crudo. Motley Crue nos trae Girls, Girls, Girls para darnos esa dosis de adrenalina nocturna. Siente la energía de Radiochar recorriendo las calles de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Laura Branigan",
+      "cancion": "Gloria",
+      "frase": "Un nombre que se convierte en un grito de búsqueda y misterio en medio de la noche. Laura Branigan nos entrega Gloria con una fuerza interpretativa inigualable. Deja que esta voz poderosa te acompañe mientras descubres los secretos de Love City conmigo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Peter Cetera",
+      "cancion": "Glory of Love",
+      "frase": "Luchar por el honor y por el amor de esa persona especial es lo que nos convierte en héroes cotidianos. Peter Cetera nos regala Glory of Love, una balada de devoción absoluta. En Radiochar, creemos en los finales felices y en la música que los inspira.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "C & C Music Factory, Freedom Williams",
+      "cancion": "Gonna Make You Sweat (Everybody Dance Now)",
+      "frase": "Es imposible quedarse quieto cuando este ritmo empieza a golpear tus oídos con fuerza. C & C Music Factory nos pone a sudar con Everybody Dance Now. Siente la explosión de energía de Radiochar despertando cada rincón de tu Love City esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "George Harrison",
+      "cancion": "Got My Mind Set on You",
+      "frase": "Cuando te enfocas en un objetivo, o en una persona, nada puede apartarte del camino. El ex-Beatle George Harrison nos trae Got My Mind Set on You con esa alegría contagiosa. Disfruta de la buena vibra de Radiochar mientras avanzamos por la noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "Hallowed Be Thy Name",
+      "frase": "La reflexión final de un hombre ante lo inevitable se convierte en una de las piezas más épicas del rock. Iron Maiden nos entrega Hallowed Be Thy Name. En la profundidad de Love City, nos permitimos vibrar con la intensidad de esta obra maestra musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "New Kids On The Block",
+      "cancion": "Hangin' Tough",
+      "frase": "Mantenerse fuerte ante los desafíos es la única forma de llegar a la cima. New Kids On The Block nos traen Hangin' Tough con ese estilo que marcó a toda una generación. Siente la determinación de Radiochar acompañándote en cada paso de esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Turtles",
+      "cancion": "Happy Together",
+      "frase": "Imaginar una vida de felicidad perfecta al lado de quien amas es el sueño más dulce de todos. The Turtles nos regalan Happy Together para darnos ese toque de optimismo sesentero. Disfruta de esta armonía encantadora aquí en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chicago",
+      "cancion": "Hard to Say I'm Sorry",
+      "frase": "A veces el orgullo nos impide decir las palabras que podrían salvarlo todo. Chicago interpreta Hard to Say I'm Sorry con una sensibilidad que llega hasta el alma. En Love City, te damos el valor para pedir perdón a través de la música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Have You Ever Really Loved A Woman",
+      "frase": "Entender la profundidad de un sentimiento requiere tiempo, paciencia y mucha entrega. Bryan Adams nos hace la pregunta definitiva en Have You Ever Really Loved A Woman. Deja que el sabor de Radiochar te guíe en este aprendizaje sobre el amor verdadero.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Have You Ever Seen The Rain",
+      "frase": "Incluso en los días soleados puede haber tristeza, y la lluvia puede traer una extraña paz. Creedence Clearwater Revival nos regala Have You Ever Seen The Rain, un clásico que nunca envejece. Disfruta de la autenticidad de Radiochar en esta madrugada de recuerdos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tears For Fears",
+      "cancion": "Head Over Heels",
+      "frase": "Esa sensación de caer rendido ante alguien, sin paracaídas y con el corazón a mil por hora. Tears For Fears nos traen Head Over Heels con su sonido sofisticado y envolvente. Déjate llevar por la magia de Radiochar en este viaje por tus emociones.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Blondie",
+      "cancion": "Heart Of Glass",
+      "frase": "El amor a veces parece frágil como el cristal, pero brilla con la intensidad de una bola de espejos. Blondie nos entrega Heart Of Glass, una mezcla perfecta de rock y música disco. Siente la elegancia de Love City en este clásico de Debbie Harry.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Heaven",
+      "frase": "Encontrar el paraíso en los brazos de alguien es la mayor fortuna que podemos tener en la tierra. Bryan Adams nos susurra Heaven para recordarnos que el cielo está más cerca de lo que pensamos. Disfruta de esta balada eterna aquí en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Warrant",
+      "cancion": "Heaven",
+      "frase": "A veces el paraíso no es un lugar lejano, sino el refugio que encuentras en los brazos de la persona correcta. Warrant nos entrega Heaven para recordarnos que el amor es esa paz que tanto buscamos en la madrugada. Quédate en sintonía de Radiochar, donde el cielo se toca con cada nota.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Belinda Carlisle",
+      "cancion": "Heaven Is A Place On Earth",
+      "frase": "Dicen que el paraíso es un estado mental, un momento de plenitud que nos hace sentir invencibles. Belinda Carlisle nos invita a creer que Heaven Is A Place On Earth. Deja que esta energía positiva inunde tu habitación mientras Love City ilumina tu noche con lo mejor del pop clásico.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Heaven's On Fire",
+      "frase": "Hay pasiones que arden con tanta fuerza que iluminan hasta la noche más oscura. KISS nos trae Heaven's On Fire para encender la chispa del deseo en Radiochar. Siente la vibración de las guitarras recorriendo Love City y deja que tu corazón se rinda ante este fuego musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lionel Richie",
+      "cancion": "Hello",
+      "frase": "Una sola palabra puede ser el comienzo de una historia eterna o el eco de una soledad profunda. Lionel Richie nos pregunta Hello en una de las baladas más icónicas de todos los tiempos. En Love City, respondemos con el alma abierta a este clásico que nunca dejará de emocionarnos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "UB40",
+      "cancion": "Here I Am (Come And Take Me)",
+      "frase": "Rendirse ante el amor es un acto de valentía que nos deja expuestos y vivos. UB40 nos trae Here I Am (Come And Take Me) con ese ritmo suave que invita al encuentro. Disfruta de la cadencia de Radiochar mientras la madrugada se vuelve un escenario para el romance.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitesnake",
+      "cancion": "Here I Go Again 87",
+      "frase": "Caminar solo por el camino de la vida, con la experiencia como única guía, es la esencia del espíritu libre. Whitesnake nos regala Here I Go Again 87 para darnos esa fuerza necesaria en la oscuridad. En Love City, te acompañamos en tu viaje, sea cual sea tu destino hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mariah Carey",
+      "cancion": "Hero",
+      "frase": "Dentro de cada uno de nosotros vive una fuerza capaz de superar cualquier obstáculo, solo hace falta creer. Mariah Carey nos eleva con Hero, una canción que es un abrazo para el alma cansada. Deja que Radiochar sea tu refugio y encuentra tu luz interior en esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Hey You",
+      "frase": "Un grito desesperado a través del muro, buscando una conexión en medio del aislamiento. Pink Floyd nos sumerge en la profundidad de Hey You. En la quietud de Love City, escuchamos esos susurros que piden no ser olvidados. Siente la mística de Radiochar en cada acorde de esta obra maestra.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Damn Yankees",
+      "cancion": "High Enough",
+      "frase": "A veces el amor nos pide llegar más alto de lo que creíamos posible, desafiando incluso nuestras propias sombras. Damn Yankees nos entrega High Enough, una balada épica sobre la superación y el compromiso. Vuela alto conmigo en esta noche de Radiochar, donde los sueños no tienen límites.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Highway to Hell",
+      "frase": "Hay caminos que se recorren a máxima velocidad, sin mirar atrás y con el rock como único estandarte. AC/DC nos pone en la Highway to Hell para sacudir la calma de la madrugada. Siente la electricidad de Radiochar despertando tus sentidos en medio de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Hold the Line",
+      "frase": "Mantener la posición, no ceder ante la duda y esperar a que el amor demuestre su valor. TOTO nos regala Hold the Line con ese riff inolvidable que marca el pulso de la noche. Quédate con Karol Morales en Radiochar, donde la lealtad a la buena música es nuestra prioridad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Simply Red",
+      "cancion": "Holding Back the Years",
+      "frase": "Mirar las cicatrices del pasado y entender que el tiempo nos ha moldeado es un ejercicio de madurez emocional. Simply Red nos acaricia con Holding Back the Years. En Love City, le damos un espacio a la nostalgia reflexiva que solo la voz de Mick Hucknall sabe transmitir.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bonnie Tyler",
+      "cancion": "Holding Out for a Hero",
+      "frase": "Esperar a alguien que sea capaz de luchar contra viento y marea por nosotros es un deseo que late en la oscuridad. Bonnie Tyler nos trae Holding Out for a Hero con toda su fuerza interpretativa. Deja que la épica de Radiochar transforme tu madrugada en una aventura inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Donna Summer",
+      "cancion": "Hot Stuff",
+      "frase": "La noche pide un ritmo que queme, que nos haga sentir el calor de la pasión bajo las sábanas. La reina Donna Summer nos entrega Hot Stuff para subir la temperatura de Love City. Disfruta de este clásico de la música disco que sigue encendiendo los corazones en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eagles",
+      "cancion": "Hotel California",
+      "frase": "Un lugar misterioso donde puedes entrar cuando quieras, pero del que nunca podrás salir del todo. Los Eagles nos cuentan la leyenda de Hotel California. En Love City, nos dejamos atrapar por esta atmósfera hipnótica que Radiochar rescata para ti en esta hora mágica.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Animals",
+      "cancion": "House of the Rising Sun",
+      "frase": "Historias de perdición y esperanza que se cuentan desde hace décadas en las esquinas del rock. The Animals nos traen House of the Rising Sun con esa voz que parece venir de lo más profundo del alma. Siente el peso de la tradición musical aquí en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Bolton",
+      "cancion": "How Am I Supposed to Live Without You",
+      "frase": "La pregunta que surge cuando el vacío ocupa el lugar donde antes habitaba el amor. Michael Bolton interpreta How Am I Supposed to Live Without You con una entrega que duele. En Love City, compartimos tu sentimiento y te damos el hombro musical que necesitas hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bee Gees",
+      "cancion": "How Deep Is Your Love",
+      "frase": "Las armonías perfectas nos invitan a cuestionar la profundidad de lo que sentimos en este mar de emociones. Los Bee Gees nos regalan How Deep Is Your Love, una caricia acústica para tu madrugada. Déjate envolver por la dulzura de Radiochar en este bloque romántico.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bad Boys Blue",
+      "cancion": "How I Need You",
+      "frase": "Confesar la necesidad de alguien es un acto de honestidad brutal que nos hace humanos. Bad Boys Blue nos trae How I Need You con ese toque de italo-disco romántico que tanto nos gusta. Siente el latido de Radiochar acompañando tus deseos más profundos en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Carmen",
+      "cancion": "Hungry Eyes",
+      "frase": "Hay miradas que tienen hambre de amor, de contacto y de promesas cumplidas bajo la luz de la luna. Eric Carmen nos cautiva con Hungry Eyes. En Love City, sabemos que tus ojos también buscan algo especial en esta noche de radio, y aquí lo vas a encontrar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Hungry Heart",
+      "frase": "Incluso cuando parece que lo tenemos todo, siempre hay un corazón hambriento que nos empuja a seguir buscando. Bruce Springsteen nos regala Hungry Heart para darnos ese toque de vitalidad y realismo. Disfruta de la autenticidad de Radiochar mientras recorres las calles de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Hysteria",
+      "frase": "Esa sensación mágica donde la emoción se desborda y el mundo entero parece vibrar al unísono. Def Leppard nos entrega Hysteria, una joya de producción y sentimiento. Deja que esta melodía envolvente sea el soundtrack de tu conexión perfecta esta noche en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "I Don't Want to Miss a Thing",
+      "frase": "Hay momentos tan valiosos que cerrar los ojos parece un desperdicio de tiempo y de amor. Aerosmith nos conmueve con I Don't Want to Miss a Thing. En Love City, atesoramos cada segundo contigo, ofreciéndote las canciones que hacen que la vida valga la pena en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chicago",
+      "cancion": "I Dont Wanna Live Without Your Love",
+      "frase": "Reconocer que el aire nos falta cuando esa persona no está es la declaración más sincera de dependencia emocional. Chicago nos trae I Dont Wanna Live Without Your Love. Deja que esta balada impecable te acompañe en Love City mientras Radiochar le pone nombre a tus sentimientos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beach Boys",
+      "cancion": "I Get Around",
+      "frase": "La libertad de recorrer la ciudad, de sentir el viento en la cara y buscar nuevas aventuras en cada esquina. The Beach Boys nos traen I Get Around para darnos ese toque de frescura y juventud eterna. Disfruta del estilo inconfundible de Radiochar en esta madrugada vibrante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joan Jett & the Blackhearts",
+      "cancion": "I Hate Myself for Loving You",
+      "frase": "Ese conflicto interno entre la razón que dice basta y el corazón que sigue pidiendo más de lo que nos hace daño. Joan Jett nos entrega I Hate Myself for Loving You con toda su actitud rockera. En Radiochar, entendemos esos amores difíciles que no nos dejan dormir.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Stevie Wonder",
+      "cancion": "I Just Called To Say I Love You",
+      "frase": "No hace falta una fecha especial para decirle a alguien lo que realmente significa en nuestra vida. Stevie Wonder nos recuerda la importancia de lo simple en I Just Called To Say I Love You. En Love City, cada canción es nuestra forma de decirte que te queremos aquí.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joan Jett & the Blackhearts",
+      "cancion": "I Love Rock 'N Roll",
+      "frase": "Un himno de pertenencia, un grito de identidad que nos une bajo la misma bandera de las guitarras eléctricas. Joan Jett nos pone a vibrar con I Love Rock 'N Roll. Siente la fuerza de Radiochar recordándote que la música es nuestra religión en esta noche sin fin.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Donna Lewis",
+      "cancion": "I Love You Always Forever",
+      "frase": "Una promesa que flota en el aire como una caricia suave, constante y llena de ternura infinita. Donna Lewis nos envuelve con I Love You Always Forever en esta madrugada de ensueño. En Love City, las palabras dulces se vuelven melodías que te acompañan hasta el amanecer.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Skid Row",
+      "cancion": "I Remember You",
+      "frase": "Las cartas de amor guardadas y los recuerdos que se niegan a borrarse tienen su propia balada en el metal. Skid Row nos entrega I Remember You con una emoción cruda y desgarradora. Escúchala en Radiochar y deja que el pasado te visite con amabilidad hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "All-4-One",
+      "cancion": "I Swear",
+      "frase": "Un juramento de lealtad y amor eterno que se siente como un refugio seguro en medio de la tormenta. All-4-One nos armoniza con I Swear en esta noche de promesas cumplidas. En Love City, creemos en las palabras que vienen del corazón y se quedan para siempre.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitney Houston",
+      "cancion": "I Wanna Dance with Somebody",
+      "frase": "Ese deseo de encontrar a alguien que comparta nuestro ritmo, que nos saque de la soledad y nos haga girar. Whitney Houston nos regala I Wanna Dance with Somebody para iluminar la madrugada. Baila conmigo en Radiochar y siente la alegría de estar vivo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "I Want To Break Free",
+      "frase": "La necesidad de soltar las amarras, de ser auténticos y vivir sin máscaras ante el mundo. Queen nos entrega I Want To Break Free, el himno definitivo de la liberación personal. Siente la fuerza de Freddie Mercury impulsándote a ser tú mismo en esta noche de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beatles",
+      "cancion": "I Want To Hold Your Hand",
+      "frase": "Un gesto tan simple como tomar una mano puede ser el inicio de la mayor revolución emocional de tu vida. Los Beatles nos traen la frescura de I Want To Hold Your Hand para recordarnos dónde empezó todo. Disfruta de la magia eterna aquí en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "I Want to Know What Love Is",
+      "frase": "Buscar el significado real del sentimiento más profundo, pidiendo una señal que nos muestre el camino. Foreigner interpreta I Want to Know What Love Is con una espiritualidad que conmueve. Deja que Radiochar te guíe en esta búsqueda incansable de la verdad en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "I Was Made For Lovin' You",
+      "frase": "Nacer con el único propósito de encontrar y amar a esa persona especial es un destino escrito en las estrellas. KISS nos pone a bailar con I Was Made For Lovin' You en esta mezcla perfecta de rock y disco. Siente la vibración de Radiochar en tu piel.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitney Houston",
+      "cancion": "I Will Always Love You",
+      "frase": "Una despedida que no es el final, sino una promesa de que el amor trascenderá incluso la ausencia física. Whitney Houston nos regala su voz prodigiosa en I Will Always Love You. En Love City, nos rendimos ante esta obra maestra que Radiochar tiene para ti esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "I Won't Forget You",
+      "frase": "Incluso cuando los caminos se separan, hay huellas que el tiempo nunca podrá borrar del corazón. Poison nos entrega I Won't Forget You, una balada de metal llena de nostalgia y sinceridad. Quédate en Love City y deja que los recuerdos te abracen en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "I'll Be Over You",
+      "frase": "Reconocer que el olvido es una meta lejana y que, por ahora, el sentimiento sigue siendo el rey de nuestra noche. TOTO nos regala I'll Be Over You con una sofisticación armónica impecable. En Radiochar, acompañamos tu proceso con la música que mejor entiende tu corazón.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Barry White",
+      "cancion": "I'll Do For You Anything You Want Me To",
+      "frase": "La entrega total tiene la voz profunda y seductora del maestro Barry White. En I'll Do For You Anything You Want Me To, nos enseña que el amor es servicio y pasión en cada detalle. Deja que la elegancia de Radiochar envuelva tu intimidad nocturna en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Milli Vanilli",
+      "cancion": "I'm Gonna Miss You",
+      "frase": "Extrañar es la forma que tiene el alma de decir que lo vivido fue real y valió la pena. Milli Vanilli nos trae I'm Gonna Miss You con esa cadencia pop que nos hace suspirar. En Radiochar, le damos un espacio a la ausencia para que se vuelva canción en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Vanilla Ice",
+      "cancion": "Ice Ice Baby",
+      "frase": "Un poco de frescura urbana para romper el silencio y darle ritmo a tus pensamientos en esta hora. Vanilla Ice nos trae Ice Ice Baby para recordarnos que Radiochar siempre tiene ese toque original que te mantiene conectado. Disfruta del flow en medio de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sting",
+      "cancion": "If I Ever Lose My Faith In You",
+      "frase": "Cuando todo lo demás falla, solo queda la fe en esa conexión especial que nos mantiene a flote. Sting nos regala If I Ever Lose My Faith In You con su elegancia característica. Deja que la música sea tu ancla en esta madrugada profunda de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Simply Red",
+      "cancion": "If You Don't Know Me by Now",
+      "frase": "El conocimiento profundo del otro es la base de cualquier historia que pretenda durar para siempre. Simply Red interpreta If You Don't Know Me by Now con una pasión soul que eriza la piel. En Love City, celebramos los amores que se conocen en cada silencio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chicago",
+      "cancion": "If You Leave Me Now",
+      "frase": "El miedo a la partida se vuelve una súplica melódica en las voces de Chicago. If You Leave Me Now es un clásico que nos recuerda la fragilidad de lo que construimos. Quédate conmigo en Radiochar, donde la música es el lazo que nunca se rompe.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Lennon",
+      "cancion": "Imagine",
+      "frase": "Un sueño de unidad, de paz y de un mundo sin fronteras que sigue latiendo en cada rincón del planeta. John Lennon nos invita a Imagine en esta madrugada de reflexión. En Radiochar, creemos que un mundo mejor empieza con una canción compartida en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "In The Air Tonight",
+      "frase": "Sentir que algo está por suceder, una tensión que se resuelve en un estallido rítmico inolvidable. Phil Collins nos trae In The Air Tonight para darnos ese toque de misterio y potencia nocturna. Siente la atmósfera de Radiochar envolviéndote en este preciso instante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Status Quo",
+      "cancion": "In The Army Now",
+      "frase": "La disciplina de la noche nos obliga a mantener la guardia alta mientras los recuerdos marchan por nuestra mente. Status Quo nos entrega In The Army Now con ese ritmo marcial y envolvente. Disfruta de la originalidad sin límites que Radiochar te propone en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "Iron Man",
+      "frase": "Un gigante de metal que camina por la oscuridad, dejando una huella imborrable en la historia del sonido. Black Sabbath nos trae Iron Man para sacudir los cimientos de tu madrugada. Siente el poder de Radiochar imponiendo su ley en esta noche de rock puro.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitesnake",
+      "cancion": "Is This Love",
+      "frase": "Esa duda que nos asalta cuando el corazón empieza a latir a un ritmo que ya no controlamos. Whitesnake nos regala Is This Love, una de las baladas más apasionadas del hard rock. Encuentra la respuesta en Love City mientras Radiochar te susurra la verdad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "It Must Have Been Love",
+      "frase": "Reconocer que algo fue real, pero que el tiempo de las flores ha pasado, es una de las tristezas más hermosas del pop. Roxette nos conmueve con It Must Have Been Love. En Radiochar, acompañamos tu nostalgia con las melodías que marcaron tu vida en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pet Shop Boys",
+      "cancion": "It's a Sin",
+      "frase": "Cuestionar las reglas, sentir el peso de la culpa y bailar a pesar de todo. Pet Shop Boys nos traen It's a Sin con su sofisticación electrónica y su drama bailable. Deja que el pulso de Radiochar te guíe en esta madrugada donde todo está permitido.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "It's My Life",
+      "frase": "Tomar las riendas del destino, gritar nuestra verdad y vivir bajo nuestras propias condiciones. Bon Jovi nos inyecta energía con It's My Life. En Love City, hoy celebramos tu autonomía y tu pasión por la vida con la mejor compañía de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "New Kids On The Block",
+      "cancion": "I'll Be Loving You",
+      "frase": "Asegurar que el mañana siempre nos encontrará amando con la misma intensidad que hoy. New Kids On The Block nos traen I'll Be Loving You (Forever) para endulzar tu madrugada. Disfruta de la ternura de Radiochar mientras el tiempo se detiene en tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "I'll Be There For You",
+      "frase": "Estar dispuesto a darlo todo, a ser el escudo y el refugio cuando el mundo afuera se pone difícil. Bon Jovi nos entrega I'll Be There For You, una declaración de lealtad absoluta. Siente la cercanía de Radiochar en esta madrugada donde no estás solo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pretenders",
+      "cancion": "I'll Stand by You",
+      "frase": "Para esos momentos en los que sientes que todo se derrumba, aquí hay una voz que promete no soltarte. Pretenders nos entregan I'll Stand by You con una calidez protectora. En Love City, Karol Morales y Radiochar estamos aquí, firmes a tu lado, pase lo que pase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Janie's Got A Gun",
+      "frase": "Historias urbanas que golpean con la fuerza de un secreto que ya no puede guardarse más. Aerosmith nos trae Janie's Got A Gun con toda la maestría narrativa de Steven Tyler. En Radiochar, la música también es un espejo de las realidades que nos rodean en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Falco",
+      "cancion": "Jeanny",
+      "frase": "Una atmósfera de misterio y obsesión que nos transporta a los rincones más oscuros de la mente. Falco nos entrega Jeanny, una pieza dramática y envolvente que suena perfecta en esta hora profunda. Atrévete a explorar los límites del sonido con Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "Joyride",
+      "frase": "Súbete al auto de los sueños y deja que el viento despeine tus pensamientos en este viaje de alegría pura. Roxette nos invita a su Joyride para darnos ese toque de vitalidad pop. Disfruta del camino en Love City con la mejor guía de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Van Halen",
+      "cancion": "Jump",
+      "frase": "A veces solo hace falta dar ese salto de fe para cambiarlo todo y empezar a brillar de verdad. Van Halen nos regala Jump con ese sintetizador icónico que despierta hasta las piedras. Siente la adrenalina de Radiochar impulsándote a lo más alto esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Just Like Heaven",
+      "frase": "Perderse en un abrazo, sentir que el mundo exterior desaparece y que solo queda la magia de un instante perfecto. The Cure nos trae Just Like Heaven para darnos esa dosis de romanticismo alternativo. En Love City, cada nota es un pedazo de cielo en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Culture Club",
+      "cancion": "Karma Chameleon",
+      "frase": "El juego de las apariencias y la búsqueda de la identidad en un mundo lleno de colores y cambios constantes. Culture Club nos regala Karma Chameleon para darnos ese toque de frescura ochentera. Disfruta de la originalidad de Radiochar en esta noche llena de matices.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "REO Speedwagon",
+      "cancion": "Keep on Loving You",
+      "frase": "La persistencia de un sentimiento que sobrevive a las tormentas y se fortalece con cada nuevo amanecer. REO Speedwagon nos entrega Keep on Loving You para recordarnos el valor de la constancia en el amor. Quédate conmigo en Radiochar, tu hogar en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "REO Speedwagon",
+      "cancion": "Keep the Fire Burnin'",
+      "frase": "No dejes que la rutina apague la llama que encendimos con tanta pasión; hay que alimentarla cada noche. REO Speedwagon nos pide Keep the Fire Burnin' en esta madrugada de Radiochar. Somos el combustible que tu corazón necesita para seguir latiendo con fuerza en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "UB40",
+      "cancion": "Kingston Town",
+      "frase": "Viajamos con la imaginación a lugares donde el ritmo es lento y la vida tiene sabor a mar y romance. UB40 nos trae Kingston Town para relajar tus sentidos en esta hora profunda. Disfruta de la calma de Radiochar mientras el amor nos guía suavemente.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Seal",
+      "cancion": "Kiss from a Rose",
+      "frase": "Un beso que se siente como un hechizo, lleno de elegancia, fuerza y una belleza casi mística. Seal nos acaricia con Kiss from a Rose en esta noche de Radiochar. En Love City, nos dejamos seducir por las voces que saben cómo llegar directo al alma.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Knockin' On Heaven's Door",
+      "frase": "Llamar a las puertas de lo sagrado buscando paz después de una larga batalla emocional. Guns N' Roses interpreta Knockin' On Heaven's Door con una intensidad que se siente en los huesos. Siente la fuerza del rock acompañando tu silencio en Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ZZ Top",
+      "cancion": "La Grange",
+      "frase": "El rugido de las guitarras tejanas llega para ponerle sabor y actitud a tu madrugada urbana. ZZ Top nos trae La Grange con todo su groove inconfundible. Deja que el rock más auténtico de Radiochar sacuda la modorra de tu Love City en este instante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Madonna",
+      "cancion": "La Isla Bonita",
+      "frase": "Soñar con un paraíso tropical donde el amor se vive con la libertad de la brisa marina. La reina Madonna nos regala La Isla Bonita para darnos ese toque de sol en medio de la noche. Disfruta de la sofisticación pop de Radiochar mientras viajas conmigo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pearl Jam",
+      "cancion": "Last Kiss",
+      "frase": "Un último encuentro que se queda grabado como una cicatriz de ternura y dolor en la memoria. Pearl Jam nos conmueve con Last Kiss, recordándonos que el amor es un regalo que puede ser efímero. En Love City, honramos cada recuerdo con la mejor música de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Electric Light Orchestra",
+      "cancion": "Last Train to London",
+      "frase": "Subirse al último tren, buscando una oportunidad más antes de que el sol nos alcance. Electric Light Orchestra nos trae Last Train to London con su sonido espacial y rítmico. Siente el movimiento de Radiochar llevándote a tu destino ideal esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Clapton",
+      "cancion": "Layla",
+      "frase": "Una súplica desesperada, un deseo que se vuelve riff de guitarra y desgarra el aire de la madrugada. Eric Clapton nos entrega Layla con toda la pasión de quien ama sin esperanza. En Radiochar, le damos voz a tus sentimientos más intensos en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Fools Garden",
+      "cancion": "Lemon Tree",
+      "frase": "A veces la vida tiene un sabor agridulce y nos sentimos atrapados en una espera que parece no terminar. Fools Garden nos regala Lemon Tree para darnos ese toque de melancolía bailable. Disfruta de la originalidad de Radiochar mientras recorres tus propios pensamientos hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beatles",
+      "cancion": "Let It Be",
+      "frase": "Encontrar la sabiduría en la aceptación, dejando que las cosas sigan su curso natural hacia la paz. Los Beatles nos traen Let It Be como un bálsamo para cualquier conflicto interno. En Love City, somos tu refugio de calma en la sintonía de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "David Bowie",
+      "cancion": "Let's Dance",
+      "frase": "Bajo la luz de la luna, el único lenguaje que realmente importa es el que hablan nuestros cuerpos al moverse. El Duque Blanco, David Bowie, nos invita a Let's Dance. Siente la elegancia vanguardista de Radiochar transformando tu habitación en una pista de baile hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Earth, Wind & Fire",
+      "cancion": "Let's Groove",
+      "frase": "Dejar que el ritmo tome el control de tus latidos y te lleve a un estado de felicidad absoluta. Earth, Wind & Fire nos traen Let's Groove para encender la energía de Radiochar. Disfruta de la explosión de sabor que Love City tiene preparada para ti esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "Listen To Your Heart",
+      "frase": "Cuando las palabras de los demás te confundan, solo hay una voz que debes seguir para no perderte. Roxette nos pide Listen To Your Heart en esta balada poderosa y emotiva. En Love City, te ayudamos a conectar con tu verdad interior a través de la música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Elton John",
+      "cancion": "Little Jeannie",
+      "frase": "Un agradecimiento dulce por la presencia de alguien que ha traído luz a nuestros días más grises. Elton John nos regala Little Jeannie con esa calidez que solo su piano puede proyectar. Quédate en Radiochar y déjate abrazar por la ternura en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Opus",
+      "cancion": "Live Is Life",
+      "frase": "Celebrar el momento presente, la conexión con los demás y la fuerza de estar vivos aquí y ahora. Opus nos trae Live Is Life para darnos ese toque de euforia necesaria en la madrugada. Siente el latido de Radiochar uniéndose al tuyo en esta noche especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Livin' On A Prayer",
+      "frase": "Para todos los luchadores que siguen adelante a pesar de las dificultades, manteniendo la fe y el amor como bandera. Bon Jovi nos eleva con Livin' On A Prayer. No te rindas, porque en Radiochar siempre hay un himno esperándote para darte fuerza en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chicago",
+      "cancion": "Look Away",
+      "frase": "El dolor de ver a quien amamos con alguien más se resume en el deseo de apartar la mirada para no sufrir. Chicago interpreta Look Away con una sensibilidad que llega al alma. En Radiochar, acompañamos tu proceso con las mejores baladas del mundo en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "R.E.M.",
+      "cancion": "Losing My Religion",
+      "frase": "Esa lucha interna por no perder la compostura cuando el sentimiento nos desborda por completo. R.E.M. nos trae Losing My Religion con su sonido alternativo y profundo. Deja que la mística de Radiochar te acompañe en esta madrugada de búsqueda personal en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Air Supply",
+      "cancion": "Lost In Love",
+      "frase": "Perderse voluntariamente en el sentimiento más bello de todos es la mejor forma de encontrarse a uno mismo. Air Supply nos acaricia con Lost In Love en esta noche de Radiochar. Disfruta de la dulzura inconfundible de Love City mientras el tiempo se detiene hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Debbie Gibson",
+      "cancion": "Lost in Your Eyes",
+      "frase": "Navegar por la mirada de quien amas y sentir que no hace falta nada más para ser feliz en este mundo. Debbie Gibson nos regala Lost in Your Eyes en esta madrugada de terciopelo. En Radiochar, valoramos la ternura de una melodía que habla directo al corazón.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Love Bites",
+      "frase": "A veces el amor duele, muerde y nos deja cicatrices que tardan en sanar, pero siempre vale el riesgo. Def Leppard nos entrega Love Bites, una balada poderosa y llena de intensidad emocional. Siente la fuerza de Radiochar acompañando tus sentimientos más profundos esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pat Benatar",
+      "cancion": "Love Is A Battlefield",
+      "frase": "Luchar por lo que queremos, defender nuestro corazón y no rendirnos nunca en esta guerra de sentimientos. Pat Benatar nos trae Love Is A Battlefield con toda su fuerza y determinación rockera. Siente la actitud de Radiochar impulsándote a ganar hoy en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Saigon Kick",
+      "cancion": "Love Is on the Way",
+      "frase": "Mantener la esperanza encendida porque el sentimiento que tanto esperas ya está cerca de encontrarte. Saigon Kick nos regala Love Is on the Way, una balada acústica de una belleza serena y profunda. Disfruta de este momento de paz aquí en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tesla",
+      "cancion": "Love Song",
+      "frase": "Una oda a la música como vehículo del sentimiento, recordándonos que siempre habrá una melodía para cada corazón. Tesla nos entrega Love Song con toda la honestidad del hard rock clásico. En Love City, tu historia tiene el soundtrack perfecto gracias a Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Lovesong",
+      "frase": "Sin importar qué tan lejos estemos o cuánto tiempo pase, siempre seré tuyo en cada nota de esta canción. The Cure nos trae Lovesong con esa melancolía dulce y profunda que tanto nos define. Quédate en sintonía de Radiochar, tu conexión emocional en esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Peter Schilling",
+      "cancion": "Major Tom (Coming Home)",
+      "frase": "Flotar en el espacio infinito, dejando atrás la tierra y regresando a casa a través de las estrellas. Peter Schilling nos trae Major Tom (Coming Home) para darnos ese toque de ciencia ficción musical. Disfruta del viaje imaginario que Radiochar te propone hoy en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Air Supply",
+      "cancion": "Making Love Out of Nothing at All",
+      "frase": "Construir un imperio de sentimientos partiendo de un solo suspiro es el poder real de los amantes. Air Supply nos regala Making Love Out of Nothing at All con una potencia vocal impresionante. Déjate elevar por la magia de Radiochar en esta noche de entrega total.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Man in the Mirror",
+      "frase": "Empezar el cambio por uno mismo, mirándose honestamente y decidiendo ser mejor para el mundo. Michael Jackson nos conmueve con Man in the Mirror en esta madrugada de reflexión. En Radiochar, creemos en el poder transformador de la música para tu alma en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Daryl Hall & John Oates",
+      "cancion": "Maneater",
+      "frase": "Cuidado con los encantos que pueden ser peligrosos, con esa belleza que atrapa y consume sin piedad. Hall & Oates nos traen Maneater con su sofisticación pop y ese groove inconfundible. Siente el estilo de Radiochar acompañando tus pasos nocturnos en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Sembello",
+      "cancion": "Maniac",
+      "frase": "Sentir que la música se apodera de cada fibra de tu cuerpo y te lleva a un estado de frenesí creativo. Michael Sembello nos trae Maniac para encender la energía de Love City. Baila con la intensidad de Radiochar y deja que el ritmo sea tu única guía hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Message In A Bottle",
+      "frase": "Lanzar un grito al mar de la soledad con la esperanza de que alguien, en algún lugar, lo recoja y nos responda. The Police nos trae Message In A Bottle para recordarnos que todos buscamos lo mismo. Encuentra tu conexión aquí en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Berlin",
+      "cancion": "Metro",
+      "frase": "Un encuentro fugaz en la ciudad, una historia que se escribe entre estaciones y miradas perdidas en el tiempo. Berlin nos entrega Metro con su atmósfera de synth-pop elegante y misteriosa. Disfruta de la identidad urbana de Radiochar en esta madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Waite",
+      "cancion": "Missing You",
+      "frase": "Ese autoengaño de decir que no extrañamos a alguien cuando cada rincón de nuestra mente nos dice lo contrario. John Waite interpreta Missing You con una sinceridad que desarma. En Love City, acompañamos tu proceso con las canciones que entienden perfectamente tu desvelo en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Money",
+      "frase": "El motor que mueve al mundo y a veces nos aleja de lo que realmente importa en la vida. Pink Floyd nos trae Money con su experimentación sonora y su crítica mordaz. En la paz de Radiochar, hoy solo nos importa la riqueza de la buena música en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Boston",
+      "cancion": "More Than a Feeling",
+      "frase": "Mucho más que una simple sensación; es un recuerdo que se activa con la primera nota de una vieja canción. Boston nos eleva con More Than a Feeling en esta madrugada de Radiochar. Deja que el rock más pulido te transporte a esos momentos felices en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Extreme",
+      "cancion": "More Than Words",
+      "frase": "Llega un punto en el que los 'te amo' sobran y solo queda demostrarlo con hechos y silencios compartidos. Extreme nos acaricia con More Than Words en esta balada acústica de una sencillez perfecta. Disfruta de la honestidad de Radiochar en esta noche de sentimientos reales.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Clapton",
+      "cancion": "My Father's Eyes",
+      "frase": "Buscar nuestro origen y nuestro futuro en la mirada de quienes nos dieron la vida es un viaje espiritual profundo. Eric Clapton nos entrega My Father's Eyes con una sensibilidad que conmueve. Quédate en Radiochar y deja que esta melodía te reconforte hoy en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Knack",
+      "cancion": "My Sharona",
+      "frase": "Esa obsesión rítmica que se apodera de tu cabeza y te obliga a marcar el paso sin descanso. The Knack nos trae My Sharona para darnos ese toque de energía power-pop que Radiochar siempre tiene para ti. Disfruta del pulso de la ciudad en esta madrugada vibrante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "N.I.B.",
+      "frase": "Incluso la oscuridad tiene su propia forma de seducción y su declaración de amor incondicional en el rock pesado. Black Sabbath nos trae N.I.B. con ese bajo hipnótico que marcó una era. Siente la fuerza de Radiochar imponiendo su estilo en esta noche profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "INXS",
+      "cancion": "Need You Tonight",
+      "frase": "La urgencia del deseo que se siente en cada latido, pidiendo cercanía antes de que el sol nos encuentre. INXS nos seduce con Need You Tonight con la voz inolvidable de Michael Hutchence. Deja que la sensualidad de Radiochar prepare el ambiente en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Rick Astley",
+      "cancion": "Never Gonna Give You Up",
+      "frase": "La promesa de no rendirse nunca, de estar ahí pase lo que pase y de proteger lo que construimos juntos. Rick Astley nos trae Never Gonna Give You Up para darnos ese toque de optimismo bailable. Disfruta del brillo de Radiochar en esta madrugada llena de ritmo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sergio Mendes",
+      "cancion": "Never Gonna Let You Go",
+      "frase": "Cuando encuentras a alguien que le da sentido a tu mundo, la única consigna es no soltar su mano jamás. Sergio Mendes nos regala Never Gonna Let You Go con una elegancia y dulzura supremas. En Love City, celebramos las historias que se quedan para siempre en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "INXS",
+      "cancion": "Never Tear Us Apart",
+      "frase": "Un juramento que el tiempo no puede desgastar, una unión que trasciende cualquier obstáculo externo. INXS nos conmueve con Never Tear Us Apart en esta pieza de sofisticación y alma. Deja que el saxofón de Radiochar sea el eco de tu compromiso eterno esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "Night Calls",
+      "frase": "Las llamadas de la noche que nos traen voces del pasado o promesas de un futuro que aún no descubrimos. Joe Cocker nos envuelve con Night Calls y su voz rasgada llena de sentimiento. Siente la atmósfera nocturna de Radiochar acompañando tu desvelo en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bee Gees",
+      "cancion": "Night Fever",
+      "frase": "Sentir que la ciudad cobra vida bajo tus pies y que el ritmo es la única medicina para la soledad. Los Bee Gees nos traen Night Fever para encender la pista de baile imaginaria de Radiochar. Disfruta de la fiebre del sábado... o de cualquier madrugada en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Annie Lennox",
+      "cancion": "No More I Love You's",
+      "frase": "El final de un ciclo emocional donde las palabras de amor ya no tienen lugar, solo el silencio sanador. Annie Lennox nos entrega No More I Love You's con su estilo vanguardista y profundo. En Radiochar, le damos voz a tus transiciones con la mejor música en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ozzy Osbourne",
+      "cancion": "No More Tears",
+      "frase": "Llegó el momento de secarse las lágrimas y enfrentar la realidad con la frente en alto y el rock como escudo. Ozzy Osbourne nos trae No More Tears para darnos esa fuerza necesaria en la madrugada. Siente el poder de Radiochar impulsándote a seguir adelante hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cinderella",
+      "cancion": "Nobody's Fool",
+      "frase": "Aprender a no ser el juguete de nadie, valorando nuestra propia dignidad por encima de cualquier sentimiento falso. Cinderella nos entrega Nobody's Fool con toda la pasión del glam metal. En Love City, celebramos tu valentía de ser libre en la sintonía de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Nothin' But A Good Time",
+      "frase": "A veces solo necesitamos desconectarnos de los problemas y pasar un momento inolvidable con buena compañía. Poison nos trae Nothin' But A Good Time para sacudir tu madrugada con alegría rockera. Disfruta de la buena vibra de Radiochar en este bloque especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sinead O'Connor",
+      "cancion": "Nothing Compares 2 U",
+      "frase": "La crudeza del desamor expresada en una comparación donde nadie sale ganando frente al recuerdo de quien amamos. Sinead O'Connor nos desgarra con Nothing Compares 2 U. En Radiochar, acompañamos tu proceso con la sensibilidad que tu corazón merece hoy en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Nothing Else Matters",
+      "frase": "Cuando el mundo exterior se desvanece y lo único que importa es la verdad que compartimos con el ser amado. Metallica nos entrega Nothing Else Matters, el himno de los corazones que se encuentran en el rock. Siente la cercanía de Radiochar en cada acorde profundo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Glenn Medeiros",
+      "cancion": "Nothing's Gonna Change My Love for You",
+      "frase": "Una promesa de constancia que sobrevive a los cambios del tiempo y a las dudas del camino. Glenn Medeiros nos regala Nothing's Gonna Change My Love for You para endulzar tu madrugada. Deja que la ternura de Radiochar sea tu refugio en esta noche de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Starship",
+      "cancion": "Nothing's Gonna Stop Us Now",
+      "frase": "Dos corazones unidos contra todo pronóstico, decididos a construir su propio paraíso sin que nada los detenga. Starship nos eleva con Nothing's Gonna Stop Us Now. Siente la fuerza del compromiso real en la señal de Radiochar mientras avanzamos por la noche juntos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "November Rain",
+      "frase": "Una epopeya de amor, pérdida y redención que se siente como una lluvia purificadora en medio del desierto emocional. Guns N' Roses nos regala November Rain con toda su maestría épica. En Love City, nos rendimos ante este clásico eterno que Radiochar tiene para ti hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "N'Oubliez Jamais",
+      "frase": "Nunca olvidar nuestras raíces, lo que amamos y lo que nos hizo ser quienes somos hoy. El gran Joe Cocker nos pide N'Oubliez Jamais en esta pieza de una elegancia y sentimiento supremos. Deja que Radiochar sea el guardián de tus mejores recuerdos en esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cranberries",
+      "cancion": "Ode To My Family",
+      "frase": "Un regreso a lo esencial, al amor de quienes siempre han estado ahí y a la sencillez de los orígenes. The Cranberries nos conmueven con Ode To My Family en la voz única de Dolores O'Riordan. En Radiochar, valoramos las conexiones que nos dan identidad en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Steve Perry",
+      "cancion": "Oh Sherrie",
+      "frase": "Llamar a esa persona que nos vuelve locos con una voz llena de urgencia y pasión real. Steve Perry nos entrega Oh Sherrie con toda su potencia vocal característica. Disfruta de la intensidad de Radiochar mientras el nombre de quien amas se vuelve canción esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roy Orbison",
+      "cancion": "Oh, Pretty Woman",
+      "frase": "Ese encuentro inesperado en la calle que nos hace detener el tiempo y soñar con una historia de cine. Roy Orbison nos regala Oh, Pretty Woman para darnos ese toque de elegancia clásica. Disfruta de la caballerosidad musical de Radiochar en esta madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Donna Summer",
+      "cancion": "On The Radio",
+      "frase": "Escuchar una canción y sentir que alguien, en algún lugar, está contando exactamente lo que nos sucede. La reina Donna Summer nos trae On The Radio para celebrar nuestra conexión única. Tú y yo, unidos por la señal de Radiochar en esta noche de sentimientos compartidos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "One More Night",
+      "frase": "Pedir solo un momento más para intentar salvar lo que queda antes de que el silencio sea definitivo. Phil Collins interpreta One More Night con una vulnerabilidad que nos llega al alma. Quédate en Radiochar y deja que esta balada sea tu compañía en la madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Murray Head",
+      "cancion": "One Night in Bangkok",
+      "frase": "Viajamos a ciudades lejanas donde la intriga y el ritmo se mezclan bajo las luces de neón. Murray Head nos trae One Night in Bangkok para darnos ese toque de sofisticación urbana. Siente el movimiento de Radiochar llevándote a nuevos horizontes en esta noche especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Open Arms",
+      "frase": "Esperar el regreso de quien amamos con los brazos abiertos y el corazón dispuesto a perdonar y volver a empezar. Journey nos regala Open Arms en esta balada de devoción absoluta. En Love City, celebramos los reencuentros que Radiochar inspira con cada melodía hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Duran Duran",
+      "cancion": "Ordinary World",
+      "frase": "Aprender a vivir de nuevo en un mundo que parece haber perdido su brillo después de una ausencia importante. Duran Duran nos entrega Ordinary World con una elegancia y profundidad conmovedoras. Encuentra tu camino en Love City con la guía musical de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Yes",
+      "cancion": "Owner Of A Lonely Heart",
+      "frase": "Es mucho mejor ser el dueño de tu propia soledad que el esclavo de una compañía que ya no te llena. Yes nos trae Owner Of A Lonely Heart con su sonido vanguardista y potente. Siente la fuerza de tu independencia en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Paint It Black",
+      "frase": "Cuando el alma pide que todo a nuestro alrededor se pinte del color de nuestra melancolía más profunda. Los Rolling Stones nos traen Paint It Black con ese sitar hipnótico y oscuro. En Radiochar, respetamos tus sombras mientras las transformamos en arte en esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Paradise City",
+      "frase": "Buscamos ese lugar donde el pasto es verde y las chicas son hermosas, el destino ideal de todo rockero. Guns N' Roses nos lleva a Paradise City para sacudir tu madrugada con energía pura. Siente la potencia de Radiochar llevándote a tu propio paraíso musical hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "Paranoid",
+      "frase": "La mente a veces juega con nosotros en la oscuridad, pero el rock siempre tiene la respuesta para mantenernos a salvo. Black Sabbath nos trae Paranoid, un himno de rapidez y actitud que despierta tus sentidos. Disfruta de la intensidad de Radiochar en esta hora profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Stevie Wonder",
+      "cancion": "Part-Time Lover",
+      "frase": "Historias de encuentros compartidos en secreto, donde el riesgo y el deseo se mezclan en un ritmo contagioso. Stevie Wonder nos regala Part-Time Lover para darle ese toque de picardía a tu madrugada. Siente el groove de Radiochar envolviendo tus pensamientos en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eddie Murphy",
+      "cancion": "Party All the Time",
+      "frase": "Hay personas que nacieron para brillar bajo las luces y no se cansan nunca de celebrar la existencia. Eddie Murphy nos trae Party All the Time para darnos ese toque de diversión ochentera. Únete a la fiesta de Radiochar y deja que lo bueno te encuentre hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Patience",
+      "frase": "Aprender que el tiempo es nuestro mejor aliado y que todo lo que vale la pena requiere una espera tranquila. Guns N' Roses nos susurra Patience en esta joya acústica que calma el alma. En Love City, te enseñamos a esperar con la mejor música de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "People Are Strange",
+      "frase": "Sentirse ajeno en un mundo donde todos parecen extraños cuando no tenemos a quien amamos a nuestro lado. The Doors nos traen People Are Strange con la voz mística de Jim Morrison. Deja que Radiochar sea tu lugar familiar en esta madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Depeche Mode",
+      "cancion": "Personal Jesus",
+      "frase": "Alguien que te escuche, que sepa tus secretos y que esté ahí para salvarte cuando nadie más puede hacerlo. Depeche Mode nos regala Personal Jesus con su blues electrónico inconfundible. Siente la conexión profunda que Radiochar tiene preparada para ti esta noche de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Photograph",
+      "frase": "Una imagen que es todo lo que nos queda de un amor que ya no podemos tocar, pero que sigue presente en el alma. Def Leppard nos trae Photograph con toda la energía del rock melódico. En Love City, atesoramos tus recuerdos en la sintonía de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KC And The Sunshine Band",
+      "cancion": "Please Don't Go",
+      "frase": "Hay peticiones que nacen del miedo a la soledad, un ruego que se queda suspendido en el aire de la madrugada. KC And The Sunshine Band nos entrega Please Don't Go, recordándonos que el amor es, ante todo, presencia. Quédate conmigo en Radiochar, donde el tiempo se detiene para que no tengas que decir adiós.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "New Kids On The Block",
+      "cancion": "Please Don't Go Girl",
+      "frase": "La ternura de un primer amor se siente en cada nota de esta balada que marcó a toda una generación. New Kids On The Block nos piden Please Don't Go Girl con una honestidad que todavía nos hace suspirar. Deja que Love City sea el escenario de tus recuerdos más dulces esta noche en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alice Cooper",
+      "cancion": "Poison",
+      "frase": "Esa atracción peligrosa que nos consume y nos atrae al mismo tiempo, un veneno dulce del que no queremos escapar. Alice Cooper nos seduce con Poison en la madrugada de Radiochar. Siente la intensidad del deseo prohibido recorriendo cada rincón de tu Love City mientras la noche avanza.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Depeche Mode",
+      "cancion": "Policy of Truth",
+      "frase": "A veces la verdad tiene un precio alto y ocultarla parece la única forma de sobrevivir al desamor. Depeche Mode nos trae Policy of Truth con su sonido hipnótico y profundo. En Radiochar, exploramos las verdades del corazón a través de los sintetizadores que definieron una época en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Men Without Hats",
+      "cancion": "Pop Goes The World",
+      "frase": "Un ritmo ligero para recordarnos que, a pesar de todo, el mundo sigue girando y la música es su mejor motor. Men Without Hats nos traen Pop Goes The World para darle un toque de frescura a tu desvelo. Disfruta de la alegría contagiosa de Radiochar mientras recorres esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Pour Some Sugar On Me",
+      "frase": "La noche también pide un poco de dulzura y mucha energía para sacudir la rutina. Def Leppard nos invita a derramar azúcar con Pour Some Sugar On Me, un clásico del rock que enciende los sentidos. Siente la potencia de Radiochar dándole sabor a tu Love City en este instante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Radio Ga Ga",
+      "frase": "Un homenaje a este medio que nos une, que nos acompaña en la soledad y nos cuenta historias al oído. Queen nos regala Radio Ga Ga para celebrar la magia de estar conectados. Gracias por elegir Radiochar como tu refugio sonoro en la inmensidad de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Boney M.",
+      "cancion": "Rasputin",
+      "frase": "Historias de intriga y ritmo que nos transportan a otros tiempos y lugares lejanos. Boney M. nos trae Rasputin con ese groove inconfundible que nos pone a marcar el paso en la madrugada. Deja que la fantasía de Radiochar llene de color tu habitación en esta noche especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "UB40",
+      "cancion": "Red Red Wine",
+      "frase": "Para esos momentos donde un poco de vino y una melodía suave son los únicos compañeros necesarios para olvidar las penas. UB40 nos acaricia con Red Red Wine en Love City. Relaja tus sentidos con la cadencia de Radiochar y deja que el sentimiento fluya sin prisa.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Frankie Goes To Hollywood",
+      "cancion": "Relax",
+      "frase": "Soltar la tensión, dejar que el pulso de la noche tome el control y simplemente disfrutar del momento presente. Frankie Goes To Hollywood nos pide Relax en este himno de libertad y ritmo. Siente la pulsación de Radiochar conectando con tus latidos en esta madrugada vibrante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Remember the Time",
+      "frase": "Recordar ese instante preciso en que el amor nos cambió la vida es volver a vivirlo con la misma intensidad. El Rey del Pop, Michael Jackson, nos pregunta Do You Remember the Time. En Love City, rescatamos tus momentos más valiosos a través de la música de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Riders on the Storm",
+      "frase": "Cabalgar sobre la tormenta de los pensamientos, buscando un puerto seguro en medio de la lluvia nocturna. The Doors nos envuelven con Riders on the Storm y la voz mística de Jim Morrison. Deja que la atmósfera profunda de Radiochar sea tu guía en este viaje introspectivo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Richard Marx",
+      "cancion": "Right Here Waiting",
+      "frase": "La promesa de esperar sin importar la distancia o el tiempo que nos separe del ser amado. Richard Marx interpreta Right Here Waiting con una devoción que nos llega al alma. En Love City, somos el puente que te une a quienes extrañas en esta madrugada de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Boney M.",
+      "cancion": "Rivers of Babylon",
+      "frase": "Un canto de esperanza y paz que fluye como un río de armonía en la quietud de la noche. Boney M. nos trae Rivers of Babylon para reconfortar el espíritu. Disfruta de la serenidad que Radiochar te propone mientras el mundo afuera descansa en este bloque de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Rock And Roll All Nite",
+      "frase": "Hay noches que fueron hechas para no dormir, para celebrar la vida con la frente en alto y mucho volumen. KISS nos invita a Rock And Roll All Nite en la señal de Radiochar. Siente la energía de los gigantes del rock despertando la ciudad en medio de tu madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Meat Loaf",
+      "cancion": "Rock And Roll Dreams Come Through",
+      "frase": "Cuando la música es lo único que nos mantiene cuerdos en un mundo que a veces no tiene sentido. Meat Loaf nos entrega Rock And Roll Dreams Come Through con toda su fuerza épica. En Love City, tus sueños tienen banda sonora propia gracias a la pasión de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The B-52's",
+      "cancion": "Rock Lobster",
+      "frase": "Un poco de locura y originalidad para romper el silencio con un ritmo que desafía cualquier etiqueta. The B-52's nos traen Rock Lobster para darnos ese toque de diversión inesperada. Disfruta de la libertad creativa de Radiochar mientras navegamos por las olas de tu imaginación esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Falco",
+      "cancion": "Rock Me Amadeus",
+      "frase": "La genialidad clásica se encuentra con el ritmo moderno en un homenaje lleno de estilo y vanguardia vienesa. Falco nos sacude con Rock Me Amadeus en esta madrugada profunda. Siente la sofisticación de Radiochar integrando lo mejor de cada mundo en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Rock with You",
+      "frase": "Cerrar los ojos y dejar que la suavidad del ritmo nos transporte a un lugar donde solo importa el movimiento compartido. Michael Jackson nos invita a Rock with You en Radiochar. Disfruta de la elegancia pura de Love City mientras la noche nos abraza con su magia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "Rock You Like A Hurricane",
+      "frase": "Una fuerza de la naturaleza que llega para sacudir tus sentidos y dejarte sin aliento en medio de la oscuridad. Scorpions nos traen Rock You Like A Hurricane con toda su potencia. Siente la vibración de Radiochar como un viento imparable recorriendo las calles de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Rosanna",
+      "frase": "Un nombre que se vuelve melodía, un recuerdo que baila al ritmo de una de las mejores ejecuciones musicales de la historia. TOTO nos regala Rosanna para darnos ese toque de clase en la madrugada. Quédate en Radiochar, donde la perfección sonora es parte de nuestro Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Roxanne",
+      "frase": "Una luz roja que parpadea en la noche, una súplica desesperada para que el amor cambie de rumbo. The Police nos entrega Roxanne con toda la intensidad de Sting. En Radiochar, le damos voz a las historias urbanas que solo se cuentan cuando el sol se oculta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Timex Social Club",
+      "cancion": "Rumors",
+      "frase": "Las palabras que vuelan en la oscuridad, las verdades a medias que a veces nos quitan el sueño innecesariamente. Timex Social Club nos trae Rumors para darnos ese toque de groove urbano. En Love City, preferimos la honestidad de una buena canción en la sintonía de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "Run to the Hills",
+      "frase": "La historia se escribe con fuerza y con ritmos que nos obligan a mantener la guardia en alto ante el destino. Iron Maiden nos trae Run to the Hills para inyectar adrenalina en tu madrugada de Radiochar. Siente el galope de las guitarras despertando tu espíritu hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Runaway",
+      "frase": "Escapar de lo establecido, buscar un nuevo comienzo bajo las luces de neón y no mirar atrás jamás. Bon Jovi nos entrega Runaway, el tema que lo empezó todo. En Love City, acompañamos tu deseo de libertad con la mejor selección musical de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Elton John",
+      "cancion": "Sacrifice",
+      "frase": "Entender que el amor a veces requiere soltar, sin dramas pero con una profunda conciencia de lo vivido. Sir Elton John nos conmueve con Sacrifice en esta madrugada de reflexión. En Radiochar, valoramos la madurez emocional de las baladas que saben cómo decir adiós en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Starship",
+      "cancion": "Sara",
+      "frase": "Un susurro al viento, un nombre que se repite como un mantra en medio de la nostalgia por lo que ya no está. Starship nos regala Sara para acompañar tu soledad en esta noche de Radiochar. Deja que Love City sea el refugio de tus sentimientos más íntimos hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Great White",
+      "cancion": "Save Your Love",
+      "frase": "Guardar lo mejor de nosotros para quien realmente sepa valorarlo, protegiendo el corazón de las tormentas pasajeras. Great White nos entrega Save Your Love, una balada poderosa y llena de sentimiento. Siente la fuerza del rock melódico abrazándote en la madrugada de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitney Houston",
+      "cancion": "Saving All My Love for You",
+      "frase": "Esa entrega silenciosa, ese amor que espera pacientemente su momento para brillar bajo la luz de la luna. La voz inigualable de Whitney Houston nos envuelve con Saving All My Love for You. Disfruta de la elegancia y la pasión de Radiochar en este bloque romántico.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lionel Richie",
+      "cancion": "Say You, Say Me",
+      "frase": "Hablar desde el corazón, buscando ese entendimiento profundo que solo se logra cuando las almas se encuentran. Lionel Richie nos regala Say You, Say Me para recordarnos el valor de la comunicación. En Love City, nuestra música es el lenguaje que nos une en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Laura Branigan",
+      "cancion": "Self Control",
+      "frase": "Vivir entre las sombras de la noche, donde el control se pierde y los instintos toman el mando de la ciudad. Laura Branigan nos cautiva con Self Control en esta madrugada de Radiochar. Deja que el misterio te envuelva mientras recorres los laberintos de tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "Send Me An Angel",
+      "frase": "Pedir una guía, una señal que nos devuelva la fe en medio de la oscuridad del camino. Scorpions nos acarician con Send Me An Angel, una balada espiritual y profunda. Encuentra tu propia luz en la sintonía de Radiochar mientras la madrugada nos regala su paz.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Separate Ways",
+      "frase": "Cuando el destino decide separar los caminos, pero el respeto por lo vivido permanece intacto en la memoria. Journey nos entrega Separate Ways (Worlds Apart) con toda su energía característica. Siente la determinación de Radiochar acompañando tus transiciones en esta noche de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Earth, Wind & Fire",
+      "cancion": "September",
+      "frase": "Recordar esos días de luz y alegría que nos hacen sonreír incluso cuando el calendario dice lo contrario. Earth, Wind & Fire nos traen September para darnos ese toque de vitalidad y ritmo. Celebra los buenos tiempos con Radiochar en esta madrugada de felicidad compartida.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Marvin Gaye",
+      "cancion": "Sexual Healing",
+      "frase": "La música como terapia, como bálsamo para el cuerpo y el alma en los momentos de mayor intimidad. Marvin Gaye nos susurra Sexual Healing en esta noche de terciopelo. Deja que la sensualidad de Radiochar prepare el ambiente perfecto en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sting",
+      "cancion": "Shape Of My Heart",
+      "frase": "Las cartas de la vida no siempre nos dan la mano que esperamos, pero hay que jugarlas con dignidad y alma. Sting nos entrega Shape Of My Heart con una sutileza poética impresionante. Escúchala en Radiochar y deja que la filosofía musical te acompañe hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beatles",
+      "cancion": "She Loves You",
+      "frase": "Ese mensaje de alegría que llega de un amigo para confirmarnos que el amor todavía es posible. Los Beatles nos traen la frescura de She Loves You para despertar tu sonrisa en la madrugada. Disfruta de la magia de Radiochar recordándote que lo bueno está cerca.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Donna Summer",
+      "cancion": "She Works Hard For The Money",
+      "frase": "Un homenaje a todas las personas que se esfuerzan día a día para construir su propio destino con dignidad. La reina Donna Summer nos trae She Works Hard For The Money. En Radiochar, valoramos tu esfuerzo y te acompañamos con el mejor ritmo en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Patrick Swayze",
+      "cancion": "She's Like the Wind",
+      "frase": "Ese sentimiento inalcanzable, esa persona que se siente como una brisa que no podemos retener entre las manos. Patrick Swayze nos regala She's Like the Wind en esta madrugada de ensueño. Deja que la ternura de Radiochar sea tu refugio en esta noche profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "R.E.M.",
+      "cancion": "Shiny Happy People",
+      "frase": "Un estallido de color y optimismo para recordarnos que la felicidad también puede ser simple y luminosa. R.E.M. nos trae Shiny Happy People para sacudir la modorra de la madrugada. Disfruta de la buena vibra de Radiochar en este momento especial de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tears For Fears",
+      "cancion": "Shout",
+      "frase": "Soltarlo todo, dejar que el grito de la verdad salga y nos libere de las cadenas que nosotros mismos creamos. Tears For Fears nos traen Shout con toda su fuerza vanguardista. Siente el poder de la expresión en la señal de Radiochar esta noche de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cars",
+      "cancion": "Since You're Gone",
+      "frase": "El vacío que deja una ausencia se siente en cada rincón de la casa y en cada nota de esta canción. The Cars nos entregan Since You're Gone con ese toque de new wave nostálgico. En Love City, compartimos tu proceso con la música de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Deep Purple",
+      "cancion": "Smoke On The Water",
+      "frase": "Ese riff legendario es la señal de que el rock clásico está tomando el control de tu madrugada por derecho propio. Deep Purple nos trae Smoke On The Water para sacudir los cimientos de tu noche. Siente la historia del sonido en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Smooth Criminal",
+      "frase": "Caminar con sigilo por la ciudad, siguiendo el rastro de una historia llena de misterio y ritmo impecable. Michael Jackson nos trae Smooth Criminal en Love City. Deja que el estilo inconfundible del Rey del Pop te guíe en esta madrugada profunda de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sade",
+      "cancion": "Smooth Operator",
+      "frase": "La sofisticación tiene un nombre y una voz que se desliza por la noche con la suavidad de la seda. Sade nos regala Smooth Operator para darnos ese toque de clase en Radiochar. Disfruta de la elegancia pura en este rincón de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ozzy Osbourne",
+      "cancion": "So Tired",
+      "frase": "Incluso los príncipes de la oscuridad sienten el cansancio de un corazón que ha amado demasiado y ha sido herido. Ozzy Osbourne nos entrega So Tired en esta balada conmovedora. En Radiochar, acompañamos tu fatiga emocional con las canciones que mejor te entienden.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Somebody To Love",
+      "frase": "Una súplica coral al universo buscando a esa persona especial que nos dé sentido en medio de la multitud. Queen nos eleva con Somebody To Love. En Love City, sabemos que tú también estás buscando, y aquí en Radiochar te acompañamos en el camino.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Rockwell",
+      "cancion": "Somebody's Watching Me",
+      "frase": "Esa sensación de no estar solo en la oscuridad, de ser observado por ojos que no vemos en la penumbra. Rockwell nos trae Somebody's Watching Me para darle un toque de intriga a tu madrugada. Siente el misterio de Radiochar envolviéndote en este instante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Something To Believe In",
+      "frase": "Buscar una verdad que nos sostenga cuando todo lo demás parece desmoronarse a nuestro alrededor. Poison nos entrega Something To Believe In, una balada de metal profunda y sincera. Quédate en Radiochar y encuentra tu motivo para seguir creyendo en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alphaville",
+      "cancion": "Sounds Like a Melody",
+      "frase": "Dejar que la música se convierta en el guion de nuestra propia película nocturna, llena de drama y belleza electrónica. Alphaville nos envuelve con Sounds Like a Melody. Siente la atmósfera retro-futurista de Radiochar inundando tu espacio en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "Spending My Time",
+      "frase": "Ver cómo las horas pasan mientras el recuerdo de alguien nos mantiene prisioneros de una espera que parece no terminar. Roxette nos conmueve con Spending My Time. En Love City, le damos un sentido a tu tiempo con la mejor música de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Parr",
+      "cancion": "St Elmo's Fire",
+      "frase": "Esa chispa de inspiración que nos empuja a lograr grandes cosas y a no rendirnos ante los obstáculos del destino. John Parr nos inyecta energía con St Elmo's Fire (Man in Motion). Siente el fuego de la determinación en la señal de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Stairway to Heaven",
+      "frase": "Construir un camino hacia lo divino a través de las cuerdas de una guitarra que parece hablar el idioma de los ángeles. Led Zeppelin nos regala Stairway to Heaven en esta madrugada profunda. En Radiochar, nos rendimos ante la grandeza de este clásico eterno.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ben E. King",
+      "cancion": "Stand By Me",
+      "frase": "Cuando la noche se vuelve oscura y la luna es la única luz que vemos, solo necesitamos a alguien a nuestro lado. Ben E. King nos regala Stand By Me para recordarnos el valor de la lealtad. Radiochar está aquí, firme junto a ti en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Start Me Up",
+      "frase": "Sentir que el motor de la pasión se enciende de nuevo con una sola chispa de rock and roll auténtico. Los Rolling Stones nos traen Start Me Up para sacudir tu madrugada con actitud. Deja que Radiochar sea el combustible para tu energía esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bee Gees",
+      "cancion": "Stayin' Alive",
+      "frase": "Caminar con paso firme por las calles de la ciudad, sobreviviendo a los retos con ritmo y mucho estilo. Los Bee Gees nos entregan Stayin' Alive para darnos ese toque de invencibilidad bailable. Siente el pulso de la vida en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "New Kids On The Block",
+      "cancion": "Step by Step",
+      "frase": "Avanzar paso a paso hacia la meta, construyendo el camino con paciencia y mucha determinación emocional. New Kids On The Block nos traen Step by Step en esta madrugada de Radiochar. Disfruta del proceso mientras Love City ilumina cada uno de tus movimientos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Gary Moore",
+      "cancion": "Still Got The Blues",
+      "frase": "Hay tristezas que no se van con el tiempo, sino que se vuelven parte de nuestra propia melodía interior. Gary Moore nos regala Still Got The Blues con una guitarra que llora por todos nosotros. En Radiochar, respetamos tu sentir en esta madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "Still Loving You",
+      "frase": "El muro del orgullo se derrumba ante la fuerza de un amor que se niega a morir a pesar de las heridas. Scorpions nos entregan Still Loving You, la balada definitiva de la persistencia. Siente la pasión de Radiochar acompañando tu declaración más sincera esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Stealers Wheel",
+      "cancion": "Stuck In The Middle With You",
+      "frase": "Esa sensación de estar atrapado en una situación extraña, buscando una salida con un poco de humor y mucho ritmo. Stealers Wheel nos traen Stuck In The Middle With You para darnos ese toque de originalidad. Disfruta del estilo de Radiochar en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lionel Richie",
+      "cancion": "Stuck On You",
+      "frase": "Sentirse felizmente atrapado en el sentimiento que alguien despierta en nosotros cada mañana y cada noche. Lionel Richie nos acaricia con Stuck On You en esta madrugada de terciopelo. En Love City, celebramos los amores que se quedan grabados en la señal de Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Archies",
+      "cancion": "Sugar, Sugar",
+      "frase": "Un poco de dulzura pura para recordarnos que la vida puede ser tan simple y encantadora como una canción pop. The Archies nos regalan Sugar, Sugar para endulzar tu desvelo en Radiochar. Disfruta de este momento de luz y alegría en medio de tu Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Dire Straits",
+      "cancion": "Sultans Of Swing",
+      "frase": "La maestría de una guitarra que cuenta historias de clubes nocturnos y pasiones que se viven al ritmo del swing. Dire Straits nos traen Sultans Of Swing con su sonido impecable. Deja que la elegancia de Radiochar te acompañe en esta madrugada de buena música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Travolta, Olivia Newton-John",
+      "cancion": "Summer Nights",
+      "frase": "Recordar esos amores de verano que se sienten como un sueño del que nunca quisiéramos despertar. John Travolta y Olivia Newton-John nos traen Summer Nights para darnos ese toque de nostalgia juvenil. Disfruta del brillo de Radiochar en esta noche de recuerdos en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Summer Of '69",
+      "frase": "Ese verano que lo cambió todo, donde la música y la libertad eran las únicas leyes que seguíamos. Bryan Adams nos inyecta vitalidad con Summer Of '69 en la señal de Radiochar. Siente la energía de la juventud eterna acompañando tu madrugada en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Corey Hart",
+      "cancion": "Sunglasses At Night",
+      "frase": "Ocultar la mirada tras unos cristales oscuros para que nadie descubra los secretos que guardamos en la penumbra. Corey Hart nos trae Sunglasses At Night con su atmósfera misteriosa y ochentera. Disfruta de la sofisticación de Radiochar mientras recorres tu propia Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cream",
+      "cancion": "Sunshine Of Your Love",
+      "frase": "Esperar la luz de quien amamos para que ilumine nuestras horas más sombrías con una fuerza imparable. Cream nos trae Sunshine Of Your Love con ese riff histórico que sacude la madrugada. Siente la calidez de Radiochar envolviéndote en este preciso instante de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Rick James",
+      "cancion": "Super Freak",
+      "frase": "Un poco de ritmo desenfadado y original para romper la seriedad de la noche con mucho estilo urbano. Rick James nos trae Super Freak para encender la energía de Radiochar. Deja que el groove se apodere de ti mientras avanzamos juntos por esta Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Sweet Child O' Mine",
+      "frase": "Ese recuerdo de una mirada pura que nos devuelve a un lugar seguro donde todo vuelve a tener sentido. Guns N' Roses nos regalan Sweet Child O' Mine en esta madrugada de Radiochar. Siente la vibración de las guitarras acariciando tu alma en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eurythmics",
+      "cancion": "Sweet Dreams (Are Made of This)",
+      "frase": "Los sueños están hechos de deseos, de búsquedas y de una voluntad inquebrantable de encontrar nuestro lugar en el mundo. Eurythmics nos traen Sweet Dreams en esta pieza icónica. Deja que la vanguardia de Radiochar te guíe en esta madrugada de visiones en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "T.N.T.",
+      "frase": "Una explosión de energía pura para despertarte y recordarte que estás vivo en medio de la ciudad dormida. AC/DC nos trae T.N.T. para sacudir los cimientos de tu madrugada. Siente el poder del rock auténtico imponiendo su ley en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Soft Cell",
+      "cancion": "Tainted Love",
+      "frase": "Ese amor que a veces se siente contaminado por la duda o el dolor, pero del que no podemos apartarnos fácilmente. Soft Cell nos entrega Tainted Love con su sonido electrónico y dramático. Siente la atmósfera de Radiochar envolviendo tus pensamientos en esta hora profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Madonna",
+      "cancion": "Take a Bow",
+      "frase": "Cuando la función termina y es momento de aceptar que el telón del amor debe caer con dignidad. La reina Madonna nos conmueve con Take a Bow en esta madrugada de Radiochar. En Love City, acompañamos tus cierres de ciclo con la música más elegante del mundo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Berlin",
+      "cancion": "Take My Breath Away",
+      "frase": "Hay momentos que nos quitan el aliento, dejándonos suspendidos en un suspiro de amor y entrega absoluta. Berlin nos regala Take My Breath Away en esta noche de cine y sentimientos reales. Deja que Radiochar sea el viento bajo tus alas en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "a-ha",
+      "cancion": "Take On Me",
+      "frase": "Atrévete a dar el paso, a cruzar la frontera de los dibujos animados hacia la realidad de un sentimiento compartido. a-ha nos trae Take On Me con su alegría melancólica y su ritmo inolvidable. Disfruta de la frescura de Radiochar en esta madrugada especial hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Talk Dirty To Me",
+      "frase": "Un poco de provocación y diversión rockera para recordarnos que el amor también tiene su lado salvaje y desenfadado. Poison nos trae Talk Dirty To Me para sacudir tu madrugada con actitud. Siente el pulso de Radiochar dándole vida a tu noche en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Romantics",
+      "cancion": "Talking in Your Sleep",
+      "frase": "Escuchar los secretos que el subconsciente revela cuando el cuerpo descansa y la verdad sale a flote. The Romantics nos traen Talking in Your Sleep con su ritmo pegajoso y nocturno. Deja que Radiochar sea el confidente de tus sueños en esta madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Baltimora",
+      "cancion": "Tarzan Boy",
+      "frase": "Un grito de libertad en medio de la jungla de asfalto, un ritmo que nos invita a soltar las amarras de lo cotidiano. Baltimora nos trae Tarzan Boy para darnos ese toque de fantasía pop. Disfruta de la originalidad de Radiochar mientras viajas conmigo hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Clapton",
+      "cancion": "Tears in Heaven",
+      "frase": "Una de las preguntas más dolorosas y profundas que un corazón puede hacerse ante la pérdida de un ser amado. Eric Clapton nos conmueve con Tears in Heaven. En la paz de Radiochar, hoy honramos tus recuerdos con la sensibilidad que Love City siempre te ofrece.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Taylor Dayne",
+      "cancion": "Tell It to My Heart",
+      "frase": "Dilo de una vez, deja que la verdad golpee con la fuerza de un latido que ya no puede esperar más. Taylor Dayne nos entrega Tell It to My Heart con toda su potencia vocal. Siente la energía de Radiochar impulsando tus sentimientos en esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Dionne Warwick",
+      "cancion": "That's What Friends Are For",
+      "frase": "Valorar a quienes están ahí en las buenas y en las malas, dándonos el apoyo que necesitamos para no rendirnos nunca. Dionne Warwick nos regala That's What Friends Are For. En Radiochar, somos ese amigo que te acompaña con música en cada una de tus noches.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Europe",
+      "cancion": "The Final Countdown",
+      "frase": "El tiempo se agota antes del gran salto hacia lo desconocido, una cuenta regresiva llena de emoción y épica rockera. Europe nos trae The Final Countdown para sacudir tu madrugada. Siente la adrenalina de Radiochar preparándote para un nuevo comienzo en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cheap Trick",
+      "cancion": "The Flame",
+      "frase": "Mantener la llama encendida a pesar de la distancia y del silencio que a veces intenta apagar nuestro fuego interior. Cheap Trick nos entrega The Flame, una balada poderosa de devoción absoluta. Quédate en Radiochar y deja que esta melodía ilumine tu noche en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chris de Burgh",
+      "cancion": "The Lady In Red",
+      "frase": "Ese momento mágico donde alguien resalta entre la multitud, capturando nuestra mirada y nuestro corazón para siempre. Chris de Burgh nos regala The Lady In Red en esta madrugada de terciopelo. Disfruta de la elegancia romántica de Radiochar en este bloque inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "The Look",
+      "frase": "Tener ese estilo único que atrapa, esa forma de caminar que lo dice todo sin necesidad de una sola palabra. Roxette nos entrega The Look con su energía pop-rock inconfundible. Siente el pulso de la ciudad en la señal de Radiochar mientras avanzamos por la madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kraftwerk",
+      "cancion": "The Model",
+      "frase": "La perfección estética se vuelve ritmo electrónico en un homenaje a la belleza que parece inalcanzable. Kraftwerk nos trae The Model con su sonido vanguardista y minimalista. Disfruta de la sofisticación de Radiochar en esta noche llena de estilo en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "R.E.M.",
+      "cancion": "The One I Love",
+      "frase": "Una dedicatoria directa, una canción para ocupar el tiempo y el espacio de quien ha dejado una huella en nosotros. R.E.M. nos trae The One I Love con su mística alternativa. Deja que la voz de Radiochar sea el eco de tus sentimientos en esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jennifer Rush",
+      "cancion": "The Power of Love",
+      "frase": "La fuerza imparable de un sentimiento que es capaz de mover montañas y de darnos la paz que tanto buscamos. Jennifer Rush nos entrega The Power of Love con una potencia que estremece el alma. En Love City, nos rendimos ante el poder de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Twisted Sister",
+      "cancion": "The Price",
+      "frase": "Todo en la vida tiene un costo, especialmente cuando decides seguir tu propio camino y luchar por lo que amas. Twisted Sister nos regala The Price, una balada honesta y cruda sobre el sacrificio. Encuentra tu fuerza en Radiochar mientras la noche nos enseña su valor.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Blue Oyster Cult",
+      "cancion": "The Reaper",
+      "frase": "No temas al destino inevitable, mejor abraza cada momento con la intensidad de quien sabe que el tiempo es un regalo. Blue Oyster Cult nos trae (Don't Fear) The Reaper para darnos ese toque místico. Disfruta de la profundidad de Radiochar en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "The Search Is Over",
+      "frase": "Darse cuenta de que lo que tanto buscábamos afuera siempre estuvo justo frente a nosotros, esperando ser visto. Survivor nos entrega The Search Is Over en esta balada de gratitud emocional. Quédate en Radiochar y celebra tus hallazgos en la quietud de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "The Show Must Go On",
+      "frase": "A pesar del dolor y de que el corazón se esté rompiendo, la vida sigue y la función debe continuar con valentía. Queen nos regala The Show Must Go On en la voz eterna de Freddie Mercury. Siente la fuerza de Radiochar impulsándote a seguir adelante hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Simon & Garfunkel",
+      "cancion": "The Sound of Silence",
+      "frase": "Hablar con la oscuridad, escuchar el susurro de la soledad y encontrar belleza en el vacío que nos rodea. Simon & Garfunkel nos traen The Sound of Silence para acariciar tu desvelo. En Love City, Radiochar es el sonido que llena tus silencios con el mejor arte.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "The Trooper",
+      "frase": "Cabalgar hacia el horizonte con la frente en alto, defendiendo cada uno de nuestros ideales con toda la potencia del rock. Iron Maiden nos trae The Trooper para sacudir tu madrugada con energía pura. Siente el rugido de Radiochar recorriendo tus venas en este instante hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "The Unforgiven",
+      "frase": "La lucha interna por no dejar que las sombras del pasado definan nuestro presente y nuestro futuro. Metallica nos entrega The Unforgiven con una profundidad que se siente en los huesos. Deja que la intensidad de Radiochar sea tu compañera en esta madrugada de búsqueda personal.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bruce Hornsby and the Range",
+      "cancion": "The Way It Is",
+      "frase": "Mirar la realidad de frente, aceptando lo que es pero manteniendo siempre el deseo de que las cosas puedan mejorar. Bruce Hornsby nos regala El Way It Is con ese piano lleno de alma. Disfruta de la autenticidad de Radiochar mientras recorres tu propia Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "UB40",
+      "cancion": "The Way You Do The Things You Do",
+      "frase": "Enamorarse de los pequeños detalles, de esa forma única de ser que hace que alguien sea especial para nosotros. UB40 nos trae The Way You Do The Things You Do para darnos un toque de dulzura rítmica. Siente la calidez de Radiochar en esta madrugada de romance.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "The Way You Make Me Feel",
+      "frase": "Esa sensación de caminar sobre las nubes cada vez que alguien nos sonríe o nos mira con amor real. Michael Jackson nos regala The Way You Make Me Feel para iluminar la madrugada. Disfruta de la alegría contagiosa de Radiochar mientras bailas en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Duran Duran",
+      "cancion": "The Wild Boys",
+      "frase": "La rebeldía y la energía de la juventud que busca su lugar en un mundo lleno de desafíos y aventuras nocturnas. Duran Duran nos traen The Wild Boys con su sonido potente y futurista. Siente el pulso de la vanguardia en la señal de Radiochar en esta hora profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ABBA",
+      "cancion": "The Winner Takes It All",
+      "frase": "En el juego del amor, a veces hay que aceptar la derrota con elegancia mientras el ganador se lo lleva todo. ABBA nos entrega The Winner Takes It All, una pieza de melancolía pop perfecta. En Radiochar, acompañamos tus finales con la música que mejor te entiende hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "This Ain't A Love Song",
+      "frase": "Reconocer que el romance se ha ido y que lo que queda es solo la cruda realidad de una ausencia que duele. Bon Jovi nos entrega This Ain't A Love Song con toda su fuerza interpretativa. Deja que el rock melódico de Radiochar sea tu desahogo en esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Richard Marx",
+      "cancion": "This I Promise You",
+      "frase": "Un juramento de lealtad que se hace en la quietud de la noche, prometiendo estar ahí para siempre y un día más. Richard Marx nos regala This I Promise You para endulzar tu madrugada. Disfruta de la ternura de Radiochar mientras el tiempo se detiene en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Michael Jackson",
+      "cancion": "Thriller",
+      "frase": "Cuando la noche se vuelve un escenario de misterio y el ritmo nos obliga a enfrentar nuestros miedos con estilo. Michael Jackson nos trae Thriller para darnos ese toque de fantasía y energía. Siente la magia del Rey del Pop recorriendo la señal de Radiochar esta noche especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Thunderstruck",
+      "frase": "Un trueno que sacude la calma de la ciudad dormida, despertando cada una de tus células con el rock más puro. AC/DC nos inyecta adrenalina con Thunderstruck en la señal de Radiochar. Siente la electricidad del momento mientras avanzamos juntos por esta madrugada vibrante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Time",
+      "frase": "El tic-tac del reloj nos recuerda que el tiempo es el único recurso que no podemos recuperar jamás; hay que vivirlo hoy. Pink Floyd nos invita a reflexionar con Time en esta madrugada profunda. Deja que la mística de Radiochar te acompañe en este viaje por la existencia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Alan Parsons Project",
+      "cancion": "Time",
+      "frase": "El tiempo fluye como un río que nos lleva hacia horizontes que todavía no descubrimos en medio de la paz nocturna. The Alan Parsons Project nos envuelve con su pieza Time. Disfruta de la elegancia armónica de Radiochar mientras el mundo afuera sigue su curso sin prisas hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cyndi Lauper",
+      "cancion": "Time After Time",
+      "frase": "Si te caes, yo te atraparé; si te pierdes, yo te encontraré en cada una de tus noches solitarias. Cyndi Lauper nos regala Time After Time, un himno de lealtad emocional. En Love City, Radiochar es esa mano extendida que nunca te suelta en la madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mr. Big",
+      "cancion": "To Be With You",
+      "frase": "Ese deseo sencillo y profundo de ser la persona que esté a tu lado cuando el mundo se ponga difícil afuera. Mr. Big nos acaricia con To Be With You en esta balada acústica de una belleza serena. Disfruta de la honestidad de Radiochar en esta noche de sentimientos reales.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "New Kids On The Block",
+      "cancion": "Tonight",
+      "frase": "Esta es nuestra noche, el momento de dejar atrás las penas y celebrar la conexión que nos une a través de la música. New Kids On The Block nos traen Tonight para darle brillo a tu desvelo. Siente la energía positiva de Radiochar inundando tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bonnie Tyler",
+      "cancion": "Total Eclipse of the Heart",
+      "frase": "Cuando el amor lo oscurece todo, dejándonos en una penumbra de sentimientos encontrados y pasiones desbordadas. Bonnie Tyler nos desgarra con Total Eclipse of the Heart. En Radiochar, acompañamos tu intensidad emocional con las baladas que saben cómo gritar al alma hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Martika",
+      "cancion": "Toy Soldiers",
+      "frase": "Enfrentar las adicciones o los problemas que nos hacen sentir como juguetes del destino en medio de la noche fría. Martika nos entrega Toy Soldiers con una sensibilidad conmovedora. Encuentra tu fuerza en la sintonía de Radiochar mientras buscamos la luz juntos en esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Spandau Ballet",
+      "cancion": "True",
+      "frase": "La verdad se siente en cada nota de este saxofón, en cada susurro que nos invita a ser auténticos ante quien amamos. Spandau Ballet nos regala True en esta noche de terciopelo. Disfruta de la sofisticación pura de Radiochar en este rincón especial de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cyndi Lauper",
+      "cancion": "True Colors",
+      "frase": "No tengas miedo de mostrarte tal como eres, porque tu belleza real brilla con luz propia en medio de la oscuridad. Cyndi Lauper nos acaricia el alma con True Colors. En Love City, celebramos tu autenticidad con la mejor compañía musical de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beatles",
+      "cancion": "Twist And Shout",
+      "frase": "Un poco de energía contagiosa para sacudir la modorra y recordarnos que la vida es para bailarla sin descanso. Los Beatles nos ponen a girar con Twist And Shout en la señal de Radiochar. Siente la vitalidad de la juventud eterna acompañando tu madrugada en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "Two Hearts",
+      "frase": "Dos corazones que laten al unísono, encontrando en su unión la fuerza para enfrentar cualquier reto que el destino proponga. Phil Collins nos trae Two Hearts con su ritmo alegre y reconfortante. Disfruta de la buena vibra de Radiochar en esta madrugada llena de posibilidades hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Toni Braxton",
+      "cancion": "Un-Break My Heart",
+      "frase": "Una súplica desesperada para que el tiempo retroceda y el dolor de una ruptura desaparezca de nuestra vida para siempre. Toni Braxton nos conmueve con Un-Break My Heart. En Love City, Radiochar es el bálsamo que acompaña tu proceso de sanación en esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "Unchain My Heart",
+      "frase": "Liberarse de las cadenas de un amor que ya no nos hace bien, buscando de nuevo el aire y la libertad perdida. El gran Joe Cocker nos entrega Unchain My Heart con toda su fuerza interpretativa. Siente la determinación de Radiochar impulsándote a ser libre esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Righteous Brothers",
+      "cancion": "Unchained Melody",
+      "frase": "Una melodía que parece venir de otro plano, cargada de un deseo que trasciende el tiempo y hasta la propia vida. The Righteous Brothers nos regalan Unchained Melody para detener el mundo. Deja que el romance eterno de Radiochar te envuelva en esta madrugada especial de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen, David Bowie",
+      "cancion": "Under Pressure",
+      "frase": "La presión de la vida cotidiana se desvanece cuando la música nos invita a dar amor antes de que sea demasiado tarde. Queen y David Bowie nos entregan Under Pressure, una obra maestra de la conexión humana. Encuentra tu equilibrio en la señal de Radiochar esta noche de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "Up Where We Belong",
+      "frase": "Elevarnos por encima de las dificultades, buscando ese lugar donde el amor es la única ley que rige nuestros días. Joe Cocker y Jennifer Warnes nos traen Up Where We Belong. Deja que Radiochar sea el viento que te lleve a lo más alto en esta madrugada de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Billy Joel",
+      "cancion": "Uptown Girl",
+      "frase": "Esa búsqueda de un amor que parece estar en otro nivel, pero que se rinde ante la honestidad de un sentimiento real. Billy Joel nos regala Uptown Girl para darnos un toque de alegría y ritmo. Disfruta de la frescura de Radiochar mientras avanzamos por la noche juntos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "Urgent",
+      "frase": "Hay deseos que no pueden esperar, llamadas de la sangre que exigen respuesta inmediata en medio de la penumbra urbana. Foreigner nos entrega Urgent con ese saxofón electrizante. Siente la urgencia de la pasión en la señal de Radiochar durante esta madrugada profunda de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Buggles",
+      "cancion": "Video Killed The Radio Star",
+      "frase": "Un recordatorio de cómo los tiempos cambian, pero la esencia de lo que sentimos a través del sonido permanece intacta. The Buggles nos traen Video Killed The Radio Star. En Radiochar, demostramos que la radio está más viva que nunca en tu corazón esta noche de Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "Waiting for a Girl like You",
+      "frase": "Toda una vida de espera se resume en el instante preciso en que esa persona especial cruza nuestro camino en la oscuridad. Foreigner nos envuelve con Waiting for a Girl like You en esta madrugada de terciopelo. Deja que Radiochar sea el soundtrack de tu encuentro perfecto hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Wham!",
+      "cancion": "Wake Me Up Before You Go-Go",
+      "frase": "Un estallido de energía y color para que no te pierdas ni un solo segundo de la alegría que el amor puede darnos. Wham! nos trae Wake Me Up Before You Go-Go para darnos ese toque de vitalidad. Disfruta del brillo de Radiochar mientras despertamos juntos la mañana en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Bangles",
+      "cancion": "Walk Like an Egyptian",
+      "frase": "Un ritmo diferente, un paso lleno de misterio y diversión para recorrer las calles de la ciudad con mucha actitud. The Bangles nos invitan a Walk Like an Egyptian en la señal de Radiochar. Deja que la originalidad te acompañe en esta madrugada de descubrimientos hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Dire Straits",
+      "cancion": "Walk Of Life",
+      "frase": "Caminar por la vida con una melodía alegre en la mente, encontrando belleza en cada rincón del camino cotidiano. Dire Straits nos traen Walk Of Life para darnos ese toque de optimismo y autenticidad. Disfruta de la compañía de Radiochar mientras avanzas por tu propia Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Walk This Way",
+      "frase": "Seguir el ritmo de la calle, con la frente en alto y toda la potencia del rock marcando cada uno de nuestros pasos. Aerosmith nos entrega Walk This Way en esta madrugada de Radiochar. Siente la fuerza del estilo urbano recorriendo tu habitación en este preciso instante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Katrina & The Waves",
+      "cancion": "Walking On Sunshine",
+      "frase": "Sentirse tan feliz que parece que estuviéramos caminando sobre el sol, iluminando todo a nuestro alrededor con alegría pura. Katrina & The Waves nos traen Walking On Sunshine. Deja que la energía positiva de Radiochar sea tu motor en esta madrugada de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Wanted Dead Or Alive",
+      "frase": "Caminar solo por el desierto de la vida, con una guitarra a la espalda y el corazón curtido por las batallas del rock. Bon Jovi nos entrega Wanted Dead Or Alive en esta noche de forajidos. Siente el espíritu libre en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Edwin Starr",
+      "cancion": "War",
+      "frase": "Un grito de conciencia contra el conflicto, recordándonos que el amor y la paz son las únicas victorias que valen la pena. Edwin Starr nos trae War para sacudir tu madrugada con una verdad necesaria. En Radiochar, apostamos por la armonía en cada una de nuestras canciones.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "War Pigs",
+      "frase": "La oscuridad de la realidad se vuelve metal pesado en una de las piezas más influyentes y potentes de la historia del rock. Black Sabbath nos trae War Pigs para sacudir los cimientos de tu madrugada. Siente el poder de la advertencia sonora en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "We Are The Champions",
+      "frase": "Celebrar las victorias compartidas, las luchas ganadas y el honor de haber dado lo mejor de nosotros mismos ante el mundo. Queen nos regala We Are The Champions. En Radiochar, hoy celebramos tu resiliencia en esta madrugada de éxitos y sentimientos en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Starship",
+      "cancion": "We Built This City",
+      "frase": "Construir un imperio de sueños basándonos únicamente en la fuerza del rock and roll y de nuestras propias convicciones. Starship nos trae We Built This City para encender la energía de tu madrugada. Siente la identidad urbana de Radiochar recorriendo cada rincón de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "We Will Rock You",
+      "frase": "Un latido rítmico que nos une a todos en un solo grito de pertenencia y fuerza imparable ante el destino. Queen nos pone a marcar el paso con We Will Rock You en la señal de Radiochar. Siente la vibración de la unidad en esta noche especial de radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Twisted Sister",
+      "cancion": "We're Not Gonna Take It",
+      "frase": "No vamos a aceptar lo establecido si no nos hace felices; la rebelión es el primer paso hacia nuestra propia verdad. Twisted Sister nos traen We're Not Gonna Take It con toda su actitud. Siente el poder de la liberación en la madrugada de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Welcome To The Jungle",
+      "frase": "Bienvenidos al lugar donde los sueños y las pesadillas se mezclan bajo las luces de neón de la ciudad que nunca duerme. Guns N' Roses nos traen Welcome To The Jungle para sacudir tu madrugada. Siente la potencia del rock salvaje en la señal de Radiochar hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Irene Cara",
+      "cancion": "What A Feeling",
+      "frase": "Sentir que la música se apodera de cada fibra de tu cuerpo y te da la fuerza para lograr lo imposible. Irene Cara nos hace vibrar con What A Feeling en esta madrugada de Radiochar. Deja que la pasión sea tu motor en esta noche de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Haddaway",
+      "cancion": "What Is Love",
+      "frase": "Una pregunta directa al alma en busca del significado real de ese sentimiento que nos hace vibrar y sufrir a la vez. Haddaway nos trae What Is Love para darle ritmo a tu desvelo en Radiochar. Encuentra tu propia respuesta en medio de tu Love City esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tina Turner",
+      "cancion": "What's Love Got to Do with It",
+      "frase": "A veces nos preguntamos si el sentimiento es realmente necesario o si solo es una complicación más de nuestra propia vida. La reina Tina Turner nos entrega What's Love Got to Do with It. Disfruta de la sofisticación de Radiochar en esta madrugada de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "4 Non Blondes",
+      "cancion": "What's Up?",
+      "frase": "Un grito de búsqueda, una pregunta al universo sobre lo que realmente está sucediendo en nuestro interior y en el mundo. 4 Non Blondes nos traen What's Up? en esta madrugada de Radiochar. Siente la fuerza de la vulnerabilidad compartida en medio de tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bad English",
+      "cancion": "When I See You Smile",
+      "frase": "Encontrar el paraíso y la paz absoluta con solo mirar la sonrisa de esa persona especial en medio de la oscuridad. Bad English nos regala When I See You Smile en esta madrugada de Radiochar. Deja que la ternura te reconforte mientras el tiempo se detiene hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "White Lion",
+      "cancion": "When the Children Cry",
+      "frase": "Una reflexión profunda sobre el futuro que estamos construyendo y el legado de amor que dejaremos a los que vienen. White Lion nos conmueve con When the Children Cry, una balada acústica de una belleza serena. Encuentra tu paz en la señal de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "DEVO",
+      "cancion": "Whip It",
+      "frase": "Un poco de ritmo original y vanguardista para sacudir la modorra de la madrugada con mucha actitud y estilo propio. DEVO nos trae Whip It en la señal de Radiochar. Disfruta de la libertad creativa mientras avanzamos juntos por esta noche especial en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Men At Work",
+      "cancion": "Who Can It Be Now?",
+      "frase": "Esa sospecha en la oscuridad, esa pregunta ante la puerta cerrada mientras la ciudad duerme y nosotros seguimos despiertos. Men At Work nos traen Who Can It Be Now? con su sonido único. Deja que el misterio de Radiochar te acompañe en esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Annie Lennox",
+      "cancion": "Why",
+      "frase": "Buscar el motivo real de las grietas que se forman en el alma cuando el amor empieza a cambiar de forma ante nosotros. Annie Lennox nos entrega Why con una sensibilidad que estremece. En Love City, Radiochar es el refugio para tus preguntas más íntimas esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chris Isaak",
+      "cancion": "Wicked Game",
+      "frase": "Un juego peligroso de seducción y deseo, donde el corazón se arriesga a perderlo todo bajo la luz de la luna. Chris Isaak nos susurra Wicked Game con su voz llena de misterio. Disfruta de la sensualidad profunda de Radiochar en esta madrugada de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mr. Big",
+      "cancion": "Wild World",
+      "frase": "Una advertencia llena de ternura para quien decide marcharse a explorar un mundo que a veces puede ser difícil y salvaje. Mr. Big nos regala su versión de Wild World para acariciar tu desvelo. Deja que la música de Radiochar sea tu brújula en esta noche profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Yusuf And Cat Stevens",
+      "cancion": "Wild World",
+      "frase": "Dejar ir con amor, deseando que el destino sea amable con quien amamos mientras recorren caminos nuevos y desconocidos. Yusuf / Cat Stevens nos entregan la pieza original de Wild World. Encuentra la sabiduría de la aceptación en la señal de Radiochar durante esta madrugada hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "Wind Of Change",
+      "frase": "Sentir que el viento de la historia sopla a nuestro favor, trayendo promesas de libertad y de un nuevo amanecer para todos. Scorpions nos traen Wind Of Change en esta balada épica. Deja que la esperanza de Radiochar te reconforte hoy en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Wish You Were Here",
+      "frase": "Deseamos que estés aquí, compartiendo este silencio y esta música que parece haber sido escrita pensando únicamente en tu ausencia. Pink Floyd nos regala Wish You Were Here en esta madrugada profunda. En Radiochar, somos el eco de tus sentimientos en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "With a Little Help from My Friends",
+      "frase": "Recordar que no estamos solos, que siempre habrá un hombro amigo dispuesto a ayudarnos a superar cualquier tormenta emocional. El gran Joe Cocker nos entrega su versión de With a Little Help from My Friends. Siente la compañía de Radiochar en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "U2",
+      "cancion": "With Or Without You",
+      "frase": "Ese dilema de no poder vivir contigo pero tampoco ser capaz de respirar sin tu presencia a mi lado cada noche. U2 nos entrega With Or Without You con toda su mística. Siente la cercanía de Radiochar acompañando tus sentimientos más profundos en Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mariah Carey",
+      "cancion": "Without You",
+      "frase": "Reconocer que el vacío de una ausencia es insoportable cuando cada nota musical nos recuerda lo que alguna vez tuvimos y perdimos. Mariah Carey interpreta Without You con una potencia que desarma. En Love City, Radiochar es el hombro musical que necesitas en esta madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Lennon",
+      "cancion": "Woman",
+      "frase": "Un agradecimiento dulce y profundo a la presencia femenina que le da sentido y luz a cada uno de nuestros días oscuros. John Lennon nos regala Woman para recordarnos el valor de la ternura. Disfruta de la elegancia de Radiochar en esta madrugada de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Barbra Streisand",
+      "cancion": "Woman in Love",
+      "frase": "Cuando el sentimiento es tan profundo que no hay nada que no haríamos por proteger y mantener viva la llama del amor. Barbra Streisand nos entrega Woman in Love con una pasión inigualable. Deja que la voz de Radiochar te envuelva en esta madrugada especial hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Clapton",
+      "cancion": "Wonderful Tonight",
+      "frase": "Ese momento de admiración pura ante la belleza de quien amamos mientras nos preparamos para vivir una noche inolvidable juntos. Eric Clapton nos regala Wonderful Tonight para detener el tiempo. Disfruta de la calidez de Radiochar en este bloque romántico de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "F.R. David",
+      "cancion": "Words",
+      "frase": "A veces las palabras no salen de la forma correcta para expresar todo lo que el corazón siente en la penumbra. F.R. David nos trae Words en esta madrugada de Radiochar. Deja que la música diga lo que tú no puedes en medio de tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beach Boys",
+      "cancion": "Wouldn't It Be Nice",
+      "frase": "Imaginar una vida de felicidad perfecta donde el amor sea la única ley que rija cada uno de nuestros amaneceres compartidos. The Beach Boys nos traen Wouldn't It Be Nice para darnos ese toque de optimismo. Disfruta de la magia de Radiochar en esta madrugada especial.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beatles",
+      "cancion": "Yesterday",
+      "frase": "Cuando todos nuestros problemas parecían estar tan lejos y el ayer era un refugio de felicidad que ahora extrañamos profundamente. Los Beatles nos regalan Yesterday para acompañar tu nostalgia. En Love City, Radiochar rescata tus mejores recuerdos a través de la música hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Village People",
+      "cancion": "YMCA",
+      "frase": "Un poco de alegría y ritmo compartido para recordarnos que siempre hay un lugar donde ser nosotros mismos y celebrar la vida. Village People nos traen YMCA para sacudir tu madrugada con energía. Únete a la fiesta de Radiochar y deja que lo bueno te encuentre hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "You Are So Beautiful",
+      "frase": "Una declaración de amor sencilla pero cargada de una profundidad que solo la voz rasgada más famosa del mundo puede dar. Joe Cocker nos regala You Are So Beautiful para detener el mundo. Siente la ternura de Radiochar acariciando tu alma en Love City esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "America",
+      "cancion": "You Can Do Magic",
+      "frase": "Hay personas que tienen el don de transformarlo todo con su sola presencia, haciendo que creamos de nuevo en la magia real. America nos trae You Can Do Magic para iluminar tu madrugada de Radiochar. Disfruta del encanto de Love City en esta noche especial hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe Cocker",
+      "cancion": "You Can Leave Your Hat On",
+      "frase": "La seducción tiene un ritmo lento y sugerente que nos invita a disfrutar del juego del deseo bajo la luz de la luna. El gran Joe Cocker nos entrega You Can Leave Your Hat On. Deja que la sensualidad de Radiochar prepare el ambiente en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "You Can't Always Get What You Want",
+      "frase": "A veces la vida no nos da lo que queremos, pero si lo intentamos, descubriremos que nos da exactamente lo que necesitamos. Los Rolling Stones nos traen esta gran verdad en Love City. Encuentra tu equilibrio en la señal de Radiochar esta madrugada profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "You Give Love A Bad Name",
+      "frase": "Ese reproche cargado de energía rockera para quien juega con los sentimientos y nos deja una cicatriz en medio de la noche. Bon Jovi nos sacude con You Give Love A Bad Name en Radiochar. Siente el poder de la actitud dándole vida a tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "New Kids On The Block",
+      "cancion": "You Got It",
+      "frase": "Tener todo lo que hace falta para hacernos felices con un solo gesto o una sola palabra cargada de amor auténtico. New Kids On The Block nos traen You Got It (The Right Stuff) en esta madrugada. Disfruta de la frescura de Radiochar en este bloque especial hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Daryl Hall & John Oates",
+      "cancion": "You Make My Dreams (Come True)",
+      "frase": "Cuando alguien se convierte en el motor que hace que nuestros sueños se sientan posibles y reales en medio de la ciudad. Hall & Oates nos traen You Make My Dreams (Come True) para encender la alegría de Radiochar. Siente la vitalidad de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Kinks",
+      "cancion": "You Really Got Me",
+      "frase": "Esa sensación de ser capturado por un sentimiento tan fuerte que ya no podemos pensar en nada más que en esa persona. The Kinks nos traen You Really Got Me con su energía arrolladora. Siente el pulso del rock clásico en la señal de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Barry White",
+      "cancion": "You're The First, The Last, My Everything",
+      "frase": "Ser el principio y el fin de todo lo que importa, el universo entero resumido en la presencia de un solo ser amado. El maestro Barry White nos envuelve con su voz profunda en Radiochar. Disfruta de la elegancia suprema en esta madrugada de Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Chicago",
+      "cancion": "You're the Inspiration",
+      "frase": "Ser la musa que inspira cada una de las notas y de los sentimientos que le dan sentido a nuestra existencia compartida. Chicago nos regala You're the Inspiration en esta madrugada de Radiochar. Deja que la ternura te acompañe mientras el tiempo se detiene en Love City.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Travolta, Olivia Newton-John",
+      "cancion": "You're The One That I Want",
+      "frase": "Darse cuenta de que, entre todas las posibilidades, solo hay una persona que realmente deseamos tener a nuestro lado hoy. John Travolta y Olivia Newton-John nos traen You're The One That I Want para iluminar tu madrugada de Radiochar con ritmo y pasión.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Outfield",
+      "cancion": "Your Love",
+      "frase": "Ese amor que buscamos en secreto cuando estamos lejos de casa, una conexión que nos hace sentir vivos y un poco salvajes. The Outfield nos entrega Your Love en esta madrugada de Radiochar. Siente la energía de Love City recorriendo cada fibra de tu cuerpo hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Modern Talking",
+      "cancion": "You're My Heart, You're My Soul",
+      "frase": "Ser el corazón y el alma de todo lo que construimos, una unión que se siente eterna en cada ritmo que compartimos esta noche. Modern Talking nos traen You're My Heart, You're My Soul en Radiochar. Disfruta de la elegancia pop en tu Love City hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Carole King",
+      "cancion": "You've Got a Friend",
+      "frase": "No importa cuán oscuro se ponga el cielo afuera, solo tienes que llamarme y yo estaré allí para ser tu refugio seguro. Carole King nos acaricia el alma con You've Got a Friend. En Love City, Radiochar es ese amigo fiel que te acompaña siempre en la madrugada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cranberries",
+      "cancion": "Zombie",
+      "frase": "Un grito de conciencia contra el dolor y el vacío que deja la violencia en las calles de nuestro mundo dormido. The Cranberries nos entregan Zombie en la voz inolvidable de Dolores O'Riordan. En la quietud de Love City, reflexionamos con la fuerza de Radiochar esta noche.",
+      "nivel_confianza_contexto": "Media"
+    }
+  ],
+  "frases_genericas_error": [
+    {
+      "tipo": "feed_caido",
+      "frase": "Parece que el viento de la madrugada se llevó nuestra señal por un momento, pero no te preocupes, Karol Morales ya está reconectando los cables del corazón para que la música en Love City no se detenga. Gracias por esperarme en Radiochar."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "A veces los nombres se confunden en la penumbra, pero lo que tus oídos sienten es lo que realmente importa. Mi pantalla dice una cosa y tu alma siente otra; estamos ajustando los detalles para que la armonía regrese a Love City."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "Ese silencio no fue soledad, fue solo una pausa necesaria para tomar aire. Ya estamos de vuelta en Radiochar para seguir llenando tu madrugada con las baladas que le dan sentido a tu desvelo. Sigamos compartiendo esta noche juntos."
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "Hay recuerdos que a veces se fragmentan, y hoy una de nuestras canciones decidió jugar a las escondidas. Permíteme buscar otra joya musical para seguir dándole brillo a tu noche en Love City. La magia continúa en Radiochar."
+    },
+    {
+      "tipo": "cancion_no_detectada",
+      "frase": "Esa melodía que acabas de escuchar es un secreto que la noche quiso guardarse para sí misma. Aunque el sistema no le puso nombre, tú y yo sabemos lo que nos hace sentir. Sigamos adelante con más música en Radiochar."
+    },
+    {
+      "tipo": "desconexion_temporal",
+      "frase": "Un pequeño bache en el camino nocturno nos alejó por unos segundos, pero Karol Morales nunca suelta tu mano. Ya estamos de nuevo al aire en Love City, listos para que la próxima balada te abrace el alma en Radiochar."
+    },
+    {
+      "tipo": "error_playlist",
+      "frase": "Nuestra lista de deseos musicales se mezcló un poco, pero en Radiochar los accidentes se convierten en sorpresas agradables. Vamos a dejar que el azar nos guíe con la siguiente canción en esta madrugada especial de Love City."
+    },
+    {
+      "tipo": "latencia_stream",
+      "frase": "El tiempo se estiró un poco más de lo normal en el espacio digital, pero ya estamos sincronizando nuestros latidos. Gracias por mantener la sintonía en Radiochar; el viaje por Love City sigue su curso sin más retrasos."
+    },
+    {
+      "tipo": "interferencia_señal",
+      "frase": "Un poco de estática intentó empañar nuestro momento íntimo, pero la calidez de nuestra música es más fuerte que cualquier interferencia. Karol Morales sigue aquí contigo, dándole vida a Love City a través de Radiochar."
+    },
+    {
+      "tipo": "reinicio_sistema",
+      "frase": "Estamos refrescando el aire de nuestra cabina para que cada nota suene más clara que nunca. Solo un segundo de pausa y volvemos a sumergirnos en las baladas que tanto te gustan aquí en Radiochar. No te muevas de Love City."
+    },
+    {
+      "tipo": "audio_distorsionado",
+      "frase": "Si escuchaste algo extraño, era solo la noche intentando cantar con nosotros. Vamos a limpiar el sonido para que la voz de tus artistas favoritos llegue pura a tu corazón. Love City se escucha mejor que nunca en Radiochar."
+    },
+    {
+      "tipo": "salto_de_pista",
+      "frase": "Esa canción tenía prisa por llegar a tus oídos y saltó antes de tiempo, pero aquí en Love City siempre tenemos el ritmo bajo control. Vamos a retomar el hilo de nuestra historia musical en Radiochar."
+    },
+    {
+      "tipo": "error_sincronizacion",
+      "frase": "Nuestros relojes se desfasaron por un instante, pero el sentimiento sigue siendo el mismo. Estamos ajustando la brújula de Radiochar para que encuentres el camino exacto hacia tus recuerdos en esta madrugada."
+    },
+    {
+      "tipo": "buffer_vacio",
+      "frase": "La música estaba tomando un respiro profundo para volver con más fuerza. Ya llenamos de nuevo nuestro tanque de sentimientos para que sigas disfrutando de Love City. Karol Morales te acompaña en Radiochar."
+    },
+    {
+      "tipo": "falla_servidor",
+      "frase": "Incluso las máquinas se cansan de tanta belleza musical, pero ya despertamos a nuestro sistema para que la función continúe. Love City es tu refugio y Radiochar es tu casa; gracias por seguir ahí."
+    },
+    {
+      "tipo": "microfono_mute",
+      "frase": "A veces mis palabras se quedan atrapadas en el suspiro de la noche, pero ya recuperé la voz para seguir contándote historias. Karol Morales está de vuelta al micrófono en esta madrugada de Radiochar."
+    },
+    {
+      "tipo": "desajuste_volumen",
+      "frase": "Si el susurro se hizo muy fuerte o el grito muy quedo, estamos equilibrando las emociones para que Love City sea el bálsamo que necesitas. La armonía vuelve a Radiochar en este preciso instante."
+    },
+    {
+      "tipo": "error_identificacion",
+      "frase": "Esa voz que escuchaste era la de un viejo amigo que no necesita presentación, aunque nuestro sistema no lo haya reconocido. En Radiochar, lo que importa es la huella que deja la música en tu memoria."
+    },
+    {
+      "tipo": "caida_red_local",
+      "frase": "La ciudad se quedó en silencio por un error técnico, pero nuestra conexión emocional es inalámbrica y eterna. Ya estamos de regreso en Love City para seguir compartiendo la mejor música en Radiochar."
+    },
+    {
+      "tipo": "emergencia_tecnica",
+      "frase": "Un pequeño imprevisto en cabina intentó distraernos, pero nada detiene la pasión de Karol Morales por acompañarte. Seguimos adelante en Love City con más de esas canciones que te erizan la piel en Radiochar."
+    }
+  ]
+}
