@@ -1,0 +1,2928 @@
+{
+  "radio": "Radiochar",
+  "programa": {
+    "nombre": "Rockstars",
+    "horario": "15:00 - 19:59",
+    "contenido": "Rock de los 80s",
+    "dj": {
+      "nombre": "DJ Jhon Martin",
+      "genero": "Hombre",
+      "personalidad": "Poderoso, rockero, seguro, experto y apasionado.",
+      "tono_voz": "Grave, profundo, con autoridad y una vibración que transmite energía de estadio.",
+      "actitud": "Imponente y directa. Habla como una leyenda que conoce cada solo de guitarra y cada historia detrás de los grandes himnos del rock.",
+      "relacion_emocional": "Considera los años 80 como el pico máximo de la potencia musical; para él, el rock de esta era es una religión que se predica con el volumen al máximo.",
+      "nivel_confianza_perfil": "Alta"
+    }
+  },
+  "total_canciones": 425,
+  "frases_por_cancion": [
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "(I Can't Get No) Satisfaction",
+      "frase": "Suban el volumen porque vamos a invocar a sus Satánicas Majestades. The Rolling Stones nos lanzan a la cara (I Can't Get No) Satisfaction, un riff que cambió el ADN del rock para siempre. Es la insatisfacción convertida en himno absoluto, pura electricidad que sigue quemando como el primer día.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "14 Years",
+      "frase": "Desde el vientre del Use Your Illusion II llega una pieza cargada de pura honestidad callejera. Guns N' Roses disparan 14 Years, con la voz cruda de Izzy Stradlin recordándonos que el tiempo en el rock se mide en cicatrices y buenos solos de guitarra. Esto es actitud pura en Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Robert Plant",
+      "cancion": "29 Palms",
+      "frase": "La voz de una leyenda que caminó entre gigantes. Robert Plant nos entrega 29 Palms, una joya donde la elegancia y la potencia se dan la mano. Es rock con clase, de ese que te envuelve mientras recorres la carretera con el motor rugiendo. Un maestro en todo su esplendor.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Connells",
+      "cancion": "74-'75",
+      "frase": "Hay melodías que se quedan grabadas en el alma por su melancolía rockera. The Connells nos traen 74-'75, un viaje en el tiempo que demuestra que la nostalgia también tiene lugar en nuestra cabina. Una composición impecable para quienes valoramos la profundidad de una buena historia contada con guitarras.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "America",
+      "cancion": "A Horse with No Name",
+      "frase": "Nos adentramos en el desierto con un clásico que respira libertad en cada acorde. America nos presenta A Horse with No Name, una travesía acústica que se convirtió en un pilar del rock suave pero con carácter. Es el sonido de la ruta, libre de etiquetas y cargado de mística.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Billy Joel",
+      "cancion": "A Matter of Trust",
+      "frase": "Billy Joel dejó de lado el piano por un momento para colgarse la guitarra y darnos una lección de fuerza. A Matter of Trust es un golpe de autoridad, rock directo al corazón que nos recuerda que la confianza es lo único que mantiene encendido el fuego. Potencia y sentimiento.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "About A Girl",
+      "frase": "Incluso antes de la explosión mundial, Kurt Cobain ya sabía cómo escribir melodías perfectas. Nirvana nos trae About A Girl, el lado más melódico de una banda que estaba destinada a romperlo todo. Es el preludio de una revolución que nació en el garage y conquistó el mundo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Motörhead",
+      "cancion": "Ace of Spades",
+      "frase": "¡Sientan el poder de Lemmy Kilmister! Motörhead no pedía permiso, simplemente pasaba por encima de todos. Ace of Spades es una descarga de adrenalina pura, un trueno que retumba en el pecho y nos obliga a subir el volumen al máximo. Si esto no te acelera el pulso, estás muerto.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Africa",
+      "frase": "Bienvenidos a la perfección técnica hecha canción. TOTO nos regala Africa, una obra maestra donde cada nota está en su lugar exacto. Es rock de estadio con alma de jazz, una atmósfera épica que solo verdaderos expertos pueden ejecutar con semejante maestría. Simplemente sublime.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bob Seger",
+      "cancion": "Against The Wind",
+      "frase": "Para los que hemos corrido contra el viento y seguimos de pie, Bob Seger escribió este himno de supervivencia. Against The Wind es la voz de la experiencia, el rock que se saborea con calma mientras recuerdas los solos de guitarra que marcaron tu vida. Un clásico indispensable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Van Halen",
+      "cancion": "Ain't Talkin' 'Bout Love",
+      "frase": "Eddie Van Halen cambió las reglas del juego y con este riff lo dejó claro desde el principio. Van Halen nos golpea con Ain't Talkin' 'Bout Love, puro veneno rockero con una energía que solo ellos podían transmitir. Es el sonido de la California más salvaje y explosiva.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jimi Hendrix",
+      "cancion": "All Along the Watchtower",
+      "frase": "Cuando el dios de la guitarra toma un tema de Bob Dylan, el resultado es una experiencia religiosa. Jimi Hendrix nos eleva con All Along the Watchtower. Escuchen ese solo, es fuego puro saliendo de las cuerdas, una lección de autoridad que todo rockero debe venerar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "All Apologies",
+      "frase": "Una despedida cargada de belleza y dolor contenido. Nirvana nos entrega All Apologies, donde la distorsión da paso a una introspección poderosa. Es la calma antes y después de la tormenta, una pieza fundamental para entender el alma de una banda que lo dio todo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mike + The Mechanics",
+      "cancion": "All I Need Is A Miracle",
+      "frase": "A veces el rock necesita ese brillo pop de los 80 para hacernos vibrar. Mike + The Mechanics nos traen All I Need Is A Miracle, un chute de energía positiva con una producción impecable. Es el sonido de la radio de los grandes tiempos, imposible no seguir el ritmo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Heart",
+      "cancion": "All I Wanna Do Is Make Love To You",
+      "frase": "Las hermanas Wilson saben cómo combinar la sensualidad con el poder de una banda de rock de primer nivel. Heart nos presenta All I Wanna Do Is Make Love To You, una balada poderosa que explota con una intensidad que solo las leyendas femeninas alcanzan.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Christopher Cross",
+      "cancion": "All Right",
+      "frase": "Bajamos un poco las revoluciones pero mantenemos la calidad al máximo. Christopher Cross nos trae All Right, una muestra de ese rock sofisticado que dominó las listas con elegancia. Melodías cristalinas y una ejecución de estudio que roza la perfección absoluta. Pura clase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sting",
+      "cancion": "All This Time",
+      "frase": "Sting siempre ha sabido cómo dotar al rock de una profundidad intelectual sin perder el gancho. All This Time es una canción que fluye con inteligencia, recordándonos que el rock también es reflexión y narrativa de alto vuelo. Un músico excepcional para oyentes que buscan algo más.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Always",
+      "frase": "Preparen las gargantas porque llega un himno de estadios que no conoce el paso del tiempo. Bon Jovi nos entrega Always, una demostración de poder vocal y sentimiento desbordado. Es el rock épico que nos hizo creer en el amor eterno bajo una lluvia de guitarras.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Del Amitri",
+      "cancion": "Always The Last To Know",
+      "frase": "El rock alternativo de los 90 bebió mucho de la honestidad clásica. Del Amitri nos trae Always The Last To Know, una canción redonda, honesta y con ese toque agridulce que tanto nos gusta. Una estructura perfecta para disfrutar de la buena música sin pretensiones.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Boston",
+      "cancion": "Amanda",
+      "frase": "Tom Scholz es un arquitecto del sonido y en Amanda lo demostró con creces. Boston nos envuelve con esta balada de alta fidelidad, donde las guitarras armonizadas crean una atmósfera de ensueño. Es el rock que suena grande, espacioso y lleno de una luz única.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Lenny Kravitz",
+      "cancion": "American Woman",
+      "frase": "Lenny Kravitz tomó un clásico y le inyectó una dosis extra de funk y distorsión moderna. American Woman suena a puro cuero y actitud en la carretera. Es un homenaje al rock de raíz con el toque maestro de un tipo que nació para ser estrella.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Richard Marx",
+      "cancion": "Angelia",
+      "frase": "Richard Marx sabía cómo capturar la esencia de la radio de finales de los 80. Angelia es una muestra de esa producción pulida y potente, donde la voz rasgada se encuentra con arreglos de guitarra que te atrapan. Un viaje directo a la era dorada.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Megadeth",
+      "cancion": "Angry Again",
+      "frase": "¡Cuidado! Dave Mustaine está en la casa y trae toda su furia técnica. Megadeth nos entrega Angry Again, una pieza de metal preciso como un reloj suizo. Escuchen esa rítmica, es la autoridad de una banda que no acepta imitaciones. Rock masticado con rabia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Another Brick in the Wall, Pt. 2",
+      "frase": "Es hora de derribar el muro con el himno de protesta más grande de la historia. Pink Floyd nos presenta Another Brick in the Wall, Pt. 2. Ese solo de David Gilmour es una cátedra de cómo hacer llorar a una guitarra con autoridad. No somos solo ladrillos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Another One Bites The Dust",
+      "frase": "Freddie Mercury y John Deacon crearon una línea de bajo que es ley universal en el rock. Queen nos hace marcar el paso con Another One Bites The Dust. Es el encuentro perfecto entre el rock y el groove, demostrando que no tenían fronteras.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Any Way You Want It",
+      "frase": "Si hablamos de rock de estadio, tenemos que hablar de Journey. Any Way You Want It es una explosión de alegría y guitarras vibrantes que te levantan del asiento. Steve Perry nos guía con una voz prodigiosa en este clásico absoluto de Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Anybody Seen My Baby?",
+      "frase": "Incluso en los 90, los Stones seguían demostrando quiénes eran los jefes. Anybody Seen My Baby? es una pieza con un groove moderno pero con ese alma blusera que solo ellos poseen. Mick Jagger nos lleva por una búsqueda urbana cargada de estilo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lenny Kravitz",
+      "cancion": "Are You Gonna Go My Way",
+      "frase": "Ese riff inicial es pura adrenalina inyectada directamente en las venas. Lenny Kravitz nos pregunta Are You Gonna Go My Way y la respuesta es un rotundo sí. Es el renacimiento del espíritu de los 70 con la fuerza de una producción de gloria.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Player",
+      "cancion": "Baby Come Back",
+      "frase": "Viajamos al lado más suave y melódico del rock de los 70. Player nos trae Baby Come Back, un clásico del 'yacht rock' que nunca pierde su encanto. Armonías vocales perfectas y un sentimiento de nostalgia que nos recuerda por qué amamos estas historias.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eddie Money",
+      "cancion": "Baby Hold On",
+      "frase": "Eddie Money representaba al tipo común que soñaba con ser una estrella, y lo logró con creces. Baby Hold On es rock and roll directo, honesto y con ese saxofón que le da un toque callejero inolvidable. Un artista que entendía la conexión real.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Back In Black",
+      "frase": "¡Silencio! La campana ha sonado y el riff más grande del rock está aquí. AC/DC nos entrega Back In Black como un tributo a la inmortalidad. Es potencia pura, tres acordes que dominan el mundo y la voz de Brian Johnson avisando que el rock no morirá.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Huey Lewis & The News",
+      "cancion": "Back In Time",
+      "frase": "Ajusten sus condensadores de flujo porque Huey Lewis & The News nos llevan de viaje. Back In Time es pura diversión ochentera con una sección de vientos que te obliga a mover los pies. Rock con alma de película para sentir que todo es posible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Bad Medicine",
+      "frase": "Jon Bon Jovi sabe que a veces el rock es la mejor medicina, aunque sea una 'mala'. Bad Medicine es una inyección de energía para corear en cualquier estadio del planeta. Guitarras fiesteras y un estribillo diseñado para reventar los altavoces. ¡Sube el volumen!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Bad Moon Rising",
+      "frase": "John Fogerty tenía el don de escribir clásicos que parecen haber existido siempre. Creedence Clearwater Revival nos trae Bad Moon Rising, un aviso de tormenta que suena a puro rock de raíces, pantano y mucha actitud. La esencia de la música americana.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Quiet Riot",
+      "cancion": "Bang Your Head (Metal Health)",
+      "frase": "¡Es hora de perder el control! Quiet Riot nos dio el himno definitivo para todos los que vivimos por el metal. Bang Your Head es una orden directa a tus cervicales. Un grito de libertad que puso al heavy metal en lo más alto. ¡Fuego!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Midnight Oil",
+      "cancion": "Beds Are Burning",
+      "frase": "Desde Australia llega un grito de protesta con un ritmo que no te deja indiferente. Midnight Oil nos presenta Beds Are Burning, rock con conciencia social y una potencia sonora arrolladora. Peter Garrett nos guía en esta danza tribal moderna y poderosa.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "Big City Nights",
+      "frase": "Los alemanes Scorpions saben cómo retratar la vida nocturna de una estrella de rock. Big City Nights es pura adrenalina de estadio, con esos riffs de Rudolf Schenker y la voz inconfundible de Klaus Meine. El sonido de las luces brillantes y la distorsión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Verve",
+      "cancion": "Bitter Sweet Symphony",
+      "frase": "El rock de los 90 también supo ser grandioso y orquestal. The Verve nos entrega Bitter Sweet Symphony, una pieza hipnótica que camina con paso firme por la ciudad. Richard Ashcroft nos cuenta la vida misma sobre un colchón de cuerdas legendario.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Black Dog",
+      "frase": "Prepárense para una lección de rítmica imposible. Led Zeppelin nos lanza Black Dog, donde Robert Plant y Jimmy Page juegan entre riffs y silencios. Es rock pesado, sexy y con una autoridad que solo los dioses del Olimpo rockero podían alcanzar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soundgarden",
+      "cancion": "Black Hole Sun",
+      "frase": "Chris Cornell nos llevó a un viaje psicodélico y oscuro que definió a toda una generación. Black Hole Sun es una obra maestra del grunge, con guitarras bañadas en efectos y una interpretación vocal que te eriza la piel. Soundgarden en su momento brillante.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Deep Purple",
+      "cancion": "Black Night",
+      "frase": "Deep Purple son los arquitectos del hard rock y Black Night es uno de sus cimientos más sólidos. Ritchie Blackmore nos regala un riff hipnótico que cabalga sobre el bajo de Roger Glover. Es la noche convertida en música, oscura, potente y virtuosa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alannah Myles",
+      "cancion": "Black Velvet",
+      "frase": "Hay voces que tienen el color del blues y la fuerza del rock. Alannah Myles nos envuelve en Black Velvet, un homenaje a la mística de Elvis cargado de sensualidad y poder. Una producción que suena a terciopelo negro y noches de carretera. Magnética.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Ramones",
+      "cancion": "Blitzkrieg Bop",
+      "frase": "¡Hey! ¡Ho! ¡Let's Go! No se necesita más para cambiar el mundo. Los Ramones nos enseñaron que el rock es urgencia, velocidad y tres acordes directos a la mandíbula. Blitzkrieg Bop es el big bang del punk y sigue sonando como una explosión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Bohemian Rhapsody",
+      "frase": "Estamos ante la composición más ambiciosa de la historia del rock. Queen nos lleva por una ópera rock que desafía toda lógica. Freddie Mercury nos guía a través de la luz y la sombra en Bohemian Rhapsody. Obra maestra que solo un genio pudo imaginar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Born in the U.S.A.",
+      "frase": "The Boss nos golpea con la fuerza de un martillo hidráulico. Born in the U.S.A. no es solo una canción, es el grito de una clase trabajadora que se niega a ser ignorada. Bruce Springsteen y la E Street Band en su punto máximo de potencia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Born To Be My Baby",
+      "frase": "Bon Jovi regresa a las raíces del rock más festivo y romántico con Born To Be My Baby. La banda sonora perfecta para los que creemos que el rock y el amor se celebran con el puño en alto. Coros masivos y guitarras brillantes.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Steppenwolf",
+      "cancion": "Born To Be Wild",
+      "frase": "Arranquen los motores, porque aquí nació el término 'Heavy Metal'. Steppenwolf nos lanza a la autopista con Born To Be Wild. El himno definitivo de los motociclistas, una oda a la libertad salvaje que solo el rock ofrece. ¡Sientan el rugido!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tears For Fears",
+      "cancion": "Break It Down Again",
+      "frase": "Tears For Fears siempre han sabido cómo inyectar inteligencia y sofisticación al pop rock. Break It Down Again es una pieza expansiva, con una producción que llena cada rincón. Roland Orzabal demuestra que se puede ser complejo y pegadizo al mismo tiempo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Break on Through (To the Other Side)",
+      "frase": "Jim Morrison nos invita a cruzar la frontera de la percepción. The Doors irrumpieron en la escena con Break on Through, una mezcla de jazz, blues y rock psicodélico que sonaba a peligro puro. Una invitación a explorar el otro lado de la realidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Judas Priest",
+      "cancion": "Breaking the Law",
+      "frase": "¡El Metal God ha hablado! Judas Priest nos entrega el riff que todo aspirante a guitarrista aprendió primero. Breaking the Law es rebelión pura, metal británico de la más alta calidad y la voz de Rob Halford cortando el aire como una cuchilla.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Breathe (In the Air)",
+      "frase": "Cierren los ojos y simplemente respiren. Pink Floyd nos introduce en el lado oscuro de la luna con esta pieza atmosférica inigualable. Breathe es una lección de sutileza y profundidad sonora, el tipo de rock que te transporta a otra dimensión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Breed",
+      "frase": "Velocidad, rabia y una batería que parece querer romper los parches. Nirvana nos lanza Breed, una de sus canciones más energéticas y directas. El sonido del descontento juvenil convertido en un torbellino de distorsión que te vuela la cabeza. ¡Puro punk rock!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Brilliant Disguise",
+      "frase": "The Boss se pone introspectivo para hablarnos de las máscaras que usamos en el amor. Brilliant Disguise es una pieza magistral de composición, donde la vulnerabilidad se encuentra con la fuerza de un artista que conoce el corazón humano como nadie. Rock adulto.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Brown Sugar",
+      "frase": "Nadie sabe cómo hacer rock and roll sucio y contagioso como los Stones. Brown Sugar es un chute de energía pura, con Keith Richards disparando uno de los riffs más sexys de la historia. El sonido de los años 70 en máxima expresión de desenfreno.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Deep Purple",
+      "cancion": "Burn",
+      "frase": "Cuando David Coverdale y Glenn Hughes se unieron a la bestia púrpura, el resultado fue fuego puro. Burn es una demostración de virtuosismo técnico, con Ian Paice destruyendo la batería y Ritchie Blackmore incendiando el mástil. Una lección de hard rock que todavía arde.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "Burning Heart",
+      "frase": "La lucha, el sudor y la gloria se encuentran en esta canción. Survivor nos trae Burning Heart, el espíritu de Rocky convertido en rock melódico de alto impacto. Una canción que te motiva a dar un paso más, a no rendirte nunca ante la adversidad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Edward Crowther",
+      "cancion": "California Cruisin'",
+      "frase": "Bajamos las ventanillas y dejamos que el sol entre. California Cruisin' nos transporta a la costa oeste con un ritmo que invita a la libertad. Es ese rock relajado pero con una base sólida, perfecto para dejar que el camino nos lleve sin destino.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Poco",
+      "cancion": "Call It Love",
+      "frase": "El country rock evolucionó hacia sonidos más pulidos en los 80 y Poco lo hizo con una maestría envidiable. Call It Love es una canción luminosa, con armonías perfectas y ese toque de optimismo que solo las grandes bandas de la era transmiten.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Lenny Kravitz",
+      "cancion": "Can't Get You Off My Mind",
+      "frase": "Lenny Kravitz demuestra que puede ser tan suave como una brisa de verano sin perder su esencia rockera. Can't Get You Off My Mind es una balada con alma de soul y corazón de rock, una confesión directa que nos recuerda que la simplicidad es virtud.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "38 Special",
+      "cancion": "Caught Up In You",
+      "frase": "El rock sureño se puso el traje de gala para conquistar la radio. 38 Special nos trae Caught Up In You, una mezcla perfecta de guitarras dobladas y melodía pop irresistible. El sonido de los estadios americanos en los 80, cargado de energía.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The J. Geils Band",
+      "cancion": "Centerfold",
+      "frase": "A veces el rock solo quiere divertirse y The J. Geils Band lo entendió mejor que nadie. Centerfold es un clásico instantáneo de los 80, con ese teclado juguetón y una historia que todos conocemos. Una inyección de diversión pura para nuestra tarde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Carole King, James Farber",
+      "cancion": "City Streets",
+      "frase": "La gran Carole King se une a James Farber para recorrer las calles con un toque de sofisticación rockera. City Streets es una pieza que respira asfalto y elegancia, demostrando que la sensibilidad de una gran compositora encaja en cualquier contexto sonoro. Pura calidad.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Close To Me",
+      "frase": "Robert Smith nos encierra en su particular mundo de pop oscuro y claustrofóbico, pero extrañamente divertido. Close To Me es un clásico del rock alternativo con ese ritmo de respiración que la hace única. The Cure demostrando que se puede ser raro y amado.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eric Clapton",
+      "cancion": "Cocaine",
+      "frase": "Mano lenta nos advierte sobre los peligros del exceso con un riff que es puro blues-rock de alta escuela. Cocaine de Eric Clapton es una pieza hipnótica, donde la guitarra habla con una autoridad que solo un dios de las seis cuerdas posee. Escuchen.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "Cold as Ice",
+      "frase": "Foreigner sabía cómo crear tensiones dramáticas con un piano y una voz poderosa. Cold as Ice es un clásico del rock melódico, una advertencia contra un corazón gélido que explota con una fuerza imparable. La producción ochentera en su estado más puro y efectivo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Come As You Are",
+      "frase": "Ese riff bajo el agua nos anunció que el mundo ya no sería el mismo. Nirvana nos invita a ser nosotros mismos con Come As You Are. El himno de la autenticidad, una canción que camina entre la luz y la sombra con la maestría de Cobain.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Dexys Midnight Runners",
+      "cancion": "Come On Eileen",
+      "frase": "¡Vamos, Eileen! Esta canción es un torbellino de folk y rock que nos hace saltar desde la primera nota. Dexys Midnight Runners crearon un clásico eterno, lleno de energía juvenil y una pasión desbordante. Es imposible no dejarse llevar por este ritmo alegre.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Melissa Etheridge",
+      "cancion": "Come To My Window",
+      "frase": "Melissa Etheridge tiene una de las voces más crudas y potentes del rock moderno. Come To My Window es una confesión desgarradora, cargada de deseo y fuerza. El rock también es saber desnudarse emocionalmente frente al micrófono. Pura pasión en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Paul Davis",
+      "cancion": "Cool Night",
+      "frase": "Para esas noches donde buscamos la calma después de la tormenta. Paul Davis nos regala Cool Night, una pieza de rock suave y aterciopelado que fluye como una brisa nocturna. Melodías cuidadas y un sentimiento de paz que nos recuerda el lado amable del rock.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Lindsey Buckingham",
+      "cancion": "Countdown",
+      "frase": "El cerebro detrás de los años dorados de Fleetwood Mac nos muestra su genialidad en solitario. Lindsey Buckingham nos trae Countdown, una pieza de pop rock inteligente con ese estilo de guitarra tan particular. Una cuenta atrás hacia la excelencia musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ICEHOUSE",
+      "cancion": "Crazy",
+      "frase": "Desde Australia, Icehouse nos trajo un sonido que combinaba la elegancia del new wave con la fuerza del rock. Crazy es una canción magnética, con una atmósfera que te atrapa y una interpretación vocal llena de estilo. Un clásico que define perfectamente una era.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Crazy Crazy Nights",
+      "frase": "¡KISS está en la casa y vienen a celebrar! Crazy Crazy Nights es el himno de los que vivimos por el rock and roll y no pedimos disculpas. Paul Stanley nos guía en este estallido de alegría ochentera diseñado para sonar a todo volumen en cualquier arena.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cream",
+      "cancion": "Crossroads",
+      "frase": "Tres maestros se unen para llevar el blues al territorio del rock pesado. Cream nos presenta Crossroads, una demostración de poderío donde Eric Clapton, Jack Bruce y Ginger Baker se retan en un duelo eterno. Historia viva de la música, rock en estado puro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Quiet Riot",
+      "cancion": "Cum on Feel the Noize",
+      "frase": "¡Hagan ruido! Quiet Riot tomó este tema de Slade y lo convirtió en el grito de guerra de toda una generación de metaleros. Una celebración del rock como liberación, una invitación a sentir el ruido y dejar que la música tome el control total. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Dancing In the Dark",
+      "frase": "Incluso cuando The Boss se pone a bailar, lo hace con una autoridad que asusta. Dancing In the Dark es un latido ochentero sobre la necesidad de cambio y la frustración creativa. Una pieza perfecta de pop rock con el sello inconfundible de la E Street Band.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Kenny Loggins",
+      "cancion": "Danger Zone",
+      "frase": "Abróchense los cinturones porque entramos en la zona de peligro. Kenny Loggins nos dispara esta descarga de adrenalina que se convirtió en el sonido de una generación de pilotos. Rock con sintetizadores potentes, diseñado para la velocidad y la emoción extrema.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Detroit Rock City",
+      "frase": "La ciudad del rock nos abre sus puertas con un estallido. KISS nos entrega Detroit Rock City, una epopeya de guitarras y fuego que narra la devoción por el rock and roll. El sonido de la anticipación antes del gran concierto, pura energía de estadio.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Dirty Deeds Done Dirt Cheap",
+      "frase": "Bon Scott nos canta con esa sonrisa pícara y peligrosa. AC/DC nos ofrece sus servicios con Dirty Deeds Done Dirt Cheap. Rock and roll crudo, de ese que se aprende en los callejones y se predica en los escenarios más salvajes del mundo. Pura actitud.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "UFO",
+      "cancion": "Doctor Doctor",
+      "frase": "El hard rock británico tiene en UFO a uno de sus mayores exponentes y Doctor Doctor es su tarjeta de presentación definitiva. Ese inicio melódico que estalla en un riff galopante es historia del rock. Michael Schenker da una lección de guitarra que todavía resuena.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Don't Cry",
+      "frase": "Axl Rose demuestra que detrás de la furia también hay una sensibilidad desgarradora. Guns N' Roses nos traen Don't Cry, una de las baladas más icónicas de la historia. Ese solo de Slash es un lamento eléctrico que llega directamente al alma. Simplemente inmortal.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Crowded House",
+      "cancion": "Don't Dream It's Over",
+      "frase": "Neil Finn escribió una de las melodías más perfectas de los años 80. Crowded House nos entrega Don't Dream It's Over, una canción que camina con una melancolía esperanzadora. Rock con sensibilidad pop exquisita, de esa que se queda pegada para siempre.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pretenders",
+      "cancion": "Don't Get Me Wrong",
+      "frase": "Chrissie Hynde tiene esa mezcla de chulería y elegancia que la hace única. Pretenders nos traen Don't Get Me Wrong, un clásico con un ritmo contagioso y una interpretación vocal llena de matices. El sonido de una mujer que sabe exactamente lo que quiere decir.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Yazoo",
+      "cancion": "Don't Go",
+      "frase": "Cuando el sintetizador se encuentra con una voz soul poderosa, nace la magia de Yazoo. Don't Go es una explosión de energía bailable con una raíz rockera en su intensidad emocional. Alison Moyet nos vuela la cabeza con su fuerza vocal en este clásico absoluto.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cinderella",
+      "cancion": "Don't Know What You Got (Till It's Gone)",
+      "frase": "Tom Keifer nos desgarra la voz en esta balada poderosa sobre el arrepentimiento. Cinderella nos recuerda que a veces valoramos las cosas cuando ya no están. Rock melódico con alma de blues, cargado de un sentimiento que atraviesa cualquier barrera. Pura emoción.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Paul Carrack",
+      "cancion": "Don't Shed a Tear",
+      "frase": "La voz de oro del rock británico nos trae una pieza de pop rock impecable. Paul Carrack nos dice Don't Shed a Tear con esa elegancia que solo él posee. Una producción brillante para una canción que recuerda que el rock sabe ser sofisticado y directo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "No Doubt",
+      "cancion": "Don't Speak",
+      "frase": "Gwen Stefani convirtió una ruptura en un himno mundial que definió la mitad de los 90. No Doubt nos entrega Don't Speak, donde el ska se mezcla con una balada rock de una potencia emocional increíble. Es el silencio más ruidoso de la historia musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Don't Stop Believin'",
+      "frase": "Si hay una canción que define la esperanza en el rock, es esta. Journey nos invita a no dejar de creer con el himno definitivo de los estadios. La voz de Steve Perry y ese teclado inicial son patrimonio de la humanidad rockera. ¡Cantadlo con fuerza!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Don't Stop Me Now",
+      "frase": "Freddie Mercury se sentía como una estrella fugaz cruzando el cielo y nos arrastró a todos con él. Queen nos regala Don't Stop Me Now, una explosión de euforia y energía positiva imposible de detener. Es la felicidad convertida en puro rock and roll.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Simple Minds",
+      "cancion": "Don't You (Forget About Me)",
+      "frase": "Cerramos el puño en alto por todos los que crecimos en los 80. Simple Minds entregaron el himno generacional definitivo con Don't You (Forget About Me). La banda sonora de nuestra juventud, épica, grandiosa y llena de nostalgia que nos hace sentir vivos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mötley Crüe",
+      "cancion": "Dr. Feelgood",
+      "frase": "Mötley Crüe en su punto más alto de potencia y producción. Dr. Feelgood es un martillazo de hard rock, con un riff de Mick Mars que suena a puro metal pesado. El sonido del exceso y la redención en las calles de Los Ángeles. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fleetwood Mac",
+      "cancion": "Dreams",
+      "frase": "Stevie Nicks nos envuelve en una atmósfera de sueños y verdades a medias. Fleetwood Mac nos entrega Dreams, una pieza de una elegancia rítmica insuperable. El rock convertido en seda, con una profundidad emocional que solo los que han vivido el caos transmiten.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Dude (Looks Like A Lady)",
+      "frase": "Steven Tyler y Joe Perry regresaron por todo lo alto con este cañonazo de energía. Aerosmith nos divierte y nos sacude con Dude (Looks Like A Lady). Rock and roll con metales, actitud canalla y toda la magia de los chicos malos de Boston. ¡Pura dinamita!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Dumb",
+      "frase": "Una mirada introspectiva a la mente de un genio torturado. Nirvana nos trae Dumb, una de las piezas más bellas y desnudas del In Utero. Con un violonchelo que subraya la melancolía, Kurt Cobain recuerda que a veces solo queremos ser felices en nuestra ignorancia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Kansas",
+      "cancion": "Dust in the Wind",
+      "frase": "La belleza de la fragilidad humana capturada en una guitarra acústica y un violín. Kansas nos entrega Dust in the Wind, obra maestra del rock progresivo que se volvió universal. Un momento de reflexión para recordar que al final, todos somos polvo en el viento.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Stevie Nicks",
+      "cancion": "Edge of Seventeen",
+      "frase": "Ese riff de guitarra constante es como el latido de un corazón agitado. Stevie Nicks demuestra por qué es la reina blanca del rock con Edge of Seventeen. Una interpretación mística y poderosa que nos lleva volando como una paloma por Radiochar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "ICEHOUSE",
+      "cancion": "Electric Blue",
+      "frase": "El azul eléctrico inunda nuestra cabina con la elegancia de Icehouse. Co-escrita con John Oates, esta canción es la cúspide del pop rock sofisticado de los 80. Melodías que fluyen y una atmósfera que nos envuelve en una noche eterna de música. Pura clase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Gary Moore",
+      "cancion": "Empty Rooms",
+      "frase": "Gary Moore hace que su guitarra llore como nadie más puede hacerlo. Empty Rooms es una balada desgarradora sobre la soledad después del amor. Escuchen ese solo, es puro sentimiento saliendo de sus dedos. Una lección de autoridad y sensibilidad en las cuerdas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Richard Marx",
+      "cancion": "Endless Summer Nights",
+      "frase": "Richard Marx nos transporta a esos amores de verano que nunca se olvidan. Endless Summer Nights es una pieza de una producción impecable, con ese aire de nostalgia ochentera que tanto nos gusta. Una balada poderosa para recordar que el rock tiene su lado romántico.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Depeche Mode",
+      "cancion": "Enjoy the Silence",
+      "frase": "Cuando el rock se encuentra con la electrónica más oscura y elegante, nace Depeche Mode. Enjoy the Silence es una pieza hipnótica, con un riff de guitarra minimalista pero inolvidable. Martin Gore y Dave Gahan pidiendo silencio para disfrutar de la música.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Enter Sandman",
+      "frase": "¡Cierren las puertas y apaguen las luces porque llega el hombre del saco! Metallica nos golpea con el riff que cambió el metal para siempre. Enter Sandman es una pesadilla sonora diseñada para reventar estadios. James Hetfield guía hacia un mundo de sombras y poder.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pearl Jam",
+      "cancion": "Even Flow",
+      "frase": "Eddie Vedder nos lanza un aullido desde Seattle mientras la banda cabalga sobre un groove imparable. Pearl Jam nos entrega Even Flow, pieza fundamental del grunge que respira la herencia del rock clásico de los 70. Actitud, potencia y un solo que te vuela la cabeza.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Every Breath You Take",
+      "frase": "Estamos ante la perfección absoluta en la composición y ejecución. The Police nos vigilan con Every Breath You Take, una canción de una tensión contenida y una belleza gélida que ya es historia. Sting, Andy Summers y Stewart Copeland demostrando por qué fueron mejores.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Every Little Thing She Does Is Magic",
+      "frase": "The Police nos inyectan una dosis de optimismo con este clásico cargado de piano y energía. Every Little Thing She Does Is Magic es muestra de la versatilidad de una banda que podía pasar del reggae al rock con naturalidad asombrosa. ¡Magia en Rockstars!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Every Rose Has Its Thorn",
+      "frase": "Bret Michaels nos recuerda que hasta la rosa más bella tiene sus espinas. Poison nos entrega la balada definitiva del glam rock, un momento de vulnerabilidad acústica que se volvió himno mundial. Porque todos hemos sentido el pinchazo del desamor en clave rock.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Münchener Freiheit",
+      "cancion": "Everytime",
+      "frase": "Desde Alemania llega una pieza de pop rock de una belleza melódica impresionante. Münchener Freiheit trajo Everytime, una canción que brilla con luz propia gracias a sus armonías vocales y producción cristalina. Calma y calidad extrema para oyentes expertos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "Eye of the Tiger",
+      "frase": "¡Es hora de subir al ring! Survivor entrega el ritmo que motiva a cualquier guerrero. Eye of the Tiger es el pulso de la determinación, un riff cortante que te prepara para cualquier batalla. Sientan la mirada del tigre e impúlsense a la victoria.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Fade To Black",
+      "frase": "Metallica enseñó que el metal podía ser profundo, triste y épico al mismo tiempo. Fade To Black es un viaje desde la penumbra acústica hasta una explosión eléctrica final que te deja sin aliento. Obra maestra sobre la pérdida y desesperación. Imprescindible.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "Fading Like A Flower (Every Time You Leave)",
+      "frase": "Marie Fredriksson regala una interpretación vocal llena de fuerza y sentimiento. Roxette trae Fading Like A Flower, balada rock con potencia de estadio envidiable. El sonido de los 90 heredando la grandeza de los 80. Pura energía sueca en nuestra sintonía.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Crowded House",
+      "cancion": "Fall At Your Feet",
+      "frase": "La sensibilidad de Neil Finn vuelve a brillar con una intensidad conmovedora. Crowded House nos entrega Fall At Your Feet, una canción de honestidad brutal y belleza melódica que te desarma. Rock suave con carga emocional que solo los grandes compositores logran.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Fallen Angel",
+      "frase": "Poison cuenta la historia de las luces brillantes de la gran ciudad y los sueños rotos. Fallen Angel es puro hard rock ochentero, con gancho comercial y la actitud rebelde que definió una era. Guitarras divertidas y un estribillo para cantar a pleno pulmón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Lenny Kravitz",
+      "cancion": "Fly Away",
+      "frase": "Lenny Kravitz invita a desplegar las alas con un riff hipnótico y setentero. Fly Away es una escapatoria sonora, pura libertad grabada en cinta con un sonido orgánico y potente. Canción que te hace querer dejarlo todo y simplemente volar con la música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Toad The Wet Sprocket",
+      "cancion": "Fly From Heaven",
+      "frase": "El rock alternativo de los 90 supo explorar territorios espirituales con sutileza exquisita. Toad The Wet Sprocket trae Fly From Heaven, pieza con guitarras cristalinas y profundidad lírica que invita a la escucha atenta. Calidad y sensibilidad en cada nota.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitesnake",
+      "cancion": "Fool for Your Loving",
+      "frase": "David Coverdale regrabó este clásico para darle toda la potencia del hard rock ochentero. Whitesnake golpea con Fool for Your Loving, demostración de poderío vocal y guitarras incendiarias. El sonido de la serpiente blanca en su momento de mayor gloria.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Steve Perry",
+      "cancion": "Foolish Heart",
+      "frase": "La voz de Journey se pone romántica en solitario para hablarnos de los errores del corazón. Steve Perry nos entrega Foolish Heart, una balada con una interpretación vocal sencillamente prodigiosa. Rock melódico llevado a su máxima expresión de elegancia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Kenny Loggins",
+      "cancion": "Footloose",
+      "frase": "¡Es imposible quedarse quieto cuando este ritmo empieza a sonar! Kenny Loggins invita a saltar y soltarnos con Footloose. Energía pura de los 80, rock divertido diseñado para romper las reglas y simplemente disfrutar del momento. ¡A mover los pies!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "For Whom The Bell Tolls",
+      "frase": "¡Sientan ese bajo distorsionado anunciando el final! Metallica nos trae For Whom The Bell Tolls, pieza de metal épico inspirada en Hemingway. Marcha fúnebre a toda velocidad, cargada de una autoridad sonora que solo los jinetes del metal poseen.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Outfield",
+      "cancion": "For You",
+      "frase": "The Outfield tenían el secreto de las melodías luminosas y las guitarras con el eco perfecto. For You es una muestra de su talento para crear canciones que se sienten como un soplo de aire fresco. Rock británico con un ojo en los estadios americanos. Pura energía.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Fortunate Son",
+      "frase": "Un grito de rabia contra la injusticia social que todavía resuena con una fuerza brutal. Creedence Clearwater Revival lanza Fortunate Son, dos minutos y medio de pura urgencia rockera. John Fogerty demuestra que no hace falta mucho tiempo para decir verdades.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Tom Petty",
+      "cancion": "Free Fallin'",
+      "frase": "Tom Petty regaló la banda sonora perfecta para un viaje por la California de los sueños y las realidades. Free Fallin' es una pieza de una sencillez magistral, rock americano de raíz que se siente como un abrazo conocido. Un artista irrepetible.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Friends Will Be Friends",
+      "frase": "Freddie Mercury sabía que al final del día, los amigos son los que nos mantienen en pie. Queen nos entrega este himno a la camaradería rockera. Friends Will Be Friends es una canción para abrazar al de al lado y cantar con el corazón lleno de lealtad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "BlitZ",
+      "cancion": "From The Bronx To Outer Space",
+      "frase": "Desde las calles más duras hasta el infinito. BlitZ trae From The Bronx To Outer Space, pieza que combina la crudeza urbana con una ambición sonora espacial. Rock con actitud, que no tiene miedo de explorar nuevos territorios sin perder pegada.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Fuel",
+      "frase": "¡Denme fuego, denme gasolina, denme lo que deseo! Metallica pisa el acelerador a fondo con Fuel. Metal de alto octanaje, una descarga de adrenalina que te obliga a agarrar el volante con fuerza. James Hetfield ruge con autoridad de verdadero rock.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Judas Priest",
+      "cancion": "Gates of Hell",
+      "frase": "Las puertas del infierno se abren y lo que sale es puro acero británico. Judas Priest nos adentra en sus dominios con una potencia sonora que nos hace temblar. El heavy metal en su estado más puro y autoritario. ¡Bienvenidos al reino del Metal God!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cheap Trick",
+      "cancion": "Ghost Town",
+      "frase": "Cheap Trick siempre ha sabido cómo mezclar la melodía con un toque de oscuridad intrigante. Ghost Town nos lleva por una ciudad desierta con un ritmo hipnótico y una interpretación vocal llena de carácter. Rock con personalidad propia en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ZZ Top",
+      "cancion": "Gimme All Your Lovin'",
+      "frase": "Las barbas más famosas del rock traen su mezcla de blues tejano y sintetizadores ochenteros. ZZ Top pide todo nuestro amor con un riff que es puro groove y diversión. Rock con clase, coches clásicos y mucha actitud. ¡Imposible no seguirles el juego!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Gimme Shelter",
+      "frase": "Estamos ante una de las canciones más oscuras y poderosas de la historia del rock. The Rolling Stones nos advierten del peligro con Gimme Shelter. Ese inicio de guitarra y la voz de Merry Clayton nos erizan la piel. El sonido de una era convulsa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mötley Crüe",
+      "cancion": "Girls, Girls, Girls",
+      "frase": "Mötley Crüe nos lleva de paseo por el lado salvaje de la vida nocturna. Girls, Girls, Girls es un homenaje a la diversión sin límites, con un riff de Mick Mars que suena a motor de Harley Davidson. Rock de estadio con mucha laca y cuero.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Glory Days",
+      "frase": "The Boss nos mira con una sonrisa melancólica para hablarnos de los días de gloria que ya pasaron. Glory Days es un clásico que se disfruta con una cerveza en la mano recordando las historias de juventud. Rock honesto del mejor narrador de historias.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Fleetwood Mac",
+      "cancion": "Go Your Own Way",
+      "frase": "Lindsey Buckingham escribió este dardo envenenado mientras la banda se desmoronaba, y el resultado fue una obra maestra de energía y despecho. Fleetwood Mac dice Go Your Own Way con una potencia de guitarras que todavía nos vuela la cabeza.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mick Jagger",
+      "cancion": "God Gave Me Everything",
+      "frase": "Mick Jagger en solitario demuestra que el pacto con el diablo sigue vigente. God Gave Me Everything es un estallido de energía moderna con la actitud de toda una vida dedicada al rock and roll. Adrenalina directa de la mano del frontman definitivo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Casual Tailors",
+      "cancion": "Gold",
+      "frase": "A veces encontramos tesoros escondidos que brillan con luz propia. Casual Tailors nos trae Gold, una pieza que combina la elegancia rítmica con un sonido contemporáneo pero con raíces sólidas. Rock con estilo para los que aprecian los matices.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Good Times Bad Times",
+      "frase": "La primera canción del primer disco de los dioses del Olimpo. Led Zeppelin se presentaron mostrando a un John Bonham sobrenatural y a Jimmy Page definiendo el futuro del rock pesado. Esto es donde todo empezó de verdad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Green River",
+      "frase": "Regresamos al pantano con la guía de John Fogerty. Creedence Clearwater Revival nos trae Green River, una pieza de rock pantanoso con un riff hipnótico y una atmósfera que nos transporta al sur profundo. La esencia de la potencia del rock de raíces.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Hammer To Fall",
+      "frase": "Queen nos golpea con la fuerza de un martillo hidráulico en esta pieza de hard rock puro. Hammer To Fall es una demostración de poderío instrumental y vocal, diseñada para hacer vibrar hasta los cimientos del estadio. Brian May incendia el mástil.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Traveling Wilburys",
+      "cancion": "Handle With Care",
+      "frase": "Cinco leyendas se unieron para divertirse y el resultado fue algo irrepetible. Los Traveling Wilburys nos piden que los tratemos con cuidado con esta joya de rock acústico. George Harrison, Dylan, Petty, Orbison y Lynne juntos... demasiada historia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Megadeth",
+      "cancion": "Hangar 18",
+      "frase": "Dave Mustaine nos lleva a los misterios del Área 51 con una exhibición de guitarras que desafía las leyes de la física. Hangar 18 es un duelo eterno de solos, metal técnico de la más alta escuela. Esto es autoridad en las seis cuerdas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Hard as a Rock",
+      "frase": "AC/DC nos lo dice claro: duro como una roca. Hard as a Rock es una inyección de pura energía australiana, con ese pulso imparable que solo los hermanos Young pueden generar. Rock and roll sin concesiones, directo al pecho. ¡Sube el volumen!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Have a Drink on Me",
+      "frase": "Una invitación a celebrar la vida con el espíritu de Bon Scott siempre presente. AC/DC nos trae Have a Drink on Me, puro rock fiestero con un groove que te obliga a levantar la copa. La banda sonora de las mejores noches de nuestra vida.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Have You Ever Seen The Rain",
+      "frase": "John Fogerty escribió esta joya sobre la calma antes de la tormenta y se convirtió en una de las canciones más amadas de la historia. Creedence Clearwater Revival nos entrega Have You Ever Seen The Rain, un momento de comunión universal.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Heart-Shaped Box",
+      "frase": "Kurt Cobain nos atrapa en su caja con forma de corazón con una intensidad perturbadora y bella. Heart-Shaped Box es una montaña rusa de dinámicas, del susurro al grito desgarrador. Nirvana en su estado más artístico y visceral.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Heartbreaker",
+      "frase": "Jimmy Page nos regala uno de los solos de guitarra más influyentes de todos los tiempos. Led Zeppelin nos lanza Heartbreaker, un mazo de hard rock que nos golpea sin piedad. La arrogancia y el talento de los dioses del rock destilados en una canción.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Asia",
+      "cancion": "Heat Of The Moment",
+      "frase": "Cuando cuatro maestros del rock progresivo se unieron para dominar la radio, nació Asia. Heat Of The Moment es un estallido de energía melódica con una ejecución técnica impecable. El rock de los 80 sonando grande y perfecto para Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Heaven",
+      "frase": "Bryan Adams nos lleva directamente al cielo con esta balada poderosa que ya es un clásico eterno. Heaven es una demostración de cómo el rock puede ser tierno sin perder la garra. Una interpretación vocal llena de alma para iluminar cualquier rincón.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Heaven's On Fire",
+      "frase": "¡El cielo está ardiendo y KISS tiene los fósforos! Paul Stanley nos guía en esta explosión de hard rock ochentero diseñada para encender cualquier escenario. Heaven's On Fire es pura diversión, coros contagiosos y actitud de reyes del espectáculo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Hells Bells",
+      "frase": "La campana dobla por todos nosotros. AC/DC abre el Back In Black con este trueno sonoro llamado Hells Bells. El inicio más épico de la historia del rock, una advertencia de que lo que viene es pura potencia eléctrica. Sientan el mazo golpear el metal.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Whitesnake",
+      "cancion": "Here I Go Again",
+      "frase": "David Coverdale camina solo por el camino que ya conoce tan bien. Here I Go Again es el himno definitivo de la independencia y la perseverancia rockera. Una balada que estalla en un coro de estadios, recordándonos que el rock siempre nos acompaña.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jimi Hendrix",
+      "cancion": "Hey Joe",
+      "frase": "Jimi Hendrix toma una vieja historia y la convierte en una leyenda eléctrica. Hey Joe es una lección de blues psicodélico, con esa guitarra que respira y habla con una autoridad que nadie ha podido igualar jamás. Escuchen al maestro en su estado más puro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "High 'N' Dry (Saturday Night)",
+      "frase": "Antes de conquistar el mundo con el pop metal, Def Leppard eran unos cachorros hambrientos de rock duro. High 'N' Dry es pura energía británica, ideal para una noche de sábado sin límites. Guitarras afiladas y actitud callejera que nos encanta.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "High on You",
+      "frase": "Survivor sabía cómo fabricar éxitos de rock melódico con una precisión quirúrgica. High on You es un chute de optimismo ochentero, con melodías que se te quedan grabadas y una producción brillante. El sonido de los mejores tiempos de la radio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Deep Purple",
+      "cancion": "Highway Star",
+      "frase": "¡Pisen a fondo porque Deep Purple nos lleva a la velocidad de la luz! Highway Star es una demostración salvaje de virtuosismo, con Ian Gillan gritando al límite y un duelo eterno entre el órgano y la guitarra. El rock convertido en un motor fuera de control.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Highway to Hell",
+      "frase": "Bon Scott nos guía por la autopista hacia el infierno y no queremos bajarnos del coche. AC/DC nos entrega su himno más universal, una celebración de la vida al límite sin mirar atrás. Rock and roll en su esencia más pura, directa y autoritaria. ¡A tope!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Huey Lewis & The News",
+      "cancion": "Hip To Be Square",
+      "frase": "Huey Lewis nos enseña que hasta ser convencional puede ser cool si tienes el ritmo adecuado. Hip To Be Square es un clásico de los 80 con una sección de vientos arrolladora y un mensaje divertido. Rock para disfrutar sin complicaciones y con mucha energía.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "38 Special",
+      "cancion": "Hold On Loosely",
+      "frase": "Una lección de vida envuelta en guitarras sureñas. 38 Special nos advierte que no hay que apretar demasiado las cosas para que no se nos escapen. Hold On Loosely es el sonido de la carretera americana en los 80, melódico, potente y con mucha clase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Hold the Line",
+      "frase": "Sientan el poder de la técnica perfecta. TOTO nos golpea con Hold the Line, una cátedra de cómo el rock melódico puede tener una pegada de estadio. David Paich y compañía demuestran que precisión y sentimiento no están peleados para hacer historia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Genesis",
+      "cancion": "Home By The Sea",
+      "frase": "Genesis nos arrastra a una atmósfera oscura y épica con Home By The Sea. Phil Collins demuestra que detrás de los parches hay un monstruo rítmico, guiándonos por una historia de fantasmas y sintetizadores que los expertos saben apreciar con autoridad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Pretenders",
+      "cancion": "Human",
+      "frase": "Chrissie Hynde es la voz de la honestidad pura en el rock. Con Human, los Pretenders nos bajan las defensas con una melodía que respira vulnerabilidad pero con una base rítmica inquebrantable. Demostración de que hasta las leyendas tienen un lado humano.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bruce Springsteen",
+      "cancion": "Human Touch",
+      "frase": "Incluso sin la E Street Band, 'The Boss' sigue mandando. Bruce Springsteen nos entrega Human Touch, un grito de necesidad y fuerza en un mundo que a veces parece frío. Rock directo, con esa garganta rasgada que recuerda que nada supera la conexión real.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Duran Duran",
+      "cancion": "Hungry Like the Wolf",
+      "frase": "Bajamos a la selva urbana con Duran Duran. Hungry Like the Wolf es un disparo de adrenalina pop-rock que definió la estética de una era. Simon Le Bon nos guía en esta cacería sonora donde el bajo de John Taylor marca un camino imparable.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "John Mellencamp",
+      "cancion": "Hurts So Good",
+      "frase": "John Mellencamp sabe que el rock and roll tiene que doler un poco para ser real. Hurts So Good es pura actitud del corazón de Estados Unidos, un riff que te obliga a golpear el suelo con las botas. Esto es rock de raíces con pegada de estadio.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "I Can't Hold Back",
+      "frase": "Cuando la pasión estalla, no hay forma de detenerla. Survivor nos trae I Can't Hold Back, una joya del rock melódico que sube de temperatura acorde tras acorde. Es la voz de Jimi Jamison en su punto máximo, entregándonos un himno sobre el deseo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "I Don't Want to Live Without You",
+      "frase": "Bajamos las revoluciones pero mantenemos la potencia emocional. Foreigner nos entrega I Don't Want to Live Without You, balada cargada de esa melancolía elegante que solo Mick Jones y Lou Gramm sabían fabricar. El lamento de un gigante que ha perdido su norte.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "I Don't Want to Miss a Thing",
+      "frase": "La balada de estadios por excelencia de los chicos malos de Boston. Aerosmith nos eleva al infinito con I Don't Want to Miss a Thing. Steven Tyler nos desgarra el alma con una interpretación vocal que solo un Rockstar de su calibre sostiene. Simplemente épico.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Roy Orbison",
+      "cancion": "I Drove All Night",
+      "frase": "Incluso después de décadas, la voz de Roy Orbison seguía cortando el aire como un cristal. I Drove All Night es un viaje nocturno desesperado, cargado de esa urgencia emocional que solo el rock de raíces transmite. Una interpretación que nos deja sin aliento.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Elton John",
+      "cancion": "I Guess That's Why They Call It The Blues",
+      "frase": "Elton John nos recuerda que el blues no solo se siente, se vive. I Guess That's Why They Call It The Blues es pieza maestra de composición, donde piano y armónica crean una atmósfera de nostalgia pura. Calidad indiscutible en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joan Jett And the Blackhearts",
+      "cancion": "I Hate Myself for Loving You",
+      "frase": "Nadie tiene más actitud en una guitarra que Joan Jett. Con los Blackhearts nos lanza I Hate Myself for Loving You, un golpe de autoridad femenina en el rock. Es ese riff sucio y directo que te hace querer romper con todo. ¡Pura rebeldía!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Joan Jett and the Blackhearts",
+      "cancion": "I Love Rock 'N Roll",
+      "frase": "Suban el volumen y pongan su moneda en la rockola. Joan Jett and the Blackhearts nos entregan el himno definitivo: I Love Rock 'N Roll. Es una declaración de principios, una religión que practicamos todos los días con el puño en alto. ¡Potencia total!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "U2",
+      "cancion": "I Still Haven't Found What I'm Looking For",
+      "frase": "U2 nos lleva en una búsqueda espiritual por el desierto con I Still Haven't Found What I'm Looking For. El eco de la guitarra de The Edge y la voz de Bono crean un himno de estadios que resuena con la eterna insatisfacción humana. Rock con alma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Ramones",
+      "cancion": "I Wanna Be Sedated",
+      "frase": "¡Uno, dos, tres, cuatro! Los Ramones nos enseñaron que la urgencia y el aburrimiento se curan con velocidad. I Wanna Be Sedated es un chute de punk rock directo a la vena, pura energía neoyorquina que nos obliga a mover la cabeza sin parar. ¡Espectacular!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Twisted Sister",
+      "cancion": "I Wanna Rock",
+      "frase": "¡Yo quiero rock! Dee Snider y los suyos nos gritan en la cara lo que todos sentimos. I Wanna Rock es un trueno de rebeldía, metal con laca y mucha actitud callejera. Si no gritas el coro con fuerza, es porque no tienes sangre en las venas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "I Want It All",
+      "frase": "Queen no aceptaba menos que el mundo entero. I Want It All es un mazo de rock duro que nos golpea con la fuerza de un gigante. Brian May nos regala un solo incendiario mientras Freddie Mercury nos exige que lo queramos todo, y lo queramos ahora.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "I Want to Know What Love Is",
+      "frase": "Cerramos los ojos para recibir una de las baladas más grandes de la historia. Foreigner nos pregunta I Want to Know What Love Is con un coro góspel que te eleva. Es rock melódico en su estado más puro y emocionante. Experiencia religiosa en Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "I Was Made For Lovin' You",
+      "frase": "KISS se puso el traje de discoteca sin perder las botas de plataforma. I Was Made For Lovin' You es un cruce explosivo entre el rock y el groove que conquistó el mundo. Paul Stanley nos guía en este ritual de seducción eléctrica que nunca pasa de moda.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "I Wish It Would Rain Down",
+      "frase": "Phil Collins se une a Eric Clapton para entregarnos una pieza de una profundidad abrumadora. I Wish It Would Rain Down es un lamento bajo la lluvia, donde la batería y la guitarra de 'Slowhand' crean una sinfonía de dolor y redención. Pura maestría musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tom Petty",
+      "cancion": "I Won't Back Down",
+      "frase": "Tom Petty nos da una lección de integridad rockera. I Won't Back Down es el himno de los que no nos rendimos ante nada. Con esa voz de roble y guitarras honestas, nos recuerda que no importa cuánto empujen, aquí nos quedamos, firmes como una roca.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "I'd Die For You",
+      "frase": "Desde el icónico Slippery When Wet, Bon Jovi nos lanza I'd Die For You. Es puro rock de Nueva Jersey, con sintetizadores afilados y una energía que te transporta directamente a la primera fila de un estadio repleto. Pasión desbordada en cada nota.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Meat Loaf",
+      "cancion": "I'd Do Anything For Love (But I Won't Do That)",
+      "frase": "Meat Loaf nos entrega una ópera rock en una sola canción. I'd Do Anything For Love es un despliegue de drama, potencia y grandilocuencia que solo un artista de su tamaño podía ejecutar. Es el rock convertido en teatro de estadios, inmenso y conmovedor.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "I'll Be There For You",
+      "frase": "Bon Jovi sabe cómo escribir los himnos de lealtad definitiva. I'll Be There For You es la balada que nos unió a todos, un momento de comunión eléctrica donde las guitarras de Richie Sambora lloran con autoridad. Porque en el rock, nadie camina solo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jimi Jamison",
+      "cancion": "I'm Always Here",
+      "frase": "La voz de Survivor nos acompaña en este viaje solitario pero lleno de esperanza. Jimi Jamison nos entrega I'm Always Here, un clásico que respira ese aire de los 90 pero con el corazón puesto en la grandeza de los 80. Melodía impecable para oyentes expertos.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "The Proclaimers",
+      "cancion": "I'm Gonna Be (500 Miles)",
+      "frase": "Un ritmo machacón que se te mete en la cabeza y no te suelta. The Proclaimers nos hacen caminar 500 millas con este himno de persistencia y alegría rockera. Es el lado más festivo y honesto de nuestra programación, imposible no marcar el paso con ellos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Elton John",
+      "cancion": "I'm Still Standing",
+      "frase": "Elton John nos grita desde la cima que sigue en pie. I'm Still Standing es una explosión de energía y desafío, rock con piano que suena a victoria. Después de todas las tormentas, el genio británico nos demuestra que la verdadera leyenda nunca se retira.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sting",
+      "cancion": "If I Ever Lose My Faith In You",
+      "frase": "Sting nos envuelve en una reflexión sofisticada sobre la fe y la desilusión. If I Ever Lose My Faith In You es rock inteligente, con arreglos exquisitos y una voz que maneja los matices con la autoridad de un maestro. Calidad superior en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Huey Lewis & The News",
+      "cancion": "If This Is It",
+      "frase": "Huey Lewis nos trae esa mezcla irresistible de rock y alma costera. If This Is It es una canción que suena a verano y verdades agridulces. Con armonías perfectas y una producción cristalina, es el sonido de los 80 en su versión más brillante y directa.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Immigrant Song",
+      "frase": "¡El grito de guerra ha sonado! Led Zeppelin nos lanza a la batalla con Immigrant Song. Robert Plant aúlla desde las tierras del hielo y la nieve mientras Jimmy Page machaca un riff galopante. Esto no es solo rock, es mitología nórdica hecha pura electricidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "In Bloom",
+      "frase": "Nirvana nos regala una lección de sarcasmo y potencia grunge con In Bloom. Esa batería destructiva de Dave Grohl y la melodía engañosamente pop de Cobain nos hablan de los que no entienden el mensaje. Pieza fundamental para entender la explosión de Seattle.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Phil Collins",
+      "cancion": "In the Air Tonight",
+      "frase": "Preparen el aire porque viene el redoble más famoso de la historia. Phil Collins nos sumerge en una tensión oscura con In the Air Tonight. Es rock atmosférico que explota con una autoridad rítmica que te sacude hasta la médula. Simplemente magistral.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Status Quo",
+      "cancion": "In The Army Now",
+      "frase": "Status Quo nos alista en sus filas con un ritmo hipnótico y persistente. In The Army Now es una marcha rockera que nos cuenta la dureza de la vida bajo el uniforme. Con ese aire solemne y guitarras afiladas, es un clásico que impone respeto.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Benny Mardones",
+      "cancion": "Into The Night",
+      "frase": "Hay canciones que tienen una segunda vida y esta es una de ellas. Benny Mardones nos sumerge en Into The Night, una balada poderosa con una interpretación vocal que roza la obsesión. Rock melódico con intensidad emocional que atrapa desde el primer segundo.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Genesis",
+      "cancion": "Invisible Touch",
+      "frase": "Genesis dominó la radio de los 80 con una elegancia técnica envidiable. Invisible Touch es pop-rock de alta gama, con un Phil Collins que sabía exactamente cómo crear un éxito mundial sin perder la calidad instrumental de una banda legendaria. Brillantez absoluta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Survivor",
+      "cancion": "Is This Love",
+      "frase": "Survivor nos vuelve a demostrar por qué son los reyes del rock melódico. Is This Love es una pieza cristalina, cargada de sentimiento y una producción que suena a gloria en los altavoces. La búsqueda de respuestas en medio de una tormenta de guitarras.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Whitesnake",
+      "cancion": "Is This Love",
+      "frase": "David Coverdale se pone íntimo pero con la potencia de un león. Whitesnake nos entrega Is This Love, la balada definitiva del hard rock. Guitarras bañadas en eco y una interpretación vocal que exhala sensualidad y autoridad. Pura seda eléctrica en Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "It's a Long Way to the Top",
+      "frase": "¡Si quieres rock and roll, tienes que sufrir! AC/DC nos lo dice con gaitas incluidas. It's a Long Way to the Top es el himno de los que sudan la gota gorda en el escenario. Bon Scott nos guía por el camino más duro con una sonrisa desafiante.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "It's My Life",
+      "frase": "Bon Jovi se reinventó para una nueva generación con un golpe de autoridad. It's My Life recupera el talk-box de los 80 para decirnos que ahora es nuestro momento. Es rock de estadios moderno con el alma de los clásicos. ¡Vivan su vida al máximo!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "It's So Easy",
+      "frase": "Desde el Appetite for Destruction llega la crudeza de Guns N' Roses. It's So Easy es un escupitajo de actitud callejera, con Axl Rose cantando desde las profundidades de su rabia. Es rock sucio, peligroso y absolutamente real. Sin artificios, pura potencia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Billy Joel",
+      "cancion": "It's Still Rock and Roll to Me",
+      "frase": "Billy Joel nos recuerda que las modas pasan, pero el rock es eterno. It's Still Rock and Roll to Me es un guiño al sonido clásico con la agudeza ochentera de un genio del piano. No importa cómo te vistas, lo que importa es el ritmo que llevas.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Mellencamp",
+      "cancion": "Jack & Diane",
+      "frase": "Una pequeña historia de dos jóvenes americanos que se convirtió en un himno universal. John Mellencamp nos trae Jack & Diane, con ese ritmo de palmas y guitarras acústicas que huelen a libertad y veranos interminables. Rock de autor con pegada inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Jailbreak",
+      "frase": "¡Hay una fuga en la prisión y AC/DC pone la banda sonora! Jailbreak es rock and roll explosivo, con un Bon Scott que suena a puro peligro. Es el sonido de la libertad ganada a base de riffs y una sección rítmica que no conoce la piedad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rick Springfield",
+      "cancion": "Jessie's Girl",
+      "frase": "Rick Springfield capturó la envidia y el deseo en un riff de guitarra perfecto. Jessie's Girl es un clásico instantáneo de los 80, cargado de energía y esa frustración juvenil que todos hemos sentido. Inyección de pop-rock de alta calidad para la tarde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Genesis",
+      "cancion": "Jesus He Knows Me",
+      "frase": "Genesis utiliza el rock para lanzar una crítica afilada a los tele-evangelistas con Jesus He Knows Me. Con un Phil Collins satírico y un ritmo contagioso, nos demuestran que el rock también puede desenmascarar la hipocresía con mucho estilo y autoridad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Van Halen",
+      "cancion": "Jump",
+      "frase": "Eddie Van Halen dejó la guitarra por un momento para darnos el sintetizador más famoso del rock. Jump es un estallido de optimismo y energía que nos invita a dar el salto. Con la voz de David Lee Roth en su punto más carismático, pura gloria ochentera.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Jumpin' Jack Flash",
+      "frase": "¡Es un gas, gas, gas! Los Rolling Stones nos lanzan a la cara Jumpin' Jack Flash, pura electricidad blusera que definió el sonido de una banda inmortal. Keith Richards dispara un riff que es ley, mientras Mick Jagger domina el escenario con autoridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Lou Gramm",
+      "cancion": "Just Between You and Me",
+      "frase": "La voz de Foreigner en solitario nos entrega una balada de una delicadeza y potencia vocal asombrosas. Lou Gramm nos habla al oído con Just Between You and Me, recordando que el rock melódico tiene en él a uno de sus intérpretes más autoritarios.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ZZ Top",
+      "cancion": "Just Got Paid",
+      "frase": "ZZ Top tiene el dinero en el bolsillo y el blues en el alma. Just Got Paid es un riff pantanoso y potente que te obliga a caminar con chulería. Billy Gibbons nos da una lección de cómo hacer que una guitarra hable con ese tono tejano inigualable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cure",
+      "cancion": "Just Like Heaven",
+      "frase": "The Cure nos regala la canción de amor definitiva del rock alternativo. Just Like Heaven es una explosión de guitarras cristalinas y sintetizadores que te hacen flotar. Robert Smith nos lleva a un paraíso sonoro donde melancolía y felicidad se encuentran.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rembrandts",
+      "cancion": "Just the Way It Is, Baby",
+      "frase": "Antes del éxito masivo en la TV, The Rembrandts ya facturaban joyas de pop-rock impecables. Just the Way It Is, Baby es una canción redonda, con armonías que recuerdan a los grandes clásicos y una producción que brilla con luz propia en nuestra programación.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Kashmir",
+      "frase": "Estamos ante una expedición sonora hacia lo desconocido. Led Zeppelin nos envuelve en el ritmo hipnótico de Kashmir. Rock orquestal, místico y de una autoridad aplastante. John Bonham marca un paso de gigante mientras Jimmy Page crea una atmósfera infinita.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Marillion",
+      "cancion": "Kayleigh",
+      "frase": "Marillion nos trae el rock progresivo con corazón en Kayleigh. La voz de Fish nos narra una historia de arrepentimiento y nostalgia sobre un colchón de guitarras elegantes. El sonido de los 80 buscando profundidad en las letras y sofisticación musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mötley Crüe",
+      "cancion": "Kickstart My Heart",
+      "frase": "¡Suban el volumen porque Mötley Crüe pisa el acelerador a fondo! Kickstart My Heart es una inyección de adrenalina pura, inspirada en el regreso de la muerte de Nikki Sixx. Rock peligroso, rápido y con un riff que suena a motor gripado. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Knockin' On Heaven's Door",
+      "frase": "Guns N' Roses tomaron el clásico de Dylan y lo convirtieron en un himno de estadios épico. Knockin' On Heaven's Door es una plegaria eléctrica cargada de sentimiento. Axl Rose y Slash nos guían hacia las puertas del cielo con una autoridad que eriza la piel.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mr. Mister",
+      "cancion": "Kyrie",
+      "frase": "Mr. Mister nos trae una de las producciones más pulidas de mediados de los 80. Kyrie es rock melódico con un toque místico y una ejecución técnica impecable. La voz de Richard Page nos eleva en esta plegaria sonora que dominó las listas mundiales.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "ZZ Top",
+      "cancion": "La Grange",
+      "frase": "¡A-haw-haw-haw-haw! ZZ Top nos lleva de viaje por Texas con La Grange. Es un boogie-rock irresistible, con un riff que es puro asfalto y calor. Billy Gibbons nos demuestra por qué la sencillez bien ejecutada es la mayor muestra de autoridad en la guitarra.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Genesis",
+      "cancion": "Land Of Confusion",
+      "frase": "En un mundo que parece volverse loco, Genesis puso la banda sonora. Land Of Confusion es rock con conciencia, potente y con un ritmo que no te deja indiferente. Phil Collins ruge contra el caos en esta pieza maestra de la era dorada del rock.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tom Petty and the Heartbreakers",
+      "cancion": "Learning To Fly",
+      "frase": "Tom Petty nos enseña que bajar es lo más difícil cuando estás aprendiendo a volar. Learning To Fly es una oda a la perseverancia con ese sonido acústico y honesto de los Heartbreakers. Rock americano de pura cepa para los que sabemos que el camino importa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Belinda Carlisle",
+      "cancion": "Leave a Light On",
+      "frase": "La ex-Go-Go's demostró que el pop-rock también tiene garra. Belinda Carlisle nos pide que dejemos la luz encendida con una canción que brilla con la guitarra de George Harrison de fondo. Una melodía luminosa y potente que nos alegra la tarde en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Let It Go",
+      "frase": "Antes de los sintetizadores y la perfección milimétrica, Def Leppard eran puro hard rock británico. Let It Go es una descarga de energía juvenil, con riffs afilados y la voz de Joe Elliott hambrienta de gloria. El sonido de una banda lista para conquistar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Let There Be Rock",
+      "frase": "¡Y se hizo el rock! AC/DC nos cuenta el génesis de nuestra religión con Let There Be Rock. Angus Young se deja la vida en el escenario en este torbellino de distorsión y velocidad. Rock and roll en su estado más primitivo y poderoso. ¡Amén!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "David Bowie",
+      "cancion": "Let's Dance",
+      "frase": "El Duque Blanco se puso los zapatos rojos y nos obligó a bailar bajo la luz de la luna. Let's Dance es una joya producida por Nile Rodgers, donde el rock y el funk se encuentran con la maestría de Bowie. Un ritmo irresistible con autoridad artística.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Lick It Up",
+      "frase": "KISS se quitó el maquillaje para demostrarnos que su rock seguía siendo igual de potente. Lick It Up es un himno de hard rock directo, divertido y con toda la chulería de Paul Stanley y Gene Simmons. La era del cuero y la potencia sin máscaras.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Light My Fire",
+      "frase": "Jim Morrison nos invita a encender el fuego de la noche. The Doors crearon con Light My Fire una pieza psicodélica y sexy que cambió el rock para siempre. Ese órgano de Ray Manzarek nos lleva por un laberinto de sensaciones donde peligro y placer se confunden.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Lights",
+      "frase": "Steve Perry le canta a su ciudad con una nostalgia que se siente en cada nota. Journey nos regala Lights, una balada luminosa y suave que nos muestra el lado más sensible de una banda diseñada para los grandes estadios. Interpretación vocal perfecta para Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cranberries",
+      "cancion": "Linger",
+      "frase": "Dolores O'Riordan nos envuelve con su voz única en Linger. The Cranberries crearon una pieza de una belleza melancólica insuperable, donde las cuerdas y la guitarra acústica nos hablan de un amor que se resiste a marchar. Rock alternativo que llega al alma.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Doobie Brothers",
+      "cancion": "Listen to the Music",
+      "frase": "Los Doobie Brothers nos invitan a olvidar los problemas y simplemente escuchar la música. Listen to the Music es rock con alma de California, armonías vocales perfectas y un ritmo que te hace sentir libre. La banda sonora de los buenos tiempos en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "Listen To Your Heart",
+      "frase": "Marie Fredriksson nos desgarra la voz en este himno de poder melódico. Roxette nos pide que escuchemos a nuestro corazón con una balada que explota en un coro de estadios inolvidable. El rock sueco demostrando que el sentimiento no conoce fronteras. Pura energía.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Lithium",
+      "frase": "Kurt Cobain nos habla de la estabilidad mental a través de un riff que oscila entre la calma y la explosión de furia. Lithium es Nirvana en estado puro: dinámicas extremas, letras crípticas y una honestidad brutal que definió a toda una generación de almas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Oasis",
+      "cancion": "Little by Little",
+      "frase": "Noel Gallagher toma el micrófono para recordarnos que la vida se construye paso a paso. Oasis nos entrega Little by Little, una pieza de rock británico grandioso y épico. El sonido de los estadios modernos rindiendo homenaje a la grandeza de los clásicos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Live And Let Die",
+      "frase": "Guns N' Roses inyectan peligro y distorsión al clásico de McCartney. Live And Let Die es una montaña rusa de explosiones, orquestación y puro hard rock. Axl Rose nos guía por este infierno cinematográfico con autoridad vocal que solo él posee. ¡Dinamita!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Opus",
+      "cancion": "Live Is Life",
+      "frase": "¡Na-na-na-na-na! Opus nos trae el himno de la alegría colectiva en el rock. Live Is Life es pura energía positiva grabada en directo, recordándonos que la vida es para celebrarla con el puño en alto y cantando con fuerza. Un clásico que nunca falta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mötley Crüe",
+      "cancion": "Live Wire",
+      "frase": "Mötley Crüe se presenta como un cable pelado soltando chispas. Live Wire es metal rápido, sucio y cargado de la arrogancia de las calles de Sunset Strip. El inicio de una leyenda de excesos y rock and roll sin límites. ¡Cuidado que quema!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Livin' On A Prayer",
+      "frase": "Tommy y Gina somos todos nosotros. Bon Jovi nos entrega el himno definitivo de la lucha diaria y la esperanza con Livin' On A Prayer. Ese talk-box inicial y el coro masivo son patrimonio de la humanidad rockera. ¡Canten con toda la fuerza de su alma!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Judas Priest",
+      "cancion": "Living After Midnight",
+      "frase": "¡Viviendo después de la medianoche, rockeando hasta el amanecer! Judas Priest nos da la orden directa para la fiesta metalera. Con un riff contagioso y la voz de Rob Halford en modo himno, es la canción perfecta para los que no queremos terminar jamás.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Hollies",
+      "cancion": "Long Cool Woman (In a Black Dress)",
+      "frase": "The Hollies se pusieron el traje de swamp rock para traernos este clásico pantanoso. Long Cool Woman es pura chulería rítmica, con una guitarra que camina con paso firme por el barro del rock and roll. Una pieza con un groove que te atrapa al instante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "R.E.M.",
+      "cancion": "Losing My Religion",
+      "frase": "Michael Stipe nos habla desde un rincón oscuro con una mandolina que cambió la historia del rock alternativo. Losing My Religion es una pieza de una belleza y misterio sobrecogedores. R.E.M. demostrando que se puede conquistar el mundo con inteligencia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Rod Stewart",
+      "cancion": "Lost in You",
+      "frase": "Rod Stewart sabe cómo mezclar su voz rasgada con un ritmo rockero moderno. Lost in You es una canción cargada de chulería y deseo, recordándonos que el viejo Rod nunca perdió su toque para el rock directo y contagioso. Actitud de Rockstar en cada verso.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Love Bites",
+      "frase": "Def Leppard nos enseña que el amor muerde y deja cicatrices eléctricas. Love Bites es la perfección de la producción ochentera aplicada a una balada rock. Capas de guitarras, coros celestiales y una interpretación vocal que te eriza la piel. Pura seda metálica.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Love Buzz",
+      "frase": "Antes del Nevermind, Nirvana ya nos avisaba de su potencia con este cover de Shocking Blue. Love Buzz es puro rock de garage distorsionado, con un bajo hipnótico y la furia de un Kurt Cobain que apenas empezaba a mostrar sus garras. ¡Puro grunge primigenio!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Love Gun",
+      "frase": "Paul Stanley dispara su arma de amor y no falla. Love Gun es puro KISS en su estado más heroico y espectacular. Guitarras fiesteras, un ritmo machacón y todo el show de los reyes del entretenimiento. Hora de recargar y seguir rockeando con los maestros.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Love Her Madly",
+      "frase": "Un ritmo galopante para un amor que te vuelve loco. The Doors nos traen Love Her Madly, una pieza donde el piano de Manzarek y la voz de Morrison crean una atmósfera de urgencia y deseo. El sonido de los años 70 en versión más directa y elegante.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nazareth",
+      "cancion": "Love Hurts",
+      "frase": "La voz rasgada de Dan McCafferty nos cuenta la verdad más vieja del mundo. Nazareth nos entrega Love Hurts, una balada desgarradora que se convirtió en el lamento de millones de corazones rotos en clave de rock. Una interpretación que duele y sana.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Love In An Elevator",
+      "frase": "Steven Tyler nos lleva de paseo por el ascensor del deseo con un ritmo arrollador. Aerosmith nos entrega Love In An Elevator, puro rock and roll con metales, chistes internos y una energía que no tiene freno. Los chicos malos de Boston en su momento canalla.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pat Benatar",
+      "cancion": "Love Is A Battlefield",
+      "frase": "El amor es un campo de batalla y Pat Benatar es la general que manda. Con un ritmo ochentero imparable y una voz de acero, nos entrega este himno de resistencia emocional. Es rock con sintetizadores que no pierde ni un gramo de fuerza y autoridad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Sweet",
+      "cancion": "Love Is Like Oxygen",
+      "frase": "Sweet evolucionó del glam al rock progresivo con elegancia asombrosa en Love Is Like Oxygen. Pieza con arreglos ambiciosos y melodía que se graba, recordándonos que el amor es vital pero también puede consumirte. Calidad sonora de primer nivel en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Love Me Two Times",
+      "frase": "Un blues psicodélico para los que nos vamos de viaje. The Doors nos piden que los amemos dos veces con Love Me Two Times. El clavicordio de Manzarek y el swing de Robbie Krieger crean un ambiente único donde Morrison se mueve con autoridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The B-52's",
+      "cancion": "Love Shack",
+      "frase": "¡Bienvenidos a la cabaña del amor! The B-52's nos traen la fiesta definitiva con Love Shack. Es rock fiestero, desenfadado y con un ritmo que te obliga a bailar sin parar. Inyección de color y buenas vibraciones para que la tarde en Rockstars sea inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cars",
+      "cancion": "Magic",
+      "frase": "Ric Ocasek sabía cómo fabricar magia con sintetizadores y guitarras. The Cars nos traen Magic, una pieza de pop-rock perfecta que suena a verano, radio y buenos tiempos. Ese sonido pulido y autoritario que definió la cara inteligente de los años 80.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Make Love Like A Man",
+      "frase": "Def Leppard regresan con toda la chulería del hard rock festivo. Make Love Like A Man es una declaración de principios con coros gigantescos y guitarras que brillan como el cromo. El sonido de una banda que sabe cómo dominar los estadios con potencia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Genesis",
+      "cancion": "Mama",
+      "frase": "Genesis nos hiela la sangre con la risa maníaca de Phil Collins en Mama. Es rock atmosférico y perturbador, con una base electrónica que crece hasta estallar en intensidad emocional. Demostración de que el rock puede ser oscuro y fascinante al mismo tiempo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "R.E.M.",
+      "cancion": "Man On The Moon",
+      "frase": "Michael Stipe rinde homenaje a Andy Kaufman con una de las melodías más bellas de los 90. R.E.M. nos trae Man On The Moon, rock con alma de folk y una profundidad lírica que invita a soñar despierto. Una pieza de una sensibilidad artística superior.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Daryl Hall And John Oates",
+      "cancion": "Maneater",
+      "frase": "¡Cuidado con esa mujer, te va a devorar! Hall & Oates nos traen el groove definitivo con Maneater. El encuentro perfecto entre rock, soul y pop de los 80. Ese saxofón inicial es ley y nos guía por una noche de peligro y estilo impecable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Tom Petty and the Heartbreakers",
+      "cancion": "Mary Jane's Last Dance",
+      "frase": "Tom Petty nos invita a un último baile cargado de misterio y armónicas que lloran. Mary Jane's Last Dance es rock americano en su estado más puro y polvoriento. Una historia de despedida que se ha convertido en un clásico imprescindible de nuestra programación.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Master Of Puppets",
+      "frase": "¡Obedece a tu maestro! Metallica entrega la cima del thrash metal técnico con Master Of Puppets. James Hetfield guía por un laberinto de riffs precisos y una batería que suena a guerra. La autoridad absoluta del metal pesado retumbando en tus oídos. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Police",
+      "cancion": "Message In A Bottle",
+      "frase": "Sting nos lanza un mensaje de soledad universal sobre un riff de guitarra que es pura arquitectura rock. The Police traen Message In A Bottle, demostración de poderío rítmico donde Stewart Copeland demuestra por qué es de los mejores bateristas de la historia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Winger",
+      "cancion": "Miles Away",
+      "frase": "Winger nos demuestra que el hard rock también sabe ser melódico y sofisticado. Miles Away es una balada impecable, con una interpretación vocal de Kip Winger que transmite distancia emocional palpable. Rock con clase y producción brillante en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jon Bon Jovi",
+      "cancion": "Miracle",
+      "frase": "Jon Bon Jovi en solitario nos trae el espíritu del salvaje oeste con Miracle. Una pieza cargada de esperanza y guitarras acústicas que huelen a horizonte abierto. La voz de una leyenda recordándonos que los milagros todavía ocurren si crees. Pura pasión.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Miss You",
+      "frase": "Los Stones se pusieron a bailar en Nueva York y nos trajeron esta joya cargada de groove. Miss You es el encuentro perfecto entre el rock y la música disco, con una armónica que llora y un bajo que manda. Mick Jagger en su estado más magnético.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Crash Test Dummies",
+      "cancion": "Mmm Mmm Mmm Mmm",
+      "frase": "Esa voz barítona inconfundible narra historias extrañas sobre una base de rock folk exquisita. Crash Test Dummies trajeron Mmm Mmm Mmm Mmm, una canción que sale de lo común e invita a la reflexión con melancolía hipnótica y mucha clase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "David Bowie",
+      "cancion": "Modern Love",
+      "frase": "David Bowie nos habla del amor moderno con un ritmo de saxofones y urgencia bailable. Modern Love es pura energía de los 80 con el sello de genialidad de un artista que siempre fue un paso por delante de todos. Un clásico que nos hace sentir vivos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Money",
+      "frase": "El sonido de las cajas registradoras nos introduce en una de las mayores críticas al materialismo. Pink Floyd nos entrega Money con un ritmo de 7/4 que desafía la lógica y un solo de saxo y guitarra que son pura autoridad progresiva. Rock con mayúsculas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Dire Straits",
+      "cancion": "Money For Nothing",
+      "frase": "Ese riff de guitarra saturado nos anunció la llegada de la era MTV. Dire Straits nos traen Money For Nothing, con Mark Knopfler demostrando que no necesita púa para incendiar el mástil. Rock inteligente, irónico y con una potencia sonora de referencia absoluta.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Moneytalks",
+      "frase": "AC/DC nos recuerda que cuando el dinero habla, todos escuchan. Moneytalks es rock and roll fiestero y directo, con Brian Johnson rugiendo con su autoridad habitual sobre el pulso imparable de los hermanos Young. Una inyección de energía pura.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Billy Idol",
+      "cancion": "Mony Mony",
+      "frase": "Billy Idol nos lanza un grito de rebelión fiestera con Mony Mony. Rock con actitud punk y producción ochentera, diseñado para reventar las pistas de baile y los estadios por igual. Con su característico gesto desafiante, nos obliga a sudar la camiseta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Boston",
+      "cancion": "More Than a Feeling",
+      "frase": "Cierren los ojos y déjense llevar por las guitarras armonizadas más perfectas de la historia. Boston nos entrega More Than a Feeling, un viaje sonoro que se siente como un sueño lúcido. La voz de Brad Delp nos eleva en este himno eterno del rock melódico.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Roxy Music",
+      "cancion": "More Than This",
+      "frase": "Bryan Ferry nos envuelve en una atmósfera de elegancia y sofisticación insuperables. More Than This es rock convertido en arte, con producción aterciopelada y un sentimiento de nostalgia que fluye como el humo. Calidad suprema para paladares exigentes.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alias",
+      "cancion": "More Than Words Can Say",
+      "frase": "Alias nos entrega una de esas baladas poderosas que definieron el final de una era. More Than Words Can Say es demostración de sentimiento desbordado y guitarras que subrayan cada palabra. Rock melódico de alta intensidad emocional.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Mr. Brownstone",
+      "frase": "Guns N' Roses cuentan el lado oscuro de la fama y las adicciones con un groove de bajo imparable. Mr. Brownstone es pura actitud peligrosa de Los Ángeles, con Slash y Izzy trenzando guitarras que suenan a calle y verdad. Rock sin filtros ni anestesia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Paul McCartney",
+      "cancion": "My Brave Face",
+      "frase": "Sir Paul McCartney se une a Elvis Costello para recuperar su mejor versión pop-rock. My Brave Face es una pieza luminosa con ese toque Beatle que solo él puede dar. Una canción que recuerda que la maestría en la composición es un don que nunca caduca.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "My Michelle",
+      "frase": "Una historia cruda de las calles de Hollywood convertida en un mazo de hard rock. Guns N' Roses disparan My Michelle, donde la distorsión y la honestidad brutal de Axl Rose crean una atmósfera de peligro real. Rock and roll sin red de seguridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Knack",
+      "cancion": "My Sharona",
+      "frase": "Ese tartamudeo inicial y el riff contagioso cambiaron la radio para siempre. The Knack trajeron My Sharona, explosión de energía power-pop con un solo de guitarra que es pura autoridad rockera. Canción que te obliga a saltar desde el primer segundo. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "INXS",
+      "cancion": "Need You Tonight",
+      "frase": "Michael Hutchence susurra con sensualidad que solo las verdaderas estrellas de rock poseen. INXS entrega Need You Tonight, riff minimalista y groove irresistible que conquistó estadios mundiales. Rock con clase, sexy y profundamente adictivo. Magia australiana.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "INXS",
+      "cancion": "New Sensation",
+      "frase": "INXS invita a buscar una nueva sensación con una explosión de guitarras brillantes y saxofones juguetones. El sonido de una banda en su punto máximo de carisma y potencia sonora. Michael Hutchence nos guía en este baile eléctrico que sigue sonando fresco.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Nightrain",
+      "frase": "Súbanse al tren nocturno del exceso con Guns N' Roses. Nightrain es puro fuego del Appetite for Destruction, oda a la vida al límite con riffs que te cortan el aire. Rock sucio, rápido y con la autoridad de los que no tienen nada que perder.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Alice Cooper",
+      "cancion": "No More Mr. Nice Guy",
+      "frase": "Alice Cooper se cansó de ser el chico bueno y lo grita con un riff legendario. No More Mr. Nice Guy es rock teatral y rebelde, recordándonos que el peligro siempre ha sido el mejor aliado de la buena música. El maestro del shock-rock en su estado puro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Marillion",
+      "cancion": "No One Can",
+      "frase": "Marillion entrega una balada de belleza cristalina en No One Can. Con la voz de Steve Hogarth aportando nueva sensibilidad, demuestran que el rock progresivo sabe ser tierno y melódico sin perder su esencia. Calidad interpretativa superior en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "No One Like You",
+      "frase": "Los alemanes Scorpions nos golpean con un riff de hierro y una melodía de seda. No One Like You es la balada poderosa perfecta, con Klaus Meine demostrando un rango vocal asombroso y Rudolf Schenker machacando la guitarra. Rock de estadio en máxima expresión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Genesis",
+      "cancion": "No Son Of Mine",
+      "frase": "Genesis nos cuenta una historia desgarradora de conflicto familiar con potencia sonora inmensa. No Son Of Mine es rock dramático, con una producción expansiva y un Phil Collins que transmite dolor y rabia en cada verso. Pieza maestra de narrativa musical.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Nothin' But A Good Time",
+      "frase": "¡No queremos nada más que pasar un buen rato! Poison nos trae el himno definitivo de la fiesta ochentera. Con guitarras divertidas y actitud glam, recuerdan que el rock nació para hacernos olvidar problemas y disfrutar del volumen al máximo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Starship",
+      "cancion": "Nothing's Gonna Stop Us Now",
+      "frase": "Starship nos lleva a la cima del optimismo ochentero con Nothing's Gonna Stop Us Now. Balada poderosa que suena a finales de película y sueños cumplidos. Armonías vocales impecables y producción brillante, el sonido de estadios creyendo en el amor invencible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "November Rain",
+      "frase": "Estamos ante la epopeya definitiva de Guns N' Roses. November Rain es una obra maestra de piano, orquestación y solos de guitarra que te arrancan el corazón. Slash bajo la lluvia frente a la iglesia es la imagen eterna de la autoridad rockera. Leyenda.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Steve Perry",
+      "cancion": "Oh Sherrie",
+      "frase": "La voz de oro de Steve Perry se pone personal en Oh Sherrie. Rock melódico de la más alta escuela, con una interpretación vocal que te pone los pelos de punta. Una canción que demuestra que sentimiento y técnica crean algo verdaderamente inmortal.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Beatles",
+      "cancion": "Oh! Darling",
+      "frase": "Paul McCartney se dejó la garganta para darnos una de las interpretaciones más crudas y rockeras de los Beatles. Oh! Darling es un lamento blusero cargado de fuerza y desesperación. El rock demostrando que sus raíces son el sentimiento puro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Roy Orbison",
+      "cancion": "Oh, Pretty Woman",
+      "frase": "Ese riff inicial es historia pura del rock and roll. Roy Orbison nos regala Oh, Pretty Woman, una pieza de una elegancia y un encanto inalcanzables. Con su voz única y ese aire de caballero oscuro del rock, demuestra que los clásicos nunca mueren.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Chris Rea",
+      "cancion": "On the Beach",
+      "frase": "Chris Rea nos transporta a la costa con su voz de barítono y guitarras con sabor a mar. On the Beach es rock suave y elegante, perfecto para dejarse llevar por la brisa. Una producción impecable que recuerda que el rock sabe ser sofisticado y relajante.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "One",
+      "frase": "Desde la oscuridad del campo de batalla llega One. Metallica nos entrega una obra maestra que camina desde la penumbra acústica hasta el ametrallamiento rítmico final. Reflexión brutal sobre la guerra con autoridad sonora que te deja sin respiración.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Open Arms",
+      "frase": "Journey nos recibe con los brazos abiertos en esta balada que definió una era. Open Arms es demostración de poder melódico, con Steve Perry alcanzando notas imposibles con facilidad asombrosa. Rock romántico en su versión más autoritaria y perfecta.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Madness",
+      "cancion": "Our House",
+      "frase": "Un toque de ska y rock británico para alegrar la tarde. Madness nos invita a su casa con este clásico lleno de vientos y alegría cotidiana. Our House es una canción que te hace sonreír y marcar el paso con su ritmo contagioso y encanto irresistible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Out Ta Get Me",
+      "frase": "Guns N' Roses se sienten perseguidos y responden con un mazo de rock duro. Out Ta Get Me es pura paranoia callejera y rebeldía, con Axl Rose desafiando al mundo entero. Rock con dientes apretados y distorsión al máximo. ¡Pura actitud de combate!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Yes",
+      "cancion": "Owner of a Lonely Heart",
+      "frase": "Yes se reinventó para los 80 con una producción revolucionaria. Owner of a Lonely Heart es rock progresivo disfrazado de pop con samples que rompieron moldes. Trevor Rabin y Jon Anderson demuestran que la inteligencia musical domina pistas de baile.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Paint It, Black",
+      "frase": "Brian Jones nos introduce en un mundo de sombras con el sitar, mientras los Stones pintan el rock de negro. Paint It, Black es una pieza oscura, acelerada y cargada de angustia existencial única. Lección de autoridad rockera desde los 60.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Pamela",
+      "frase": "TOTO vuelve a demostrarnos por qué son los mejores músicos de sesión del planeta. Pamela es una joya de rock melódico con un groove que solo expertos ejecutan con semejante limpieza. Melodías cuidadas y ejecución técnica que roza la perfección absoluta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Van Halen",
+      "cancion": "Panama",
+      "frase": "¡Arranquen motores porque Van Halen pisa a fondo! Panama es rock de alto octanaje, con Eddie disparando riffs y David Lee Roth derrochando carisma. Sientan el rugido del motor y dejen que el rock los lleve por la autopista a toda velocidad. ¡Adrenalina!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Paradise City",
+      "frase": "Llévenme a la ciudad del paraíso, donde el pasto es verde y las chicas hermosas. Guns N' Roses cierran los estadios con este himno masivo. Un inicio melódico que estalla en explosión de velocidad y energía incontrolable. ¡La cima del hard rock mundial!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "Paranoid",
+      "frase": "El riff que lo empezó todo. Black Sabbath nos entrega Paranoid, dos minutos y medio de pura autoridad metalera que definió el futuro de la música pesada. Ozzy Osbourne y Tony Iommi guían por la oscuridad con una fuerza que todavía nos hace temblar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Peace Frog",
+      "frase": "The Doors nos lanzan un ritmo funk-rock cargado de simbolismo y asfalto ensangrentado. Peace Frog es pieza hipnótica donde la guitarra de Krieger y la voz de Morrison llevan por un viaje psicodélico y urbano lleno de tensión y talento puro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Frank Stallone",
+      "cancion": "Peace In Our Life",
+      "frase": "Desde la banda sonora de Rambo llega esta plegaria de esperanza rockera. Frank Stallone entrega Peace In Our Life, canción que respira ese aire épico de los 80, recordando que incluso en la lucha, el rock busca la paz. Pura intensidad emocional.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Megadeth",
+      "cancion": "Peace Sells",
+      "frase": "¡La paz se vende, pero quién la compra! Dave Mustaine lanza esta crítica ácida sobre una línea de bajo legendaria. Peace Sells es metal inteligente, técnico y con autoridad que solo Megadeth ostenta. Hora de despertar y escuchar la verdad eléctrica.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Depeche Mode",
+      "cancion": "Personal Jesus",
+      "frase": "Alcancen y toquen la fe. Depeche Mode nos entrega Personal Jesus, donde el blues se encuentra con la electrónica más oscura y un riff que es pura ley. Dave Gahan nos guía en este ritual de salvación sonora que conquistó a todos los rockeros.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Billy Joel",
+      "cancion": "Piano Man",
+      "frase": "Tócame una canción esta noche, hombre del piano. Billy Joel narra la vida misma desde el taburete de un bar. Piano Man es el himno de los soñadores y náufragos de la gran ciudad, una obra maestra de narrativa que resuena en Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "Pink",
+      "frase": "Aerosmith demuestra que el rosa es el color más rockero si sabes cómo llevarlo. Pink es pura actitud, con Steven Tyler divirtiéndose con su armónica y la banda cabalgando sobre un ritmo contagioso y moderno. Rock con clase y mucha personalidad propia.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alice Cooper",
+      "cancion": "Poison",
+      "frase": "Alice Cooper inyecta su veneno más dulce con esta pieza de hard rock perfecta. Poison es una canción de deseo peligroso, con una producción impecable y un coro diseñado para reventar estadios. Sientan cómo el veneno recorre sus venas con autoridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Depeche Mode",
+      "cancion": "Policy of Truth",
+      "frase": "Depeche Mode advierte sobre las consecuencias de decir la verdad con una elegancia oscura insuperable. Policy of Truth es rock electrónico de alta gama, con un groove hipnótico que te atrapa y no te suelta. Calidad interpretativa y autoridad artística.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Pour Some Sugar On Me",
+      "frase": "¡Pongan un poco de azúcar sobre este rock and roll! Def Leppard entrega el himno definitivo del exceso festivo ochentero. Con ritmo machacón y coros masivos, es la banda sonora de los mejores tiempos. ¡Suban el volumen y dejen que la energía los inunde!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "U2",
+      "cancion": "Pride (In The Name Of Love)",
+      "frase": "Un grito en nombre del amor que hizo temblar al mundo. U2 nos entrega Pride, con el eco de la guitarra de The Edge marcando un camino de esperanza y fuerza. Es el rock convertido en un mensaje universal de paz y autoridad moral. Simplemente épico.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "IQ",
+      "cancion": "Promises (As The Years Go By)",
+      "frase": "Bajamos las luces para recordar las promesas que el tiempo se llevó. IQ nos trae esta pieza de rock progresivo melódico cargada de sentimiento y una atmósfera que nos envuelve. Una joya para disfrutar con la calma de los que aprecian los buenos clásicos.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Jimi Hendrix",
+      "cancion": "Purple Haze",
+      "frase": "Jimi Hendrix nos sumerge en una neblina púrpura de psicodelia y distorsión. Purple Haze es el big bang de la guitarra moderna, lección de autoridad eléctrica que todavía suena a futuro. Escuchen al genio zurdo incendiar el universo con su magia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Radio Ga Ga",
+      "frase": "Suban el volumen y preparen las palmas porque vamos a rendir tributo al medio que nos hace libres. Queen nos entrega Radio Ga Ga, un himno de estadios donde Freddie Mercury nos recuerda que la radio todavía tiene mucho que decir. Es nostalgia pura.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Dio",
+      "cancion": "Rainbow In The Dark",
+      "frase": "¡Sientan el rugido del pequeño gigante del metal! Dio nos lanza Rainbow In The Dark, una demostración de poder vocal y autoridad melódica. Ese teclado inicial y el riff pesado nos transportan a la cima del Olimpo rockero donde Ronnie James siempre será el rey.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Ramble On",
+      "frase": "Cabalguemos con los señores del rock hacia las tierras del este. Led Zeppelin nos presenta Ramble On, una pieza donde el bajo de John Paul Jones marca un camino de maestría absoluta. Robert Plant nos guía en este viaje místico cargado de guitarras.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Rape Me",
+      "frase": "Nirvana nos golpea con la ironía y la rabia del In Utero. Rape Me es un mazo de honestidad brutal, una canción que desafía a la industria con la voz desgarradora de Kurt Cobain. Rock alternativo en estado puro, directo a la mandíbula sin pedir permiso.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Deacon Blue",
+      "cancion": "Real Gone Kid",
+      "frase": "Desde Escocia llega un aire fresco de pop rock con una energía contagiosa. Deacon Blue nos trae Real Gone Kid, una canción que celebra la juventud y el ritmo con un piano que te obliga a saltar. Rock con alma para iluminar nuestra tarde en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Frankie Goes To Hollywood",
+      "cancion": "Relax",
+      "frase": "Frankie Goes To Hollywood nos dio el ritmo más provocador de los 80. Relax es una explosión de sintetizadores potentes y una producción que todavía suena a futuro. Invitación definitiva a perder el control y dejar que el pulso electrónico tome el mando.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Arcade Lights",
+      "cancion": "Remember The Days",
+      "frase": "Hay melodías que se sienten como un abrazo del pasado. The Arcade Lights traen Remember The Days, pieza que respira esa nostalgia luminosa de los grandes clásicos. Rock melódico para los que sabemos que los buenos tiempos vuelven a través de la música.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "John Parr",
+      "cancion": "Restless Heart",
+      "frase": "Para los que tenemos un espíritu inquieto que no conoce el descanso. John Parr nos entrega Restless Heart, puro rock ochentero con esa voz rasgada y guitarras que te empujan a seguir adelante. Banda sonora de los que vivimos la vida a mil revoluciones.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jensen & Company",
+      "cancion": "Rhythm Symphony",
+      "frase": "Bienvenidos a una sinfonía de ritmo y autoridad sonora. Jensen & Company nos presentan Rhythm Symphony, donde la precisión técnica se encuentra con la pasión del rock. Pieza sofisticada para oyentes expertos que buscan matices en cada nota.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Ride The Wind",
+      "frase": "Arranquen las máquinas y sientan el viento en la cara. Poison lanza Ride The Wind, un himno de libertad en la carretera con toda la actitud glam. Guitarras fiesteras y un coro de estadios para recordarnos que el rock and roll es el mejor combustible.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Roadhouse Blues",
+      "frase": "¡Mantengan sus ojos en la carretera y las manos en el volante! The Doors nos llevan de viaje por los bares más peligrosos con Roadhouse Blues. Jim Morrison ruge con autoridad blusera en este clásico que es pura chulería rítmica. El rock visceral.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Rock And A Hard Place",
+      "frase": "Incluso en el Steel Wheels, los Stones seguían demostrando quiénes mandan. Rock And A Hard Place es descarga de energía con metales y riffs que te cortan el aire. La maquinaria de rock más grande del mundo funcionando a plena potencia en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Rock and Roll",
+      "frase": "Ha pasado mucho tiempo desde que rockeamos así. Led Zeppelin entrega definición perfecta de nuestra pasión: Rock and Roll. Ese inicio de batería de John Bonham es un trueno que despierta a los muertos. Adrenalina de la banda más grande de la historia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Rock And Roll All Nite",
+      "frase": "¡Quiero rockear toda la noche y festejar todos los días! KISS nos da el himno definitivo de la religión rockera. Celebración sin límites, confeti eléctrico y la potencia de una banda que nació para dominar el escenario. ¡Canten con toda la fuerza!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The B-52's",
+      "cancion": "Rock Lobster",
+      "frase": "The B-52's trajeron el rock más extraño, divertido y bailable del universo. Rock Lobster es explosión de color new wave con un riff de guitarra surf que es pura chulería. Inyección de energía diferente para que nuestra tarde en Rockstars sea inolvidable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Rock N Roll Train",
+      "frase": "¡Todos a bordo del tren del rock! AC/DC pisa el acelerador con Rock N Roll Train. Puro acero australiano, riffs que te golpean el pecho y la voz de Brian Johnson recordándonos que esta máquina nunca se detiene. Sientan el mazo de Angus contra las cuerdas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Rock or Bust",
+      "frase": "Para los que entendemos que el rock no es una opción, sino una necesidad. AC/DC nos entrega Rock or Bust, declaración de principios con la autoridad de décadas de distorsión. Rock and roll directo, honesto y cargado de esa energía que nos mantiene vivos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Clash",
+      "cancion": "Rock the Casbah",
+      "frase": "The Clash demostraron que el punk también podía tener groove y mensaje universal. Rock the Casbah es explosión de ritmo rebelde que conquistó el mundo sin perder actitud callejera. Joe Strummer nos guía en esta danza de libertad y autoridad musical.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Europe",
+      "cancion": "Rock the Night",
+      "frase": "Europe no solo fue el conteo final; estos suecos sabían cómo hacernos rockear con autoridad. Rock the Night es pura energía de estadio, coros masivos y el virtuosismo de John Norum en la guitarra. Prepárense para soltar el pelo y disfrutar del volumen.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Scorpions",
+      "cancion": "Rock You Like A Hurricane",
+      "frase": "¡Aquí llega el huracán alemán para arrasar con todo! Scorpions nos lanzan Rock You Like A Hurricane, un riff que es ley en el rock de estadios. Klaus Meine nos eleva con una voz de acero en este clásico que define la potencia de los 80.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Rocket Queen",
+      "frase": "Cerrando el Appetite for Destruction con una joya de pura actitud y suciedad rockera. Guns N' Roses nos traen Rocket Queen, una pieza que combina la furia con una sección melódica final que te eriza la piel. Slash y Axl en su momento más crudo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Steve Winwood",
+      "cancion": "Roll With It",
+      "frase": "Steve Winwood trae el alma del soul aplicada al rock ochentero más vibrante. Roll With It es inyección de optimismo con sección de vientos arrolladora. Música hecha por maestros para gente que sabe que el ritmo es lo único que importa hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Run Through The Jungle",
+      "frase": "John Fogerty adentra en la espesura con un ritmo hipnótico que suena a peligro. Creedence Clearwater Revival entrega Run Through The Jungle, rock pantanoso cargado de atmósfera densa y mucha autoridad. Pieza maestra de la potencia eléctrica.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "Run to the Hills",
+      "frase": "¡El galope de la bestia ha comenzado! Iron Maiden lanza Run to the Hills, pura historia del metal británico con Bruce Dickinson alcanzando notas imposibles. La lucha por la tierra convertida en un himno de estadios que acelera el pulso al límite.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Run To You",
+      "frase": "Bryan Adams entrega un riff oscuro y perfecto para una historia de deseo prohibido. Run To You es rock melódico con pegada impresionante, donde la voz rasgada del canadiense guía por la noche. Producción impecable que suena a gloria en Radiochar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "Runaway",
+      "frase": "Todo empezó con este sintetizador y una voz hambrienta de éxito. Bon Jovi presenta Runaway, disparo inicial de una leyenda que conquistaría el mundo. Rock de Nueva Jersey con toda la energía juvenil y potencia melódica que definió el inicio de los 80.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Airbourne",
+      "cancion": "Runnin' Wild",
+      "frase": "Si extrañan el sonido crudo de Australia, Airbourne llega para darnos una lección de energía. Runnin' Wild es puro rock and roll sin frenos, directo al pecho y con la actitud de los que viven por y para el volumen al máximo. ¡Sientan la descarga!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Black Sabbath",
+      "cancion": "Sabbath Bloody Sabbath",
+      "frase": "La oscuridad se hace música con el riff más pesado de la historia. Black Sabbath nos entrega Sabbath Bloody Sabbath, donde Tony Iommi demuestra por qué es el arquitecto del metal. Rock denso, autoritario y cargado de mística.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Sad But True",
+      "frase": "¡Hola, soy tu vida y soy el que te lleva! Metallica pisa el freno para darnos un mazo de pesadez absoluta con Sad But True. El rock convertido en un muro de sonido infranqueable, con autoridad rítmica que aplasta el pecho. Simplemente brutal.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Christopher Cross",
+      "cancion": "Sailing",
+      "frase": "Bajamos las velas para dejarnos llevar por la brisa más elegante del rock. Christopher Cross nos regala Sailing, obra maestra de la producción y armonía. Rock suave, aterciopelado, perfecto para cuando la calidad musical es el único destino posible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mötley Crüe",
+      "cancion": "Same Ol' Situation (S.O.S.)",
+      "frase": "Mötley Crüe nos divierte con este cañonazo de hard rock festivo. Same Ol' Situation es pura chulería ochentera, con coros contagiosos y guitarras brillantes. El sonido de los chicos malos de Los Ángeles pasándolo en grande. ¡Sube el volumen!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Starship",
+      "cancion": "Sara",
+      "frase": "Una balada de una belleza cristalina que dominó la radio en los 80. Starship entrega Sara, con interpretación vocal cargada de sentimiento y una atmósfera que nos transporta a una noche estrellada. Rock melódico en versión más elegante y soñadora.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Satisfation",
+      "frase": "Regresamos al riff que cambió el mundo para siempre. The Rolling Stones lanzan Satisfaction, pura rebeldía juvenil convertida en leyenda eterna. Keith Richards y su pedal de fuzz crearon el ADN que defendemos hoy con autoridad y pasión.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Outfield",
+      "cancion": "Say It Isn't So",
+      "frase": "The Outfield tenían el don de las melodías que se clavan en la memoria. Say It Isn't So es rock británico con pegada americana perfecta, guitarras brillantes y voz que alcanza el cielo. Inyección de energía pura para nuestra tarde de Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "Say You Will",
+      "frase": "Foreigner regresó a finales de los 80 con una producción pulida y poderosa. Say You Will es muestra de cómo el rock melódico puede ser moderno y sofisticado sin perder autoridad de sus fundadores. Pieza perfecta para valorar la composición.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Alice Cooper",
+      "cancion": "School's Out",
+      "frase": "¡Se acabó la escuela para siempre! Alice Cooper entrega el himno de rebelión definitiva con School's Out. Con ese riff canalla y toda la parafernalia del shock rock, el maestro recuerda que el rock and roll es la verdadera educación que importa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "38 Special",
+      "cancion": "Second Chance",
+      "frase": "Todos merecemos una segunda oportunidad y 38 Special puso la mejor banda sonora. Balada poderosa de rock sureño que fluye con elegancia y sentimiento envidiables. Voz de la experiencia hablándonos directamente al corazón rockero.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Seek & Destroy",
+      "frase": "¡Buscando para destruir! Metallica nos lleva a los días del Bay Area con este riff de acero. Seek & Destroy es esencia del metal primitivo, descarga de adrenalina que obliga a sacudir la cabeza con autoridad. ¡Puro fuego en el escenario!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Journey",
+      "cancion": "Separate Ways (Worlds Apart)",
+      "frase": "Journey golpea con uno de los sintetizadores más potentes del rock de estadios. Separate Ways es pura fuerza melódica, con Steve Perry demostrando por qué es de las voces más autoritarias. Rock que suena grande, épico e indestructible.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "ZZ Top",
+      "cancion": "Sharp Dressed Man",
+      "frase": "ZZ Top enseñan que cada chica se vuelve loca por un hombre bien vestido, especialmente con este riff tejano. Sharp Dressed Man es groove, chulería y guitarras con sabor a blues y sintetizadores. Actitud de Rockstar en máxima elegancia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Shoot to Thrill",
+      "frase": "¡Dispara para emocionar! AC/DC lanza esta descarga de alto voltaje que te vuela la cabeza. Con ritmo frenético y la guitarra de Angus echando chispas, canción perfecta para sentir la verdadera potencia del rock australiano en tus venas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Shot In The Dark",
+      "frase": "Incluso después de tanto tiempo, los muchachos de AC/DC siguen disparando en la oscuridad y dándole al blanco. Shot In The Dark es rock and roll puro, sin aditivos, con ese pulso que solo ellos generan. La autoridad del rock sigue intacta.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Clash",
+      "cancion": "Should I Stay or Should I Go",
+      "frase": "The Clash ponen ante la duda eterna con un riff que es puro nervio. Should I Stay or Should I Go es rock con raíces punk que conquistó la radio por su energía directa y chulería británica. Invitación irresistible a mover los pies.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queensrÿche",
+      "cancion": "Silent Lucidity",
+      "frase": "Cierren los ojos para entrar en un sueño lúcido de la mano de Queensrÿche. Silent Lucidity es obra maestra de rock progresivo y orquestal, cargada de belleza y profundidad que dejan sin palabras. Interpretación vocal prodigiosa para Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mike + The Mechanics",
+      "cancion": "Silent Running (On Dangerous Ground)",
+      "frase": "Mike + The Mechanics llevan por un terreno peligroso con atmósfera cargada de misterio y sintetizadores potentes. Silent Running es rock inteligente, con producción impecable que recuerda que en los 80 la música sabía ser profunda.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Robert Palmer",
+      "cancion": "Simply Irresistible",
+      "frase": "Robert Palmer trajo el rock más sexy y pulido de finales de los 80. Simply Irresistible es puro ritmo, chulería y guitarras con gancho. El sonido de una estrella que dominaba pantalla y altavoces con elegancia sencillamente irresistible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Rainbow",
+      "cancion": "Since You Been Gone",
+      "frase": "Cuando Ritchie Blackmore se unió a Graham Bonnet, crearon este himno de rock melódico perfecto. Since You Been Gone es explosión de energía y despecho con riff que atrapa al instante. Autoridad del hard rock británico en versión brillante.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Outfield",
+      "cancion": "Since You've Been Gone",
+      "frase": "The Outfield vuelven a demostrarnos su talento para armonías vocales y guitarras con el eco perfecto. Since You've Been Gone es canción luminosa y potente, rock de los 80 que suena a libertad y grandes estadios americanos. Pura calidad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Night Ranger",
+      "cancion": "Sister Christian",
+      "frase": "Night Ranger entrega la balada de estadios definitiva sobre el paso a la madurez. Sister Christian empieza con calma engañosa para estallar en batería atronadora y guitarras que gritan. Rock melódico con fuerza arrolladora. ¡Épico!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Peter Gabriel",
+      "cancion": "Sledgehammer",
+      "frase": "Peter Gabriel golpea con un mazo de ritmo y originalidad visual y sonora. Sledgehammer es rock con alma de soul y producción que rompió todos los moldes en los 80. Con el bajo de Tony Levin mandando, imposible no rendirse ante esta autoridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Roxette",
+      "cancion": "Sleeping In My Car",
+      "frase": "Roxette pisa el acelerador con un riff de guitarra que suena a puro rock and roll directo. Sleeping In My Car es energía sueca al límite, con Marie Fredriksson derrochando fuerza vocal en cada verso. Adrenalina para nuestra tarde de Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "Smells Like Teen Spirit",
+      "frase": "Ese riff sucio nos anunció que el mundo ya no sería el mismo. Nirvana nos lanza Smells Like Teen Spirit, el grito de una generación que rompió todas las reglas. Caos convertido en arte, pura distorsión y autoridad grunge en Radiochar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Deep Purple",
+      "cancion": "Smoke On The Water",
+      "frase": "Ritchie Blackmore regaló el riff que todo rockero lleva tatuado en el alma. Deep Purple nos cuenta la historia de un incendio en Montreux que se convirtió en leyenda. Smoke On The Water es la definición de autoridad en hard rock clásico.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rod Stewart",
+      "cancion": "Some Guys Have All the Luck",
+      "frase": "Rod Stewart mira con sonrisa pícara para contar que algunos tipos tienen toda la suerte. Rock con alma de fiesta, con esa voz rasgada que maneja el ritmo como nadie más puede hacerlo. Un clásico divertido para animar la tarde con clase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Somebody",
+      "frase": "Bryan Adams entrega un mazo de rock directo al corazón con Somebody. Búsqueda de alguien real en un mundo de sombras, con guitarras potentes e interpretación vocal llena de urgencia. Pura energía canadiense en nuestra programación.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Glass Tiger",
+      "cancion": "Someday",
+      "frase": "Desde Canadá llega pieza de pop rock de elegancia melódica envidiable. Glass Tiger trae Someday, canción que brilla con luz propia gracias a su producción cristalina y sentimiento de esperanza que envuelve. Calidad sonora para expertos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Crowded House",
+      "cancion": "Something So Strong",
+      "frase": "Neil Finn demuestra que algo tan fuerte no puede ser ignorado. Crowded House entrega una pieza de brillantez melódica insuperable, con guitarras que fluyen y alegría contagiosa. Rock con sensibilidad pop en su máxima expresión de calidad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Cory Marks",
+      "cancion": "Sorry For Nothing",
+      "frase": "Cory Marks trae la nueva cara del rock con raíces, potente y sin pedir disculpas. Sorry For Nothing es declaración de principios con guitarras que muerden y actitud desafiante. Rock con sabor a tierra y autoridad moderna en nuestra sintonía.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Tears For Fears",
+      "cancion": "Sowing The Seeds Of Love",
+      "frase": "Tears For Fears se visten de psicodelia beatle para sembrar las semillas del amor con producción grandiosa. Rock inteligente, ambicioso y cargado de matices que solo maestros orquestan con autoridad. Pieza maestra para disfrutar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Soundgarden",
+      "cancion": "Spoonman",
+      "frase": "Chris Cornell ruge con la fuerza de un volcán mientras la banda cabalga sobre un ritmo industrial y pesado. Soundgarden entrega Spoonman, puro grunge técnico con autoridad sonora que te deja sin aliento. El sonido de Seattle en versión potente.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "John Parr",
+      "cancion": "St. Elmos Fire (Man in Motion)",
+      "frase": "Sientan el fuego de San Telmo recorriendo sus venas con la voz de John Parr. Himno de superación ochentero es pura energía positiva, con guitarras brillantes y producción que suena a sueños cumplidos. ¡Dejen que el rock los impulse!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Oasis",
+      "cancion": "Stand by Me",
+      "frase": "Los hermanos Gallagher entregan un himno de lealtad absoluta con Stand by Me. Oasis en su versión más épica y grandiosa, recordando que el rock británico de los 90 bebió de la herencia clásica para dominar estadios. Pura autoridad melódica.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Def Leppard",
+      "cancion": "Stand Up (Kick Love Into Motion)",
+      "frase": "Def Leppard invitan a ponernos en pie con una balada rock de producción impecable. Stand Up es pura seda eléctrica, con capas de guitarras armonizadas que solo los maestros de Sheffield construyen con semejante autoridad sonora. Calidad premium.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Start Me Up",
+      "frase": "Keith Richards dispara el riff que podría encender un motor muerto. The Rolling Stones lanzan Start Me Up, pura energía sexual y rock and roll directo a la yugular. Sonido de los 80 rindiéndose ante la autoridad incombustible de sus majestades.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gary Moore",
+      "cancion": "Still Got The Blues",
+      "frase": "Gary Moore demuestra que después de todo, el blues sigue siendo el alma del rock. Still Got The Blues es lección de sentimiento y técnica, con guitarra que habla el lenguaje del corazón. Escuchen ese solo, es pura autoridad saliendo del alma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Whitesnake",
+      "cancion": "Still of the Night",
+      "frase": "David Coverdale invoca al espíritu de Led Zeppelin con un mazo de hard rock pesado y sexy. Still of the Night es pura potencia de estadio, con un riff de hierro y atmósfera de peligro nocturno. Autoridad de la serpiente blanca en su esplendor.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "TOTO",
+      "cancion": "Stop Loving You",
+      "frase": "TOTO entrega una joya de rock melódico con un toque funk irresistible en Stop Loving You. Melodías cristalinas, ejecución técnica impecable y ese estilo que solo expertos músicos proyectan con limpieza sonora. Rock sofisticado para la tarde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Strutter",
+      "frase": "KISS se presenta al mundo con un caminar con chulería rítmica. Strutter es puro rock and roll neoyorquino, con riff contagioso y toda la actitud de los que sabían que conquistarían el mundo. El inicio de una leyenda que todavía hoy hace vibrar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Huey Lewis & The News",
+      "cancion": "Stuck With You",
+      "frase": "Huey Lewis trae esa mezcla perfecta de rock y buenas vibraciones con Stuck With You. Canción luminosa sobre lealtad y buenos tiempos, con armonías vocales impecables y producción que suena a radio clásica de mejor calidad. ¡Diversión ochentera!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "INXS",
+      "cancion": "Suicide Blonde",
+      "frase": "Michael Hutchence envuelve con su carisma magnético en Suicide Blonde. INXS utiliza armónica rockera y ritmo bailable para conquistarnos de nuevo. Rock con clase, moderno y cargado de sensualidad que solo las estrellas australianas poseen. Autoridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Dire Straits",
+      "cancion": "Sultans Of Swing",
+      "frase": "Mark Knopfler da una lección magistral de cómo hacer cantar a una Fender sin púa. Sultans Of Swing es pura elegancia rítmica, viaje por los clubes de jazz con alma de rock. Pieza de una autoridad técnica sencillamente inalcanzable.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bryan Adams",
+      "cancion": "Summer Of '69",
+      "frase": "Bryan Adams regala el himno definitivo de la nostalgia juvenil y los sueños de rock and roll. Summer Of '69 es explosión de energía que nos transporta a veranos donde la guitarra era nuestra única ley. ¡Canten con toda la fuerza del corazón!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cream",
+      "cancion": "Sunshine Of Your Love",
+      "frase": "Eric Clapton y Jack Bruce crearon un riff que es puro magma volcánico. Cream nos entrega Sunshine Of Your Love, pieza de rock psicodélico y pesado que definió el futuro del género. Autoridad del power trío destilada en pura electricidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Rick James",
+      "cancion": "Super Freak",
+      "frase": "Cuando el funk se pone el traje de rock and roll, nace Super Freak. Rick James trae el groove más salvaje y divertido de los 80, inyección de energía pura que obliga a moverte sin excusas. ¡Pura autoridad rítmica para sacudir la tarde!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Europe",
+      "cancion": "Superstitious",
+      "frase": "Joey Tempest guía por un laberinto de rock melódico y teclados grandiosos con Superstitious. Europe demostrando que tenían mucho más que un conteo final, con un solo de Kee Marcello que es pura autoridad técnica. Rock con clase y potencia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "Sure Know Something",
+      "frase": "KISS explora su lado más melódico y bailable sin perder la esencia rockera en Sure Know Something. Canción con un bajo mandón y armonías vocales impecables que muestran la versatilidad de una banda sin fronteras. Chulería ochentera en Radiochar.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Sweet Child O' Mine",
+      "frase": "Ese riff circular de Slash nació como ejercicio y se convirtió en himno de toda una generación. Guns N' Roses entregan Sweet Child O' Mine, mezcla perfecta de ternura y rabia eléctrica. La voz de Axl alcanza el cielo en esta obra maestra.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Lynyrd Skynyrd",
+      "cancion": "Sweet Home Alabama",
+      "frase": "Regresamos al sur con el himno definitivo del rock sureño. Lynyrd Skynyrd regala Sweet Home Alabama, riff que es puro sol y libertad. Tres guitarras trenzándose en una danza de autoridad rockera que nunca pasará de moda. ¡Sientan el espíritu!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Rolling Stones",
+      "cancion": "Sympathy For The Devil",
+      "frase": "¡Permítanme presentarme, soy un hombre de riqueza y gusto! The Rolling Stones invitan a bailar con el diablo en este ritual rítmico hipnótico. Sympathy For The Devil es rock chamánico, peligroso y con la autoridad de sus majestades.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Megadeth",
+      "cancion": "Symphony Of Destruction",
+      "frase": "Dave Mustaine mueve los hilos de la destrucción con un riff de precisión milimétrica. Symphony Of Destruction es metal inteligente, autoritario y con crítica social punzante. Hora de marchar al ritmo de las guitarras más afiladas. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "T.N.T.",
+      "frase": "¡Oi! ¡Oi! ¡Oi! AC/DC nos trae la dinamita pura con T.N.T. Es rock and roll explosivo, directo a la mandíbula, con un Bon Scott que suena a pura rebelión callejera. Si esto no te hace saltar, es que no tienes sangre rockera. ¡Pura pólvora!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Soft Cell",
+      "cancion": "Tainted Love",
+      "frase": "Soft Cell tomó un clásico del soul y lo convirtió en joya oscura y bailable del synth-pop ochentero. Tainted Love es pura tensión rítmica con raíz rockera en su intensidad emocional. Ritmo hipnótico que sigue sonando moderno y autoritario hoy.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "REO Speedwagon",
+      "cancion": "Take It On the Run",
+      "frase": "REO Speedwagon cuenta una historia de verdades a medias y guitarras melódicas impecables. Take It On the Run es rock melódico de alta escuela, con un solo que fluye con autoridad envidiable. Inyección de sentimiento para nuestra tarde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Eddie Money",
+      "cancion": "Take Me Home Tonight",
+      "frase": "Eddie Money pide que lo llevemos a casa con un himno cargado de energía y nostalgia. Con voz de Ronnie Spector de fondo, es puro rock americano de los 80, diseñado para corear con el puño en alto. Pura pasión en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "A-Ha",
+      "cancion": "Take on Me",
+      "frase": "Ese sintetizador inicial es el sonido de los años 80 conquistando el mundo. A-Ha entrega Take on Me, pieza de pop rock perfecta con interpretación vocal que desafía la gravedad. Clásico que hace sentir que todo es posible con la música.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Talk Dirty To Me",
+      "frase": "Poison invita a dejar de lado los modales y simplemente disfrutar del hard rock más fiestero. Talk Dirty To Me es pura chulería glam, con riff divertido y actitud de reyes de la Sunset Strip. ¡Diversión eléctrica para nuestra tarde!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Romantics",
+      "cancion": "Talking In Your Sleep",
+      "frase": "The Romantics traen el secreto mejor guardado con Talking In Your Sleep. Power pop con alma de rock, ritmo contagioso y guitarras que brillan. Canción que atrapa con su misterio y su energía ochentera inconfundible.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Baltimora",
+      "cancion": "Tarzan Boy",
+      "frase": "¡Wo-oh-oh-oh-oh! Baltimora nos lleva a la jungla de los 80 con un grito de libertad bailable. Tarzan Boy es pura diversión disco-rock, inyección de energía positiva recordando que el rock también quiere hacernos saltar y disfrutar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Foreigner",
+      "cancion": "That Was Yesterday",
+      "frase": "Foreigner nos habla del pasado con una potencia sonora inmensa en That Was Yesterday. Rock melódico cargado de sintetizadores y voz que maneja la emoción con autoridad envidiable. Pieza maestra de la producción ochentera.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "1927",
+      "cancion": "That's When I Think Of You",
+      "frase": "Desde Australia llega pieza de pop rock de belleza melódica impresionante. 1927 trajo That's When I Think Of You, canción que brilla con guitarras acústicas e interpretación vocal llena de alma. Calidad interpretativa superior en Radiochar.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "The Lemon Pistols",
+      "cancion": "The Ballad of Scotty Thomson",
+      "frase": "Hay historias que merecen ser contadas con la fuerza de un riff honesto. The Lemon Pistols traen The Ballad of Scotty Thomson, rock urbano con actitud y pulso rítmico que no deja indiferente. Pieza con personalidad para oyentes expertos.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Tina Turner",
+      "cancion": "The Best",
+      "frase": "¡Eres simplemente lo mejor! Tina Turner entrega su himno de autoridad vocal y empoderamiento rockero. Con ese saxofón rugiendo y su voz de fuego, recuerda por qué es la reina indiscutible. Descarga de fuerza para Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Don Henley",
+      "cancion": "The Boys Of Summer",
+      "frase": "Don Henley regala la banda sonora perfecta para la nostalgia de los veranos perdidos. The Boys Of Summer es rock sofisticado, con producción aterciopelada y sentimiento que cala los huesos. Obra maestra de narrativa musical.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Don Henley",
+      "cancion": "The End Of The Innocence",
+      "frase": "Don Henley se pone reflexivo para hablarnos del fin de la inocencia con profundidad abrumadora. Pieza cargada de piano y verdad, rock adulto hecho por un maestro que conoce el corazón humano. Calidad superior en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Europe",
+      "cancion": "The Final Countdown",
+      "frase": "¡Es el conteo final! Europe nos lanza al espacio con el teclado más icónico de la historia. Himno de estadios universal que nos eriza la piel cada vez que suena. Joey Tempest nos guía hacia la gloria con esta explosión sueca.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cheap Trick",
+      "cancion": "The Flame",
+      "frase": "Cheap Trick entrega la balada poderosa definitiva con The Flame. Robin Zander desgarra la voz en interpretación cargada de sentimiento y autoridad melódica. Rock que hace creer en el fuego que nunca se apaga. Simplemente perfecta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Don Henley",
+      "cancion": "The Heart Of The Matter",
+      "frase": "Llegar al corazón de la cuestión es el viaje más difícil y Don Henley puso música. Pieza de honestidad brutal sobre perdón y redención. Rock con alma de autor que recuerda que la verdadera fuerza nace de la vulnerabilidad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Katharein",
+      "cancion": "The Last of the Worlds",
+      "frase": "Exploramos los confines del sonido con Katharein y The Last of the Worlds. Rock atmosférico y ambicioso que invita a mirar más allá del horizonte. Pieza cargada de mística y autoridad sonora para buscar nuevas fronteras.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Don Henley",
+      "cancion": "The Last Worthless Evening",
+      "frase": "Don Henley acompaña en esta última tarde que merece ser rescatada por el rock. Pieza con producción impecable y sentimiento de melancolía esperanzadora que fluye como el aire. Calidad interpretativa superior para Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Nirvana",
+      "cancion": "The Man Who Sold The World",
+      "frase": "Kurt Cobain tomó el clásico de Bowie e inyectó melancolía acústica desgarradora en el Unplugged. The Man Who Sold The World suena a despedida y a verdad desnuda. Nirvana demostrando que el rock sabe susurrarle al dolor.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "The Memory Remains",
+      "frase": "La fama se va pero la memoria permanece. Metallica entrega pieza cargada de atmósfera oscura con la colaboración de Marianne Faithfull. Metal con alma de blues sucio, recordando que las leyendas se transforman con autoridad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Gene Loves Jezebel",
+      "cancion": "The Motion of Love",
+      "frase": "Gene Loves Jezebel traen el movimiento del amor con un toque de rock gótico y pop sofisticado. Canción magnética con ritmo que atrapa e interpretación vocal llena de estilo. Clase alternativa de los 80 en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Huey Lewis & The News",
+      "cancion": "The Power Of Love",
+      "frase": "¡El poder del amor es una fuerza curiosa! Huey Lewis entrega este cañonazo ochentero que nos hizo viajar en el tiempo. Pura energía positiva, guitarras divertidas y sección de vientos que levanta el ánimo. ¡Sientan el poder!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "The Trooper",
+      "frase": "¡El soldado está listo para la carga! Iron Maiden lanza The Trooper con ese riff galopante y guitarras dobladas. La épica del metal británico en máximo esplendor de autoridad y potencia. ¡A la batalla, Rockstars!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "The Unforgiven",
+      "frase": "Metallica cuenta la historia de una vida encadenada con potencia cinematográfica abrumadora. The Unforgiven es un viaje desde la penumbra acústica hasta un solo que desgarra el alma. Rock convertido en confesión autoritaria.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bruce Hornsby and the Range",
+      "cancion": "The Valley Road",
+      "frase": "Bruce Hornsby lleva por el camino del valle con su piano virtuoso y su alma rockera. Pieza de calidad técnica impresionante que combina jazz y rock con naturalidad asombrosa. Calidad superior para nuestros oyentes expertos.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bruce Hornsby and the Range",
+      "cancion": "The Way It Is",
+      "frase": "Esa es la manera en que son las cosas, pero el rock siempre busca el cambio. Bruce Hornsby regala pieza maestra de narrativa y elegancia al piano. Rock con conciencia y producción cristalina de los 80 de calidad.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The La's",
+      "cancion": "There She Goes",
+      "frase": "The La's trajeron la melodía pop-rock más perfecta de finales de los 80. There She Goes es explosión de guitarras cristalinas y voz que suena a libertad y días soleados. Joya que nunca pierde frescura en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Heart",
+      "cancion": "These Dreams",
+      "frase": "Nancy Wilson toma el micrófono para llevarnos a un mundo de sueños y neblina ochentera. Heart nos entrega These Dreams, balada cargada de mística y producción expansiva que envuelve. Lado más soñador y autoritario de Heart.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Think About You",
+      "frase": "Guns N' Roses demuestran que también pueden rockear con el corazón sin perder chulería. Think About You es puro Appetite, con guitarras que se entrelazan con velocidad y melodía asombrosas. Rock romántico pero peligroso.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Nazareth",
+      "cancion": "This Flight Tonight",
+      "frase": "Nazareth tomó este tema de Joni Mitchell y lo convirtió en un trueno de hard rock pesado. This Flight Tonight es pura autoridad rítmica con ese bajo machacón y la voz única de McCafferty. Prepárense para el despegue.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Mick Jagger",
+      "cancion": "Throwaway",
+      "frase": "Mick Jagger en solitario demuestra que estilo y energía son inagotables. Throwaway es rock moderno con el sello de autoridad de una leyenda que conoce todos los trucos. Descarga de adrenalina con la chulería de un Rockstar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Thunderstruck",
+      "frase": "¡El trueno ha caído sobre nosotros! AC/DC abre los estadios con el tapping infernal de Angus Young. Thunderstruck es pura electricidad, una marcha triunfal que obliga a gritar con toda la fuerza. ¡Autoridad rockera absoluta!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Jude Cole",
+      "cancion": "Time for Letting Go",
+      "frase": "A veces es hora de dejar ir y Jude Cole puso la melodía perfecta a ese sentimiento. Rock melódico de finales de los 80 con producción impecable e interpretación vocal de verdad. Calidad y sentimiento en cada nota.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Mr. Big",
+      "cancion": "To Be With You",
+      "frase": "Mr. Big nos reunió a todos alrededor de una fogata eléctrica con To Be With You. Balada acústica que demuestra que virtuosos saben escribir melodías universales. Armonías perfectas para un clásico que nunca nos cansa.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Megadeth",
+      "cancion": "Tornado Of Souls",
+      "frase": "Dave Mustaine lanza a un tornado de almas con exhibición de guitarras que desafía límites. El solo de Marty Friedman es pura autoridad técnica, pieza maestra del metal que nos deja sin aliento. ¡Sientan el torbellino eléctrico!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bonnie Tyler",
+      "cancion": "Total Eclipse of the Heart",
+      "frase": "Bonnie Tyler entrega ópera rock definitiva sobre el desamor. Total Eclipse of the Heart es despliegue de drama, potencia vocal y producción grandiosa que eriza la piel. Lamento de una voz de trueno en medio de la noche.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Doors",
+      "cancion": "Touch Me",
+      "frase": "Jim Morrison nos pide que lo toquemos con una orquestación majestuosa de vientos y cuerdas. Touch Me es pieza de rock psicodélico y elegante que suena a pura seducción urbana. La autoridad del Rey Lagarto en estado sofisticado.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Turn The Page",
+      "frase": "Metallica hace suya la balada de Bob Seger para contarnos la dureza de la vida en la carretera. Turn The Page es rock con sabor a asfalto, whisky y soledad, cargado de una autoridad sonora que solo los que recorrieron el mundo transmiten.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "ZZ Top",
+      "cancion": "Tush",
+      "frase": "ZZ Top nos trae el blues rock más divertido y directo de Texas con Tush. Es pura chulería rítmica, un riff que te obliga a caminar con paso firme y sonrisa pícara. Esencia de la fiesta rockera en Radiochar. ¡A disfrutar!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "John Parr",
+      "cancion": "Two Hearts",
+      "frase": "Dos corazones latiendo al ritmo del mejor rock ochentero. John Parr nos entrega Two Hearts, canción cargada de energía y producción brillante que recuerda por qué esta era fue el pico máximo de potencia. ¡Sientan el pulso!",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "Under Pressure",
+      "frase": "Bajo presión nacen diamantes y esta canción es la joya más brillante del rock. Queen y David Bowie se unieron para darnos una lección de autoridad vocal y rítmica. Ese bajo de John Deacon es ley y nos guía por una noche única.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Poison",
+      "cancion": "Unskinny Bop",
+      "frase": "Poison nos divierte con ritmo contagioso y chulería glam en Unskinny Bop. Rock para pasarla bien, con guitarras que brillan y un coro diseñado para reventar los altavoces de tu coche. ¡Diversión eléctrica sin complicaciones!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Creedence Clearwater Revival",
+      "cancion": "Up Around The Bend",
+      "frase": "¡Suban al coche que la Creedence nos lleva de viaje! Up Around The Bend es alegría rockera, un riff que suena a libertad y horizontes abiertos. John Fogerty nos guía con autoridad hacia un mundo de buenos tiempos.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Used To Love Her",
+      "frase": "Guns N' Roses sacan su lado más acústico e irónico con Used To Love Her. Rock con sabor a bar, guitarras relajadas y actitud peligrosa de una banda que no se tomaba nada demasiado en serio. Pura chulería GnR.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Steve Winwood",
+      "cancion": "Valerie",
+      "frase": "Steve Winwood nos trae la sofisticación del rock con sintetizadores en Valerie. Una canción con un ritmo impecable y una interpretación vocal que brilla con luz propia. Sonido de los 80 de alta gama en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Spitting Pips",
+      "cancion": "Vicious Circles",
+      "frase": "A veces nos vemos atrapados en círculos viciosos y el rock es la única salida. The Spitting Pips traen Vicious Circles, pieza con energía urbana y pegada directa que despierta el alma rockera. Pura actitud en nuestra programación.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Russ Ballard",
+      "cancion": "Voices",
+      "frase": "Russ Ballard nos habla a través de las voces que habitan en la noche ochentera. Voices es rock melódico con atmósfera magnética y producción que te envuelve. Joya para los que saben apreciar la autoridad de un gran compositor.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Jimi Hendrix",
+      "cancion": "Voodoo Child (Slight Return)",
+      "frase": "Jimi Hendrix nos demuestra que es un hijo del vudú eléctrico. Voodoo Child es exhibición sobrenatural de autoridad en la guitarra, donde el wah-wah y la distorsión crean lenguaje nuevo. El dios de las seis cuerdas incendiando el universo.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Cory Ryan Howard",
+      "cancion": "Wake Up",
+      "frase": "¡Es hora de despertar y sentir la potencia del rock! Cory Ryan Howard nos lanza Wake Up, inyección de adrenalina moderna con raíces sólidas. Guitarras que muerden y una voz que impone respeto. ¡Arriba todo el mundo!",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Dire Straits",
+      "cancion": "Walk Of Life",
+      "frase": "Dire Straits invitan a caminar por la vida con el ritmo más alegre de la historia del rock. Walk Of Life es pura energía positiva, con ese órgano juguetón y la guitarra impecable de Knopfler. Clásico que hace sonreír.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Toad The Wet Sprocket",
+      "cancion": "Walk On the Ocean",
+      "frase": "Caminamos sobre el océano con la delicadeza del rock alternativo de los 90. Toad The Wet Sprocket traen pieza de belleza y armonía exquisitas. Música para el alma, recordándonos que el rock sabe ser suave y profundo.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "KISS",
+      "cancion": "War Machine",
+      "frase": "¡La máquina de guerra de Gene Simmons está en marcha! KISS nos golpea con un riff pesado y autoritario que suena a pura destrucción metalera. El lado más oscuro y potente de la banda más caliente del mundo. ¡Fuego!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Iron Maiden",
+      "cancion": "Wasted Years",
+      "frase": "Iron Maiden nos recuerda que no debemos perder el tiempo mirando atrás. Wasted Years es pura potencia melódica, con interpretación vocal de Bruce Dickinson que te eleva hasta el cielo. Metal con corazón y cerebro.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "We Are The Champions",
+      "frase": "¡Somos los campeones del mundo! Queen nos entrega el himno definitivo de la victoria y la perseverancia. Freddie Mercury nos guía hacia la gloria con una interpretación vocal que es pura autoridad moral. Canten con orgullo rockero.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Starship",
+      "cancion": "We Built This City",
+      "frase": "Nosotros construimos esta ciudad sobre el rock and roll y nadie podrá derribarla. Starship traen el himno de la radio de los 80, explosión de energía y sintetizadores potentes que celebra nuestra pasión. ¡Esta es nuestra ciudad!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Queen",
+      "cancion": "We Will Rock You",
+      "frase": "¡Pisotón, pisotón, aplauso! Queen nos da el ritmo más básico y poderoso de la historia del rock. We Will Rock You es una orden directa a participar en el ritual masivo de la música. Brian May cierra con solo incendiario. ¡Brutal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Twisted Sister",
+      "cancion": "We're Not Gonna Take It",
+      "frase": "¡No lo vamos a aceptar más! Dee Snider lidera la rebelión definitiva con este himno de libertad. Twisted Sister nos enseña que el rock es la mejor arma contra la autoridad injusta. Griten con fuerza y dejen que el mundo sepa quién manda.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Welcome To The Jungle",
+      "frase": "¡Bienvenidos a la jungla, tenemos diversión y juegos! Guns N' Roses irrumpen en nuestra cabina con el grito de guerra de Axl Rose. Rock peligroso, sucio y cargado de adrenalina que te eriza la piel. Sientan el peligro de Los Ángeles.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Aerosmith",
+      "cancion": "What It Takes",
+      "frase": "Steven Tyler enseña lo que se necesita para dejar atrás un amor en esta balada poderosa y blusera. Aerosmith en versión más sensible pero con toda la garra de los chicos malos de Boston. Autoridad vocal para Rockstars.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Firehouse",
+      "cancion": "When I Look Into Your Eyes",
+      "frase": "Firehouse nos entrega una de las baladas más románticas y potentes del final del glam rock. When I Look Into Your Eyes es pura seda eléctrica, con una interpretación vocal que eriza la piel y guitarras que subrayan el amor.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Bad English",
+      "cancion": "When I See You Smile",
+      "frase": "John Waite y Neal Schon unieron fuerzas para darnos esta joya de rock melódico. When I See You Smile es sonido de estadios creyendo en la esperanza con una producción brillante. Inyección de sentimiento puro para la tarde.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cranberries",
+      "cancion": "When You're Gone",
+      "frase": "La voz de Dolores O'Riordan nos envuelve en una melancolía luminosa en When You're Gone. The Cranberries demostrando que el rock alternativo puede ser tierno y profundo. Una pieza de belleza melódica que se graba en el alma.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Wherever I May Roam",
+      "frase": "El nómada del metal nos guía por el camino de la libertad absoluta. Metallica entrega Wherever I May Roam, con aire místico de sitar eléctrico y un riff que camina con autoridad aplastante. Rock para los que no tenemos destino.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Metallica",
+      "cancion": "Whiskey In The Jar",
+      "frase": "Metallica le inyecta distorsión y chulería al clásico folk irlandés. Whiskey In The Jar es puro rock de fiesta y taberna, con James Hetfield celebrando la vida al límite. Descarga de energía contagiosa para reventar los altavoces.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Who Made Who",
+      "frase": "¿Quién hizo a quién? AC/DC nos pone ante la pregunta existencial con ritmo machacón y sintetizadores oscuros. Rock con alma de ciencia ficción, cargado de una autoridad sonora que solo los reyes de Australia proyectan.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Led Zeppelin",
+      "cancion": "Whole Lotta Love",
+      "frase": "Robert Plant dice que nos dará todo su amor sobre el riff más sexy de la historia. Led Zeppelin lanza Whole Lotta Love, pura psicodelia pesada y autoridad eléctrica. Escuchen ese solo de teremín y guitarra, magia rockera.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Whole Lotta Rosie",
+      "frase": "¡Una mujer entera para un rock entero! AC/DC rinde homenaje a la mítica Rosie con un riff frenético y toda la chulería de Bon Scott. Rock and roll directo, divertido y cargado de energía que vuela la cabeza. ¡A tope!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "Wild Reputation",
+      "frase": "AC/DC nos habla de su reputación salvaje con un ritmo que no conoce la piedad. Rock and roll sin concesiones, directo al pecho, recordándonos que en esta emisora la única ley es la distorsión y la autoridad de los maestros.",
+      "nivel_confianza_contexto": "Baja"
+    },
+    {
+      "artista": "Mötley Crüe",
+      "cancion": "Wild Side",
+      "frase": "Mötley Crüe invita a dar un paseo por el lado salvaje de la ciudad. Wild Side es puro hard rock con un groove de bajo imparable y coros de pandilla callejera. Sientan el peligro y la adrenalina de las calles de Los Ángeles.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Pink Floyd",
+      "cancion": "Wish You Were Here",
+      "frase": "Dedicado a todos los que echamos de menos a alguien mientras el rock nos mantiene a flote. Pink Floyd entrega Wish You Were Here, obra maestra de sensibilidad y guitarra acústica. El silencio más ruidoso de la historia.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "U2",
+      "cancion": "With Or Without You",
+      "frase": "Con o sin ti, el rock siempre estará aquí para salvarnos. U2 nos entrega una pieza de una tensión emocional inmensa, con la guitarra infinita de The Edge y la voz de Bono alcanzando el cielo. Magia de estadios en nuestra tarde.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Oasis",
+      "cancion": "Wonderwall",
+      "frase": "Porque después de todo, eres mi muro de maravillas. Oasis regala el himno generacional de los 90, con esa mezcla de folk y rock británico que conquistó el mundo. Canción para cantar con el alma llena de esperanza.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Mike + The Mechanics",
+      "cancion": "Word Of Mouth",
+      "frase": "La palabra se corre de boca en boca: el rock de los 80 es eterno. Mike + The Mechanics nos traen Word Of Mouth, inyección de energía pop rock con producción brillante y optimista. El sonido de los buenos tiempos en Rockstars.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Slash",
+      "cancion": "World on Fire",
+      "frase": "Slash incendia el mundo con sus dedos y nosotros solo queremos ver cómo arde el mástil. World on Fire es puro hard rock moderno con alma clásica, con riffs que muerden y autoridad que solo el hombre del sombrero ostenta.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Crowded House",
+      "cancion": "World Where You Live",
+      "frase": "Neil Finn invita al mundo donde vives con una melodía que es pura arquitectura pop rock de alta calidad. Crowded House demostrando que sensibilidad y potencia melódica pueden crear algo atemporal. Pura clase en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "Yesterdays",
+      "frase": "Axl Rose mira por el retrovisor para hablarnos de los ayeres con una melancolía rockera perfecta. Yesterdays es pieza de honestidad brutal, recordándonos que el tiempo pasa pero las canciones se quedan para siempre. Autoridad.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Guns N' Roses",
+      "cancion": "You Could Be Mine",
+      "frase": "¡Podrías ser mía, pero tienes un corazón de piedra! Guns N' Roses pisa a fondo con You Could Be Mine, pura adrenalina de Terminator con un riff que suena a persecución de acero. La furia de los 90 con autoridad de leyendas.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bon Jovi",
+      "cancion": "You Give Love A Bad Name",
+      "frase": "¡Un disparo al corazón y tú tienes la culpa! Bon Jovi entrega el himno definitivo del despecho rockero ochentero. Con ese grito inicial y guitarras fiesteras, demuestran por qué dominaron estadios y radios durante décadas. ¡Volumen!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Roy Orbison",
+      "cancion": "You Got It",
+      "frase": "Roy Orbison nos dice que todo lo que queramos, lo tenemos a través del rock. You Got It es pieza de una elegancia y calidez vocal inalcanzables. Un clásico que brilla con luz propia en nuestra tarde de Rockstars. Pura clase.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "The Cars",
+      "cancion": "You Might Think",
+      "frase": "Ric Ocasek nos divierte con este clásico de pop rock ingenioso y pegadizo. You Might Think es pura energía de los 80, con sintetizadores juguetones y actitud que te obliga a sonreír y seguir el ritmo. Magia radiofónica en Radiochar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Van Halen",
+      "cancion": "You Really Got Me",
+      "frase": "Van Halen tomó el clásico de los Kinks e inyectó una dosis letal de distorsión y virtuosismo. You Really Got Me suena a puro fuego en las cuerdas, con Eddie demostrando que el futuro de la guitarra acababa de empezar. ¡Autoridad!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "AC/DC",
+      "cancion": "You Shook Me All Night Long",
+      "frase": "¡Me sacudiste toda la noche! AC/DC entrega el himno definitivo de la pasión rockera. Brian Johnson ruge con autoridad en este clásico de estadios que nunca falla. Rock and roll directo, divertido e imprescindible. ¡A tope!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "Bee Gees",
+      "cancion": "You Should Be Dancing",
+      "frase": "Incluso en Rockstars, cuando el groove es tan potente, deberías estar bailando. Los Bee Gees traen esta inyección de ritmo disco-rock que te obliga a moverte. Autoridad del ritmo conquistando nuestra tarde con energía imparable.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Joe \"Bean\" Esposito",
+      "cancion": "You're The Best",
+      "frase": "¡Eres el mejor y nada va a detenerte ahora! Joe Esposito trae el espíritu de superación de los 80 con esta inyección de adrenalina pura. Canción diseñada para hacernos sentir ganadores mientras el rock impulsa a la cima. ¡Potencia!",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "John Farnham",
+      "cancion": "You're the Voice",
+      "frase": "Desde Australia llega un grito de libertad y autoridad vocal impresionante. John Farnham entrega You're the Voice, con esa gaita rockera y una melodía que te eleva hasta el infinito. Rock con alma y fuerza que hace vibrar.",
+      "nivel_confianza_contexto": "Media"
+    },
+    {
+      "artista": "Judas Priest",
+      "cancion": "You've Got Another Thing Coming",
+      "frase": "Si creías que el rock se iba a detener, ¡tenías otra cosa planeada! Judas Priest golpea con un riff de acero y autoridad del Metal God. Rock para la carretera, directo, potente y sin concesiones. ¡Sientan la fuerza del metal!",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Outfield",
+      "cancion": "Your Love",
+      "frase": "Tony Lewis nos eleva con su voz única en este himno de los 80 que nunca pasa de moda. The Outfield entregan Your Love, pura energía melódica, guitarras con el eco perfecto y un estribillo que llevamos tatuado en el alma.",
+      "nivel_confianza_contexto": "Alta"
+    },
+    {
+      "artista": "The Cranberries",
+      "cancion": "Zombie",
+      "frase": "Un grito de protesta que sacudió al mundo entero. The Cranberries lanzan Zombie, con la voz desgarradora de Dolores O'Riordan y guitarras que suenan a lamento eléctrico. Rock con conciencia y autoridad sonora.",
+      "nivel_confianza_contexto": "Alta"
+    }
+  ],
+  "frases_genericas_error": [
+    {
+      "tipo": "feed_caido",
+      "frase": "¡Atención, familia rockera! Parece que un rayo ha caído sobre nuestra torre de transmisión y el feed principal se ha ido al suelo. Pero tranquilos, que un Rockstar nunca se rinde ante la adversidad técnica. Estamos reconectando los cables para que la potencia del estadio vuelva a rugir."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "Oigan, parece que los duendes del rock han mezclado las etiquetas de mis discos. La información que ven no coincide con la gloria que están escuchando, pero aquí manda el oído y no los datos. Disfruten del sonido puro mientras pongo orden en este caos digital."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "Ese silencio sepulcral no es parte del show, gente. Hemos tenido un bache de energía en la cabina que ha callado nuestras guitarras por un segundo. Pero el rock no sabe de silencios largos; ya estamos de vuelta con el volumen al máximo para recuperar el tiempo perdido."
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "¡Vaya! Parece que este archivo ha sido masticado por una bestia del metal. Los datos están corruptos y la música no fluye como debería, pero DJ Jhon Martin tiene un arsenal de clásicos bajo la manga para que la transmisión no se detenga ni un instante."
+    },
+    {
+      "tipo": "cancion_no_detectada",
+      "frase": "Mis radares rockeros están un poco confundidos y no logran identificar el himno que está sonando. A veces el rock es así de misterioso y rebelde. No importa el nombre, lo que importa es que el riff te golpee el pecho como debe ser en Rockstars."
+    },
+    {
+      "tipo": "desconexion_temporal",
+      "frase": "Nos hemos desconectado por un momento del mundo exterior, pero nuestra pasión sigue latiendo en esta cabina. Un pequeño salto en la fibra óptica no va a silenciar a las leyendas de los 80. Ya estamos en línea de nuevo, más fuertes y ruidosos que nunca."
+    },
+    {
+      "tipo": "error_playlist",
+      "frase": "Parece que mi lista de reproducción ha decidido rebelarse y saltarse las reglas. El orden se ha ido al infierno, pero en el rock la improvisación es una virtud. Vamos a dejar que la música fluya a su antojo mientras recupero el control de la cabina."
+    },
+    {
+      "tipo": "latencia_stream",
+      "frase": "Si sienten que el rock llega con un poco de retraso, es porque la señal está viajando a la velocidad del trueno en una tormenta digital. Tenemos un poco de latencia en el stream, pero la potencia de estadio de DJ Jhon Martin compensa cualquier demora."
+    },
+    {
+      "tipo": "feed_caido",
+      "frase": "¡Maldita sea! El feed principal ha decidido tomarse un descanso sin mi permiso. Pero no se preocupen, que en Radiochar tenemos generadores de rock de emergencia. Estamos reconectando cada válvula para que la electricidad vuelva a fluir por sus altavoces de inmediato."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "No le hagan caso a lo que dice su pantalla, hoy la tecnología está un poco caprichosa y nos muestra nombres que no existen. Aquí lo que importa es el cuero, las tachuelas y el solo de guitarra que están vibrando ahora mismo. Confíen en mis oídos expertos."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "Ese bache de silencio nos ha cortado el rollo, pero solo por un segundo. Un rockero sabe que la calma siempre precede a la tormenta de distorsión. Ya estamos de regreso para reventar el silencio con la autoridad de los grandes himnos de los 80."
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "Este track parece que ha pasado por una trituradora de papel digital. El archivo está dañado y mis oídos expertos no aceptan nada que no sea perfección sonora. Vamos a saltar a la siguiente joya para que la energía de estadio no decaiga jamás."
+    },
+    {
+      "tipo": "cancion_no_detectada",
+      "frase": "La base de datos está ciega ante este temazo, pero yo sé reconocer la gloria cuando la escucho. Hay canciones tan salvajes que no se dejan etiquetar por una máquina. Disfruten del anonimato eléctrico mientras el rock sigue mandando en esta tarde."
+    },
+    {
+      "tipo": "desconexion_temporal",
+      "frase": "Un pequeño fallo en la matriz nos ha dejado fuera de juego un instante. Pero el rock tiene siete vidas y ya estamos de vuelta en la frecuencia correcta. Suban el volumen, que la desconexión solo nos ha servido para regresar con más rabia y potencia."
+    },
+    {
+      "tipo": "error_playlist",
+      "frase": "Mi playlist se ha vuelto loca y ha empezado a mezclar los años 80 como si para ella fuera una batidora. Pero tranquilos, que DJ Jhon Martin sabe navegar en el caos. Disfruten de la sorpresa mientras pongo orden en esta jungla de canciones rebeldes."
+    },
+    {
+      "tipo": "latencia_stream",
+      "frase": "La red está un poco saturada de rock pesado hoy y el stream está sufriendo para mantener el paso. Si escuchan algún salto, es solo la señal luchando por llegar a su destino. Aguanten ahí, que la potencia de estadio no entiende de esperas."
+    },
+    {
+      "tipo": "feed_caido",
+      "frase": "¡Cables sueltos y señales perdidas! El feed nos ha abandonado en plena batalla, pero ya estoy aquí para soldar la conexión con puro fuego rockero. No se muevan de la sintonía, que la transmisión oficial de Radiochar vuelve a estar en el aire ahora mismo."
+    },
+    {
+      "tipo": "metadata_incorrecta",
+      "frase": "La pantalla dice una cosa, pero mi instinto de Rockstar dice otra muy distinta. Ignoren esos datos erróneos; la verdadera información está en la distorsión que sale de sus parlantes. Estamos trabajando para que la tecnología se ponga a nuestro nivel de nuevo."
+    },
+    {
+      "tipo": "silencio_en_transmision",
+      "frase": "Un momento de silencio que nos ha dejado helados, pero el rock es puro fuego y ya estamos calentando los motores otra vez. Olviden ese vacío sonoro y prepárense para la descarga eléctrica que viene a continuación en Rockstars. ¡Nada nos detiene!"
+    },
+    {
+      "tipo": "archivo_corrupto",
+      "frase": "Este archivo ha muerto en el cumplimiento del deber rockero. Los bits están rotos y el sonido no está a la altura de mis oyentes expertos. Vamos a enterrarlo con honores y pasar a la siguiente joya que suena a gloria bendita en Radiochar."
+    }
+  ]
+}
