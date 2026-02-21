@@ -1151,7 +1151,179 @@
     }
 
 /* INICIO ESTILOS DJ */
+:root {
+            --dj-accent: #ff0055;
+            --dj-text: #ffffff;
+            --dj-transition: 450ms cubic-bezier(0.23, 1, 0.32, 1);
+        }
 
+        /* Contenedor principal: Sin background, sin borde, limpio y minimalista */
+        .dj-section-wrapper {
+            width: 100%;
+            max-width: 1000px; /* Ancho ajustado para balancear con el reproductor de radio */
+            margin: 20px auto;
+            padding: 20px;
+            background: transparent; 
+            border: none; /* Borde eliminado */
+            box-shadow: none;
+            color: var(--dj-text);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+        }
+
+        /* Estructura en dos bloques paralelos */
+        .dj-content {
+            display: flex;
+            flex-direction: row; /* Diseño horizontal */
+            align-items: center;
+            gap: 40px; /* Espacio limpio entre la imagen y los textos */
+            width: 100%;
+            transition: opacity var(--dj-transition), transform var(--dj-transition);
+            will-change: opacity, transform;
+        }
+
+        .hidden { display: none !important; }
+
+        /* BLOQUE IZQUIERDO: IMAGEN DEL DJ LIMPIA */
+        .dj-visual {
+            flex-shrink: 0;
+            width: 200px; 
+            display: flex;
+            justify-content: center;
+        }
+
+        #dj-avatar {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Se mantiene circular por elegancia, ajustado a medida exacta */
+            object-fit: cover;
+            background: #111;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4); /* Sombra sutil conservada */
+        }
+
+        /* BLOQUE DERECHO: TEXTOS JUSTIFICADOS A LA IZQUIERDA Y EXPANDIDOS */
+        .dj-info {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alinea los elementos a la izquierda */
+            text-align: left; 
+            justify-content: center;
+            flex-grow: 1;
+            width: calc(100% - 240px); /* Toma el 100% del espacio restante */
+        }
+
+        /* Contenedor para colocar Badge y Nombre en la misma línea */
+        .dj-header-inline {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap; /* Permite que baje de línea si la pantalla es muy angosta */
+            gap: 15px; /* Espacio entre el botón EN CABINA y el Nombre */
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        /* Línea 1-A: EN CABINA (A modo de botón parpadeante) */
+        .dj-badge {
+            background-color: var(--dj-accent);
+            color: #ffffff;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            padding: 4px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            display: inline-block;
+            animation: badge-blink 1.5s infinite ease-in-out;
+            white-space: nowrap;
+        }
+
+        /* Animación de parpadeo suave */
+        @keyframes badge-blink {
+            0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+            50% { opacity: 0.4; box-shadow: 0 0 0px transparent; }
+        }
+
+        /* Línea 1-B: Nombre del DJ */
+        #dj-name {
+            font-size: 20px; /* Ajuste milimétrico para que fluya perfecto al lado del botón */
+            margin: 0; /* Sin márgenes para compartir línea */
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+        }
+        
+        /* Agrega el prefijo "DJ " automáticamente sin tocar el JS */
+        #dj-name::before {
+            content: 'DJ ';
+        }
+
+        /* Línea 2: Frase a 16 puntos, extendida en el bloque disponible */
+        #dj-phrase {
+            font-size:13pt; /* Tamaño exacto solicitado */
+            font-style: italic;
+            line-height: 1.5;
+            color: #eaeaea;
+            margin: 0;
+            text-align: left; /* Confirmación de justificado a la izquierda */
+            width: 100%;
+        }
+
+        /* Comillas sutiles en blanco */
+        #dj-phrase::before, #dj-phrase::after {
+            content: '"';
+            color: #ffffff; /* Modificado a color blanco */
+            font-weight: bold;
+        }
+
+        /* Loader adaptado a la estética minimalista */
+        .dj-loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .spinner {
+            width: 45px;
+            height: 45px;
+            border: 3px solid rgba(255, 255, 255, 0.1);
+            border-top-color: var(--dj-accent);
+            border-radius: 50%;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Responsividad para móviles: Apila los bloques si la pantalla es muy pequeña */
+        @media (max-width: 650px) {
+            .dj-content {
+                flex-direction: column;
+                align-items: center; /* Centra el avatar en móviles */
+                gap: 25px;
+            }
+            .dj-visual {
+                width: auto;
+            }
+            #dj-avatar {
+                width: 160px; /* Un poco más pequeño en móviles para no desbordar */
+                height: 160px;
+            }
+            .dj-info {
+                width: 100%;
+                align-items: flex-start;
+            }
+            .dj-header-inline {
+                gap: 10px;
+            }
+            #dj-name {
+                font-size: 22px;
+            }
+        }
 /* FIN ESTILOS DJ */
 </style>
 </head>
@@ -1239,6 +1411,37 @@
     </section>
 
 <!-- INICIO HTML DJ-->
+ <section id="virtual-dj-container" class="dj-section-wrapper">
+    <!-- Loader inicial -->
+    <div id="dj-skeleton" class="dj-loading">
+        <div class="spinner"></div>
+        <p style="font-size: 10px; opacity: 0.5; letter-spacing: 2px;">SINCRONIZANDO CABINA...</p>
+    </div>
+    
+    <!-- UI Minimalista del DJ (Dos Bloques) -->
+    <div id="dj-content" class="dj-content hidden">
+        
+        <!-- Bloque Izquierdo: Ancho estricto 200px -->
+        <div class="dj-visual">
+            <img id="dj-avatar" src="" alt="DJ" loading="lazy">
+        </div>
+        
+        <!-- Bloque Derecho: Resto del contenedor -->
+        <div class="dj-info">
+            <!-- Badge y Título alineados en la misma fila -->
+            <div class="dj-header-inline">
+                <div class="dj-badge">EN CABINA</div>
+                <h3 id="dj-name">---</h3>
+            </div>
+            
+            <p id="dj-phrase">"..."</p>
+            
+            <!-- Elemento Oculto: Se mantiene para recibir el dato del JS sin mostrar "Música en vivo" -->
+            <span id="current-track" style="display: none;"></span>
+        </div>
+        
+    </div>
+</section>
 <!-- FIN HTML DJ -->
 
     <section class="content-section schedule-section">
@@ -2497,6 +2700,337 @@
   })();
 </script>
 <!-- INICIO SCRIPT DJ -->
+ <script>
+   /**
+     * RADIOCHAR VIRTUAL DJ ENGINE v3.3 (Enterprise Edition Final)
+     * Puntería Láser en DOM + Jerarquía Inviolable de Canciones
+     */
+
+    const DJ_APP = {
+        config: {
+            FEED_URL: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
+            INTERVAL: 10000, 
+            TIMEOUT: 6000,
+            // SELECTORES QUIRÚRGICOS: Cero etiquetas genéricas (h1, h2) para evitar ruido visual de la web.
+            PLAYER_SELECTORS: {
+                TITLE: '#cc_strinfo_tracktitle_robinson, .cc_strinfo_tracktitle_robinson, .track-title, .song-title',
+                ARTIST: '#cc_strinfo_trackartist_robinson, .cc_strinfo_trackartist_robinson, .track-artist, .song-artist'
+            },
+            PROGRAMS: [
+                { id: 'lover', name: 'Karol Morales', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzrMy5dZ_8OTNe_Jnb8oUnMiiZwnu7wSjX5NelzvEGveoffAgKviwv7kDf4eKQw8RokK26d01KU9c_ctAyWeurqSRP3w9_17kCkyytSkk-0ZQHeH3PDLeMQTVGFceCpzTWz1Nb6xS9-GMnyqQGtPPk6DLIHggNxNxeiJUUD7l9VPZKK6x-WaWIs6aTwGCc/s16000/DannaDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 5 },
+                { id: 'wonders', name: 'Tito González', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSfxftwe5xsNVyEXUjnWLO9-EZFFzrdWq4tfmRrd-fvY6nGgQ8o7OiWhGvTAdO6_smQt_pgo5tHty-t64RXCPDZGbBKlKFoQwF2r14Z3b1f_C6YXjynGA2I1eOYKbh03PMQ7OMnrlnkHO7v_y-x6yygp3DKG0ifVBoKjlPtd5o2II0TCGlxI7K3wuRi2P_/s16000/JhonDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 5, end: 10 },
+                { id: 'piedras', name: 'Salma Cifuentes', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ_a3bu8sIVyMUg25K9MjRuCC7xLmUncSSmT3HhOpoVO8Cu9_VsfzfP8y0jvOf5V9y5oioQ8jOYOPicRfA8fTS0n9evteaNPCI3M6VsjwS2HFtbHmuuEsmSd6pUcWqK2nTG-FVeHo0Wa6lgC8RxA_5wVtA9g6Bxq35fFqUOXMT667ih5lag5q_r6VZFcCB/s16000/TitoDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 10, end: 15 },
+                { id: 'rockstars', name: 'Jhon Martin', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghGlBQlHUoFaWx8hg6hsmVW9zN0yvCpwAa6ar51eluTrhKwGvtp6SO-0KBoEGVl6U0T5zRj4ufIA4LasO79JHjvJlLgPEsbK952xUmw-s4OmWFuh5xQluZJkmbPRhRCeKNmyb8s0LDRtuYhUVVmYShe3eHWSVgUrlrbFM05wYBjLclkBL7h26XLScojLd-/s16000/SalmaDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
+                { id: 'hits', name: 'Miranda Fuentes', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDzoq_pTmC45CLGbrYWwHAjVegHcJ6h0adHxybVEBXOjp0tzRwesUhAHieyNfA6tAijA1wW79b0NpUwItTgzGEX-_ybsMic9WsSYAshhLu8kT9YxjR8cwNZ_BlsLphXR4wmE7jVmL4yIUJ85VhCzB5EBn0HnXVTJT47DgvcHcA5ouhvOQQgwu5W8iVTpKW/s16000/KarolDJ%20(1).png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
+            ],
+            FALLBACKS: [
+                "¡Disfruta de la mejor música en Radiochar!",
+                "Conectados con tu ritmo las 24 horas.",
+                "Siente la energía de nuestra programación virtual.",
+                "Transmitiendo éxitos sin fronteras."
+            ]
+        },
+        state: { cache: {}, lastTrackId: null, isFirstRun: true, isLoaded: false }
+    };
+
+    /**
+     * NORMALIZACIÓN ESTRICTA
+     */
+    function normalize(str) {
+        if (!str) return '';
+        return str.toString()
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Limpia tildes
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, ''); // Deja sólo alfanuméricos continuos para un match inquebrantable
+    }
+
+    function getActiveDJ() {
+        const hour = new Date().getHours();
+        return DJ_APP.config.PROGRAMS.find(p => hour >= p.start && hour < p.end) || DJ_APP.config.PROGRAMS[0];
+    }
+
+    /**
+     * EXTRACTOR INDESTRUCTIBLE v3
+     */
+    function salvageJSON(text) {
+        let cleanText = text
+            .replace(/[\u201C\u201D\u201F\u2033\u2036]/g, '"') 
+            .replace(/[\u2018\u2019\u201A\u201B]/g, "'")
+            .replace(/[\u0000-\u001F\u007F-\u009F]/g, "") 
+            .replace(/^\uFEFF/, "");
+
+        let results = [];
+        try { 
+            const parsed = JSON.parse(cleanText);
+            const data = parsed.frases_por_cancion || (parsed.programa && parsed.programa.frases_por_cancion) || parsed;
+            if (Array.isArray(data)) return data;
+        } catch (e) {
+            console.warn("⚠️ [JSON ENGINE] Error de sintaxis detectado. Activando Extractor Manual Regex...");
+        }
+
+        const blocks = cleanText.match(/\{[^}]*?"frase"[^}]*\}/gi);
+        if (blocks) {
+            blocks.forEach(b => {
+                try {
+                    let fixed = b.replace(/,\s*\}/g, '}'); // Repara comas finales
+                    let pFrag = JSON.parse(fixed);
+                    if (pFrag.frase) results.push(pFrag);
+                } catch(err) {
+                    const artM = b.match(/"artista"\s*:\s*"((?:\\"|[^"])*)"/i);
+                    const titM = b.match(/"(?:cancion|titulo)"\s*:\s*"((?:\\"|[^"])*)"/i);
+                    const phrM = b.match(/"frase"\s*:\s*"((?:\\"|[^"])*)"/i);
+                    
+                    if (phrM) {
+                        results.push({
+                            artista: artM ? artM[1].replace(/\\"/g, '"') : "",
+                            cancion: titM ? titM[1].replace(/\\"/g, '"') : "",
+                            frase: phrM[1].replace(/\\"/g, '"')
+                        });
+                    }
+                }
+            });
+        }
+        return results.length > 0 ? results : null;
+    }
+
+    async function preloadLibrary() {
+        console.log("🛠️ [VIRTUAL DJ] Reconstruyendo Caché de Conocimiento...");
+        const tasks = DJ_APP.config.PROGRAMS.map(async (prog) => {
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), DJ_APP.config.TIMEOUT);
+                const response = await fetch(`${prog.json}?v=${Date.now()}`, { signal: controller.signal });
+                clearTimeout(timeoutId);
+
+                if (!response.ok) throw new Error("HTTP Status " + response.status);
+                const text = await response.text();
+                const data = salvageJSON(text);
+                
+                DJ_APP.state.cache[prog.id] = data || []; 
+            } catch (err) {
+                console.error(`[ERROR] Conexión fallida con el archivo: ${prog.id}`);
+                DJ_APP.state.cache[prog.id] = []; 
+            }
+        });
+        
+        await Promise.allSettled(tasks);
+        DJ_APP.state.isLoaded = true;
+        console.log("✅ [VIRTUAL DJ] Motores de texto listos.");
+    }
+
+    /**
+     * ALGORITMO DETERMINISTA (Cero Caos)
+     * Prioridad Absoluta a la Canción, no al artista solitario.
+     */
+    function getPhrase(progId, currentArtist, currentTitle) {
+        const library = DJ_APP.state.cache[progId];
+        
+        if (!library || !Array.isArray(library) || library.length === 0) {
+            return DJ_APP.config.FALLBACKS[Math.floor(Math.random() * DJ_APP.config.FALLBACKS.length)];
+        }
+
+        const nTitle = normalize(currentTitle);
+        const nArtist = normalize(currentArtist);
+
+        console.log(`[🔍 MATCH] Buscando: Canción="${nTitle}" | Artista="${nArtist}"`);
+
+        // 1: Buscar estrictamente por CANCIÓN primero (La Llave Maestra)
+        const songMatches = library.filter(item => {
+            const jsonTitle = normalize(item.titulo || item.cancion || "");
+            if (!jsonTitle || jsonTitle.length < 3) return false;
+            return jsonTitle === nTitle || nTitle.includes(jsonTitle) || jsonTitle.includes(nTitle);
+        });
+
+        if (songMatches.length > 0) {
+            // 2: Confirmar que el artista concuerda (Evita covers equivocados)
+            const perfectMatch = songMatches.find(item => {
+                const jsonArtist = normalize(item.artista || "");
+                return jsonArtist === nArtist || nArtist.includes(jsonArtist) || jsonArtist.includes(nArtist);
+            });
+
+            if (perfectMatch && perfectMatch.frase) {
+                console.log(`[✅ MATCH 100%] Canción y Artista confirmados.`);
+                return perfectMatch.frase;
+            }
+
+            if (songMatches[0].frase) {
+                console.log(`[⚠️ MATCH PARCIAL] Canción confirmada.`);
+                return songMatches[0].frase;
+            }
+        }
+
+        // 3: PROTECCIÓN ANTI-CAOS. Si la canción no está, jamás decir otra del mismo artista.
+        console.log(`[🛑 SIN MATCH] Retornando frase genérica segura.`);
+        
+        const genericLibraryPhrases = library.filter(item => {
+            const jsonTitle = normalize(item.titulo || item.cancion || "");
+            return jsonTitle === "" || jsonTitle === "generico";
+        });
+
+        if (genericLibraryPhrases.length > 0) {
+            return genericLibraryPhrases[Math.floor(Math.random() * genericLibraryPhrases.length)].frase;
+        }
+
+        return DJ_APP.config.FALLBACKS[Math.floor(Math.random() * DJ_APP.config.FALLBACKS.length)];
+    }
+
+    /**
+     * DOM SCRAPER CON LISTA NEGRA BLINDADA
+     * Previene que el scraper lea menús y subtítulos ("Artista", "Cargando", etc.)
+     */
+    function getTrackFromDOM() {
+        try {
+            const titleEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.TITLE);
+            const artistEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.ARTIST);
+            
+            let title = "";
+            let artist = "";
+
+            // PALABRAS PROHIBIDAS: Si la web tiene estos textos estáticos, los ignora.
+            const invalidWords = [
+                'ESTAMOS PRESENTANDO', 'CARGANDO', 'RADIOCHAR', 'AL AIRE', 
+                'PIDE TU CANCIÓN', 'ROCKSTARS', 'HITS DON', 'ARTISTA', 
+                'SINTONIZANDO', 'TITULO', 'CANCION', 'CONECTANDO'
+            ];
+            
+            const isCleanText = (txt) => {
+                if (!txt) return false;
+                const upper = txt.toUpperCase().trim();
+                if (upper.length < 2) return false;
+                
+                // Si la palabra está en la lista negra, la descarta
+                for (let word of invalidWords) {
+                    if (upper.includes(word) || upper === word) return false;
+                }
+                return true;
+            };
+
+            for (let el of titleEls) {
+                let text = (el.innerText || el.textContent).trim();
+                if (isCleanText(text)) { title = text; break; }
+            }
+
+            for (let el of artistEls) {
+                let text = (el.innerText || el.textContent).trim();
+                if (isCleanText(text) && text !== title) { artist = text; break; }
+            }
+
+            if (title) {
+                if (!artist && title.includes(' - ')) {
+                    const parts = title.split(' - ');
+                    artist = parts[0].trim();
+                    title = parts.slice(1).join(' - ').trim();
+                }
+                return { artist: artist || "Radiochar", title, source: 'DOM' };
+            }
+        } catch (e) {}
+        return null; // Si no hay DOM limpio, forzará a usar el Feed que sí es exacto
+    }
+
+    async function getTrackFromFeed() {
+        try {
+            const controller = new AbortController();
+            const id = setTimeout(() => controller.abort(), 5000);
+            const response = await fetch(`${DJ_APP.config.FEED_URL}?t=${Date.now()}`, { signal: controller.signal });
+            clearTimeout(id);
+            if (!response.ok) return null;
+            const data = await response.json();
+            
+            if (data && data.length > 0 && data[0].title) {
+                let trackArtist = data[0].artist;
+                let trackTitle = data[0].title;
+                
+                if (!trackArtist && trackTitle.includes(' - ')) {
+                    const parts = trackTitle.split(' - ');
+                    trackArtist = parts[0].trim();
+                    trackTitle = parts.slice(1).join(' - ').trim();
+                }
+                
+                return { artist: trackArtist || "Radiochar", title: trackTitle, source: 'FEED' };
+            }
+        } catch (e) {}
+        return null;
+    }
+
+    function updateUI(dj, trackInfo, phrase) {
+        const container = document.getElementById('dj-content');
+        const skeleton = document.getElementById('dj-skeleton');
+
+        if (skeleton) skeleton.classList.add('hidden');
+        if (container) container.classList.remove('hidden');
+
+        container.style.opacity = '0';
+        container.style.transform = 'translateY(5px)';
+
+        setTimeout(() => {
+            document.getElementById('dj-avatar').src = dj.img;
+            document.getElementById('dj-name').textContent = dj.name;
+            document.getElementById('current-track').textContent = trackInfo;
+            const phraseClean = phrase.replace(/^["']+|["']+$/g, '').trim();
+            document.getElementById('dj-phrase').textContent = phraseClean;
+            container.style.opacity = '1';
+            container.style.transform = 'translateY(0)';
+        }, 200);
+    }
+
+    async function syncStation() {
+        // El DOM intentará leer primero. Si lee basura, fallará y pasará al FEED (Que es 100% confiable)
+        const trackData = getTrackFromDOM() || await getTrackFromFeed();
+        
+        if (!trackData) {
+            console.warn("[⚠️ VIRTUAL DJ] Sin señal del reproductor. Mostrando fallback.");
+            if (DJ_APP.state.isFirstRun) {
+                const dj = getActiveDJ();
+                updateUI(dj, "Radiochar - Música en vivo", DJ_APP.config.FALLBACKS[0]);
+                DJ_APP.state.isFirstRun = false;
+            }
+            return;
+        }
+
+        const { artist, title, source } = trackData;
+        const currentTrackId = normalize(`${artist}${title}`);
+
+        if (currentTrackId === DJ_APP.state.lastTrackId && !DJ_APP.state.isFirstRun) return;
+
+        console.log(`[📡 LECTURA ${source}] Sonando: ${artist} - ${title}`);
+
+        const activeDJ = getActiveDJ();
+        const phrase = getPhrase(activeDJ.id, artist, title);
+        
+        updateUI(activeDJ, `${artist} - ${title}`, phrase);
+        DJ_APP.state.lastTrackId = currentTrackId;
+        DJ_APP.state.isFirstRun = false;
+    }
+
+    window.addEventListener('load', async () => {
+        // WATCHDOG TIMER (Seguro Anti-Congelamiento de 7 Segundos)
+        const safetyTimeout = setTimeout(() => {
+            if (DJ_APP.state.isFirstRun) {
+                console.warn("[VIRTUAL DJ] Timeout. Forzando UI de emergencia...");
+                const dj = getActiveDJ();
+                updateUI(dj, "Radiochar - Conectado", DJ_APP.config.FALLBACKS[0]);
+                DJ_APP.state.isFirstRun = false;
+            }
+        }, 7000);
+
+        try {
+            await preloadLibrary();
+            await syncStation();
+            clearTimeout(safetyTimeout);
+            
+            const observer = new MutationObserver(() => syncStation());
+            observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+            
+            setInterval(syncStation, DJ_APP.config.INTERVAL);
+        } catch (e) {
+            console.error("[CRÍTICO] Fallo general de motor:", e);
+            clearTimeout(safetyTimeout);
+            const dj = getActiveDJ();
+            updateUI(dj, "Radiochar - Sistema Activo", DJ_APP.config.FALLBACKS[0]);
+            DJ_APP.state.isFirstRun = false;
+        }
+    });
+ </script>
 <!-- FIN SCRIT DJ -->
 </body>
 </html>
