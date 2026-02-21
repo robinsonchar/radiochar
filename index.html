@@ -1173,15 +1173,18 @@
             font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
         }
 
+        /* Regla Maestra: Oculta la estructura principal si el skeleton NO está oculto */
+        #dj-skeleton:not(.hidden) ~ .dj-main-layout {
+            display: none !important;
+        }
+
         /* Estructura en dos bloques paralelos */
-        .dj-content {
+        .dj-main-layout {
             display: flex;
             flex-direction: row; /* Diseño horizontal */
             align-items: center;
             gap: 40px; /* Espacio limpio entre la imagen y los textos */
             width: 100%;
-            transition: opacity var(--dj-transition), transform var(--dj-transition);
-            will-change: opacity, transform;
         }
 
         .hidden { display: none !important; }
@@ -1212,6 +1215,8 @@
             justify-content: center;
             flex-grow: 1;
             width: calc(100% - 240px); /* Toma el 100% del espacio restante */
+            transition: opacity var(--dj-transition), transform var(--dj-transition);
+            will-change: opacity, transform;
         }
 
         /* Contenedor para colocar Badge y Nombre en la misma línea */
@@ -1301,7 +1306,7 @@
 
         /* Responsividad para móviles: Apila los bloques si la pantalla es muy pequeña */
         @media (max-width: 650px) {
-            .dj-content {
+            .dj-main-layout {
                 flex-direction: column;
                 align-items: center; /* Centra el avatar en móviles */
                 gap: 25px;
@@ -1328,13 +1333,6 @@
 </style>
 </head>
 <body>
-
-<!-- ... (El resto del HTML y el script JS se mantienen idénticos, garantizando la funcionalidad completa) ... -->
-<!-- Nota: Para ahorrar espacio en el chat, asumo que el bloque <body> content y <script> 
-     es el mismo de la versión anterior (V30.0), ya que solo hemos tocado CSS en esta iteración. -->
-
-<!-- SE REINSERTA EL BODY CONTENT COMPLETO Y EL SCRIPT DE LA V30 PARA QUE EL ARCHIVO SEA FUNCIONAL AL 100% -->
-<!-- (Aquí va todo el contenido del body de la versión anterior) -->
 
 <div class="background-blur visual-transition" id="bgBlur"></div>
 <div class="splash-screen"><h1>Sintonizando...</h1><div class="spinner"></div></div>
@@ -1419,15 +1417,15 @@
     </div>
     
     <!-- UI Minimalista del DJ (Dos Bloques) -->
-    <div id="dj-content" class="dj-content hidden">
+    <div class="dj-main-layout">
         
-        <!-- Bloque Izquierdo: Ancho estricto 200px -->
+        <!-- Bloque Izquierdo: Imagen FIJA (Ya no tiene el ID que usa el JS) -->
         <div class="dj-visual">
             <img id="dj-avatar" src="" alt="DJ" loading="lazy">
         </div>
         
-        <!-- Bloque Derecho: Resto del contenedor -->
-        <div class="dj-info">
+        <!-- Bloque Derecho: TEXTOS ANIMADOS (AQUÍ le pusimos el id="dj-content") -->
+        <div id="dj-content" class="dj-info hidden">
             <!-- Badge y Título alineados en la misma fila -->
             <div class="dj-header-inline">
                 <div class="dj-badge">EN CABINA</div>
@@ -1436,7 +1434,7 @@
             
             <p id="dj-phrase">"..."</p>
             
-            <!-- Elemento Oculto: Se mantiene para recibir el dato del JS sin mostrar "Música en vivo" -->
+            <!-- Elemento Oculto: Recibe el dato de la canción sin romper el diseño -->
             <span id="current-track" style="display: none;"></span>
         </div>
         
@@ -2587,25 +2585,24 @@
 })(); // END IIFE
 </script>
 <script src="https://cast2.my-control-panel.com/system/streaminfo.js"></script>
-<script src="https://cast2.my-control-panel.com/system/recenttracks.js">
+<script src="https://cast2.my-control-panel.com/system/recenttracks.js"></script>
 
-  // ============================================================================
-  // CARRUSEL PARA REPOSITORIO EN MÓVILES
-  // ============================================================================
+  <!-- ============================================================================
+  CARRUSEL PARA REPOSITORIO EN MÓVILES
+  ============================================================================ -->
+  <script>
   (function() {
     let currentRepoIndex = 0;
     const repoGrid = document.querySelector('.repo-grid');
 
     if (!repoGrid) return;
 
-    // Crear wrapper y botones de navegación
     function initRepoCarousel() {
-      if (window.innerWidth > 700) return; // Solo en móviles
+      if (window.innerWidth > 700) return; 
 
       const repoCards = Array.from(repoGrid.querySelectorAll('.repo-card'));
       if (repoCards.length === 0) return;
 
-      // Crear estructura de carrusel si no existe
       if (!repoGrid.parentElement.classList.contains('repo-carousel-wrapper')) {
         const wrapper = document.createElement('div');
         wrapper.className = 'repo-carousel-wrapper';
@@ -2626,7 +2623,6 @@
         nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
         nextBtn.setAttribute('aria-label', 'Siguiente');
 
-        // Mover las tarjetas al contenedor
         repoCards.forEach(card => container.appendChild(card));
 
         wrapper.appendChild(prevBtn);
@@ -2636,7 +2632,6 @@
         repoGrid.parentElement.insertBefore(wrapper, repoGrid);
         repoGrid.style.display = 'none';
 
-        // Event listeners
         prevBtn.addEventListener('click', () => navigateRepo(-1));
         nextBtn.addEventListener('click', () => navigateRepo(1));
       }
@@ -2652,7 +2647,6 @@
 
       currentRepoIndex = Math.max(0, Math.min(maxIndex, currentRepoIndex + direction));
 
-      // Ocultar todas las tarjetas
       cards.forEach((card, idx) => {
         if (idx >= currentRepoIndex && idx < currentRepoIndex + cardsPerView) {
           card.style.display = 'block';
@@ -2661,7 +2655,6 @@
         }
       });
 
-      // Actualizar estado de botones
       const prevBtn = document.querySelector('.repo-carousel-nav.prev');
       const nextBtn = document.querySelector('.repo-carousel-nav.next');
 
@@ -2669,10 +2662,9 @@
       if (nextBtn) nextBtn.style.opacity = currentRepoIndex >= maxIndex ? '0.5' : '1';
     }
 
-    // Inicializar en carga y resize
     if (window.innerWidth <= 700) {
       initRepoCarousel();
-      navigateRepo(0); // Mostrar primeras tarjetas
+      navigateRepo(0); 
     }
 
     let resizeTimeout;
@@ -2683,7 +2675,6 @@
           initRepoCarousel();
           navigateRepo(0);
         } else {
-          // Restaurar grid normal en escritorio
           const wrapper = document.querySelector('.repo-carousel-wrapper');
           if (wrapper && repoGrid) {
             const cards = Array.from(wrapper.querySelectorAll('.repo-card'));
@@ -2699,11 +2690,12 @@
     });
   })();
 </script>
+
 <!-- INICIO SCRIPT DJ -->
  <script>
    /**
-     * RADIOCHAR VIRTUAL DJ ENGINE v3.3 (Enterprise Edition Final)
-     * Puntería Láser en DOM + Jerarquía Inviolable de Canciones
+     * RADIOCHAR VIRTUAL DJ ENGINE v3.4 (Ultimate Edition)
+     * Puntería Láser en DOM + Jerarquía Inviolable + Fix de Identidades y Horarios
      */
 
     const DJ_APP = {
@@ -2711,17 +2703,17 @@
             FEED_URL: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
             INTERVAL: 10000, 
             TIMEOUT: 6000,
-            // SELECTORES QUIRÚRGICOS: Cero etiquetas genéricas (h1, h2) para evitar ruido visual de la web.
             PLAYER_SELECTORS: {
                 TITLE: '#cc_strinfo_tracktitle_robinson, .cc_strinfo_tracktitle_robinson, .track-title, .song-title',
                 ARTIST: '#cc_strinfo_trackartist_robinson, .cc_strinfo_trackartist_robinson, .track-artist, .song-artist'
             },
+            // FIX: Horarios, nombres e imágenes sincronizados correctamente.
             PROGRAMS: [
-                { id: 'lover', name: 'Karol Morales', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzrMy5dZ_8OTNe_Jnb8oUnMiiZwnu7wSjX5NelzvEGveoffAgKviwv7kDf4eKQw8RokK26d01KU9c_ctAyWeurqSRP3w9_17kCkyytSkk-0ZQHeH3PDLeMQTVGFceCpzTWz1Nb6xS9-GMnyqQGtPPk6DLIHggNxNxeiJUUD7l9VPZKK6x-WaWIs6aTwGCc/s16000/DannaDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 5 },
-                { id: 'wonders', name: 'Tito González', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSfxftwe5xsNVyEXUjnWLO9-EZFFzrdWq4tfmRrd-fvY6nGgQ8o7OiWhGvTAdO6_smQt_pgo5tHty-t64RXCPDZGbBKlKFoQwF2r14Z3b1f_C6YXjynGA2I1eOYKbh03PMQ7OMnrlnkHO7v_y-x6yygp3DKG0ifVBoKjlPtd5o2II0TCGlxI7K3wuRi2P_/s16000/JhonDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 5, end: 10 },
-                { id: 'piedras', name: 'Salma Cifuentes', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQ_a3bu8sIVyMUg25K9MjRuCC7xLmUncSSmT3HhOpoVO8Cu9_VsfzfP8y0jvOf5V9y5oioQ8jOYOPicRfA8fTS0n9evteaNPCI3M6VsjwS2HFtbHmuuEsmSd6pUcWqK2nTG-FVeHo0Wa6lgC8RxA_5wVtA9g6Bxq35fFqUOXMT667ih5lag5q_r6VZFcCB/s16000/TitoDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 10, end: 15 },
-                { id: 'rockstars', name: 'Jhon Martin', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghGlBQlHUoFaWx8hg6hsmVW9zN0yvCpwAa6ar51eluTrhKwGvtp6SO-0KBoEGVl6U0T5zRj4ufIA4LasO79JHjvJlLgPEsbK952xUmw-s4OmWFuh5xQluZJkmbPRhRCeKNmyb8s0LDRtuYhUVVmYShe3eHWSVgUrlrbFM05wYBjLclkBL7h26XLScojLd-/s16000/SalmaDJ.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
-                { id: 'hits', name: 'Miranda Fuentes', img: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDzoq_pTmC45CLGbrYWwHAjVegHcJ6h0adHxybVEBXOjp0tzRwesUhAHieyNfA6tAijA1wW79b0NpUwItTgzGEX-_ybsMic9WsSYAshhLu8kT9YxjR8cwNZ_BlsLphXR4wmE7jVmL4yIUJ85VhCzB5EBn0HnXVTJT47DgvcHcA5ouhvOQQgwu5W8iVTpKW/s16000/KarolDJ%20(1).png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
+                { id: 'lover', name: 'Karol Morales', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
+                { id: 'wonders', name: 'Tito González', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
+                { id: 'piedras', name: 'Salma Cifuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
+                { id: 'rockstars', name: 'Jhon Martin', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
+                { id: 'hits', name: 'Miranda Fuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
             ],
             FALLBACKS: [
                 "¡Disfruta de la mejor música en Radiochar!",
@@ -2739,9 +2731,9 @@
     function normalize(str) {
         if (!str) return '';
         return str.toString()
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Limpia tildes
+            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
             .toLowerCase()
-            .replace(/[^a-z0-9]/g, ''); // Deja sólo alfanuméricos continuos para un match inquebrantable
+            .replace(/[^a-z0-9]/g, ''); 
     }
 
     function getActiveDJ() {
@@ -2772,7 +2764,7 @@
         if (blocks) {
             blocks.forEach(b => {
                 try {
-                    let fixed = b.replace(/,\s*\}/g, '}'); // Repara comas finales
+                    let fixed = b.replace(/,\s*\}/g, '}'); 
                     let pFrag = JSON.parse(fixed);
                     if (pFrag.frase) results.push(pFrag);
                 } catch(err) {
@@ -2820,7 +2812,6 @@
 
     /**
      * ALGORITMO DETERMINISTA (Cero Caos)
-     * Prioridad Absoluta a la Canción, no al artista solitario.
      */
     function getPhrase(progId, currentArtist, currentTitle) {
         const library = DJ_APP.state.cache[progId];
@@ -2834,7 +2825,6 @@
 
         console.log(`[🔍 MATCH] Buscando: Canción="${nTitle}" | Artista="${nArtist}"`);
 
-        // 1: Buscar estrictamente por CANCIÓN primero (La Llave Maestra)
         const songMatches = library.filter(item => {
             const jsonTitle = normalize(item.titulo || item.cancion || "");
             if (!jsonTitle || jsonTitle.length < 3) return false;
@@ -2842,7 +2832,6 @@
         });
 
         if (songMatches.length > 0) {
-            // 2: Confirmar que el artista concuerda (Evita covers equivocados)
             const perfectMatch = songMatches.find(item => {
                 const jsonArtist = normalize(item.artista || "");
                 return jsonArtist === nArtist || nArtist.includes(jsonArtist) || jsonArtist.includes(nArtist);
@@ -2859,7 +2848,6 @@
             }
         }
 
-        // 3: PROTECCIÓN ANTI-CAOS. Si la canción no está, jamás decir otra del mismo artista.
         console.log(`[🛑 SIN MATCH] Retornando frase genérica segura.`);
         
         const genericLibraryPhrases = library.filter(item => {
@@ -2874,10 +2862,6 @@
         return DJ_APP.config.FALLBACKS[Math.floor(Math.random() * DJ_APP.config.FALLBACKS.length)];
     }
 
-    /**
-     * DOM SCRAPER CON LISTA NEGRA BLINDADA
-     * Previene que el scraper lea menús y subtítulos ("Artista", "Cargando", etc.)
-     */
     function getTrackFromDOM() {
         try {
             const titleEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.TITLE);
@@ -2886,7 +2870,6 @@
             let title = "";
             let artist = "";
 
-            // PALABRAS PROHIBIDAS: Si la web tiene estos textos estáticos, los ignora.
             const invalidWords = [
                 'ESTAMOS PRESENTANDO', 'CARGANDO', 'RADIOCHAR', 'AL AIRE', 
                 'PIDE TU CANCIÓN', 'ROCKSTARS', 'HITS DON', 'ARTISTA', 
@@ -2898,7 +2881,6 @@
                 const upper = txt.toUpperCase().trim();
                 if (upper.length < 2) return false;
                 
-                // Si la palabra está en la lista negra, la descarta
                 for (let word of invalidWords) {
                     if (upper.includes(word) || upper === word) return false;
                 }
@@ -2924,7 +2906,7 @@
                 return { artist: artist || "Radiochar", title, source: 'DOM' };
             }
         } catch (e) {}
-        return null; // Si no hay DOM limpio, forzará a usar el Feed que sí es exacto
+        return null; 
     }
 
     async function getTrackFromFeed() {
@@ -2974,7 +2956,6 @@
     }
 
     async function syncStation() {
-        // El DOM intentará leer primero. Si lee basura, fallará y pasará al FEED (Que es 100% confiable)
         const trackData = getTrackFromDOM() || await getTrackFromFeed();
         
         if (!trackData) {
@@ -3003,7 +2984,6 @@
     }
 
     window.addEventListener('load', async () => {
-        // WATCHDOG TIMER (Seguro Anti-Congelamiento de 7 Segundos)
         const safetyTimeout = setTimeout(() => {
             if (DJ_APP.state.isFirstRun) {
                 console.warn("[VIRTUAL DJ] Timeout. Forzando UI de emergencia...");
@@ -3031,6 +3011,6 @@
         }
     });
  </script>
-<!-- FIN SCRIT DJ -->
+<!-- FIN SCRIPT DJ -->
 </body>
 </html>
