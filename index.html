@@ -313,11 +313,36 @@
     .cbox-form-wrapper { height: 128px !important; width: 100%; border: 0 !important; border-top: 1px solid rgba(255,255,255,0.1); display: block; margin: 0; padding: 0; overflow: hidden; }
     #cboxdiv iframe { width: 100%; height: 100%; border: 0; display: block; vertical-align: bottom; margin: 0; padding: 0; }
     
-    /* --- SECCIÓN DIRECTORIOS (SIN FILTROS) --- */
-    .directories-grid { display: flex; justify-content: center; align-items: center; gap: 30px; flex-wrap: wrap; }
-    .directory-link { display: block; transition: all 0.3s ease; }
-    .directory-logo { height: 50px; width: auto; filter: none; opacity: 1; transition: transform 0.3s ease; }
-    .directory-link:hover .directory-logo { transform: scale(1.05); }
+    /* --- SECCIÓN DIRECTORIOS (MARQUESINA INFINITA) --- */
+    .marquee-wrapper {
+        overflow: hidden;
+        width: 100%;
+        position: relative;
+        display: flex;
+        /* Difuminado elegante en los bordes izquierdo y derecho */
+        mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+        -webkit-mask-image: linear-gradient(to right, transparent, black 2%, black 98%, transparent);
+        padding: 10px 0;
+    }
+    .marquee-track {
+        display: flex;
+        width: max-content;
+        /* Ajusta los segundos (40s) para hacerlo más rápido o más lento */
+        animation: scroll-marquee 40s linear infinite;
+    }
+    .marquee-track:hover {
+        animation-play-state: paused;
+    }
+    .marquee-content {
+        display: flex;
+        gap: 30px;
+        padding-right: 30px; /* Igual al gap para asegurar continuidad */
+    }
+    @keyframes scroll-marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+    
     .directory-card { flex: 0 0 250px; background: rgba(30, 30, 30, 0.4); border-radius: 12px; overflow: hidden; position: relative; cursor: pointer; border: 1px solid rgba(255,255,255,0.05); transition: transform 0.3s ease, background 0.3s ease; display: block; text-decoration: none; backface-visibility: hidden; transform: translateZ(0); }
     .directory-card:hover { transform: translateY(-5px); background: rgba(255, 255, 255, 0.08); border-color: var(--color-accent-orange); }
     .directory-logo-wrap { width: 100%; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center; padding: 20px; }
@@ -958,21 +983,36 @@
     
     <section class="content-section directories-section-container">
         <div class="section-header-common"><h2 class="section-title-common directories-title-custom">DISPONIBLE EN DIRECTORIOS</h2></div>
-        <div class="carousel-wrapper-common">
-            <div class="slider-arrow left" id="directoriesPrev"><i class="fas fa-chevron-left"></i></div>
-            <div class="slider-arrow right" id="directoriesNext"><i class="fas fa-chevron-right"></i></div>
-            <div class="carousel-track-common" id="directoriesTrack">
-				<a href="https://www.getmeradio.com/stations/radiochar-11470/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp-GTg6Hb14M_ZLaFlZnkMaT0LkMmYPYPxGx1G_mezigt_JHoZyXdshlj4_tPVv79uftLUskRJPSor0YJwxsap0NoIlqDq368sUpUgEgSMEPxitK9ktyUAJyW582ozNjKdo_w0Qxuj2RG82vg5qAiG9GsrysMcCN-eXKy_jCIFSjcPQ1iKACfvBdPiyb5L/s300/GetMeRadio.png" alt="Get Me Radio"></div><div class="directory-name">Get Me Radio</div></a>
-                <a href="https://forwardmystream.com/station/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSWNNZIAGbnOPGKEPyVTzsIaaRzniqoU9cEdC4iwlBnLIMBKeGBZogMGUU0RKK0s2MC0d2emRjKVonc23mKSPXSBu84Fs2byEA89VOTnlonf9god3RXs4ziQ9GEI72i_2IvAt3lr2_cxJdsBRpAWTwGTMwbp3sYnyYsX4r1IQ2YjjG33ZDLskLxTQlcZs1/s1600/ForwardMyStream.png" alt="Forward My Stream"></div><div class="directory-name">Forward My Stream</div></a>
-                <a href="https://theonestopradio.com/radio/radiochar%20co" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIk_IUagLJ5h6UYoFUcaCveJ-iDfGsYayy63caTzNQKOM_5lubkZvpONuZenvm0BK62dohkoZhWTF99ZTQwJNQJ-7yX0tatTgC3dAZQZ_La7breT9daLTQKrsn6WM9DLxFz4N5NV7Fu_ZdVwtkne05V-E9qLQpZQnVRXLCz1-Vgftb1vgzDSQifcn-c0bR/s1600/TheOneStopRadio.png" alt="The OneStop Radio"></div><div class="directory-name">The OneStop Radio</div></a>
-                <a href="http://tun.in/sfKBJ" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxPhIPia7P4pYMXosrf5d5CfqqNfX08wWGebiC4haJsbte021F2AVfd12PrKjbalBC1d-ewSoA7fFVeYIkCLrHm80nu4lhBfzm0PFYuhjpZk6gdFg6Mx-Bl5iQbyWpt3eDvq-ze1ewT5Vx6qv0Osy5nNFtvwgJWrg0yeD7VlVMWvVQ4OZH8HFd-K8CvaPK/s16000/logo%20tunein%20color.png" alt="Tunein"></div><div class="directory-name">TuneIn</div></a>
-                <a href="https://mytuner-radio.com/radio/radiochar-514035/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnioQJBDi-nzHfdkEmfjo3Q6bSEt7q6qYJk0O5mzXby7Zluv-5fI_b5LPiVOH1S3uRMGCNKGCN3oTseGcFIDaC9leVi5f5EGt43Narxc48MDZGtP_VV7ifbiVst-DByLdz0mjkFbj710O5Ru8NEm8NsPO-e1vPnG4f9BCCcYTFgnlccvEi_zZbo-Et6WtA/s1600/logo%20mytuner%20color.png" alt="MyTuner"></div><div class="directory-name">MyTuner</div></a>
-                <a href="https://onlineradiobox.com/co/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir-HbCUabt3Jm5QUfKOQZsc1b3VRCfKpcbCWAjnPUZqIfb2rRaMUKrCXCF6S-ZvT6FQmj9FRYDZM_SyCAqxD-Zadfgwu5Cgg-kXQZRFjpvfP2J_G4FS4J6hMmQcj-MRtAMFvzxbtClpVrdgF2nfm9W-U1inZNvf_kQY1xdX5VYEh8MU9dNKOfO0kb83c1y/s1600/logo%20onlineradiobox%20color.png" alt="Online Radio Box"></div><div class="directory-name">Radio Box</div></a>
-		        <a href="https://www.radio.net/s/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYNZwPLx_VygFzysh9hAK6RVQvFqhiIqDP1KHEALTiNgK1pUcRdZEdWhWElK35zFQMwiWz-KiMLEUyYJfpeAkS0iQxdpC8JNP9Ox8kXQniQBvD_xN3tGOGWByRpkt8T4Me005LYQzMAPYmog8LbGobqnJSRh4kCSpBGAZlqJlIgynHPCOPv-s3aI6bl9GN/s16000/logo%20radionet%20color.png" alt="Radio.net"></div><div class="directory-name">Radio.net</div></a>
-                <a href="https://www.emisorascolombianas.co/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4tgA98MOTW8Jg9VLB8ffw1AzyRGfJmXkA_psX8pUP4WdjuCoNXgRQn_QROUc1YKfA45ksGckzRIEftcq_aQEgJJ9LOh5MXogP8_Fun0EZehgd8wq4yE-Ee8IsqibkjuMkbZ0efbDRjVAnKX4FA7UrMzEA8THLAS8tJ3HyJTPXdgzl-EHKwiaoF1hmXrHL/s300/emisoras-colombianas.png" alt="Emisoras Colombianas"></div><div class="directory-name">Emisoras Colombianas</div></a>
-                <a href="https://es.streema.com/radios/Radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_LNIAYVHF3yB3prLtWRNLmDoLaBkeTHyMKcFyvSpW9kZkzUIU3sofTKXJyBxCeWSmC-G6HTTIHLQRDgE2nWxlm8aPPiaZnBGicc_4ygXQFwfM9C8I8nzjxCPUKQYZASvT_1O_oPf9J79wJ5TYkXNxVegptqIcE6rq-R6sXaX_qC6Zh2gWqaYdpfCn28BB/s300/streema.png" alt="Streema"></div><div class="directory-name">Streema</div></a>    
-			</div>
+        <!-- INICIO MARQUESINA INFINITA DIRECTORIOS -->
+        <div class="marquee-wrapper">
+            <div class="marquee-track">
+                <!-- Bloque 1 Original -->
+                <div class="marquee-content">
+                    <a href="https://www.getmeradio.com/stations/radiochar-11470/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp-GTg6Hb14M_ZLaFlZnkMaT0LkMmYPYPxGx1G_mezigt_JHoZyXdshlj4_tPVv79uftLUskRJPSor0YJwxsap0NoIlqDq368sUpUgEgSMEPxitK9ktyUAJyW582ozNjKdo_w0Qxuj2RG82vg5qAiG9GsrysMcCN-eXKy_jCIFSjcPQ1iKACfvBdPiyb5L/s300/GetMeRadio.png" alt="Get Me Radio"></div><div class="directory-name">Get Me Radio</div></a>
+                    <a href="https://forwardmystream.com/station/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSWNNZIAGbnOPGKEPyVTzsIaaRzniqoU9cEdC4iwlBnLIMBKeGBZogMGUU0RKK0s2MC0d2emRjKVonc23mKSPXSBu84Fs2byEA89VOTnlonf9god3RXs4ziQ9GEI72i_2IvAt3lr2_cxJdsBRpAWTwGTMwbp3sYnyYsX4r1IQ2YjjG33ZDLskLxTQlcZs1/s1600/ForwardMyStream.png" alt="Forward My Stream"></div><div class="directory-name">Forward My Stream</div></a>
+                    <a href="https://theonestopradio.com/radio/radiochar%20co" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIk_IUagLJ5h6UYoFUcaCveJ-iDfGsYayy63caTzNQKOM_5lubkZvpONuZenvm0BK62dohkoZhWTF99ZTQwJNQJ-7yX0tatTgC3dAZQZ_La7breT9daLTQKrsn6WM9DLxFz4N5NV7Fu_ZdVwtkne05V-E9qLQpZQnVRXLCz1-Vgftb1vgzDSQifcn-c0bR/s1600/TheOneStopRadio.png" alt="The OneStop Radio"></div><div class="directory-name">The OneStop Radio</div></a>
+                    <a href="http://tun.in/sfKBJ" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxPhIPia7P4pYMXosrf5d5CfqqNfX08wWGebiC4haJsbte021F2AVfd12PrKjbalBC1d-ewSoA7fFVeYIkCLrHm80nu4lhBfzm0PFYuhjpZk6gdFg6Mx-Bl5iQbyWpt3eDvq-ze1ewT5Vx6qv0Osy5nNFtvwgJWrg0yeD7VlVMWvVQ4OZH8HFd-K8CvaPK/s16000/logo%20tunein%20color.png" alt="Tunein"></div><div class="directory-name">TuneIn</div></a>
+                    <a href="https://mytuner-radio.com/radio/radiochar-514035/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnioQJBDi-nzHfdkEmfjo3Q6bSEt7q6qYJk0O5mzXby7Zluv-5fI_b5LPiVOH1S3uRMGCNKGCN3oTseGcFIDaC9leVi5f5EGt43Narxc48MDZGtP_VV7ifbiVst-DByLdz0mjkFbj710O5Ru8NEm8NsPO-e1vPnG4f9BCCcYTFgnlccvEi_zZbo-Et6WtA/s1600/logo%20mytuner%20color.png" alt="MyTuner"></div><div class="directory-name">MyTuner</div></a>
+                    <a href="https://onlineradiobox.com/co/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir-HbCUabt3Jm5QUfKOQZsc1b3VRCfKpcbCWAjnPUZqIfb2rRaMUKrCXCF6S-ZvT6FQmj9FRYDZM_SyCAqxD-Zadfgwu5Cgg-kXQZRFjpvfP2J_G4FS4J6hMmQcj-MRtAMFvzxbtClpVrdgF2nfm9W-U1inZNvf_kQY1xdX5VYEh8MU9dNKOfO0kb83c1y/s1600/logo%20onlineradiobox%20color.png" alt="Online Radio Box"></div><div class="directory-name">Radio Box</div></a>
+                    <a href="https://www.radio.net/s/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYNZwPLx_VygFzysh9hAK6RVQvFqhiIqDP1KHEALTiNgK1pUcRdZEdWhWElK35zFQMwiWz-KiMLEUyYJfpeAkS0iQxdpC8JNP9Ox8kXQniQBvD_xN3tGOGWByRpkt8T4Me005LYQzMAPYmog8LbGobqnJSRh4kCSpBGAZlqJlIgynHPCOPv-s3aI6bl9GN/s16000/logo%20radionet%20color.png" alt="Radio.net"></div><div class="directory-name">Radio.net</div></a>
+                    <a href="https://www.emisorascolombianas.co/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4tgA98MOTW8Jg9VLB8ffw1AzyRGfJmXkA_psX8pUP4WdjuCoNXgRQn_QROUc1YKfA45ksGckzRIEftcq_aQEgJJ9LOh5MXogP8_Fun0EZehgd8wq4yE-Ee8IsqibkjuMkbZ0efbDRjVAnKX4FA7UrMzEA8THLAS8tJ3HyJTPXdgzl-EHKwiaoF1hmXrHL/s300/emisoras-colombianas.png" alt="Emisoras Colombianas"></div><div class="directory-name">Emisoras Colombianas</div></a>
+                    <a href="https://es.streema.com/radios/Radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_LNIAYVHF3yB3prLtWRNLmDoLaBkeTHyMKcFyvSpW9kZkzUIU3sofTKXJyBxCeWSmC-G6HTTIHLQRDgE2nWxlm8aPPiaZnBGicc_4ygXQFwfM9C8I8nzjxCPUKQYZASvT_1O_oPf9J79wJ5TYkXNxVegptqIcE6rq-R6sXaX_qC6Zh2gWqaYdpfCn28BB/s300/streema.png" alt="Streema"></div><div class="directory-name">Streema</div></a>    
+                </div>
+                <!-- Bloque 2 Clonado (Para el efecto infinito) -->
+                <div class="marquee-content" aria-hidden="true">
+                    <a href="https://www.getmeradio.com/stations/radiochar-11470/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhp-GTg6Hb14M_ZLaFlZnkMaT0LkMmYPYPxGx1G_mezigt_JHoZyXdshlj4_tPVv79uftLUskRJPSor0YJwxsap0NoIlqDq368sUpUgEgSMEPxitK9ktyUAJyW582ozNjKdo_w0Qxuj2RG82vg5qAiG9GsrysMcCN-eXKy_jCIFSjcPQ1iKACfvBdPiyb5L/s300/GetMeRadio.png" alt="Get Me Radio"></div><div class="directory-name">Get Me Radio</div></a>
+                    <a href="https://forwardmystream.com/station/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiSWNNZIAGbnOPGKEPyVTzsIaaRzniqoU9cEdC4iwlBnLIMBKeGBZogMGUU0RKK0s2MC0d2emRjKVonc23mKSPXSBu84Fs2byEA89VOTnlonf9god3RXs4ziQ9GEI72i_2IvAt3lr2_cxJdsBRpAWTwGTMwbp3sYnyYsX4r1IQ2YjjG33ZDLskLxTQlcZs1/s1600/ForwardMyStream.png" alt="Forward My Stream"></div><div class="directory-name">Forward My Stream</div></a>
+                    <a href="https://theonestopradio.com/radio/radiochar%20co" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIk_IUagLJ5h6UYoFUcaCveJ-iDfGsYayy63caTzNQKOM_5lubkZvpONuZenvm0BK62dohkoZhWTF99ZTQwJNQJ-7yX0tatTgC3dAZQZ_La7breT9daLTQKrsn6WM9DLxFz4N5NV7Fu_ZdVwtkne05V-E9qLQpZQnVRXLCz1-Vgftb1vgzDSQifcn-c0bR/s1600/TheOneStopRadio.png" alt="The OneStop Radio"></div><div class="directory-name">The OneStop Radio</div></a>
+                    <a href="http://tun.in/sfKBJ" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxPhIPia7P4pYMXosrf5d5CfqqNfX08wWGebiC4haJsbte021F2AVfd12PrKjbalBC1d-ewSoA7fFVeYIkCLrHm80nu4lhBfzm0PFYuhjpZk6gdFg6Mx-Bl5iQbyWpt3eDvq-ze1ewT5Vx6qv0Osy5nNFtvwgJWrg0yeD7VlVMWvVQ4OZH8HFd-K8CvaPK/s16000/logo%20tunein%20color.png" alt="Tunein"></div><div class="directory-name">TuneIn</div></a>
+                    <a href="https://mytuner-radio.com/radio/radiochar-514035/" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnioQJBDi-nzHfdkEmfjo3Q6bSEt7q6qYJk0O5mzXby7Zluv-5fI_b5LPiVOH1S3uRMGCNKGCN3oTseGcFIDaC9leVi5f5EGt43Narxc48MDZGtP_VV7ifbiVst-DByLdz0mjkFbj710O5Ru8NEm8NsPO-e1vPnG4f9BCCcYTFgnlccvEi_zZbo-Et6WtA/s1600/logo%20mytuner%20color.png" alt="MyTuner"></div><div class="directory-name">MyTuner</div></a>
+                    <a href="https://onlineradiobox.com/co/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEir-HbCUabt3Jm5QUfKOQZsc1b3VRCfKpcbCWAjnPUZqIfb2rRaMUKrCXCF6S-ZvT6FQmj9FRYDZM_SyCAqxD-Zadfgwu5Cgg-kXQZRFjpvfP2J_G4FS4J6hMmQcj-MRtAMFvzxbtClpVrdgF2nfm9W-U1inZNvf_kQY1xdX5VYEh8MU9dNKOfO0kb83c1y/s1600/logo%20onlineradiobox%20color.png" alt="Online Radio Box"></div><div class="directory-name">Radio Box</div></a>
+                    <a href="https://www.radio.net/s/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYNZwPLx_VygFzysh9hAK6RVQvFqhiIqDP1KHEALTiNgK1pUcRdZEdWhWElK35zFQMwiWz-KiMLEUyYJfpeAkS0iQxdpC8JNP9Ox8kXQniQBvD_xN3tGOGWByRpkt8T4Me005LYQzMAPYmog8LbGobqnJSRh4kCSpBGAZlqJlIgynHPCOPv-s3aI6bl9GN/s16000/logo%20radionet%20color.png" alt="Radio.net"></div><div class="directory-name">Radio.net</div></a>
+                    <a href="https://www.emisorascolombianas.co/radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4tgA98MOTW8Jg9VLB8ffw1AzyRGfJmXkA_psX8pUP4WdjuCoNXgRQn_QROUc1YKfA45ksGckzRIEftcq_aQEgJJ9LOh5MXogP8_Fun0EZehgd8wq4yE-Ee8IsqibkjuMkbZ0efbDRjVAnKX4FA7UrMzEA8THLAS8tJ3HyJTPXdgzl-EHKwiaoF1hmXrHL/s300/emisoras-colombianas.png" alt="Emisoras Colombianas"></div><div class="directory-name">Emisoras Colombianas</div></a>
+                    <a href="https://es.streema.com/radios/Radiochar" target="_blank" class="directory-card"><div class="directory-logo-wrap"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_LNIAYVHF3yB3prLtWRNLmDoLaBkeTHyMKcFyvSpW9kZkzUIU3sofTKXJyBxCeWSmC-G6HTTIHLQRDgE2nWxlm8aPPiaZnBGicc_4ygXQFwfM9C8I8nzjxCPUKQYZASvT_1O_oPf9J79wJ5TYkXNxVegptqIcE6rq-R6sXaX_qC6Zh2gWqaYdpfCn28BB/s300/streema.png" alt="Streema"></div><div class="directory-name">Streema</div></a>    
+                </div>
+            </div>
         </div>
+        <!-- FIN MARQUESINA INFINITA DIRECTORIOS -->
     </section>
 
 </main>
@@ -1002,7 +1042,11 @@
     </div>
 </div>
 
+<!-- ==============================================
+     CANALES DE AUDIO 
+     ============================================== -->
 <audio id="radio" src="https://cast2.my-control-panel.com/proxy/robinson/stream"></audio>
+<audio id="jinglePlayer" src="https://robinsonchar.github.io/radiochar/radiochar.mp3" preload="auto"></audio>
 
 <script>
 (function() {
@@ -1060,6 +1104,7 @@
 
     var DOM = {
         audio: document.getElementById('radio'),
+        jinglePlayer: document.getElementById('jinglePlayer'), // NUEVO: Canal de Audio para Pisacanciones
         playBtn: document.getElementById('playPause'),
         playIcon: document.querySelector('#playPause i'),
         sourceTitle: document.getElementById('trackTitleSource'),
@@ -1107,11 +1152,6 @@
             track: document.getElementById('recentTracksTrack'),
             prev: document.getElementById('recentTracksPrev'),
             next: document.getElementById('recentTracksNext')
-        },
-        directories: {
-            track: document.getElementById('directoriesTrack'),
-            prev: document.getElementById('directoriesPrev'),
-            next: document.getElementById('directoriesNext')
         }
     };
 
@@ -1285,15 +1325,8 @@
                 setTimeout(function() { splash.remove(); }, 1000);
             }
         }, 2000);
-        
-        // V29.0: NEW DIRECTORIES CAROUSEL INIT
-        if (DOM.directories.prev && DOM.directories.next && DOM.directories.track) {
-            DOM.directories.prev.addEventListener('click', function() { DOM.directories.track.scrollBy({ left: -270, behavior: 'smooth' }); });
-            DOM.directories.next.addEventListener('click', function() { DOM.directories.track.scrollBy({ left: 270, behavior: 'smooth' }); });
-        }
     });
 
-    // ... Rest of the script logic (Schedule, Player, etc.) REMAINS THE SAME ...
     var ScheduleEngine = {
         programs: [
             { id: 'lover', title: 'LOVER CITY', subtitle: 'BALADAS AMERICANAS', start: 0, end: 6, img: 'https://mickpini.com/wp-content/uploads/2025/07/1.png', displayTime: '00:00 - 05:59 (GMT-5)' },
@@ -1408,9 +1441,22 @@
         }
     }
 
+    // === LÓGICA DE DUCKING (VOLUMEN DINÁMICO PISACANCIONES) ===
     var isPlaying = false;
     var currentMetadata = { artist: "Radiochar", song: "", album: "", genre: "" };
-    var timelineState = { duration: 0, current: 0, start: 0, interval: null };
+    var timelineState = { duration: 0, current: 0, start: 0, interval: null, halfwayPlayed: false };
+
+    if (DOM.jinglePlayer) {
+        DOM.jinglePlayer.addEventListener('play', function() {
+            if (isPlaying) DOM.audio.volume = 0.7; // Baja volumen al 70%
+        });
+        DOM.jinglePlayer.addEventListener('ended', function() {
+            if (isPlaying) DOM.audio.volume = 1.0; // Sube volumen al 100%
+        });
+        DOM.jinglePlayer.addEventListener('pause', function() {
+            if (isPlaying) DOM.audio.volume = 1.0; // Respaldo si se pausa
+        });
+    }
 
     document.getElementById('listenerCount').innerText = Math.floor(Math.random() * (50 - 25 + 1) + 25);
     var ctx = DOM.canvas.getContext('2d');
@@ -1456,11 +1502,19 @@
     DOM.playBtn.addEventListener('click', function() {
         if (isPlaying) { 
             DOM.audio.pause(); 
+            if (DOM.jinglePlayer) {
+                DOM.jinglePlayer.pause();
+                DOM.jinglePlayer.currentTime = 0;
+            }
             DOM.playIcon.classList.replace('fa-pause', 'fa-play'); 
             DOM.playBtn.classList.remove('playing'); 
             isPlaying = false;
         } else { 
             DOM.audio.play(); 
+            if (DOM.jinglePlayer) {
+                DOM.jinglePlayer.currentTime = 0;
+                DOM.jinglePlayer.play().catch(function(e){ console.log("Pisacanciones auto-prevenido", e); });
+            }
             DOM.playIcon.classList.replace('fa-play', 'fa-pause'); 
             DOM.playBtn.classList.add('playing'); 
             isPlaying = true;
@@ -1537,6 +1591,7 @@
         }
         
         timelineState.duration = adjustedDuration / 1000;
+        timelineState.halfwayPlayed = false; // Resetear pisacanciones en cada nueva canción
         
         var updateTick = function() {
             var elapsed = (Date.now() - timelineState.start) / 1000;
@@ -1545,6 +1600,24 @@
             if (DOM.currentTime) DOM.currentTime.innerText = Utils.formatTime(current);
             if (DOM.totalTime) DOM.totalTime.innerText = Utils.formatTime(timelineState.duration);
             if (DOM.progressFill) DOM.progressFill.style.width = ((current / timelineState.duration) * 100) + "%";
+
+            // === LÓGICA DE DISPARO DEL PISACANCIONES AL 50% ===
+            if (isPlaying && !timelineState.halfwayPlayed && timelineState.duration > 60 && DOM.jinglePlayer) {
+                if (current >= (timelineState.duration / 2)) {
+                    timelineState.halfwayPlayed = true; // Asegurar que no suene dos veces
+                    
+                    var curArt = Utils.cleanText(currentMetadata.artist || "").toLowerCase();
+                    var curTit = Utils.cleanText(currentMetadata.song || "").toLowerCase();
+                    var fStr = curArt + " " + curTit;
+                    
+                    var isFiltered = CONFIG.FILTERS.some(function(f) { return fStr.includes(f); });
+                    
+                    if (!isFiltered) {
+                        DOM.jinglePlayer.currentTime = 0;
+                        DOM.jinglePlayer.play().catch(function(e){});
+                    }
+                }
+            }
         };
         
         updateTick();
@@ -2172,11 +2245,11 @@
             },
             // FIX: Horarios, nombres e imágenes sincronizados correctamente.
             PROGRAMS: [
-                { id: 'lover', name: 'Karol Morales C.', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
-                { id: 'wonders', name: 'Tito "El Chacho" González', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
-                { id: 'piedras', name: 'Salma "La Nana" Cifuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
-                { id: 'rockstars', name: 'Jhon Martin "El Escocés"', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
-                { id: 'hits', name: 'Miranda Fuentes', img: 'https://raw.githubusercontent.com/robinsonchar/pruebasradiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
+                { id: 'lover', name: 'Karol Morales', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
+                { id: 'wonders', name: 'Tito González', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
+                { id: 'piedras', name: 'Salma Cifuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
+                { id: 'rockstars', name: 'Jhon Martin', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
+                { id: 'hits', name: 'Miranda Fuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
             ],
             FALLBACKS: [
                 "¡Disfruta de la mejor música en Radiochar!",
@@ -2580,5 +2653,4 @@
 <!-- FIN SCRIPT COMPARTIR -->
 </body>
 </html>
-
 
