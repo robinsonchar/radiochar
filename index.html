@@ -689,13 +689,6 @@
             width: 100%;
         }
 
-        /* Comillas sutiles en blanco */
-        #dj-phrase::before, #dj-phrase::after {
-            content: '"';
-            color: #ffffff; /* Modificado a color blanco */
-            font-weight: bold;
-        }
-
         /* Loader adaptado a la estética minimalista */
         .dj-loading {
             display: flex;
@@ -902,7 +895,7 @@
                 <h3 id="dj-name">---</h3>
             </div>
             
-            <p id="dj-phrase">"..."</p>
+            <p id="dj-phrase">Sintonizando cabina...</p>
             
             <!-- Botón de compartir híbrido -->
             <button class="dj-share-btn" onclick="shareCurrentTrack()" aria-label="Compartir">
@@ -2484,8 +2477,17 @@
             document.getElementById('dj-avatar').src = dj.img;
             document.getElementById('dj-name').textContent = dj.name;
             document.getElementById('current-track').textContent = trackInfo;
+            
             const phraseClean = phrase.replace(/^["']+|["']+$/g, '').trim();
-            document.getElementById('dj-phrase').textContent = phraseClean;
+            
+            // OBTENER HORA LOCAL DEL NAVEGADOR
+            const now = new Date();
+            const hh = String(now.getHours()).padStart(2, '0');
+            const mm = String(now.getMinutes()).padStart(2, '0');
+            
+            // INSERTAR LA HORA ANTES DE LA FRASE
+            document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 11pt;">A las ${hh}:${mm}:</span> "${phraseClean}"`;
+            
             container.style.opacity = '1';
             container.style.transform = 'translateY(0)';
         }, 200);
