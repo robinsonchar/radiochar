@@ -793,6 +793,111 @@
         .s-btn.fb { background: #1877F2; }
         .s-btn.x { background: #000000; border: 1px solid rgba(255,255,255,0.2); }
 /* FIN ESTILOS DJ */
+
+/* INICIO ESTILOS DJ MARQUESINA */
+/* =========================================
+           SECCIÓN DISC JOCKEYS (ROSTER MARQUESINA)
+           ========================================= */
+        .dj-marquee-wrapper {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            display: flex;
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            padding: 20px 0 40px 0;
+        }
+        .dj-marquee-track {
+            display: flex;
+            width: max-content;
+            animation: scroll-dj-marquee 30s linear infinite;
+        }
+        .dj-marquee-track:hover {
+            animation-play-state: paused;
+        }
+        .dj-marquee-content {
+            display: flex;
+            gap: 50px;
+            padding-right: 50px; 
+        }
+        @keyframes scroll-dj-marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        
+        .dj-roster-card {
+            flex: 0 0 160px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .dj-roster-img-wrap {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 2px solid rgba(255,255,255,0.1);
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            background: #111;
+        }
+        .dj-roster-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%); 
+            transition: filter 0.4s ease, transform 0.4s ease;
+        }
+        
+        .dj-roster-card:hover .dj-roster-img-wrap {
+            border-color: var(--dj-accent); 
+            box-shadow: 0 10px 25px rgba(255, 0, 85, 0.4);
+        }
+        .dj-roster-card:hover img {
+            filter: grayscale(0%); 
+            transform: scale(1.1);
+        }
+        
+        .dj-roster-name {
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+        
+        /* Nuevo estilo para el nombre del programa */
+        .dj-roster-show {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--color-accent-blue); /* Color azul por defecto para contrastar */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            transition: color 0.3s ease;
+        }
+
+        .dj-roster-card:hover .dj-roster-name {
+            color: var(--dj-accent);
+        }
+        .dj-roster-card:hover .dj-roster-show {
+            color: #ffffff; /* El programa se vuelve blanco al hacer hover para equilibrar */
+        }
+
+        @media (max-width: 600px) {
+            .dj-roster-card { flex: 0 0 130px; }
+            .dj-roster-img-wrap { width: 120px; height: 120px; }
+            .dj-roster-name { font-size: 13px; }
+            .dj-roster-show { font-size: 10px; } /* Ajuste móvil para el programa */
+            .dj-marquee-content { gap: 30px; padding-right: 30px; }
+        }
+/* FIN ESTILOS DJ MARQUESINA */
+
 </style>
 </head>
 <body>
@@ -909,6 +1014,78 @@
     </div>
 </section>
 <!-- FIN HTML DJ -->
+
+<!-- INICIO HTML DJS MARQUESINA -->
+    <section class="content-section dj-roster-container">
+        <div class="section-header-common">
+            <h2 class="section-title-common" style="color: var(--dj-accent); border-left: 3px solid var(--dj-accent);">DISC JOCKEYS</h2>
+        </div>
+        
+        <div class="dj-marquee-wrapper">
+            <div class="dj-marquee-track">
+                
+                <!-- BLOQUE 1 DE DJS -->
+                <div class="dj-marquee-content">
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png" alt="Karol Morales"></div>
+                        <div class="dj-roster-name">Karol Morales</div>
+                        <div class="dj-roster-show">Lover City</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png" alt="Tito González"></div>
+                        <div class="dj-roster-name">Tito González</div>
+                        <div class="dj-roster-show">The Wonders</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png" alt="Salma Cifuentes"></div>
+                        <div class="dj-roster-name">Salma Cifuentes</div>
+                        <div class="dj-roster-show">Pateando Piedras</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png" alt="Jhon Martin"></div>
+                        <div class="dj-roster-name">Jhon Martin</div>
+                        <div class="dj-roster-show">Rockstars</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png" alt="Miranda Fuentes"></div>
+                        <div class="dj-roster-name">Miranda Fuentes</div>
+                        <div class="dj-roster-show">Hits Don't Lie</div>
+                    </div>
+                </div>
+
+                <!-- BLOQUE 2 DE DJS (CLON EXACTO PARA EL BUCLE INFINITO) -->
+                <div class="dj-marquee-content" aria-hidden="true">
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png" alt="Karol Morales"></div>
+                        <div class="dj-roster-name">Karol Morales</div>
+                        <div class="dj-roster-show">Lover City</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png" alt="Tito González"></div>
+                        <div class="dj-roster-name">Tito González</div>
+                        <div class="dj-roster-show">The Wonders</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png" alt="Salma Cifuentes"></div>
+                        <div class="dj-roster-name">Salma Cifuentes</div>
+                        <div class="dj-roster-show">Pateando Piedras</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png" alt="Jhon Martin"></div>
+                        <div class="dj-roster-name">Jhon Martin</div>
+                        <div class="dj-roster-show">Rockstars</div>
+                    </div>
+                    <div class="dj-roster-card">
+                        <div class="dj-roster-img-wrap"><img src="https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png" alt="Miranda Fuentes"></div>
+                        <div class="dj-roster-name">Miranda Fuentes</div>
+                        <div class="dj-roster-show">Hits Don't Lie</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+<!-- FIN HTML DJS MARQUESINA -->
 
     <section class="content-section schedule-section">
       <div class="section-header-common"><h2 class="section-title-common schedule-title-custom">ESTAMOS PRESENTANDO</h2></div>
@@ -2222,332 +2399,328 @@
 
 <!-- INICIO SCRIPT DJ -->
  <script>
-   /**
-     * RADIOCHAR VIRTUAL DJ ENGINE v3.4 (Ultimate Edition)
-     * Puntería Láser en DOM + Jerarquía Inviolable + Fix de Identidades y Horarios
-     */
+    /**
+ * RADIOCHAR VIRTUAL DJ ENGINE v5.2 (Ultra-Blindado)
+ * - Match 100% ESTRICTO e independiente.
+ * - Rescate de JSON (Salvage) mejorado para soportar saltos de línea y comillas internas.
+ * - Selectores de DOM sincronizados y Anti-Radiochar Loop.
+ */
 
-    const DJ_APP = {
-        config: {
-            FEED_URL: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
-            INTERVAL: 10000, 
-            TIMEOUT: 6000,
-            PLAYER_SELECTORS: {
-                TITLE: '#cc_strinfo_tracktitle_robinson, .cc_strinfo_tracktitle_robinson, .track-title, .song-title',
-                ARTIST: '#cc_strinfo_trackartist_robinson, .cc_strinfo_trackartist_robinson, .track-artist, .song-artist'
-            },
-            // FIX: Horarios, nombres e imágenes sincronizados correctamente.
-            PROGRAMS: [
-                { id: 'lover', name: 'Karol Morales', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
-                { id: 'wonders', name: 'Tito González', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
-                { id: 'piedras', name: 'Salma Cifuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
-                { id: 'rockstars', name: 'Jhon Martin', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
-                { id: 'hits', name: 'Miranda Fuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
-            ],
-            FALLBACKS: [
-                "¡Disfruta de la mejor música en Radiochar!",
-                "Conectados con tu ritmo las 24 horas.",
-                "Siente la energía de nuestra programación virtual.",
-                "Transmitiendo éxitos sin fronteras."
-            ]
+const DJ_APP = {
+    config: {
+        FEED_URL: 'https://cast2.my-control-panel.com/recentfeed/robinson/json/',
+        INTERVAL: 10000, 
+        TIMEOUT: 6000,
+        PLAYER_SELECTORS: {
+            TITLE: '#displayTitle, #trackTitleSource, .song-title, .track-title',
+            ARTIST: '#displayArtist, #trackArtistSource, .artist-name, .track-artist'
         },
-        state: { cache: {}, lastTrackId: null, isFirstRun: true, isLoaded: false }
-    };
+        PROGRAMS: [
+            { id: 'lover', name: 'Karol Morales', show: 'LOVER CITY', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
+            { id: 'wonders', name: 'Tito González', show: 'THE WONDERS', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
+            { id: 'piedras', name: 'Salma Cifuentes', show: 'PATEANDO PIEDRAS', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
+            { id: 'rockstars', name: 'Jhon Martin', show: 'ROCKSTARS', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
+            { id: 'hits', name: 'Miranda Fuentes', show: 'HITS DON´T LIE', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
+        ],
+        FALLBACKS: [
+            "¡Disfruta de la mejor música en Radiochar!",
+            "Siente la energía de nuestra programación virtual."
+        ]
+    },
+    state: { cache: {}, lastTrackId: null, isFirstRun: true, isLoaded: false }
+};
 
-    /**
-     * NORMALIZACIÓN ESTRICTA
-     */
-    function normalize(str) {
-        if (!str) return '';
-        return str.toString()
-            .normalize("NFD").replace(/[\u0300-\u036f]/g, "") 
-            .toLowerCase()
-            .replace(/[^a-z0-9]/g, ''); 
+/**
+ * NORMALIZACIÓN NIVEL 5:
+ * Quita acentos, tildes, caracteres especiales, comillas y espacios.
+ */
+function normalize(str) {
+    if (!str) return '';
+    return String(str)
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") 
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, '');      
+}
+
+function getActiveDJ() {
+    const hour = new Date().getHours();
+    return DJ_APP.config.PROGRAMS.find(p => hour >= p.start && hour < p.end) || DJ_APP.config.PROGRAMS[0];
+}
+
+/**
+ * SALVAGE JSON v2: Escáner Regex Avanzado.
+ * Supera saltos de línea irregulares y detecta comillas internas escapadas.
+ */
+function salvageJSON(rawText) {
+    try {
+        const parsed = JSON.parse(rawText);
+        let data = parsed.frases_por_cancion || (parsed.programa && parsed.programa.frases_por_cancion) || parsed;
+        if (Array.isArray(data)) return data;
+    } catch (e) {
+        console.warn("⚠️ [JSON ENGINE] Error de sintaxis en el archivo JSON. Activando Extractor Regex de Emergencia...");
     }
 
-    function getActiveDJ() {
-        const hour = new Date().getHours();
-        return DJ_APP.config.PROGRAMS.find(p => hour >= p.start && hour < p.end) || DJ_APP.config.PROGRAMS[0];
-    }
-
-    /**
-     * EXTRACTOR INDESTRUCTIBLE v3
-     */
-    function salvageJSON(text) {
-        let cleanText = text
-            .replace(/[\u201C\u201D\u201F\u2033\u2036]/g, '"') 
-            .replace(/[\u2018\u2019\u201A\u201B]/g, "'")
-            .replace(/[\u0000-\u001F\u007F-\u009F]/g, "") 
-            .replace(/^\uFEFF/, "");
-
-        let results = [];
-        try { 
-            const parsed = JSON.parse(cleanText);
-            const data = parsed.frases_por_cancion || (parsed.programa && parsed.programa.frases_por_cancion) || parsed;
-            if (Array.isArray(data)) return data;
-        } catch (e) {
-            console.warn("⚠️ [JSON ENGINE] Error de sintaxis detectado. Activando Extractor Manual Regex...");
-        }
-
-        const blocks = cleanText.match(/\{[^}]*?"frase"[^}]*\}/gi);
-        if (blocks) {
-            blocks.forEach(b => {
-                try {
-                    let fixed = b.replace(/,\s*\}/g, '}'); 
-                    let pFrag = JSON.parse(fixed);
-                    if (pFrag.frase) results.push(pFrag);
-                } catch(err) {
-                    const artM = b.match(/"artista"\s*:\s*"((?:\\"|[^"])*)"/i);
-                    const titM = b.match(/"(?:cancion|titulo)"\s*:\s*"((?:\\"|[^"])*)"/i);
-                    const phrM = b.match(/"frase"\s*:\s*"((?:\\"|[^"])*)"/i);
-                    
-                    if (phrM) {
-                        results.push({
-                            artista: artM ? artM[1].replace(/\\"/g, '"') : "",
-                            cancion: titM ? titM[1].replace(/\\"/g, '"') : "",
-                            frase: phrM[1].replace(/\\"/g, '"')
-                        });
-                    }
-                }
-            });
-        }
-        return results.length > 0 ? results : null;
-    }
-
-    async function preloadLibrary() {
-        console.log("🛠️ [VIRTUAL DJ] Reconstruyendo Caché de Conocimiento...");
-        const tasks = DJ_APP.config.PROGRAMS.map(async (prog) => {
-            try {
-                const controller = new AbortController();
-                const timeoutId = setTimeout(() => controller.abort(), DJ_APP.config.TIMEOUT);
-                const response = await fetch(`${prog.json}?v=${Date.now()}`, { signal: controller.signal });
-                clearTimeout(timeoutId);
-
-                if (!response.ok) throw new Error("HTTP Status " + response.status);
-                const text = await response.text();
-                const data = salvageJSON(text);
-                
-                DJ_APP.state.cache[prog.id] = data || []; 
-            } catch (err) {
-                console.error(`[ERROR] Conexión fallida con el archivo: ${prog.id}`);
-                DJ_APP.state.cache[prog.id] = []; 
+    let results = [];
+    // Captura bloques enteros entre llaves {} incluso con saltos de línea
+    const blocks = rawText.match(/\{[\s\S]*?\}/g);
+    if (blocks) {
+        blocks.forEach(b => {
+            // (?:\\.|[^"\\])* captura strings aunque tengan comillas adentro como \"
+            const artM = b.match(/"artista"\s*:\s*"((?:\\.|[^"\\])*)"/i);
+            const titM = b.match(/"(?:cancion|titulo)"\s*:\s*"((?:\\.|[^"\\])*)"/i);
+            const phrM = b.match(/"frase"\s*:\s*"((?:\\.|[^"\\])*)"/i);
+            
+            if (artM && titM && phrM) {
+                results.push({
+                    artista: artM[1].replace(/\\"/g, '"'),
+                    cancion: titM[1].replace(/\\"/g, '"'),
+                    frase: phrM[1].replace(/\\"/g, '"')
+                });
             }
         });
-        
-        await Promise.allSettled(tasks);
-        DJ_APP.state.isLoaded = true;
-        console.log("✅ [VIRTUAL DJ] Motores de texto listos.");
     }
+    return results.length > 0 ? results : null;
+}
 
-    /**
-     * ALGORITMO DETERMINISTA (Cero Caos)
-     */
-    function getPhrase(progId, currentArtist, currentTitle) {
-        const library = DJ_APP.state.cache[progId];
-        
-        if (!library || !Array.isArray(library) || library.length === 0) {
-            return DJ_APP.config.FALLBACKS[Math.floor(Math.random() * DJ_APP.config.FALLBACKS.length)];
-        }
-
-        const nTitle = normalize(currentTitle);
-        const nArtist = normalize(currentArtist);
-
-        console.log(`[🔍 MATCH] Buscando: Canción="${nTitle}" | Artista="${nArtist}"`);
-
-        const songMatches = library.filter(item => {
-            const jsonTitle = normalize(item.titulo || item.cancion || "");
-            if (!jsonTitle || jsonTitle.length < 3) return false;
-            return jsonTitle === nTitle || nTitle.includes(jsonTitle) || jsonTitle.includes(nTitle);
-        });
-
-        if (songMatches.length > 0) {
-            const perfectMatch = songMatches.find(item => {
-                const jsonArtist = normalize(item.artista || "");
-                return jsonArtist === nArtist || nArtist.includes(jsonArtist) || jsonArtist.includes(nArtist);
-            });
-
-            if (perfectMatch && perfectMatch.frase) {
-                console.log(`[✅ MATCH 100%] Canción y Artista confirmados.`);
-                return perfectMatch.frase;
-            }
-
-            if (songMatches[0].frase) {
-                console.log(`[⚠️ MATCH PARCIAL] Canción confirmada.`);
-                return songMatches[0].frase;
-            }
-        }
-
-        console.log(`[🛑 SIN MATCH] Retornando frase genérica segura.`);
-        
-        const genericLibraryPhrases = library.filter(item => {
-            const jsonTitle = normalize(item.titulo || item.cancion || "");
-            return jsonTitle === "" || jsonTitle === "generico";
-        });
-
-        if (genericLibraryPhrases.length > 0) {
-            return genericLibraryPhrases[Math.floor(Math.random() * genericLibraryPhrases.length)].frase;
-        }
-
-        return DJ_APP.config.FALLBACKS[Math.floor(Math.random() * DJ_APP.config.FALLBACKS.length)];
-    }
-
-    function getTrackFromDOM() {
+async function preloadLibrary() {
+    console.log("🛠️ [VIRTUAL DJ] Descargando Bases de Datos de Frases...");
+    const tasks = DJ_APP.config.PROGRAMS.map(async (prog) => {
         try {
-            const titleEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.TITLE);
-            const artistEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.ARTIST);
+            const response = await fetch(`${prog.json}?v=${Date.now()}`); 
+            if (!response.ok) throw new Error("HTTP Status " + response.status);
             
-            let title = "";
-            let artist = "";
-
-            const invalidWords = [
-                'ESTAMOS PRESENTANDO', 'CARGANDO', 'RADIOCHAR', 'AL AIRE', 
-                'PIDE TU CANCIÓN', 'ROCKSTARS', 'HITS DON', 'ARTISTA', 
-                'SINTONIZANDO', 'TITULO', 'CANCION', 'CONECTANDO'
-            ];
+            const rawText = await response.text();
+            const cleanText = rawText.replace(/[\u0000-\u001F\u007F-\u009F]/g, "").trim();
             
-            const isCleanText = (txt) => {
-                if (!txt) return false;
-                const upper = txt.toUpperCase().trim();
-                if (upper.length < 2) return false;
-                
-                for (let word of invalidWords) {
-                    if (upper.includes(word) || upper === word) return false;
-                }
-                return true;
-            };
-
-            for (let el of titleEls) {
-                let text = (el.innerText || el.textContent).trim();
-                if (isCleanText(text)) { title = text; break; }
-            }
-
-            for (let el of artistEls) {
-                let text = (el.innerText || el.textContent).trim();
-                if (isCleanText(text) && text !== title) { artist = text; break; }
-            }
-
-            if (title) {
-                if (!artist && title.includes(' - ')) {
-                    const parts = title.split(' - ');
-                    artist = parts[0].trim();
-                    title = parts.slice(1).join(' - ').trim();
-                }
-                return { artist: artist || "Radiochar", title, source: 'DOM' };
-            }
-        } catch (e) {}
-        return null; 
-    }
-
-    async function getTrackFromFeed() {
-        try {
-            const controller = new AbortController();
-            const id = setTimeout(() => controller.abort(), 5000);
-            const response = await fetch(`${DJ_APP.config.FEED_URL}?t=${Date.now()}`, { signal: controller.signal });
-            clearTimeout(id);
-            if (!response.ok) return null;
-            const data = await response.json();
-            
-            if (data && data.length > 0 && data[0].title) {
-                let trackArtist = data[0].artist;
-                let trackTitle = data[0].title;
-                
-                if (!trackArtist && trackTitle.includes(' - ')) {
-                    const parts = trackTitle.split(' - ');
-                    trackArtist = parts[0].trim();
-                    trackTitle = parts.slice(1).join(' - ').trim();
-                }
-                
-                return { artist: trackArtist || "Radiochar", title: trackTitle, source: 'FEED' };
-            }
-        } catch (e) {}
-        return null;
-    }
-
-    function updateUI(dj, trackInfo, phrase) {
-        const container = document.getElementById('dj-content');
-        const skeleton = document.getElementById('dj-skeleton');
-
-        if (skeleton) skeleton.classList.add('hidden');
-        if (container) container.classList.remove('hidden');
-
-        container.style.opacity = '0';
-        container.style.transform = 'translateY(5px)';
-
-        setTimeout(() => {
-            document.getElementById('dj-avatar').src = dj.img;
-            document.getElementById('dj-name').textContent = dj.name;
-            document.getElementById('current-track').textContent = trackInfo;
-            
-            const phraseClean = phrase.replace(/^["']+|["']+$/g, '').trim();
-            
-            // OBTENER HORA LOCAL DEL NAVEGADOR
-            const now = new Date();
-            const hh = String(now.getHours()).padStart(2, '0');
-            const mm = String(now.getMinutes()).padStart(2, '0');
-            
-            // INSERTAR LA HORA ANTES DE LA FRASE
-            document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 11pt;">Ahora (${hh}:${mm}):</span> "${phraseClean}"`;
-            
-            container.style.opacity = '1';
-            container.style.transform = 'translateY(0)';
-        }, 200);
-    }
-
-    async function syncStation() {
-        const trackData = getTrackFromDOM() || await getTrackFromFeed();
-        
-        if (!trackData) {
-            console.warn("[⚠️ VIRTUAL DJ] Sin señal del reproductor. Mostrando fallback.");
-            if (DJ_APP.state.isFirstRun) {
-                const dj = getActiveDJ();
-                updateUI(dj, "Radiochar - Música en vivo", DJ_APP.config.FALLBACKS[0]);
-                DJ_APP.state.isFirstRun = false;
-            }
-            return;
-        }
-
-        const { artist, title, source } = trackData;
-        const currentTrackId = normalize(`${artist}${title}`);
-
-        if (currentTrackId === DJ_APP.state.lastTrackId && !DJ_APP.state.isFirstRun) return;
-
-        console.log(`[📡 LECTURA ${source}] Sonando: ${artist} - ${title}`);
-
-        const activeDJ = getActiveDJ();
-        const phrase = getPhrase(activeDJ.id, artist, title);
-        
-        updateUI(activeDJ, `${artist} - ${title}`, phrase);
-        DJ_APP.state.lastTrackId = currentTrackId;
-        DJ_APP.state.isFirstRun = false;
-    }
-
-    window.addEventListener('load', async () => {
-        const safetyTimeout = setTimeout(() => {
-            if (DJ_APP.state.isFirstRun) {
-                console.warn("[VIRTUAL DJ] Timeout. Forzando UI de emergencia...");
-                const dj = getActiveDJ();
-                updateUI(dj, "Radiochar - Conectado", DJ_APP.config.FALLBACKS[0]);
-                DJ_APP.state.isFirstRun = false;
-            }
-        }, 7000);
-
-        try {
-            await preloadLibrary();
-            await syncStation();
-            clearTimeout(safetyTimeout);
-            
-            const observer = new MutationObserver(() => syncStation());
-            observer.observe(document.body, { childList: true, subtree: true, characterData: true });
-            
-            setInterval(syncStation, DJ_APP.config.INTERVAL);
-        } catch (e) {
-            console.error("[CRÍTICO] Fallo general de motor:", e);
-            clearTimeout(safetyTimeout);
-            const dj = getActiveDJ();
-            updateUI(dj, "Radiochar - Sistema Activo", DJ_APP.config.FALLBACKS[0]);
-            DJ_APP.state.isFirstRun = false;
+            const data = salvageJSON(cleanText);
+            DJ_APP.state.cache[prog.id] = data || []; 
+            console.log(`✅ [LIBRERÍA OK] ${prog.id} cargada con ${DJ_APP.state.cache[prog.id].length} frases.`);
+        } catch (err) {
+            console.error(`🚨 [ERROR] No se pudo cargar: ${prog.id}`, err);
+            DJ_APP.state.cache[prog.id] = []; 
         }
     });
+    
+    await Promise.allSettled(tasks);
+    DJ_APP.state.isLoaded = true;
+}
+
+/**
+ * EL BUSCADOR QUIRÚRGICO (Match Estricto 100%)
+ */
+function getPhrase(progId, currentArtist, currentTitle) {
+    const library = DJ_APP.state.cache[progId];
+    
+    if (!library || library.length === 0) {
+        console.log(`[🛑 VIRTUAL DJ] La librería del DJ está vacía. Mostrando fallback.`);
+        return DJ_APP.config.FALLBACKS[0];
+    }
+
+    const nTargetTitle = normalize(currentTitle);
+    const nTargetArtist = normalize(currentArtist);
+
+    console.log(`[🔍 MOTOR DE BÚSQUEDA] Buscando EXACTO -> Artista: "${nTargetArtist}" | Canción: "${nTargetTitle}"`);
+
+    // 1. CONDICIÓN ESTRICTA: Artista == Artista Y Canción == Canción
+    let perfectMatch = library.find(item => {
+        const jsonTitle = normalize(item.titulo || item.cancion || "");
+        const jsonArtist = normalize(item.artista || "");
+
+        if (!jsonTitle || !jsonArtist) return false;
+        
+        return (jsonTitle === nTargetTitle) && (jsonArtist === nTargetArtist);
+    });
+
+    if (perfectMatch && perfectMatch.frase) {
+        console.log(`[🎯 MATCH ESTRICTO LOGRADO] Frase encontrada.`);
+        return perfectMatch.frase;
+    }
+
+    // 2. CONDICIÓN SEMI-FLEXIBLE 
+    let flexibleMatch = library.find(item => {
+        const jsonTitle = normalize(item.titulo || item.cancion || "");
+        const jsonArtist = normalize(item.artista || "");
+
+        if (!jsonTitle || !jsonArtist) return false;
+
+        const isTitleMatch = nTargetTitle.includes(jsonTitle) || jsonTitle.includes(nTargetTitle);
+        const isArtistMatch = nTargetArtist.includes(jsonArtist) || jsonArtist.includes(nTargetArtist);
+
+        return isTitleMatch && isArtistMatch;
+    });
+
+    if (flexibleMatch && flexibleMatch.frase) {
+        console.log(`[⚠️ MATCH FLEXIBLE LOGRADO] Frase recuperada.`);
+        return flexibleMatch.frase;
+    }
+
+    console.log(`[❌ SIN MATCH] La canción no existe en la base de datos de este DJ.`);
+    return DJ_APP.config.FALLBACKS[0];
+}
+
+/**
+ * LECTOR DE DOM
+ */
+function getTrackFromDOM() {
+    try {
+        const titleEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.TITLE);
+        const artistEls = document.querySelectorAll(DJ_APP.config.PLAYER_SELECTORS.ARTIST);
+        
+        let title = "";
+        let artist = "";
+
+        const invalidWords = [
+            'ESTAMOS PRESENTANDO', 'CARGANDO', 'RADIOCHAR', 'AL AIRE', 
+            'PIDE TU CANCIÓN', 'ROCKSTARS', 'HITS DON', 'ARTISTA', 
+            'SINTONIZANDO', 'TITULO', 'CANCION', 'CONECTANDO'
+        ];
+        
+        const isCleanText = (txt) => {
+            if (!txt) return false;
+            const upper = txt.toUpperCase().trim();
+            if (upper.length < 2) return false;
+            return !invalidWords.some(word => upper.includes(word) || upper === word);
+        };
+
+        for (let el of titleEls) {
+            let text = (el.innerText || el.textContent).trim();
+            if (isCleanText(text)) { title = text; break; }
+        }
+
+        for (let el of artistEls) {
+            let text = (el.innerText || el.textContent).trim();
+            if (isCleanText(text) && text !== title) { artist = text; break; }
+        }
+
+        if (title) {
+            // Si no detectó al artista, intentamos separarlo del título
+            if (!artist && title.includes(' - ')) {
+                const parts = title.split(' - ');
+                artist = parts[0].trim();
+                title = parts.slice(1).join(' - ').trim();
+            }
+
+            // Si el artista es Radiochar, forzamos lectura por API
+            if (!artist || artist.toLowerCase() === 'radiochar') {
+                return null; 
+            }
+
+            return { artist: artist, title: title, source: 'DOM' };
+        }
+    } catch (e) {}
+    return null; 
+}
+
+/**
+ * LECTOR DE API (FEED CENTOVA)
+ */
+async function getTrackFromFeed() {
+    try {
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), 5000);
+        const response = await fetch(`${DJ_APP.config.FEED_URL}?t=${Date.now()}`, { signal: controller.signal });
+        clearTimeout(id);
+        if (!response.ok) return null;
+        const data = await response.json();
+        
+        if (data && data.length > 0 && data[0].title) {
+            let trackArtist = data[0].artist || "";
+            let trackTitle = data[0].title || "";
+            
+            if ((!trackArtist || trackArtist.toLowerCase() === 'radiochar') && trackTitle.includes(' - ')) {
+                const parts = trackTitle.split(' - ');
+                trackArtist = parts[0].trim();
+                trackTitle = parts.slice(1).join(' - ').trim();
+            }
+            
+            return { artist: trackArtist || "Radiochar", title: trackTitle, source: 'FEED' };
+        }
+    } catch (e) {}
+    return null;
+}
+
+function updateUI(dj, trackInfo, phrase) {
+    const container = document.getElementById('dj-content');
+    const skeleton = document.getElementById('dj-skeleton');
+
+    if (skeleton) skeleton.classList.add('hidden');
+    if (container) container.classList.remove('hidden');
+
+    container.style.opacity = '0';
+    container.style.transform = 'translateY(5px)';
+
+    setTimeout(() => {
+        document.getElementById('dj-avatar').src = dj.img;
+        document.getElementById('dj-name').textContent = dj.name;
+        document.getElementById('current-track').textContent = trackInfo;
+        
+        const phraseClean = phrase.replace(/^["']+|["']+$/g, '').trim();
+        
+        const now = new Date();
+        const hh = String(now.getHours()).padStart(2, '0');
+        const mm = String(now.getMinutes()).padStart(2, '0');
+        
+        document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 11pt;">A las ${hh}:${mm}:</span> "${phraseClean}"`;
+        
+        container.style.opacity = '1';
+        container.style.transform = 'translateY(0)';
+    }, 200);
+}
+
+async function syncStation() {
+    const trackData = getTrackFromDOM() || await getTrackFromFeed();
+    
+    if (!trackData) {
+        if (DJ_APP.state.isFirstRun) {
+            const dj = getActiveDJ();
+            updateUI(dj, "Radiochar - Música en vivo", DJ_APP.config.FALLBACKS[0]);
+            DJ_APP.state.isFirstRun = false;
+        }
+        return;
+    }
+
+    const { artist, title, source } = trackData;
+    const currentTrackId = normalize(`${artist}${title}`);
+
+    if (currentTrackId === DJ_APP.state.lastTrackId && !DJ_APP.state.isFirstRun) return;
+
+    console.log(`[📡 LECTURA ${source}] Sonando: ${artist} - ${title}`);
+
+    const activeDJ = getActiveDJ();
+    const phrase = getPhrase(activeDJ.id, artist, title);
+    
+    updateUI(activeDJ, `${artist} - ${title}`, phrase);
+    DJ_APP.state.lastTrackId = currentTrackId;
+    DJ_APP.state.isFirstRun = false;
+}
+
+window.addEventListener('load', async () => {
+    const safetyTimeout = setTimeout(() => {
+        if (DJ_APP.state.isFirstRun) {
+            const dj = getActiveDJ();
+            updateUI(dj, "Radiochar - Conectado", DJ_APP.config.FALLBACKS[0]);
+            DJ_APP.state.isFirstRun = false;
+        }
+    }, 7000);
+
+    try {
+        await preloadLibrary();
+        await syncStation();
+        clearTimeout(safetyTimeout);
+        
+        const observer = new MutationObserver(() => syncStation());
+        observer.observe(document.body, { childList: true, subtree: true, characterData: true });
+        
+        setInterval(syncStation, DJ_APP.config.INTERVAL);
+    } catch (e) {
+        console.error("[CRÍTICO] Fallo general de motor:", e);
+        clearTimeout(safetyTimeout);
+        const dj = getActiveDJ();
+        updateUI(dj, "Radiochar - Sistema Activo", DJ_APP.config.FALLBACKS[0]);
+        DJ_APP.state.isFirstRun = false;
+    }
+});
  </script>
 <!-- FIN SCRIPT DJ -->
 
