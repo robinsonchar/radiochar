@@ -660,7 +660,7 @@
 
         /* Animación de parpadeo suave */
         @keyframes badge-blink {
-            0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(255, 0, 0, 1); }
+            0%, 100% { opacity: 1; box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
             50% { opacity: 0.4; box-shadow: 0 0 0px transparent; }
         }
 
@@ -2238,11 +2238,11 @@
             },
             // FIX: Horarios, nombres e imágenes sincronizados correctamente.
             PROGRAMS: [
-                { id: 'lover', name: 'Karol Morales en LOVERCITY', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
-                { id: 'wonders', name: 'Tito González en THE WONDERS', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
-                { id: 'piedras', name: 'Salma Cifuentes en PATEANDO PIEDRAS', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
-                { id: 'rockstars', name: 'Jhon Martin en ROCKSTARS', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
-                { id: 'hits', name: 'Miranda Fuentes en HITS DON'T LIE', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
+                { id: 'lover', name: 'Karol Morales', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Karol%20Morales%20-%20Lover.png', json: 'https://robinsonchar.github.io/radiochar/frases-lover-city.JSON', start: 0, end: 6 },
+                { id: 'wonders', name: 'Tito González', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Tito%20Gonz%C3%A1lez%20-%20Wonders.png', json: 'https://robinsonchar.github.io/radiochar/frases-the-wonders.json', start: 6, end: 12 },
+                { id: 'piedras', name: 'Salma Cifuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Salma%20Cifuentes%20-%20Piedras.png', json: 'https://robinsonchar.github.io/radiochar/frases-pateando-piedras.JSON', start: 12, end: 15 },
+                { id: 'rockstars', name: 'Jhon Martin', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Jhon%20Martin%20-%20Rockstars.png', json: 'https://robinsonchar.github.io/radiochar/frases-rockstars.JSON', start: 15, end: 20 },
+                { id: 'hits', name: 'Miranda Fuentes', img: 'https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/Miranda%20Fuentes%20-%20Hits.png', json: 'https://robinsonchar.github.io/radiochar/frases-hits-dont-lie.JSON', start: 20, end: 24 }
             ],
             FALLBACKS: [
                 "¡Disfruta de la mejor música en Radiochar!",
@@ -2486,7 +2486,7 @@
             const mm = String(now.getMinutes()).padStart(2, '0');
             
             // INSERTAR LA HORA ANTES DE LA FRASE
-            document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 12pt;">Ahora (${hh}:${mm}):</span> "${phraseClean}"`;
+            document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 11pt;">Ahora (${hh}:${mm}):</span> "${phraseClean}"`;
             
             container.style.opacity = '1';
             container.style.transform = 'translateY(0)';
@@ -2655,4 +2655,3 @@
 <!-- FIN SCRIPT COMPARTIR -->
 </body>
 </html>
-
