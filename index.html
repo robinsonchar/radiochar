@@ -2661,7 +2661,7 @@ function updateUI(dj, trackInfo, phrase) {
         const hh = String(now.getHours()).padStart(2, '0');
         const mm = String(now.getMinutes()).padStart(2, '0');
         
-        document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 11pt;">A las ${hh}:${mm}:</span> "${phraseClean}"`;
+        document.getElementById('dj-phrase').innerHTML = `<span style="color: var(--dj-accent); font-style: normal; font-weight: 600; font-size: 11pt;">Hora: ${hh}:${mm}:</span> "${phraseClean}"`;
         
         container.style.opacity = '1';
         container.style.transform = 'translateY(0)';
