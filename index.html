@@ -1219,6 +1219,19 @@
 <audio id="jinglePlayer" src="https://robinsonchar.github.io/radiochar/radiochar.mp3" preload="auto"></audio>
 
 <script>
+
+// --- INICIO MOTOR DE MARQUESINA ---
+let intervaloTitulo = null;
+function actualizarMarquesina(artista, cancion) {
+    if (intervaloTitulo) clearInterval(intervaloTitulo);
+    let texto = `${artista} - ${cancion}  ---  `;
+    let contador = 0;
+    intervaloTitulo = setInterval(() => {
+        document.title = texto.substring(contador) + texto.substring(0, contador);
+        contador = (contador + 1) % texto.length;
+    }, 300);
+}
+// --- FIN MOTOR DE MARQUESINA ---
 (function() {
     var itunesCache = window.itunesCache || new Map();
     // OPTIMIZACIÓN: CACHÉ EN SESSIONSTORAGE
@@ -1875,6 +1888,7 @@
             setTimeout(function() {
                 DOM.displayTitle.innerText = title;
                 DOM.displayArtist.innerText = formattedArtist;
+		actualizarMarquesina(formattedArtist, title);
                 
                 var imgLoader = new Image();
                 var showNewContent = function() {
