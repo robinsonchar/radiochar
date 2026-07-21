@@ -83,14 +83,15 @@
         opacity: 0; visibility: hidden; transition: all 0.3s ease;
     }
     .modal-overlay.active { display: flex; opacity: 1; visibility: visible; }
-    .modal-content { 
-        background: #1a1a1a; width: 600px; max-width: 90%; padding: 30px; 
-        border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); 
-        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.8); position: relative; 
-        transform: translateY(20px); transition: transform 0.3s ease;
-        max-height: 85vh; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #444 #1a1a1a;
-    }
     .modal-overlay.active .modal-content { transform: translateY(0); }
+
+    /* Transición suave (fade in/out) exclusiva para el modal del DJ */
+    #modalOverlay {
+        display: flex;
+        pointer-events: none;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+    }
+    #modalOverlay.active { pointer-events: auto; }
     .modal-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: none; color: #fff; width: 32px; height: 32px; border-radius: 50%; font-size: 16px; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
     .modal-close:hover { background: rgba(255,255,255,0.3); transform: rotate(90deg); }
     .modal-title { font-size: 24px; font-weight: 800; margin-bottom: 5px; color: #fff; letter-spacing: 0.5px; }
@@ -114,6 +115,22 @@
     .req-item-artist { font-size: 12px; color: #999; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
     .req-submit { width: 100%; padding: 16px; background: var(--color-gradient-req); color: #fff; border: none; border-radius: 50px; font-weight: 700; font-size: 16px; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s, opacity 0.2s; margin-top: 10px; text-transform: uppercase; letter-spacing: 1px; }
     .req-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(0,198,255,0.3); }
+
+    /* Corrección de espaciado del modal "PIDE TU CANCIÓN" (antes sin padding/posición, botón de cerrar sobrepuesto) */
+    #reqModalOverlay .modal-content {
+        position: relative;
+        background: #1a1a1a;
+        color: #fff;
+        border-radius: 20px;
+        padding: 55px 32px 32px;
+        border: 1px solid #333;
+        width: 420px;
+        max-width: 90vw;
+        text-align: left;
+        box-sizing: border-box;
+    }
+    #reqModalOverlay .modal-title,
+    #reqModalOverlay .modal-subtitle { padding-right: 30px; }
     #realCentovaForm { display: none; }
 
     /* REPRODUCTOR */
@@ -306,11 +323,28 @@
     #cboxbutton { position: fixed; bottom: 20px; right: 20px; z-index: var(--z-chat) !important; border-radius: 50% !important; background-color: #1877F2 !important; border: 1px solid #1565C0 !important; color: #fff !important; width: 60px !important; height: 60px !important; padding: 0 !important; display: flex !important; align-items: center !important; justify-content: center !important; box-shadow: 0 4px 10px rgba(0,0,0,0.3) !important; font-size: 24px !important; cursor: pointer; transition: transform 0.2s ease; }
     #cboxbutton:hover { transform: scale(1.05); }
 
+    /* Botón flotante de silenciar/activar volumen (esquina superior derecha) */
+    #muteBtn {
+        position: fixed; top: 20px; right: 20px; z-index: var(--z-chat);
+        width: 46px; height: 46px; border-radius: 50%;
+        background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15);
+        color: #fff; font-size: 18px; cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+    #muteBtn:hover { background: rgba(255,255,255,0.18); transform: scale(1.05); }
+    #muteBtn.muted { color: var(--color-accent-blue, #00c6ff); }
+
     #cboxwrap { position: fixed; bottom: 90px; right: 20px; z-index: var(--z-chat) !important; border-radius: 12px !important; border: 1px solid rgba(255, 255, 255, 0.1) !important; background: rgba(30, 30, 30, 0.95) !important; backdrop-filter: blur(10px) !important; box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important; display: none; overflow: hidden; font-size: 0; line-height: 0; }
     
-    #cboxdiv { width: 300px; height: 380px; display: block; }
-    .cbox-main-wrapper { height: 252px !important; width: 100%; border: 0 !important; display: block; margin: 0; padding: 0; overflow: hidden; }
-    .cbox-form-wrapper { height: 128px !important; width: 100%; border: 0 !important; border-top: 1px solid rgba(255,255,255,0.1); display: block; margin: 0; padding: 0; overflow: hidden; }
+    #cboxdiv { width: 300px; height: 380px; display: flex; flex-direction: column; background: #1a1a1a; }
+    .cbox-header { flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; background: rgba(255,255,255,0.04); border-bottom: 1px solid rgba(255,255,255,0.08); font-size: 11px; color: #aaa; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; box-sizing: border-box; }
+    .cbox-header a { color: #aaa; text-decoration: none; font-size: 13px; transition: color 0.2s; }
+    .cbox-header a:hover { color: #fff; }
+    .cbox-frame-full { flex: 1 1 auto; width: 100%; border: 0; display: block; }
+    .cbox-main-wrapper { height: 252px !important; width: 100%; border: 0 !important; display: block; margin: 0; padding: 0; overflow: hidden; background: #1a1a1a; }
+    .cbox-form-wrapper { height: 128px !important; width: 100%; border: 0 !important; border-top: 1px solid rgba(255,255,255,0.1); display: block; margin: 0; padding: 0; overflow: hidden; background: #1a1a1a; }
     #cboxdiv iframe { width: 100%; height: 100%; border: 0; display: block; vertical-align: bottom; margin: 0; padding: 0; }
     
     /* --- SECCIÓN DIRECTORIOS (MARQUESINA INFINITA) --- */
@@ -792,6 +826,10 @@
         .s-btn.wa { background: #25D366; }
         .s-btn.fb { background: #1877F2; }
         .s-btn.x { background: #000000; border: 1px solid rgba(255,255,255,0.2); }
+        .s-btn.tg { background: #26A5E4; }
+        .s-btn.copy { background: rgba(255,255,255,0.08); border: 1px dashed rgba(255,255,255,0.3); margin-top: 4px; }
+        .s-btn.copy.copied { background: #2ecc71; border-style: solid; }
+        .share-hint { font-size: 12px; color: #888; margin-top: 14px; line-height: 1.5; text-align: center; }
 /* FIN ESTILOS DJ */
 
 /* INICIO ESTILOS DJ MARQUESINA */
@@ -899,6 +937,7 @@
 /* FIN ESTILOS DJ MARQUESINA */
 
 /* INICIO AJUSTES DE ANCHO ADAPTATIVO */
+
 /* 1. El Reproductor: Más espacio para lucirse en pantallas grandes */
 .radio-container {
     width: 1100px !important; /* Pasamos de 1000px a 1100px */
@@ -923,22 +962,35 @@
     margin-right: auto;
 }
 /* FIN AJUSTES DE ANCHO ADAPTATIVO */
-	  
+
 </style>
 </head>
 <body>
+
+<button id="muteBtn" title="Silenciar" aria-label="Silenciar reproductor">
+    <i class="fas fa-volume-up"></i>
+</button>
+
 
 <div class="background-blur visual-transition" id="bgBlur"></div>
 <div class="splash-screen"><h1>Sintonizando...</h1><div class="spinner"></div></div>
 
 <div class="modal-overlay" id="modalOverlay">
-  <div class="modal-content">
-    <button class="modal-close" onclick="closeModal()"><i class="fas fa-times"></i></button>
-    <div class="modal-title" id="modalArtist">Artista</div>
-    <div class="modal-subtitle" id="modalTitle">Canción</div>
-    <div class="modal-body" id="modalBio">Cargando información...</div>
-    <div class="modal-meta"><div>Álbum<span id="modalAlbum">--</span></div><div>Género<span id="modalGenre">--</span></div></div>
-  </div>
+    <div class="modal-content" style="text-align: center; color: #fff; background: #1a1a1a; border-radius: 20px; padding: 40px; position: relative; border: 1px solid #333; width: 400px; z-index: 20000;">
+        <button class="modal-close" onclick="closeModal()" style="position: absolute; top: 15px; right: 15px; background: none; border: none; cursor: pointer; color: #fff; font-size: 20px;">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <div id="modalPhotoContainer" style="margin-bottom: 25px;">
+            <img id="modalPhoto" src="" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto; border: 2px solid #555;">
+        </div>
+        
+        <div id="modalName" style="font-size: 24px; font-weight: 800; margin-bottom: 5px;"></div>
+        <div id="modalProgram" style="color: var(--color-accent-blue); font-weight: bold; margin-bottom: 10px;"></div>
+        <div id="modalHorario" style="color: #aaa; font-size: 14px; margin-bottom: 20px;"></div>
+        
+        <div id="modalBio" style="font-size: 15px; color: #ccc; line-height: 1.6; text-align: center; border-top: 1px solid #333; padding-top: 20px;"></div>
+    </div>
 </div>
 
 <div class="modal-overlay" id="reqModalOverlay">
@@ -963,6 +1015,20 @@
         <input type="text" name="request[artist]" /><input type="text" name="request[title]" /><input type="text" name="request[dedication]" /><input type="text" name="request[sender]" /><input type="text" name="request[email]" /><input type="button" value="Enviar" data-type="submit" id="realSubmitBtn" />
     </form>
   </div>
+</div>
+
+<!-- MODAL DE INFORMACIÓN DE LA CANCIÓN (Wikipedia) -->
+<div class="modal-overlay" id="infoModalOverlay">
+    <div class="modal-content" style="text-align: left; color: #fff; background: #1a1a1a; border-radius: 20px; padding: 40px; position: relative; border: 1px solid #333; width: 420px;">
+        <button class="modal-close" onclick="closeInfoModal()"><i class="fas fa-times"></i></button>
+        <div class="modal-title" id="infoModalTitle">--</div>
+        <div class="modal-subtitle" id="infoModalArtist">--</div>
+        <div class="modal-body" id="infoModalBio">Buscando información...</div>
+        <div class="modal-meta">
+            <div>Álbum<span id="infoModalAlbum">--</span></div>
+            <div>Género<span id="infoModalGenre">--</span></div>
+        </div>
+    </div>
 </div>
 
 <header>
@@ -1232,9 +1298,12 @@
         <div class="share-modal-title">Compartir</div>
         <div class="share-btn-grid">
             <button onclick="shareToPlatform('wa')" class="s-btn wa"><i class="fab fa-whatsapp"></i> WhatsApp</button>
+            <button onclick="shareToPlatform('tg')" class="s-btn tg"><i class="fab fa-telegram-plane"></i> Telegram</button>
             <button onclick="shareToPlatform('x')" class="s-btn x"><i class="fab fa-x-twitter"></i> X (Twitter)</button>
             <button onclick="shareToPlatform('fb')" class="s-btn fb"><i class="fab fa-facebook-f"></i> Facebook</button>
+            <button onclick="copyShareImage()" class="s-btn copy" id="copyImgBtn"><i class="fas fa-image"></i> Copiar portada</button>
         </div>
+        <div class="share-hint">Copia la portada y pégala (Ctrl+V) en la ventana que se abre al compartir, para que la imagen también se incluya en tu publicación.</div>
     </div>
 </div>
 
@@ -1247,16 +1316,21 @@
 <script>
 
 // --- INICIO MOTOR DE MARQUESINA ---
-let intervaloTitulo = null;
-function actualizarMarquesina(artista, cancion) {
-    if (intervaloTitulo) clearInterval(intervaloTitulo);
-    let texto = `${artista} - ${cancion}  ---  `;
-    let contador = 0;
-    intervaloTitulo = setInterval(() => {
-        document.title = texto.substring(contador) + texto.substring(0, contador);
-        contador = (contador + 1) % texto.length;
-    }, 250);
-}
+let animationFrameId = null;
+    function actualizarMarquesina(artista, cancion) {
+        if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        const textoBase = `${artista} - ${cancion}  ---  `;
+        const velocidad = 0.08;
+        let pos = 0;
+        function animar() {
+            pos += velocidad;
+            if (pos >= textoBase.length) pos = 0;
+            let index = Math.floor(pos);
+            document.title = textoBase.substring(index) + textoBase.substring(0, index);
+            animationFrameId = requestAnimationFrame(animar);
+        }
+        animar();
+    }
 // --- FIN MOTOR DE MARQUESINA ---
 (function() {
     var itunesCache = window.itunesCache || new Map();
@@ -1327,12 +1401,12 @@ function actualizarMarquesina(artista, cancion) {
         totalTime: document.getElementById('totalTime'),
         progressFill: document.getElementById('progressFill'),
         modal: {
-            overlay: document.getElementById('modalOverlay'),
-            artist: document.getElementById('modalArtist'),
-            title: document.getElementById('modalTitle'),
-            bio: document.getElementById('modalBio'),
-            album: document.getElementById('modalAlbum'),
-            genre: document.getElementById('modalGenre')
+            overlay: document.getElementById('infoModalOverlay'),
+            artist: document.getElementById('infoModalArtist'),
+            title: document.getElementById('infoModalTitle'),
+            bio: document.getElementById('infoModalBio'),
+            album: document.getElementById('infoModalAlbum'),
+            genre: document.getElementById('infoModalGenre')
         },
         reqModal: {
             overlay: document.getElementById('reqModalOverlay'),
@@ -1383,7 +1457,10 @@ function actualizarMarquesina(artista, cancion) {
 
     window.openReqModal = function() { DOM.reqModal.overlay.classList.add('active'); };
     window.closeReqModal = function() { DOM.reqModal.overlay.classList.remove('active'); };
-    window.closeModal = function() { DOM.modal.overlay.classList.remove('active'); };
+    // Modal del DJ (bio) - id="modalOverlay"
+    window.closeModal = function() { document.getElementById('modalOverlay').classList.remove('active'); };
+    // Modal de info de la canción (Wikipedia) - id="infoModalOverlay"
+    window.closeInfoModal = function() { DOM.modal.overlay.classList.remove('active'); };
 
     var Utils = {
         debounce: function(func, wait) {
@@ -1486,9 +1563,9 @@ function actualizarMarquesina(artista, cancion) {
     }, 500));
 
     DOM.reqModal.overlay.addEventListener('click', function(e) { if (e.target === DOM.reqModal.overlay) closeReqModal(); });
-    DOM.modal.overlay.addEventListener('click', function(e) { if (e.target === DOM.modal.overlay) closeModal(); });
+    DOM.modal.overlay.addEventListener('click', function(e) { if (e.target === DOM.modal.overlay) closeInfoModal(); });
 
-    // === CBOX ENGINE (V26.0 - ZERO-GAP PROTOCOL) ===
+    // === CBOX ENGINE (V27.0 - SINGLE FRAME / FULL BOX) ===
     document.addEventListener('DOMContentLoaded', function() {
         var cboxBtn = document.getElementById('cboxbutton');
         var cboxWrap = document.getElementById('cboxwrap');
@@ -1510,12 +1587,11 @@ function actualizarMarquesina(artista, cancion) {
                     if (!isCboxLoaded) {
                         cboxWrap.innerHTML = 
                         '<div id="cboxdiv">' +
-                            '<div class="cbox-main-wrapper">' +
-                                '<iframe src="https://www4.cbox.ws/box/?boxid=3774862&boxtag=a7lslt&sec=main" marginheight="0" marginwidth="0" frameborder="0" scrolling="auto" allowtransparency="yes" name="cboxmain4-3774862" id="cboxmain4-3774862" class="cbox-frame-main"></iframe>' +
+                            '<div class="cbox-header">' +
+                                '<span>Chat en vivo</span>' +
+                                '<a href="https://my.cbox.ws/Radiochar" target="_blank" rel="noopener" title="Abrir en pestaña nueva"><i class="fas fa-external-link-alt"></i></a>' +
                             '</div>' +
-                            '<div class="cbox-form-wrapper">' +
-                                '<iframe src="https://www4.cbox.ws/box/?boxid=3774862&boxtag=a7lslt&sec=form" allow="autoplay" marginheight="0" marginwidth="0" frameborder="0" scrolling="no" allowtransparency="yes" name="cboxform4-3774862" id="cboxform4-3774862" class="cbox-frame-form"></iframe>' +
-                            '</div>' +
+                            '<iframe src="https://my.cbox.ws/Radiochar" title="Chat Radiochar" marginheight="0" marginwidth="0" frameborder="0" scrolling="auto" allowtransparency="yes" allow="autoplay" class="cbox-frame-full" name="cboxfull-3774862" id="cboxfull-3774862"></iframe>' +
                         '</div>';
                         isCboxLoaded = true;
                     }
@@ -1731,8 +1807,31 @@ function actualizarMarquesina(artista, cancion) {
         }
     });
 
+    // Botón de silenciar/activar volumen (independiente del play/stop)
+    var muteBtn = document.getElementById('muteBtn');
+    var muteIcon = muteBtn ? muteBtn.querySelector('i') : null;
+    if (muteBtn) {
+        muteBtn.addEventListener('click', function() {
+            DOM.audio.muted = !DOM.audio.muted;
+            if (DOM.jinglePlayer) DOM.jinglePlayer.muted = DOM.audio.muted;
+
+            if (DOM.audio.muted) {
+                muteBtn.classList.add('muted');
+                muteBtn.title = 'Activar sonido';
+                muteBtn.setAttribute('aria-label', 'Activar sonido');
+                if (muteIcon) { muteIcon.classList.remove('fa-volume-up'); muteIcon.classList.add('fa-volume-mute'); }
+            } else {
+                muteBtn.classList.remove('muted');
+                muteBtn.title = 'Silenciar';
+                muteBtn.setAttribute('aria-label', 'Silenciar reproductor');
+                if (muteIcon) { muteIcon.classList.remove('fa-volume-mute'); muteIcon.classList.add('fa-volume-up'); }
+            }
+        });
+    }
+
     window.openInfoModal = async function() {
         DOM.modal.overlay.classList.add('active');
+
         var displayArtist = DOM.displayArtist.innerText;
         var displaySong = DOM.displayTitle.innerText;
         var artist = (currentMetadata.artist && currentMetadata.artist !== "Radiochar") ? currentMetadata.artist : displayArtist;
@@ -2780,7 +2879,7 @@ window.addEventListener('load', async () => {
 
         // Construir el texto premium
         const shareText = `${phrase}\n\n📻 ${djName} presentando "${trackText}" en RADIOCHAR. Escúchalo en vivo aquí:`;
-        const shareUrl = "https://radiochar.online"; 
+        const shareUrl = "https://radiochar.com"; 
 
         // Verificamos si es móvil y soporta la Web Share API
         if (navigator.share) {
@@ -2812,21 +2911,32 @@ window.addEventListener('load', async () => {
             } catch (err) {
                 // Si el usuario simplemente canceló no hacemos nada, de lo contrario mostramos el Modal de PC
                 if (err.name !== 'AbortError') {
-                    openShareModal(shareText, shareUrl);
+                    openShareModal(shareText, shareUrl, coverImgUrl);
                 }
             }
         } else {
             // Si el navegador no soporta Web Share API (Navegadores de PC), abrir Modal de botones
-            openShareModal(shareText, shareUrl);
+            openShareModal(shareText, shareUrl, coverImgUrl);
         }
     };
 
     window.currentShareText = "";
     window.currentShareUrl = "";
+    window.currentShareImage = "";
 
-    window.openShareModal = function(text, url) {
+    window.openShareModal = function(text, url, imageUrl) {
         window.currentShareText = text;
         window.currentShareUrl = url;
+        window.currentShareImage = imageUrl || "";
+
+        const copyBtn = document.getElementById('copyImgBtn');
+        if (copyBtn) {
+            copyBtn.classList.remove('copied');
+            copyBtn.innerHTML = '<i class="fas fa-image"></i> Copiar portada';
+            // Ocultar el botón si no hay portada válida para copiar
+            copyBtn.style.display = (window.currentShareImage && !window.currentShareImage.includes('radiochar-vice.png')) ? 'flex' : 'none';
+        }
+
         const overlay = document.getElementById('shareFallbackModal');
         if(overlay) overlay.classList.add('active');
     };
@@ -2834,6 +2944,56 @@ window.addEventListener('load', async () => {
     window.closeShareModal = function() {
         const overlay = document.getElementById('shareFallbackModal');
         if(overlay) overlay.classList.remove('active');
+    };
+
+    window.copyShareImage = async function() {
+        const copyBtn = document.getElementById('copyImgBtn');
+        if (!window.currentShareImage) return;
+
+        try {
+            const response = await fetch(window.currentShareImage);
+            const blob = await response.blob();
+
+            // El Clipboard API solo acepta PNG en la mayoría de navegadores; convertimos si hace falta.
+            let pngBlob = blob;
+            if (blob.type !== 'image/png') {
+                pngBlob = await new Promise((resolve, reject) => {
+                    const img = new Image();
+                    img.crossOrigin = 'anonymous';
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = img.naturalWidth;
+                        canvas.height = img.naturalHeight;
+                        canvas.getContext('2d').drawImage(img, 0, 0);
+                        canvas.toBlob((b) => b ? resolve(b) : reject(new Error('No se pudo convertir la imagen')), 'image/png');
+                    };
+                    img.onerror = reject;
+                    img.src = URL.createObjectURL(blob);
+                });
+            }
+
+            await navigator.clipboard.write([ new ClipboardItem({ 'image/png': pngBlob }) ]);
+
+            if (copyBtn) {
+                copyBtn.classList.add('copied');
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> ¡Portada copiada!';
+                setTimeout(() => {
+                    copyBtn.classList.remove('copied');
+                    copyBtn.innerHTML = '<i class="fas fa-image"></i> Copiar portada';
+                }, 2500);
+            }
+        } catch (e) {
+            console.warn('No se pudo copiar la imagen al portapapeles, se descargará en su lugar', e);
+            // Respaldo: si el navegador no soporta copiar imágenes, la descargamos
+            try {
+                const a = document.createElement('a');
+                a.href = window.currentShareImage;
+                a.download = 'radiochar-portada.jpg';
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+            } catch(e2) { console.warn('No se pudo descargar la portada', e2); }
+        }
     };
 
     window.shareToPlatform = function(platform) {
@@ -2847,6 +3007,8 @@ window.addEventListener('load', async () => {
             shareLink = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
         } else if (platform === 'x') {
             shareLink = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+        } else if (platform === 'tg') {
+            shareLink = `https://t.me/share/url?url=${url}&text=${text}`;
         }
 
         if (shareLink) {
@@ -2864,6 +3026,71 @@ window.addEventListener('load', async () => {
             });
         }
     });
+
+    //  Modal único de DJ (carga de datos y apertura/cierre)  //
+    let djsData = [];
+
+    async function loadDJData() {
+        try {
+            const response = await fetch('https://raw.githubusercontent.com/robinsonchar/radiochar/refs/heads/main/PERSONALIDAD_DJS.json?nocache=' + Date.now());
+            djsData = await response.json();
+            console.log("Librería de DJs cargada:", djsData.length, "DJs");
+        } catch (e) {
+            console.error("Error cargando DJs", e);
+        }
+    }
+
+    function openDJBio(djName, djImageSrc) {
+        const targetName = djName.trim().toLowerCase().replace("dj ", "").trim();
+        const dj = djsData.find(d => {
+            if (!d.Nombre) return false;
+            return String(d.Nombre).trim().toLowerCase().replace("dj ", "").trim() === targetName;
+        });
+
+        if (!dj) {
+            console.warn("DJ no encontrado:", targetName);
+            return;
+        }
+
+        const modal = document.getElementById('modalOverlay');
+        if (!modal) return;
+
+        const nameEl = document.getElementById('modalName');
+        const photoEl = document.getElementById('modalPhoto');
+        const progEl = document.getElementById('modalProgram');
+        const horaEl = document.getElementById('modalHorario');
+        const bioEl = document.getElementById('modalBio');
+
+        if (nameEl) nameEl.innerText = dj.Nombre || "";
+        if (photoEl) photoEl.src = djImageSrc || "";
+        if (progEl) progEl.innerText = dj["Programa radial"] ? `Presenta: ${dj["Programa radial"]}` : "";
+        if (horaEl) horaEl.innerText = dj.Horario ? `${dj.Horario} (Col/Per/Ecu)` : "";
+        if (bioEl) {
+            const escapeHtml = (str) => String(str)
+                .replace(/&/g, "&amp;").replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+            let html = "";
+            if (dj.Contenido) html += `<p style="margin:0 0 15px 0;">${escapeHtml(dj.Contenido)}</p>`;
+            if (dj["Relación emocional"]) html += `<p style="margin:0; font-style:italic;">"${escapeHtml(dj["Relación emocional"])}"</p>`;
+            bioEl.innerHTML = html;
+        }
+
+        modal.classList.add('active');
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loadDJData();
+        document.body.addEventListener('click', (e) => {
+            const card = e.target.closest('.dj-roster-card');
+            if (card) {
+                const nameEl = card.querySelector('.dj-roster-name');
+                const imgEl = card.querySelector('img');
+                if (nameEl && imgEl) openDJBio(nameEl.innerText, imgEl.src);
+            }
+        });
+    });
+    //  Fin modal de DJ  //
+
 </script>
 <!-- FIN SCRIPT COMPARTIR -->
 </body>
