@@ -793,7 +793,7 @@ Nace Xzibit (1974). Rapero estadounidense y estrella de MTV de finales de los no
 Nace Lita Ford (1958). Cantante y guitarrista británico-estadounidense, una de las principales mujeres del heavy metal de los 80.
 
 ## 20 de Septiembre
-Nace Nuno Bettencourt (1966). Repetido? Sí. Reemplazamos: Ben Shepherd (1968), bajista de Soundgarden.
+Nace Ben Shepherd (1968), músico estadounidense conocido por haber tocado el bajo en la banda de grunge Soundgarden desde 1990 hasta 2017.
 
 ## 21 de Septiembre
 Nace Liam Gallagher (1972). Cantante británico, inconfundible y arrogante vocalista principal de la gran banda de britpop Oasis.
@@ -823,7 +823,7 @@ Nace Hilary Duff (1987). Cantante y actriz estadounidense, destacada artista pop
 Nace Jerry Lee Lewis (1935). Pianista y cantante estadounidense, el 'Asesino', uno de los padres salvajes del rock and roll.
 
 ## 30 de Septiembre
-Nace Marc Bolan (1947). Repetido? Sí (15 sept). Reemplazamos: Marc Anthony (repetido). Reemplazo: Mónica Bellucci, o Cissy Houston (1933) cantante de soul/góspel.
+Nace Robby Carl Takac Jr. (1964). Es un bajista de rock estadounidense y vocalista. Takac es uno de los miembros fundadores de los Goo Goo Dolls.
 
 ## 1 de Octubre
 Nace Youssou N'Dour (1959). Cantante y compositor senegalés, figura central para la popularización mundial del pop africano y mbalax.
