@@ -654,8 +654,8 @@ Depeche Mode - Enjoy the Silence
 fHyT3kLN3v0
 
 ## 9 de Junio
-Duran Duran - Rio
-wO-INptGsc8
+Duran Duran - The Wild Boys
+M43wsiNBwmo
 
 ## 10 de Junio
 INXS - Need You Tonight
@@ -770,8 +770,8 @@ The Cure - Friday I'm In Love
 mGgMZpGYiy8
 
 ## 8 de Julio
-Bon Jovi - Wanted Dead or Alive
-SRvCvsRp5ho
+Bon Jovi - You Give Love A Bad Name
+KrZHPOeOxQQ
 
 ## 9 de Julio
 Spice Girls - Say You'll Be There
@@ -870,8 +870,8 @@ Queen - We Will Rock You
 ipDEXJHEfTI
 
 ## 2 de Agosto
-Bon Jovi - Livin' on a Prayer
-lMGaiSqOp58
+Bon Jovi - Runaway
+s86K-p089R8
 
 ## 3 de Agosto
 Duran Duran - Hungry Like the Wolf
@@ -1042,8 +1042,8 @@ Eurythmics - Sweet Dreams (Are Made of This)
 qeMFqkcPYcg
 
 ## 14 de Septiembre
-Duran Duran - Hungry Like the Wolf
-oJL-lCzEXgI
+Duran Duran - Notorious
+Z9z0e1Wm64M
 
 ## 15 de Septiembre
 Cyndi Lauper - Time After Time
@@ -1143,8 +1143,8 @@ George Michael - Faith
 RsMz4yrQqu0
 
 ## 9 de Octubre
-Bon Jovi - Livin' on a Prayer
-BXFutOUfjQo
+Bon Jovi - Blaze Of Glory
+MfmYCM4CS8o
 
 ## 10 de Octubre
 Rick Astley - Never Gonna Give You Up
@@ -1183,8 +1183,8 @@ Prince - Purple Rain
 F5hNmMTnJkA
 
 ## 19 de Octubre
-Duran Duran - Rio
-LT3YE4GzYGA
+Duran Duran - A View To A Kill
+Fp4CR2HcHLQ
 
 ## 20 de Octubre
 The Cure - Lovesong
